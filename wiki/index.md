@@ -8,7 +8,20 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 <!-- One entry per ingested source paper. Link to wiki/papers/<firstauthor-year-keyword>.md -->
 
-*(none yet)*
+- [Altrocchi et al. 2023](papers/altrocchi-2023-chronic.md) — Chronic (up to 96 h) FP + impedance assay; 13 reference compounds incl. hERG trafficking inhibitors (delayed effects), TKi, cytotoxics; tolerance-interval QC. Janssen, *Front Pharmacol*. *(cited as "Steemans 2023" in main.md — first-author error)*
+- [Blinova et al. 2025](papers/blinova-2025-highthroughput.md) — ⚠️ Possibly hallucinated citation. High-throughput FP evaluation for proarrhythmic risk, FDA group. *J Pharmacol Toxicol Methods* 122:1–10. *(no DOI; unverified)*
+- [Botti et al. 2025](papers/botti-2025-insilico.md) — In silico MEA modeling for hiPSC-CM heterogeneous tissue drug testing. *J Physiology*. DOI: 10.1113/JP287276. *(PDF unavailable — Wiley blocked)*
+- [Dunham et al. 2022](papers/dunham-2022-cardiopyemea.md) — Cardio PyMEA open-source Python tool: beat detection, LAT mapping, CV, FPD, power-law stats. UCLA, *PLOS ONE*. *(cited as "Meyer 2022" in main.md — authors hallucinated)*
+- [Ernault et al. 2024](papers/ernault-2024-interpretation.md) — FP and LEAP interpretation from hiPSC-CM monolayers; T-wave biphasic morphology required for APD90 correlation; LEAP reflects spatial average APD. *Am J Physiol* 326:H800–H811.
+- [Guerrelli et al. 2024](papers/guerrelli-2024-hipscm.md) — Temporal and spatial confounders in hiPSC-CM MEA; 22.6% beating rate drift in 20 min; outer rows 8.8 bpm faster; FPD increases 257 ms over 14 days; KCNJ2 up 27.5× over 30 days. *Am J Physiol* 327:H12–H27.
+- [Hwang et al. 2023](papers/hwang-2023-spheroids.md) — 3D spheroid geometry (electrode contact area, size) is a primary FP variability source; in silico models; E-4031 IC50 8 nM. *Front Physiol* 14:1123190. *(cited as "Tsai 2023" in main.md — authors hallucinated)*
+- [Ismaili et al. 2023](papers/ismaili-2023-hamburg.md) — Hamburg perspective review: hiPSC-CM If/ICa,T expression, AP heterogeneity, FPDc limitations, automated patch clamp. *Front Physiol* 14:1132165. *(cited as "Schulz 2023" in main.md — wrong first author)*
+- [Lee et al. 2024](papers/lee-2024-cardiomea.md) — CardioMEA: comprehensive open-source MEA analysis platform for cardiac diseases and drug responses. ETH Zürich / UZH, *Front Physiol* 15:1472126. *(PDF 62 MB — content not extracted)*
+- [Mäki 2023](papers/maki-2023-opinion.md) — Opinion paper: correct method for FP signal analysis. Zenodo v2, DOI: 10.5281/zenodo.16760143. *(author = review author; Zenodo HTML only)*
+- [Matsuda et al. 2025](papers/matsuda-2025-uhd.md) — Sony UHD-CMOS-MEA (236,880 electrodes, 13.5 µm pitch): field potential imaging (FPI), excitation origin count, propagation area, CV maps. *Toxicol Sci* 208(2):384–400.
+- [Maurissen et al. 2024](papers/maurissen-2024-mutation.md) — Isogenic KCNH2 N588D (LQTS) / N588K (SQTS) compound-heterozygous mutations; 3D CTSs with mesenchymal cells required for TdP-like waveforms; FPDcF 82–323 ms across genotypes. *Sci Rep* 14:2586.
+- [Park et al. 2025](papers/park-2025-cardiotoxicity.md) — Healthy vs. LQTS (KCNH2 c.453delC) hiPSC-CMs with 8 CiPA drugs; FPD20/FPDc20 metric; 10× LQTS sensitivity to E-4031. *Korean J Physiol Pharmacol* 29(2):257–269.
+- [Pramudito et al. 2026](papers/pramudito-2026-ensemble.md) — Stacking ensemble ML for TdP risk assessment from hiPSC-CM MEA features. *Ann Biomed Eng* 54:1334–1344. *(2026; unverifiable at time of ingestion)*
 
 ---
 
@@ -17,7 +30,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 <!-- Core theoretical or conceptual ideas that recur across multiple papers. -->
 <!-- Create a dedicated page only when a concept appears in 2+ papers or is central to the argument. -->
 
-*(none yet)*
+*(none yet — candidates: FPDcF, CiPA, hiPSC-CM maturity, hERG trafficking, 3D vs 2D cultures)*
 
 ---
 
@@ -26,7 +39,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 <!-- Methodological approaches worth their own page — when a method appears across multiple papers. -->
 <!-- Single-paper methods belong in the paper page, not here. -->
 
-*(none yet)*
+*(none yet — candidates: FPD measurement conventions, Fridericia correction, LEAP recording, tolerance intervals)*
 
 ---
 
@@ -41,9 +54,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 ## Analyses
 
-<!-- Comparisons, syntheses, and answers to substantial queries — filed here so they compound. -->
-
-*(none yet)*
+- [Citation issues in main.md](citation-issues.md) — 4 confirmed errors + 2 unverifiable citations; Meyer→Dunham, Tsai→Hwang, Schulz→Ismaili (order), Steemans→Altrocchi (order).
 
 ---
 
