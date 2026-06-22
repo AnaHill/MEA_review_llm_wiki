@@ -25,6 +25,27 @@ This is a narrative review of methodological developments in cardiomyocyte MEA a
 
 # Literature review
 
+*Figure 1. Timeline of key methodological developments in cardiomyocyte MEA analysis, 2022–2026.*
+
+```mermaid
+timeline
+    title Post-2022 developments in cardiomyocyte MEA analysis methodology
+    2022 : Cardio PyMEA — open-source Python pipeline (Dunham et al.)
+    2023 : DatAnalyzer / Mäki opinion paper — morphology-aware FPD
+         : Hamburg perspective on hiPSC-CM limitations (Ismaili et al.)
+         : 3D spheroid geometry as FP variability source (Hwang et al.)
+    2024 : CardioMEA platform — scalable open analysis (Lee et al.)
+         : T-wave peak validates as APD90 surrogate (Ernault et al.)
+         : Temporal and spatial confounders quantified (Guerrelli et al.)
+         : KCNH2 mutation phenotyping in 3D tissues (Maurissen et al.)
+    2025 : UHD-CMOS-MEA field potential imaging (Matsuda et al.)
+         : Healthy vs. LQTS hiPSC-CM CiPA drug comparison (Park et al.)
+         : In silico MEA–tissue biophysical model (Botti et al.)
+    2026 : PhysioMEA — cardiac organoid BRV and 2D heatmaps (Weiser-Bitoun et al.)
+         : CardioScripts — combined AFM+MEA electromechanical analysis (Kabanov et al.)
+         : Stacking ensemble ML for TdP risk prediction (Pramudito et al.)
+```
+
 ## Transition from vendor-defined metrics to transparent, open analysis pipelines
 One of the most visible methodological shifts since 2022 has been the movement away from exclusive reliance on vendor-provided "black-box" software toward **open and inspectable analysis pipelines** specifically designed for cardiomyocyte electrophysiology.
 
@@ -32,10 +53,29 @@ Cardio PyMEA, introduced in 2022, represents an early example of this transition
 
 Together, these platforms illustrate a broader post-2022 trend toward **reproducibility, transparency, and explicit reporting of analysis parameters**, enabling investigators to critically assess how electrophysiological features are derived rather than relying on opaque vendor defaults.
 
+*Table 1. Open-source platforms for cardiomyocyte MEA analysis reviewed in this paper. FPD end convention refers to the definition used for the distal boundary of field potential duration. NR = not reported; NA = not available (source PDF not accessible).*
+
+| Platform | Year | Language | FPD end definition | Distinctive features |
+|---|---|---|---|---|
+| Cardio PyMEA (Dunham et al. 2022) | 2022 | Python | NR | Beat detection, LAT, conduction velocity, pacemaker origin estimation |
+| DatAnalyzer (Mäki 2023) | 2023 | Python | Baseline return | Morphology-aware classification (3 waveform types); inversion for only-high-peak signals |
+| CardioMEA (Lee et al. 2024) | 2024 | NA | NA | High-density MEA; disease phenotyping; interactive visualisation |
+| PhysioMEA (Weiser-Bitoun et al. 2026) | 2026 | MATLAB | R-to-T-wave peak | 1D + 2D spatiotemporal heatmaps; beat rate variability (45 measures) |
+| CardioScripts / Myopyth (Kabanov et al. 2026) | 2026 | Python | NR | Combined AFM + MEA; electromechanical coupling and decoupling analysis |
+
 ## Increasing emphasis on explicit and physiologically motivated fiducial definitions
 Alongside the development of open software, there has been a growing emphasis on **how fiducial points are defined and justified** in cardiomyocyte MEA studies. The opinion paper by Mäki (2023) describes a concrete, algorithmic approach that reflects trends increasingly seen in recent literature: beat-aligned segmentation followed by averaging across multiple beats to reduce noise, threshold-based identification of depolarization onset relative to FP amplitude, and definition of FPD end as the return of the signal toward baseline rather than the repolarization peak.
 
 This approach contrasts with traditional peak-to-peak FPD definitions that prioritize robustness and ease of automated detection over physiological specificity. Since 2022, an increasing number of cardiomyocyte MEA studies explicitly state whether FPD is measured peak-to-peak, start-to-end, or via derivative-based surrogates, particularly in the context of drug testing and safety pharmacology (Dunham et al. 2022; Lee et al. 2024). Such transparency is essential because differences in fiducial definitions can substantially influence measured drug effects and rate-corrected FPD or QT surrogates. The physiological validity of specific annotation conventions has received renewed attention: Ernault et al. (2024) demonstrated using simultaneous MEA and sharp-microelectrode recordings from cardiomyocyte monolayers that the peak time of the T wave in FPs correlates strongly with APD90, but only when the T wave displays a biphasic pattern. Importantly, this implies that the T-wave peak — when the waveform is biphasic — is better anchored to APD90 (the established clinical repolarization endpoint) than a baseline-return convention, which captures an interval extending into the repolarization tail beyond APD90; the two definitions measure different quantities rather than one being universally more correct. This finding underscores the importance of waveform morphology assessment prior to any fiducial-point-based analysis.
+
+*Table 2. Field potential duration (FPD) fiducial definition conventions observed in the reviewed literature. APD90 = action potential duration to 90% repolarization. The two baseline-anchored conventions measure different physiological quantities and are not interchangeable.*
+
+| Convention | FPD start | FPD end | Physiological target | Studies |
+|---|---|---|---|---|
+| Peak-to-peak | First positive peak (R) | T-wave peak | ~APD90 (biphasic T-wave only) | Widely used vendor default |
+| Baseline-return | Depolarization onset | Signal return to baseline (threshold-based) | Full repolarization (APD95–100 range) | Mäki 2023 |
+| R-to-T-peak | Depolarization peak (R) | T-wave peak | APD90 (biphasic T-wave only) | Weiser-Bitoun et al. 2026 |
+| T-wave peak (empirically validated) | — | T-wave peak | APD90 — confirmed for biphasic T-waves by simultaneous AP recording | Ernault et al. 2024 |
 
 ## Rate correction of field potential duration (FPDc)
 A methodologically critical step in cardiomyocyte MEA analysis is the correction of FPD for spontaneous beating rate. Since hiPSC-CM cultures beat spontaneously at variable rates, the beating rate can change substantially during recordings. Therefore, raw FPD values are confounded by rate-dependent repolarization effects. By analogy with the clinical QT interval, the Fridericia formula ($FPDcF = FPD/RR^{0.33}$) has become the most widely used correction in the post-2022 literature, applied across multi-centre studies and high-throughput screening platforms (Park et al. 2025).
@@ -45,7 +85,31 @@ However, the application of clinical rate-correction formulas to in vitro hiPSC-
 ## Morphology-aware analysis and handling of heterogeneous FP waveforms
 Another important methodological development in recent cardiomyocyte MEA studies is the recognition that **FP waveform morphology varies substantially** across preparations, maturation states, and recording conditions. Pacemaker-like signals lacking a pronounced high peak, waveforms dominated by a single peak, and mixed or atypical morphologies are frequently observed in hiPSC-CM cultures.
 
-The opinion paper explicitly addresses these cases by proposing morphology-aware handling strategies, including specialized interpretation of pacemaker-like signals and pragmatic preprocessing — such as waveform inversion for "only high peak" cases, an approach internally validated in that work but not yet independently replicated — prior to standard analysis (Mäki 2023). While not all post-2022 studies adopt identical rules, there is growing recognition of waveform heterogeneity: post-2022 studies increasingly report morphology-dependent exclusion criteria or analysis branches, reflecting an awareness that a single canonical FP shape cannot be assumed (Ernault et al. 2024; Weiser-Bitoun et al. 2026). This represents a significant methodological maturation compared with earlier studies that implicitly assumed a single canonical FP shape. Nonetheless, fiducial definitions remain inconsistent across open platforms: PhysioMEA, for instance, defines FPD as the interval from the R-peak to the T-wave peak (Weiser-Bitoun et al. 2026) rather than the return to baseline (Mäki 2023), and FPD values are therefore not directly comparable across tools without explicit knowledge of the underlying convention.
+The opinion paper explicitly addresses these cases by proposing morphology-aware handling strategies, including specialized interpretation of pacemaker-like signals and pragmatic preprocessing — such as waveform inversion for "only high peak" cases, an approach internally validated in that work but not yet independently replicated — prior to standard analysis (Mäki 2023).
+
+*Figure 2. Schematic of a morphology-aware field potential analysis pipeline. Waveform classification determines the analysis branch applied before FPD measurement; rate correction is applied after.*
+
+```mermaid
+flowchart TD
+    A[Raw MEA recording] --> B[Beat detection and segmentation]
+    B --> C[Beat averaging to reduce noise]
+    C --> D{Waveform morphology\nclassification}
+    D -->|Non-pacemaker\nhigh peak + trough + repolarization| E[Standard fiducial analysis]
+    D -->|Pacemaker-like\nno high peak| F[Pacemaker fiducial analysis]
+    D -->|Only high peak\nno depolarization trough| G[Signal inversion\nthen pacemaker analysis]
+    D -->|Noise / unclassifiable| H[Electrode exclusion]
+    E --> I[FPD measurement]
+    F --> I
+    G --> I
+    I --> J{FPD end convention}
+    J -->|T-wave peak| K[APD90 surrogate\nErnault et al. 2024]
+    J -->|Baseline return| L[Full repolarization\nMäki 2023]
+    K --> M[Rate correction — FPDcF]
+    L --> M
+    M --> N[Pharmacological and safety interpretation]
+```
+
+While not all post-2022 studies adopt identical rules, there is growing recognition of waveform heterogeneity: post-2022 studies increasingly report morphology-dependent exclusion criteria or analysis branches, reflecting an awareness that a single canonical FP shape cannot be assumed (Ernault et al. 2024; Weiser-Bitoun et al. 2026). This represents a significant methodological maturation compared with earlier studies that implicitly assumed a single canonical FP shape. Nonetheless, fiducial definitions remain inconsistent across open platforms: PhysioMEA, for instance, defines FPD as the interval from the R-peak to the T-wave peak (Weiser-Bitoun et al. 2026) rather than the return to baseline (Mäki 2023), and FPD values are therefore not directly comparable across tools without explicit knowledge of the underlying convention.
 
 ## Model complexity: limitations of 2D-centric heuristics in 3D cardiomyocyte systems
 Since 2022, the increasing adoption of **three-dimensional (3D) cardiomyocyte models**, including spheroids and engineered cardiac tissues, has further stressed FP analysis heuristics originally developed for two-dimensional monolayers. Experimental studies focusing on hiPSC-CM spheroids have demonstrated that three-dimensionality contributes substantially to FP variability, reflecting differences in tissue thickness, cell–electrode coupling, and propagation patterns (Hwang et al. 2023).
