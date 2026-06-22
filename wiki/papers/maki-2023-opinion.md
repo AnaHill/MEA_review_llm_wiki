@@ -3,7 +3,7 @@
 **Authors:** Antti-Juhana Mäki, PhD  
 **Year:** 2023  
 **Venue:** Zenodo (report, version v2; iterative document with version control)  
-**File:** [[raw/MEAopinion_Ver2.html]]  
+**File:** [[raw/maki-2023-opinion.html]]  
 **DOI:** 10.5281/zenodo.16760143
 
 > **Note:** This is an opinion / methodology paper by the same author as main.md. The document is explicitly designed to be iterative and versioned for transparency. The HTML file contains embedded base64 figures and a full reference list.
