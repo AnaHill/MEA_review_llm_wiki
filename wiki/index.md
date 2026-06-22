@@ -9,7 +9,6 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 <!-- One entry per ingested source paper. Link to wiki/papers/<firstauthor-year-keyword>.md -->
 
 - [Altrocchi et al. 2023](papers/altrocchi-2023-chronic.md) — Chronic (up to 96 h) FP + impedance assay; 13 reference compounds incl. hERG trafficking inhibitors (delayed effects), TKi, cytotoxics; tolerance-interval QC. Janssen, *Front Pharmacol*.
-- [Blinova et al. 2025](papers/blinova-2025-highthroughput.md) — ⚠️ Possibly hallucinated citation. High-throughput FP evaluation for proarrhythmic risk, FDA group. *J Pharmacol Toxicol Methods* 122:1–10. *(no DOI; unverified)*
 - [Botti et al. 2025](papers/botti-2025-insilico.md) — In silico MEA modeling for hiPSC-CM heterogeneous tissue drug testing. *J Physiology*. DOI: 10.1113/JP287276. *(PDF unavailable — Wiley blocked)*
 - [Dunham et al. 2022](papers/dunham-2022-cardiopyemea.md) — Cardio PyMEA open-source Python tool: beat detection, LAT mapping, CV, FPD, power-law stats. UCLA, *PLOS ONE*.
 - [Ernault et al. 2024](papers/ernault-2024-interpretation.md) — FP and LEAP interpretation from hiPSC-CM monolayers; T-wave biphasic morphology required for APD90 correlation; LEAP reflects spatial average APD. *Am J Physiol* 326:H800–H811.
@@ -56,7 +55,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 ## Analyses
 
-- [Citation issues in main.md](citation-issues.md) — 4 errors fixed in main.md (Meyer→Dunham, Tsai→Hwang, Schulz→Ismaili, Steemans→Altrocchi); Pramudito 2026 confirmed real (DOI added); Blinova 2025 still unverified.
+- [Citation issues in main.md](citation-issues.md) — 4 errors fixed (Meyer→Dunham, Tsai→Hwang, Schulz→Ismaili, Steemans→Altrocchi); Pramudito 2026 confirmed real; Blinova 2025 unverified and removed from draft.
 - [Critical assessment: Mäki 2023 claims](critical-assessment-maki-claims.md) — All four methodological claims checked. Claim 1 (first positive peak) holds with qualifier. Claim 2 (baseline return) challenged by Ernault 2024 (T-peak = APD90). Claim 3 (pacemaker cells excluded) partially evidenced. Claim 4 (only-high-peak inversion) credible internally but needs external validation.
 
 ---

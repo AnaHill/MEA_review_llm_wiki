@@ -66,15 +66,21 @@ Errors and uncertainties identified during the ingest of all 14 references. Four
 
 ---
 
-## Likely hallucinated citation
+## Removed citation
 
-### 5. "Blinova et al. 2025" — unverifiable
+### 5. "Blinova et al. 2025" — removed from main.md
 
-main.md cites: Blinova, K., Vicente, J., Strauss, D.G. 2025. *Journal of Pharmacological and Toxicological Methods* 122:1–10.
+main.md previously cited: Blinova, K., Vicente, J., Strauss, D.G. 2025. *Journal of Pharmacological and Toxicological Methods* 122:1–10.
 
-**Assessment:** K. Blinova is a real FDA researcher (see verified 2018 Cell Reports paper). J. Vicente and D.G. Strauss are also real FDA/CDER researchers. However, no DOI was given, and the specific 2025 paper could not be confirmed during ingestion searches. Volume 122 page 1 of JPTM is a plausible slot but cannot be confirmed without database access. The Blinova 2018 paper exists; a 2025 follow-up from the same group is plausible but unverified.
+**Assessment:** K. Blinova is a real FDA researcher. However, no DOI was ever provided, and the citation could not be verified during ingestion. It was used four times in main.md to support claims about CiPA, high-throughput screening, and multi-parameter feature sets.
 
-**Action:** Search PubMed / JPTM directly for "Blinova 2025 JPTM" or DOI lookup before submitting. If not found, substitute with Blinova et al. 2018 (Cell Reports) or remove.
+**Resolution (2026-06-22):** Removed from main.md entirely. Replacements made:
+- CiPA reference → Park et al. 2025 (confirmed, uses CiPA drugs)
+- Fridericia formula prevalence → Park et al. 2025
+- Multi-parameter feature sets → Altrocchi et al. 2023; Matsuda et al. 2025
+- First introductory sentence → citation removed (Ismaili et al. 2023 retained)
+
+The wiki stub page, index entry, and references.md entry have all been deleted. The record of the hallucination is kept here in citation-issues.md only.
 
 ---
 
@@ -96,5 +102,5 @@ main.md cites: Pramudito, A., Fuadah, N., Kim, Y.S., Lim, K.M. 2026. *Annals of 
 | Tsai et al. 2023 | Completely fabricated authors | Hwang et al. 2023 | Critical |
 | Schulz et al. 2023 | Wrong author order | Ismaili et al. 2023 | Moderate |
 | Steemans et al. 2023 | Wrong first author cited | Altrocchi et al. 2023 | Moderate |
-| Blinova et al. 2025 | Likely hallucinated | Unverified | Critical (if submitting) |
+| Blinova et al. 2025 | Unverified — removed | Removed from main.md | Resolved |
 | Pramudito et al. 2026 | ~~Unverified~~ Confirmed real; DOI added | — | Resolved |

@@ -10,8 +10,6 @@ Default format: APA. Change this note and tell the LLM if you need a different s
 
 Altrocchi, C., Van Ammel, K., Steemans, M., Kreir, M., Tekle, F., Teisman, A., Gallacher, D. J., & Lu, H. R. (2023). Evaluation of chronic drug-induced electrophysiological and cytotoxic effects using human-induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs). *Frontiers in Pharmacology*, *14*, 1229960. https://doi.org/10.3389/fphar.2023.1229960
 
-Blinova, K., Vicente, J., & Strauss, D. G. (2025). High-throughput evaluation of cardiac electrophysiology and proarrhythmic risk using extracellular field potentials from human iPSC-derived cardiomyocytes. *Journal of Pharmacological and Toxicological Methods*, *122*, 1–10. ⚠️ *No DOI provided in source; citation unverified — see citation-issues.md.*
-
 Botti, S., Krause, R., & Pavarino, L. F. (2025). In silico modelling of multi-electrode arrays for enhancing cardiac drug testing on hiPSC-CM heterogeneous tissues. *The Journal of Physiology*. https://doi.org/10.1113/JP287276
 
 Dunham, C. S., Mackenzie, M. E., Nakano, H., Kim, A. R., Nakano, A., Stieg, A. Z., & Gimzewski, J. K. (2022). Cardio PyMEA: A user-friendly, open-source Python application for cardiomyocyte microelectrode array analysis. *PLOS ONE*, *17*(5), e0266647. https://doi.org/10.1371/journal.pone.0266647 *(main.md cites as "Meyer et al. 2022" — wrong authors)*

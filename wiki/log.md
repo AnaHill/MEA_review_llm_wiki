@@ -90,6 +90,10 @@ PDF: raw/kabanov-2026-cardioscripts.pdf (renamed from 1-s2.0-S1746809426006798-m
 
 PDF: raw/weiser-bitoun-2026-physiomea.pdf (renamed from 1-s2.0-S0022282825002111-main.pdf). Journal of Molecular and Cellular Cardiology 210:137–149. Open-source MATLAB platform for cardiac organoid MEA; 1D/2D biomarker heatmaps; BRV analysis with 45 measures; FPD defined as R-to-T-peak (differs from Mäki 2023 baseline-return convention). Created wiki/papers/weiser-bitoun-2026-physiomea.md. Added to main.md "Transition from vendor-defined metrics" section (new platform) and "Morphology-aware analysis" section (FPD definitional inconsistency example).
 
+## [2026-06-22] draft | main.md academic quality pass — 6 fixes
+
+Blinova 2025 (unverified citation) removed from all 4 locations; replaced with Park 2025, Altrocchi 2023, Matsuda 2025. Motivation section reworded: self-citation phrasing fixed; Mäki 2023 claims qualified ("argues that", "propagating monolayer"). Fiducial section: added clarification that T-peak = APD90 and baseline-return measures a different quantity. Morphology section: "clear trend" claim supported with Ernault 2024 and Weiser-Bitoun 2026; waveform inversion noted as internally validated but not independently replicated. Updated wiki/citation-issues.md.
+
 ## [2026-06-22] query | Critical assessment of Mäki 2023 boldest claims against current literature
 
 Created wiki/critical-assessment-maki-claims.md. Claim 1 (first positive peak = neighbor artifact) holds with qualifier. Claim 2 (FPD end = baseline return) challenged by Ernault 2024 (T-wave peak = APD90 for biphasic T-waves).
