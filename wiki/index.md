@@ -16,12 +16,14 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 - [Guerrelli et al. 2024](papers/guerrelli-2024-hipscm.md) — Temporal and spatial confounders in hiPSC-CM MEA; 22.6% beating rate drift in 20 min; outer rows 8.8 bpm faster; FPD increases 257 ms over 14 days; KCNJ2 up 27.5× over 30 days. *Am J Physiol* 327:H12–H27.
 - [Hwang et al. 2023](papers/hwang-2023-spheroids.md) — 3D spheroid geometry (electrode contact area, size) is a primary FP variability source; in silico models; E-4031 IC50 8 nM. *Front Physiol* 14:1123190.
 - [Ismaili et al. 2023](papers/ismaili-2023-hamburg.md) — Hamburg perspective review: hiPSC-CM If/ICa,T expression, AP heterogeneity, FPDc limitations, automated patch clamp. *Front Physiol* 14:1132165.
+- [Kabanov et al. 2026](papers/kabanov-2026-cardioscripts.md) — CardioScripts/Myopyth: open-source Python for combined AFM+MEA electromechanical analysis; electromechanical coupling/decoupling; lidocaine validation. CEITEC MU, *Biomed Signal Process Control* 120:110125.
 - [Lee et al. 2024](papers/lee-2024-cardiomea.md) — CardioMEA: comprehensive open-source MEA analysis platform for cardiac diseases and drug responses. ETH Zürich / UZH, *Front Physiol* 15:1472126. *(PDF 62 MB — content not extracted)*
 - [Mäki 2023](papers/maki-2023-opinion.md) — Opinion: first positive FP peak is neighbor-cell artifact; FPD end = baseline return not repolarization peak; morphology-aware handling for pacemaker/inverted signals; DatAnalyzer. Zenodo v2.
 - [Matsuda et al. 2025](papers/matsuda-2025-uhd.md) — Sony UHD-CMOS-MEA (236,880 electrodes, 13.5 µm pitch): field potential imaging (FPI), excitation origin count, propagation area, CV maps. *Toxicol Sci* 208(2):384–400.
 - [Maurissen et al. 2024](papers/maurissen-2024-mutation.md) — Isogenic KCNH2 N588D (LQTS) / N588K (SQTS) compound-heterozygous mutations; 3D CTSs with mesenchymal cells required for TdP-like waveforms; FPDcF 82–323 ms across genotypes. *Sci Rep* 14:2586.
 - [Park et al. 2025](papers/park-2025-cardiotoxicity.md) — Healthy vs. LQTS (KCNH2 c.453delC) hiPSC-CMs with 8 CiPA drugs; FPD20/FPDc20 metric; 10× LQTS sensitivity to E-4031. *Korean J Physiol Pharmacol* 29(2):257–269.
 - [Pramudito et al. 2026](papers/pramudito-2026-ensemble.md) — Stacking ensemble ML for TdP risk assessment from hiPSC-CM MEA features. *Ann Biomed Eng* 54:1334–1344. DOI: 10.1007/s10439-026-03978-1.
+- [Weiser-Bitoun et al. 2026](papers/weiser-bitoun-2026-physiomea.md) — PhysioMEA: open-source MATLAB for cardiac organoid MEA; 1D/2D biomarker heatmaps (AMP, Slope, PPD, FPD); BRV with 45 HRV-adapted measures; Brugada Syndrome (SCN5A) validation. Technion, *J Mol Cell Cardiol* 210:137–149.
 
 ---
 
@@ -58,4 +60,4 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 ---
 
-*Last updated: 2026-06-17*
+*Last updated: 2026-06-22*

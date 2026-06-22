@@ -24,6 +24,8 @@ Hwang, M., Lee, S.-J., Lim, C.-H., Shim, E. B., & Lee, H.-A. (2023). The three-d
 
 Ismaili, D., Schulz, C., Eschenhagen, T., Christ, T., Hansen, A., Mika, D., Koivumäki, J. T., & Horváth, A. (2023). Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective. *Frontiers in Physiology*, *14*, 1132165. https://doi.org/10.3389/fphys.2023.1132165 *(main.md cites as "Schulz et al. 2023" — Ismaili is first author)*
 
+Kabanov, D. A., Vrana, S., Beckerová, D., Rotrekl, V., Pesl, M., & Přibyl, J. (2026). A comprehensive system of algorithms for characterization of cardiomyocyte mechanical and electrical function. *Biomedical Signal Processing and Control*, *120*, 110125. https://doi.org/10.1016/j.bspc.2026.110125
+
 Lee, J., Duperrex, E., El-Battrawy, I., Hohn, A., Saguner, A. M., Duru, F., Emmenegger, V., Cyganek, L., Hierlemann, A., & Ulusan, H. (2024). CardioMEA: comprehensive data analysis platform for studying cardiac diseases and drug responses. *Frontiers in Physiology*, *15*, 1472126. https://doi.org/10.3389/fphys.2024.1472126
 
 Mäki, A.-J. (2023). *Opinion: The correct way to analyze FP signals* (Version v2) [Report]. Zenodo. https://doi.org/10.5281/zenodo.16760143
@@ -35,3 +37,5 @@ Maurissen, T. L., Kawatou, M., López-Dávila, V., Minatoya, K., Yamashita, J. K
 Park, N. K., Park, Y.-G., Choi, J.-H., Choi, H. K., Moon, S.-H., Park, S.-J., & Choi, S. W. (2025). Human induced pluripotent stem cell-cardiomyocytes for cardiotoxicity assessment: a comparative study of arrhythmia-inducing drugs with multi-electrode array analysis. *Korean Journal of Physiology & Pharmacology*, *29*(2), 257–269. https://doi.org/10.4196/kjpp.24.413
 
 Pramudito, A., Fuadah, N., Kim, Y. S., & Lim, K. M. (2026). Stacking ensemble machine learning for cardiac safety assessment using hiPSC-CM MEA data. *Annals of Biomedical Engineering*, *54*, 1334–1344. https://doi.org/10.1007/s10439-026-03978-1
+
+Weiser-Bitoun, I., Mazgaoker, S., Assayag, S., Davoodi, M., Alexandrovich, A., & Yaniv, Y. (2026). PhysioMEA: Signal processing platform for rate and rhythm analysis of multi-electrode array cardiac electrophysiological recordings. *Journal of Molecular and Cellular Cardiology*, *210*, 137–149. https://doi.org/10.1016/j.yjmcc.2025.11.006

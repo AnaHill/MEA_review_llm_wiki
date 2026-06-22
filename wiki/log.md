@@ -81,3 +81,15 @@ No PDF available. 2026 paper unverifiable at time of ingestion; no DOI in main.m
 ## [2026-06-17] query | Citation errors in main.md — identified 4 confirmed errors and 2 unverifiable references
 
 Created wiki/citation-issues.md documenting: Meyer→Dunham (authors hallucinated), Tsai→Hwang (authors hallucinated), Schulz→Ismaili (first-author order error), Steemans→Altrocchi (first-author order error), Blinova 2025 (unverified, possibly hallucinated), Pramudito 2026 (future date, unverifiable).
+
+## [2026-06-22] ingest | Kabanov 2026 — A comprehensive system of algorithms for characterization of cardiomyocyte mechanical and electrical function
+
+PDF: raw/kabanov-2026-cardioscripts.pdf (renamed from 1-s2.0-S1746809426006798-main.pdf). Biomedical Signal Processing and Control 120:110125. Open-source Python CardioScripts/Myopyth for combined AFM+MEA electromechanical analysis. Created wiki/papers/kabanov-2026-cardioscripts.md. Added to main.md "High-throughput and longitudinal assays" section (electromechanical feature expansion).
+
+## [2026-06-22] ingest | Weiser-Bitoun 2026 — PhysioMEA: Signal processing platform for rate and rhythm analysis of multi-electrode array cardiac electrophysiological recordings
+
+PDF: raw/weiser-bitoun-2026-physiomea.pdf (renamed from 1-s2.0-S0022282825002111-main.pdf). Journal of Molecular and Cellular Cardiology 210:137–149. Open-source MATLAB platform for cardiac organoid MEA; 1D/2D biomarker heatmaps; BRV analysis with 45 measures; FPD defined as R-to-T-peak (differs from Mäki 2023 baseline-return convention). Created wiki/papers/weiser-bitoun-2026-physiomea.md. Added to main.md "Transition from vendor-defined metrics" section (new platform) and "Morphology-aware analysis" section (FPD definitional inconsistency example).
+
+## [2026-06-22] ingest | Lee 2024 — CardioMEA (second download attempt)
+
+PDF: raw/lee-2024-cardiomea-b.pdf (renamed from fphys-15-1472126.pdf). Same paper as raw/lee-2024-cardiomea.pdf (Front Physiol 15:1472126); second copy also exceeds 20 MB read limit. Wiki stub wiki/papers/lee-2024-cardiomea.md unchanged.
