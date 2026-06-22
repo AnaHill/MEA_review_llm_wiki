@@ -35,7 +35,7 @@ Opinion paper with annotated figures demonstrating the proposed analysis on real
 |---|---|---|
 | High peak + depolarization trough + repolarization peak | Non-pacemaker cell | Standard analysis above |
 | No high peak | Pacemaker cell | Start FPD from when signal begins drifting; no high peak to skip |
-| Only high peak (no depolarization trough) | Distance artifact or reversed coupling | Flip signal (multiply by −1), then analyze as pacemaker cell |
+| Only high peak (no depolarization trough) | Distance between the dominant cell and the measurement electrode | Flip signal (multiply by −1), then analyze as pacemaker cell |
 
 ## Findings
 

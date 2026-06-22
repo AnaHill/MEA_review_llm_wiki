@@ -57,6 +57,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 ## Analyses
 
 - [Citation issues in main.md](citation-issues.md) — 4 errors fixed in main.md (Meyer→Dunham, Tsai→Hwang, Schulz→Ismaili, Steemans→Altrocchi); Pramudito 2026 confirmed real (DOI added); Blinova 2025 still unverified.
+- [Critical assessment: Mäki 2023 claims](critical-assessment-maki-claims.md) — All four methodological claims checked. Claim 1 (first positive peak) holds with qualifier. Claim 2 (baseline return) challenged by Ernault 2024 (T-peak = APD90). Claim 3 (pacemaker cells excluded) partially evidenced. Claim 4 (only-high-peak inversion) credible internally but needs external validation.
 
 ---
 
