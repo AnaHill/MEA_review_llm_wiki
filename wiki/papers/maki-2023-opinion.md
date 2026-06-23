@@ -2,9 +2,9 @@
 
 **Authors:** Antti-Juhana Mäki, PhD  
 **Year:** 2023  
-**Venue:** Zenodo (report, version v2; iterative document with version control)  
+**Venue:** Zenodo (report, version v3; iterative document with version control)  
 **File:** [[raw/maki-2023-opinion.html]]  
-**DOI:** 10.5281/zenodo.16760143
+**DOI:** 10.5281/zenodo.20807245
 
 > **Note:** This is an opinion / methodology paper by the same author as main.md. The document is explicitly designed to be iterative and versioned for transparency. The HTML file contains embedded base64 figures and a full reference list.
 
@@ -41,7 +41,7 @@ Opinion paper with annotated figures demonstrating the proposed analysis on real
 
 - Conventional peak-to-peak FPD systematically underestimates the true repolarization duration because it stops at the repolarization peak rather than baseline return
 - The first positive high peak is a neighbor-cell depolarization artifact; including it as FPD start shifts the measurement window and conflates conduction delay with repolarization duration
-- Pacemaker-like cells (no high peak) require different fiducial logic and are frequently misclassified or excluded without justification in published studies
+- Pacemaker-like cells (no high peak) require different fiducial logic; most published analysis pipelines do not describe how these waveforms are handled, creating an undisclosed source of inter-study variability
 - The "only high peak" morphology is addressable by signal inversion before applying pacemaker-cell analysis
 
 ## Limitations
