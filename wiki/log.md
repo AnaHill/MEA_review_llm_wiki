@@ -94,6 +94,11 @@ PDF: raw/weiser-bitoun-2026-physiomea.pdf (renamed from 1-s2.0-S0022282825002111
 
 Blinova 2025 (unverified citation) removed from all 4 locations; replaced with Park 2025, Altrocchi 2023, Matsuda 2025. Motivation section reworded: self-citation phrasing fixed; Mäki 2023 claims qualified ("argues that", "propagating monolayer"). Fiducial section: added clarification that T-peak = APD90 and baseline-return measures a different quantity. Morphology section: "clear trend" claim supported with Ernault 2024 and Weiser-Bitoun 2026; waveform inversion noted as internally validated but not independently replicated. Updated wiki/citation-issues.md.
 
+
+## [2026-06-22] ingest | Lee 2024 — CardioMEA (second download attempt)
+
+PDF: raw/lee-2024-cardiomea-b.pdf (renamed from fphys-15-1472126.pdf). Same paper as raw/lee-2024-cardiomea.pdf (Front Physiol 15:1472126); second copy also exceeds 20 MB read limit. Wiki stub wiki/papers/lee-2024-cardiomea.md unchanged.
+
 ## [2026-06-22] query | Critical assessment of Mäki 2023 boldest claims against current literature
 
 Created wiki/critical-assessment-maki-claims.md. Claim 1 (first positive peak = neighbor artifact) holds with qualifier. Claim 2 (FPD end = baseline return) challenged by Ernault 2024 (T-wave peak = APD90 for biphasic T-waves).
@@ -102,6 +107,9 @@ Created wiki/critical-assessment-maki-claims.md. Claim 1 (first positive peak = 
 
 Four changes applied to the HTML source: (1) typographic error fixed — "distance between the dominant cell and the cell" → "...and the measurement electrode" (only-high-peak section); (2) "propagating hiPSC-CM monolayer" qualifier added to the main opinion statement and the numbered FP peak list; (3) note added that baseline-return captures APD₉₅–100, a distinct quantity from the T-wave peak (APD₉₀); (4) note added in Limitations that the inverted only-high-peak signal is structurally similar to Fig.5 pacemaker waveform (internal validation), but has not been independently replicated and lacks a formal inversion-vs-exclusion criterion. Updated wiki/papers/maki-2023-opinion.md (pacemaker exclusion finding reworded) and wiki/critical-assessment-maki-claims.md (Claim 4 typographic error marked resolved).
 
-## [2026-06-22] ingest | Lee 2024 — CardioMEA (second download attempt)
+Additionally, wiki/critical-assessment-maki-claims.md Claim 3 corrected: "frequently misclassified or excluded without justification" was an LLM over-interpretation not present in the HTML source. Mäki 2023 only claims pacemaker signals require different fiducial logic.
 
-PDF: raw/lee-2024-cardiomea-b.pdf (renamed from fphys-15-1472126.pdf). Same paper as raw/lee-2024-cardiomea.pdf (Front Physiol 15:1472126); second copy also exceeds 20 MB read limit. Wiki stub wiki/papers/lee-2024-cardiomea.md unchanged.
+## [2026-06-25] lint | Citation issues resolved; wiki documentation cleaned up
+
+All citation errors originally identified in main.md have been corrected in the draft: (1) Meyer et al. 2022 → Dunham et al. 2022 (authors completely fabricated); (2) Tsai et al. 2023 → Hwang et al. 2023 (authors completely fabricated); (3) Schulz et al. 2023 → Ismaili et al. 2023 (wrong author order); (4) Steemans et al. 2023 → Altrocchi et al. 2023 (wrong first author cited); (5) Blinova 2025 — unverified citation removed from main.md entirely (replaced with Park 2025, Altrocchi 2023, Matsuda 2025); (6) Pramudito 2026 — confirmed real (DOI: 10.1007/s10439-026-03978-1). wiki/citation-issues.md deleted; error annotations removed from wiki/references.md; wiki/index.md updated.
+

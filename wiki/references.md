@@ -4,23 +4,21 @@ Auto-maintained citation list. The LLM appends one entry here on every ingest, s
 
 Default format: APA. Change this note and tell the LLM if you need a different style (e.g. IEEE, Vancouver, Chicago).
 
-> **Note on citation errors:** Four references below differ from how they are cited in main.md. Corrected names are used here. See [wiki/citation-issues.md](citation-issues.md) for full details.
-
 ---
 
 Altrocchi, C., Van Ammel, K., Steemans, M., Kreir, M., Tekle, F., Teisman, A., Gallacher, D. J., & Lu, H. R. (2023). Evaluation of chronic drug-induced electrophysiological and cytotoxic effects using human-induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs). *Frontiers in Pharmacology*, *14*, 1229960. https://doi.org/10.3389/fphar.2023.1229960
 
 Botti, S., Krause, R., & Pavarino, L. F. (2025). In silico modelling of multi-electrode arrays for enhancing cardiac drug testing on hiPSC-CM heterogeneous tissues. *The Journal of Physiology*. https://doi.org/10.1113/JP287276
 
-Dunham, C. S., Mackenzie, M. E., Nakano, H., Kim, A. R., Nakano, A., Stieg, A. Z., & Gimzewski, J. K. (2022). Cardio PyMEA: A user-friendly, open-source Python application for cardiomyocyte microelectrode array analysis. *PLOS ONE*, *17*(5), e0266647. https://doi.org/10.1371/journal.pone.0266647 *(main.md cites as "Meyer et al. 2022" — wrong authors)*
+Dunham, C. S., Mackenzie, M. E., Nakano, H., Kim, A. R., Nakano, A., Stieg, A. Z., & Gimzewski, J. K. (2022). Cardio PyMEA: A user-friendly, open-source Python application for cardiomyocyte microelectrode array analysis. *PLOS ONE*, *17*(5), e0266647. https://doi.org/10.1371/journal.pone.0266647
 
 Ernault, A. C., Al-Shama, R. F. M., Li, J., Devalla, H. D., de Groot, J. R., Coronel, R., Vigmond, E., & Boukens, B. J. (2024). Interpretation of field and LEAP potentials recorded from cardiomyocyte monolayers. *American Journal of Physiology–Heart and Circulatory Physiology*, *326*(3), H800–H811. https://doi.org/10.1152/ajpheart.00463.2023
 
 Guerrelli, D., Pressman, J., Salameh, S., & Posnack, N. (2024). hiPSC-CM electrophysiology: impact of temporal changes and study parameters on experimental reproducibility. *American Journal of Physiology–Heart and Circulatory Physiology*, *327*(1), H12–H27. https://doi.org/10.1152/ajpheart.00631.2023
 
-Hwang, M., Lee, S.-J., Lim, C.-H., Shim, E. B., & Lee, H.-A. (2023). The three-dimensionality of the hiPSC-CM spheroid contributes to the variability of the field potential. *Frontiers in Physiology*, *14*, 1123190. https://doi.org/10.3389/fphys.2023.1123190 *(main.md cites as "Tsai et al. 2023" — wrong authors)*
+Hwang, M., Lee, S.-J., Lim, C.-H., Shim, E. B., & Lee, H.-A. (2023). The three-dimensionality of the hiPSC-CM spheroid contributes to the variability of the field potential. *Frontiers in Physiology*, *14*, 1123190. https://doi.org/10.3389/fphys.2023.1123190
 
-Ismaili, D., Schulz, C., Eschenhagen, T., Christ, T., Hansen, A., Mika, D., Koivumäki, J. T., & Horváth, A. (2023). Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective. *Frontiers in Physiology*, *14*, 1132165. https://doi.org/10.3389/fphys.2023.1132165 *(main.md cites as "Schulz et al. 2023" — Ismaili is first author)*
+Ismaili, D., Schulz, C., Eschenhagen, T., Christ, T., Hansen, A., Mika, D., Koivumäki, J. T., & Horváth, A. (2023). Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective. *Frontiers in Physiology*, *14*, 1132165. https://doi.org/10.3389/fphys.2023.1132165
 
 Kabanov, D. A., Vrana, S., Beckerová, D., Rotrekl, V., Pesl, M., & Přibyl, J. (2026). A comprehensive system of algorithms for characterization of cardiomyocyte mechanical and electrical function. *Biomedical Signal Processing and Control*, *120*, 110125. https://doi.org/10.1016/j.bspc.2026.110125
 

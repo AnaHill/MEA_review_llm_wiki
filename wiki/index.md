@@ -55,9 +55,8 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 ## Analyses
 
-- [Citation issues in main.md](citation-issues.md) — 4 errors fixed (Meyer→Dunham, Tsai→Hwang, Schulz→Ismaili, Steemans→Altrocchi); Pramudito 2026 confirmed real; Blinova 2025 unverified and removed from draft.
-- [Critical assessment: Mäki 2023 claims](critical-assessment-maki-claims.md) — All four methodological claims checked. Claim 1 (first positive peak) holds with qualifier. Claim 2 (baseline return) challenged by Ernault 2024 (T-peak = APD90). Claim 3 (pacemaker cells excluded) partially evidenced. Claim 4 (only-high-peak inversion) credible internally but needs external validation.
+- [Critical assessment: Mäki 2023 claims](critical-assessment-maki-claims.md) — All four methodological claims checked against post-2022 literature. Claim 1 holds with "propagating monolayer" qualifier. Claim 2 reframed (baseline-return and T-peak measure different quantities). Claim 3 correctly states different fiducial logic is needed. Claim 4 internally validated; typographic error corrected in HTML source.
 
 ---
 
-*Last updated: 2026-06-22*
+*Last updated: 2026-06-25*
