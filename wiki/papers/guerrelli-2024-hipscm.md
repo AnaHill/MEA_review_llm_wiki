@@ -1,3 +1,7 @@
+---
+tags: [temporal-confounder, maturation, rate-correction, 2d-culture]
+---
+
 # hiPSC-CM electrophysiology: impact of temporal changes and study parameters on experimental reproducibility
 
 **Authors:** Devon Guerrelli, Jenna Pressman, Shatha Salameh, Nikki Posnack  
@@ -41,3 +45,4 @@ Cited repeatedly in main.md. Provides key quantitative evidence for the temporal
 - [[wiki/papers/ismaili-2023-hamburg.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/papers/park-2025-cardiotoxicity.md]]
+- [[wiki/papers/maki-2023-opinion.md]]

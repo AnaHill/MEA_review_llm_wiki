@@ -1,3 +1,7 @@
+---
+tags: [fiducial-definition, waveform-morphology]
+---
+
 # Interpretation of field and LEAP potentials recorded from cardiomyocyte monolayers
 
 **Authors:** Auriane C. Ernault, Rushd F. M. Al-Shama, Jiuru Li, Harsha D. Devalla, Joris R. de Groot, Ruben Coronel, Edward Vigmond, Bastiaan J. Boukens  
@@ -33,3 +37,5 @@ Cited in main.md as direct empirical support for the morphology-aware analysis a
 - [[wiki/papers/ismaili-2023-hamburg.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/maki-2023-opinion.md]]
+- [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
+- [[wiki/papers/dunham-2022-cardiopyemea.md]]

@@ -1,3 +1,7 @@
+---
+tags: [cardiac-safety, disease-model, lqts, rate-correction]
+---
+
 # Human induced pluripotent stem cell-cardiomyocytes for cardiotoxicity assessment: a comparative study of arrhythmia-inducing drugs with multi-electrode array analysis
 
 **Authors:** Na Kyeong Park, Yun-Gwi Park, Ji-Hee Choi, Hyung Kyu Choi, Sung-Hwan Moon, Soon-Jung Park, Seong Woo Choi  
@@ -40,3 +44,5 @@ Cited in main.md as: (1) a use case for patient-specific LQTS hiPSC-CMs in MEA c
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/papers/ismaili-2023-hamburg.md]]
+- [[wiki/papers/pramudito-2026-ensemble.md]]
+- [[wiki/papers/guerrelli-2024-hipscm.md]]

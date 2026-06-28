@@ -1,3 +1,7 @@
+---
+tags: [in-silico, 3d-model]
+---
+
 # In silico modelling of multi-electrode arrays for enhancing cardiac drug testing on hiPSC-CM heterogeneous tissues
 
 **Authors:** S. Botti, R. Krause, L.F. Pavarino  
@@ -31,3 +35,4 @@ Cited in main.md alongside Matsuda 2025 as representative of the emerging in sil
 - [[wiki/papers/matsuda-2025-uhd.md]]
 - [[wiki/papers/hwang-2023-spheroids.md]]
 - [[wiki/papers/ernault-2024-interpretation.md]]
+- [[wiki/papers/maurissen-2024-mutation.md]]

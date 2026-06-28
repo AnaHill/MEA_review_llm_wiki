@@ -1,3 +1,7 @@
+---
+tags: [machine-learning, cardiac-safety]
+---
+
 # Stacking ensemble machine learning for cardiac safety assessment using hiPSC-CM MEA data
 
 **Authors:** A. Pramudito, N. Fuadah, Y.S. Kim, K.M. Lim  
@@ -28,4 +32,5 @@ Cited in main.md as an example of machine learning integration with MEA data for
 ## See also
 - [[wiki/papers/matsuda-2025-uhd.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
-- [[wiki/citation-issues.md]]
+- [[wiki/papers/park-2025-cardiotoxicity.md]]
+- [[wiki/papers/weiser-bitoun-2026-physiomea.md]]

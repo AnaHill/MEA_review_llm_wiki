@@ -1,3 +1,7 @@
+---
+tags: [high-throughput, spatial-analysis, cardiac-safety, conduction-velocity]
+---
+
 # Advanced cardiotoxicity profiling using field potential imaging with UHD-CMOS-MEA in human iPSC-derived cardiomyocytes
 
 **Authors:** Noriaki Matsuda, N. Nagafuku, K. Matsuda, Y. Ishibashi, T. Taniguchi, Y. Matsushita, N. Miyamoto, T. Yoshinaga, I. Suzuki  
@@ -40,3 +44,5 @@ Central to the main.md review. Represents the state of the art in MEA spatial re
 - [[wiki/papers/botti-2025-insilico.md]]
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
+- [[wiki/papers/pramudito-2026-ensemble.md]]
+- [[wiki/papers/lee-2024-cardiomea.md]]

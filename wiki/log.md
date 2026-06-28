@@ -109,6 +109,10 @@ Four changes applied to the HTML source: (1) typographic error fixed — "distan
 
 Additionally, wiki/critical-assessment-maki-claims.md Claim 3 corrected: "frequently misclassified or excluded without justification" was an LLM over-interpretation not present in the HTML source. Mäki 2023 only claims pacemaker signals require different fiducial logic.
 
+## [2026-06-28] lint | Graph improvement B+A — YAML frontmatter tags and cross-paper wikilinks added to all 15 wiki/papers/*.md files
+
+Added YAML frontmatter `tags:` blocks to all 15 paper pages (tag vocabulary: open-platform, fiducial-definition, waveform-morphology, rate-correction, temporal-confounder, maturation, 3d-model, in-silico, high-throughput, spatial-analysis, cardiac-safety, disease-model, lqts, machine-learning, electromechanical, conduction-velocity, review-perspective, brv, 2d-culture). Expanded cross-paper `[[wikilinks]]` in all See also sections so the Obsidian/Foam graph forms thematic clusters rather than a pure star topology. Side fixes: stale `[[wiki/citation-issues.md]]` links removed from dunham, hwang, pramudito; stale citation-error blockquotes removed from altrocchi, dunham, hwang, ismaili; kabanov "Not currently in main.md" note updated.
+
 ## [2026-06-25] lint | Citation issues resolved; wiki documentation cleaned up
 
 All citation errors originally identified in main.md have been corrected in the draft: (1) Meyer et al. 2022 → Dunham et al. 2022 (authors completely fabricated); (2) Tsai et al. 2023 → Hwang et al. 2023 (authors completely fabricated); (3) Schulz et al. 2023 → Ismaili et al. 2023 (wrong author order); (4) Steemans et al. 2023 → Altrocchi et al. 2023 (wrong first author cited); (5) Blinova 2025 — unverified citation removed from main.md entirely (replaced with Park 2025, Altrocchi 2023, Matsuda 2025); (6) Pramudito 2026 — confirmed real (DOI: 10.1007/s10439-026-03978-1). wiki/citation-issues.md deleted; error annotations removed from wiki/references.md; wiki/index.md updated.

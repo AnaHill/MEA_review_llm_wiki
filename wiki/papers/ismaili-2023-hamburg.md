@@ -1,3 +1,7 @@
+---
+tags: [review-perspective, rate-correction, maturation]
+---
+
 # Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective
 
 **Authors:** Djemail Ismaili, Carl Schulz, Thomas Eschenhagen, Torsten Christ, Arne Hansen, Donatus Mika, Jussi T. Koivumäki, András Horváth  
@@ -6,7 +10,6 @@
 **File:** [[raw/schulz-2023-hamburg.pdf]]  
 **DOI:** 10.3389/fphys.2023.1132165
 
-> **Citation note:** main.md lists first author as "Schulz, C." with "Ismaili, D." last. The actual PDF has Ismaili as first author; Schulz is second. This is a citation ordering error in the review draft.
 
 ## Contribution
 A Hamburg-group review of the opportunities and limitations of hiPSC-CM electrophysiological models, covering ion channel expression (If, ICa,T), action potential recording challenges, atrial cell models, and automated patch-clamp platforms.
@@ -31,3 +34,5 @@ Cited in main.md as a source for the broad challenges and opportunities of hiPSC
 - [[wiki/papers/ernault-2024-interpretation.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/park-2025-cardiotoxicity.md]]
+- [[wiki/papers/maki-2023-opinion.md]]
+- [[wiki/papers/maurissen-2024-mutation.md]]

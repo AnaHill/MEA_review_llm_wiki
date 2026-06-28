@@ -1,3 +1,7 @@
+---
+tags: [open-platform, disease-model, high-throughput]
+---
+
 # CardioMEA: comprehensive data analysis platform for studying cardiac diseases and drug responses
 
 **Authors:** J. Lee, E. Duperrex, I. El-Battrawy, A. Hohn, A.M. Saguner, F. Duru, V. Emmenegger, L. Cyganek, A. Hierlemann, H. Ulusan  
@@ -33,3 +37,5 @@ Cited in main.md as a state-of-the-art open analysis platform (2024), representi
 ## See also
 - [[wiki/papers/dunham-2022-cardiopyemea.md]]
 - [[wiki/papers/matsuda-2025-uhd.md]]
+- [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
+- [[wiki/papers/kabanov-2026-cardioscripts.md]]

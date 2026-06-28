@@ -1,3 +1,7 @@
+---
+tags: [open-platform, fiducial-definition, waveform-morphology, rate-correction, review-perspective]
+---
+
 # Opinion: The correct way to analyze FP signals
 
 **Authors:** Antti-Juhana Mäki, PhD  
@@ -62,3 +66,5 @@ This is the evaluative anchor for main.md. The review explicitly uses this opini
 - [[wiki/papers/ernault-2024-interpretation.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/ismaili-2023-hamburg.md]]
+- [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
+- [[wiki/papers/dunham-2022-cardiopyemea.md]]

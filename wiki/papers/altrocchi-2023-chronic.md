@@ -1,3 +1,7 @@
+---
+tags: [temporal-confounder, high-throughput, cardiac-safety, 2d-culture]
+---
+
 # Evaluation of chronic drug-induced electrophysiological and cytotoxic effects using human-induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs)
 
 **Authors:** C. Altrocchi, K. Van Ammel, M. Steemans, M. Kreir, F. Tekle, A. Teisman, D.J. Gallacher, H.R. Lu  
@@ -7,7 +11,6 @@
 **DOI:** 10.3389/fphar.2023.1229960  
 **Affiliation:** Janssen Pharmaceutica NV, Beerse, Belgium
 
-> **Citation note:** main.md cites as "Steemans et al. 2023." Actual first author is C. Altrocchi; Steemans is third author. Minor author-order error in the review draft.
 
 ## Contribution
 Establishes a chronic MEA cardiotoxicity assay (up to 96 h) using hiPSC-CMs, validating it against 13 mechanistically diverse reference compounds. Demonstrates that combined FP and impedance monitoring distinguishes electrophysiological cardiotoxicity from cytotoxicity, and that tolerance intervals derived from large DMSO datasets provide objective QC thresholds.
@@ -50,3 +53,4 @@ Cited in main.md as the primary source for chronic assay design, tolerance inter
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/park-2025-cardiotoxicity.md]]
 - [[wiki/papers/matsuda-2025-uhd.md]]
+- [[wiki/papers/pramudito-2026-ensemble.md]]

@@ -1,3 +1,7 @@
+---
+tags: [open-platform, fiducial-definition, waveform-morphology, spatial-analysis, brv]
+---
+
 # PhysioMEA: Signal processing platform for rate and rhythm analysis of multi-electrode array cardiac electrophysiological recordings
 
 **Authors:** Weiser-Bitoun, I., Mazgaoker, S., Assayag, S., Davoodi, M., Alexandrovich, A., Yaniv, Y.  
@@ -53,3 +57,5 @@ Directly relevant to the review's core argument on transparent, open analysis pl
 - [[wiki/papers/lee-2024-cardiomea.md]]
 - [[wiki/papers/ernault-2024-interpretation.md]]
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
+- [[wiki/papers/guerrelli-2024-hipscm.md]]
+- [[wiki/papers/ismaili-2023-hamburg.md]]

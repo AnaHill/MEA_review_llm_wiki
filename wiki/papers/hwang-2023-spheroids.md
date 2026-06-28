@@ -1,3 +1,7 @@
+---
+tags: [3d-model, in-silico, waveform-morphology]
+---
+
 # The three-dimensionality of the hiPSC-CM spheroid contributes to the variability of the field potential
 
 **Authors:** Minki Hwang, Su-Jin Lee, Chul-Hyun Lim, Eun Bo Shim, Hyang-Ae Lee  
@@ -6,7 +10,6 @@
 **File:** [[raw/hwang-2023-spheroids.pdf]]  
 **DOI:** 10.3389/fphys.2023.1123190
 
-> **Citation note:** main.md cites this as "Tsai, Y.-H., Cho, S.K. and Boheler, K.R. 2023" with a slightly different title. The actual authors (Hwang et al., Korea) are completely different. This appears to be a hallucinated citation in the review draft; the paper title points to the correct paper but the author attribution is fabricated.
 
 ## Contribution
 Uses in silico modeling to demonstrate that the geometric and physical properties of 3D spheroid structures — not just cell-to-cell heterogeneity — are a primary source of field potential variability when hiPSC-CM spheroids are placed on MEA electrodes.
@@ -35,4 +38,5 @@ Cited in main.md as evidence that 3D cultures introduce geometric confounders be
 ## See also
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/ernault-2024-interpretation.md]]
-- [[wiki/citation-issues.md]]
+- [[wiki/papers/botti-2025-insilico.md]]
+- [[wiki/papers/maki-2023-opinion.md]]

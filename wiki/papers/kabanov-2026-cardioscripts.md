@@ -1,3 +1,7 @@
+---
+tags: [open-platform, electromechanical]
+---
+
 # A comprehensive system of algorithms for characterization of cardiomyocyte mechanical and electrical function
 
 **Authors:** Kabanov, D.A., Vrana, S., Beckerová, D., Rotrekl, V., Pesl, M., Přibyl, J.  
@@ -42,10 +46,11 @@ Introduces **CardioScripts** (also referred to as **Myopyth**), an open-source P
 
 Represents an extension of MEA-based feature sets beyond electrical endpoints into the electromechanical domain. Relevant to the "High-throughput and longitudinal assays" section as an example of expanded multi-parameter analysis, and to the "Transition to open pipelines" section as another open-source Python platform for MEA analysis. The electromechanical coupling/decoupling feature is a novel biomarker category not captured by conventional FPD-centric workflows.
 
-Not currently in main.md citation list (as of June 2026 ingest); warrant addition in the feature-set expansion discussion.
+Cited in main.md in the feature-set expansion discussion.
 
 ## See also
 
 - [[wiki/papers/dunham-2022-cardiopyemea.md]]
 - [[wiki/papers/lee-2024-cardiomea.md]]
 - [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
+- [[wiki/papers/matsuda-2025-uhd.md]]

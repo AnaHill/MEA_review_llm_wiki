@@ -1,3 +1,7 @@
+---
+tags: [open-platform, fiducial-definition, conduction-velocity]
+---
+
 # Cardio PyMEA: A user-friendly, open-source Python application for cardiomyocyte microelectrode array analysis
 
 **Authors:** Christopher S. Dunham, Madelynn E. Mackenzie, Haruko Nakano, Alexis R. Kim, Atsushi Nakano, Adam Z. Stieg, James K. Gimzewski  
@@ -6,7 +10,6 @@
 **File:** [[raw/dunham-2022-cardiopyemea.pdf]]  
 **DOI:** 10.1371/journal.pone.0266647
 
-> **Citation note:** main.md cites this as "Meyer, T., Bridge, J.H.B. and Schröder, J.R.B. 2022" — the author names are completely wrong (hallucinated). The actual authors are Dunham et al. from UCLA. The title in main.md is also slightly modified ("An open-source" vs. "A user-friendly, open-source"). This is a major citation error.
 
 ## Contribution
 Cardio PyMEA is an open-source Python application for cardiomyocyte MEA analysis that makes the analytical pipeline explicit and reproducible, replacing vendor black-box software.
@@ -38,4 +41,6 @@ Cited in main.md as an early example (2022) of the transition from vendor-define
 
 ## See also
 - [[wiki/papers/lee-2024-cardiomea.md]]
-- [[wiki/citation-issues.md]]
+- [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
+- [[wiki/papers/kabanov-2026-cardioscripts.md]]
+- [[wiki/papers/maki-2023-opinion.md]]
