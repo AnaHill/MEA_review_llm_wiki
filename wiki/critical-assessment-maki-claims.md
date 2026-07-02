@@ -30,9 +30,13 @@ The opinion paper itself acknowledges in its Limitations section that applicabil
 
 ## Claim 2 — FPD end = baseline return, not the repolarization peak
 
-**Verdict: The most challenged claim in the available literature; requires reframing.**
+**Verdict: The most challenged claim in the available literature; requires reframing — but the challenge is weaker than first stated once two caveats are made explicit.**
 
 Ernault et al. (2024) used simultaneous FP and sharp-microelectrode AP recordings and found that the **T-wave peak time correlates with APD90** — but only when the T-wave is biphasic. APD90 is the established clinical target (the quantity the QT interval is meant to capture). If T-wave peak = APD90, then the conventional peak-based FPD definition is actually *better anchored to the validated electrophysiological endpoint* than the baseline-return definition.
+
+**Two caveats that materially weaken this as a challenge to a hiPSC-CM-specific claim:**
+1. **Species gap.** This correlation was established in **neonatal rat ventricular myocyte (NRVM)** monolayers, not hiPSC-CMs — Ernault's separate hiPSC-CM experiments (LEAP, Figs. 5–6) test a different question (local vs. spatially-averaged APD) and do not themselves validate T-peak↔APD90 in hiPSC-CMs. Mäki (2023) makes a claim specifically about hiPSC-CM FPD conventions, so this is indirect, cross-species evidence, not a direct empirical rebuttal.
+2. **Prevalence.** Biphasic T-waves — the precondition for the correlation to hold at all — occurred in only a **minority** of the monolayers Ernault et al. recorded. For the majority (monophasic T-waves), T-wave peak does **not** reliably indicate APD90 either. So even setting the species gap aside, "T-peak is better anchored to APD90" is true only for a minority of real recordings; for most, neither T-peak nor baseline-return is an empirically validated APD90 surrogate.
 
 The baseline-return definition measures something closer to APD95–100 (the very tail of repolarization). That is physiologically real — the repolarization tail matters for early afterdepolarization (EAD) risk — but it is **not** what the field has validated as the APD surrogate, and it will systematically inflate FPD relative to the clinical QT benchmark.
 
@@ -42,14 +46,14 @@ Weiser-Bitoun et al. (2026, PhysioMEA) adopting R-to-T-peak operationally is a s
 
 | Target | Better fiducial | Evidence |
 |---|---|---|
-| APD90 correspondence | T-wave peak (biphasic T-wave only) | Ernault et al. 2024 |
+| APD90 correspondence | T-wave peak (biphasic T-wave only — a minority morphology, and shown in NRVM not hiPSC-CM) | Ernault et al. 2024 |
 | Full repolarization completion | Baseline return | Mäki 2023 (physiological reasoning) |
 
 These are genuinely different quantities. The claim as written implies baseline return is simply more correct; the literature says it measures something *different*, not something better in all contexts.
 
 **Recommended fix:** Instead of *"baseline return is more correct"*, use *"baseline return captures complete repolarization, distinct from the APD90-anchored T-peak convention; the choice depends on the quantity of interest."*
 
-**One point where the literature strengthens the morphology argument:** For non-biphasic T-waves, Ernault et al. (2024) show that T-wave peak does *not* reliably indicate APD90 either. In those cases, neither definition is validated as an APD90 surrogate — which supports the broader argument that waveform morphology must be assessed before any fiducial-point-based analysis is interpreted.
+**One point where the literature strengthens the morphology argument:** For non-biphasic T-waves — which Ernault et al. (2024) report as the *majority* of recorded monolayers, not an edge case — T-wave peak does *not* reliably indicate APD90 either. In those cases, neither definition is validated as an APD90 surrogate — which supports the broader argument that waveform morphology must be assessed before any fiducial-point-based analysis is interpreted, and implies that a universally applicable, validated FPD-end convention for hiPSC-CMs largely remains an open problem rather than one resolved in T-peak's favor.
 
 ---
 
@@ -96,7 +100,7 @@ The *existence* of pacemaker-like cells in hiPSC-CM cultures is well-supported: 
 | Claim | Verdict | Key challenge | Priority |
 |---|---|---|---|
 | 1. First positive peak = neighbor artifact | Holds; preparation-specific | Needs "propagating monolayer" qualifier; not valid for synchronous/3D preparations | Low — minor wording fix |
-| 2. FPD end = baseline return | Challenged by literature | Ernault 2024: T-peak = APD90 for biphasic T-waves; baseline return measures a different (not invalid) quantity | High — reframe as two distinct targets |
+| 2. FPD end = baseline return | Partially challenged; weaker than first stated | Ernault 2024: T-peak = APD90 for biphasic T-waves, but shown in NRVM (not hiPSC-CM) and biphasic is a minority morphology; baseline return measures a different (not invalid) quantity | High — reframe as two distinct, both-incomplete targets |
 | 3. Pacemaker cells need different analysis | Correct; logically necessary | "Frequently excluded" language was not in the paper — removed from wiki | Resolved — claim accurately restated |
 | 4. Only-high-peak → inversion | Credible internal observation | Typographic error corrected; diagnosis criterion and external replication still needed | Medium — criterion to be specified in future work |
 
@@ -104,7 +108,7 @@ The *existence* of pacemaker-like cells in hiPSC-CM cultures is well-supported: 
 
 ## References consulted
 
-- [[wiki/papers/ernault-2024-interpretation.md]] — T-wave peak correlates with APD90 for biphasic T-waves (direct empirical challenge to Claim 2)
+- [[wiki/papers/ernault-2024-interpretation.md]] — T-wave peak correlates with APD90 for biphasic T-waves, but in NRVM (not hiPSC-CM) monolayers and only for a minority T-wave morphology (indirect, qualified challenge to Claim 2)
 - [[wiki/papers/hwang-2023-spheroids.md]] — 3D geometry alters FP morphology and propagation (limits scope of Claim 1)
 - [[wiki/papers/ismaili-2023-hamburg.md]] — If/ICa,T expression and nodal-like subtypes (supports existence of pacemaker-like cells, Claim 3)
 - [[wiki/papers/guerrelli-2024-hipscm.md]] — Analysis pipeline without pacemaker morphology handling (consistent with Claim 3B by silence)

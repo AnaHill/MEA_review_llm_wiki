@@ -33,7 +33,7 @@ Provides a mechanistic electrophysiological interpretation of field potential (F
 ## Relevance to our paper
 Cited in main.md as direct empirical support for the morphology-aware analysis argument: the finding that Tpeak↔APD90 correlation depends on T-wave morphology underscores the importance of waveform classification before fiducial-point-based analysis. Also relevant to LEAP as an alternative recording modality.
 
-**Caveat for main.md (flagged, not yet applied):** main.md's current citation of this paper ("Increasing emphasis on..." section) describes the finding as coming from "cardiomyocyte monolayers" without noting that the core FP/APD/CV correlation analysis was performed in **NRVM (rat)**, not hiPSC-CM, monolayers — a species gap relevant to a hiPSC-CM-focused review. It also doesn't mention that biphasic T-waves (required for the correlation to hold at all) were a **minority** finding, which arguably strengthens rather than weakens the review's morphology-aware-analysis argument, but is a stronger caveat than currently conveyed.
+**main.md updated (2026-07-02):** the "Increasing emphasis on..." section now specifies NRVM (rat) rather than generic "cardiomyocyte monolayers," and notes that the biphasic T-wave morphology required for the Tpeak↔APD90 correlation was observed in only a minority of recorded monolayers.
 
 ## See also
 - [[wiki/papers/ismaili-2023-hamburg.md]]
