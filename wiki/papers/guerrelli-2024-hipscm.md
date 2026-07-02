@@ -46,3 +46,5 @@ Cited repeatedly in main.md. Provides key quantitative evidence for the temporal
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/papers/park-2025-cardiotoxicity.md]]
 - [[wiki/papers/maki-2023-opinion.md]]
+- [[wiki/papers/fetterman-2024-maturation.md]]
+- [[wiki/hipsc-cm-maturation.md]]

@@ -14,6 +14,8 @@ Dunham, C. S., Mackenzie, M. E., Nakano, H., Kim, A. R., Nakano, A., Stieg, A. Z
 
 Ernault, A. C., Al-Shama, R. F. M., Li, J., Devalla, H. D., de Groot, J. R., Coronel, R., Vigmond, E., & Boukens, B. J. (2024). Interpretation of field and LEAP potentials recorded from cardiomyocyte monolayers. *American Journal of Physiology–Heart and Circulatory Physiology*, *326*(3), H800–H811. https://doi.org/10.1152/ajpheart.00463.2023
 
+Fetterman, K. A., Blancard, M., Lyra-Leite, D. M., Vanoye, C. G., Fonoudi, H., Jouni, M., DeKeyser, J.-M. L., Lenny, B., Sapkota, Y., George, A. L., Jr., & Burridge, P. W. (2024). Independent compartmentalization of functional, metabolic, and transcriptional maturation of hiPSC-derived cardiomyocytes. *Cell Reports*, *43*, 114160. https://doi.org/10.1016/j.celrep.2024.114160
+
 Guerrelli, D., Pressman, J., Salameh, S., & Posnack, N. (2024). hiPSC-CM electrophysiology: impact of temporal changes and study parameters on experimental reproducibility. *American Journal of Physiology–Heart and Circulatory Physiology*, *327*(1), H12–H27. https://doi.org/10.1152/ajpheart.00631.2023
 
 Hwang, M., Lee, S.-J., Lim, C.-H., Shim, E. B., & Lee, H.-A. (2023). The three-dimensionality of the hiPSC-CM spheroid contributes to the variability of the field potential. *Frontiers in Physiology*, *14*, 1123190. https://doi.org/10.3389/fphys.2023.1123190

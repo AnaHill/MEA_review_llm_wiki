@@ -12,6 +12,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 - [Botti et al. 2025](papers/botti-2025-insilico.md) — In silico MEA modeling for hiPSC-CM heterogeneous tissue drug testing. *J Physiology*. DOI: 10.1113/JP287276. *(PDF unavailable — Wiley blocked)*
 - [Dunham et al. 2022](papers/dunham-2022-cardiopyemea.md) — Cardio PyMEA open-source Python tool: beat detection, LAT mapping, CV, FPD, power-law stats. UCLA, *PLOS ONE*.
 - [Ernault et al. 2024](papers/ernault-2024-interpretation.md) — FP and LEAP interpretation from hiPSC-CM monolayers; T-wave biphasic morphology required for APD90 correlation; LEAP reflects spatial average APD. *Am J Physiol* 326:H800–H811.
+- [Fetterman et al. 2024](papers/fetterman-2024-maturation.md) — Functional, metabolic, and transcriptional maturation of hiPSC-CMs are induced independently by different medium components; CardioExcyte96 impedance + patch-clamp AP/Nav + Seahorse OCR + RNA-seq. Northwestern, *Cell Reports* 43:114160.
 - [Guerrelli et al. 2024](papers/guerrelli-2024-hipscm.md) — Temporal and spatial confounders in hiPSC-CM MEA; 22.6% beating rate drift in 20 min; outer rows 8.8 bpm faster; FPD increases 257 ms over 14 days; KCNJ2 up 27.5× over 30 days. *Am J Physiol* 327:H12–H27.
 - [Hwang et al. 2023](papers/hwang-2023-spheroids.md) — 3D spheroid geometry (electrode contact area, size) is a primary FP variability source; in silico models; E-4031 IC50 8 nM. *Front Physiol* 14:1123190.
 - [Ismaili et al. 2023](papers/ismaili-2023-hamburg.md) — Hamburg perspective review: hiPSC-CM If/ICa,T expression, AP heterogeneity, FPDc limitations, automated patch clamp. *Front Physiol* 14:1132165.
@@ -31,7 +32,9 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 <!-- Core theoretical or conceptual ideas that recur across multiple papers. -->
 <!-- Create a dedicated page only when a concept appears in 2+ papers or is central to the argument. -->
 
-*(none yet — candidates: FPDcF, CiPA, hiPSC-CM maturity, hERG trafficking, 3D vs 2D cultures)*
+- [hiPSC-CM maturation status as a confound for MEA-derived metrics](hipsc-cm-maturation.md) — Maturation fractionates into independent functional/metabolic/transcriptional axes (Fetterman et al. 2024); no validated MEA-only maturation reference values exist in the 2022+ literature; culture-age electrophysiological drift already quantified (Guerrelli et al. 2024) but not linked to a maturity metric.
+
+*(other candidates: FPDcF, CiPA, hERG trafficking, 3D vs 2D cultures)*
 
 ---
 
@@ -49,7 +52,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 <!-- Gaps, open questions, and contradictions identified across the literature. -->
 <!-- This section directly feeds the contribution and introduction sections of the draft. -->
 
-*(none yet)*
+- **No MEA-derived reference values for hiPSC-CM maturation staging.** See [hiPSC-CM maturation status](hipsc-cm-maturation.md). Raised by a colleague of the researcher (2026-07-02); limits inter-study comparability and clinical translation, and any future index should be scoped to the electrophysiological axis only, since maturation compartments are independently regulated (Fetterman et al. 2024).
 
 ---
 
@@ -59,4 +62,4 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 ---
 
-*Last updated: 2026-06-25*
+*Last updated: 2026-07-02*
