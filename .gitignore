@@ -4,6 +4,11 @@ temp.md
 db/
 .qmd/
 
+# Regenerable PDF figure/page renders and caption dumps (scratch space for
+# visual figure analysis — see analyze_figures.py / render_pdf_pages.py).
+# Conclusions belong in wiki/papers/<paper>.md, not here.
+figure_analysis/
+
 # Large binary files — add to git LFS if you need version history on these
 *.zip
 *.tar.gz
