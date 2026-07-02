@@ -1,0 +1,252 @@
+FIGURE ANALYSIS - ernault-2024-interpretation.pdf
+======================================================================
+
+
+Page 1:
+(NRVMs) or inducible pluripotent stem cells (IPS) ( 3). The
+preparation is suitable for high-throughput studies and has
+been applied for not only drug screening or genetic interven-
+tions ( 4) but also mechanistic studies. Electrophysiological
+----------------------------------------------------------------------
+
+Page 3:
+The experimental procedure is schematically depicted in
+Fig. 1A.T od eﬁne the physiological range of conduction veloc-
+ities and action potential durations in the in silico model, we
+ﬁrst recorded ﬁeld potentials from cultured NRVMs from
+----------------------------------------------------------------------
+
+Page 3:
+ﬁrst recorded ﬁeld potentials from cultured NRVMs from
+which we derived activation maps ( Fig. 1, B and C). A single
+transmembrane action potential was recorded within theﬁeld
+of 60 extracellular recording electrodes (Fig. 1C).
+----------------------------------------------------------------------
+
+Page 3:
+transmembrane action potential was recorded within theﬁeld
+of 60 extracellular recording electrodes (Fig. 1C).
+We then used an in silico model based on the mathemati-
+cal model of neonatal rat ventricular action potential.
+----------------------------------------------------------------------
+
+Page 3:
+cal model of neonatal rat ventricular action potential.
+Simulated propagation and repolarization are seen in Fig. 1,
+D and E. Without adjustments, the conduction velocity was
+much faster than observed during experimental measure-
+----------------------------------------------------------------------
+
+Page 3:
+160 ± 9 ms). Therefore, we adjusted different conductivities
+in the in silico model ( Table 1 )t oo b t a i na c t i o np o t e n t i a l
+durations that were similar to the experimentally measured
+durations. Moreover, the intercellular coupling was reduced
+----------------------------------------------------------------------
+
+Page 3:
+conduction velocities below and above baseline conditions.
+Figure 1. In silico multielectrode array (MEA) model of neonatal rat ventricular myocytes (NRVMs). A: study design: neonatal rat ventricular myocytes
+(NRVMs) were cultured on a multielectrode array (MEA, 60 recording electrodes) and electrical activity was measured on day 4. Simulations were per-
+formed using an NRVM ionic model with similar cell density and electrode grid characteristics. B:a c t i v a t i o nm a pf r o mt h e6 0e l e c t r o d e sg r i do nw h i c h
+----------------------------------------------------------------------
+
+Page 4:
+5.15 of the baseline g
+Na value. Figure 2 A shows ﬁeld poten-
+tials at normal gNa (/C3 1.05) in black and at high gNa (/C3 5.15) in
+blue. The amplitude of the ﬁeld potential (RS complex) was
+----------------------------------------------------------------------
+
+Page 4:
+much larger at high gNa than at normal gNa (5.7 vs. 3.7 mV,
+respectively). Figure 2 B shows two examples of activation
+maps obtained in simulations where gNa was normal (left)
+and high gNa (right), leading to conduction velocities of 30
+----------------------------------------------------------------------
+
+Page 4:
+wave correlated positively with the conduction velocity ( r ¼
+0.96 and r ¼ 0.90, respectively, P < 0.001) ( Fig. 2 C). These
+results indicate that both the amplitude of the ﬁeld poten-
+tial and the d V/dtmin of the downslope of the RS complex
+----------------------------------------------------------------------
+
+Page 4:
+refractory period (S2). We calculated the local conduction ve-
+locity at two locations marked A and B in Fig. 2, D and E.T h e
+conduction velocity varied between 6 and 26 cm/s across the
+monolayers. Both the amplitude of the ﬁeld potential and
+----------------------------------------------------------------------
+
+Page 4:
+cance. Local conduction velocity did not change after
+premature stimulation (Fig. 2G), whereas ﬁeld potential am-
+plitude and dV/dt
+min became signiﬁcantly smaller (Fig. 2, H
+----------------------------------------------------------------------
+
+Page 4:
+plitude and dV/dt
+min became signiﬁcantly smaller (Fig. 2, H
+and J). The latter suggests that these parameters do not pre-
+dict conduction velocity in each situation.
+----------------------------------------------------------------------
+
+Page 4:
+showed only a positive T wave that ended before the end of
+the action potential (Fig. 3A). Figure 3B shows a ﬁeld potential
+with a biphasic T wave and indicates its proposed relation
+with the transmembrane potential. To validate this relation,
+----------------------------------------------------------------------
+
+Page 4:
+with the transmembrane potential. To validate this relation,
+we used an NRVM in silico model. Figure 3C shows the simu-
+lated transmembrane potential and ﬁeld potential at the
+same location and supports the experimental ﬁndings that
+----------------------------------------------------------------------
+
+Page 4:
+shorten the action potential and, accordingly, theﬁeld poten-
+tial. Figure 4 shows that T up and T peak correlated positively
+with APD50 and APD90 over a wide range of action potential
+durations, respectively. Altogether, APD90 correlated with the
+----------------------------------------------------------------------
+
+Page 4:
+local extracellular action potential (LEAP) through high-fre-
+quency stimulation at a single electrode site ( 26). Figure 5A
+shows LEAPs from iPSC-derived cardiomyocytes with an
+atrial (left) and ventricular (right) action potential shape.
+----------------------------------------------------------------------
+
+Page 4:
+repolarization phase in the atrial but not the ventricular
+myocytes (Fig. 5B). The duration of the ﬁeld potential (T
+peak)
+is shorter than the APD in atrial but longer than the APD in
+----------------------------------------------------------------------
+
+Page 4:
+ventricular myocytes. The mechanism underlying the forma-
+tion of LEAPs is unclear ( Fig. 5C). It has been assumed that
+high-frequency pulses cause electroporation leading tempo-
+rarily to small holes in the membrane ( 27). Assumably, elec-
+----------------------------------------------------------------------
+
+Page 4:
+outside the clamped region were not affected by the LEAP
+simulation (Fig. 5D).
+Table 1. Summary of the changes applied to the Wang
+ionic model
+----------------------------------------------------------------------
+
+Page 4:
+simulation (Fig. 5D).
+Table 1. Summary of the changes applied to the Wang
+ionic model
+Ionic Current Modifier, %
+----------------------------------------------------------------------
+
+Page 5:
+A tt h el o c a t i o nw h e r et h em e m b r a n ep o t e n t i a lw a s
+clamped (location Z in Fig. 5 D), we observed a transmem-
+brane potential of /C0 55 mV at rest and a peak voltage of
+/C0 35 mV ( Fig. 5 E, right) .A tt h ee x a c tl o c a t i o ni nt h ee x t r a c -
+----------------------------------------------------------------------
+
+Page 5:
+brane potential of /C0 55 mV at rest and a peak voltage of
+/C0 35 mV ( Fig. 5 E, right) .A tt h ee x a c tl o c a t i o ni nt h ee x t r a c -
+ellular space, we recorded an extracellular monophasic
+potential resembling the shape of a LEAP ( Fig. 5 E, right).
+----------------------------------------------------------------------
+
+Page 5:
+ellular space, we recorded an extracellular monophasic
+potential resembling the shape of a LEAP ( Fig. 5 E, right).
+However, this LEAP potential differed in amplitude and
+shape from the transmembrane potential at that location
+----------------------------------------------------------------------
+
+Page 5:
+shape from the transmembrane potential at that location
+before LEAP induction. Figure 5 F shows the overlay of the
+LEAP at location Z with the transmembrane potential
+recorded at location Z before the LEAP simulation.
+----------------------------------------------------------------------
+
+Page 5:
+model and measured the LEAP amplitude. The amplitude of
+the LEAP decreased when the resistance increased ( Fig. 5A).
+The amplitude of the transmembrane potential measured
+before LEAP induction did not change, indicating that the
+----------------------------------------------------------------------
+
+Page 5:
+current causing the LEAP signal was indeed coming from
+neighboring myocytes. Figure 5 B shows the superposition
+of transmembrane potential (black) and LEAP (red) simula-
+tions with different action potential shapes and coupling
+----------------------------------------------------------------------
+
+Page 5:
+20– 50.
+Figure 2. Field potential amplitude correlates with conduction velocity. A: ﬁeld potentials obtained from simulations in which the fast sodium channel
+conductance (gNa)w a sm o d iﬁed by a factor of 1.05 (left,l o wgNa) and 5.15 (right,h i g hgNa) of baseline conditions. B: example of two activation maps con-
+structed from simulations in which the fast sodium channel conductance ( gNa) was modi ﬁed by a factor 1.05 ( left,l o w gNa) and 5.15 ( right,h i g hgNa)o f
+----------------------------------------------------------------------
+
+Page 6:
+Figure 3. Comparison of ﬁeld potential and action potential characteristics. A: scatterplot between Tup and APD50,a n dT peak and APD90 determined in
+ﬁeld potentials and transmembrane potentials recorded using glass-pipette microelectrodes. Recordings were done in 15 monolayers at a spontaneous
+frequency varying between 450 and 1,000 ms intervals. Example of ﬁeld potential and action potential of NRVMs obtained in vitro (B) and in silico using
+----------------------------------------------------------------------
+
+Page 7:
+rants; AP duration was prolonged in the SE quadrant and
+shortened in the NE and SW quadrants ( Fig. 6 A). The ﬁeld
+potential and transmembrane potential durations were
+shorter compared with the baseline ( Fig. 6D). The overlay of
+----------------------------------------------------------------------
+
+Page 7:
+potential and transmembrane potential durations were
+shorter compared with the baseline ( Fig. 6D). The overlay of
+the LEAP at location Z with the transmembrane potential
+recorded at location Z before the LEAP simulation in Fig. 6E
+----------------------------------------------------------------------
+
+Page 7:
+the LEAP at location Z with the transmembrane potential
+recorded at location Z before the LEAP simulation in Fig. 6E
+illustrates that the LEAP potential deviated during all phases
+of the action potential from the local transmembrane poten-
+----------------------------------------------------------------------
+
+Page 7:
+extracellular potentials are called ﬁeld potentials ( 28– 30).
+Figure 4. Field potential duration correlates with action potential duration (APD) 20, 50, 80, and 90% of repolarization. Correlation between APD 20 (A),
+APD50 (B), APD80 (C), APD90 (D), and ﬁeld potential duration (at Tpeak or Tup) in the in silico Wang neonatal rat ventricular model (A–D) and in the O ’Hara
+human ventricular model (E–H). To prolong the APD, the (slow and rapid) delayed recti ﬁer potassium channel conductances were modiﬁed by a factor
+----------------------------------------------------------------------
+
+Page 8:
+Figure 5. Local extracellular action potential (LEAP).A: the upper trace shows ﬁeld potentials before LEAP induction recorded from a human induced plu-
+ripotent stem cell-derived (iPSC) atrial (ACM, left) and ventricular (VCM, right) cardiomyocyte. The lower traces show extracellular traces after LEAP
+induction at similar locations. B: overlay of normalized LEAP from atrial (red) and ventricular (black) iPSCs. C: correlation between ﬁeld potential duration
+----------------------------------------------------------------------
+
+Page 9:
+Figure 6. Local extracellular action potential (LEAP) in the presence of electrophysiological heterogeneities. A: LEAP simulations using a human atrial
+and ventricular, and neonatal rat ventricular model. Simulations were performed at 10%, 50%, and 200% of baseline intercellular coupling. B:o v e r l a yo f
+transmembrane potential (black) and LEAP (red) at the aforementioned coupling strengths using the aforementioned action potential models. C:a c t i v a -
+----------------------------------------------------------------------
+
+Page 10:
+result in an unreliable assessment of local repolarization as
+demonstrated in Fig. 3A. Differences in the action potential
+shape can be attributed to not only species differences but
+also differences in the developmental phase, pharmacology,
+----------------------------------------------------------------------
