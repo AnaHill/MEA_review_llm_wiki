@@ -16,7 +16,7 @@ The paper is in **[main.md](main.md)**.
 | Wiki pages | `wiki/` | LLM — paper summaries, concepts, gaps |
 | Paper draft | `main.md` | LLM writes, author directs |
 
-**Four operations (ask Claude Code):**
+**Four operations (ask agent):**
 - **Ingest** — drop a PDF into `raw/`, LLM reads it, creates a summary page, updates the wiki, appends citation
 - **Query** — ask anything; LLM reads the wiki and synthesizes an answer with citations
 - **Draft** — ask to write or rewrite any section of `main.md`
@@ -36,7 +36,7 @@ wiki/
   log.md           append-only operation log
   references.md    auto-maintained citation list (APA)
 main.md            paper draft — IMRaD sections, single file
-skills/            Claude Code skill definitions
+skills/            Agent skill definitions
 CLAUDE.md          wiki schema and LLM instructions
 llm-wiki.md        the wiki pattern explained
 ```
@@ -45,7 +45,7 @@ llm-wiki.md        the wiki pattern explained
 
 ## Tips
 
-- **Select a section** in `main.md` and say *"rewrite this"* — Claude edits only that section.
+- **Select a section** in `main.md` and say *"rewrite this"* — agent edits only that section.
 - **`[CITATION NEEDED]`** markers mean no supporting source was found — add the paper and re-ingest.
 - **Graph view** in Foam shows how paper pages link across the wiki — useful for spotting coverage gaps. Obsidian as well can be used.
 - **`wiki/references.md`** is copy-paste ready for submission; tell agent your citation style if not APA.

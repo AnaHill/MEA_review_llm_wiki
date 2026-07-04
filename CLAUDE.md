@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code when working in this repository.
+This file provides guidance to the coding agent (e.g. Claude Code, Codex, or similar) when working in this repository.
 
 ## What this repository is
 
@@ -19,7 +19,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 | `wiki/log.md` | Append-only chronological log of all operations. |
 | `wiki/references.md` | Auto-maintained citation list, populated on each ingest. |
 | `main.md` | Evolving paper draft — single file with IMRaD sections. |
-| `skills/` | Claude Code skill definitions. |
+| `skills/` | Agent skill definitions (Claude Code skill format). |
 
 ## Four operations
 
