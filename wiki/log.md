@@ -141,6 +141,14 @@ PDF: raw/fetterman-2024.pdf (27 pages, text-extracted via PyMuPDF since pdftoppm
 
 Added new literature-review subsection "Maturation status as an unresolved confound for MEA-derived metrics" between "Rate correction of FPD" and "Morphology-aware analysis" (main.md), citing Ismaili 2023, Guerrelli 2024, and the newly ingested Fetterman 2024, plus the unpublished Axion Biosystems AIMS #CM01 / ISSCR 2025 standardization effort (flagged as non-peer-reviewed). Abstract and Conclusion updated from "three" to "four" methodological gaps, with the fourth being the absence of MEA-derived maturation reference values. Timeline (Figure 1) given a 2024 entry for Fetterman et al. Fetterman 2024 added to main.md References. Cross-linked wiki/papers/ismaili-2023-hamburg.md and wiki/papers/guerrelli-2024-hipscm.md to the new fetterman-2024-maturation.md and hipsc-cm-maturation.md pages.
 
+## [2026-07-02] draft | main.md — frontmatter retitled; Introduction foreshadowing added for maturation gap
+
+Frontmatter title/description updated per researcher's request (options proposed, "Charting the Field" chosen): title now "Charting the Field: Cardiomyocyte MEA Analysis Methods and Analysis Evolution Since 2022"; description folds in the original title's descriptive content. Introduction's closing scope sentence (main.md) updated to list "hiPSC-CM maturation status as an underexamined confound" alongside the other themes it already foreshadows (open pipelines, fiducial definitions, morphology-aware handling, 2D/3D/high-throughput), matching the new maturation subsection and 4th conclusion gap added earlier.
+
+## [2026-07-02] draft | main.md title trimmed; README.md synced
+
+Researcher edited main.md's frontmatter title directly: "Charting the Field: Cardiomyocyte MEA Analysis Methods and Analysis Evolution Since 2022" → "Charting the Field: Cardiomyocyte MEA Analysis Evolution Since 2022" (dropped redundant "Methods and"). Synced README.md's H1 heading to match (was still the pre-rename original title). Frontmatter `description` line unchanged. No other file references the paper title verbatim.
+
 ## [2026-06-25] lint | Citation issues resolved; wiki documentation cleaned up
 
 All citation errors originally identified in main.md have been corrected in the draft: (1) Meyer et al. 2022 → Dunham et al. 2022 (authors completely fabricated); (2) Tsai et al. 2023 → Hwang et al. 2023 (authors completely fabricated); (3) Schulz et al. 2023 → Ismaili et al. 2023 (wrong author order); (4) Steemans et al. 2023 → Altrocchi et al. 2023 (wrong first author cited); (5) Blinova 2025 — unverified citation removed from main.md entirely (replaced with Park 2025, Altrocchi 2023, Matsuda 2025); (6) Pramudito 2026 — confirmed real (DOI: 10.1007/s10439-026-03978-1). wiki/citation-issues.md deleted; error annotations removed from wiki/references.md; wiki/index.md updated.

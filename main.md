@@ -1,6 +1,6 @@
 ---
-title: "Cardiomyocyte MEA Studies: Methods and Analysis Evolution since 2022"
-description: "Review paper about MEA and hiPSC-CM analysis"
+title: "Charting the Field: Cardiomyocyte MEA Analysis Evolution Since 2022"
+description: "Review paper about MEA and hiPSC-CM cardiomyocyte methods and analysis evolution since 2022"
 author: "Antti-Juhana Mäki"
 # output: html_document
 ---
@@ -10,7 +10,7 @@ Multielectrode array (MEA) recordings of extracellular field potentials (FPs) fr
 
 # Introduction
 
-Multielectrode arrays (MEAs) recording extracellular field potentials (FPs) from human induced pluripotent stem cell–derived cardiomyocytes (hiPSC-CMs) are widely used in cardiac safety pharmacology, drug discovery, and disease modeling (Ismaili et al. 2023). The field potential duration (FPD) and related metrics serve as surrogates for repolarization and are integral to initiatives such as the Comprehensive in Vitro Proarrhythmia Assay (CiPA) (Park et al. 2025). As the use of MEA-based assays has grown, so has the need for consistent, physiologically meaningful analysis of FP waveforms. This review focuses on how **methods and analysis practices** in cardiomyocyte MEA studies have evolved since 2022, with an emphasis on open pipelines, fiducial definitions, morphology-aware handling, and the implications of moving from two-dimensional to three-dimensional and high-throughput applications.
+Multielectrode arrays (MEAs) recording extracellular field potentials (FPs) from human induced pluripotent stem cell–derived cardiomyocytes (hiPSC-CMs) are widely used in cardiac safety pharmacology, drug discovery, and disease modeling (Ismaili et al. 2023). The field potential duration (FPD) and related metrics serve as surrogates for repolarization and are integral to initiatives such as the Comprehensive in Vitro Proarrhythmia Assay (CiPA) (Park et al. 2025). As the use of MEA-based assays has grown, so has the need for consistent, physiologically meaningful analysis of FP waveforms. This review focuses on how **methods and analysis practices** in cardiomyocyte MEA studies have evolved since 2022, with an emphasis on open pipelines, fiducial definitions, morphology-aware handling, hiPSC-CM maturation status as an underexamined confound, and the implications of moving from two-dimensional to three-dimensional and high-throughput applications.
 
 ## Motivation: why analysis methods became central after 2022
 Since 2022, multielectrode array (MEA) recordings from human induced pluripotent stem cell–derived cardiomyocytes (hiPSC-CMs) have increasingly been used not only for basic measurements such as beating rate and field potential duration (FPD), but also for mechanistic electrophysiological phenotyping, proarrhythmia risk assessment, and longitudinal drug testing. As a consequence, **signal analysis methods—particularly the definition of fiducial points in field potential (FP) waveforms—have emerged as a major source of variability and a limiting factor for inter-study comparability**.
