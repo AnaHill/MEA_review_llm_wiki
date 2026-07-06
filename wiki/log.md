@@ -18,6 +18,10 @@ Bootstrapped wiki structure. No sources ingested yet.
 
 ---
 
+## [2026-07-02] draft | CLAUDE.md — batch-ingest verification step added
+
+Added a "Batch or undirected additions" note to the Ingest workflow: when the researcher adds sources to raw/ without naming files, detect new files via git status or by diffing raw/ against wiki/index.md, then report a relevance verdict per source and wait for go-ahead before creating any wiki pages or touching main.md — a separate verify pass ahead of the existing Ingest steps, not a one-shot ingest.
+
 ## [2026-07-02] draft | CLAUDE.md — anti-hallucination rule added
 
 Reviewed external LLM-wiki projects (nashsu/llm_wiki, MetamusicX/llm-research-wiki, bitsofchris critique) for adoptable conventions per the researcher's request. Added an explicit "never invent citations, authors, or facts" rule to CLAUDE.md's Behavioral guidelines, citing this repo's own prior hallucinated-citation incidents (Dunham/Hwang author fabrications, unverifiable Blinova 2025 entry) as the concrete basis. Other proposed additions (epistemic markers, a raw-thinking scratchpad, a numeric page-promotion threshold) were declined by the researcher or judged low-value at this repo's current scale and not implemented.

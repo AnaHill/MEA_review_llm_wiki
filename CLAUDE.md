@@ -35,6 +35,8 @@ When the researcher drops a source (typically a PDF) into `raw/` and asks you to
 
 A single source may touch 5–10 wiki pages. That's normal.
 
+**Batch or undirected additions — verify before ingesting.** If the researcher says something like "I added sources to raw/, go check them" without naming files: detect what's new via `git status` (untracked files in `raw/`) or by diffing `raw/` against the paper list in `wiki/index.md`. Read each candidate and report a relevance verdict per source — worth ingesting, marginal, or out of scope — *before* creating any wiki pages, updating `wiki/references.md`, or touching `main.md`. This is a separate first pass, not a one-shot ingest: wait for the researcher's go-ahead on which sources to actually ingest before running the full Ingest steps above on any of them.
+
 ### Query
 When the researcher asks a question:
 1. Read `wiki/index.md` first to find relevant pages.
