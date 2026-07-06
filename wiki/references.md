@@ -10,6 +10,8 @@ Altrocchi, C., Van Ammel, K., Steemans, M., Kreir, M., Tekle, F., Teisman, A., G
 
 Botti, S., Krause, R., & Pavarino, L. F. (2025). In silico modelling of multi-electrode arrays for enhancing cardiac drug testing on hiPSC-CM heterogeneous tissues. *The Journal of Physiology*. https://doi.org/10.1113/JP287276
 
+Correia, C., Christoffersson, J., Tejedor, S., El-Haou, S., Matadamas-Guzman, M., Nair, S., Dönnes, P., Musa, G., Rohman, M., Sundqvist, M., Riddle, R. B., Nugraha, B., Sorzabal Bellido, I., Johansson, M., Wang, Q.-D., Hidalgo, A., Jennbacken, K., Synnergren, J., & Später, D. (2024). Enhancing maturation and translatability of human pluripotent stem cell-derived cardiomyocytes through a novel medium containing acetyl-CoA carboxylase 2 inhibitor. *Cells*, *13*(16), 1339. https://doi.org/10.3390/cells13161339
+
 Dunham, C. S., Mackenzie, M. E., Nakano, H., Kim, A. R., Nakano, A., Stieg, A. Z., & Gimzewski, J. K. (2022). Cardio PyMEA: A user-friendly, open-source Python application for cardiomyocyte microelectrode array analysis. *PLOS ONE*, *17*(5), e0266647. https://doi.org/10.1371/journal.pone.0266647
 
 Ernault, A. C., Al-Shama, R. F. M., Li, J., Devalla, H. D., de Groot, J. R., Coronel, R., Vigmond, E., & Boukens, B. J. (2024). Interpretation of field and LEAP potentials recorded from cardiomyocyte monolayers. *American Journal of Physiology–Heart and Circulatory Physiology*, *326*(3), H800–H811. https://doi.org/10.1152/ajpheart.00463.2023
@@ -35,5 +37,7 @@ Maurissen, T. L., Kawatou, M., López-Dávila, V., Minatoya, K., Yamashita, J. K
 Park, N. K., Park, Y.-G., Choi, J.-H., Choi, H. K., Moon, S.-H., Park, S.-J., & Choi, S. W. (2025). Human induced pluripotent stem cell-cardiomyocytes for cardiotoxicity assessment: a comparative study of arrhythmia-inducing drugs with multi-electrode array analysis. *Korean Journal of Physiology & Pharmacology*, *29*(2), 257–269. https://doi.org/10.4196/kjpp.24.413
 
 Pramudito, A., Fuadah, N., Kim, Y. S., & Lim, K. M. (2026). Stacking ensemble machine learning for cardiac safety assessment using hiPSC-CM MEA data. *Annals of Biomedical Engineering*, *54*, 1334–1344. https://doi.org/10.1007/s10439-026-03978-1
+
+Scheurer, F., Hammer, A., Schubert, M., Steiner, R.-P., Gamm, O., Guan, K., Sonntag, F., Malberg, H., & Schmidt, M. (2025). Non-invasive maturity assessment of iPSC-CMs based on optical maturity characteristics using interpretable AI. *Computational and Structural Biotechnology Journal*, *27*, 3719–3728. https://doi.org/10.1016/j.csbj.2025.08.024
 
 Weiser-Bitoun, I., Mazgaoker, S., Assayag, S., Davoodi, M., Alexandrovich, A., & Yaniv, Y. (2026). PhysioMEA: Signal processing platform for rate and rhythm analysis of multi-electrode array cardiac electrophysiological recordings. *Journal of Molecular and Cellular Cardiology*, *210*, 137–149. https://doi.org/10.1016/j.yjmcc.2025.11.006

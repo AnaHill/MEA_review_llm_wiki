@@ -10,6 +10,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 - [Altrocchi et al. 2023](papers/altrocchi-2023-chronic.md) — Chronic (up to 96 h) FP + impedance assay; 13 reference compounds incl. hERG trafficking inhibitors (delayed effects), TKi, cytotoxics; tolerance-interval QC. Janssen, *Front Pharmacol*.
 - [Botti et al. 2025](papers/botti-2025-insilico.md) — In silico MEA modeling for hiPSC-CM heterogeneous tissue drug testing. *J Physiology*. DOI: 10.1113/JP287276. *(PDF unavailable — Wiley blocked)*
+- [Correia et al. 2024](papers/correia-2024-acc2.md) — ACC2-inhibitor maturation medium improves metabolic/electrophysiological/structural maturity (patch-clamp, not MEA); in vitro-to-in vivo BCKDK-inhibitor PK/PD correlation achieved only in matured cells. AstraZeneca, *Cells* 13:1339.
 - [Dunham et al. 2022](papers/dunham-2022-cardiopyemea.md) — Cardio PyMEA open-source Python tool: beat detection, LAT mapping, CV, FPD, power-law stats. UCLA, *PLOS ONE*.
 - [Ernault et al. 2024](papers/ernault-2024-interpretation.md) — FP and LEAP interpretation from hiPSC-CM monolayers; T-wave biphasic morphology required for APD90 correlation; LEAP reflects spatial average APD. *Am J Physiol* 326:H800–H811.
 - [Fetterman et al. 2024](papers/fetterman-2024-maturation.md) — Functional, metabolic, and transcriptional maturation of hiPSC-CMs are induced independently by different medium components; CardioExcyte96 impedance + patch-clamp AP/Nav + Seahorse OCR + RNA-seq. Northwestern, *Cell Reports* 43:114160.
@@ -23,6 +24,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 - [Maurissen et al. 2024](papers/maurissen-2024-mutation.md) — Isogenic KCNH2 N588D (LQTS) / N588K (SQTS) compound-heterozygous mutations; 3D CTSs with mesenchymal cells required for TdP-like waveforms; FPDcF 82–323 ms across genotypes. *Sci Rep* 14:2586.
 - [Park et al. 2025](papers/park-2025-cardiotoxicity.md) — Healthy vs. LQTS (KCNH2 c.453delC) hiPSC-CMs with 8 CiPA drugs; FPD20/FPDc20 metric; 10× LQTS sensitivity to E-4031. *Korean J Physiol Pharmacol* 29(2):257–269.
 - [Pramudito et al. 2026](papers/pramudito-2026-ensemble.md) — Stacking ensemble ML for TdP risk assessment from hiPSC-CM MEA features. *Ann Biomed Eng* 54:1334–1344. DOI: 10.1007/s10439-026-03978-1.
+- [Scheurer et al. 2025](papers/scheurer-2025-optical-ai.md) — Video-based SVM/SHAP classifier stages iPSC-CM maturity from beating features (99.5% accuracy); not MEA, but cites an FPD–contraction-duration correlation linking it to MEA-observable quantities. TU Dresden, *Comput Struct Biotechnol J* 27:3719–3728.
 - [Weiser-Bitoun et al. 2026](papers/weiser-bitoun-2026-physiomea.md) — PhysioMEA: open-source MATLAB for cardiac organoid MEA; 1D/2D biomarker heatmaps (AMP, Slope, PPD, FPD); BRV with 45 HRV-adapted measures; Brugada Syndrome (SCN5A) validation. Technion, *J Mol Cell Cardiol* 210:137–149.
 
 ---
@@ -32,7 +34,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 <!-- Core theoretical or conceptual ideas that recur across multiple papers. -->
 <!-- Create a dedicated page only when a concept appears in 2+ papers or is central to the argument. -->
 
-- [hiPSC-CM maturation status as a confound for MEA-derived metrics](hipsc-cm-maturation.md) — Maturation fractionates into independent functional/metabolic/transcriptional axes (Fetterman et al. 2024); no validated MEA-only maturation reference values exist in the 2022+ literature; culture-age electrophysiological drift already quantified (Guerrelli et al. 2024) but not linked to a maturity metric.
+- [hiPSC-CM maturation status as a confound for MEA-derived metrics](hipsc-cm-maturation.md) — Maturation fractionates into independent functional/metabolic/transcriptional axes (Fetterman et al. 2024); maturation status gates in vitro-to-in vivo translatability (Correia et al. 2024); a validated non-MEA maturity classifier exists (Scheurer et al. 2025, video-based, 99.5% accuracy) but no MEA-native equivalent; culture-age electrophysiological drift already quantified (Guerrelli et al. 2024) but not linked to a maturity metric.
 
 *(other candidates: FPDcF, CiPA, hERG trafficking, 3D vs 2D cultures)*
 

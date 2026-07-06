@@ -43,4 +43,6 @@ This paper does not itself provide MEA-derived reference values for hiPSC-CM mat
 - [[wiki/papers/ismaili-2023-hamburg.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/maki-2023-opinion.md]]
+- [[wiki/papers/correia-2024-acc2.md]]
+- [[wiki/papers/scheurer-2025-optical-ai.md]]
 - [[wiki/hipsc-cm-maturation.md]]
