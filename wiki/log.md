@@ -18,6 +18,12 @@ Bootstrapped wiki structure. No sources ingested yet.
 
 ---
 
+## [2026-07-02] draft | CLAUDE.md — anti-hallucination rule added
+
+Reviewed external LLM-wiki projects (nashsu/llm_wiki, MetamusicX/llm-research-wiki, bitsofchris critique) for adoptable conventions per the researcher's request. Added an explicit "never invent citations, authors, or facts" rule to CLAUDE.md's Behavioral guidelines, citing this repo's own prior hallucinated-citation incidents (Dunham/Hwang author fabrications, unverifiable Blinova 2025 entry) as the concrete basis. Other proposed additions (epistemic markers, a raw-thinking scratchpad, a numeric page-promotion threshold) were declined by the researcher or judged low-value at this repo's current scale and not implemented.
+
+---
+
 ## [2026-06-17] ingest | Altrocchi 2023 — Evaluation of chronic drug-induced electrophysiological and cytotoxic effects using hiPSC-CMs
 
 PDF: raw/steemans-2023-chronic.pdf. First author in main.md listed as Steemans (third author); corrected to Altrocchi. Created wiki/papers/altrocchi-2023-chronic.md.

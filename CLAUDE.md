@@ -119,3 +119,5 @@ This CLAUDE.md *is* the schema for this wiki instance. Update it as conventions 
 **Minimum necessary.** Don't create new wiki pages speculatively. If a concept appears once, note it inline. Create a dedicated page when it recurs or becomes central.
 
 **Cite everything in the draft.** Every factual claim in `main.md` should be traceable to a page in `wiki/papers/`. If a claim lacks a source, flag it with `[CITATION NEEDED]`.
+
+**Never invent citations, authors, or facts.** If you cannot verify an author list, DOI, venue, or finding directly from the source (PDF, HTML, or a reliable secondary confirmation), say so explicitly and mark the entry as unverified rather than filling the gap plausibly. This repo has hit real hallucinated-citation incidents before (fabricated author lists for what became Dunham et al. 2022 and Hwang et al. 2023; an unverifiable Blinova 2025 entry that was later removed) — treat any uncorroborated bibliographic detail as a stop-and-flag case, not a best-guess case.
