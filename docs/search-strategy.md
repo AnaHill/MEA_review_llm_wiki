@@ -2,7 +2,7 @@
 
 Kept from the original research-assistant system prompt (Feb 2026). Everything else in that prompt is covered by AGENTS.md.
 
-Starting / reference paper: Mäki 2023, *Opinion: The correct way to analyze FP signals* — https://zenodo.org/records/16760143
+Starting / reference paper: Mäki 2023, *Opinion: The correct way to analyze FP signals* — https://zenodo.org/records/20807245
 
 ## Time filter
 
