@@ -194,3 +194,7 @@ Researcher removed the stale `citation-issues.md` line from README.md's reposito
 
 All citation errors originally identified in main.md have been corrected in the draft: (1) Meyer et al. 2022 → Dunham et al. 2022 (authors completely fabricated); (2) Tsai et al. 2023 → Hwang et al. 2023 (authors completely fabricated); (3) Schulz et al. 2023 → Ismaili et al. 2023 (wrong author order); (4) Steemans et al. 2023 → Altrocchi et al. 2023 (wrong first author cited); (5) Blinova 2025 — unverified citation removed from main.md entirely (replaced with Park 2025, Altrocchi 2023, Matsuda 2025); (6) Pramudito 2026 — confirmed real (DOI: 10.1007/s10439-026-03978-1). wiki/citation-issues.md deleted; error annotations removed from wiki/references.md; wiki/index.md updated.
 
+
+## [2026-10-15] lint | Schema moved from CLAUDE.md to AGENTS.md
+
+The schema now lives in AGENTS.md (agent-agnostic); CLAUDE.md contains only an `@AGENTS.md` import so Claude Code still reads it. README.md and docs/search-strategy.md now point to AGENTS.md. Also: citation style kept as APA (final style follows the target journal, reformat at the end); "Galli et al. 2024" added to the hallucination examples; old prompt_history.md and research_assistant_system_prompt.md removed, search strategy kept in docs/search-strategy.md. Older log entries still say CLAUDE.md, left as historical record.

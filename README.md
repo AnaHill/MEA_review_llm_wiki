@@ -22,7 +22,7 @@ The paper is in **[main.md](main.md)**.
 - **Draft** — ask to write or rewrite any section of `main.md`
 - **Lint** — health check: stale claims, orphans, unsupported draft assertions
 
-See [CLAUDE.md](CLAUDE.md) for the full schema and [llm-wiki.md](llm-wiki.md) for the pattern.
+See [AGENTS.md](AGENTS.md) for the full schema and [llm-wiki.md](llm-wiki.md) for the pattern.
 
 ---
 
@@ -37,7 +37,7 @@ wiki/
   references.md    auto-maintained citation list (APA)
 main.md            paper draft — IMRaD sections, single file
 skills/            Agent skill definitions
-CLAUDE.md          wiki schema and LLM instructions
+AGENTS.md          wiki schema and LLM instructions (CLAUDE.md just imports it)
 llm-wiki.md        the wiki pattern explained
 ```
 
