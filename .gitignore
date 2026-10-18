@@ -5,7 +5,7 @@ db/
 .qmd/
 
 # Regenerable PDF figure/page renders and caption dumps (scratch space for
-# visual figure analysis — see analyze_figures.py / render_pdf_pages.py).
+# visual figure analysis — see scripts/analyze_figures.py / scripts/render_pdf_pages.py).
 # Conclusions belong in wiki/papers/<paper>.md, not here.
 figure_analysis/
 
@@ -38,3 +38,6 @@ Thumbs.db
 # Editor
 .idea/
 *.swp
+
+# Not open access
+raw/pramudito-2026-ensemble.pdf
