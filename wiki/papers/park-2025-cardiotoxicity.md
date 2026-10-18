@@ -40,7 +40,10 @@ Comparative cardiotoxicity study using three healthy hiPSC-CM lines and one pati
 ## Relevance to our paper
 Cited in main.md as: (1) a use case for patient-specific LQTS hiPSC-CMs in MEA cardiotoxicity screening, and (2) the FPD20/FPDc20 metric as an example of a threshold-based quantitative endpoint beyond raw FPDcF. Also provides comparative data showing that disease lines reveal pharmacological sensitivities invisible in healthy lines.
 
+Overlap note (added 2026-10-18): the same group's later paper [[wiki/papers/park-2026-genotype-ml.md]] very probably uses the same KCNH2 c.453delC LQT2 line (DPHC01i-AR here, DPHCi01 there), the normal line CMC-011, four of the same drugs, the same Axion MEA setup and Fridericia FPDc, and extends the FPD20/FPDc20 metric. Do not cite the two as independent confirmation of the disease-line result.
+
 ## See also
+- [[wiki/papers/park-2026-genotype-ml.md]]
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/papers/ismaili-2023-hamburg.md]]

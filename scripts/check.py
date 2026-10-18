@@ -120,15 +120,20 @@ for key in sorted(cited - set(refs)):
     report("ERROR", "main.md", f"cites {key[0]} {key[1]}, which is not in wiki/references.md")
 for key in sorted(set(refs) - cited):
     report("INFO", "wiki/references.md", f"{key[0]} {key[1]} is not cited in main.md")
-# the reference list at the end of main.md must be identical to wiki/references.md
+# the reference list at the end of main.md must hold exactly the cited entries, verbatim from wiki/references.md
 ref_lines = [l for l in read(WIKI / "references.md").split("\n---\n", 1)[1].splitlines() if l.strip()]
 main_lines = [l for l in main.split("# References\n", 1)[-1].splitlines() if l.strip()]
+main_keys = set()
 for l in main_lines:
     if l not in ref_lines:
         report("ERROR", "main.md", f"reference differs from wiki/references.md: {l[:70]}…")
-for l in ref_lines:
-    if l not in main_lines:
-        report("ERROR", "main.md", f"reference missing or different from wiki/references.md: {l[:70]}…")
+    m = re.match(r"^([^\s,]+(?: [^\s,]+)?),[^(]*\((\d{4})\)", l)
+    if m:
+        main_keys.add((norm(m.group(1)), m.group(2)))
+for key in sorted(cited - main_keys):
+    report("ERROR", "main.md", f"{key[0]} {key[1]} is cited in the text but missing from the # References list")
+for key in sorted(main_keys - cited):
+    report("WARN", "main.md", f"{key[0]} {key[1]} is in the # References list but not cited in the text")
 if "[CITATION NEEDED]" in main:
     report("INFO", "main.md", f"{main.count('[CITATION NEEDED]')} open [CITATION NEEDED] flag(s)")
 
