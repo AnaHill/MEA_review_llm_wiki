@@ -3,14 +3,14 @@ Render PDF pages to PNG images so they can be visually inspected (e.g. by Claude
 Code's Read tool, which can view images but not PDFs directly).
 
 Usage:
-python render_pdf_pages.py raw\some-paper.pdf
+python scripts/render_pdf_pages.py raw\some-paper.pdf
 -> auto-detects pages containing "figure"/"fig."/"table" captions and renders
    just those pages to .\figure_analysis\<pdf-name>\page_<N>.png
 
-python render_pdf_pages.py raw\some-paper.pdf --pages 2,5-7
+python scripts/render_pdf_pages.py raw\some-paper.pdf --pages 2,5-7
 -> renders only the specified pages (1-indexed), ignoring auto-detection
 
-python render_pdf_pages.py raw\some-paper.pdf --pages all -o custom_output --dpi 300
+python scripts/render_pdf_pages.py raw\some-paper.pdf --pages all -o custom_output --dpi 300
 -> renders every page, at 300 DPI, into .\custom_output\<pdf-name>\
 '''
 
@@ -18,7 +18,7 @@ import argparse
 import os
 import fitz  # PyMuPDF
 
-DEFAULT_OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "figure_analysis")
+DEFAULT_OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "figure_analysis")
 FIGURE_PATTERNS = ['figure', 'fig.', 'fig ', 'table']
 DEFAULT_DPI = 200
 

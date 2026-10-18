@@ -1,32 +1,32 @@
-'''
+r'''
 Analyze figures and tables in a PDF file.
 Usage:
-python analyze_figures.py raw\some-paper.pdf
+python scripts/analyze_figures.py raw\some-paper.pdf
 -> raw\some-paper.pdf — the positional pdf_path argument (required): the PDF file to analyze.
 -> run with no flags and get the default behavior (output to .\figure_analysis, capped at 50 entries). 
 
 
-python analyze_figures.py raw\some-paper.pdf -o custom_output --max-entries 0
+python scripts/analyze_figures.py raw\some-paper.pdf -o custom_output --max-entries 0
 -o custom_output (or --output-dir custom_output)
 — overrides where the summary .txt file gets written. 
-If omitted, it defaults to a figure_analysis folder next to the script.
+If omitted, it defaults to a figure_analysis folder in the repo root.
 
 --max-entries 0 — overrides the cap on how many figure/table matches get written to the output file. 
 Default is 50; passing 0 means "no limit," so every match found in the PDF gets written.
 
-Specific command python analyze_figures.py raw\some-paper.pdf -o custom_output --max-entries 0 
+Specific command python scripts/analyze_figures.py raw\some-paper.pdf -o custom_output --max-entries 0 
 1) analyzes raw\some-paper.pdf, 
 2) writes the results into .\custom_output\ instead of the default folder, 
 3) and includes all matches instead of just the first 50.
 
-Run python analyze_figures.py -h any time to see this help text from argparse itself.
+Run python scripts/analyze_figures.py -h any time to see this help text from argparse itself.
 '''
 
 import argparse
 import os
 from pypdf import PdfReader
 
-DEFAULT_OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "figure_analysis")
+DEFAULT_OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "figure_analysis")
 FIGURE_PATTERNS = ['figure', 'fig.', 'fig ', 'table']
 
 

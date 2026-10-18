@@ -20,7 +20,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 | `wiki/references.md` | Auto-maintained citation list, populated on each ingest. |
 | `main.md` | Evolving paper draft — single file with IMRaD sections. |
 | `skills/` | Agent skill definitions (Claude Code skill format). |
-| `scripts/check.py` | Deterministic consistency check (see "Finishing check" below). |
+| `scripts/` | Helper scripts: `check.py` (consistency check, see "Finishing check" below), `render_pdf_pages.py` and `analyze_figures.py` (PDF figure inspection). |
 | `notes.md` | The researcher's own thinking — read-only for you (see "Researcher notes" below). |
 | `docs/` | Project/process documentation (e.g. literature search strategy). Not part of the wiki. |
 
@@ -28,7 +28,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 
 ### Ingest
 When the researcher drops a source (typically a PDF) into `raw/` and asks you to process it:
-1. Read the source.
+1. Read the source. If the Read tool cannot open a PDF (e.g. `pdftoppm` missing), extract the text with PyMuPDF (`fitz`), and for figures run `python scripts/render_pdf_pages.py raw/<file>.pdf` (add `--pages 3,5` to limit) and view the rendered PNGs in `figure_analysis/<pdf-name>/`. Describe what each figure shows, and note that schematics carry no data.
 2. Discuss key takeaways if the researcher wants to stay involved.
 3. Create `wiki/papers/<firstauthor-year-keyword>.md` with the standard paper page format (see below).
 4. Update any relevant concept, method, or research-gap pages in `wiki/`.
