@@ -45,9 +45,9 @@ timeline
          : ACC2-inhibitor maturation medium improves in vitro-to-in vivo translatability (Correia et al.)
     2025 : UHD-CMOS-MEA field potential imaging (Matsuda et al.)
          : Healthy vs. LQTS hiPSC-CM CiPA drug comparison (Park et al.)
-         : In silico MEA–tissue biophysical model (Botti et al.)
          : Video-based interpretable-AI maturity classifier (Scheurer et al.)
-    2026 : PhysioMEA — cardiac organoid BRV and 2D heatmaps (Weiser-Bitoun et al.)
+    2026 : In silico MEA–tissue biophysical model (Botti et al.)
+         : PhysioMEA — cardiac organoid BRV and 2D heatmaps (Weiser-Bitoun et al.)
          : CardioScripts — combined AFM+MEA electromechanical analysis (Kabanov et al.)
          : Stacking ensemble ML for TdP risk prediction (Pramudito et al.)
 ```
