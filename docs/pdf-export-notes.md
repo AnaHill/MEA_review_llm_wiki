@@ -17,14 +17,15 @@ Things in `main.md` that commonly break or look wrong when Markdown is converted
 ## Content that must be resolved before the export
 
 - Remove or resolve every `[CITATION NEEDED]` flag (four at last count; list them with `grep -n "CITATION NEEDED" main.md`).
-- Confirm the Declarations text (status, competing interests, AI assistance, data and code availability) and add funding information, which is currently missing.
-- Add what the Markdown lacks: affiliation, date and version, and keywords if the deposit form wants them.
+- Confirm the Declarations text (status, competing interests, AI assistance, funding, licence, data and code availability). Funding (none) and licence (CC BY 4.0) were added on 2026-10-18.
+- Affiliation is set to "Independent researcher" and keywords are stored in the YAML front matter of `main.md` (`author` and `keywords`); the PDF template must print them from there. Keywords for the Zenodo form: multielectrode array, hiPSC-cardiomyocytes, field potential duration, rate correction, cardiac safety pharmacology, review.
+- Still missing in the Markdown: date and version (Zenodo adds the deposit date; the version can be "Version 1").
 - The sentence at the top ("Preprint, not peer reviewed. Prepared with AI assistance; see Declarations.") should survive into the PDF.
 - Check that the PDF is not larger than expected and that links in the reference list work.
 
 ## Zenodo deposit points to decide
 
-- Resource type (preprint or publication, report) and license (the opinion paper (Mäki, 2023) is CC BY 4.0; keep the same unless there is a reason).
+- Resource type (preprint or publication, report). The licence is decided: CC BY 4.0, the same as the opinion paper (Mäki, 2023); select the same one on the deposit form.
 - Whether to link the deposit to the opinion paper's Zenodo record as a related work.
 - Which version of the opinion paper to cite: the review currently cites v3 (Zenodo record 20807245, published 23 June 2026) with the year 2023, explained in the version note in Declarations.
 - Whether the repository link in the Declarations should stay (https://github.com/AnaHill/MEA_review_llm_wiki), since the source notes and log are public there.

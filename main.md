@@ -1,7 +1,8 @@
 ---
 title: "Charting the Field: Cardiomyocyte MEA Analysis Evolution Since 2022"
 description: "Review paper about MEA and hiPSC-CM cardiomyocyte methods and analysis evolution since 2022"
-author: "Antti-Juhana Mäki"
+author: "Antti-Juhana Mäki, Independent researcher"
+keywords: [multielectrode array, hiPSC-cardiomyocytes, field potential duration, rate correction, cardiac safety pharmacology, review]
 # output: html_document
 ---
 *Preprint, not peer reviewed. Prepared with AI assistance; see Declarations.*
@@ -161,6 +162,10 @@ Looking forward, machine learning is rapidly becoming an integral layer in cardi
 **Version note.** "Mäki (2023)" refers to the opinion paper whose first version was posted on Zenodo in 2023; the text assessed here is version v3 of the same record, published on 23 June 2026, which updated the original text.
 
 **Use of AI assistance.** Large language model agents (Anthropic's Claude, used through the Claude Code tool) assisted with literature searching and screening, summarising sources into a structured set of notes, checking citations and drafting and editing this text. The author selected the sources, directed and reviewed the work, and is responsible for the content. Bibliographic details were checked against the source documents or publisher records where these were accessible, and a consistency script verifies that every in-text citation appears in the reference list.
+
+**Funding.** This work was carried out as an independent, unfunded project and received no external funding.
+
+**Licence.** This text is released under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
 
 **Data and code availability.** The source notes and operation log used to prepare this review are available at https://github.com/AnaHill/MEA_review_llm_wiki.
 

@@ -274,3 +274,11 @@ Researcher-approved. Changes: preprint status line; abstract and conclusion soft
 ## [2026-10-18] lint | Botti page now points to the PDF; PDF-export notes added
 
 wiki/papers/botti-2026-insilico.md no longer links the Europe PMC XML (raw/botti-2026-insilico.xml, a working copy now redundant since the version-of-record PDF was added; the researcher may delete it). docs/pdf-export-notes.md lists the elements of main.md that can break in a Markdown-to-PDF conversion (Mermaid diagrams, inline LaTeX, tables, Unicode, front matter, reference style, captions) and the items to settle at the Zenodo deposit. The XML is mentioned here for history only.
+
+## [2026-10-18] draft | Declarations: funding and licence added
+
+Researcher-approved. Declarations in main.md now state that the work is independent and unfunded and is released under CC BY 4.0. docs/pdf-export-notes.md updated accordingly. raw/botti-2026-insilico.xml was deleted by the researcher; no page links it.
+
+## [2026-10-18] draft | Front matter: author affiliation and keywords
+
+Researcher-approved. main.md front matter now reads author 'Antti-Juhana Mäki, Independent researcher' and carries the keyword list (multielectrode array, hiPSC-cardiomyocytes, field potential duration, rate correction, cardiac safety pharmacology, review) so the PDF export and the Zenodo form use the same terms; docs/pdf-export-notes.md updated.
