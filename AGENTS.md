@@ -12,7 +12,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 
 | Path | Purpose |
 |------|---------|
-| `raw/` | Immutable source documents — PDFs, papers, notes. Never modify or delete. |
+| `raw/` | Immutable source documents — PDFs, papers, notes. Never modify or delete; the only permitted change is renaming a file at ingest (see "Naming raw files"). |
 | `wiki/` | LLM-maintained markdown pages. You own this layer entirely. |
 | `wiki/papers/` | One summary page per ingested source paper. |
 | `wiki/index.md` | Content catalog — read this first when answering any query. |
@@ -37,6 +37,8 @@ When the researcher drops a source (typically a PDF) into `raw/` and asks you to
 7. Append an entry to `wiki/log.md`.
 
 A single source may touch 5–10 wiki pages. That's normal.
+
+**Naming raw files.** The raw file and its wiki page share one stem: the source `raw/XYZ.pdf` that becomes `wiki/papers/botti-2025-insilico.md` is renamed to `raw/botti-2025-insilico.pdf` (extension unchanged), and supplementary files become `raw/botti-2025-insilico-supplementary.<ext>`. Do the rename in the same step as creating the page, so the page's `**File:** [[raw/...]]` line is correct from the start. Only the file name changes, never the content. Use `git mv` if the file is tracked, a plain move if it is untracked. Never rename during the verify-before-ingest pass, and never rename a file the researcher has not asked you to ingest. Before renaming, check `.gitignore` for the old name (non-open-access PDFs are git-ignored by name); if it is listed, tell the researcher the entry must change to the new name, so the PDF does not become trackable by accident.
 
 **Batch or undirected additions — verify before ingesting.** If the researcher says something like "I added sources to raw/, go check them" without naming files: detect what's new via `git status` (untracked files in `raw/`) or by diffing `raw/` against the paper list in `wiki/index.md`. Read each candidate and report a relevance verdict per source — worth ingesting, marginal, or out of scope — *before* creating any wiki pages, updating `wiki/references.md`, or touching `main.md`. This is a separate first pass, not a one-shot ingest: wait for the researcher's go-ahead on which sources to actually ingest before running the full Ingest steps above on any of them.
 
@@ -114,7 +116,7 @@ Links to related wiki pages.
 
 **Index format:** Each entry in `wiki/index.md` should include a link, a one-line summary, and optionally metadata (year, venue). Organize by the categories defined in `wiki/index.md`.
 
-**Raw sources are immutable.** Never edit files in `raw/`. The LLM reads from them; that's all.
+**Raw sources are immutable.** Never edit files in `raw/`. The LLM reads from them; that's all. The one exception is renaming a file at ingest so its stem matches its wiki page (see "Naming raw files").
 
 **Draft is a single file.** `main.md` contains the full paper with IMRaD sections as `#` headings. Update only the section asked about. Do not restructure the file unless explicitly asked.
 

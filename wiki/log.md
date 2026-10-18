@@ -214,3 +214,7 @@ render_pdf_pages.py and analyze_figures.py moved from the repo root to scripts/ 
 ## [2026-10-18] lint | analyze_figures.py removed; --text flag added to render_pdf_pages.py
 
 analyze_figures.py only listed lines containing "figure"/"table" (47 noisy hits on Pramudito 2026, which has 3 figures and 5 tables), duplicated what full-text extraction and render_pdf_pages.py already provide, and needed an extra dependency (pypdf); removed (still in git history). scripts/render_pdf_pages.py gained `--text`, which writes the full PDF text to figure_analysis/<pdf-name>/text.txt and skips rendering unless --pages is also given. AGENTS.md Ingest step 1 and the scripts/ table row, and the .gitignore comment, updated to match.
+
+## [2026-10-18] lint | Raw-file naming rule added to AGENTS.md; check.py warns on stem mismatch
+
+At ingest the raw file is now renamed to share the stem of its wiki page (raw/XYZ.pdf -> raw/botti-2025-insilico.pdf; supplementary: <stem>-supplementary.<ext>), the only permitted change to raw/ (content stays immutable). scripts/check.py warns when a paper page's **File:** stem differs from the page stem. First run flags five legacy files: altrocchi (raw/steemans-2023-chronic.pdf), ismaili (raw/schulz-2023-hamburg.pdf, both named after earlier wrong first authors), correia, fetterman, scheurer. Not renamed yet; awaiting researcher go-ahead.
