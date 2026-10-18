@@ -41,7 +41,7 @@ def rel(path):
 # --- references.md: key (surname, year) -> DOI --------------------------------------
 refs = {}
 for line in read(WIKI / "references.md").splitlines():
-    m = re.match(r"^([^\s,]+(?: [^\s,]+)?),[^(]*\((\d{4})\)", line)
+    m = re.match(r"^([^\s,]+(?: [^\s,]+)?),[^(]*\((\d{4})(?:,[^)]*)?\)", line)
     if not m or line.startswith(("#", ">", "Default", "Auto-")):
         continue
     key = (norm(m.group(1)), m.group(2))
@@ -127,7 +127,7 @@ main_keys = set()
 for l in main_lines:
     if l not in ref_lines:
         report("ERROR", "main.md", f"reference differs from wiki/references.md: {l[:70]}…")
-    m = re.match(r"^([^\s,]+(?: [^\s,]+)?),[^(]*\((\d{4})\)", l)
+    m = re.match(r"^([^\s,]+(?: [^\s,]+)?),[^(]*\((\d{4})(?:,[^)]*)?\)", l)
     if m:
         main_keys.add((norm(m.group(1)), m.group(2)))
 for key in sorted(cited - main_keys):

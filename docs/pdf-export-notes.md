@@ -16,7 +16,7 @@ Things in `main.md` that commonly break or look wrong when Markdown is converted
 
 ## Content that must be resolved before the export
 
-- Remove or resolve every `[CITATION NEEDED]` flag (four at last count; list them with `grep -n "CITATION NEEDED" main.md`).
+- No `[CITATION NEEDED]` flag remains as of 2026-10-18; re-check with `grep -n "CITATION NEEDED" main.md` after any further edits.
 - Confirm the Declarations text (status, competing interests, AI assistance, funding, licence, data and code availability). Funding (none) and licence (CC BY 4.0) were added on 2026-10-18.
 - Affiliation is set to "Independent researcher" and keywords are stored in the YAML front matter of `main.md` (`author` and `keywords`); the PDF template must print them from there. Keywords for the Zenodo form: multielectrode array, hiPSC-cardiomyocytes, field potential duration, rate correction, cardiac safety pharmacology, review.
 - Still missing in the Markdown: date and version (Zenodo adds the deposit date; the version can be "Version 1").
