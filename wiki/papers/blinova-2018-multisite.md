@@ -11,7 +11,7 @@ tags: [cardiac-safety, rate-correction, high-throughput, 2d-culture]
 **DOI:** 10.1016/j.celrep.2018.08.079  
 **Affiliations:** US FDA (CDRH, CDER, NCTR), AbbVie, Axion BioSystems, Genentech, Janssen, Merck, Bristol-Myers Squibb, ACEA, Eisai, Cellular Dynamics, Ncardia, University of Glasgow and others (10 test sites).
 
-> **Note:** Full text read 2026-10-18 via text extraction; main-article figures were not inspected visually. Outside our primary 2022–present window; kept as foundational context because it is the source dataset of [[wiki/papers/pramudito-2026-ensemble.md]] and states the FPD rate-correction convention behind that dataset.
+> **Note:** Full text read 2026-10-18 via text extraction; main-article Figures 1, 2, 5, 6 and 7 viewed as rendered pages (Figures 3 and 4 follow the format of Figure 2; supplementary data not available). Outside our primary 2022–present window; kept as foundational context because it is the source dataset of [[wiki/papers/pramudito-2026-ensemble.md]] and states the FPD rate-correction convention behind that dataset.
 
 ## Contribution
 First large blinded multisite validation of hiPSC-CMs within the CiPA initiative: 28 drugs of known clinical TdP risk, two commercial cell lines, five electrophysiology platforms across ten sites. Builds logistic regression models that predict TdP risk category from hiPSC-CM drug responses. The authors state that the advance is the scale and the combination of MEA and optical methods, not a new assay.
@@ -24,6 +24,13 @@ First large blinded multisite validation of hiPSC-CMs within the CiPA initiative
 - **Endpoints:** baseline- and vehicle-controlled, Fridericia rate-corrected ddFPDc (MEA) or ddAPD90c (optical), counted arrhythmia-like events in four categories (A–D, "A" called mild) and quiescence. ddFPDc was not computed where ≥50 % of wells were arrhythmic.
 - **Rate correction:** Fridericia's formula "was used to correct" APD and FPD for beating rate. The paper states that the formula is "not thoroughly validated for hiPSC-CMs" but widely used in these assays.
 - **Modelling:** seven candidate predictors; logistic regression model 1 (low vs intermediate+high) and model 2 (high vs low and intermediate vs low). For modelling, ddFPDc (MEA) and ddAPD90c (optical) were treated as equivalent. Validation by 10-fold cross-validation and 500 bootstrap runs.
+
+### Figure notes
+- **Fig. 1:** representative MEA and optical traces for the four arrhythmia-like event types (A, mild, to D) next to a control trace.
+- **Fig. 2 (and 3, 4 in the same format):** per drug, per site/cell panel: drug-induced change in repolarization duration in **milliseconds** (Fridericia ddFPDc/ddAPD90c, left axis) against the four concentrations, with bars showing the fraction of wells with arrhythmic or quiescent events. For verapamil (low risk) the change is negative (shortening, up to about −300 ms) and the sites differ visibly in slope and in whether events occur at the top concentration.
+- **Fig. 5:** dot plots of predictors 1, 4 (maximum repolarization change, up to about 1,400 ms) and 7 (change at Cmax, up to about 300 ms) for every drug and dataset; the spread within a drug across the 15 datasets is large compared with the separation between risk classes.
+- **Fig. 6 and 7:** predicted risk per drug with 95 % intervals for models 1 and 2. In model 1 bepridil (about 0.64) and ranolazine (about 0.77) fall just below the 0.8 threshold, with risperidone, terfenadine, chlorpromazine, clozapine and mexiletine lower still.
+- **Units:** ddFPDc here is an absolute change in ms, whereas [[wiki/papers/park-2026-genotype-ml.md]] works with percent change in FPDc, so the "ΔFPDc" of the two ML papers built on these concentrations are different quantities.
 
 ## Findings
 - **Predictors retained:** arrhythmia-like events at any concentration (predictor 1), maximum ddFPDc/ddAPD90c at any tested concentration (predictor 4), and estimated ddFPDc/ddAPD90c at clinical Cmax (predictor 7). The two last are exactly the ones reused as the two features in [[wiki/papers/pramudito-2026-ensemble.md]] (maximum and at Cmax).
