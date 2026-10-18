@@ -10,7 +10,7 @@ Altrocchi, C., Van Ammel, K., Steemans, M., Kreir, M., Tekle, F., Teisman, A., G
 
 Blinova, K., Dang, Q., Millard, D., Smith, G., Pierson, J., Guo, L., Brock, M., Lu, H. R., Kraushaar, U., Zeng, H., Shi, H., Zhang, X., Sawada, K., Osada, T., Kanda, Y., Sekino, Y., Pang, L., Feaster, T. K., Kettenhofen, R., . . . Gintant, G. (2018). International multisite study of human-induced pluripotent stem cell-derived cardiomyocytes for drug proarrhythmic potential assessment. *Cell Reports*, *24*(13), 3582–3592. https://doi.org/10.1016/j.celrep.2018.08.079
 
-Botti, S., Krause, R., & Pavarino, L. F. (2025). In silico modelling of multi-electrode arrays for enhancing cardiac drug testing on hiPSC-CM heterogeneous tissues. *The Journal of Physiology*. https://doi.org/10.1113/JP287276
+Botti, S., Krause, R., & Pavarino, L. F. (2026). In silico modelling of multi-electrode arrays for enhancing cardiac drug testing on hiPSC-CM heterogeneous tissues. *The Journal of Physiology*, *604*(19), 8141–8166. https://doi.org/10.1113/JP287276
 
 Correia, C., Christoffersson, J., Tejedor, S., El-Haou, S., Matadamas-Guzman, M., Nair, S., Dönnes, P., Musa, G., Rohman, M., Sundqvist, M., Riddle, R. B., Nugraha, B., Sorzabal Bellido, I., Johansson, M., Wang, Q.-D., Hidalgo, A., Jennbacken, K., Synnergren, J., & Später, D. (2024). Enhancing maturation and translatability of human pluripotent stem cell-derived cardiomyocytes through a novel medium containing acetyl-CoA carboxylase 2 inhibitor. *Cells*, *13*(16), 1339. https://doi.org/10.3390/cells13161339
 

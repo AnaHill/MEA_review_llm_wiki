@@ -41,7 +41,7 @@ Demonstrates that a Sony ultra-high-density CMOS-MEA (UHD-CMOS-MEA) with 236,880
 Central to the main.md review. Represents the state of the art in MEA spatial resolution (2025). The novel FPI endpoints (excitation origin count, propagation area, CV maps) are discussed in main.md as the frontier of what MEA analysis can achieve, contrasting with the FPD/FPDcF metrics that dominate the literature.
 
 ## See also
-- [[wiki/papers/botti-2025-insilico.md]]
+- [[wiki/papers/botti-2026-insilico.md]]
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/papers/pramudito-2026-ensemble.md]]

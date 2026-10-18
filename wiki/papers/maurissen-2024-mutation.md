@@ -43,5 +43,5 @@ Cited in main.md for: (1) the FPDcF metric applied to mutation-specific phenotyp
 - [[wiki/papers/park-2025-cardiotoxicity.md]]
 - [[wiki/papers/hwang-2023-spheroids.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
-- [[wiki/papers/botti-2025-insilico.md]]
+- [[wiki/papers/botti-2026-insilico.md]]
 - [[wiki/papers/ismaili-2023-hamburg.md]]

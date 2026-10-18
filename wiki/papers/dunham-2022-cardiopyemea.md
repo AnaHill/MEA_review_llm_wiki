@@ -22,7 +22,7 @@ Python application developed at UCLA. Features implemented:
 - Local activation time (LAT) mapping
 - Upstroke velocity
 - Conduction velocity (CV)
-- Field potential duration (FPD)
+- Field potential duration (FPD): interval from the R wave (field potential peak) to a T-wave endpoint, located with the trapezoid-area method of Vázquez-Seisdedos et al. (T wave found by peak detection; a trapezoid is fitted between the maximum first derivative after the T peak and a point 50–200 ms beyond it, and the area-maximising vertex gives the endpoint); a per-beat, per-electrode plot allows visual confirmation. Read from the PDF text on 2026-10-18; this corrects an earlier 'not reported' note on the FPD end convention.
 - Power law analysis of FP statistics
 
 Applied to cardiomyocyte MEA recordings from UCLA-derived hiPSC-CM preparations.

@@ -38,5 +38,5 @@ Cited in main.md as evidence that 3D cultures introduce geometric confounders be
 ## See also
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/ernault-2024-interpretation.md]]
-- [[wiki/papers/botti-2025-insilico.md]]
+- [[wiki/papers/botti-2026-insilico.md]]
 - [[wiki/papers/maki-2023-opinion.md]]
