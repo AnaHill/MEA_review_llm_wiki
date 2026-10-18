@@ -210,3 +210,7 @@ Full PDF added as raw/s10439-026-03978-1.pdf and read (text via PyMuPDF; figures
 ## [2026-10-18] lint | Scripts consolidated into scripts/; raw/.gitkeep removed; Pramudito file link fixed
 
 render_pdf_pages.py and analyze_figures.py moved from the repo root to scripts/ (default output still the repo-root figure_analysis/, which is git-ignored). raw/.gitkeep deleted since raw/ now holds tracked files. The researcher renamed the Pramudito PDF to raw/pramudito-2026-ensemble.pdf and git-ignored it (not open access); scripts/check.py caught the then-broken **File:** link in wiki/papers/pramudito-2026-ensemble.md, now fixed. Note: wiki/papers/pramudito-2026-ensemble.md and raw/pramudito-2026-ensemble.pdf stay local-only for the PDF; the wiki page text is public.
+
+## [2026-10-18] lint | analyze_figures.py removed; --text flag added to render_pdf_pages.py
+
+analyze_figures.py only listed lines containing "figure"/"table" (47 noisy hits on Pramudito 2026, which has 3 figures and 5 tables), duplicated what full-text extraction and render_pdf_pages.py already provide, and needed an extra dependency (pypdf); removed (still in git history). scripts/render_pdf_pages.py gained `--text`, which writes the full PDF text to figure_analysis/<pdf-name>/text.txt and skips rendering unless --pages is also given. AGENTS.md Ingest step 1 and the scripts/ table row, and the .gitignore comment, updated to match.

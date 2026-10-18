@@ -4,8 +4,8 @@ temp.md
 db/
 .qmd/
 
-# Regenerable PDF figure/page renders and caption dumps (scratch space for
-# visual figure analysis — see scripts/analyze_figures.py / scripts/render_pdf_pages.py).
+# Regenerable PDF page renders and text dumps (scratch space for
+# visual figure analysis — see scripts/render_pdf_pages.py).
 # Conclusions belong in wiki/papers/<paper>.md, not here.
 figure_analysis/
 

@@ -12,6 +12,11 @@ python scripts/render_pdf_pages.py raw\some-paper.pdf --pages 2,5-7
 
 python scripts/render_pdf_pages.py raw\some-paper.pdf --pages all -o custom_output --dpi 300
 -> renders every page, at 300 DPI, into .\custom_output\<pdf-name>\
+
+python scripts/render_pdf_pages.py raw\some-paper.pdf --text
+-> writes the full text, with "===== PAGE N =====" markers, to
+   .\figure_analysis\<pdf-name>\text.txt and renders NOTHING (use this first when the
+   Read tool cannot open the PDF). Add --pages (e.g. --text --pages 3,5) to also render pages.
 '''
 
 import argparse
@@ -47,11 +52,25 @@ def parse_pages(spec, page_count):
     return sorted(p for p in pages if 1 <= p <= page_count)
 
 
-def render_pages(pdf_path, output_dir, pages_spec, dpi):
+def write_text(doc, page_output_dir):
+    out_path = os.path.join(page_output_dir, "text.txt")
+    with open(out_path, "w", encoding="utf-8") as f:
+        for page_num in range(len(doc)):
+            f.write(f"===== PAGE {page_num + 1} =====\n{doc[page_num].get_text()}\n")
+    print(f"Wrote text of {len(doc)} page(s) to {out_path}")
+
+
+def render_pages(pdf_path, output_dir, pages_spec, dpi, text=False):
     doc = fitz.open(pdf_path)
     pdf_name = os.path.splitext(os.path.basename(pdf_path))[0]
     page_output_dir = os.path.join(output_dir, pdf_name)
     os.makedirs(page_output_dir, exist_ok=True)
+
+    if text:
+        write_text(doc, page_output_dir)
+        if pages_spec is None:
+            doc.close()
+            return []
 
     if pages_spec is None:
         pages = detect_figure_pages(doc)
@@ -83,9 +102,12 @@ def main():
                               "auto-detect pages containing figure/table captions")
     parser.add_argument("--dpi", type=int, default=DEFAULT_DPI,
                          help=f"Render resolution in DPI (default: {DEFAULT_DPI})")
+    parser.add_argument("--text", action="store_true",
+                         help="Also write the full text to <output>/<pdf-name>/text.txt; "
+                              "without --pages this skips page rendering")
     args = parser.parse_args()
 
-    render_pages(args.pdf_path, args.output_dir, args.pages, args.dpi)
+    render_pages(args.pdf_path, args.output_dir, args.pages, args.dpi, args.text)
 
 
 if __name__ == "__main__":
