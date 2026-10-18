@@ -7,7 +7,7 @@ tags: [maturation, machine-learning, high-throughput]
 **Authors:** Fabian Scheurer, Alexander Hammer, Mario Schubert, Robert-Patrick Steiner, Oliver Gamm, Kaomei Guan, Frank Sonntag, Hagen Malberg, Martin Schmidt
 **Year:** 2025
 **Venue:** Computational and Structural Biotechnology Journal 27, 3719–3728
-**File:** [[raw/scheurer-et-al-2025.pdf]] (+ [[raw/scheurer-et-al-2025_supplementary.docx]])
+**File:** [[raw/scheurer-2025-optical-ai.pdf]] (+ [[raw/scheurer-2025-optical-ai-supplementary.docx]])
 **DOI:** 10.1016/j.csbj.2025.08.024
 
 ## Contribution

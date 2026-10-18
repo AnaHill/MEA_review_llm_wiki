@@ -7,7 +7,7 @@ tags: [maturation, in-vitro-maturation-media, electromechanical, 3d-model, disea
 **Authors:** Cláudia Correia, Jonas Christoffersson, Sandra Tejedor, Saïd El-Haou, Meztli Matadamas-Guzman, Syam Nair, Pierre Dönnes, Gentian Musa, Mattias Rohman, Monika Sundqvist, Rebecca B. Riddle, Bramasta Nugraha, Ioritz Sorzabal Bellido, Markus Johansson, Qing-Dong Wang, Alejandro Hidalgo, Karin Jennbacken, Jane Synnergren, Daniela Später
 **Year:** 2024
 **Venue:** Cells 13, 1339
-**File:** [[raw/correia-et-al-2024.pdf]] (+ [[raw/correia-et-al-supplementary.pdf]])
+**File:** [[raw/correia-2024-acc2.pdf]] (+ [[raw/correia-2024-acc2-supplementary.pdf]])
 **DOI:** 10.3390/cells13161339
 
 ## Contribution

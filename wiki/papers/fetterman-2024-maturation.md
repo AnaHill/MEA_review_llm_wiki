@@ -7,7 +7,7 @@ tags: [maturation, high-throughput, in-vitro-maturation-media, electromechanical
 **Authors:** K. Ashley Fetterman, Malorie Blancard, Davi M. Lyra-Leite, Carlos G. Vanoye, Hananeh Fonoudi, Mariam Jouni, Jean-Marc L. DeKeyser, Brian Lenny, Yadav Sapkota, Alfred L. George Jr., Paul W. Burridge
 **Year:** 2024
 **Venue:** Cell Reports 43, 114160
-**File:** [[raw/fetterman-2024.pdf]]
+**File:** [[raw/fetterman-2024-maturation.pdf]]
 **DOI:** 10.1016/j.celrep.2024.114160
 
 ## Contribution

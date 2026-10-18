@@ -7,7 +7,7 @@ tags: [temporal-confounder, high-throughput, cardiac-safety, 2d-culture]
 **Authors:** C. Altrocchi, K. Van Ammel, M. Steemans, M. Kreir, F. Tekle, A. Teisman, D.J. Gallacher, H.R. Lu  
 **Year:** 2023  
 **Venue:** Frontiers in Pharmacology 14:1229960  
-**File:** [[raw/steemans-2023-chronic.pdf]]  
+**File:** [[raw/altrocchi-2023-chronic.pdf]]  
 **DOI:** 10.3389/fphar.2023.1229960  
 **Affiliation:** Janssen Pharmaceutica NV, Beerse, Belgium
 

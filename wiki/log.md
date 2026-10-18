@@ -218,3 +218,7 @@ analyze_figures.py only listed lines containing "figure"/"table" (47 noisy hits 
 ## [2026-10-18] lint | Raw-file naming rule added to AGENTS.md; check.py warns on stem mismatch
 
 At ingest the raw file is now renamed to share the stem of its wiki page (raw/XYZ.pdf -> raw/botti-2025-insilico.pdf; supplementary: <stem>-supplementary.<ext>), the only permitted change to raw/ (content stays immutable). scripts/check.py warns when a paper page's **File:** stem differs from the page stem. First run flags five legacy files: altrocchi (raw/steemans-2023-chronic.pdf), ismaili (raw/schulz-2023-hamburg.pdf, both named after earlier wrong first authors), correia, fetterman, scheurer. Not renamed yet; awaiting researcher go-ahead.
+
+## [2026-10-18] lint | Five legacy raw files renamed to match their wiki pages
+
+Renamed with git mv (content unchanged), and the **File:** lines on the five paper pages updated: steemans-2023-chronic.pdf -> altrocchi-2023-chronic.pdf; schulz-2023-hamburg.pdf -> ismaili-2023-hamburg.pdf; correia-et-al-2024.pdf -> correia-2024-acc2.pdf and correia-et-al-supplementary.pdf -> correia-2024-acc2-supplementary.pdf; fetterman-2024.pdf -> fetterman-2024-maturation.pdf; scheurer-et-al-2025.pdf -> scheurer-2025-optical-ai.pdf and scheurer-et-al-2025_supplementary.docx -> scheurer-2025-optical-ai-supplementary.docx. Older log entries still use the old file names; they are historical and left unchanged. No .gitignore entries referenced these files.
