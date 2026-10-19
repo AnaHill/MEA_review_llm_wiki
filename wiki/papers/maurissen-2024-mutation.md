@@ -14,7 +14,7 @@ tags: [3d-model, disease-model, lqts]
 Generates compound heterozygous KCNH2 mutant hiPSC lines (LQTS2 N588D; SQTS N588K) using CRISPR-Cas9 + ssODN in an isogenic background (409B2), and demonstrates that 3D cardiac tissue sheets (CTSs) incorporating non-cardiomyocyte support cells are required to reveal TdP-like arrhythmic waveforms. Establishes compound heterozygous editing as a solution to the problem of unintended homozygous CRISPR outcomes.
 
 ## Methodology
-- **Cell line:** 409B2 hiPSCs (RIKEN BRC #HPS0076)
+- **Cell line:** 409B2 hiPSCs (RIKEN BRC \#HPS0076)
 - **Genome editing:** CRISPR-Cas9 + single-stranded oligodeoxynucleotide (ssODN) for precise heterozygous SNP introduction
 - **Mutations:** KCNH2 N588D (LQT26; LQTS2 phenotype) and KCNH2 N588K (SQT22; SQTS phenotype)
 - **MEA platform:** Alpha MED Scientific MED system (MED-P515A); 64 channels, 8×8 grid; 50 µm square electrodes, 150 µm intervals

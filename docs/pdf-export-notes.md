@@ -12,20 +12,22 @@ Things in `main.md` that commonly break or look wrong when Markdown is converted
 - **Front matter and horizontal rules.** The YAML block at the top (title, description, author) must be consumed as metadata and not printed. The five `---` section separators are horizontal rules; in Pandoc a `---` line can be misread as a YAML block if it is followed directly by text, which is not the case now but is easy to break by editing.
 - **Reference list style.** Entries are plain APA paragraphs with italic journal titles and volume numbers. Hanging indents and clickable DOI links are not produced automatically; add them in the template or CSS if wanted.
 - **Italic caption lines.** Figure and table captions are single italic lines above the object. Keep them attached to their figure or table so they do not end up on a different page.
+- **Escaped hash.** `main.md` writes the standard's name as `AIMS \#CM01` so that Obsidian does not read it as a tag. All identifiers that start with a hash are escaped this way throughout the repository (see "No stray tags" in AGENTS.md). The converter should print the escaped form without the backslash, as `AIMS #CM01`; check this in the PDF.
 - **Bold text and emphasis markers.** The draft uses bold for key terms and `*...*` for search terms and journal names; check that none of the asterisks printed literally.
 
 ## Content that must be resolved before the export
 
-- No `[CITATION NEEDED]` flag remains as of 2026-10-18; re-check with `grep -n "CITATION NEEDED" main.md` after any further edits.
-- Confirm the Declarations text (status, competing interests, AI assistance, funding, licence, data and code availability). Funding (none) and licence (CC BY 4.0) were added on 2026-10-18.
-- Affiliation is set to "Independent researcher" and keywords are stored in the YAML front matter of `main.md` (`author` and `keywords`); the PDF template must print them from there. Keywords for the Zenodo form: multielectrode array, hiPSC-cardiomyocytes, field potential duration, rate correction, cardiac safety pharmacology, review.
-- Still missing in the Markdown: date and version (Zenodo adds the deposit date; the version can be "Version 1").
-- The sentence at the top ("Preprint, not peer reviewed. Prepared with AI assistance; see Declarations.") should survive into the PDF.
-- Check that the PDF is not larger than expected and that links in the reference list work.
+- [ ] No `[CITATION NEEDED]` flag remains as of 2026-10-18; re-check with `grep -n "CITATION NEEDED" main.md` after any further edits.
+- [ ] Confirm the Declarations text (status, competing interests, AI assistance, funding, licence, data and code availability). Funding (none) and licence (CC BY 4.0) were added on 2026-10-18.
+- [ ] Affiliation is set to "Independent researcher" and keywords are stored in the YAML front matter of `main.md` (`author` and `keywords`); the PDF template must print them from there. 
+- [ ] Keywords for the Zenodo form: multielectrode array, hiPSC-cardiomyocytes, field potential duration, rate correction, cardiac safety pharmacology, review.
+- [ ] Still missing in the Markdown: date and version (Zenodo adds the deposit date; the version can be "Version 1").
+- [ ] The sentence at the top ("Preprint, not peer reviewed. Prepared with AI assistance; see Declarations.") should survive into the PDF.
+- [ ] Check that the PDF is not larger than expected and that links in the reference list work.
 
 ## Zenodo deposit points to decide
 
-- Resource type (preprint or publication, report). The licence is decided: CC BY 4.0, the same as the opinion paper (Mäki, 2023); select the same one on the deposit form.
-- Whether to link the deposit to the opinion paper's Zenodo record as a related work.
-- Which version of the opinion paper to cite: the review currently cites v3 (Zenodo record 20807245, published 23 June 2026) with the year 2023, explained in the version note in Declarations.
-- Whether the repository link in the Declarations should stay (https://github.com/AnaHill/MEA_review_llm_wiki), since the source notes and log are public there.
+- [ ] Resource type (preprint or publication, report). The licence is decided: CC BY 4.0, the same as the opinion paper (Mäki, 2023); select the same one on the deposit form.
+- [x] Whether to link the deposit to the opinion paper's Zenodo record as a related work.
+- [x] Which version of the opinion paper to cite: the review currently cites v3 (Zenodo record 20807245, published 23 June 2026) with the year 2023, explained in the version note in Declarations.
+- [x] Whether the repository link in the Declarations should stay (https://github.com/AnaHill/MEA_review_llm_wiki), since the source notes and log are public there.

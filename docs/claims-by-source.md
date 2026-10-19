@@ -26,7 +26,7 @@ Claims: (1) [Model complexity] it is a two-dimensional bidomain model of a six-w
 
 Local file: `raw/clements-2025-aims-poster.pdf` (git-ignored); page `wiki/papers/clements-2025-aims-poster.md`. Status: checked (poster text read in full; layout not viewed).
 
-Claims: (1) [FPDc] a recent proposed acceptance standard for hiPSC-ventricular-CM MEA assays builds the Fridericia correction into quality control by requiring an FPDc of 200–700 ms. (2) [FPDc] spontaneous rates are accepted at 20–80 BPM in that proposal. (3) [Maturation] it is an industry-led proposal (Axion BioSystems' "AIMS #CM01", presented as a poster at ISSCR 2025) defining minimum well-acceptance criteria for spontaneous-beating hiPSC-ventricular-CM MEA assays: spike amplitude ≥ 0.5 mV and synchronized beating on at least half of the electrodes, a spontaneous beat period of 750–3000 ms, and FPDc of 200–700 ms. (4) it targets assay quality control, not maturation staging. (5) it has been presented as a conference poster and vendor document rather than a peer-reviewed methods paper. Pointers: the "AIMS #CM01: Proposed standards" box; "Presented at ISSCR 2025, Hong Kong, June 11, 2025". The standard document on the vendor's website (last revised 2 December 2024) was read only through a web-fetch summary.
+Claims: (1) [FPDc] a recent proposed acceptance standard for hiPSC-ventricular-CM MEA assays builds the Fridericia correction into quality control by requiring an FPDc of 200–700 ms. (2) [FPDc] spontaneous rates are accepted at 20–80 BPM in that proposal. (3) [Maturation] it is an industry-led proposal (Axion BioSystems' "AIMS \#CM01", presented as a poster at ISSCR 2025) defining minimum well-acceptance criteria for spontaneous-beating hiPSC-ventricular-CM MEA assays: spike amplitude ≥ 0.5 mV and synchronized beating on at least half of the electrodes, a spontaneous beat period of 750–3000 ms, and FPDc of 200–700 ms. (4) it targets assay quality control, not maturation staging. (5) it has been presented as a conference poster and vendor document rather than a peer-reviewed methods paper. Pointers: the "AIMS \#CM01: Proposed standards" box; "Presented at ISSCR 2025, Hong Kong, June 11, 2025". The standard document on the vendor's website (last revised 2 December 2024) was read only through a web-fetch summary.
 
 ## Correia et al. (2024)
 
@@ -132,4 +132,9 @@ Claims: (1) [Timeline] PhysioMEA, cardiac organoid BRV and 2D heatmaps (2026). (
 
 ## Claims that rest on the author's own synthesis rather than a single source
 
-These are statements in `main.md` that no single reference supports and that you should judge yourself: the four "methodological gaps" in the Conclusion and Abstract; the statement that open analysis platforms point toward reproducibility and transparency; the observation that FPD conventions differ across open platforms and are therefore not directly comparable; the inference that an MEA-native maturity reference could be assembled from existing components; and the observations about the Park and Pramudito studies' resampling and uncorrected-correction assumptions (these are derived from the papers but are the author's reading).
+These are statements in `main.md` that no single reference supports and that you should judge yourself: 
+1. the four "methodological gaps" in the Conclusion and Abstract; 
+2. the statement that open analysis platforms point toward reproducibility and transparency; 
+3. the observation that FPD conventions differ across open platforms and are therefore not directly comparable; 
+4. the inference that an MEA-native maturity reference could be assembled from existing components; 
+5. and the observations about the Park and Pramudito studies' resampling and uncorrected-correction assumptions (these are derived from the papers but are the author's reading).

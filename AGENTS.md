@@ -114,6 +114,8 @@ Links to related wiki pages.
 ## [YYYY-MM-DD] lint | pass
 ```
 
+**No stray tags.** The wiki is read in Obsidian, where a `#word` in prose becomes a tag. Tags belong only in the `tags:` front matter. Whenever a hash-prefixed identifier appears in text and is not meant as a tag (for example the standard AIMS `\#CM01` or the cell-line catalogue number `\#HPS0076`), always write the hash with a backslash escape, as in `\#CM01`, so it displays as "#CM01" without becoming a tag. Do not use quotes, bare hashes or dropped hashes for this, and keep the identifier as the source writes it. This applies to every markdown file, including `wiki/log.md` and `main.md` (Pandoc prints the escaped hash without the backslash). `scripts/check.py` warns about unescaped hashes.
+
 **Index format:** Each entry in `wiki/index.md` should include a link, a one-line summary, and optionally metadata (year, venue). Organize by the categories defined in `wiki/index.md`.
 
 **Raw sources are immutable.** Never edit files in `raw/`. The LLM reads from them; that's all. The one exception is renaming a file at ingest so its stem matches its wiki page (see "Naming raw files").

@@ -2,7 +2,7 @@
 tags: [high-throughput, rate-correction, maturation, 2d-culture]
 ---
 
-# Standards for hiPSC-derived cardiomyocyte electrophysiology using the MEA assay (AIMS #CM01 poster)
+# Standards for hiPSC-derived cardiomyocyte electrophysiology using the MEA assay (AIMS \#CM01 poster)
 
 **Authors:** Mike Clements, Cristina Altrocchi, Devon Guerrelli, Adam P. Hill, Nikki Posnack, Chris Strock, Takashi Yoshinaga  
 **Year:** 2025  
@@ -11,10 +11,10 @@ tags: [high-throughput, rate-correction, maturation, 2d-culture]
 **URL:** https://axionbiosystems.com/resources/poster/standards-hipsc-derived-cardiomyocyte-electrophysiology-using-mea-assay  
 **Affiliations:** Axion BioSystems; Johnson & Johnson (Belgium); Children's National Hospital; Victor Chang Cardiac Research Institute; Cyprotex; Eisai.
 
-> **Note:** Grey literature. The poster PDF was read in full on 2026-10-18 (one page; text extracted, layout not inspected visually). The underlying standard document "AIMS #CM01: Spontaneous beating wild type hiPSC-ventricular cardiomyocyte field potential assay", published by Axion BioSystems (last revised 2 December 2024), was retrieved from https://axionbiosystems.com/aims-cm01 through a web-fetch summary only and no local copy was saved; it agrees with the poster on the criteria below.
+> **Note:** Grey literature. The poster PDF was read in full on 2026-10-18 (one page; text extracted, layout not inspected visually). The underlying standard document "AIMS \#CM01: Spontaneous beating wild type hiPSC-ventricular cardiomyocyte field potential assay", published by Axion BioSystems (last revised 2 December 2024), was retrieved from https://axionbiosystems.com/aims-cm01 through a web-fetch summary only and no local copy was saved; it agrees with the poster on the criteria below.
 
 ## Contribution
-Proposes minimum acceptance criteria, the Axion iPSC Model Standards (AIMS) #CM01, for a spontaneous-beating wild-type hiPSC-ventricular cardiomyocyte field potential assay used for compound testing or disease modelling, drawing on academic and industry experience, published data and the CiPA and JiCSA consortia.
+Proposes minimum acceptance criteria, the Axion iPSC Model Standards (AIMS) \#CM01, for a spontaneous-beating wild-type hiPSC-ventricular cardiomyocyte field potential assay used for compound testing or disease modelling, drawing on academic and industry experience, published data and the CiPA and JiCSA consortia.
 
 ## Methodology
 - A cell source meets the proposed standard when at least 80 % of MEA wells meet all four well criteria.

@@ -144,6 +144,28 @@ for i, line in enumerate(read(WIKI / "log.md").splitlines(), 1):
         if not m or m.group(1) not in LOG_TYPES:
             report("WARN", f"wiki/log.md:{i}", f"non-standard log header: {line[:60]}")
 
+# --- accidental Obsidian tags ----------------------------------------------------------
+# A '#word' in prose is read as a tag in Obsidian. Tags belong in the front matter only.
+# Always escape the hash with a backslash (\#word); quotes do not count as an escape.
+TAG = re.compile(r"(?<![\w\\&/#`])#(?=[A-Za-z_])[\w/-]*[A-Za-z_][\w/-]*")
+for p in [ROOT / "main.md", *sorted(WIKI.rglob("*.md")), *sorted((ROOT / "docs").glob("*.md"))]:
+    in_front, in_fence = False, False
+    for n, line in enumerate(read(p).splitlines(), 1):
+        s = line.strip()
+        if n == 1 and s == "---":
+            in_front = True
+            continue
+        if in_front:
+            in_front = s != "---"
+            continue
+        if s.startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence or s.startswith("#"):
+            continue
+        for m in TAG.finditer(re.sub(r"`[^`]*`|https?://\S+", "", line)):
+            report("WARN", f"{rel(p)}:{n}", f"'{m.group(0)}' would be read as an Obsidian tag; escape the hash with a backslash")
+
 # --- output --------------------------------------------------------------------------
 sys.stdout.reconfigure(encoding="utf-8")
 for level in ("ERROR", "WARN", "INFO"):
