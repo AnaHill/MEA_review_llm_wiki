@@ -1,6 +1,6 @@
 # Charting the Field: Cardiomyocyte MEA Analysis Evolution Since 2022
 
-A narrative review paper by Antti-Juhana Mäki, maintained with an LLM-assisted academic wiki workflow using VS Code + [Foam](https://foambubble.github.io/foam/).
+A narrative review paper by Antti-Juhana Mäki, maintained with an LLM-assisted academic wiki workflow using VS Code + [Foam](https://foambubble.github.io/foam/) or [Obsidian](https://obsidian.md/).
 
 ---
 
@@ -47,7 +47,7 @@ llm-wiki.md        the wiki pattern explained
 
 - **Select a section** in `main.md` and say *"rewrite this"* — agent edits only that section.
 - **`[CITATION NEEDED]`** markers mean no supporting source was found — add the paper and re-ingest.
-- **Graph view** in Foam shows how paper pages link across the wiki — useful for spotting coverage gaps. Obsidian as well can be used.
+- **Graph view** in Foam (or in Obsidian) shows how paper pages link across the wiki — useful for spotting coverage gaps. Obsidian as well can be used.
 - **`wiki/references.md`** is copy-paste ready for submission; tell agent your citation style if not APA.
 
 ---
