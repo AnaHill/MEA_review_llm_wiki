@@ -1,34 +1,42 @@
 # Tarkistuslista 24.10.2026
 <!-- temp file that will be deleted -->
-- [ ] Oma lähdetarkistus: 
-  - Tarkista jokainen lähde docs/claims-by-source.md:n kappaletta vasten ja aloita niistä, joiden tilana on "from the wiki page"
-  - Muokkaa main.md:tä ensin ja tarkista lähteet vasta sen jälkeen
-  - Muuten väitelista vanhenee (docs/claims-by-source.md on koottu 18.10.). 
-- [ ] kun oma lähdetarkistus valmis, aja listan päivitys uudelleen
 
-main.md:ssä on yhä synteesikohtia (claims-by-source.md:n lopun lista 1–15), joissa on yleistyksiä ilman lähdettä (erityisesti 1, 3, 9, 10, 14, 15). Ne jäivät sinun harkittavaksi. Lokiin on kirjattu merkintä.
+<!--
+EHDOTETUT MUUTOKSET 24.10.2026
+- Poistettu vanhentunut: "aloita niistä, joiden tilana on from the wiki page" (kaikki wikisivut on nyt tarkistettu lähdetekstiä vasten 24.10., joten järjestyksellä ei ole väliä), "claims-by-source.md on koottu 18.10." (päivitetty 24.10.), rivinumero 173 (siirtyy), Table 2:n yhdistäminen (tehty).
+- Yhdistetty kaksoiskohdat: oma lähdetarkistus oli listalla kahdesti, synteesikohdat kahdesti, tyylimerkinnät kahdesti.
+- Lisätty puuttuvat: main.md:n läpilukeminen ensin, omat HTML-kommentit pois ennen vientiä, lopputarkistus check.py:llä, commit, ToDo.md:n poisto, Zenodo-metatiedot, Figure 2 (valinnainen).
+-->
 
-- main.md
-  - [ ] Tyylimerkinnät: käydään läpi vasta kun olen lukenut koko main.md. Merkinnät löytää komennolla grep -n "not really my style" main.md (nyt 2 paria abstraktissa). Claude ehdottaa uudelleenkirjoitukset minun tyylilläni, kunhan annan esimerkin omasta tyylistäni (esim. Mäki 2023 -teksti tai notes.md).
-  - [ ] olen merkannut main.md:ssä, mitkä kohdat ei mm. kuulosta minulta kuten tämä <!-- not really my style of text starts --> build on sound methodological foundations. <!-- not really my style of text ends -->
-  - [ ] Viimeinen osio: väitteet, joilla ei ole yhtä lähdettä, vaan ne ovat oma synteesisi. Niitä ovat neljä aukkoa, päätelmä avoimista alustoista ja MEA-natiivin maturaatioindeksin kokoaminen olemassa olevista osista.
-    - `docs\claims-by-source.md`, riviltä 173 alkane _## Claims that rest on the author's own synthesis or are not cited_
-  - [ ] Valinnainen: Table 2:n rivi 1 (peak-to-peak) ja rivi 4 (R-to-T-peak) ovat lähes päällekkäiset. Voisin yhdistää ne, jos haluat selkeämmän taulukon.
+## 1. main.md: oma läpilukeminen ja muokkaus (tehdään ensin)
+- [ ] Lue koko main.md ja muokkaa tekstiä. Lähdetarkistus vasta tämän jälkeen, muuten väitelista vanhenee
+- [ ] Synteesikohdat: docs/claims-by-source.md:n osio "Claims that rest on the author's own synthesis or are not cited" (15 numeroitua kohtaa). Kohdissa 1, 3, 9, 10, 14 ja 15 on yleistyksiä ilman lähdettä: lisää lähde, pehmennä tai poista. Niitä ovat mm. neljä aukkoa, päätelmä avoimista alustoista ja MEA-natiivin maturaatioindeksin kokoaminen olemassa olevista osista
+- [ ] Käy läpi omat HTML-kommenttisi main.md:ssä: `grep -n "<!--" main.md` (mm. "needs citation(s)" Motivation-osion lihavoidulla lauseella ja "Continue manual check here")
+- [ ] Tyylimerkinnät: `grep -n "not really my style" main.md` (nyt 2 paria abstraktissa). Käydään läpi vasta kun olet lukenut koko main.md. Claude ehdottaa uudelleenkirjoitukset sinun tyylilläsi, kunhan annat esimerkin omasta tyylistäsi (esim. Mäki 2023 -teksti tai notes.md)
+- [ ] Valinnainen: Figure 2 -vuokaavio ei näytä kolmatta FPD-päätepistekäytäntöä (Dunhamin T-aallon päätepiste, trapetsimenetelmä). Päivitä ennen renderöintiä, jos haluat kaavion vastaavan Table 2:ta
 
-- [ ] Oma lähdetarkistus listan avulla. Aloita lähteistä, jotka ovat vain wikisivujen varassa. Vertaa docs\claims-by-source.md sekä main.md: erityisen tarkasti katso *Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer*.
-  - [ ] Kun valmis, todeta että Declarations kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
+## 2. Oma lähdetarkistus (kun main.md:n teksti on valmis)
+- [ ] Pyydä Claudea päivittämään docs/claims-by-source.md uudelleen valmiista tekstistä
+- [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten. Wikisivut on jo tarkistettu lähdetekstiä vasten (24.10.), mutta numerot ja kuvatulkinnat kannattaa varmistaa itse, ja kaksi lisätiedostoa jäi lukematta (Correia ja Scheurer, supplementary)
+  - Erityisesti: Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025, Scheurer (näistä on korjattu eniten)
+- [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 
+## 3. Ennen vientiä
+- [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotettu varoitus: Clements 2025 -posterilla ei ole DOI:ta)
+- [ ] Committaa: uudet tiedostot (wikisivut, raw-PDF:t, docs, scripts, ToDo.md ellei poisteta) ovat vielä git-seurannan ulkopuolella. Tarkista, että ei-avoimet PDF:t (Pramudito, Clements) pysyvät .gitignoressa
+- [ ] Poista tämä ToDo.md (temp-tiedosto)
 
-
-## Zenodo vienti vasta lopuksi
-- [ ] pdf muutos: valitse työkalu ja testaa taulukot, Unicode-merkit ja LaTeX-kaava.
-- [ ] Mermaid-kaaviot: 2 kpl on renderöitävä kuviksi ennen PDF-vientiä (ks. docs/pdf-export-notes.md)
-  - tehdään lopuksi mermaid-liven kautta sopivaksi kuvamuodoksi 
+## 4. Zenodo-vienti vasta lopuksi
+- [ ] pdf-muutos: valitse työkalu ja testaa taulukot, Unicode-merkit ja LaTeX-kaava (ks. docs/pdf-export-notes.md)
+- [ ] Mermaid-kaaviot: 2 kpl renderöitävä kuviksi ennen PDF-vientiä. Tehdään lopuksi mermaid-liven kautta sopivaksi kuvamuodoksi
+- [ ] Tarkista PDF:stä: HTML-kommentit eivät näy, hash-tunnisteet (\#CM01 jne.) näkyvät oikein, lähdeluettelo vastaa tekstiä
+- [ ] Zenodo-metatiedot: lisenssi CC BY 4.0, rahoitus (ei rahoitusta, harrastus), avainsanat, tekijä "Antti-Juhana Mäki, Independent researcher", päivämäärä ja versio, tallennus liitetään Mäki-tietueeseen (Version v3)
 - [x] Declarations-teksti hyvä, pidetään näin
-- [x] Zenodo-päätökset: jätetään GitHub-linkki Declarationsiin.
+- [x] Zenodo-päätökset: jätetään GitHub-linkki Declarationsiin
 
-## Kun julkaistu Zenodossa
-- [ ] päivitä Readme.md alku kohta viittaamaan myös siihen  "The paper is in main.md and published in <link>
-- [ ] mieti postaus aiheesta
-  - kuinka tekisin uudelleen; datan, eli lähteiden tarkasteleminen heti alussa paremmin --> datalaatu kunniaan
-  - kattavampi lähdehaku useammalla eri tavalla; esim toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
+## 5. Kun julkaistu Zenodossa
+- [ ] Päivitä README.md:n alku viittaamaan myös julkaisuun: "The paper is in main.md and published in <link>"
+- [ ] Mieti postaus aiheesta
+  - kuinka tekisin uudelleen: datan eli lähteiden tarkasteleminen heti alussa paremmin, datalaatu kunniaan
+  - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
+  - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
