@@ -44,7 +44,7 @@ wiki/
   references.md    auto-maintained citation list (APA)
 main.md            paper draft — IMRaD sections, single file
 notes.md           the author's own notes (the agent does not edit it)
-docs/              process documents: search strategy, claims-by-source checklist, PDF export notes
+docs/              process documents (see docs/README.md): claims-by-source checklist, lint audit trail, PDF export notes, search strategy, peer review notes
 scripts/           check.py (consistency check), render_pdf_pages.py (PDF text and page images)
 skills/            Agent skill definitions
 AGENTS.md          wiki schema and LLM instructions (CLAUDE.md just imports it)
@@ -61,7 +61,7 @@ Unless noted otherwise, the written content of this repository (`main.md`, `wiki
 
 - **Select a section** in `main.md` and say *"rewrite this"* — agent edits only that section.
 - **`[CITATION NEEDED]`** markers mean no supporting source was found — add the paper and re-ingest.
-- **Graph view** in Foam or shows how paper pages link across the wiki — useful for spotting coverage gaps.
+- **Graph view** in Foam or Obsidian shows how paper pages link across the wiki — useful for spotting coverage gaps.
 - **`wiki/references.md`** is copy-paste ready for submission; tell agent your citation style if not APA.
 - **`python -I scripts/check.py`** is run after every change to the wiki or `main.md`; it reports broken links, missing references and unescaped hashes (a `#word` in prose becomes a tag in Obsidian, so write it as `\#word`).
 - **`docs/claims-by-source.md`** lists every claim in `main.md` per source, for checking the paper against the sources.
