@@ -4,7 +4,7 @@ tags: [multimodal, video, hypoxia]
 
 # Combined electrophysiological and video-based motion analysis for human induced pluripotent stem cell-derived cardiomyocytes in hypoxia
 
-**Authors:** Hannu Välimäki, Antti Mäki, Dhanesh Kattipparambil Rajan, Mari Pekkanen-Mattila, Joose Kreutzer, Tomi Ryynänen, Jarmo Verho, Katriina Aalto-Setälä, Pasi Kallio  
+**Authors:** Hannu Välimäki, Antti-Juhana Mäki, Dhanesh Kattipparambil Rajan, Mari Pekkanen-Mattila, Joose Kreutzer, Tomi Ryynänen, Jarmo Verho, Katriina Aalto-Setälä, Pasi Kallio  
 **Year:** 2021  
 **Venue:** EUROOoCs conference of European Organ-on-Chip Society, virtual conference, 1–2 July 2021 (conference contribution, not a journal article)  
 **File:** none (only the Tampere University research portal record was seen)  
