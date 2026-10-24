@@ -1,19 +1,12 @@
 # Tarkistuslista 24.10.2026
 <!-- temp file that will be deleted -->
 
-<!--
-EHDOTETUT MUUTOKSET 24.10.2026
-- Poistettu vanhentunut: "aloita niistä, joiden tilana on from the wiki page" (kaikki wikisivut on nyt tarkistettu lähdetekstiä vasten 24.10., joten järjestyksellä ei ole väliä), "claims-by-source.md on koottu 18.10." (päivitetty 24.10.), rivinumero 173 (siirtyy), Table 2:n yhdistäminen (tehty).
-- Yhdistetty kaksoiskohdat: oma lähdetarkistus oli listalla kahdesti, synteesikohdat kahdesti, tyylimerkinnät kahdesti.
-- Lisätty puuttuvat: main.md:n läpilukeminen ensin, omat HTML-kommentit pois ennen vientiä, lopputarkistus check.py:llä, commit, ToDo.md:n poisto, Zenodo-metatiedot, Figure 2 (valinnainen).
--->
-
 ## 1. main.md: oma läpilukeminen ja muokkaus (tehdään ensin)
 - [ ] Lue koko main.md ja muokkaa tekstiä. Lähdetarkistus vasta tämän jälkeen, muuten väitelista vanhenee
 - [ ] Synteesikohdat: docs/claims-by-source.md:n osio "Claims that rest on the author's own synthesis or are not cited" (15 numeroitua kohtaa). Kohdissa 1, 3, 9, 10, 14 ja 15 on yleistyksiä ilman lähdettä: lisää lähde, pehmennä tai poista. Niitä ovat mm. neljä aukkoa, päätelmä avoimista alustoista ja MEA-natiivin maturaatioindeksin kokoaminen olemassa olevista osista
 - [ ] Käy läpi omat HTML-kommenttisi main.md:ssä: `grep -n "<!--" main.md` (mm. "needs citation(s)" Motivation-osion lihavoidulla lauseella ja "Continue manual check here")
 - [ ] Tyylimerkinnät: `grep -n "not really my style" main.md` (nyt 2 paria abstraktissa). Käydään läpi vasta kun olet lukenut koko main.md. Claude ehdottaa uudelleenkirjoitukset sinun tyylilläsi, kunhan annat esimerkin omasta tyylistäsi (esim. Mäki 2023 -teksti tai notes.md)
-- [ ] Valinnainen: Figure 2 -vuokaavio ei näytä kolmatta FPD-päätepistekäytäntöä (Dunhamin T-aallon päätepiste, trapetsimenetelmä). Päivitä ennen renderöintiä, jos haluat kaavion vastaavan Table 2:ta
+- [x] Figure 2 -vuokaavio: kolmas FPD-päätepistekäytäntö (Dunhamin T-aallon päätepiste, trapetsimenetelmä) lisätty 24.10. Tarkista renderöinnin jälkeen, että uuden reunan teksti ei veny liian pitkäksi
 
 ## 2. Oma lähdetarkistus (kun main.md:n teksti on valmis)
 - [ ] Pyydä Claudea päivittämään docs/claims-by-source.md uudelleen valmiista tekstistä

@@ -124,8 +124,10 @@ flowchart TD
     I --> J{FPD end convention}
     J -->|T-wave peak| K[APD90 surrogate\nErnault et al., 2024]
     J -->|Baseline return| L[Full repolarization\nMäki, 2023]
+    J -->|T-wave endpoint\ntrapezoid area| P[End of the T wave\nDunham et al., 2022]
     K --> M[Rate correction — FPDcF]
     L --> M
+    P --> M
     M --> N[Pharmacological and safety interpretation]
 ```
 
