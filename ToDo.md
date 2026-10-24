@@ -26,7 +26,7 @@ Tehty
 - [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 
 ## 3. Ennen vientiä
-- [ ] Idea tutkittavaksi (valinnainen): aktivaatio-palautumisintervalli (ARI) vaihtoehtona peak-to-peak-FPD:lle on todellinen tutkimuskäsite. Se pitää ensin löytää ja lukea; alkuperäinen ehdotus (Chinushi 2001 / Haws & Lux 1990, tarkka nimi ja julkaisu varmistamatta) on docs/peer_review_missing_references_main.md:ssä. Ei viitteitä paperiin ennen lukemista (AGENTS: ei keksittyjä viitteitä)
+- [ ] Idea tutkittavaksi (valinnainen): aktivaatio-palautumisintervalli (ARI) vaihtoehtona peak-to-peak-FPD:lle on todellinen tutkimuskäsite. Se pitää ensin löytää ja lukea; alkuperäinen ehdotus (Chinushi 2001 / Haws & Lux 1990, tarkka nimi ja julkaisu varmistamatta) on docs/peer_review_missing_references_main.md:ssä (tiedosto on sittemmin poistettu, ks. git-historia). Ei viitteitä paperiin ennen lukemista (AGENTS: ei keksittyjä viitteitä)
 - [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotetut varoitukset nyt kolme: Clements 2025 -posterilla ei ole DOI:ta; Välimäki 2021 -viitteellä ei ole DOI:ta eikä raw-tiedostoa)
 - [ ] Poista tämä ToDo.md (temp-tiedosto)
 

@@ -395,3 +395,7 @@ Researcher-approved. main.md (Discussion and future outlook, device-separation p
 ## [2026-10-24] draft | docs/README.md added; assessment of the missing-references guide; ARI idea in the ToDo
 
 Researcher request. docs/README.md (new): explains what each file in docs/ does, when it is used and when it can be deleted, and why these files are in docs/ and not in wiki/ (wiki/ holds knowledge about the sources and is indexed and checked; docs/ holds knowledge about the work; rule of thumb included). README.md layout row for docs/ updated. docs/peer_review_missing_references_main.md: the author's assessment appended in Finnish (five of seven references already in main.md; two unverified; line numbers and LaTeX unreliable; the only useful idea is the activation-recovery interval). ToDo.md: optional item to find and read literature on activation-recovery intervals as an alternative to peak-to-peak FPD, with no references to be added before reading.
+
+## [2026-10-24] draft | Review files deleted; docs cleaned up
+
+The researcher deleted docs/peer_review_main.md and docs/peer_review_missing_references_main.md (both are in the git history, last version in commit d3430e6). docs/README.md: the two rows removed and a note added; docs/lint-fixes-2026-10-24.md: notes at groups 10 and 11 and a new appendix that keeps the author's assessment of the simulated review (what was applied, what was rejected and why); ToDo.md: the ARI item only gained a short remark that the file it mentions has been deleted. No change to main.md.

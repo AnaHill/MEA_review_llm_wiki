@@ -980,7 +980,7 @@ Written for: the researcher, who asked for a summary good enough to judge each c
 
 ## Group 10. Small fixes after reading the simulated peer review (docs/peer_review_main.md)
 
-These changes followed the simulated peer review in `docs/peer_review_main.md`; the proposed sentence for review point 4 is deliberately not applied (see the end of that file).
+These changes followed the simulated peer review in `docs/peer_review_main.md` (deleted later the same day; in the git history, last version in commit d3430e6); the proposed sentence for review point 4 is deliberately not applied (see the end of that file).
 
 ### Figure 1: label on the 2023 entry (review point 1)
 
@@ -1132,7 +1132,7 @@ These changes followed the simulated peer review in `docs/peer_review_main.md`; 
 
 ## Group 11. Follow-up: hash escapes, the ill-posed-inverse-problem sentence, caution note
 
-Follow-up to the simulated peer review and to the guide `docs/peer_review_missing_references_main.md`.
+Follow-up to the simulated peer review and to the guide `docs/peer_review_missing_references_main.md` (also deleted later the same day; in the git history, last version in commit d3430e6).
 
 ### Hash identifiers escaped; caution note added
 
@@ -1205,3 +1205,21 @@ Follow-up to the simulated peer review and to the guide `docs/peer_review_missin
 **After:**
 
 > - [x] Kohdan 4 virke (käänteisongelma huonosti asetettu) lisätty outlookiin 24.10.; muut peer review -korjaukset (1, 2, 3, 5, 6) tehty samana päivänä, ks. docs/lint-fixes-2026-10-24.md, ryhmät 10 ja 11
+
+## Appendix: the author's assessment of the simulated peer review (kept when the review files were deleted)
+
+The simulated review (`docs/peer_review_main.md`) was written by an AI model that was not told that the text is a preprint. The author's assessment, summarised from the deleted file:
+
+**Applied (group 10 above):** label the author's own tool and opinion paper as not peer reviewed (Figure 1, Table 1); state that the robustness of the baseline-return end point to noise and drift was not examined; caveat the signal-inversion branch (Table 1, Figure 2 caption); scope gap 4 in the Abstract to the electrophysiological axis; cosmetic fixes (Table 2 cell for Ernault, section heading, a sentence on pacing). **Applied after approval (group 11):** a sentence that recovering the action potential from a field potential may be an ill-posed inverse problem, marked as the author's reasoning.
+
+**Rejected or not applicable, with the reasons:**
+- *Re-anchor the review to CiPA and reject the manuscript.* CiPA does not define field-potential analysis conventions, so it is not an alternative evaluative framework. The paper is an unreviewed preprint, and the Mäki (2023) anchor is documented in the Scope section, Limitations (iv) and the Declarations.
+- *PRISMA and reproducibility of the search.* The review is openly narrative and non-systematic, and Limitations says so.
+- *HTML comments, affiliation and target-journal requirements.* The comments are removed before export (ToDo); the rest does not apply to a preprint.
+- *"Core premise not demonstrated".* The text already says "plausible source" and that no reviewed study measures the effect; the softening is deliberate, not a contradiction.
+- *"Self-contradiction with Fetterman et al. (2024)".* A misreading: the Conclusion scopes the proposed reference value to the electrophysiological axis, which is why the Abstract was clarified.
+- *"Conflation of electroporation with computational processing".* Incorrect: in the text electroporation is a separate source of paired data.
+- *Biophysical argument against inversion.* Judged exaggerated (the polarity at an electrode depends on the electrode-source geometry, and PhysioMEA analyses inverted signals for inverted T waves and low R peaks), but the branch was caveated because it is not independently validated. This is a field-expertise judgement of the author.
+
+The companion guide of "missing references" (`docs/peer_review_missing_references_main.md`) was judged useless: five of its seven references were already in `main.md` and checked, the two others (activation-recovery intervals; Millard et al., rate correction) are unverified, and its line numbers and LaTeX were unreliable. Its one useful idea, the activation-recovery interval as an alternative to peak-to-peak FPD, is a to-do item in `ToDo.md`.
+
