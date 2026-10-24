@@ -22,14 +22,14 @@ Demonstrates that a Sony ultra-high-density CMOS-MEA (UHD-CMOS-MEA) with 236,880
   - **Propagation area** — fraction of the preparation participating in synchronized activation
   - **Conduction velocity (CV) maps** — spatial heterogeneity and mean CV
 - Pharmacological validation: CiPA reference compounds (hERG blockers, INa blockers, L-type Ca channel modulators)
-- Comparison with conventional FPD and FPDcF endpoints
+- Direct comparison with a conventional 16-electrode MEA system (beat frequency, inter-beat interval, spike amplitude); the paper does not report FPD or rate-corrected FPD for its own recordings (FPDc appears only in a table of thresholds taken from earlier studies)
 
 ## Findings
 - FPI resolves individual cell activation sequences not visible on conventional 64–256 electrode MEAs.
 - **Excitation origin count** detects re-entrant or multi-focal arrhythmic behavior not captured by FPD.
 - **Propagation area** declines predictably with conduction-slowing drugs (e.g., INa blockers), providing a direct pharmacodynamic endpoint.
 - **CV maps** reveal heterogeneous conduction slowing that precedes detected arrhythmic events.
-- FPDcF values from the UHD-MEA correlate with conventional MEA values but provide spatial FPD heterogeneity maps as an additional dimension.
+- Chronic low-dose doxorubicin (0.03 µM) was detected within 24 h by reductions in conduction velocity and propagation area, which the authors describe as a 10-fold lower concentration and a shorter time than in earlier studies; in a direct comparison at 0.1 µM the conventional MEA detected a spike amplitude reduction at 48 h, the CMOS-MEA a conduction velocity decline at 24 h.
 - These novel endpoints can detect proarrhythmic risk profiles that are invisible to single-well FPD metrics.
 
 ## Limitations

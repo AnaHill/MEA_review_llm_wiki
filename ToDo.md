@@ -6,8 +6,6 @@
   - Muuten väitelista vanhenee (docs/claims-by-source.md on koottu 18.10.). 
   - Kun tekstisi on valmis, voin päivittää listan uudelleen
 
-
-
 - main.md
   - [ ] Tyylimerkinnät: käydään läpi vasta kun olen lukenut koko main.md. Merkinnät löytää komennolla grep -n "not really my style" main.md (nyt 2 paria abstraktissa). Claude ehdottaa uudelleenkirjoitukset minun tyylilläni, kunhan annan esimerkin omasta tyylistäni (esim. Mäki 2023 -teksti tai notes.md).
   - [ ] olen merkannut main.md:ssä, mitkä kohdat ei mm. kuulosta minulta kuten tämä <!-- not really my style of text starts --> build on sound methodological foundations. <!-- not really my style of text ends -->

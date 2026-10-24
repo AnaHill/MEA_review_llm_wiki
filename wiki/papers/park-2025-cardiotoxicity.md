@@ -20,7 +20,7 @@ Comparative cardiotoxicity study using three healthy hiPSC-CM lines and one pati
   - DPHC01i-AR (LQTS2; KCNH2 c.453delC frameshift; peripheral blood; patient-derived)
 - **Drug panel (8 CiPA drugs at concentrations from Millard et al. 2018):**
   E4031, nifedipine, mexiletine, JNJ303, flecainide, moxifloxacin, quinidine, ranolazine
-- **Endpoints:** FPD, FPDcF (Fridericia), % change from baseline; FPD20/FPDc20 as EC20-type metric
+- **Endpoints:** FPD, corrected FPD (FPDc, computed by the vendor software; the paper does not name the correction formula), beat period and amplitude, % change from baseline; FPD20/FPDc20 as EC20-type metric
 - **Complementary:** Single-cell AP recordings by patch clamp to confirm cellular phenotype
 - FPD % change formula: (post-drug FPD / baseline FPD) × 100
 
