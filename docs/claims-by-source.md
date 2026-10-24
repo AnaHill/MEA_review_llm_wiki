@@ -5,14 +5,10 @@ A checklist for verifying the paper against its sources. Each source has one par
 Sections cited in brackets: Intro, Motivation, Scope, Timeline (Figure 1), Open pipelines (Transition section), Table 1, Fiducial (definitions section), Table 2, FPDc (rate correction), Maturation, Morphology (incl. Figure 2), Model complexity, High-throughput, Limitations, Conclusion, Outlook (Discussion and future outlook).
 
 <!-- temporary Finnish  version
-Rakenne: tiedostossa on yksi osio per lähde (21 kpl), ja kunkin osion lopussa yksi kappale, jossa on jokainen väite, jonka main.md liittää kyseiseen lähteeseen. Väitteet on numeroitu ja merkitty osion tunnuksella (Intro, FPDc, Maturation jne.).
+Rakenne: tiedostossa on yksi osio per lähde, ja kunkin osion lopussa yksi kappale, jossa on jokainen väite, jonka main.md liittää kyseiseen lähteeseen. Väitteet on numeroitu ja merkitty osion tunnuksella (Intro, FPDc, Maturation jne.).
 
 Jokaisessa osiossa: paikallinen tiedosto raw/-kansiossa, wikisivu ja tarkistustila.
 Tarkistustila kertoo rehellisesti, mitä olen oikeasti tarkistanut täystekstistä.
-
- Tarkistettu on Blinova, Botti, Clements, Lee, Park 2026 ja Pramudito. Dunhamilta, Kabanovilta ja Weiser-Bitounilta olen tarkistanut vain FPD-määritelmän PDF:stä. 
-
-Kaikki muut kohdat on kirjoitettu wikisivuilta aiemmissa sessioissa, eikä niitä ole tarkistettu uudelleen, joten ne tarvitsevat tarkimman silmäsi. Näitä ovat Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer.
 -->
 
 
@@ -174,7 +170,7 @@ Check 2026-10-24: (2) abstract p. 1 (230 videos; 10 features; accuracy 99.5 ± 1
 
 Local file: none (conference contribution; only the Tampere University research portal record was seen); page `wiki/papers/valimaki-2021-hypoxia-video-mea.md`. Status: from the portal record only (title, authors, year, event); the abstract and the contribution itself were not read. The researcher is a co-author (self-citation, disclosed in the Declarations).
 
-Claims: (1) [Outlook] combined electrophysiological and video-based motion analysis of hiPSC-CMs in hypoxia has been presented in a conference contribution by the author's former research group (the title supports this; that the electrophysiology was MEA recording rests on the researcher's statement). (2) [Declarations] the author is a co-author. (3) [Limitations] pre-2022 conference contribution cited as background for earlier multimodal work.
+Claims: (1) [Outlook] combined electrophysiological and video-based motion analysis of hiPSC-CMs in hypoxia has been presented in a conference contribution by the author's former research group (the title supports this; that the electrophysiology was MEA recording was confirmed by the researcher, a co-author, on 2026-10-24, not by the portal record). (2) [Declarations] the author is a co-author. (3) [Limitations] pre-2022 conference contribution cited as background for earlier multimodal work.
 
 Check 2026-10-24: title, nine authors in order, year 2021 and event (EUROOoCs, virtual, 1–2 July 2021) match the portal record; no DOI, abstract, publisher or pages are shown. Verify the content yourself before relying on it.
 

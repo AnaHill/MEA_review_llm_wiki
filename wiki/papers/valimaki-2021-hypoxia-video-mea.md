@@ -13,7 +13,7 @@ tags: [multimodal, video, hypoxia]
 Note: written 2026-10-24 from the portal record only (title, authors, year, event). The abstract is not shown there and the contribution itself was not read; nothing below goes beyond the title and the researcher's statement. The researcher is the second author, so this is a self-citation (disclosed in the Declarations of main.md).
 
 ## Contribution
-By its title, a combined electrophysiological and video-based motion analysis of hiPSC-CMs under hypoxia. The researcher states that it combines video with MEA data; the portal record does not say so.
+By its title, a combined electrophysiological and video-based motion analysis of hiPSC-CMs under hypoxia. The researcher (a co-author) confirmed on 2026-10-24 that it combines MEA recordings with video-based motion analysis; the portal record itself says only 'electrophysiological'.
 
 ## Methodology
 Not known (contribution not read).
