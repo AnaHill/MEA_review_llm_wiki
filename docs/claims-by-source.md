@@ -162,6 +162,14 @@ Claims: (1) [Timeline] video-based interpretable-AI maturity classifier. (2) [Ma
 
 Check 2026-10-24: (2) abstract p. 1 (230 videos; 10 features; accuracy 99.5 ± 1.1 %); p. 5 table (test set n = 46); "stage" was changed to "distinguish" because only two conditions are classified. (4) p. 9: "Hayakawa et al. simultaneously measured field potentials and motion in iPSC-CMs and observed strong correlations between field potential duration (FPD) and contraction duration [40]".
 
+## Välimäki et al. (2021)
+
+Local file: none (conference contribution; only the Tampere University research portal record was seen); page `wiki/papers/valimaki-2021-hypoxia-video-mea.md`. Status: from the portal record only (title, authors, year, event); the abstract and the contribution itself were not read. The researcher is a co-author (self-citation, disclosed in the Declarations).
+
+Claims: (1) [Outlook] combined electrophysiological and video-based motion analysis of hiPSC-CMs in hypoxia has been presented in a conference contribution by the author's former research group (the title supports this; that the electrophysiology was MEA recording rests on the researcher's statement). (2) [Declarations] the author is a co-author.
+
+Check 2026-10-24: title, nine authors in order, year 2021 and event (EUROOoCs, virtual, 1–2 July 2021) match the portal record; no DOI, abstract, publisher or pages are shown. Verify the content yourself before relying on it.
+
 ## Weiser-Bitoun et al. (2026)
 
 Local file: `raw/weiser-bitoun-2026-physiomea.pdf`; page `wiki/papers/weiser-bitoun-2026-physiomea.md`. Status: checked against the abstract, Methods and Discussion 2026-10-24.
@@ -190,7 +198,7 @@ These are statements in `main.md` that no single reference supports, or that are
 14. [High-throughput] "post-2022 cardiomyocyte MEA studies increasingly emphasize high-throughput and longitudinal applications" and "As a result, reliance on a single metric such as FPD has progressively given way to multi-parameter feature sets". Based on Altrocchi et al. (2023), Matsuda et al. (2025) and Park et al. (2025, 2026); the trends are not measured. Support: thin.
 15. [Motivation] "Since 2022, MEA recordings from hiPSC-CMs have increasingly been used not only for basic measurements ... but also for mechanistic electrophysiological phenotyping, proarrhythmia risk assessment, and longitudinal drug testing." and [Conclusion] "Looking forward, machine learning is rapidly becoming an integral layer in cardiomyocyte MEA workflows." Trend statements with no citation; the examples in the review (Pramudito, Park 2026, Lee, Scheurer) show that such uses exist, not that they are rapidly growing. Support: none for the trend wording.
 
-16. [Outlook] Sensor fusion: "interpreting them jointly (sensor fusion), with AI support, could give a more complete picture of a preparation than any single signal, for example by adding MEA-derived parameters to a video-based classifier of maturation status", and "In these studies the modalities are mostly analysed separately or side by side". Based on: Altrocchi et al. (2023), Lee et al. (2024), Kabanov et al. (2026), Scheurer et al. (2025), Mäki (2023). No study tested joint interpretation by a fusion model; marked in the text as a hypothesis of the author. Support: none (stated as a hypothesis); the observation about separate analysis is thin.
+16. [Outlook] Sensor fusion: "interpreting them jointly (sensor fusion), with AI support, could give a more complete picture of a preparation than any single signal, for example by adding MEA-derived parameters to a video-based classifier of maturation status", and "In these studies the modalities are mostly analysed separately or side by side". Based on: Altrocchi et al. (2023), Lee et al. (2024), Kabanov et al. (2026), Scheurer et al. (2025), Välimäki et al. (2021; record only), Mäki (2023). No study tested joint interpretation by a fusion model; marked in the text as a hypothesis of the author. Support: none (stated as a hypothesis); the observation about separate analysis is thin.
 
 17. [Outlook] Device separation: "with system identification or reverse engineering, the contribution of the MEA device ... could be estimated and removed, so that the remaining signal resembles the cellular AP more closely", electroporation data as a source of training and validation data, and "it would also make FP-derived results from different hardware more comparable". Based on: Mäki (2023), Lee et al. (2024), Ernault et al. (2024), Botti et al. (2026). A proposal of the author; no reviewed study attempted it, and Ernault et al. suggest the FP also depends on neighbouring cells. Support: none (stated as a hypothesis); the comparability claim is flagged in the text as untested.
 

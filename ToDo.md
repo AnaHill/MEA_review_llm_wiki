@@ -7,6 +7,7 @@
 - [ ] Käy läpi omat HTML-kommenttisi main.md:ssä: `grep -n "<!--" main.md` (mm. "needs citation(s)" Motivation-osion lihavoidulla lauseella ja "Continue manual check here")
 - [ ] Tyylimerkinnät: `grep -n "not really my style" main.md` (nyt 2 paria abstraktissa). Käydään läpi vasta kun olet lukenut koko main.md. Claude ehdottaa uudelleenkirjoitukset sinun tyylilläsi, kunhan annat esimerkin omasta tyylistäsi (esim. Mäki 2023 -teksti tai notes.md)
 - [ ] Uusi osio "Discussion and future outlook" (ennen Limitations/Conclusion): lue ja muokkaa omalla tyylilläsi. Kaksi kohtaa: sensor fusion + AI, ja laitteen osuuden poisto signaalista (system identification). Päätä, viitataanko osioon Abstractissa, Conclusionin viimeisessä kappaleessa ("Looking forward ...") ja Limitationsissa (esim. "outlook is speculative")
+- [ ] Välimäki ym. (2021) -viite: tarkista omasta tiedostostasi (a) että kyseessä oli MEA + video, (b) kirjoitusasu "Mäki, A." vs. "Mäki, A.-J." ja tapahtuman nimi (portaali: "EUROOoCs"), (c) tyyppi [Conference contribution] vs. poster/esitelmä sekä mahdollinen DOI/PDF. *Jos on PDF, lisää se raw/-kansioon nimellä valimaki-2021-hypoxia-video-mea.pdf*, niin Claude voi ingestoida sen kunnolla (nyt sivu perustuu vain portaalin tietueeseen)
 - [x] Figure 2 -vuokaavio: kolmas FPD-päätepistekäytäntö (Dunhamin T-aallon päätepiste, trapetsimenetelmä) lisätty 24.10. Tarkista renderöinnin jälkeen, että uuden reunan teksti ei veny liian pitkäksi
 
 ## 2. Oma lähdetarkistus (kun main.md:n teksti on valmis)
