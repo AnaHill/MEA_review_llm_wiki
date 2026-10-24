@@ -24,6 +24,8 @@ Fetterman, K. A., Blancard, M., Lyra-Leite, D. M., Vanoye, C. G., Fonoudi, H., J
 
 Guerrelli, D., Pressman, J., Salameh, S., & Posnack, N. (2024). hiPSC-CM electrophysiology: impact of temporal changes and study parameters on experimental reproducibility. *American Journal of Physiology–Heart and Circulatory Physiology*, *327*(1), H12–H27. https://doi.org/10.1152/ajpheart.00631.2023
 
+Hayakawa, T., Kunihiro, T., Ando, T., Kobayashi, S., Matsui, E., Yada, H., Kanda, Y., Kurokawa, J., & Furukawa, T. (2014). Image-based evaluation of contraction–relaxation kinetics of human-induced pluripotent stem cell-derived cardiomyocytes: Correlation and complementarity with extracellular electrophysiology. *Journal of Molecular and Cellular Cardiology*, *77*, 178–191. https://doi.org/10.1016/j.yjmcc.2014.09.010
+
 Hwang, M., Lee, S.-J., Lim, C.-H., Shim, E. B., & Lee, H.-A. (2023). The three-dimensionality of the hiPSC-CM spheroid contributes to the variability of the field potential. *Frontiers in Physiology*, *14*, 1123190. https://doi.org/10.3389/fphys.2023.1123190
 
 Ismaili, D., Schulz, C., Eschenhagen, T., Christ, T., Hansen, A., Mika, D., Koivumäki, J. T., & Horváth, A. (2023). Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective. *Frontiers in Physiology*, *14*, 1132165. https://doi.org/10.3389/fphys.2023.1132165
