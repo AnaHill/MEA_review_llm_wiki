@@ -39,5 +39,5 @@ The Declarations point to https://github.com/AnaHill/MEA_review_llm_wiki for the
 - [ ] Optional: after the last commit, create an annotated tag on it (for example `git tag -a v1.0-preprint -m "state at Zenodo deposit"` and `git push origin v1.0-preprint`). It does not change the link and needs no change in `main.md`.
 - [ ] Do not enable the automatic GitHub-to-Zenodo archiving of releases: it would mint a second DOI for the repository. The PDF is deposited manually and linked to the opinion paper's record.
 - [ ] After the Zenodo deposit is published, add its link to the start of `README.md` (the ToDo item "Kun julkaistu Zenodossa").
-- [x] Licence: `LICENSE` (CC BY 4.0) and a README section were added on 2026-10-24.
+- [x] Licence: `LICENSE` (CC BY 4.0 for the written content), `scripts/LICENSE` (MIT for the code) and a README section were added on 2026-10-24.
 - [ ] Check that the non-open-access PDFs (`raw/pramudito-2026-ensemble.pdf`, `raw/clements-2025-aims-poster.pdf`) are not in the pushed history: `git log --all -- raw/pramudito-2026-ensemble.pdf raw/clements-2025-aims-poster.pdf` printed nothing on 2026-10-24.

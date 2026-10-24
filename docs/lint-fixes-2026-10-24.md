@@ -42,7 +42,7 @@ Written for: the researcher, who asked for a summary good enough to judge each c
 
 - The index summary for Välimäki (2021) was left as set earlier the same day (MEA use confirmed by you, content not read).
 
-- `LICENSE` is the official CC BY 4.0 text. Creative Commons does not recommend CC licences for software; the README applies it to `scripts/` as well, for simplicity, as you chose.
+- `LICENSE` is the official CC BY 4.0 text and covers the written content. After the first version of this summary you chose MIT for the code, so `scripts/LICENSE` (standard MIT text, copyright holder "Antti-Juhana Mäki", year 2026) was added and the README Licence section now says that `scripts/` is MIT. The README entry in group 9 below shows the earlier wording; the final wording is in `README.md`. Check that the copyright holder name is the one you want.
 
 ## Group 1. wiki/hipsc-cm-maturation.md
 

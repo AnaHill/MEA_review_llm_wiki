@@ -26,18 +26,22 @@ Tehty
 - [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 
 ## 3. Ennen vientiä
-- [x] Lint 24.10.: korjaukset 1–4, 6 ja 7 tehty (indeksi, maturaatiosivu, critical assessment, Weiser-Bitoun-sivu, neljä uutta sivua, main.md:n pehmennykset). Kohta 5 ei vaadi muutosta (täystekstit luettiin aina kun mahdollista; Välimäki ei ollut mahdollinen). Lue koonti docs/lint-fixes-2026-10-24.md ennen committia
 - [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotetut varoitukset nyt kolme: Clements 2025 -posterilla ei ole DOI:ta; Välimäki 2021 -viitteellä ei ole DOI:ta eikä raw-tiedostoa)
-- [x] Committaa 24.10. asti tehdyt muutokset (git status oli tyhjä). Uudet muutokset (lint-korjaukset, ToDo, docs) vielä committaamatta. Avoimet PDF:t (Hayakawa, Vuorenpää) saavat olla seurannassa; Pramudito ja Clements pysyvät .gitignoressa
 - [ ] Poista tämä ToDo.md (temp-tiedosto)
 
+Tehty
+- [x] Lint 24.10.: korjaukset 1–4, 6 ja 7 tehty (indeksi, maturaatiosivu, critical assessment, Weiser-Bitoun-sivu, neljä uutta sivua, main.md:n pehmennykset). Kohta 5 ei vaadi muutosta (täystekstit luettiin aina kun mahdollista; Välimäki ei ollut mahdollinen). Lue koonti docs/lint-fixes-2026-10-24.md ennen committia
+- [x] Committaa 24.10. asti tehdyt muutokset (git status oli tyhjä). Uudet muutokset (lint-korjaukset, ToDo, docs) vielä committaamatta. Avoimet PDF:t (Hayakawa, Vuorenpää) saavat olla seurannassa; Pramudito ja Clements pysyvät .gitignoressa
+
 ## 4. Zenodo-vienti vasta lopuksi
-- [x] GitHub-linkki: pysyy ennallaan eikä main.md:tä muuteta; tagi on valinnainen (ks. docs/pdf-export-notes.md, osio "Repository link and snapshot")
-- [x] Repon lisenssi: CC BY 4.0 (LICENSE + README:n Licence-osio) lisätty 24.10.; raw/-PDF:t eivät kuulu siihen. README:hen lisätään linkki Zenodoon julkaisun jälkeen
 - [ ] pdf-muutos: valitse työkalu ja testaa taulukot, Unicode-merkit ja LaTeX-kaava (ks. docs/pdf-export-notes.md)
 - [ ] Mermaid-kaaviot: 2 kpl renderöitävä kuviksi ennen PDF-vientiä. Tehdään lopuksi mermaid-liven kautta sopivaksi kuvamuodoksi
 - [ ] Tarkista PDF:stä: HTML-kommentit eivät näy, hash-tunnisteet (\#CM01 jne.) näkyvät oikein, lähdeluettelo vastaa tekstiä
 - [ ] Zenodo-metatiedot: lisenssi CC BY 4.0, rahoitus (ei rahoitusta, harrastus), avainsanat, tekijä "Antti-Juhana Mäki, Independent researcher", päivämäärä ja versio, tallennus liitetään Mäki-tietueeseen (Version v3)
+
+Tehty
+- [x] GitHub-linkki: pysyy ennallaan eikä main.md:tä muuteta; tagi on valinnainen (ks. docs/pdf-export-notes.md, osio "Repository link and snapshot")
+- [x] Repon lisenssi: CC BY 4.0 kirjoitetulle sisällölle (LICENSE) ja MIT koodille (scripts/LICENSE) sekä README:n Licence-osio lisätty 24.10.; raw/-PDF:t eivät kuulu siihen. README:hen lisätään linkki Zenodoon julkaisun jälkeen
 - [x] Declarations-teksti hyvä, pidetään näin
 - [x] Zenodo-päätökset: jätetään GitHub-linkki Declarationsiin
 
