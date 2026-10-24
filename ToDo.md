@@ -6,6 +6,16 @@
   - Muuten väitelista vanhenee (docs/claims-by-source.md on koottu 18.10.). 
   - Kun tekstisi on valmis, voin päivittää listan uudelleen
 
+> Luin PDF:ien purettua tekstiä, ja kuvia katsoin vain Correian 7F:stä (ja aiemmin Blinovalta ja Parkilta). 
+> - **Numerot ja kuvatulkinnat kannattaa siksi tarkistaa itse**. 
+> - Sivupointterit ovat tekstin sivunumeroita. 
+> - Wikisivujen niitä osia, joita main.md ei käytä, en käynyt läpi, ja niissä voi olla samaa tyyppiä virheitä kuin Ismailissa ja Matsudassa (Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Maurissen, Scheurer, Kabanov, Weiser-Bitoun, Dunham). 
+> - Niille kannattaisi myöhemmin ajaa oma tarkistus.
+
+main.md:ssä on yhä synteesikohtia (claims-by-source.md:n lopun lista 1–15), joissa on yleistyksiä ilman lähdettä (erityisesti 1, 3, 9, 10, 14, 15). Ne jäivät sinun harkittavaksi. Lokiin on kirjattu merkintä.
+
+
+
 - main.md
   - [ ] Tyylimerkinnät: käydään läpi vasta kun olen lukenut koko main.md. Merkinnät löytää komennolla grep -n "not really my style" main.md (nyt 2 paria abstraktissa). Claude ehdottaa uudelleenkirjoitukset minun tyylilläni, kunhan annan esimerkin omasta tyylistäni (esim. Mäki 2023 -teksti tai notes.md).
   - [ ] olen merkannut main.md:ssä, mitkä kohdat ei mm. kuulosta minulta kuten tämä <!-- not really my style of text starts --> build on sound methodological foundations. <!-- not really my style of text ends -->

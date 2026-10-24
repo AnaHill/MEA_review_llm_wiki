@@ -1,5 +1,5 @@
 ---
-tags: [temporal-confounder, high-throughput, cardiac-safety, 2d-culture]
+tags: [cardiac-safety, chronic-assay, impedance]
 ---
 
 # Evaluation of chronic drug-induced electrophysiological and cytotoxic effects using human-induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs)
@@ -13,41 +13,41 @@ tags: [temporal-confounder, high-throughput, cardiac-safety, 2d-culture]
 
 
 ## Contribution
-Establishes a chronic MEA cardiotoxicity assay (up to 96 h) using hiPSC-CMs, validating it against 13 mechanistically diverse reference compounds. Demonstrates that combined FP and impedance monitoring distinguishes electrophysiological cardiotoxicity from cytotoxicity, and that tolerance intervals derived from large DMSO datasets provide objective QC thresholds.
+Establishes a chronic MEA cardiotoxicity assay (up to 96 h) using hiPSC-CMs, tested against 13 reference compounds. Combined FP and background impedance monitoring helps to separate electrophysiological effects from cytotoxicity, and tolerance intervals from pooled DMSO wells (N = 81, 15 plates, 4 batches) serve as cut-offs for judging the physiological relevance of compound effects (p. 5). Baseline well-quality criteria are separate: CV of beat period below 5%, FP amplitude at least 300 µV, beat rate 18–90 bpm.
+
+Note: page checked against the source text on 2026-10-24; statements not supported by the paper were removed or reworded.
 
 ## Methodology
 - **Platform:** Axion Maestro Pro MEA (48-well, M768-tMEA-48B)
-- **Cell line:** iCell-Cardiomyocytes2 (Fujifilm CDI, Donor 01434)
-- **Recording:** Acute (0.5, 1, 2, 4 h) and chronic (24, 48, 72, 96 h) timepoints
-- **Combined endpoints:** FP (FPD, FPDcF, FP amplitude) + impedance (cell impedance, beating impedance)
-- **Tolerance intervals:** N=81 DMSO vehicle-control wells from 4 batches, 15 plates; 90%/95% tolerance intervals per endpoint per timepoint
-- **13 reference compounds across 5 classes:**
+- **Cell line:** iCell-Cardiomyocytes2 (Fujifilm CDI, Donor 01434); four lots (105464, 105170, 105567, 105998)
+- **Recording:** baseline, then 2 h (acute) and 24, 48, 72, 96 h (chronic) after compound addition; 50% medium/compound refresh at 48 h
+- **Endpoints:** FP (FPD, FPDc by the Fridericia formula, FP amplitude, beat rate) + background impedance (Ohm) as a cytotoxicity readout
+- **Tolerance intervals:** non-parametric intervals (80% of vehicle values at 95% confidence) of the percent change from baseline, per parameter and timepoint, from N=81 DMSO wells
+- **13 reference compounds (groups as in the paper):**
   - **Negative controls:** aspirin, cetirizine, amoxicillin, captopril
   - **Direct cytotoxics:** doxorubicin, BMS-986094
-  - **hERG trafficking inhibitors:** pentamidine, arsenic trioxide, probucol
+  - **Trafficking inhibitors:** pentamidine, arsenic trioxide, probucol (probucol also affects KV7.1 trafficking)
   - **Tyrosine kinase inhibitors (TKi):** sunitinib, vandetanib, nilotinib, erlotinib
 
 ## Findings
-- **hERG trafficking inhibitors show delayed FPD effects:**
-  - Pentamidine: FPD prolongation appears only after ≥24 h at 1–3 µM (IC50 hERG trafficking 5–8 µM); acute timepoints appear clean
+- **Trafficking inhibitors:**
+  - Pentamidine: prolongation of FPD/FPDc from 24 h at 3 µM and 48 h at 1 µM; at 3 µM beating ceased in 3/6 wells at 72 h and 6/6 at 96 h, with arrhythmic-like events in 2/6 wells at 72 h. (Literature, not this study: hERG trafficking IC50 5–8 µM after at least 24 h.)
   - Arsenic trioxide: similarly delayed FPDc prolongation
-  - Probucol: equivocal; some wells showed mild prolongation
+  - Probucol: no significant FPD or FPDc prolongation at any concentration or time; beat rate increased at 10 µM. The assay did not reproduce its reported hERG-trafficking effect.
 - **Direct cytotoxics:**
-  - Doxorubicin: dose-dependent impedance drop + cessation of beating (cytotoxicity precedes FP changes)
-  - BMS-986094: T-wave flattening in FP + impedance drop (combined signature)
-- **TKi (cardiovascular liability drugs):**
+  - Doxorubicin: impedance drop from 24 h plus cessation of beating and T-wave loss at 3 µM; the authors say impedance showed that cytotoxicity drove the FP changes
+  - BMS-986094: T-wave flattening in FP + impedance drop
+- **TKi:**
   - Sunitinib, vandetanib, nilotinib: FPD prolongation + arrhythmic events at pharmacologically relevant concentrations
-  - Erlotinib: no significant effects (correctly identified as safe)
-- **FP amplitude (AmpFP) was excluded** from tolerance intervals: its TI at 24 h was −23.5% to +99.6%, making it uninformative as a QC gate
-- **Combined FP + impedance** distinguishes: (a) pure electrophysiology cardiotoxicity (FP changes, no impedance), (b) pure cytotoxicity (impedance drop, FP cessation), (c) mixed (both)
+  - Erlotinib: no relevant FPD/FPDc prolongation or arrhythmic events; a borderline impedance decrease at 10 µM (24 h only)
+- **FP amplitude (Amp FP):** its tolerance interval was computed (−23.5% to +99.6% at 24 h, Table 2) but the authors judged Amp FP not useful for assessing chronic drug-induced effects (p. 5)
+- **Combined FP + impedance:** illustrated by sunitinib (FP effects without an impedance change), vandetanib (both) and doxorubicin (cytotoxicity-driven) (pp. 13–14); the paper does not present a formal three-way taxonomy
 
 ## Limitations
-- Single cell line, single lot; donor variability not assessed
-- Chronic assay requires cells to remain healthy on MEA for 96 h (challenging for some cell lines)
-- Tolerance interval thresholds are platform- and lot-specific; cannot be transferred directly to other labs without recalibration
+Stated by the authors (p. 14): a single donor, no 3D heart complexity or immune/inflammatory interactions, hiPSC-CM immaturity (low Kir2.x, high HCN, sarcomere structure), and well concentrations that were not measured and may be lower than nominal (10% serum), which affects the fCmax margin comparison. The paper calls the platform medium-throughput.
 
 ## Relevance to our paper
-Cited in main.md as the primary source for chronic assay design, tolerance interval methodology, and the multi-endpoint (FP + impedance) paradigm. Also cited for specific compound results (pentamidine, doxorubicin, BMS-986094, TKi panel).
+Cited in main.md for MEA use in general (Introduction), for Fridericia-corrected FPD, and for the chronic design (48-well plates, acute under 2 h and delayed effects of 24 h or more over four days, TKi, doxorubicin and trafficking inhibitors, FP plus impedance, multi-parameter feature sets). main.md does not discuss the tolerance intervals or individual compound results (pentamidine, BMS-986094); the 0.03 µM doxorubicin value belongs to Matsuda et al.
 
 ## See also
 - [[wiki/papers/guerrelli-2024-hipscm.md]]

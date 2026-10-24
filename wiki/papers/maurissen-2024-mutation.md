@@ -11,33 +11,37 @@ tags: [3d-model, disease-model, lqts]
 **DOI:** 10.1038/s41598-024-52871-1
 
 ## Contribution
-Generates compound heterozygous KCNH2 mutant hiPSC lines (LQTS2 N588D; SQTS N588K) using CRISPR-Cas9 + ssODN in an isogenic background (409B2), and demonstrates that 3D cardiac tissue sheets (CTSs) incorporating non-cardiomyocyte support cells are required to reveal TdP-like arrhythmic waveforms. Establishes compound heterozygous editing as a solution to the problem of unintended homozygous CRISPR outcomes.
+Generates compound heterozygous KCNH2 mutant hiPSC lines (LQTS2 N588D; SQTS N588K) using CRISPR-Cas9 + ssODN in an isogenic background (409B2), and uses 3D cardiac tissue sheets (CTSs) of hiPSC-CMs plus mesenchymal cells (MCs), the format the authors' earlier work (Kawatou et al., 2017) found necessary for TdP-like waveforms, to show E-4031-induced TdP-like/VT-like waveforms and genotype-dependent arrhythmogenicity. A mix of ssODN templates (missense plus silent PAM-blocking) is used to obtain compound heterozygous clones and reduce indels on the second allele.
+
+Note: page checked against the source text on 2026-10-24; statements not supported by the paper were removed or reworded.
 
 ## Methodology
 - **Cell line:** 409B2 hiPSCs (RIKEN BRC \#HPS0076)
 - **Genome editing:** CRISPR-Cas9 + single-stranded oligodeoxynucleotide (ssODN) for precise heterozygous SNP introduction
-- **Mutations:** KCNH2 N588D (LQT26; LQTS2 phenotype) and KCNH2 N588K (SQT22; SQTS phenotype)
+- **Mutations:** KCNH2 N588D (LQT26; LQTS phenotype) and KCNH2 N588K (SQT22; SQTS phenotype)
 - **MEA platform:** Alpha MED Scientific MED system (MED-P515A); 64 channels, 8×8 grid; 50 µm square electrodes, 150 µm intervals
 - **Preparations:**
-  - 2D monolayers: standard cardiomyocyte-only cultures
-  - 3D cardiac tissue sheets (CTSs): hiPSC-CMs + mesenchymal cells (MCs) layered on decellularized matrix
-- **FPD measurement:** FPDcF (Fridericia-corrected: FPD / RR^0.33)
+  - 2D hiPSC-CM monolayers on MEA probes (cTnT purity at least 65%; samples below were excluded)
+  - 3D cardiac tissue sheets (CTSs): hiPSC-CMs and MCs mixed (3:1 or 1:1) on gelatin-coated temperature-sensitive UpCell dishes and detached as sheets about 5 cell layers (100 µm) thick
+- **FPD measurement:** FPDcF = FPD divided by the cube root of the inter-spike interval (s); one arbitrary electrode of the 64 analysed per probe
 - **Arrhythmia:** E-4031 challenge at multiple concentrations; arrhythmogenic scoring
 
 ## Findings
-- **FPDcF:** parent 231±24 ms; SQT22 82±18 ms; LQT26 323±21 ms — consistent with expected phenotypes
-- **TdP-like waveforms** only emerged in 3D CTSs containing mesenchymal cells (MCs); 2D monolayers did not exhibit characteristic TdP morphology
-- **LQT26** arrhythmogenic score was significantly higher than both parent and SQT22
-- **SQT22** required substantially higher E-4031 concentrations to trigger arrhythmic events, consistent with partial hERG gain-of-function protective effect
-- **Compound heterozygous editing** reliably recapitulates heterozygous disease states; standard CRISPR often produces unintended homozygous edits, which overrepresent the phenotype
+- **FPDcF (2D monolayers):** parent 231±24 ms; SQT22 82±18 ms; LQT26 323±21 ms (n = 7, 12, 9) — consistent with expected phenotypes. 3D CTSs: 225±13 / 87±16 / 320±16 ms (n = 7, 5, 5).
+- **TdP-like and VT-like waveforms** were induced by E-4031 in 3D CTSs; the authors attribute the need for MCs and 3D structure to their earlier work (this study did not test 2D with E-4031 or CTSs without MCs)
+- **Arrhythmia score:** LQT26 significantly higher, and SQT22 significantly lower, than the isogenic control (Dunnett's test against the parent only)
+- **SQT22:** the authors suggest the increased IKr current in N588K requires higher IKr-blocker concentrations to prolong FPD enough for arrhythmias (hypothesis, not tested); SQT22 had no significantly higher arrhythmia likelihood
+- **Editing:** standard Cas9/ssODN editing commonly yields homozygous clones or clones with an indel on the second allele; the silent-blocker design reduced indels, and homozygous clones appeared only as a byproduct. The heterozygous isogenic lines reproduced the expected FPD shifts.
 
 ## Limitations
-- Alpha MED 64-channel system limits spatial propagation mapping compared to newer high-density platforms
-- CTSs require more complex preparation than monolayers; not yet standardized for routine drug screening
-- Compound heterozygous strategy is technically demanding; may not be accessible to all labs
+Stated by the authors (pp. 3–7):
+- Arrhythmia in vitro may depend on external stimuli, and SQT22 did not show significantly more arrhythmias.
+- How MCs influence arrhythmia needs further study, and the non-cardiomyocyte cells need better characterisation.
+- Pre-TdP stages are not addressed.
+- CTS cTnT purity was only 25–41%, and the 3D phenotyping used one clone per genotype (n = 5–13).
 
 ## Relevance to our paper
-Cited in main.md for: (1) the FPDcF metric applied to mutation-specific phenotypes, (2) the necessity of 3D tissue formats for TdP-relevant endpoints, and (3) the isogenic design as best practice for mechanistic studies. Also relevant to LQTS disease modeling use case for MEA.
+Cited in main.md for (1) the Fridericia-corrected FPD and (2) as an example of MEA analysis in 3D isogenic mutation-specific tissue models (LQTS and SQTS phenotypes). The review's formula notation RR^0.33 is the review's own; the paper writes the cube root of the inter-spike interval.
 
 ## See also
 - [[wiki/papers/park-2025-cardiotoxicity.md]]

@@ -1,5 +1,5 @@
 ---
-tags: [temporal-confounder, maturation, rate-correction, 2d-culture]
+tags: [temporal-confounder, maturation, equilibration, reproducibility, well-position]
 ---
 
 # hiPSC-CM electrophysiology: impact of temporal changes and study parameters on experimental reproducibility
@@ -13,33 +13,36 @@ tags: [temporal-confounder, maturation, rate-correction, 2d-culture]
 ## Contribution
 Systematic quantification of how temporal factors (equilibration time, days post-thaw, days in culture) and spatial factors (well-plate position) affect hiPSC-CM electrophysiological measurements, providing evidence-based recommendations for standardizing MEA recording protocols.
 
+Note: page checked against the source text on 2026-10-24; statements not supported by the paper were removed or reworded.
+
 ## Methodology
-- Platform: Axion Maestro MEA; 48-well plates
-- Cell line: iCell Cardiomyocytes² (Fujifilm CDI, lot-controlled); validated with Cor.4U (Ncardia)
-- Longitudinal recordings across equilibration windows (0–20 min), days post-thaw (1–14), and days in culture (up to 30 days)
+- Platform: Axion Maestro Edge MEA; 24-well plates with 16 electrodes per well (the paper never discusses rate correction)
+- Cell line: iCell Cardiomyocytes² (Fujifilm Cellular Dynamics, Cat. No. 01434); Cor.4U (Ncardia) used for key experiments
+- Daily MEA recordings 2–14 days post-defrost (paced 3–14 days; LEAP/drug 4–10 days); equilibration recorded continuously for 20 min at day 4
 - Spatial analysis comparing outer vs. inner well rows on the same plate
 - Drug treatments at day 4 vs. day 10 post-plating
-- qPCR for ion channel gene expression (KCNJ2, HCN4, SCN5A) at multiple time points
+- qRT-PCR for cardiac genes (including KCNJ2, SCN5A, CACNA1C, CASQ2, TNNI3) on days 2, 7, 14 and 30
 
 ## Findings
-- **Equilibration effect:** Beating rate increases 22.6% and FPD decreases 7.7% over a 20-minute recording window; rate does not plateau within 10 minutes for most wells.
-- **Spatial heterogeneity:** Outer well rows beat 8.8 bpm faster than inner rows, attributable to temperature gradients on the MEA plate.
+- **Equilibration effect:** Beating rate increases 22.6% and FPD decreases 7.7% over a 20-minute recording window; the beating rate was still significantly lower than its 20-min value up to 12 min (FPD up to 7 min); the authors recommend 15–20 min of equilibration.
+- **Spatial heterogeneity:** Outer well rows beat 8.8 bpm faster than inner rows at 20 min (53.7 vs 44.9 bpm); the authors suggest temperature distribution differences as a possible cause but could not confirm it.
 - **Longitudinal drift:** FPD increases by ~257 ms over days 2–14 in culture; beating rate decreases over the same period.
-- **Drug responsiveness differs by age:** E-4031 prolongation response is significantly different at day 4 vs. day 10, limiting cross-study comparability when recording day is not standardized.
-- **Gene expression maturation:** KCNJ2 (IK1-encoding) increases 27.5-fold over 30 days, indicating progressive maturation that alters baseline electrophysiology.
+- **Drug responsiveness differs by age:** E-4031 prolonged FPD more at day 4 than at day 10 (+31.2% vs +17.2%); isoproterenol and nifedipine responses also changed with culture time. The authors say culture time should be considered in drug screening.
+- **Gene expression:** KCNJ2 increases 27.5-fold over 30 days in iCell² (vs 5.0-fold in Cor.4U), suggesting continued maturation in culture.
 
 ## Practical recommendations
 - Allow **15–20 min equilibration** before recording baselines.
 - Use cells **within 6–8 days post-thaw** for consistency.
-- **Distribute treatment groups across all row positions** to avoid spatial confounding.
-- Report raw FPD values and recording day in addition to rate-corrected values.
+- Disperse treatment groups across the plate rather than grouping a treatment in a single row (p. 4).
+- Report raw data values and key experimental conditions (cell line, culture time, equilibration time, stimulation settings).
 
 ## Limitations
-- Single cell line (iCell²) tested; different hiPSC-CM lines may show different temporal dynamics.
-- The Cor.4U validation was confirmatory rather than a full cross-line comparison.
+Stated by the authors (p. 13): a mixed ventricular/atrial/nodal population with phenotype differences between lines, a single MEA device, and only the first weeks post-defrost.
+
+Two lines were tested (iCell², main; Cor.4U for key experiments). Cor.4U showed similar but not identical trends (stable beating rate, minimal paced FPD change, no equilibration effect, a smaller KCNJ2 rise), and the authors caution that results may not transfer to other lines or MEA systems.
 
 ## Relevance to our paper
-Cited repeatedly in main.md. Provides key quantitative evidence for the temporal confounders section (equilibration and longitudinal drift) and supports the argument that recording time standardization is a prerequisite for reliable FPDc pharmacological endpoints. The 22.6%/7.7% figures are cited explicitly.
+Cited in main.md in the FPDc rate-correction, maturation-confound and longitudinal-assay passages (line 142 gives the 22.6%/7.7% figures explicitly). The paper does not discuss FPDc; that recording-time standardisation matters for rate-corrected endpoints is our inference.
 
 ## See also
 - [[wiki/papers/ismaili-2023-hamburg.md]]
