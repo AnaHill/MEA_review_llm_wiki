@@ -40,6 +40,6 @@ Cited in main.md (1) for the link between FPD and contraction duration, as the p
 
 ## See also
 - [[wiki/papers/scheurer-2025-optical-ai.md]]
-- [[wiki/papers/valimaki-2021-hypoxia-video-mea.md]]
+- [[wiki/papers/ryynanen-2018-single-cell-mea.md]]
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
 - [[wiki/papers/maki-2023-opinion.md]]

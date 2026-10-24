@@ -10,7 +10,7 @@ tags: [review, microphysiological-system, multimodal, in-silico]
 **File:** [[raw/vuorenpaa-2023-mps-building-blocks.pdf]]  
 **DOI:** 10.3389/fphys.2023.1213959
 
-Note: ingested 2026-10-24 from the full text (28 pages, text extraction; figures and tables not viewed). Open access (CC BY). Funding stated: Academy of Finland Centre of Excellence in Body-on-Chip Research, among others. Two of the authors (Välimäki, Pekkanen-Mattila) are also co-authors of [[wiki/papers/valimaki-2021-hypoxia-video-mea.md]]; disclosed in the Declarations of main.md.
+Note: ingested 2026-10-24 from the full text (28 pages, text extraction; figures and tables not viewed). Open access (CC BY). Funding stated: Academy of Finland Centre of Excellence in Body-on-Chip Research, among others. Pekkanen-Mattila is also an author of [[wiki/papers/ryynanen-2018-single-cell-mea.md]]; the Declarations of main.md mention that several authors of both belong to the research group in which the researcher previously worked.
 
 ## Contribution
 A review of the building blocks of cardiac microphysiological systems (MPS): relevant cardiac cell types, supporting matrix, mechanical stimulation, functional measurements and computational modelling, with the stated aim of giving insight for MPS that recapitulate human physiology better. It is not a review of MEA analysis methods.
@@ -36,7 +36,7 @@ Our observations (not from the paper): it is a 2023 review, so it does not cover
 Cited in main.md (Discussion and future outlook) in two places: as a review that sees potential in combining measurement modalities (sensor-fusion paragraph) and as stating that continuous, multimodal measurements give a holistic data set for parameterising and validating computational models, with integrative models not yet published (digital-twin sentence). It is also a counterpoint to synthesis item 1.
 
 ## See also
-- [[wiki/papers/valimaki-2021-hypoxia-video-mea.md]]
+- [[wiki/papers/ryynanen-2018-single-cell-mea.md]]
 - [[wiki/papers/hayakawa-2014-motion-fp.md]]
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
 - [[wiki/papers/botti-2026-insilico.md]]

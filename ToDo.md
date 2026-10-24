@@ -12,7 +12,7 @@
 Tehty
 - [x] Tämä riittää, ei abstractissa tarvita: Conclusionin viimeinen kappale viittaa nyt osioon ja Limitationsissa on kohta (vii) "outlook is speculative" (lisätty 24.10.). Päätä vielä, mainitaanko osio Abstractissa
 - [x] Korjattu: julkaisussa on minun nimi lyhennetty, mutta laitetaan nyt samalla tähänkin, eli muutettu muotoon Mäki, A.-J.
-- [x] Välimäki ym. (2021): vahvistettu 24.10., että kyseessä on MEA + video; DOI:ta tai PDF:ää ei ole, joten viite pysyy portaalin tietueen varassa (kohdat a–c suljettu)
+- [x] Välimäki ym. (2021) -viite korvattu 25.10. Ryynänen ym. (2018) -artikkelilla (JJAP 57, 117001; avoin, täysi teksti luettu, raw/ryynanen-2018-single-cell-mea.pdf): yhden solun MEA läpinäkyvillä elektrodeilla ja samanaikainen videoanalyysi. Tarkista: Declarationsin virke "... belong to the research group in which the author previously worked; the author is not an author of either" kuvaa ryhmäsuhteen oikein
 - [x] Vuorenpää ym. (2023) ingestoitu 24.10. (raw/vuorenpaa-2023-mps-building-blocks.pdf) ja lisätty outlookiin kahteen kohtaan; Declarations mainitsee päällekkäiset kirjoittajat (Välimäki, Pekkanen-Mattila). Tarkista silti itse sanamuodot
 - [x] Hayakawa ym. (2014) ingestoitu 24.10. (PDF nimetty raw/hayakawa-2014-motion-fp.pdf). Tarkista silti itse: onko main.md:n tiivistys (suora lineaarinen yhteys lääkekohtaisilla kulmakertoimilla, ei-arytmiset tilanteet) oikein. Kirjoittaja katsonut kuvat, tukevat väitteitä 
 - [x] Figure 2 -vuokaavio: kolmas FPD-päätepistekäytäntö (Dunhamin T-aallon päätepiste, trapetsimenetelmä) lisätty 24.10. Tarkista renderöinnin jälkeen, että uuden reunan teksti ei veny liian pitkäksi
@@ -21,13 +21,13 @@ Tehty
 - [ ] Pyydä Claudea päivittämään docs/claims-by-source.md uudelleen valmiista tekstistä
 - [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten. Wikisivut on jo tarkistettu lähdetekstiä vasten (24.10.), mutta numerot ja kuvatulkinnat kannattaa varmistaa itse, ja kaksi lisätiedostoa jäi lukematta (Correia ja Scheurer, supplementary)
   - Erityisesti: Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten)
-  - Uudet lähteet: Hayakawa 2014 ja Vuorenpää 2023 on luettu kokonaan (kuvia ei katsottu Vuorenpäältä), mutta main.md:n tiivistykset kannattaa lukea itse; Välimäki 2021 perustuu vain portaalin tietueeseen ja sinun vahvistukseesi (MEA + video), eikä sisältöä ole luettu
+  - Uudet lähteet: Hayakawa 2014 ja Vuorenpää 2023 on luettu kokonaan (kuvia ei katsottu Vuorenpäältä), mutta main.md:n tiivistykset kannattaa lukea itse; Ryynänen 2018 (korvasi Välimäki 2021:n 25.10.) on luettu kokonaan, kuvia ei katsottu
   - Katso erityisesti outlookin lauseet ja synteesikohdat 16 ja 17 (hypoteeseja, ei löydöksiä)
 - [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 
 ## 3. Ennen vientiä
 - [ ] Idea tutkittavaksi (valinnainen): aktivaatio-palautumisintervalli (ARI) vaihtoehtona peak-to-peak-FPD:lle on todellinen tutkimuskäsite. Se pitää ensin löytää ja lukea; alkuperäinen ehdotus (Chinushi 2001 / Haws & Lux 1990, tarkka nimi ja julkaisu varmistamatta) on docs/peer_review_missing_references_main.md:ssä (tiedosto on sittemmin poistettu, ks. git-historia). Ei viitteitä paperiin ennen lukemista (AGENTS: ei keksittyjä viitteitä)
-- [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotetut varoitukset nyt kolme: Clements 2025 -posterilla ei ole DOI:ta; Välimäki 2021 -viitteellä ei ole DOI:ta eikä raw-tiedostoa)
+- [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotettu varoitus nyt yksi: Clements 2025 -posterilla ei ole DOI:ta)
 - [ ] Poista tämä ToDo.md (temp-tiedosto)
 
 Tehty

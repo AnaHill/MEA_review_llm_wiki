@@ -320,6 +320,19 @@ Claims (tick `[x]` when you have checked the claim against the source):
 - [ ] (6) [Outlook] the machine-learning classifiers were trained on small datasets (test set of 16 drugs).
 - [ ] (7) [Motivation] example of proarrhythmia risk assessment.
 
+## Ryynänen et al. (2018)
+
+Local file: `raw/ryynanen-2018-single-cell-mea.pdf`; page `wiki/papers/ryynanen-2018-single-cell-mea.md`. Status: checked against the full text 2026-10-25 (text extraction; figures not viewed; supplementary videos not available). The researcher is not an author.
+
+Claims (tick `[x]` when you have checked the claim against the source):
+
+- [ ] (1) [Outlook] an MEA with transparent electrodes has been used to record the field potential and the video-based motion of the same single hPS-CM at the same time, although the two recordings were not automatically synchronised.
+- [ ] (2) [Limitations] pre-2022 work cited as background for earlier multimodal work.
+- [ ] (3) [FPDc] it corrected FPD with Bazett's formula.
+- [ ] (4) [Declarations] several of its authors (with those of Vuorenpää et al., 2023) belong to the research group in which the researcher previously worked; the researcher is not an author (to be confirmed by the researcher).
+
+Check 2026-10-25: (1) pp. 2–3 (aim: transparent electrodes enable simultaneous imaging and video analysis of the same cardiomyocytes), p. 5 ("Video and MEA recordings were taken manually at the same time; therefore, the recordings were not automatically synchronized in this study"), p. 7 ("beating frequencies and beat-to-beat intervals were similar when recorded with the two methods"; the electromechanical correlation is left to future studies). (3) p. 4 ("Bazett's formula was used to calculate the beat-rate-corrected FPD (cFPD)"). Single-cell electrodes are 80 µm, versus about 30 µm in conventional MEAs. Verify the numbers in Table I yourself (figures and table were read from extracted text only).
+
 ## Scheurer et al. (2025)
 
 Local files: `raw/scheurer-2025-optical-ai.pdf` (+ supplementary); page `wiki/papers/scheurer-2025-optical-ai.md`. Status: checked against the abstract, Results and Discussion 2026-10-24.
@@ -336,27 +349,15 @@ Claims (tick `[x]` when you have checked the claim against the source):
 
 Check 2026-10-24: (2) abstract p. 1 (230 videos; 10 features; accuracy 99.5 ± 1.1 %); p. 5 table (test set n = 46); "stage" was changed to "distinguish" because only two conditions are classified. (4) p. 9: "Hayakawa et al. simultaneously measured field potentials and motion in iPSC-CMs and observed strong correlations between field potential duration (FPD) and contraction duration [40]".
 
-## Välimäki et al. (2021)
-
-Local file: none (conference contribution; only the Tampere University research portal record was seen); page `wiki/papers/valimaki-2021-hypoxia-video-mea.md`. Status: from the portal record only (title, authors, year, event); the abstract and the contribution itself were not read. The researcher is a co-author (self-citation, disclosed in the Declarations).
-
-Claims (tick `[x]` when you have checked the claim against the source):
-
-- [ ] (1) [Outlook] combined electrophysiological and video-based motion analysis of hiPSC-CMs in hypoxia has been presented in a conference contribution by the author's former research group (the title supports this; that the electrophysiology was MEA recording was confirmed by the researcher, a co-author, on 2026-10-24, not by the portal record).
-- [ ] (2) [Declarations] the author is a co-author.
-- [ ] (3) [Limitations] pre-2022 conference contribution cited as background for earlier multimodal work.
-
-Check 2026-10-24: title, nine authors in order, year 2021 and event (EUROOoCs, virtual, 1–2 July 2021) match the portal record; no DOI, abstract, publisher or pages are shown. Verify the content yourself before relying on it.
-
 ## Vuorenpää et al. (2023)
 
-Local file: `raw/vuorenpaa-2023-mps-building-blocks.pdf`; page `wiki/papers/vuorenpaa-2023-mps-building-blocks.md`. Status: checked against the full text 2026-10-24 (text extraction; figures and tables not viewed). Two of the authors (Välimäki, Pekkanen-Mattila) are co-authors of Välimäki et al. (2021); disclosed in the Declarations.
+Local file: `raw/vuorenpaa-2023-mps-building-blocks.pdf`; page `wiki/papers/vuorenpaa-2023-mps-building-blocks.md`. Status: checked against the full text 2026-10-24 (text extraction; figures and tables not viewed). Two of the authors (Välimäki, Pekkanen-Mattila) belong to the research group in which the researcher previously worked (Pekkanen-Mattila also co-authored Ryynänen et al., 2018); disclosed in the Declarations.
 
 Claims (tick `[x]` when you have checked the claim against the source):
 
 - [ ] (1) [Outlook] a review of cardiac microphysiological systems sees potential in combining different measurement modalities, which heart-on-chip systems can monitor concurrently.
 - [ ] (2) [Outlook] it notes that continuous, multimodal measurements give a holistic data set for parameterising and validating computational models and that, to its authors' knowledge, integrative simulations of all building blocks of a microphysiological system had not been published.
-- [ ] (3) [Declarations] two of its authors are co-authors of Välimäki et al. (2021).
+- [ ] (3) [Declarations] several of its authors (with those of Ryynänen et al., 2018) belong to the research group in which the researcher previously worked; the researcher is not an author (to be confirmed by the researcher).
 - [ ] (4) [Motivation] the review describes the parametrization of action potentials and field potentials as well established and as enabling clear comparison of results between studies (section 6.1.1; a counterpoint to the 'source of variability' statement).
 
 Check 2026-10-24: (1) section 6.1 (p. 12–13): "An advantage of heart MPS is the capability to include multiple sensors and electrodes for continuous measurement and monitoring of multiple measurement modalities, even concurrently" and "The reviewed studies show the potential of combining different measurement modalities, which may be fruitful for perfusion-enabled heart-on-chip studies as the field matures". (2) section 7 (p. 20): "the capability for continuous/long-term and multimodal measurements and concurrent sensing of the central functional readouts ... generate unprecedently holistic dataset for parameterization and validation of computational models"; section 7.3 (p. 21): "To our knowledge, multiphysics models that would put together all the building blocks of MPS in integrative simulations have not yet been published." The text contains no artificial intelligence, machine learning or digital twin discussion, and `main.md` does not attribute any to it. Counterpoint to synthesis item 1 (section 6.1.1: "The parametrization of APs and field potentials has been well established, enabling clear comparison of results between studies").
@@ -395,7 +396,7 @@ These are statements in `main.md` that no single reference supports, or that are
 - [ ] 14. [High-throughput] (revised 2026-10-24) "several of the post-2022 studies examined address high-throughput and longitudinal applications" and "In the studies examined, single conventional metrics are complemented by multi-parameter feature sets encompassing beat rate, beat-to-beat variability, conduction properties, and event-based descriptors (Altrocchi et al., 2023; Matsuda et al., 2025)." Based on Altrocchi et al. (2023), Matsuda et al. (2025) and Park et al. (2025, 2026); the trends are no longer claimed. Support: supported as worded for the studies named (thin: two studies for the feature sets).
 - [ ] 15. [Motivation, Conclusion] (revised 2026-10-24) "In the studies examined, MEA recordings from hiPSC-CMs are used not only for basic measurements ... but also for mechanistic electrophysiological phenotyping (Maurissen et al., 2024; Park et al., 2025; Park et al., 2026), proarrhythmia risk assessment (Blinova et al., 2018; Pramudito et al., 2026) and longitudinal drug testing (Altrocchi et al., 2023; Guerrelli et al., 2024)" and "machine learning is used in several of the studies examined — ... (Pramudito et al., 2026), ... (Park et al., 2026), ... (Lee et al., 2024) — and it may become a more integral layer of cardiomyocyte MEA workflows." Based on the studies named. Support: supported as worded; the earlier trend wording ('increasingly', 'rapidly becoming') and the uncited 'AI-driven interpretation of UHD-MEA data' were removed.
 
-- [ ] 16. [Outlook] Sensor fusion: "interpreting them jointly (sensor fusion), with AI support, could give a more complete picture of a preparation than any single signal, for example by adding MEA-derived parameters to a video-based classifier of maturation status", and "In these studies the modalities are mostly analysed separately or side by side". Based on: Altrocchi et al. (2023), Lee et al. (2024), Kabanov et al. (2026), Scheurer et al. (2025), Välimäki et al. (2021; record only), Hayakawa et al. (2014), Vuorenpää et al. (2023), Mäki (2023). No study tested joint interpretation by a fusion model; marked in the text as a hypothesis of the author. Support: none (stated as a hypothesis); the observation about separate analysis is thin.
+- [ ] 16. [Outlook] Sensor fusion: "interpreting them jointly (sensor fusion), with AI support, could give a more complete picture of a preparation than any single signal, for example by adding MEA-derived parameters to a video-based classifier of maturation status", and "In these studies the modalities are mostly analysed separately or side by side". Based on: Altrocchi et al. (2023), Lee et al. (2024), Kabanov et al. (2026), Scheurer et al. (2025), Ryynänen et al. (2018), Hayakawa et al. (2014), Vuorenpää et al. (2023), Mäki (2023). No study tested joint interpretation by a fusion model; marked in the text as a hypothesis of the author. Support: none (stated as a hypothesis); the observation about separate analysis is thin.
 
 - [ ] 17. [Outlook] Device separation: "with system identification or reverse engineering, the contribution of the MEA device ... could be estimated and removed, so that the remaining signal resembles the cellular AP more closely", electroporation data as a source of training and validation data, a digital twin of the recording ("a calibrated model of the cells, tissue and device, with parameters fitted to the measured signals"), and "it would also make FP-derived results from different hardware more comparable". Based on: Mäki (2023), Lee et al. (2024), Ernault et al. (2024), Botti et al. (2026) (a forward model not fitted to new measurements, the only digital-twin-like component cited), Vuorenpää et al. (2023) (multimodal data for parameterising and validating models; integrative models not yet published, to their knowledge). A proposal of the author; no reviewed study attempted it, and Ernault et al. suggest the FP also depends on neighbouring cells. The text adds, as the author's reasoning from extracellular recording theory with no source, that the recovery may be an ill-posed inverse problem because the FP is a weighted sum of the currents of many surrounding cells (added 2026-10-24). Support: none (stated as a hypothesis); the comparability claim is flagged in the text as untested.
 

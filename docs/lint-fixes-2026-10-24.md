@@ -1223,3 +1223,370 @@ The simulated review (`docs/peer_review_main.md`) was written by an AI model tha
 
 The companion guide of "missing references" (`docs/peer_review_missing_references_main.md`) was judged useless: five of its seven references were already in `main.md` and checked, the two others (activation-recovery intervals; Millard et al., rate correction) are unverified, and its line numbers and LaTeX were unreliable. Its one useful idea, the activation-recovery interval as an alternative to peak-to-peak FPD, is a to-do item in `ToDo.md`.
 
+## Group 12. Välimäki et al. (2021) replaced by Ryynänen et al. (2018) (2026-10-25)
+
+Replacement of the conference record of Välimäki et al. (2021) with the open-access paper Ryynänen et al. (2018), read in full on 2026-10-25. Main reason: Välimäki et al. could be cited only from a portal record (no abstract, DOI or file), whereas Ryynänen et al. is a peer-reviewed, open-access paper in which the researcher is not an author.
+
+### New wiki page for Ryynänen et al. (2018)
+
+**File:** `wiki/papers/ryynanen-2018-single-cell-mea.md`. **Why:** Written from the full text read on 2026-10-25. The page separates what the authors state from our observations (small sample, unsynchronised recordings, Bazett's formula).
+
+**New file.** See the file itself.
+
+### Outlook, sensor-fusion paragraph
+
+**File:** `main.md`. **Why:** The conference contribution (only a portal record was available) is replaced by a peer-reviewed, open-access paper that was read in full and in which the researcher is not an author.
+
+**Before:**
+
+> , and combined MEA and video-based motion analysis of hiPSC-CMs in hypoxia has been presented in a conference contribution by the author's former research group (Välimäki et al., 2021).
+
+**After:**
+
+> , and an MEA with transparent electrodes has been used to record the field potential and the video-based motion of the same single hPS-CM at the same time, although the two recordings were not automatically synchronised (Ryynänen et al., 2018).
+
+### Limitations (vi)
+
+**File:** `main.md`. **Why:** Same replacement in the list of pre-2022 background works.
+
+**Before:**
+
+> such as Blinova et al. (2018), Hayakawa et al. (2014) and Välimäki et al. (2021), are cited only
+
+**After:**
+
+> such as Blinova et al. (2018), Hayakawa et al. (2014) and Ryynänen et al. (2018), are cited only
+
+### Declarations, competing interests
+
+**File:** `main.md`. **Why:** The author is no longer a co-author of any cited work other than Mäki (2023), so the sentence about co-authoring Välimäki et al. (2021) is removed. The remaining relationship is stated as the researcher described it (the former research group); this wording should be confirmed by the researcher.
+
+**Before:**
+
+> The author is also a co-author of the conference contribution Välimäki et al. (2021), cited in the outlook; two of its co-authors are also authors of the review Vuorenpää et al. (2023), likewise cited in the outlook.
+
+**After:**
+
+> Several authors of the review Vuorenpää et al. (2023) and of Ryynänen et al. (2018), both cited in the outlook, belong to the research group in which the author previously worked; the author is not an author of either.
+
+### References: Välimäki entry removed
+
+**File:** `main.md`. **Why:** The work is no longer cited.
+
+**Before:**
+
+> Välimäki, H., Mäki, A.-J., Kattipparambil Rajan, D., Pekkanen-Mattila, M., Kreutzer, J., Ryynänen, T., Verho, J., Aalto-Setälä, K., & Kallio, P. (2021, July 1–2). *Combined electrophysiological and video-based motion analysis for human induced pluripotent stem cell-derived cardiomyocytes in hypoxia* [Conference contribution]. EUROOoCs conference of European Organ-on-Chip Society, virtual conference. https://researchportal.tuni.fi/fi/publications/combined-electrophysiological-and-video-based-motion-analysis-for/
+>
+>
+
+**After:**
+
+> (removed)
+
+### References: Ryynänen entry added
+
+**File:** `main.md`. **Why:** APA entry from the title page of the paper (seven authors in order, journal, article number 117001, DOI). The issue number is not given in the paper and is therefore not stated.
+
+**Before:**
+
+> Scheurer, F., Hammer, A.,
+
+**After:**
+
+> Ryynänen, T., Pekkanen-Mattila, M., Shah, D., Kreutzer, J., Kallio, P., Lekkala, J., & Aalto-Setälä, K. (2018). Microelectrode array for noninvasive analysis of cardiomyocytes at the single-cell level. *Japanese Journal of Applied Physics*, *57*, 117001. https://doi.org/10.7567/JJAP.57.117001
+>
+> Scheurer, F., Hammer, A.,
+
+### Rate correction section
+
+**File:** `main.md`. **Why:** Adding Ryynänen et al. (2018) means that a study in the reference list used a different formula; the sentence 'the Fridericia formula is the correction used in the studies examined here' would otherwise be inexact.
+
+**Before:**
+
+> Park et al. (2025) also report corrected FPD but do not name the formula.
+
+**After:**
+
+> Park et al. (2025) also report corrected FPD but do not name the formula. Ryynänen et al. (2018), a pre-2022 study cited only in the outlook, corrected FPD with Bazett's formula.
+
+### references.md: Välimäki entry removed
+
+**File:** `wiki/references.md`. **Why:** The work is no longer cited.
+
+**Before:**
+
+> Välimäki, H., Mäki, A.-J., Kattipparambil Rajan, D., Pekkanen-Mattila, M., Kreutzer, J., Ryynänen, T., Verho, J., Aalto-Setälä, K., & Kallio, P. (2021, July 1–2). *Combined electrophysiological and video-based motion analysis for human induced pluripotent stem cell-derived cardiomyocytes in hypoxia* [Conference contribution]. EUROOoCs conference of European Organ-on-Chip Society, virtual conference. https://researchportal.tuni.fi/fi/publications/combined-electrophysiological-and-video-based-motion-analysis-for/
+>
+>
+
+**After:**
+
+> (removed)
+
+### references.md: Ryynänen entry added
+
+**File:** `wiki/references.md`. **Why:** Same entry as in main.md (the checker requires them to match).
+
+**Before:**
+
+> Scheurer, F., Hammer, A.,
+
+**After:**
+
+> Ryynänen, T., Pekkanen-Mattila, M., Shah, D., Kreutzer, J., Kallio, P., Lekkala, J., & Aalto-Setälä, K. (2018). Microelectrode array for noninvasive analysis of cardiomyocytes at the single-cell level. *Japanese Journal of Applied Physics*, *57*, 117001. https://doi.org/10.7567/JJAP.57.117001
+>
+> Scheurer, F., Hammer, A.,
+
+### index: Välimäki line removed
+
+**File:** `wiki/index.md`. **Why:** The page was deleted.
+
+**Before:**
+
+> - [Välimäki et al. 2021](papers/valimaki-2021-hypoxia-video-mea.md) — Conference contribution (EUROOoCs 2021): combined MEA and video-based motion analysis of hiPSC-CMs in hypoxia (MEA use confirmed by the researcher); portal record only, content not read. Researcher is a co-author.
+>
+
+**After:**
+
+> (removed)
+
+### index: Ryynänen line added (before Scheurer)
+
+**File:** `wiki/index.md`. **Why:** Alphabetical position between Pramudito and Scheurer.
+
+**Before:**
+
+> - [Scheurer et al. 2025](papers/scheurer-2025-optical-ai.md) — Video-based SVM/SHAP classifier separating immature (day 21) from lipid-medium-matured (day 42) iPSC-CM cultures from beating features (99.5 % test accuracy; binary, with a heterogeneous less-mature B27 group); not MEA; cites Hayakawa et al. for the FPD–contraction link. TU Dresden, *Comput Struct Biotechnol J* 27:3719–3728.
+
+**After:**
+
+> - [Ryynänen et al. 2018](papers/ryynanen-2018-single-cell-mea.md) — Single-cell MEA with 80 µm electrodes (opaque and transparent ITO): field potential, beating rate, FPD (Bazett cFPD) and E-4031 effect from single hPS-CMs, with simultaneous video-based motion analysis (not automatically synchronised). *Jpn J Appl Phys* 57:117001. Pre-2022 background; open access.
+> - [Scheurer et al. 2025](papers/scheurer-2025-optical-ai.md) — Video-based SVM/SHAP classifier separating immature (day 21) from lipid-medium-matured (day 42) iPSC-CM cultures from beating features (99.5 % test accuracy; binary, with a heterogeneous less-mature B27 group); not MEA; cites Hayakawa et al. for the FPD–contraction link. TU Dresden, *Comput Struct Biotechnol J* 27:3719–3728.
+
+### index: Vuorenpää line
+
+**File:** `wiki/index.md`. **Why:** The sentence about Välimäki 2021 no longer applies.
+
+**Before:**
+
+> - [Vuorenpää et al. 2023](papers/vuorenpaa-2023-mps-building-blocks.md) — Review of cardiac microphysiological system building blocks (cells, matrix, stimulation, functional measurements, computational modelling); multimodal concurrent measurements give data for parameterising and validating models. *Front Physiol* 14:1213959. Two authors co-authored Välimäki 2021.
+
+**After:**
+
+> - [Vuorenpää et al. 2023](papers/vuorenpaa-2023-mps-building-blocks.md) — Review of cardiac microphysiological system building blocks (cells, matrix, stimulation, functional measurements, computational modelling); multimodal concurrent measurements give data for parameterising and validating models. *Front Physiol* 14:1213959.
+
+### index: multimodal concept line
+
+**File:** `wiki/index.md`. **Why:** Välimäki replaced by Ryynänen.
+
+**Before:**
+
+> Hayakawa, Välimäki, Vuorenpää)
+
+**After:**
+
+> Hayakawa, Ryynänen, Vuorenpää)
+
+### Multimodal page: row replaced
+
+**File:** `wiki/multimodal-measurement.md`. **Why:** Välimäki (portal record only) replaced by Ryynänen et al. (2018), read in full.
+
+**Before:**
+
+> | [[wiki/papers/valimaki-2021-hypoxia-video-mea.md]] | MEA and video-based motion analysis of hiPSC-CMs in hypoxia (conference contribution; portal record only) |
+
+**After:**
+
+> | [[wiki/papers/ryynanen-2018-single-cell-mea.md]] | MEA field potential and video-based motion analysis of the same single hPS-CM through transparent electrodes (recorded at the same time but not automatically synchronised; FPD, beating rate and beat-to-beat interval comparable between MEA and video where compared) |
+
+### Hayakawa page: see also
+
+**File:** `wiki/papers/hayakawa-2014-motion-fp.md`. **Why:** Link follows the replacement.
+
+**Before:**
+
+> - [[wiki/papers/valimaki-2021-hypoxia-video-mea.md]]
+
+**After:**
+
+> - [[wiki/papers/ryynanen-2018-single-cell-mea.md]]
+
+### Vuorenpää page: note on overlap
+
+**File:** `wiki/papers/vuorenpaa-2023-mps-building-blocks.md`. **Why:** Reworded because Välimäki et al. (2021) is no longer cited.
+
+**Before:**
+
+> Two of the authors (Välimäki, Pekkanen-Mattila) are also co-authors of [[wiki/papers/valimaki-2021-hypoxia-video-mea.md]]; disclosed in the Declarations of main.md.
+
+**After:**
+
+> Pekkanen-Mattila is also an author of [[wiki/papers/ryynanen-2018-single-cell-mea.md]]; the Declarations of main.md mention that several authors of both belong to the research group in which the researcher previously worked.
+
+### Vuorenpää page: see also
+
+**File:** `wiki/papers/vuorenpaa-2023-mps-building-blocks.md`. **Why:** Link follows the replacement.
+
+**Before:**
+
+> - [[wiki/papers/valimaki-2021-hypoxia-video-mea.md]]
+
+**After:**
+
+> - [[wiki/papers/ryynanen-2018-single-cell-mea.md]]
+
+### Fridericia page: statement
+
+**File:** `wiki/fridericia-rate-correction.md`. **Why:** Ryynänen et al. (2018) used Bazett's formula, so 'the only one used' is no longer true.
+
+**Before:**
+
+> Among the papers that name a formula, Fridericia is the only one used;
+
+**After:**
+
+> Among the papers that name a formula, Fridericia is used by all except Ryynänen et al. (2018, a pre-2022 single-cell MEA study, Bazett's formula);
+
+### Fridericia page: new row
+
+**File:** `wiki/fridericia-rate-correction.md`. **Why:** Records the Bazett use.
+
+**Before:**
+
+> | [[wiki/papers/lee-2024-cardiomea.md]] | the published CardioMEA feature set contains FPD but no rate-corrected FPD |
+
+**After:**
+
+> | [[wiki/papers/lee-2024-cardiomea.md]] | the published CardioMEA feature set contains FPD but no rate-corrected FPD |
+> | [[wiki/papers/ryynanen-2018-single-cell-mea.md]] | cFPD calculated with Bazett's formula (pre-2022; single-cell MEA, FPD measured with an in-house Origin module) |
+
+### Page deleted
+
+**File:** `wiki/papers/valimaki-2021-hypoxia-video-mea.md`. **Why:** The conference contribution is no longer cited; the page (portal record only) is replaced by the Ryynänen page. It remains in the git history.
+
+**Before:**
+
+> (page with portal record only, content not read)
+
+**After:**
+
+> (deleted)
+
+### Claims list: Välimäki section removed
+
+**File:** `docs/claims-by-source.md`. **Why:** The work is no longer cited.
+
+**Before:**
+
+> ## Välimäki et al. (2021)
+>
+> Local file: none (conference contribution; only the Tampere University research portal record was seen); page `wiki/papers/valimaki-2021-hypoxia-video-mea.md`. Status: from the portal record only (title, authors, year, event); the abstract and the contribution itself were not read. The researcher is a co-author (self-citation, disclosed in the Declarations).
+>
+> Claims (tick `[x]` when you have checked the claim against the source):
+>
+> - [ ] (1) [Outlook] combined electrophysiological and video-based motion analysis of hiPSC-CMs in hypoxia has been presented in a conference contribution by the author's former research group (the title supports this; that the electrophysiology was MEA recording was confirmed by the researcher, a co-author, on 2026-10-24, not by the portal record).
+> - [ ] (2) [Declarations] the author is a co-author.
+> - [ ] (3) [Limitations] pre-2022 conference contribution cited as background for earlier multimodal work.
+>
+> Check 2026-10-24: title, nine authors in order, year 2021 and event (EUROOoCs, virtual, 1–2 July 2021) match the portal record; no DOI, abstract, publisher or pages are shown. Verify the content yourself before relying on it.
+>
+>
+
+**After:**
+
+> (removed)
+
+### Claims list: Ryynänen section added
+
+**File:** `docs/claims-by-source.md`. **Why:** Keeps the coverage check at zero gaps; the claims follow the new main.md wording.
+
+**Before:**
+
+> ## Scheurer et al. (2025)
+
+**After:**
+
+> ## Ryynänen et al. (2018)
+>
+> Local file: `raw/ryynanen-2018-single-cell-mea.pdf`; page `wiki/papers/ryynanen-2018-single-cell-mea.md`. Status: checked against the full text 2026-10-25 (text extraction; figures not viewed; supplementary videos not available). The researcher is not an author.
+>
+> Claims (tick `[x]` when you have checked the claim against the source):
+>
+> - [ ] (1) [Outlook] an MEA with transparent electrodes has been used to record the field potential and the video-based motion of the same single hPS-CM at the same time, although the two recordings were not automatically synchronised.
+> - [ ] (2) [Limitations] pre-2022 work cited as background for earlier multimodal work.
+> - [ ] (3) [FPDc] it corrected FPD with Bazett's formula.
+> - [ ] (4) [Declarations] several of its authors (with those of Vuorenpää et al., 2023) belong to the research group in which the researcher previously worked; the researcher is not an author (to be confirmed by the researcher).
+>
+> Check 2026-10-25: (1) pp. 2–3 (aim: transparent electrodes enable simultaneous imaging and video analysis of the same cardiomyocytes), p. 5 ("Video and MEA recordings were taken manually at the same time; therefore, the recordings were not automatically synchronized in this study"), p. 7 ("beating frequencies and beat-to-beat intervals were similar when recorded with the two methods"; the electromechanical correlation is left to future studies). (3) p. 4 ("Bazett's formula was used to calculate the beat-rate-corrected FPD ...
+
+### Claims list: Vuorenpää status line
+
+**File:** `docs/claims-by-source.md`. **Why:** Reworded because Välimäki et al. (2021) is no longer cited.
+
+**Before:**
+
+> Two of the authors (Välimäki, Pekkanen-Mattila) are co-authors of Välimäki et al. (2021); disclosed in the Declarations.
+
+**After:**
+
+> Two of the authors (Välimäki, Pekkanen-Mattila) belong to the research group in which the researcher previously worked (Pekkanen-Mattila also co-authored Ryynänen et al., 2018); disclosed in the Declarations.
+
+### Claims list: Vuorenpää claim 3
+
+**File:** `docs/claims-by-source.md`. **Why:** Same reason.
+
+**Before:**
+
+> - [ ] (3) [Declarations] two of its authors are co-authors of Välimäki et al. (2021).
+
+**After:**
+
+> - [ ] (3) [Declarations] several of its authors (with those of Ryynänen et al., 2018) belong to the research group in which the researcher previously worked; the researcher is not an author (to be confirmed by the researcher).
+
+### Synthesis item 16
+
+**File:** `docs/claims-by-source.md`. **Why:** The basis of the sensor-fusion statement now cites Ryynänen et al. (2018) instead of the conference record.
+
+**Before:**
+
+> Välimäki et al. (2021; record only),
+
+**After:**
+
+> Ryynänen et al. (2018),
+
+### ToDo: Välimäki row replaced
+
+**File:** `ToDo.md`. **Why:** Records the replacement and the one wording that needs the researcher's confirmation.
+
+**Before:**
+
+> - [x] Välimäki ym. (2021): vahvistettu 24.10., että kyseessä on MEA + video; DOI:ta tai PDF:ää ei ole, joten viite pysyy portaalin tietueen varassa (kohdat a–c suljettu)
+
+**After:**
+
+> - [x] Välimäki ym. (2021) -viite korvattu 25.10. Ryynänen ym. (2018) -artikkelilla (JJAP 57, 117001; avoin, täysi teksti luettu, raw/ryynanen-2018-single-cell-mea.pdf): yhden solun MEA läpinäkyvillä elektrodeilla ja samanaikainen videoanalyysi. Tarkista: Declarationsin virke "... belong to the research group in which the author previously worked; the author is not an author of either" kuvaa ryhmäsuhteen oikein
+
+### ToDo: own-check row for new sources
+
+**File:** `ToDo.md`. **Why:** Välimäki is no longer cited; Ryynänen was read in full.
+
+**Before:**
+
+>   - Uudet lähteet: Hayakawa 2014 ja Vuorenpää 2023 on luettu kokonaan (kuvia ei katsottu Vuorenpäältä), mutta main.md:n tiivistykset kannattaa lukea itse; Välimäki 2021 perustuu vain portaalin tietueeseen ja sinun vahvistukseesi (MEA + video), eikä sisältöä ole luettu
+
+**After:**
+
+>   - Uudet lähteet: Hayakawa 2014 ja Vuorenpää 2023 on luettu kokonaan (kuvia ei katsottu Vuorenpäältä), mutta main.md:n tiivistykset kannattaa lukea itse; Ryynänen 2018 (korvasi Välimäki 2021:n 25.10.) on luettu kokonaan, kuvia ei katsottu
+
+### ToDo: check.py row
+
+**File:** `ToDo.md`. **Why:** Välimäki's two warnings (no DOI, no raw file) are gone with the replacement.
+
+**Before:**
+
+> - [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotetut varoitukset nyt kolme: Clements 2025 -posterilla ei ole DOI:ta; Välimäki 2021 -viitteellä ei ole DOI:ta eikä raw-tiedostoa)
+
+**After:**
+
+> - [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotettu varoitus nyt yksi: Clements 2025 -posterilla ei ole DOI:ta)

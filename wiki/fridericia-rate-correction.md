@@ -17,11 +17,12 @@ Method page, written 2026-10-24 from the wiki paper pages (each checked against 
 | [[wiki/papers/clements-2025-aims-poster.md]] | proposed acceptance criteria include an FPDc window of 200–700 ms and a spontaneous beat period of 750–3000 ms (20–80 bpm) |
 | [[wiki/papers/pramudito-2026-ensemble.md]] | ML on ΔFPDc values already corrected in the public multisite CiPA dataset; the correction is taken as given |
 | [[wiki/papers/lee-2024-cardiomea.md]] | the published CardioMEA feature set contains FPD but no rate-corrected FPD |
+| [[wiki/papers/ryynanen-2018-single-cell-mea.md]] | cFPD calculated with Bazett's formula (pre-2022; single-cell MEA, FPD measured with an in-house Origin module) |
 | [[wiki/papers/matsuda-2025-uhd.md]] | no FPD or FPDc in its own recordings (FPDc appears only in a table of thresholds from earlier studies) |
 | [[wiki/papers/guerrelli-2024-hipscm.md]] | not a correction study, but beating rate rose 22.6 % and FPD fell 7.7 % during a 20-minute recording equilibration, so recordings taken before rate stabilises bias FPDc whichever formula is used; 15–20 minutes of equilibration recommended |
 
 ## Observations (ours, not from a single source)
-- Among the papers that name a formula, Fridericia is the only one used; none of the reviewed papers tested an alternative correction or a hiPSC-CM-specific formula (this is the basis of Gap 1 in main.md, which is an opinion built on Blinova's statement, the accepted rate ranges and the equilibration drift).
+- Among the papers that name a formula, Fridericia is used by all except Ryynänen et al. (2018, a pre-2022 single-cell MEA study, Bazett's formula); none of the reviewed papers tested an alternative correction or a hiPSC-CM-specific formula (this is the basis of Gap 1 in main.md, which is an opinion built on Blinova's statement, the accepted rate ranges and the equilibration drift).
 - The units of "ΔFPDc" differ between the two ML papers' sources (absolute ms in Blinova's dataset, percent in Park 2026), so the term is not interchangeable.
 
 ## See also
