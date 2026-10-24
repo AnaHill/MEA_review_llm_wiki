@@ -20,7 +20,7 @@ The author selects the sources, directs the agents and is responsible for the fi
 |-------|------|-------------|
 | Source papers | `raw/` | PDFs. Immutable. |
 | Wiki pages | `wiki/` | LLM — paper summaries, concepts, gaps |
-| Paper draft | `main.md` | LLM writes, author directs |
+| Paper draft | `main.md` | LLM writes, author directs and edits |
 | Own thinking | `notes.md` | Author only; the agent reads it, never edits it |
 
 **Four operations (ask agent):**
@@ -57,7 +57,7 @@ llm-wiki.md        the wiki pattern explained
 
 - **Select a section** in `main.md` and say *"rewrite this"* — agent edits only that section.
 - **`[CITATION NEEDED]`** markers mean no supporting source was found — add the paper and re-ingest.
-- **Graph view** in Foam (or in Obsidian) shows how paper pages link across the wiki — useful for spotting coverage gaps. Obsidian as well can be used.
+- **Graph view** in Foam or shows how paper pages link across the wiki — useful for spotting coverage gaps.
 - **`wiki/references.md`** is copy-paste ready for submission; tell agent your citation style if not APA.
 - **`python -I scripts/check.py`** is run after every change to the wiki or `main.md`; it reports broken links, missing references and unescaped hashes (a `#word` in prose becomes a tag in Obsidian, so write it as `\#word`).
 - **`docs/claims-by-source.md`** lists every claim in `main.md` per source, for checking the paper against the sources.

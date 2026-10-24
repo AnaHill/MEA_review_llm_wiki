@@ -32,7 +32,7 @@ Kabanov, D. A., Vrana, S., Beckerová, D., Rotrekl, V., Pesl, M., & Přibyl, J. 
 
 Lee, J., Duperrex, E., El-Battrawy, I., Hohn, A., Saguner, A. M., Duru, F., Emmenegger, V., Cyganek, L., Hierlemann, A., & Ulusan, H. (2024). CardioMEA: comprehensive data analysis platform for studying cardiac diseases and drug responses. *Frontiers in Physiology*, *15*, 1472126. https://doi.org/10.3389/fphys.2024.1472126
 
-Mäki, A.-J. (2023). *Opinion: The correct way to analyze FP signals* (Version v3) [Report]. Zenodo. https://doi.org/10.5281/zenodo.20807245
+Mäki, A.-J. (2023). *Opinion: The correct way to analyze FP signals* (Version v3, published 23 June 2026) [Report]. Zenodo. https://doi.org/10.5281/zenodo.20807245
 
 Matsuda, N., Nagafuku, N., Matsuda, K., Ishibashi, Y., Taniguchi, T., Matsushita, Y., Miyamoto, N., Yoshinaga, T., & Suzuki, I. (2025). Advanced cardiotoxicity profiling using field potential imaging with UHD-CMOS-MEA in human iPSC-derived cardiomyocytes. *Toxicological Sciences*, *208*(2), 384–400. https://doi.org/10.1093/toxsci/kfaf134
 
