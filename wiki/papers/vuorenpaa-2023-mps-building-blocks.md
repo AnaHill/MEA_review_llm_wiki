@@ -10,7 +10,7 @@ tags: [review, microphysiological-system, multimodal, in-silico]
 **File:** [[raw/vuorenpaa-2023-mps-building-blocks.pdf]]  
 **DOI:** 10.3389/fphys.2023.1213959
 
-Note: ingested 2026-10-24 from the full text (28 pages, text extraction; figures and tables not viewed). Open access (CC BY). Funding stated: Academy of Finland Centre of Excellence in Body-on-Chip Research, among others. Pekkanen-Mattila is also an author of [[wiki/papers/ryynanen-2018-single-cell-mea.md]]; the Declarations of main.md mention that several authors of both belong to the research group in which the researcher previously worked.
+Note: ingested 2026-10-24 from the full text (28 pages, text extraction; figures and tables not viewed). Open access (CC BY). Funding stated: Academy of Finland Centre of Excellence in Body-on-Chip Research, among others. Pekkanen-Mattila is also an author of [[wiki/papers/ryynanen-2018-single-cell-mea.md]]; the Declarations of main.md mention that several authors of both are colleagues of the researcher from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) collaboration at Tampere University.
 
 ## Contribution
 A review of the building blocks of cardiac microphysiological systems (MPS): relevant cardiac cell types, supporting matrix, mechanical stimulation, functional measurements and computational modelling, with the stated aim of giving insight for MPS that recapitulate human physiology better. It is not a review of MEA analysis methods.

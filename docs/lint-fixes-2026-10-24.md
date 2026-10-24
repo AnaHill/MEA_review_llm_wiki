@@ -1590,3 +1590,79 @@ Replacement of the conference record of Välimäki et al. (2021) with the open-a
 **After:**
 
 > - [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotettu varoitus nyt yksi: Clements 2025 -posterilla ei ole DOI:ta)
+
+## Group 13. Declarations wording: CoEBoC collaboration (2026-10-25)
+
+The researcher confirmed the Declarations sentence and gave the [CoEBoC](https://research.tuni.fi/coeboc/) collaboration (Centre of Excellence in Body-on-Chip Research, Tampere University) as the relationship; the sentence and the dependent texts were reworded accordingly.
+
+### Declarations, competing interests
+
+**File:** `main.md`. **Why:** Confirmed by the researcher on 2026-10-25: the relationship is the shared Centre of Excellence collaboration ([CoEBoC](https://research.tuni.fi/coeboc/), Tampere University). The Vuorenpää et al. title page lists the CoEBoC affiliation for all its authors; the Ryynänen paper predates it, so the sentence names the collaboration as the researcher described it.
+
+**Before:**
+
+> belong to the research group in which the author previously worked; the author is not an author of either.
+
+**After:**
+
+> are colleagues of the author from the Centre of Excellence in Body-on-Chip Research (CoEBoC) research collaboration at Tampere University; the author is not an author of either.
+
+### Claims list: Ryynänen claim 4
+
+**File:** `docs/claims-by-source.md`. **Why:** Wording follows the confirmed Declarations sentence.
+
+**Before:**
+
+> - [ ] (4) [Declarations] several of its authors (with those of Vuorenpää et al., 2023) belong to the research group in which the researcher previously worked; the researcher is not an author (to be confirmed by the researcher).
+
+**After:**
+
+> - [ ] (4) [Declarations] several of its authors (with those of Vuorenpää et al., 2023) are colleagues of the researcher from the Centre of Excellence in Body-on-Chip Research (CoEBoC) collaboration at Tampere University; the researcher is not an author (confirmed by the researcher, 2026-10-25).
+
+### Claims list: Vuorenpää claim 3
+
+**File:** `docs/claims-by-source.md`. **Why:** Same reason.
+
+**Before:**
+
+> - [ ] (3) [Declarations] several of its authors (with those of Ryynänen et al., 2018) belong to the research group in which the researcher previously worked; the researcher is not an author (to be confirmed by the researcher).
+
+**After:**
+
+> - [ ] (3) [Declarations] several of its authors (with those of Ryynänen et al., 2018) are colleagues of the researcher from the Centre of Excellence in Body-on-Chip Research (CoEBoC) collaboration at Tampere University (the CoEBoC affiliation is on the paper's title page); the researcher is not an author (confirmed by the researcher, 2026-10-25).
+
+### Claims list: Vuorenpää status line
+
+**File:** `docs/claims-by-source.md`. **Why:** Same reason.
+
+**Before:**
+
+> belong to the research group in which the researcher previously worked (Pekkanen-Mattila also co-authored Ryynänen et al., 2018); disclosed in the Declarations.
+
+**After:**
+
+> are colleagues of the researcher from the CoEBoC collaboration at Tampere University (Pekkanen-Mattila also co-authored Ryynänen et al., 2018); disclosed in the Declarations.
+
+### Vuorenpää page: note on overlap
+
+**File:** `wiki/papers/vuorenpaa-2023-mps-building-blocks.md`. **Why:** Same reason.
+
+**Before:**
+
+> mention that several authors of both belong to the research group in which the researcher previously worked.
+
+**After:**
+
+> mention that several authors of both are colleagues of the researcher from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) collaboration at Tampere University.
+
+### ToDo: confirmation recorded
+
+**File:** `ToDo.md`. **Why:** The wording check is done.
+
+**Before:**
+
+> - [x] Välimäki ym. (2021) -viite korvattu 25.10. Ryynänen ym. (2018) -artikkelilla (JJAP 57, 117001; avoin, täysi teksti luettu, raw/ryynanen-2018-single-cell-mea.pdf): yhden solun MEA läpinäkyvillä elektrodeilla ja samanaikainen videoanalyysi. Tarkista: Declarationsin virke "... belong to the research group in which the author previously worked; the author is not an author of either" kuvaa ryhmäsuhteen oikein
+
+**After:**
+
+> - [x] Välimäki ym. (2021) -viite korvattu 25.10. Ryynänen ym. (2018) -artikkelilla (JJAP 57, 117001; avoin, täysi teksti luettu, raw/ryynanen-2018-single-cell-mea.pdf): yhden solun MEA läpinäkyvillä elektrodeilla ja samanaikainen videoanalyysi. Declarationsin virke vahvistettu 25.10.: yhteys on CoEBoC-tutkimuskollaboraatio (Tampere)

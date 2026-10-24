@@ -12,7 +12,7 @@
 Tehty
 - [x] Tämä riittää, ei abstractissa tarvita: Conclusionin viimeinen kappale viittaa nyt osioon ja Limitationsissa on kohta (vii) "outlook is speculative" (lisätty 24.10.). Päätä vielä, mainitaanko osio Abstractissa
 - [x] Korjattu: julkaisussa on minun nimi lyhennetty, mutta laitetaan nyt samalla tähänkin, eli muutettu muotoon Mäki, A.-J.
-- [x] Välimäki ym. (2021) -viite korvattu 25.10. Ryynänen ym. (2018) -artikkelilla (JJAP 57, 117001; avoin, täysi teksti luettu, raw/ryynanen-2018-single-cell-mea.pdf): yhden solun MEA läpinäkyvillä elektrodeilla ja samanaikainen videoanalyysi. Tarkista: Declarationsin virke "... belong to the research group in which the author previously worked; the author is not an author of either" kuvaa ryhmäsuhteen oikein
+- [x] Välimäki ym. (2021) -viite korvattu 25.10. Ryynänen ym. (2018) -artikkelilla (JJAP 57, 117001; avoin, täysi teksti luettu, raw/ryynanen-2018-single-cell-mea.pdf): yhden solun MEA läpinäkyvillä elektrodeilla ja samanaikainen videoanalyysi. Declarationsin virke vahvistettu 25.10.: yhteys on CoEBoC-tutkimuskollaboraatio (Tampere)
 - [x] Vuorenpää ym. (2023) ingestoitu 24.10. (raw/vuorenpaa-2023-mps-building-blocks.pdf) ja lisätty outlookiin kahteen kohtaan; Declarations mainitsee päällekkäiset kirjoittajat (Välimäki, Pekkanen-Mattila). Tarkista silti itse sanamuodot
 - [x] Hayakawa ym. (2014) ingestoitu 24.10. (PDF nimetty raw/hayakawa-2014-motion-fp.pdf). Tarkista silti itse: onko main.md:n tiivistys (suora lineaarinen yhteys lääkekohtaisilla kulmakertoimilla, ei-arytmiset tilanteet) oikein. Kirjoittaja katsonut kuvat, tukevat väitteitä 
 - [x] Figure 2 -vuokaavio: kolmas FPD-päätepistekäytäntö (Dunhamin T-aallon päätepiste, trapetsimenetelmä) lisätty 24.10. Tarkista renderöinnin jälkeen, että uuden reunan teksti ei veny liian pitkäksi
@@ -55,4 +55,4 @@ Tehty
     - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
   - Kuinka hyvin rakennettu wiki ja muut auttoivat joka kerta kun Claude teki jotain
     - Claude muisti päivittää pelkän main lisäksi myös login ja indeksit yms oleelliset
-    - 
+    - tulee aina kelpo Ehdotus commit-viestiksi: *reword the Declarations sentence about colleagues to name the CoEBoC collaboration* (koska haluan nämä aina varmistaa ilman automatisointia)
