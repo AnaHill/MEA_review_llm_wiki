@@ -50,4 +50,6 @@ Scheurer, F., Hammer, A., Schubert, M., Steiner, R.-P., Gamm, O., Guan, K., Sonn
 
 Välimäki, H., Mäki, A., Kattipparambil Rajan, D., Pekkanen-Mattila, M., Kreutzer, J., Ryynänen, T., Verho, J., Aalto-Setälä, K., & Kallio, P. (2021, July 1–2). *Combined electrophysiological and video-based motion analysis for human induced pluripotent stem cell-derived cardiomyocytes in hypoxia* [Conference contribution]. EUROOoCs conference of European Organ-on-Chip Society, virtual conference. https://researchportal.tuni.fi/fi/publications/combined-electrophysiological-and-video-based-motion-analysis-for/
 
+Vuorenpää, H., Björninen, M., Välimäki, H., Ahola, A., Kroon, M., Honkamäki, L., Koivumäki, J. T., & Pekkanen-Mattila, M. (2023). Building blocks of microphysiological system to model physiology and pathophysiology of human heart. *Frontiers in Physiology*, *14*, 1213959. https://doi.org/10.3389/fphys.2023.1213959
+
 Weiser-Bitoun, I., Mazgaoker, S., Assayag, S., Davoodi, M., Alexandrovich, A., & Yaniv, Y. (2026). PhysioMEA: Signal processing platform for rate and rhythm analysis of multi-electrode array cardiac electrophysiological recordings. *Journal of Molecular and Cellular Cardiology*, *210*, 137–149. https://doi.org/10.1016/j.yjmcc.2025.11.006
