@@ -32,13 +32,12 @@ Things in `main.md` that commonly break or look wrong when Markdown is converted
 - [x] Which version of the opinion paper to cite: the review currently cites v3 (Zenodo record 20807245, published 23 June 2026) with the year 2023, explained in the version note in Declarations.
 - [x] Whether the repository link in the Declarations should stay (https://github.com/AnaHill/MEA_review_llm_wiki), since the source notes and log are public there.
 
-## Repository snapshot (added 2026-10-24)
+## Repository link and snapshot (revised 2026-10-24)
 
-The Declarations point to https://github.com/AnaHill/MEA_review_llm_wiki for the source notes and log. A link to a moving branch will not match the deposited PDF after later edits, so freeze the state:
+The Declarations point to https://github.com/AnaHill/MEA_review_llm_wiki for the source notes and log. That address does not change and `main.md` (including the Declarations) is not edited for this. What does change is the content behind the address: a reader who follows it later sees the repository as it is then, not as it was at deposit. This is acceptable and needs no action; the steps below are optional and only for your own reference.
 
-- [ ] Finish all edits to `main.md`, run `python -I scripts/check.py` (0 errors) and commit.
-- [ ] Optional: add one sentence to Declarations (Data and code availability) such as "The state of the repository at the time of deposit is tagged v1.0-preprint." Commit it first, because the tag must sit on the commit that already contains the sentence.
-- [ ] Create an annotated tag on that commit (for example `git tag -a v1.0-preprint -m "state at Zenodo deposit"` and `git push origin v1.0-preprint`) and, if wanted, a GitHub release from it. Do not enable the automatic GitHub-to-Zenodo archiving unless a second DOI is wanted; the PDF is deposited manually and linked to the opinion paper's record.
-- [ ] Check that the repository is public and that the non-open-access PDFs (`raw/pramudito-2026-ensemble.pdf`, `raw/clements-2025-aims-poster.pdf`) are not in the pushed history (`git log --all -- raw/pramudito-2026-ensemble.pdf`); open-access PDFs keep their own licences (for example CC BY-NC-ND for Hayakawa et al., 2014).
-- [ ] Add a LICENSE file or a README licence section (none exists on 2026-10-24); the paper itself is CC BY 4.0 (Declarations).
-
+- [ ] Optional: after the last commit, create an annotated tag on it (for example `git tag -a v1.0-preprint -m "state at Zenodo deposit"` and `git push origin v1.0-preprint`). It does not change the link and needs no change in `main.md`.
+- [ ] Do not enable the automatic GitHub-to-Zenodo archiving of releases: it would mint a second DOI for the repository. The PDF is deposited manually and linked to the opinion paper's record.
+- [ ] After the Zenodo deposit is published, add its link to the start of `README.md` (the ToDo item "Kun julkaistu Zenodossa").
+- [x] Licence: `LICENSE` (CC BY 4.0) and a README section were added on 2026-10-24.
+- [ ] Check that the non-open-access PDFs (`raw/pramudito-2026-ensemble.pdf`, `raw/clements-2025-aims-poster.pdf`) are not in the pushed history: `git log --all -- raw/pramudito-2026-ensemble.pdf raw/clements-2025-aims-poster.pdf` printed nothing on 2026-10-24.

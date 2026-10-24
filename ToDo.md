@@ -3,7 +3,7 @@
 
 ## 1. main.md: oma läpilukeminen ja muokkaus (tehdään ensin)
 - [ ] Lue koko main.md ja muokkaa tekstiä. Lähdetarkistus vasta tämän jälkeen, muuten väitelista vanhenee
-- [ ] Synteesikohdat: docs/claims-by-source.md:n osio "Claims that rest on the author's own synthesis or are not cited" (17 numeroitua kohtaa). Kohdissa 1, 3, 9, 10, 14 ja 15 on yleistyksiä ilman lähdettä: lisää lähde, pehmennä tai poista. Niitä ovat mm. neljä aukkoa, päätelmä avoimista alustoista ja MEA-natiivin maturaatioindeksin kokoaminen olemassa olevista osista. Kohdat 16 ja 17 ovat outlookin hypoteeseja (tekstissä merkitty hypoteeseiksi). Kohdan 1 vasta-argumentti: Vuorenpää ym. 2023 (osio 6.1.1) sanoo, että AP:iden ja FP:iden parametrisointi on vakiintunutta ja mahdollistaa tulosten vertailun, joten pehmennä "major source of variability" (Abstract, Motivation) tai perustele se paremmin
+- [ ] Synteesikohdat: docs/claims-by-source.md:n osio "Claims that rest on the author's own synthesis or are not cited" (17 numeroitua kohtaa). Kohdat 1, 3, 9, 10, 14 ja 15 pehmennettiin 24.10. (ks. docs/lint-fixes-2026-10-24.md, ryhmä 7): lue uudet sanamuodot ja päätä, kelpaavatko. Jäljellä olevat kohdat (2, 4, 5–8, 11–13) ovat ennallaan; 16 ja 17 ovat outlookin hypoteeseja. Motivation-lauseen "needs citation(s)" -kommentti on yhä paikallaan (lause sai nyt lähteitä)
 - [ ] Käy läpi omat HTML-kommenttisi main.md:ssä: `grep -n "<!--" main.md` (mm. "needs citation(s)" Motivation-osion lihavoidulla lauseella ja "Continue manual check here")
 - [ ] Tyylimerkinnät: `grep -n "not really my style" main.md` (nyt 2 paria abstraktissa). Käydään läpi vasta kun olet lukenut koko main.md. Claude ehdottaa uudelleenkirjoitukset sinun tyylilläsi, kunhan annat esimerkin omasta tyylistäsi (esim. Mäki 2023 -teksti tai notes.md)
 - [ ] Uusi osio "Discussion and future outlook" (ennen Limitations/Conclusion): lue ja muokkaa omalla tyylilläsi. Kaksi kohtaa: sensor fusion + AI, ja laitteen osuuden poisto signaalista (system identification). 
@@ -23,14 +23,14 @@
 - [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 
 ## 3. Ennen vientiä
-- [ ] Lint 24.10. tehty (ks. wiki/log.md, merkintä lint): korjausehdotukset odottavat päätöstäsi: indeksin vanhentuneet rivit (Ismaili, Matsuda, Park 2025, Hwang, Scheurer, Ernault, Mäki v2/v3, Hayakawa-järjestys, Last updated), wiki/hipsc-cm-maturation.md (Fetterman ja Correia -yleistykset), wiki/critical-assessment-maki-claims.md (Ernault "majority", "field converging", PhysioMEA ja kääntäminen, Fig. 6), Weiser-Bitoun-sivulta puuttuva käänteis-/inversiokäsittely, Limitations (v) ja Välimäki
+- [x] Lint 24.10.: korjaukset 1–4, 6 ja 7 tehty (indeksi, maturaatiosivu, critical assessment, Weiser-Bitoun-sivu, neljä uutta sivua, main.md:n pehmennykset). Kohta 5 ei vaadi muutosta (täystekstit luettiin aina kun mahdollista; Välimäki ei ollut mahdollinen). Lue koonti docs/lint-fixes-2026-10-24.md ennen committia
 - [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotetut varoitukset nyt kolme: Clements 2025 -posterilla ei ole DOI:ta; Välimäki 2021 -viitteellä ei ole DOI:ta eikä raw-tiedostoa)
 - [x] Committaa 24.10. asti tehdyt muutokset (git status oli tyhjä). Uudet muutokset (lint-korjaukset, ToDo, docs) vielä committaamatta. Avoimet PDF:t (Hayakawa, Vuorenpää) saavat olla seurannassa; Pramudito ja Clements pysyvät .gitignoressa
 - [ ] Poista tämä ToDo.md (temp-tiedosto)
 
 ## 4. Zenodo-vienti vasta lopuksi
-- [ ] GitHub-repo julkaisuhetken tilaan: tee viimeisen commitin jälkeen tagi (esim. `v1.0-preprint`) ja GitHub-release, ja harkitse virkettä Declarationsin Data and code availability -kohtaan ("The state of the repository at the time of deposit is tagged v1.0-preprint."). Tagi pitää tehdä sen commitin päälle, jossa virke jo on. Ks. docs/pdf-export-notes.md, osio "Repository snapshot"
-- [ ] Repon lisenssi: repossa ei ole LICENSE-tiedostoa eikä README mainitse lisenssiä; Declarations lupaa vain tekstille CC BY 4.0. Päätä koodin (scripts/) ja wiki-sisällön lisenssi ja kirjaa se README:hen; avoimet raw-PDF:t ovat omien lisenssiensä alaisia (esim. CC BY-NC-ND), ei-avoimet pysyvät .gitignoressa
+- [x] GitHub-linkki: pysyy ennallaan eikä main.md:tä muuteta; tagi on valinnainen (ks. docs/pdf-export-notes.md, osio "Repository link and snapshot")
+- [x] Repon lisenssi: CC BY 4.0 (LICENSE + README:n Licence-osio) lisätty 24.10.; raw/-PDF:t eivät kuulu siihen. README:hen lisätään linkki Zenodoon julkaisun jälkeen
 - [ ] pdf-muutos: valitse työkalu ja testaa taulukot, Unicode-merkit ja LaTeX-kaava (ks. docs/pdf-export-notes.md)
 - [ ] Mermaid-kaaviot: 2 kpl renderöitävä kuviksi ennen PDF-vientiä. Tehdään lopuksi mermaid-liven kautta sopivaksi kuvamuodoksi
 - [ ] Tarkista PDF:stä: HTML-kommentit eivät näy, hash-tunnisteet (\#CM01 jne.) näkyvät oikein, lähdeluettelo vastaa tekstiä

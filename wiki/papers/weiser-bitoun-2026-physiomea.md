@@ -1,5 +1,5 @@
 ---
-tags: [open-platform, fiducial-definition, spatial-analysis, brv]
+tags: [open-platform, fiducial-definition, waveform-morphology, spatial-analysis, brv]
 ---
 
 # PhysioMEA: Signal processing platform for rate and rhythm analysis of multi-electrode array cardiac electrophysiological recordings
@@ -24,6 +24,7 @@ Introduces **PhysioMEA**, an open-source platform (MATLAB 2023b or standalone .e
 - **FPD definition:** R-peak (depolarization maximum) to T-wave peak (repolarization maximum), not baseline return; this differs from the convention advocated by Mäki (2023)
 - **2D analysis:** spatiotemporal heatmaps of AMP, Slope, PPD, FPD per electrode per beat; coefficient of variation (CV) of the spatial variability; only the 2D analysis uses many electrodes
 - **BRV analysis:** 45 measures (time-domain, frequency-domain, non-linear); VLF/LF cutoffs adjusted for organoids (0.025 Hz vs 0.046 Hz for humans)
+- **Morphology handling (p. 3):** for low-amplitude R peaks the minimum peaks of the signal are found on the inverted signal; for inverted T waves the inverse segment of the signal is used to detect the inverted T peaks; electrode data with inconsistent biomarker value counts are excluded.
 - **Cohorts:** 15 organoids from 8 differentiation batches: 10 organoids (5 batches) for basal-state BRV and 1D/2D analysis (Figs. 3–5) and 5 organoids (3 batches) for the carbachol (CCh) comparison (Figs. 6–7). The representative organoid of Figs. 3–4 is not stated to belong to either cohort.
 - **Brugada Syndrome comparison:** previously published hiPSC-CM recordings (not organoids) from two Brugada patients (SCN5A p.S1812X) vs controls, seeded on 60MEA200/30iR-Ti-gr MEAs (200 µm electrode spacing) and recorded with Cardio 2D; 42 samples (BrS1 + BrS2) vs 30 control samples. PhysioMEA was used only for biomarker computation.
 - **Pharmacology:** 1 µM carbachol (parasympathetic stimulation) only; no sympathetic stimulation
