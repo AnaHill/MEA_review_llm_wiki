@@ -166,11 +166,11 @@ Looking forward, machine learning is rapidly becoming an integral layer in cardi
 
 **Status.** This is a preprint and has not been peer reviewed.
 
-**Competing interests.** The author wrote the opinion paper used here as the evaluative framework (Mäki, 2023) and the DatAnalyzer tool listed in Table 1, and therefore has an interest in how they are assessed. No other competing interests are declared.
+**Competing interests.** The author wrote the opinion paper used here as the evaluative framework (Mäki, 2023) and the *DatAnalyzer* tool listed in Table 1, and therefore has an interest in how they are assessed. No other competing interests are declared.
 
-**Version note.** "Mäki (2023)" refers to the opinion paper whose first version was posted on Zenodo in 2023; the text assessed here is version v3 of the same record, published on 23 June 2026, which slightly updated the original text.
+**Version note.** "Mäki (2023)" refers to the opinion paper whose first version was posted on Zenodo in 2023; the text assessed here is version v3 of the same record, published on 23 June 2026, which slightly updated the original text (mainly outlook).
 
-**Use of AI assistance.** Large language model agents (Anthropic's Claude, used through the Claude Code tool) assisted with literature searching and screening, summarising sources into a structured set of notes, checking citations and drafting and editing this text. The author selected the sources, directed and reviewed the work, and is responsible for the content. Bibliographic details were checked against the source documents or publisher records where these were accessible, and a consistency script verifies that every in-text citation appears in the reference list.
+**Use of AI assistance.** Large language model agents (Anthropic's Claude, used through the Claude Code tool; Cursor in very early versions) assisted with literature searching and screening, summarising sources into a structured set of notes, checking citations and drafting and editing this text. The author selected the sources, directed and reviewed the work, and is responsible for the content. Bibliographic details were checked against the source documents or publisher records where these were accessible, and a consistency script verifies that every in-text citation appears in the reference list.
 
 **Funding.** This work was carried out as an independent, unfunded project and received no external funding.
 
@@ -208,7 +208,7 @@ Kabanov, D. A., Vrana, S., Beckerová, D., Rotrekl, V., Pesl, M., & Přibyl, J. 
 
 Lee, J., Duperrex, E., El-Battrawy, I., Hohn, A., Saguner, A. M., Duru, F., Emmenegger, V., Cyganek, L., Hierlemann, A., & Ulusan, H. (2024). CardioMEA: comprehensive data analysis platform for studying cardiac diseases and drug responses. *Frontiers in Physiology*, *15*, 1472126. https://doi.org/10.3389/fphys.2024.1472126
 
-Mäki, A.-J. (2023). *Opinion: The correct way to analyze FP signals* (Version v3) [Report]. Zenodo. https://doi.org/10.5281/zenodo.20807245
+Mäki, A.-J. (2023). *Opinion: The correct way to analyze FP signals* (Version v3 published in 2025) [Report]. Zenodo. https://doi.org/10.5281/zenodo.20807245
 
 Matsuda, N., Nagafuku, N., Matsuda, K., Ishibashi, Y., Taniguchi, T., Matsushita, Y., Miyamoto, N., Yoshinaga, T., & Suzuki, I. (2025). Advanced cardiotoxicity profiling using field potential imaging with UHD-CMOS-MEA in human iPSC-derived cardiomyocytes. *Toxicological Sciences*, *208*(2), 384–400. https://doi.org/10.1093/toxsci/kfaf134
 

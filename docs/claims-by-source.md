@@ -4,6 +4,18 @@ A checklist for verifying the paper against its sources. Each source has one par
 
 Sections cited in brackets: Intro, Motivation, Scope, Timeline (Figure 1), Open pipelines (Transition section), Table 1, Fiducial (definitions section), Table 2, FPDc (rate correction), Maturation, Morphology (incl. Figure 2), Model complexity, High-throughput, Limitations, Conclusion.
 
+<!-- temporary Finnish  version
+Rakenne: tiedostossa on yksi osio per lähde (21 kpl), ja kunkin osion lopussa yksi kappale, jossa on jokainen väite, jonka main.md liittää kyseiseen lähteeseen. Väitteet on numeroitu ja merkitty osion tunnuksella (Intro, FPDc, Maturation jne.).
+
+Jokaisessa osiossa: paikallinen tiedosto raw/-kansiossa, wikisivu ja tarkistustila.
+Tarkistustila kertoo rehellisesti, mitä olen oikeasti tarkistanut täystekstistä.
+
+ Tarkistettu on Blinova, Botti, Clements, Lee, Park 2026 ja Pramudito. Dunhamilta, Kabanovilta ja Weiser-Bitounilta olen tarkistanut vain FPD-määritelmän PDF:stä. 
+
+Kaikki muut kohdat on kirjoitettu wikisivuilta aiemmissa sessioissa, eikä niitä ole tarkistettu uudelleen, joten ne tarvitsevat tarkimman silmäsi. Näitä ovat Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer.
+-->
+
+
 ## Altrocchi et al. (2023)
 
 Local file: `raw/altrocchi-2023-chronic.pdf`; page `wiki/papers/altrocchi-2023-chronic.md`. Status: from the wiki page.
