@@ -26,11 +26,11 @@ Tehty
 - [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 
 ## 3. Ennen vientiä
-- [ ] Päätä kohdan 4 virke (outlook, laitteen erottaminen signaalista): ehdotettu virke on docs/peer_review_main.md:n lopussa; lisätäänkö se vai ei? Muut peer review -korjaukset (1, 2, 3, 5, 6) on tehty 24.10., ks. docs/lint-fixes-2026-10-24.md, ryhmä 10
 - [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotetut varoitukset nyt kolme: Clements 2025 -posterilla ei ole DOI:ta; Välimäki 2021 -viitteellä ei ole DOI:ta eikä raw-tiedostoa)
 - [ ] Poista tämä ToDo.md (temp-tiedosto)
 
 Tehty
+- [x] Kohdan 4 virke (käänteisongelma huonosti asetettu) lisätty outlookiin 24.10.; muut peer review -korjaukset (1, 2, 3, 5, 6) tehty samana päivänä, ks. docs/lint-fixes-2026-10-24.md, ryhmät 10 ja 11
 - [x] Lint 24.10.: korjaukset 1–4, 6 ja 7 tehty (indeksi, maturaatiosivu, critical assessment, Weiser-Bitoun-sivu, neljä uutta sivua, main.md:n pehmennykset). Kohta 5 ei vaadi muutosta (täystekstit luettiin aina kun mahdollista; Välimäki ei ollut mahdollinen). Lue koonti docs/lint-fixes-2026-10-24.md ennen committia
 - [x] Committaa 24.10. asti tehdyt muutokset (git status oli tyhjä). Uudet muutokset (lint-korjaukset, ToDo, docs) vielä committaamatta. Avoimet PDF:t (Hayakawa, Vuorenpää) saavat olla seurannassa; Pramudito ja Clements pysyvät .gitignoressa
 

@@ -1129,3 +1129,79 @@ These changes followed the simulated peer review in `docs/peer_review_main.md`; 
 
 > - [ ] (4) [Fiducial] simultaneous video and MEA recordings in iCell monolayers: the two FPD end points in use at the time, the peak of the positive deflection and the return of the positive deflection to baseline, appeared to correspond to different phases of the relaxation motion (upstroke and peak, respectively), and an accurate end point was difficult to establish.
 > - [ ] (5) [Fiducial] an accurate FP end point was difficult to establish in the simultaneous recordings (cited in the sentence on the robustness of the baseline-return end point).
+
+## Group 11. Follow-up: hash escapes, the ill-posed-inverse-problem sentence, caution note
+
+Follow-up to the simulated peer review and to the guide `docs/peer_review_missing_references_main.md`.
+
+### Hash identifiers escaped; caution note added
+
+**File:** `docs/peer_review_missing_references_main.md`. **Why:** Three unescaped hash identifiers (the AIMS identifier) (lines 54, 57, 82) would be read as Obsidian tags; they are now written \#CM01 as the repository rule requires. The caution note records that the guide was not verified: five of its seven references are already in main.md (and were checked), the two others have incomplete details and must not be added before they are read, and some LaTeX is damaged. I did not change any other text in the file.
+
+**Before:**
+
+> the AIMS identifier with an unescaped hash, in three places
+
+**After:**
+
+> the same identifier with an escaped hash in three places, plus the caution note at the top
+
+### Outlook, device-separation paragraph: ill-posed inverse problem (review point 4)
+
+**File:** `main.md`. **Why:** Approved by the researcher on 2026-10-24. The sentence states the mathematical difficulty that the simulated reviewer raised and labels it as the author's reasoning, not a sourced finding, so the outlook does not overstate what could be achieved.
+
+**Before:**
+
+> Whether the AP can be recovered from the FP at all is an open question: the FP also depends on current from neighbouring cells (Ernault et al., 2024), so removing the device contribution alone would not be sufficient.
+
+**After:**
+
+> Whether the AP can be recovered from the FP at all is an open question: the FP also depends on current from neighbouring cells (Ernault et al., 2024), so removing the device contribution alone would not be sufficient. The recovery may also be an ill-posed inverse problem, because a field potential is a weighted sum of the transmembrane currents of many surrounding cells; this is the author's reasoning from extracellular recording theory and not a finding of the studies reviewed.
+
+### Synthesis item 17 updated
+
+**File:** `docs/claims-by-source.md`. **Why:** Keeps the claims list in line with the new sentence in main.md; it is marked as reasoning without a source.
+
+**Before:**
+
+> A proposal of the author; no reviewed study attempted it, and Ernault et al. suggest the FP also depends on neighbouring cells.
+
+**After:**
+
+> A proposal of the author; no reviewed study attempted it, and Ernault et al. suggest the FP also depends on neighbouring cells. The text adds, as the author's reasoning from extracellular recording theory with no source, that the recovery may be an ill-posed inverse problem because the FP is a weighted sum of the currents of many surrounding cells (added 2026-10-24).
+
+### Peer review assessment: heading of the proposal
+
+**File:** `docs/peer_review_main.md`. **Why:** The proposal was approved and applied, so the heading no longer says 'not yet added'.
+
+**Before:**
+
+> ## Ehdotus kohdan 4 virkkeeksi (ei vielä lisätty)
+
+**After:**
+
+> ## Kohdan 4 virke (lisätty 24.10.)
+
+### Peer review assessment: status of point 4
+
+**File:** `docs/peer_review_main.md`. **Why:** Same reason.
+
+**Before:**
+
+> Ehdotettu lisävirke odottaa hyväksyntääsi, ks. alla.
+
+**After:**
+
+> Lisävirke lisättiin 24.10. hyväksyntäsi jälkeen, ks. alla.
+
+### ToDo: review point 4 closed
+
+**File:** `ToDo.md`. **Why:** The sentence was added.
+
+**Before:**
+
+> - [ ] Päätä kohdan 4 virke (outlook, laitteen erottaminen signaalista): ehdotettu virke on docs/peer_review_main.md:n lopussa; lisätäänkö se vai ei? Muut peer review -korjaukset (1, 2, 3, 5, 6) on tehty 24.10., ks. docs/lint-fixes-2026-10-24.md, ryhmä 10
+
+**After:**
+
+> - [x] Kohdan 4 virke (käänteisongelma huonosti asetettu) lisätty outlookiin 24.10.; muut peer review -korjaukset (1, 2, 3, 5, 6) tehty samana päivänä, ks. docs/lint-fixes-2026-10-24.md, ryhmät 10 ja 11
