@@ -26,6 +26,7 @@ Tehty
 - [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 
 ## 3. Ennen vientiä
+- [ ] Päätä kohdan 4 virke (outlook, laitteen erottaminen signaalista): ehdotettu virke on docs/peer_review_main.md:n lopussa; lisätäänkö se vai ei? Muut peer review -korjaukset (1, 2, 3, 5, 6) on tehty 24.10., ks. docs/lint-fixes-2026-10-24.md, ryhmä 10
 - [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotetut varoitukset nyt kolme: Clements 2025 -posterilla ei ole DOI:ta; Välimäki 2021 -viitteellä ei ole DOI:ta eikä raw-tiedostoa)
 - [ ] Poista tämä ToDo.md (temp-tiedosto)
 
@@ -49,5 +50,8 @@ Tehty
 - [ ] Päivitä README.md:n alku viittaamaan myös julkaisuun: "The paper is in main.md and published in <link>"
 - [ ] Mieti postaus aiheesta
   - kuinka tekisin uudelleen: datan eli lähteiden tarkasteleminen heti alussa paremmin, datalaatu kunniaan
-  - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
-  - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
+    - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
+    - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
+  - Kuinka hyvin rakennettu wiki ja muut auttoivat joka kerta kun Claude teki jotain
+    - Claude muisti päivittää pelkän main lisäksi myös login ja indeksit yms oleelliset
+    - 

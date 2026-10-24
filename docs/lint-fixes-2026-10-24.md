@@ -977,3 +977,155 @@ Written for: the researcher, who asked for a summary good enough to judge each c
 **After:**
 
 > - [x] Repon lisenssi: CC BY 4.0 (LICENSE + README:n Licence-osio) lisätty 24.10.; raw/-PDF:t eivät kuulu siihen. README:hen lisätään linkki Zenodoon julkaisun jälkeen
+
+## Group 10. Small fixes after reading the simulated peer review (docs/peer_review_main.md)
+
+These changes followed the simulated peer review in `docs/peer_review_main.md`; the proposed sentence for review point 4 is deliberately not applied (see the end of that file).
+
+### Figure 1: label on the 2023 entry (review point 1)
+
+**File:** `main.md`. **Why:** The timeline put the author's own, non-peer-reviewed tool and opinion paper beside peer-reviewed software without saying so; this was disclosed only in Limitations (iv) and the Declarations, which a reader of the figure does not see.
+
+**Before:**
+
+> DatAnalyzer / Mäki opinion paper — morphology-aware FPD
+
+**After:**
+
+> DatAnalyzer / Mäki opinion paper (own work, not peer reviewed) — morphology-aware FPD
+
+### Table 1: DatAnalyzer row (review points 1 and 3)
+
+**File:** `main.md`. **Why:** Same disclosure as in Figure 1, and the inversion feature is marked as not independently validated, as the text already says.
+
+**Before:**
+
+> | DatAnalyzer (Mäki, 2023) | 2023 | Python | Baseline return | Morphology-aware classification (3 waveform types); inversion for only-high-peak signals |
+
+**After:**
+
+> | DatAnalyzer (Mäki, 2023; author's own tool, not peer reviewed) | 2023 | Python | Baseline return | Morphology-aware classification (3 waveform types); inversion for only-high-peak signals (not independently validated) |
+
+### Fiducial section: noise sensitivity of the baseline-return end point (review point 2)
+
+**File:** `main.md`. **Why:** The text said nothing about how sensitive a threshold-based return to baseline is to noise and drift. The added sentence states that this was not examined in the reviewed studies, using only what the sources say (beat averaging in Mäki 2023; Hayakawa et al. on the difficulty of an accurate end point).
+
+**Before:**
+
+> These findings underscore the importance of waveform morphology assessment prior to any fiducial-point-based analysis.
+
+**After:**
+
+> These findings underscore the importance of waveform morphology assessment prior to any fiducial-point-based analysis. The robustness of the baseline-return convention has not been examined in the studies reviewed here: Mäki (2023) averages beats to reduce noise, but how the end point behaves at low signal-to-noise ratios or with baseline drift is not evaluated, and an accurate end point was already described as difficult to establish in simultaneous video and MEA recordings (Hayakawa et al., 2014).
+
+### Figure 2 caption: inversion caveat (review point 3)
+
+**File:** `main.md`. **Why:** The figure presented the inversion branch as one of several equal branches; the text says it is internally validated but not independently replicated. The caption now says so.
+
+**Before:**
+
+> Waveform classification determines the analysis branch applied before FPD measurement; rate correction is applied after.*
+
+**After:**
+
+> Waveform classification determines the analysis branch applied before FPD measurement; rate correction is applied after. The signal-inversion branch is the author's own proposal (Mäki, 2023) and has not been independently validated.*
+
+### Abstract, gap 4: scope (review point 5)
+
+**File:** `main.md`. **Why:** The Conclusion already scopes the proposed reference value to the electrophysiological axis (because maturation axes are independent, Fetterman et al., 2024), but the Abstract did not, which invited the reading that the paper contradicts itself.
+
+**Before:**
+
+> and the absence of validated MEA-derived reference values for staging hiPSC-CM maturation status.
+
+**After:**
+
+> and the absence of validated MEA-derived reference values for staging the electrophysiological axis of hiPSC-CM maturation status.
+
+### Table 2: Ernault row, FPD start (review point 6)
+
+**File:** `main.md`. **Why:** The dash read as a missing value; the paper does not define an FPD start, it tests T-wave landmarks against the action potential.
+
+**Before:**
+
+> | T-wave peak (biphasic-validated, NRVM) | — | T-wave peak |
+
+**After:**
+
+> | T-wave peak (biphasic-validated, NRVM) | not defined (T-wave landmarks are tested against APD) | T-wave peak |
+
+### Section heading: model complexity (review point 6)
+
+**File:** `main.md`. **Why:** The section discusses 3D systems and, at the end, in silico models of the MEA including the 2D model of Botti et al.; the old heading mentioned only 3D. The coverage tag 'Model complexity' still matches.
+
+**Before:**
+
+> ## Model complexity: limitations of 2D-centric heuristics in 3D cardiomyocyte systems
+
+**After:**
+
+> ## Model complexity: 3D cardiomyocyte systems and in silico models of the MEA
+
+### Rate correction section: pacing as an alternative (review point 6)
+
+**File:** `main.md`. **Why:** The review criticised the Fridericia correction but did not mention pacing as the other way to handle rate. The sentence is marked as the author's reasoning, and its sourced parts come from the Clements, Matsuda and Guerrelli pages.
+
+**Before:**
+
+> Open analysis platforms do not necessarily close it: the published CardioMEA feature set contains FPD but no rate-corrected FPD (Lee et al., 2024). Despite this limitation,
+
+**After:**
+
+> Open analysis platforms do not necessarily close it: the published CardioMEA feature set contains FPD but no rate-corrected FPD (Lee et al., 2024). Pacing at a fixed rate would in principle avoid the need for a correction (the author's reasoning), but several of the studies examined recorded spontaneous beating (Clements et al., 2025; Matsuda et al., 2025, who name the absence of pacing as a limitation of their recordings), and Guerrelli et al. (2024) also recorded paced beating. Despite this limitation,
+
+### Claims checklist of Matsuda et al. (2025)
+
+**File:** `docs/claims-by-source.md`. **Why:** The softened main.md now cites this source in the Fiducial or FPDc section; the claim is added so that the coverage check shows no gap.
+
+**Before:**
+
+> - [ ] (4) it detected doxorubicin-induced cardiotoxicity at 0.03 µM within 24 h, a concentration 10-fold lower than reported in earlier studies.
+
+**After:**
+
+> - [ ] (4) it detected doxorubicin-induced cardiotoxicity at 0.03 µM within 24 h, a concentration 10-fold lower than reported in earlier studies.
+> - [ ] (5) [FPDc] its recordings were of spontaneous beating without pacing, which the authors name as a limitation (a stimulation upgrade was under way).
+
+### Claims checklist of Guerrelli et al. (2024)
+
+**File:** `docs/claims-by-source.md`. **Why:** The softened main.md now cites this source in the Fiducial or FPDc section; the claim is added so that the coverage check shows no gap.
+
+**Before:**
+
+> - [ ] (9) [Motivation] example of longitudinal drug testing (culture-time effects).
+
+**After:**
+
+> - [ ] (9) [Motivation] example of longitudinal drug testing (culture-time effects).
+> - [ ] (10) [FPDc] it also recorded paced beating (paced recordings on days 3-14), besides spontaneous recordings.
+
+### Claims checklist of Clements et al. (2025)
+
+**File:** `docs/claims-by-source.md`. **Why:** The softened main.md now cites this source in the Fiducial or FPDc section; the claim is added so that the coverage check shows no gap.
+
+**Before:**
+
+> - [ ] (4b) [Conclusion] quantitative acceptance criteria exist for well acceptance (amplitude, synchrony, beat period, FPDc).
+
+**After:**
+
+> - [ ] (4b) [Conclusion] quantitative acceptance criteria exist for well acceptance (amplitude, synchrony, beat period, FPDc).
+> - [ ] (6) [FPDc] the proposed acceptance criteria are for spontaneous-beating hiPSC-ventricular-CM assays.
+
+### Claims checklist of Hayakawa et al. (2014)
+
+**File:** `docs/claims-by-source.md`. **Why:** The softened main.md now cites this source in the Fiducial or FPDc section; the claim is added so that the coverage check shows no gap.
+
+**Before:**
+
+> - [ ] (4) [Fiducial] simultaneous video and MEA recordings in iCell monolayers: the two FPD end points in use at the time, the peak of the positive deflection and the return of the positive deflection to baseline, appeared to correspond to different phases of the relaxation motion (upstroke and peak, respectively), and an accurate end point was difficult to establish.
+
+**After:**
+
+> - [ ] (4) [Fiducial] simultaneous video and MEA recordings in iCell monolayers: the two FPD end points in use at the time, the peak of the positive deflection and the return of the positive deflection to baseline, appeared to correspond to different phases of the relaxation motion (upstroke and peak, respectively), and an accurate end point was difficult to establish.
+> - [ ] (5) [Fiducial] an accurate FP end point was difficult to establish in the simultaneous recordings (cited in the sentence on the robustness of the baseline-return end point).

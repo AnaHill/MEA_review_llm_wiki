@@ -70,6 +70,7 @@ Claims (tick `[x]` when you have checked the claim against the source):
 - [ ] (4) it targets assay quality control, not maturation staging.
 - [ ] (5) it has been presented as a conference poster and vendor document rather than a peer-reviewed methods paper. Pointers: the "AIMS \#CM01: Proposed standards" box; "Presented at ISSCR 2025, Hong Kong, June 11, 2025". The standard document on the vendor's website (last revised 2 December 2024) was read only through a web-fetch summary.
 - [ ] (4b) [Conclusion] quantitative acceptance criteria exist for well acceptance (amplitude, synchrony, beat period, FPDc).
+- [ ] (6) [FPDc] the proposed acceptance criteria are for spontaneous-beating hiPSC-ventricular-CM assays.
 
 ## Correia et al. (2024)
 
@@ -148,6 +149,7 @@ Claims (tick `[x]` when you have checked the claim against the source):
 - [ ] (7) [Maturation, our interpretation] this drift is consistent with ongoing maturation and rate correction alone does not address it.
 - [ ] (8) [High-throughput] the findings highlight the need to standardise recording time points and culture age.
 - [ ] (9) [Motivation] example of longitudinal drug testing (culture-time effects).
+- [ ] (10) [FPDc] it also recorded paced beating (paced recordings on days 3-14), besides spontaneous recordings.
 
 Check 2026-10-24: all numbers confirmed in the abstract (p. 1): 22.6 % rate increase and 7.7 % FPD decrease in a 20-min equilibration, 12.7 beats/min decrease and +257 ms FPD from 2 to 14 days; KCNJ2 27.5-fold at p. 10 (iCell cardiomyocytes², 2–30 days; 5.0-fold in Cor.4U). The authors say daily variations "may be linked to the continued maturation" of the cells.
 
@@ -161,6 +163,7 @@ Claims (tick `[x]` when you have checked the claim against the source):
 - [ ] (2) [Outlook] earlier work recorded image-based motion and MEA field potentials simultaneously in hiPSC-CM monolayers and found linear relationships between contraction–relaxation duration and FPD across drug concentrations, with drug-specific slopes.
 - [ ] (3) [Limitations] pre-2022 work cited as background.
 - [ ] (4) [Fiducial] simultaneous video and MEA recordings in iCell monolayers: the two FPD end points in use at the time, the peak of the positive deflection and the return of the positive deflection to baseline, appeared to correspond to different phases of the relaxation motion (upstroke and peak, respectively), and an accurate end point was difficult to establish.
+- [ ] (5) [Fiducial] an accurate FP end point was difficult to establish in the simultaneous recordings (cited in the sentence on the robustness of the baseline-return end point).
 
 Check 2026-10-24: (1) p. 1 (abstract: simultaneously recorded motion and FP, linear correlation between changes in motion and FPD for verapamil 30–150 nM, isoproterenol 0.1–10 µM and E-4031 10–50 nM), p. 5–6 (R = 0.915 and slope 1.362 for E-4031, R = 0.970 and 0.633 for verapamil, R = 0.943 and 0.738 for isoproterenol), p. 11 ("the CRD can be a surrogate of the FPD in non-arrhythmic conditions"; slopes differ between drugs; the time resolution of the motion data is about 6 ms; beating rate not considered). The earlier wording "correlates strongly with contraction duration" in `main.md` was made more precise (per drug, non-arrhythmic). (2) p. 3: MED-P515A probes with 64 platinum-black electrodes, imaging and MEA synchronised by the MEA trigger; iCell Cardiomyocytes; the "first simultaneous measurement" priority claim is in the authors' highlights and is not repeated in `main.md`. (4) p. 3: "The end of the FPD was previously defined as either the peak of the positive deflection ... or the point where the positive deflection returns to the baseline ... The former end-point appears to be correlated with the upstroke of relaxation motion, while the latter end-point appears to be correlated with the peak of relaxation motion. However, determination of an accurate end-point of FP proved difficult to establish." The wording in `main.md` keeps the authors' hedge ("appears"); the observation is for non-arrhythmic iCell monolayers on 64-electrode MEA probes. In the paper itself the FPD runs from the initial negative peak to the peak of the positive deflection (TTX section, p. 5).
 
@@ -250,6 +253,7 @@ Claims (tick `[x]` when you have checked the claim against the source):
 - [ ] (2) [High-throughput] it is one of the two examples (with Altrocchi et al., 2023) of multi-parameter feature sets; its parameters include beat rate, inter-beat interval, short-term variability of conduction velocity and of intervals, excitation origins and propagation area.
 - [ ] (3) [High-throughput] ultra-high-density CMOS-MEA platforms with close to a quarter million electrodes enable spatially resolved extraction of excitation origin counts, propagation area and conduction velocity maps in addition to conventional endpoints such as beat rate and inter-beat interval.
 - [ ] (4) it detected doxorubicin-induced cardiotoxicity at 0.03 µM within 24 h, a concentration 10-fold lower than reported in earlier studies.
+- [ ] (5) [FPDc] its recordings were of spontaneous beating without pacing, which the authors name as a limitation (a stimulation upgrade was under way).
 
 Check 2026-10-24: (3) abstract p. 1 (236,880 electrodes, 5.9 × 5.5 mm); the paper does not report FPD or rate-corrected FPD for its own recordings (FPDc appears only in a table of thresholds from earlier studies, p. 15), so the earlier statements that it uses Fridericia-corrected FPD and extracts maps "in addition to conventional FPD" were removed. (4) p. 15: "detected doxorubicin-induced cardiotoxicity at a 10-fold lower concentration (0.03 µM) and within a shorter time frame (24 h)" compared with prior studies (>0.3 µM); in the direct comparison with the conventional MEA at 0.1 µM the conventional system detected a spike-amplitude reduction at 48 h and the CMOS-MEA a conduction velocity decline at 24 h (p. 12), so the earlier wording "an order of magnitude below those detectable by conventional MEA endpoints" was corrected.
 
