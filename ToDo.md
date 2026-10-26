@@ -25,22 +25,33 @@
 - [ ] Poista tämä ToDo.md (temp-tiedosto)
 
 ## 4. Zenodo-vienti vasta lopuksi
-- [ ] pdf-muutos: valitse työkalu ja testaa taulukot, Unicode-merkit ja LaTeX-kaava (ks. docs/pdf-export-notes.md)
-- [ ] Mermaid-kaaviot: 2 kpl renderöitävä kuviksi ennen PDF-vientiä. Tehdään lopuksi mermaid-liven kautta sopivaksi kuvamuodoksi
-- [ ] Tarkista PDF:stä: HTML-kommentit eivät näy, hash-tunnisteet (\#CM01 jne.) näkyvät oikein, lähdeluettelo vastaa tekstiä
+- [x] Työkalun valinta ja testi tehty 26.10.: VS Code Markdown PDF -lisäosan HTML on hyvä (taulukot, Unicode, kaava, `\#CM01` ok), PDF ei (kuvat jakautuvat sivuille). Päätös: HTML on pohja, PDF tehdään HTML:stä selaimen tulostuksella (ks. docs/pdf-export-notes.md, "Revised export plan")
+- [ ] Mermaid-kaaviot: 2 kpl renderöitävä SVG-kuviksi mermaid-liven kautta ja upotettava kuvina (alt-teksteineen), jotta HTML ei lataa Mermaidia ulkoa (nyt versioimaton unpkg-CDN)
+- [ ] HTML: lisää näkyvä otsikkolohko (otsikko, tekijä, affiliaatio, päivä) ja `<title>`; front matter ei näy nyt lainkaan
+- [ ] HTML: tee DOI- ja muista URL-osoitteista klikattavia (nyt 1 linkki, 26 URL:ia main.md:ssä)
+- [ ] Poista HTML-kommentit main.md:stä ennen vientiä (kohta 1); varmista `view source` -tarkistuksella
+- [ ] PDF: tulosta valmiista HTML:stä selaimella, `break-inside: avoid` kuville ja taulukoille, ei sivun ylätunnisteita; tarkista kuvat, taulukot, kaava, ei `<!--`/`\#`/tähtiä tekstissä
+- [ ] Zenodo: PDF pääasiallisena tiedostona, HTML lisätiedostona; tarkista Zenodon HTML-tiedostojen käsittely ennen kuin luotat pelkkään HTML:ään
 - [ ] Zenodo-metatiedot: lisenssi CC BY 4.0, rahoitus (ei rahoitusta, harrastus), avainsanat, tekijä "Antti-Juhana Mäki, Independent researcher", päivämäärä ja versio, tallennus liitetään Mäki-tietueeseen (Version v3)
 
-## 5. Kun julkaistu Zenodossa
+## 5. Päivitykset repoihin kun julkaistu Zenodossa
 - [ ] Päivitä README.md:n alku viittaamaan myös julkaisuun: "The paper is in main.md and published in <link>"
 - [ ] Linkitä README myös https://github.com/AnaHill/llm-wiki-academic-template
-  - [ ] Päivitä tuo repo niillä tässä repossa löydetyillä hyvillä muutoksilla, esim skriptit yms
-- [ ] Mieti postaus aiheesta
-  - Tärkeimmät: 1) data laatu; uusien lähteiden ja niistä tehtyjen päätösten tarkastaminen heti, ettei väärä informaatio leviä moneen paikkaan, 2) good-old-googlettu ja lähteiden löytäminen ja niiden lähteiden sekä siihen viittaaminen lähteiden läpikäyminen, 3) skriptit yms testit varmistamaan datalaatua, 4) hämmentävä suuri ero Claude code vs Gemini notebook
-  -  
+  - [ ] Päivitä tuo akateeminen repo niillä tässä repossa löydetyillä hyvillä muutoksilla, esim skriptit yms, jotka toimisivat heti uuden LLM-wiki akateemisen paperin prosessissa
+
+## 6. Postaus aiheesta
+- DISCLAIMER alkuun: Vältetään AI sloppya, joten kävin itse läpi kaikki lähteet ja varsinkin väitökset
+
+Tärkeimpiä kohtia: 
+- 1) data laatu; uusien lähteiden ja niistä tehtyjen päätösten tarkastaminen heti, ettei väärä informaatio leviä moneen paikkaan, "even though 'vibe-researching' is fun, going through sources as soon as possible infront pays in the end" 
   - kuinka tekisin uudelleen: datan eli lähteiden tarkasteleminen heti alussa paremmin, datalaatu kunniaan
-    - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
-    - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
+  - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
+  - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
+- 2) good-old-googlettu ja lähteiden löytäminen ja niiden lähteiden sekä siihen viittaaminen lähteiden läpikäyminen, 
+- 3) skriptit yms testit varmistamaan datalaatua, 
   - Kuinka hyvin rakennettu wiki ja muut auttoivat joka kerta kun Claude teki jotain
     - Claude muisti päivittää pelkän main lisäksi myös login ja indeksit yms oleelliset
     - tulee aina kelpo Ehdotus commit-viestiksi: *reword the Declarations sentence about colleagues to name the CoEBoC collaboration* (koska haluan nämä aina varmistaa ilman automatisointia)
-- [ ] Mieti kattavampi blogipostaus aiheesta, tukisi hyvin omaa kotisivua
+- 4) (mieti vielä onko tarpeen) hämmentävä suuri ero Claude code vs Gemini notebook 
+
+- [x] kattavampi blogipostaus aiheesta, joka tukisi hyvin omaa kotisivua, osuus siirretty kotisivun _notes/ kansioon jonne vapaamuotoista hahmotelmaa aloiteltu

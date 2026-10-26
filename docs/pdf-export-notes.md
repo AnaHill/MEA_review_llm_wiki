@@ -2,6 +2,25 @@
 
 Things in `main.md` that commonly break or look wrong when Markdown is converted to PDF, and things to settle at deposit. Written 2026-10-18 for use when the PDF export is made; revisit if `main.md` changes.
 
+## Revised export plan (2026-10-26): HTML first, PDF made from the HTML
+
+Background: a test export with the VS Code "Markdown PDF" extension produced `main.html` and `main.pdf`. The HTML was a faithful conversion (all 9 `h1` and 8 `h2` headings, both tables, the KaTeX formula, Unicode characters and the escaped hash `\#CM01` came out correctly, and no comment was visible to a reader), but the PDF was not usable, and the HTML had problems that must be fixed before anything is deposited. Plan: make the HTML the master, then print the PDF from it.
+
+Problems found in the test export:
+
+- **Title and author missing.** The YAML front matter was dropped, so the page starts with the preprint line and "Abstract". The paper's title, author, affiliation and keywords are not shown anywhere, and the browser tab title is "main.md". Fix: add a visible title block (title, author, affiliation, date) and set `<title>`.
+- **Diagrams are drawn at view time.** The HTML loads Mermaid from `https://unpkg.com/mermaid/dist/mermaid.min.js` (no version pinned) and draws the two diagrams in the reader's browser. Offline, with JavaScript blocked or after a Mermaid release that changes the layout, the figures break or show raw code. Not acceptable in an archived deposit. Fix: render both diagrams once to SVG (mermaid-live or mermaid-cli) and embed them as images with alt text; then the HTML needs no script at all.
+- **Links are not clickable.** `main.md` has 26 URLs but the HTML has one `<a href>`; the DOIs in the reference list are plain text. Fix: write the DOIs and URLs as links or use an extension or converter that auto-links.
+- **Comments remain in the HTML source.** Six comments (two style-marker pairs, `needs citation(s)`, `Continue manual check here`). Invisible to readers, visible in "view source" and to indexers. Fix: remove them from `main.md` before the export (the ToDo list has the grep).
+- **VS Code page template.** The file is 1.5 MB because the VS Code stylesheet, KaTeX styles and fonts are embedded, and it has dark-theme logic keyed to the VS Code body class. Fix: use a small own print stylesheet or accept the size; check it in both a light and a dark browser theme.
+- **PDF page breaks.** In `main.pdf` Figure 1's caption is on page 2 and its diagram on page 3, and Figure 2 is split over pages 9–11 (page 9 is an empty grey box). Every page also carries the header "main.md" and the date. Fix: print the PDF from the finished HTML with the browser (Chrome or Edge, "Save as PDF", background graphics on, headers and footers off) and add `figure, table { break-inside: avoid; }` to the stylesheet so the caption and the figure stay together; with the diagrams as SVG images this works reliably.
+
+Deposit plan: PDF as the main file (Zenodo previews PDFs and search engines index them best; check Zenodo's current handling of HTML files before relying on it), the self-contained HTML as an additional file. Do the export last, after `main.md` is final.
+
+Checks on the finished files: open the HTML with the network disabled and confirm both figures show; confirm title, author and keywords are visible; click a DOI link; page through the PDF for figures, tables and the formula; search the PDF text for `<!--`, `\#` and stray asterisks.
+
+The checklist below was written for a generic Markdown-to-PDF route; items about Mermaid, LaTeX, tables and Unicode still apply but are now checked in the HTML first.
+
 ## Elements in main.md that need handling
 
 - **Mermaid diagrams (2).** Figure 1 (timeline) and Figure 2 (flowchart) are fenced ```mermaid blocks. Pandoc and most Markdown-to-PDF tools print them as code. Render them to SVG or PNG first (for example with mermaid-cli) and replace the blocks with images, keeping the captions that sit above them as italic lines.
