@@ -18,13 +18,14 @@ Local file: `raw/altrocchi-2023-chronic.pdf`; page `wiki/papers/altrocchi-2023-c
 
 Claims (tick `[x]` when you have checked the claim against the source):
 
-- [ ] (1) [FPDc] the study reports rate-corrected FPD with the Fridericia formula (listed among the studies that use it).
+- [x] (1) [FPDc] the study reports rate-corrected FPD with the Fridericia formula (listed among the studies that use it).
 - [ ] (2) [High-throughput] it used 48-well MEA plates to evaluate acute (<2 h) and delayed (≥24 h) electrophysiological and cytotoxic effects of reference compounds, including tyrosine-kinase inhibitors, an anthracycline (doxorubicin) and ion-channel trafficking inhibitors, over 4 days, combining field potential recordings with impedance readouts.
 - [ ] (3) [High-throughput] chronic and longitudinal MEA assays "have been validated for both acute and delayed cardiotoxicity" (this study is the example).
 - [ ] (4) [High-throughput] it is one of the two examples (with Matsuda et al., 2025) of multi-parameter feature sets encompassing beat rate, beat-to-beat variability, conduction properties and event-based descriptors.
 - [ ] (5) [Intro] cited, with Blinova et al. (2018) and Park et al. (2025), for MEA recordings of hiPSC-CMs being widely used in cardiac safety pharmacology, drug discovery and disease modelling.
-- [ ] (6) [Outlook] impedance is read alongside FP, as an example of a second measurement added to the MEA recording.
+- [x] (6) [Outlook] impedance is read alongside FP, as an example of a second measurement added to the MEA recording.
 - [ ] (7) [Motivation] example of longitudinal drug testing.
+- [ ] (8) [Outlook] a background impedance signal was recorded alongside the FP; its drop reflects reduced attachment of the cells to the bottom of the well, owing to cell death or changes in the monolayer morphology; it was used as a cytotoxicity readout to help separate electrophysiological effects from cell death. (The further step, that impedance could also flag FP changes caused by altered attachment, is the author's hypothesis, stated as such in the text, and was not tested in the paper.) Pointers: Methods, data analysis paragraph on Imp (p. 5; the passage "a reduction in the attachment of hiPSC-CMs to the bottom of the well due to cell death or changes in the monolayer morphology, causes a drop in the impedance signal"); Discussion on doxorubicin ("the impedance assay also detects changes in shape and morphology of the hiPSC-CMs monolayer, as well as cell detachment from the electrodes").
 
 Check 2026-10-24: (1) confirmed, the paper writes "Fredericia correction formula, FPDc (Blinova et al., 2018)" (p. 5). (2) confirmed: abstract p. 1 (acute <2 h, delayed ≥24 h, 48-well plates, recordings for 4 days), Methods p. 3 (Axion Cytoview M768-tMEA-48B, up to 96 h); doxorubicin is the only anthracycline (BMS-986094 is the other direct cardiotoxic drug), so the text was changed from "anthracyclines" to "an anthracycline (doxorubicin)". (3) the paper says it "developed and validated a functional assay" with 13 reference compounds (p. 3). (4) partly: the study itself reports beating rate, FP amplitude, FPD/FPDc, impedance and arrhythmic events; beat-to-beat variability and conduction properties come from Matsuda et al. (2025), not from this study.
 
