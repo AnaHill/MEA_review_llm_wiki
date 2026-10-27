@@ -28,7 +28,7 @@ SECTION_TAG = [
     ("Transition from vendor", "Open pipelines"), ("Increasing emphasis", "Fiducial"),
     ("Rate correction", "FPDc"), ("Maturation status", "Maturation"),
     ("Morphology-aware", "Morphology"), ("Model complexity", "Model complexity"),
-    ("High-throughput", "High-throughput"), ("Limitations of this review", "Limitations"),
+    ("High-throughput", "High-throughput/longitudinal"), ("Limitations of this review", "Limitations"),
     ("Conclusion", "Conclusion"), ("Discussion", "Outlook"), ("Declarations", "Declarations"),
 ]
 # Tables sit under these headings; the claims file tags their rows separately.
