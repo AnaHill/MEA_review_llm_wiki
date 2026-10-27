@@ -1,5 +1,19 @@
 # Tarkistuslista 24.10.2026
 <!-- temp file that will be deleted -->
+Ehdotettu järjestys 27.10.
+
+1. Lue ja muokkaa main.md kokonaan. Jos lukiessa herää epäily jostain lähteeseen liittyvästä kohdasta, merkitse se kommentilla <!-- check: ... --> ja jatka eteenpäin.
+2. Pyydä minua päivittämään claims-by-source.md:n numeroidut väitteet valmiista tekstistä (alla oleva 2). Samalla yhtenäistän tunnisteet, joista skripti antoi huomautukset, kuten [Figure 2] ja [our interpretation].
+3. Aja seuraava, jolloin jokaisen väitteen alle tulee nykyinen virke main.md:stä.
+`python -I scripts/claim_quotes.py --write`
+4. Käy lähteet läpi Altrocchin tapaan.
+
+Skriptin kuivaharjoitusta voi käyttää välillä apuna, jos haluat nähdä, missä kohdissa jotain lähdettä viitataan, esimerkiksi 
+```python
+# tämä ei muuta mitään
+python -I scripts/claim_quotes.py --only Hwang. 
+```
+
 
 ## 1. main.md: oma läpilukeminen ja muokkaus (tehdään ensin)
 - [ ] Lue koko main.md ja muokkaa tekstiä. Lähdetarkistus vasta tämän jälkeen, muuten väitelista vanhenee
