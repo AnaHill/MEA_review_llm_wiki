@@ -66,6 +66,8 @@ Tärkeimpiä kohtia:
   - kuinka tekisin uudelleen: datan eli lähteiden tarkasteleminen heti alussa paremmin, datalaatu kunniaan
   - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
   - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
+  - esimerkki human-in-the-loopin tärkeydestä (27.10.): Open pipelines -osion avausvirke oli ristiriitainen. Alku sanoi avoimien analyysiputkien ilmestyneen 2022 jälkeen, ja loppu kumosi sen ("open tools such as MultiElec and CardioMDA already existed before 2022"). Loppu oli lisätty 24.10. tarkistuksessa korjaukseksi, koska sekä Lee et al. (2024, Table 3) että Dunham et al. (2022, s. 2) toteavat, että avoimia työkaluja oli jo ennen, mutta alkua ei silloin muutettu vastaamaan sitä. Automaattiset tarkistukset eivät huomanneet ristiriitaa; löysin sen itse lukiessa. Lähteiden perusteella uutta 2022 jälkeen ei ole avoimuus vaan se, että uusia avoimia työkaluja on tehty uusille datatyypeille: CardioMEA HD-MEA-datalle (Lee) ja PhysioMEA sydänorganoideille (Weiser-Bitoun). Opetus: AI:n tekemä paikkakorjaus voi jättää virkkeen ristiriitaiseksi, joten korjauksen jälkeen koko virke pitää lukea uudelleen
+  - > When correcting a claim, re-read and if needed rewrite the whole sentence, not only the part that was wrong.
 - 2) good-old-googlettu ja lähteiden löytäminen ja niiden lähteiden sekä siihen viittaaminen lähteiden läpikäyminen, 
 - 3) skriptit yms testit varmistamaan datalaatua, 
   - Kuinka hyvin rakennettu wiki ja muut auttoivat joka kerta kun Claude teki jotain
@@ -73,4 +75,4 @@ Tärkeimpiä kohtia:
     - tulee aina kelpo Ehdotus commit-viestiksi: *reword the Declarations sentence about colleagues to name the CoEBoC collaboration* (koska haluan nämä aina varmistaa ilman automatisointia)
 - 4) (mieti vielä onko tarpeen) hämmentävä suuri ero Claude code vs Gemini notebook 
 
-- [x] kattavampi blogipostaus aiheesta, joka tukisi hyvin omaa kotisivua, osuus siirretty kotisivun _notes/ kansioon jonne vapaamuotoista hahmotelmaa aloiteltu
+- [x] kattavampi blogipostaus aiheesta, joka tukisi hyvin omaa kotisivua, osuus siirretty kotisivun _notes/llm-wiki-post kansioon jonne vapaamuotoista hahmotelmaa aloiteltu

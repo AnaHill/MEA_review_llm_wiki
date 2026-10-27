@@ -25,7 +25,7 @@ CLAIMS = "docs/claims-by-source.md"
 SECTION_TAG = [
     ("Abstract", "Abstract"), ("Introduction", "Intro"), ("Motivation", "Motivation"),
     ("Scope and Literature Search", "Scope"), ("Literature review", "Timeline"),
-    ("Transition from vendor", "Open pipelines"), ("Increasing emphasis", "Fiducial"),
+    ("Open analysis pipelines", "Open pipelines"), ("Increasing emphasis", "Fiducial"),
     ("Rate correction", "FPDc"), ("Maturation status", "Maturation"),
     ("Morphology-aware", "Morphology"), ("Model complexity", "Model complexity"),
     ("High-throughput", "High-throughput/longitudinal"), ("Limitations of this review", "Limitations"),
