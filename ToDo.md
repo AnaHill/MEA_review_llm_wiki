@@ -2,7 +2,8 @@
 <!-- temp file that will be deleted -->
 Ehdotettu järjestys 27.10.
 
-1. Lue ja muokkaa main.md kokonaan. Jos lukiessa herää epäily jostain lähteeseen liittyvästä kohdasta, merkitse se kommentilla <!-- check: ... --> ja jatka eteenpäin.
+1. Lue ja muokkaa main.md kokonaan. Jos lukiessa herää epäily jostain lähteeseen liittyvästä kohdasta, merkitse se kommentilla ja jatka eteenpäin.
+<!-- check: -->
 2. Pyydä minua päivittämään claims-by-source.md:n numeroidut väitteet valmiista tekstistä (alla oleva 2). Samalla yhtenäistän tunnisteet, joista skripti antoi huomautukset, kuten [Figure 2] ja [our interpretation].
 3. Aja seuraava, jolloin jokaisen väitteen alle tulee nykyinen virke main.md:stä.
 `python -I scripts/claim_quotes.py --write`
