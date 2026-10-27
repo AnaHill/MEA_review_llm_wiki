@@ -64,6 +64,26 @@ python -I scripts/claim_quotes.py --only Hwang.
 Tärkeimpiä kohtia: 
 - 1) data laatu; uusien lähteiden ja niistä tehtyjen päätösten tarkastaminen heti, ettei väärä informaatio leviä moneen paikkaan, "even though 'vibe-researching' is fun, going through sources as soon as possible infront pays in the end" 
   - kuinka tekisin uudelleen: datan eli lähteiden tarkasteleminen heti alussa paremmin, datalaatu kunniaan
+  - miten virheellinen tieto leviää tässä repossa (kolme lähtökohtaa):
+    ```
+    Virhe A, lähteen väärinluku (esim. Ismaili, Matsuda, Hwang, Kabanov):
+    raw/lähde.pdf
+      -> wiki/papers/lähde.md          (tiivistys liioittelee tai lukee väärin)
+      -> wiki/<käsitesivu>.md          (esim. hipsc-cm-maturation.md, critical-assessment-maki-claims.md)
+      -> wiki/index.md                 (yhden rivin tiivistelmä)
+      -> main.md                       (useaan osioon: tekstiin, taulukkoon, kuvatekstiin)
+      -> main.md Abstract/Conclusion   (yleistyy entisestään tiivistyksessä)
+      -> docs/claims-by-source.md      (väitelista kopioi virheen main.md:stä)
+
+    Virhe B, tekoälyn oma täydennys ilman lähdettä (esim. "longitudinal" ensimmäisestä luonnoksesta, keksitty "Galli et al. 2024"):
+    AI-luonnos -> main.md -> docs/claims-by-source.md -> (wiki-sivujen "Relevance"-osiot)
+
+    Virhe C, paikkakorjaus (esim. Open pipelines -virke 27.10.):
+    korjaus yhteen kohtaan -> ristiriita saman virkkeen tai muiden kohtien kanssa
+    ```
+    - mikä pysäyttää mitäkin: `check.py` pysäyttää rakennevirheet (puuttuvat viitteet, DOI-erot, rikkinäiset linkit), mutta ei sisältöä, joten A, B ja C menevät siitä läpi; claims-by-source ja lähteen lukeminen pysäyttävät A:n ja B:n, kun väite tarkistetaan lähdettä eikä wikisivua vasten; ihmisen kokonaisluenta pysäyttää C:n ja osioiden väliset ristiriidat
+    - opetus: mitä aikaisemmassa vaiheessa virhe syntyy, sitä useampaan paikkaan se kopioituu, joten tarkistus kannattaa tehdä jo ingestissä eikä vasta main.md:stä
+  - 
   - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
   - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
   - esimerkki human-in-the-loopin tärkeydestä (27.10.): Open pipelines -osion avausvirke oli ristiriitainen. Alku sanoi avoimien analyysiputkien ilmestyneen 2022 jälkeen, ja loppu kumosi sen ("open tools such as MultiElec and CardioMDA already existed before 2022"). Loppu oli lisätty 24.10. tarkistuksessa korjaukseksi, koska sekä Lee et al. (2024, Table 3) että Dunham et al. (2022, s. 2) toteavat, että avoimia työkaluja oli jo ennen, mutta alkua ei silloin muutettu vastaamaan sitä. Automaattiset tarkistukset eivät huomanneet ristiriitaa; löysin sen itse lukiessa. Lähteiden perusteella uutta 2022 jälkeen ei ole avoimuus vaan se, että uusia avoimia työkaluja on tehty uusille datatyypeille: CardioMEA HD-MEA-datalle (Lee) ja PhysioMEA sydänorganoideille (Weiser-Bitoun). Opetus: AI:n tekemä paikkakorjaus voi jättää virkkeen ristiriitaiseksi, joten korjauksen jälkeen koko virke pitää lukea uudelleen
