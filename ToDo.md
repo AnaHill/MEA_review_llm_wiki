@@ -3,11 +3,15 @@
 Ehdotettu järjestys 27.10.
 
 1. Lue ja muokkaa main.md kokonaan. Jos lukiessa herää epäily jostain lähteeseen liittyvästä kohdasta, merkitse se kommentilla ja jatka eteenpäin.
+   - [ ] Tarkista onko Table1 ok
+   - kohtaan asti ok
+   - Declarations kohdasta alaspäin ok 
+
 <!-- check: -->
-2. Pyydä minua päivittämään claims-by-source.md:n numeroidut väitteet valmiista tekstistä (alla oleva 2). Samalla yhtenäistän tunnisteet, joista skripti antoi huomautukset, kuten [Figure 2] ja [our interpretation].
-3. Aja seuraava, jolloin jokaisen väitteen alle tulee nykyinen virke main.md:stä.
+1. Pyydä minua päivittämään claims-by-source.md:n numeroidut väitteet valmiista tekstistä (alla oleva 2). Samalla yhtenäistän tunnisteet, joista skripti antoi huomautukset, kuten [Figure 2] ja [our interpretation].
+2. Aja seuraava, jolloin jokaisen väitteen alle tulee nykyinen virke main.md:stä.
 `python -I scripts/claim_quotes.py --write`
-4. Käy lähteet läpi Altrocchin tapaan.
+1. Käy lähteet läpi Altrocchin tapaan.
 
 Skriptin kuivaharjoitusta voi käyttää välillä apuna, jos haluat nähdä, missä kohdissa jotain lähdettä viitataan, esimerkiksi 
 ```python
