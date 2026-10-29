@@ -73,7 +73,7 @@ Together, these platforms point toward reproducibility, transparency, and explic
 ## Increasing emphasis on explicit and physiologically motivated fiducial definitions
 Alongside the development of open software, there has been a growing emphasis on how fiducial points are defined and justified in cardiomyocyte MEA studies. The opinion paper by Mäki (2023) describes a concrete, algorithmic approach that reflects trends increasingly seen in recent literature: beat-aligned segmentation followed by averaging across multiple beats to reduce noise, threshold-based identification of depolarization onset relative to FP amplitude, and definition of FPD end as the return of the signal toward baseline rather than the repolarization peak.
 
-The open platforms state their FPD convention explicitly, and the conventions differ (see also Table 1):
+The open platforms in Table 1 that measure FPD state their convention explicitly, and the conventions differ (CardioScripts reports QT and T-peak rather than FPD; Kabanov et al., 2026):
 
 - **Cardio PyMEA**: from the R peak to a T-wave endpoint located with a trapezoid-area algorithm (Dunham et al., 2022)
 - **CardioMEA** (Lee et al., 2024) and **PhysioMEA** (Weiser-Bitoun et al., 2026): from the R peak to the T-wave peak
