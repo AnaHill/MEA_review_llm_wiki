@@ -8,7 +8,6 @@ Ehdotettu järjestys 27.10.
    - [ ] Tarkista onko Table1 ok
    - kohtaan asti ok
    - Declarations kohdasta alaspäin ok 
-   - [ ] Fiducial-osion FPD-lista: halutaanko lisätä myös ennen 2022 tehdyt avoimet työkalut MultiElec (Georgiadis et al., 2015, PLoS ONE, doi:10.1371/journal.pone.0129389) ja CardioMDA (Pradhapan et al., 2013, PLoS ONE, doi:10.1371/journal.pone.0073637)? Niiden FPD-määritystä ei ole nykyisissä lähteissä (Lee 2024:n Table 3 vertaa vain kieltä, GUI:ta ym.), joten ne pitää ensin hakea raw/-kansioon ja ingestoida taustalähteinä (kuten Blinova 2018), ja viitteet tarkistaa itse paperista. Molemmat ovat PLoS ONE -lehdessä, joten ne ovat avoimesti saatavilla. Huom. CardioMDA on Tampereelta (Hyttinen, Aalto-Setälä), joten jos tekijät ovat CoEBoC-kollegoita, Declarationsin lause kannattaa tarkistaa
    - [ ] Morphology-osio: "FP waveform morphology varies substantially across preparations, maturation states, …" (osion alku). Tukevatko lähteet (Ernault 2024, Mäki 2023) sanaa "substantially", vai riittääkö "varies"? Sama tyyppi kuin 29.10. korjattu "can substantially influence" (Fiducial-osio), jolle ei ollut lähdettä
    - [ ] Kun claims-by-source.md päivitetään: synteesikohta 8 lainaa vielä vanhaa sanamuotoa "can substantially influence measured drug effects"; main.md:ssä on nyt "can influence" (29.10.). Samoin kaikki 27.–29.10. muutetut kohdat (abstrakti, Open pipelines, High-throughput, Conclusion), ks. wiki/log.md
 
