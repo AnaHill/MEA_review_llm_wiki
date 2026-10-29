@@ -1,17 +1,21 @@
 # Tarkistuslista 24.10.2026
 <!-- temp file that will be deleted -->
+<!-- Continue manual check here -->
+<!-- check: -->
 Ehdotettu järjestys 27.10.
 
 1. Lue ja muokkaa main.md kokonaan. Jos lukiessa herää epäily jostain lähteeseen liittyvästä kohdasta, merkitse se kommentilla ja jatka eteenpäin.
    - [ ] Tarkista onko Table1 ok
    - kohtaan asti ok
    - Declarations kohdasta alaspäin ok 
+   - [ ] Morphology-osio: "FP waveform morphology varies substantially across preparations, maturation states, …" (osion alku). Tukevatko lähteet (Ernault 2024, Mäki 2023) sanaa "substantially", vai riittääkö "varies"? Sama tyyppi kuin 29.10. korjattu "can substantially influence" (Fiducial-osio), jolle ei ollut lähdettä
+   - [ ] Kun claims-by-source.md päivitetään: synteesikohta 8 lainaa vielä vanhaa sanamuotoa "can substantially influence measured drug effects"; main.md:ssä on nyt "can influence" (29.10.). Samoin kaikki 27.–29.10. muutetut kohdat (abstrakti, Open pipelines, High-throughput, Conclusion), ks. wiki/log.md
 
 <!-- check: -->
 1. Pyydä minua päivittämään claims-by-source.md:n numeroidut väitteet valmiista tekstistä (alla oleva 2). Samalla yhtenäistän tunnisteet, joista skripti antoi huomautukset, kuten [Figure 2] ja [our interpretation].
 2. Aja seuraava, jolloin jokaisen väitteen alle tulee nykyinen virke main.md:stä.
 `python -I scripts/claim_quotes.py --write`
-1. Käy lähteet läpi Altrocchin tapaan.
+3. Käy lähteet läpi Altrocchin tapaan.
 
 Skriptin kuivaharjoitusta voi käyttää välillä apuna, jos haluat nähdä, missä kohdissa jotain lähdettä viitataan, esimerkiksi 
 ```python
@@ -24,8 +28,8 @@ python -I scripts/claim_quotes.py --only Hwang.
 - [ ] Lue koko main.md ja muokkaa tekstiä. Lähdetarkistus vasta tämän jälkeen, muuten väitelista vanhenee
 - [ ] Mieti, voisiko ottaa esim Obsidianilla kuvan lähteiden riippuvuuksista, ns Graph View, toisiko lisäarvoa tähän
 - [ ] Synteesikohdat: `docs/claims-by-source.md:n` osio *"Claims that rest on the author's own synthesis or are not cited"* (17 numeroitua kohtaa). Kohdat 1, 3, 9, 10, 14 ja 15 pehmennettiin 24.10. (ks.` docs/lint-fixes-2026-10-24.md`, ryhmä 7): lue uudet sanamuodot ja päätä, kelpaavatko. Jäljellä olevat kohdat (2, 4, 5–8, 11–13) ovat ennallaan; 16 ja 17 ovat outlookin hypoteeseja. Motivation-lauseen "needs citation(s)" -kommentti on yhä paikallaan (lause sai nyt lähteitä)
-- [ ] Käy läpi omat HTML-kommenttisi main.md:ssä: `grep -n "<!--" main.md` (mm. "needs citation(s)" Motivation-osion lihavoidulla lauseella ja "Continue manual check here")
-- [ ] Tyylimerkinnät: `grep -n "not really my style" main.md` (nyt 2 paria abstraktissa). Käydään läpi vasta kun olet lukenut koko main.md. Claude ehdottaa uudelleenkirjoitukset sinun tyylilläsi, kunhan annat esimerkin omasta tyylistäsi (esim. Mäki 2023 -teksti tai notes.md)
+- [ ] Käy läpi omat HTML-kommenttisi main.md:ssä: `grep -n "<!--" main.md` (29.10. jäljellä vain `<!-- jatka -->` Open pipelines -osiossa)
+- [x] Tyylimerkinnät: abstraktin molemmat "not really my style" -kohdat kirjoitettiin uudelleen 27.10. (ks. wiki/log.md). Jos muualla tekstissä on kohtia, jotka eivät kuulosta sinulta, merkitse ne samalla tavalla
 - [ ] Uusi osio "Discussion and future outlook" (ennen Limitations/Conclusion): lue ja muokkaa omalla tyylilläsi. Kaksi kohtaa: sensor fusion + AI, ja laitteen osuuden poisto signaalista (system identification). 
 - [ ] Hankittava PDF: Hu, Sugita, Fujiu, Tixier-Mita & Toshiyoshi (2026), *Biomed. Phys. Eng. Express* 12(4), 045036, doi:10.1088/2057-1976/ae87aa (läpinäkyvä TFT-MEA, sähköisen ja optisen datan piirteet yhdistetty, ohjaamaton ML + SHAP, isoprenaliini-proof-of-concept). Viittaa Ryynänen 2018:aan. Vain abstrakti on nähty; kokotekstistä pitää tarkistaa solutyyppi, otoskoko, piirteet, menetelmät ja rajoitukset. allenna nimellä *raw/hu-2026-tft-mea-multimodal.pdf* ja lisää nimi .gitignoreen ennen committia. Sitten ingest ja outlookin päivitys (sensor fusion -kappale ja lause "mostly analysed separately", synteesikohta 16, wiki/multimodal-measurement.md)
   - Abstract lupaava: Microelectrode arrays (MEAs) provide powerful platforms for large-scale in vitro cardiac tissue analysis. We present a machine learning (ML)-assisted framework for multimodal characterization of cardiomyocyte activity recorded using a transparent thin-film-transistor MEA, allowing simultaneous acquisition of electrophysiological and optical data. The features of both modalities were integrated, and unsupervised learning identified contraction patterns without prior labels. Reliability was assessed with supervised models and SHapley Additive Explanations to confirm feature importance and label consistency. Pharmacological validation with isoprenaline showed the expected increase in beating frequency, detected automatically by our pipeline. Multimodal feature correlations with emergent labels demonstrated that interpretable ML can extract biologically meaningful insights from complex datasets. While isoprenaline served as a proof-of-concept, the framework is applicable for detecting diverse drug- or disease-induced cardiac network changes. This approach enables scalable, label-free and automated assessment of cardiomyocytes networks for drug discovery, toxicity screening, and mechanistic studies. 
