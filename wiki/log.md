@@ -431,3 +431,11 @@ The researcher noticed that the opening sentence contradicted itself ("the appea
 ## [2026-10-29] draft | Bold emphasis reduced; two wordings corrected
 
 At the researcher's request, in-sentence bold emphasis (mostly from the initial AI draft) removed from the Introduction, Motivation, Open pipelines, Fiducial, Maturation, Morphology, Model complexity, High-throughput and Conclusion sections (11 passages). Kept: "Four methodological gaps are identified" in the Abstract, the four gap statements in the Conclusion, the two run-in paragraph heads of the Discussion and future outlook and the run-in heads of the Declarations. Wording: "differences in fiducial definitions can substantially influence measured drug effects" changed to "can influence" (the Motivation states that none of the studies examined measures how much variability analysis methods cause, so "substantially" was not supported); High-throughput section "high-throughput and longitudinal applications" changed to "high-throughput and chronic applications" (follows the 2026-10-27 Altrocchi wording).
+
+## [2026-10-29] draft | Fiducial section: FPD conventions of the open platforms as a list
+
+At the researcher's request, the sentence listing the FPD conventions of Cardio PyMEA, CardioMEA, PhysioMEA and DatAnalyzer was turned into a bulleted list ("Platform: from ... to ..."), with a pointer to Table 1, a blank line before the list (needed by Pandoc) and the trailing whitespace line removed. The start point is written "R peak" for all three open platforms (before: "R wave" for Dunham et al., 2022, "R spike" for Lee et al., 2024, "R peak" for Weiser-Bitoun et al., 2026); Table 2 already describes Dunham's start point as "R wave (field potential peak)". docs/claims-by-source.md: Dunham (4) and Lee (4) carry a note to confirm against the papers that their start point is the peak.
+
+## [2026-10-29] draft | Fiducial list: CardioMEA and PhysioMEA merged into one item
+
+At the researcher's suggestion, the two identical list items were merged: "CardioMEA (Lee et al., 2024) and PhysioMEA (Weiser-Bitoun et al., 2026): from the R peak to the T-wave peak". Both definitions confirmed from the wiki pages (Lee et al., 2024, Table 1: "the distance between the R spike and the T-wave peak"; Weiser-Bitoun et al., 2026: R peak to T-wave peak).
