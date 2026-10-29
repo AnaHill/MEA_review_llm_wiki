@@ -18,7 +18,7 @@ Proposes minimum acceptance criteria, the Axion iPSC Model Standards (AIMS) \#CM
 
 ## Methodology
 - A cell source meets the proposed standard when at least 80 % of MEA wells meet all four well criteria.
-- **Well criteria:** (1) spike amplitude ≥ 0.5 mV on ≥ 50 % of electrodes; (2) synchronized beating across ≥ 50 % of electrodes; (3) spontaneous beat period 750–3000 ms (20–80 beats per minute); (4) corrected field potential duration (FPDc) of 200–700 ms, with Fridericia correction FPDc = FPD/(beat period)^1/3. Optional: beat period irregularity < 0.2 %.
+- **Well criteria:** (1) spike amplitude ≥ 0.5 mV on ≥ 50 % of electrodes; (2) synchronized beating across ≥ 50 % of electrodes; (3) spontaneous beat period 750–3000 ms (poster: "Spontaneous beat period of 750-3000 ms (i.e. 20-80 beats per minute, BPM)"; checked by the researcher 2026-10-29), so the standard is defined for spontaneously beating cells; (4) corrected field potential duration (FPDc) of 200–700 ms, with Fridericia correction FPDc = FPD/(beat period)^1/3. Optional: beat period irregularity < 0.2 %.
 - The specification range was inferred from the CiPA pilot study (Millard et al., 2018) and shown against three vendor cell sources that met it.
 - Stated considerations: ventricular cells only (not atrial); competing pacemakers confound analysis and beating should start from a single origin; a spike amplitude ≥ 1.0 mV would widen the assay window for drug effects on spike amplitude; spontaneous beating is often attributed to immaturity, and a paced assay is left to a possible future AIMS.
 
