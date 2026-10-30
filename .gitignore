@@ -45,5 +45,8 @@ raw/pramudito-2026-ensemble.pdf
 # Vendor material, not redistributed
 raw/clements-2025-aims-poster.pdf
 
+# claude
+.claude/settings.local.json
+
 # IDE
 .obsidian/

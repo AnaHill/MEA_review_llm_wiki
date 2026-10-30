@@ -19,7 +19,8 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 | `wiki/log.md` | Append-only chronological log of all operations. |
 | `wiki/references.md` | Auto-maintained citation list, populated on each ingest. |
 | `main.md` | Evolving paper draft — single file with IMRaD sections. |
-| `skills/` | Agent skill definitions (Claude Code skill format). |
+| `skills/` | Agent skill definitions (Claude Code skill format), kept for reference. |
+| `.claude/skills/` | Skills Claude Code loads: `grill-paper` (see "Grill before deciding" below). |
 | `scripts/` | Helper scripts: `check.py` (consistency check, see "Finishing check" below), `render_pdf_pages.py` (PDF text dump and page-to-PNG rendering for figure inspection), `claim_quotes.py` (lists the sentences of `main.md` that cite each source under that source's claims in `docs/claims-by-source.md`; dry run by default). |
 | `notes.md` | The researcher's own thinking — read-only for you (see "Researcher notes" below). |
 | `docs/` | Project/process documentation (e.g. literature search strategy). Not part of the wiki. |
@@ -57,6 +58,9 @@ When the researcher asks to write or update the paper draft:
 5. Append an entry to `wiki/log.md`.
 
 Typical trigger phrases: *"write the introduction"*, *"update the related work section"*, *"draft the abstract based on what we have"*, or the researcher selects a section in the editor and says *"rewrite this"*.
+
+### Grill before deciding
+When the researcher types `/grill-paper`, follow `.claude/skills/grill-paper/SKILL.md`: interview them in rounds about an open decision (what a section claims and how strongly, which sources to ingest or cite, which lint findings to fix), look up facts in the wiki and sources yourself, and leave the decisions to them. Change nothing during the session; afterwards offer a `## [YYYY-MM-DD] grill | <topic>` log entry and the follow-up operation. The skill is only run when the researcher calls it.
 
 ### Lint
 When the researcher asks for a health check:
@@ -112,6 +116,7 @@ Links to related wiki pages.
 ## [YYYY-MM-DD] query | Question summary
 ## [YYYY-MM-DD] draft | Section updated
 ## [YYYY-MM-DD] lint | pass
+## [YYYY-MM-DD] grill | Decision topic
 ```
 
 **No stray tags.** The wiki is read in Obsidian, where a `#word` in prose becomes a tag. Tags belong only in the `tags:` front matter. Whenever a hash-prefixed identifier appears in text and is not meant as a tag (for example the standard AIMS `\#CM01` or the cell-line catalogue number `\#HPS0076`), always write the hash with a backslash escape, as in `\#CM01`, so it displays as "#CM01" without becoming a tag. Do not use quotes, bare hashes or dropped hashes for this, and keep the identifier as the source writes it. This applies to every markdown file, including `wiki/log.md` and `main.md` (Pandoc prints the escaped hash without the backslash). `scripts/check.py` warns about unescaped hashes.
