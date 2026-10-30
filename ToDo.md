@@ -1,17 +1,18 @@
 # Tarkistuslista 24.10.2026
 <!-- temp file that will be deleted -->
 <!-- Continue manual check here -->
+jatka kohdasta ## Maturation status as an unresolved confound for MEA-derived metrics
+rivi: 106 No study proposing or validating such MEA-only reference  -> 
 <!-- check: -->
 Ehdotettu järjestys 27.10.
 
 1. Lue ja muokkaa main.md kokonaan. Jos lukiessa herää epäily jostain lähteeseen liittyvästä kohdasta, merkitse se kommentilla ja jatka eteenpäin.
    - [x] Tarkista onko Table1 ok
-   - kohtaan asti ok
    - Declarations kohdasta alaspäin ok 
-   - [ ] Uusi kirjallisuushaku erillisessä chatissa (ohje annettu 30.10.): onko julkaistu (myös ennen 2022) MEA-pohjaisia kypsyyden viitearvoja tai luokittelijaa hiPSC-CM:ille? Main.md:n Maturation-osion virkkeelle "targeted search of PubMed/MEDLINE, bioRxiv and Scopus (2 July 2026)" ei ole repossa hakupöytäkirjaa; varmista se tai korvaa uudella dokumentoidulla haulla
+   - [x] Uusi kirjallisuushaku tehty erillisessä chatissa 30.10. (docs/maturation-mea-search.md): MEA-pohjaisia kypsyyden viitearvoja tai luokittelijaa ei löytynyt, aukko pitää. Li 2025 ja Lin 2023 ingestoitu ja lisätty main.md:hen (Scope, Maturation, Conclusion, Declarations); 2.7. dokumentoimaton hakuvirke korvattu
    - [ ] Morphology-osio: "FP waveform morphology varies substantially across preparations, maturation states, …" (osion alku). Tukevatko lähteet (Ernault 2024, Mäki 2023) sanaa "substantially", vai riittääkö "varies"? Sama tyyppi kuin 29.10. korjattu "can substantially influence" (Fiducial-osio), jolle ei ollut lähdettä
    - [ ] Uusi osio "Discussion and future outlook" (ennen Limitations/Conclusion): lue ja muokkaa omalla tyylilläsi. Kaksi kohtaa: sensor fusion + AI, ja laitteen osuuden poisto signaalista (system identification). 
-   - [ ] Kun claims-by-source.md päivitetään: synteesikohta 8 lainaa vielä vanhaa sanamuotoa "can substantially influence measured drug effects"; main.md:ssä on nyt "can influence" (29.10.). Samoin kaikki 27.–29.10. muutetut kohdat (abstrakti, Open pipelines, High-throughput, Conclusion), ks. wiki/log.md
+   - [ ] Kun claims-by-source.md päivitetään: synteesikohta 8 lainaa vielä vanhaa sanamuotoa "can substantially influence measured drug effects"; main.md:ssä on nyt "can influence" (29.10.). Samoin kaikki 27.–30.10. muutetut kohdat (abstrakti, Open pipelines, Fiducial-lista ja Table 2, FPDc-kappaleet, Maturation-osio, High-throughput, Outlook, Conclusion), ks. wiki/log.md. Moni väite on jo merkitty "Revised 2026-10-xx" -huomautuksella, mutta väitetekstejä ei ole kirjoitettu uudelleen
 
 <!-- check: -->
 1. Pyydä minua päivittämään claims-by-source.md:n numeroidut väitteet valmiista tekstistä (alla oleva 2). Samalla yhtenäistän tunnisteet, joista skripti antoi huomautukset, kuten [Figure 2] ja [our interpretation].
@@ -29,8 +30,8 @@ python -I scripts/claim_quotes.py --only Hwang.
 ## 1. main.md: oma läpilukeminen ja muokkaus (tehdään ensin)
 - [ ] Lue koko main.md ja muokkaa tekstiä. Lähdetarkistus vasta tämän jälkeen, muuten väitelista vanhenee
 - [ ] Mieti, voisiko ottaa esim Obsidianilla kuvan lähteiden riippuvuuksista, ns Graph View, toisiko lisäarvoa tähän
-- [ ] Synteesikohdat: `docs/claims-by-source.md:n` osio *"Claims that rest on the author's own synthesis or are not cited"* (17 numeroitua kohtaa). Kohdat 1, 3, 9, 10, 14 ja 15 pehmennettiin 24.10. (ks.` docs/lint-fixes-2026-10-24.md`, ryhmä 7): lue uudet sanamuodot ja päätä, kelpaavatko. Jäljellä olevat kohdat (2, 4, 5–8, 11–13) ovat ennallaan; 16 ja 17 ovat outlookin hypoteeseja. Motivation-lauseen "needs citation(s)" -kommentti on yhä paikallaan (lause sai nyt lähteitä)
-- [ ] Käy läpi omat HTML-kommenttisi main.md:ssä: `grep -n "<!--" main.md` (29.10. jäljellä vain `<!-- jatka -->` Open pipelines -osiossa)
+- [ ] Synteesikohdat: `docs/claims-by-source.md:n` osio *"Claims that rest on the author's own synthesis or are not cited"* (nyt 21 numeroitua kohtaa; 30.10. lähtien tämä osio on ainoa rekisteri omille päätelmille, koska main.md:ssä ei ole "(the author's reasoning)" -merkintöjä). Kohdat 1, 3, 9, 10, 14 ja 15 pehmennettiin 24.10. (ks.` docs/lint-fixes-2026-10-24.md`, ryhmä 7): lue uudet sanamuodot ja päätä, kelpaavatko. Kohdat 2, 4, 5–8 ja 11–13 ovat ennallaan tai merkitty päivitetyiksi; 16, 17 ja 21 ovat outlookin hypoteeseja; 18–20 lisättiin 30.10. (pacing, FPDc-aukko kirjoittajan näkemyksenä, sykekorjaus ei poista kypsymiseen liittyvää muutosta)
+- [ ] Käy läpi omat HTML-kommenttisi main.md:ssä: `grep -n "<!--" main.md` (30.10. jäljellä vain `<!-- jatka -->` Open pipelines -osiossa)
 - [x] Tyylimerkinnät: abstraktin molemmat "not really my style" -kohdat kirjoitettiin uudelleen 27.10. (ks. wiki/log.md). Jos muualla tekstissä on kohtia, jotka eivät kuulosta sinulta, merkitse ne samalla tavalla
 
 - [ ] Hankittava PDF: Hu, Sugita, Fujiu, Tixier-Mita & Toshiyoshi (2026), *Biomed. Phys. Eng. Express* 12(4), 045036, doi:10.1088/2057-1976/ae87aa (läpinäkyvä TFT-MEA, sähköisen ja optisen datan piirteet yhdistetty, ohjaamaton ML + SHAP, isoprenaliini-proof-of-concept). Viittaa Ryynänen 2018:aan. Vain abstrakti on nähty; kokotekstistä pitää tarkistaa solutyyppi, otoskoko, piirteet, menetelmät ja rajoitukset. allenna nimellä *raw/hu-2026-tft-mea-multimodal.pdf* ja lisää nimi .gitignoreen ennen committia. Sitten ingest ja outlookin päivitys (sensor fusion -kappale ja lause "mostly analysed separately", synteesikohta 16, wiki/multimodal-measurement.md)
@@ -40,7 +41,7 @@ python -I scripts/claim_quotes.py --only Hwang.
 - [ ] Pyydä Claudea päivittämään `docs/claims-by-source.md` uudelleen valmiista tekstistä
 - [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten. Wikisivut on jo tarkistettu lähdetekstiä vasten (24.10.), mutta numerot ja kuvatulkinnat kannattaa varmistaa itse, ja kaksi lisätiedostoa jäi lukematta (Correia ja Scheurer, supplementary)
   - Erityisesti: Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten)
-  - Uudet lähteet: Hayakawa 2014 ja Vuorenpää 2023 on luettu kokonaan (kuvia ei katsottu Vuorenpäältä), mutta main.md:n tiivistykset kannattaa lukea itse; Ryynänen 2018 (korvasi Välimäki 2021:n 25.10.) on luettu kokonaan, kuvia ei katsottu
+  - Uudet lähteet: Hayakawa 2014 ja Vuorenpää 2023 on luettu kokonaan (kuvia ei katsottu Vuorenpäältä), mutta main.md:n tiivistykset kannattaa lukea itse; Ryynänen 2018 (korvasi Välimäki 2021:n 25.10.) on luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 (30.10., toinen istunto) on luettu kokotekstinä ja liitteineen, ja Li:n luvut on tarkistettu Supplementary Tableista 2–3 (main.md käyttää taulukon S3 CV- ja spike amplitude -lukuja)
   - Katso erityisesti outlookin lauseet ja synteesikohdat 16 ja 17 (hypoteeseja, ei löydöksiä)
 - [ ] mahdollinen uusi tarkistus esim OpenAI:n mallilla, Geminillä jo tehty
 - [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
@@ -54,7 +55,7 @@ python -I scripts/claim_quotes.py --only Hwang.
 - [x] Työkalun valinta ja testi tehty 26.10.: VS Code Markdown PDF -lisäosan HTML on hyvä (taulukot, Unicode, kaava, `\#CM01` ok), PDF ei (kuvat jakautuvat sivuille). Päätös: HTML on pohja, PDF tehdään HTML:stä selaimen tulostuksella (ks. docs/pdf-export-notes.md, "Revised export plan")
 - [ ] Mermaid-kaaviot: 2 kpl renderöitävä SVG-kuviksi mermaid-liven kautta ja upotettava kuvina (alt-teksteineen), jotta HTML ei lataa Mermaidia ulkoa (nyt versioimaton unpkg-CDN)
 - [ ] HTML: lisää näkyvä otsikkolohko (otsikko, tekijä, affiliaatio, päivä) ja `<title>`; front matter ei näy nyt lainkaan
-- [ ] HTML: tee DOI- ja muista URL-osoitteista klikattavia (nyt 1 linkki, 26 URL:ia main.md:ssä)
+- [ ] HTML: tee DOI- ja muista URL-osoitteista klikattavia (testissä 1 linkki; main.md:ssä nyt 28 URL:ia)
 - [ ] Poista HTML-kommentit main.md:stä ennen vientiä (kohta 1); varmista `view source` -tarkistuksella
 - [ ] PDF: tulosta valmiista HTML:stä selaimella, `break-inside: avoid` kuville ja taulukoille, ei sivun ylätunnisteita; tarkista kuvat, taulukot, kaava, ei `<!--`/`\#`/tähtiä tekstissä
 - [ ] Zenodo: PDF pääasiallisena tiedostona, HTML lisätiedostona; tarkista Zenodon HTML-tiedostojen käsittely ennen kuin luotat pelkkään HTML:ään
@@ -92,6 +93,7 @@ Tärkeimpiä kohtia:
     - opetus: mitä aikaisemmassa vaiheessa virhe syntyy, sitä useampaan paikkaan se kopioituu, joten tarkistus kannattaa tehdä jo ingestissä eikä vasta main.md:stä
   - 
   - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
+  - esimerkki hakuväitteestä (30.10.): main.md väitti "targeted search of PubMed/MEDLINE, bioRxiv and Scopus (2 July 2026)", mutta haulle ei ollut kirjausta, ja se oli tekoälyn verkkohaku. Korvattiin dokumentoidulla haulla (docs/maturation-mea-search.md), joka löysi myös kaksi oleellista lähdettä (Li 2025, Lin 2023). Virhetyyppi B: uskottavalta kuulostava menetelmäkuvaus ilman tositetta
   - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
   - esimerkki human-in-the-loopin tärkeydestä (27.10.): Open pipelines -osion avausvirke oli ristiriitainen. Alku sanoi avoimien analyysiputkien ilmestyneen 2022 jälkeen, ja loppu kumosi sen ("open tools such as MultiElec and CardioMDA already existed before 2022"). Loppu oli lisätty 24.10. tarkistuksessa korjaukseksi, koska sekä Lee et al. (2024, Table 3) että Dunham et al. (2022, s. 2) toteavat, että avoimia työkaluja oli jo ennen, mutta alkua ei silloin muutettu vastaamaan sitä. Automaattiset tarkistukset eivät huomanneet ristiriitaa; löysin sen itse lukiessa. Lähteiden perusteella uutta 2022 jälkeen ei ole avoimuus vaan se, että uusia avoimia työkaluja on tehty uusille datatyypeille: CardioMEA HD-MEA-datalle (Lee) ja PhysioMEA sydänorganoideille (Weiser-Bitoun). Opetus: AI:n tekemä paikkakorjaus voi jättää virkkeen ristiriitaiseksi, joten korjauksen jälkeen koko virke pitää lukea uudelleen
   - > When correcting a claim, re-read and if needed rewrite the whole sentence, not only the part that was wrong.
