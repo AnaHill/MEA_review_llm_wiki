@@ -19,6 +19,7 @@ Method page, written 2026-10-24 from the wiki paper pages (each checked against 
 | [[wiki/papers/lee-2024-cardiomea.md]] | the published CardioMEA feature set contains FPD but no rate-corrected FPD |
 | [[wiki/papers/ryynanen-2018-single-cell-mea.md]] | cFPD calculated with Bazett's formula (pre-2022; single-cell MEA, FPD measured with an in-house Origin module) |
 | [[wiki/papers/matsuda-2025-uhd.md]] | no FPD or FPDc in its own recordings (FPDc appears only in a table of thresholds from earlier studies) |
+| [[wiki/papers/li-2025-maturation.md]] | FPDc with Fridericia's formula (Axion software), used only for drug effects (verapamil, E-4031, isoprenaline); baseline FPDc not reported per maturation group |
 | [[wiki/papers/guerrelli-2024-hipscm.md]] | not a correction study, but beating rate rose 22.6 % and FPD fell 7.7 % during a 20-minute recording equilibration, so recordings taken before rate stabilises bias FPDc whichever formula is used; 15–20 minutes of equilibration recommended |
 
 ## Observations (ours, not from a single source)

@@ -25,7 +25,7 @@ Note: page checked against the source text on 2026-10-24; statements not support
 ## Findings
 - Test-set accuracy 99.5 ± 1.1% (precision 100%, recall 98.8%, F1 99.4%); full-dataset 5-fold CV accuracy 99.1 ± 1.1% — high accuracy achieved from a comparatively small dataset (230 videos).
 - SHAP: the paper is inconsistent on the number of top features. The abstract names displacement, relaxation-rise time and beating duration (0–1 time); the Results list the first six (adding Max C, R time and Max R, p. 6); the Discussion names five (displacement, relaxation-rise time, 0–1 time, Max C, R time). Contraction-rise time, contraction–relaxation interval, beating rate and contraction time had little impact.
-- B27 group: the heterogeneous distribution between the immature and mature clusters indicates a lower degree of maturation; the authors suggest the SVM can distinguish multiple levels of maturity (p. 8). The less-mature status of B27 comes from the authors' earlier study, and a sample B27 culture in Fig. 6C was classified as mature.
+- B27 group: the heterogeneous distribution between the immature and mature clusters indicates a lower degree of maturation; the authors suggest the SVM can distinguish multiple levels of maturity (p. 8). The less-mature status of B27 comes from the authors' earlier study, and a sample B27 culture in Fig. 6C was classified as mature. That earlier study is reference [11], Li et al. (2025), cited both for MM cells being more mature (p. 5) and for B27 cultures being less mature (p. 6); it used the same B27 and MM media and reports MEA conduction velocity, spike amplitude and spike slope for both, see [[wiki/papers/li-2025-maturation.md]].
 - The Discussion notes, as background, that Hayakawa et al. simultaneously measured field potentials and motion in iPSC-CMs and observed strong correlations between FPD and contraction duration (p. 9; the paper does not state that MEA was used, but the cited Hayakawa et al. (2014) used MEA, see [[wiki/papers/hayakawa-2014-motion-fp.md]]). The authors do not use this to interpret their features; they link 0–1 time to calcium transient duration ("may correlate", p. 9).
 
 ## Limitations (authors' own)
@@ -36,10 +36,11 @@ Note: page checked against the source text on 2026-10-24; statements not support
 - Some mature cultures sat near the hyperplane, which the authors link to line-specific backgrounds (p. 8). The 0–1 time was missing in 33.1% of samples and was calculated from other features (p. 3). It remains unclear whether the SVM classifies iPSC-CMs from other lines correctly (p. 9).
 
 ## Relevance to our paper
-Cited in main.md as an optical, video-based maturity classifier (99.5% test accuracy; hold-out of 46 videos; 5-fold cross-validation on 230 videos from four healthy lines, 2025), with generalisation to other lines untested. Our reading, not the paper's: a classifier of this kind has not, to our knowledge, been assembled from MEA field-potential features, which would need a separate literature check; the paper itself does not discuss MEA reference values, and the FPD–contraction-duration correlation it cites does not show that FPD tracks maturation.
+Cited in main.md as an optical, video-based maturity classifier (99.5% test accuracy; hold-out of 46 videos; 5-fold cross-validation on 230 videos from four healthy lines, 2025), with generalisation to other lines untested. Our reading, not the paper's: a classifier of this kind has not, to our knowledge, been assembled from MEA field-potential features. The documented search of 2026-10-30 (docs/maturation-mea-search.md) found none; the nearest work is the unsupervised pseudotime analysis of extracellular waveforms from tissue-embedded electronics in 3D by Lin et al. (2023), see [[wiki/papers/lin-2023-nanoelectronics.md]]; the paper itself does not discuss MEA reference values, and the FPD–contraction-duration correlation it cites does not show that FPD tracks maturation.
 
 ## See also
 - [[wiki/hipsc-cm-maturation.md]]
+- [[wiki/papers/li-2025-maturation.md]] — source of the maturity labels; MEA data for the same media
 - [[wiki/papers/fetterman-2024-maturation.md]]
 - [[wiki/papers/pramudito-2026-ensemble.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
