@@ -8,6 +8,7 @@ Ehdotettu järjestys 27.10.
    - [x] Tarkista onko Table1 ok
    - kohtaan asti ok
    - Declarations kohdasta alaspäin ok 
+   - [ ] Uusi kirjallisuushaku erillisessä chatissa (ohje annettu 30.10.): onko julkaistu (myös ennen 2022) MEA-pohjaisia kypsyyden viitearvoja tai luokittelijaa hiPSC-CM:ille? Main.md:n Maturation-osion virkkeelle "targeted search of PubMed/MEDLINE, bioRxiv and Scopus (2 July 2026)" ei ole repossa hakupöytäkirjaa; varmista se tai korvaa uudella dokumentoidulla haulla
    - [ ] Morphology-osio: "FP waveform morphology varies substantially across preparations, maturation states, …" (osion alku). Tukevatko lähteet (Ernault 2024, Mäki 2023) sanaa "substantially", vai riittääkö "varies"? Sama tyyppi kuin 29.10. korjattu "can substantially influence" (Fiducial-osio), jolle ei ollut lähdettä
    - [ ] Uusi osio "Discussion and future outlook" (ennen Limitations/Conclusion): lue ja muokkaa omalla tyylilläsi. Kaksi kohtaa: sensor fusion + AI, ja laitteen osuuden poisto signaalista (system identification). 
    - [ ] Kun claims-by-source.md päivitetään: synteesikohta 8 lainaa vielä vanhaa sanamuotoa "can substantially influence measured drug effects"; main.md:ssä on nyt "can influence" (29.10.). Samoin kaikki 27.–29.10. muutetut kohdat (abstrakti, Open pipelines, High-throughput, Conclusion), ks. wiki/log.md
