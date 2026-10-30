@@ -26,7 +26,8 @@ Note: page checked against the source text on 2026-10-24; statements not support
 ## Findings
 - **Equilibration effect:** Beating rate increases 22.6% and FPD decreases 7.7% over a 20-minute recording window; the beating rate was still significantly lower than its 20-min value up to 12 min (FPD up to 7 min); the authors recommend 15–20 min of equilibration.
 - **Spatial heterogeneity:** Outer well rows beat 8.8 bpm faster than inner rows at 20 min (53.7 vs 44.9 bpm); the authors suggest temperature distribution differences as a possible cause but could not confirm it.
-- **Longitudinal drift:** FPD increases by ~257 ms over days 2–14 in culture; beating rate decreases over the same period.
+- **Longitudinal drift:** FPD increases by ~257 ms over days 2–14 in culture (spontaneous beating: 288.9 ± 15.7 ms on day 2, 450.6 ± 39.5 ms on day 7, 545.9 ± 24.2 ms on day 14); beating rate decreases over the same period (53.8 ± 5.1, 46.2 ± 7.8 and 41.1 ± 4.5 beats/min, −23.6 %).
+- **Drift under pacing:** because the metrics are rate dependent, the authors repeated the measurements under external pacing at 1.5 Hz; FPD still lengthened from 275.5 ± 13.8 ms on day 3 to 336.0 ± 14 ms on day 14 (+21.9 %, against +54.8 % for spontaneous beating), with most of the change in the first week and a plateau after day 9 (Fig. 5A). So the drift is not only a rate effect. (Our rough check, not in the paper: Fridericia correction of the spontaneous means gives FPDc ≈ 279 ms on day 2 and ≈ 481 ms on day 14, so correction does not remove the drift either; the paper reports no FPDc.)
 - **Drug responsiveness differs by age:** E-4031 prolonged FPD more at day 4 than at day 10 (+31.2% vs +17.2%); isoproterenol and nifedipine responses also changed with culture time. The authors say culture time should be considered in drug screening.
 - **Gene expression:** KCNJ2 increases 27.5-fold over 30 days in iCell² (vs 5.0-fold in Cor.4U), suggesting continued maturation in culture.
 
