@@ -1,115 +1,78 @@
-# Tarkistuslista 24.10.2026
+# ToDo (päivitetty 31.10.2026)
 <!-- temp file that will be deleted -->
 <!-- Continue manual check here -->
 jatka kohdasta:
 - 
-<!-- check: -->
 
-1. Lue ja muokkaa main.md kokonaan. Jos lukiessa herää epäily jostain lähteeseen liittyvästä kohdasta, merkitse se kommentilla ja jatka eteenpäin.
-   - Tarkistettu
-     - [x] Table1 ok
-     - Declarations kohdasta alaspäin ok 
-     - [x] Uusi kirjallisuushaku tehty erillisessä chatissa 30.10. (docs/maturation-mea-search.md): MEA-pohjaisia kypsyyden viitearvoja tai luokittelijaa ei löytynyt, aukko pitää. Li 2025 ja Lin 2023 ingestoitu ja lisätty main.md:hen (Scope, Maturation, Conclusion, Declarations); 2.7. dokumentoimaton hakuvirke korvattu
-   - [ ] Morphology-osio: "FP waveform morphology varies substantially across preparations, maturation states, …" (osion alku). Tukevatko lähteet (Ernault 2024, Mäki 2023) sanaa "substantially", vai riittääkö "varies"? Sama tyyppi kuin 29.10. korjattu "can substantially influence" (Fiducial-osio), jolle ei ollut lähdettä
-   - [ ] Uusi osio "Discussion and future outlook" (ennen Limitations/Conclusion): lue ja muokkaa omalla tyylilläsi. Kaksi kohtaa: sensor fusion + AI, ja laitteen osuuden poisto signaalista (system identification). 
-   - [ ] Kun claims-by-source.md päivitetään: synteesikohta 8 lainaa vielä vanhaa sanamuotoa "can substantially influence measured drug effects"; main.md:ssä on nyt "can influence" (29.10.). Samoin kaikki 27.–30.10. muutetut kohdat (abstrakti, Open pipelines, Fiducial-lista ja Table 2, FPDc-kappaleet, Maturation-osio, High-throughput, Outlook, Conclusion), ks. wiki/log.md. Moni väite on jo merkitty "Revised 2026-10-xx" -huomautuksella, mutta väitetekstejä ei ole kirjoitettu uudelleen
+Järjestys: **A → B → C1 ja D-julkaisu.** C2 ja D-luonnostelu eivät odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
 
-<!-- check: -->
-1. Pyydä minua päivittämään claims-by-source.md:n numeroidut väitteet valmiista tekstistä (alla oleva 2). Samalla yhtenäistän tunnisteet, joista skripti antoi huomautukset, kuten [Figure 2] ja [our interpretation].
-2. Aja seuraava, jolloin jokaisen väitteen alle tulee nykyinen virke main.md:stä.
-`python -I scripts/claim_quotes.py --write`
-1. Käy lähteet läpi Altrocchin tapaan.
+## A. Paperin sisältö (main.md ja tukitiedostot)
+Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vasten.
 
-Skriptin kuivaharjoitusta voi käyttää välillä apuna, jos haluat nähdä, missä kohdissa jotain lähdettä viitataan, esimerkiksi 
-```python
-# tämä ei muuta mitään
-python -I scripts/claim_quotes.py --only Hwang. 
-```
+Jo tehty: Table 1 ok; Declarations alaspäin ok; uusi kypsyyshaku 30.10. (docs/maturation-mea-search.md), Li 2025 ja Lin 2023 ingestoitu ja lisätty main.md:hen.
 
+### A1. Oma läpiluku ja muokkaus (tehdään ensin, muuten väitelista vanhenee)
+Jos lukiessa herää epäily lähteeseen liittyvästä kohdasta, merkitse se kommentilla ja jatka eteenpäin.
+- [ ] Lue koko main.md ja muokkaa tekstiä
+- [ ] Morphology-osion alku: "FP waveform morphology varies substantially across preparations, maturation states, …". Tukevatko Ernault 2024 ja Mäki 2023 sanaa "substantially", vai riittääkö "varies"? (Sama tyyppi kuin 29.10. korjattu "can substantially influence".)
+- [ ] "Discussion and future outlook": lue ja muokkaa omalla tyylilläsi (sensor fusion + AI; laitteen osuuden poisto signaalista)
+- [ ] Synteesikohdat 1–21 (docs/claims-by-source.md, osio "Claims that rest on the author's own synthesis or are not cited", ainoa rekisteri omille päätelmille): kohdat 1, 3, 9, 10, 14 ja 15 pehmennettiin 24.10. (docs/lint-fixes-2026-10-24.md, ryhmä 7), päätä kelpaavatko; 16, 17 ja 21 ovat outlookin hypoteeseja; 18–20 lisättiin 30.10.
+- [ ] Omat HTML-kommentit: `grep -n "<!--" main.md` (30.10. jäljellä `<!-- jatka -->` Open pipelines -osiossa)
+- [ ] Päätä Hu et al. (2026), *Biomed. Phys. Eng. Express* 12(4), 045036, doi:10.1088/2057-1976/ae87aa (läpinäkyvä TFT-MEA, sähköinen + optinen data, ohjaamaton ML + SHAP; vain abstrakti nähty). Jos mukaan: hanki PDF nimellä raw/hu-2026-tft-mea-multimodal.pdf, lisää nimi .gitignoreen ennen committia, ingest ja outlookin päivitys (sensor fusion -kappale, "mostly analysed separately", synteesikohta 16, wiki/multimodal-measurement.md). Jos ei: siirrä "ei tähän versioon" -listalle
+- [ ] Valinnainen: toisiko Obsidianin Graph View -kuva lähteiden riippuvuuksista lisäarvoa?
+- Vinkki: isommat päätökset voi käydä läpi komennolla `/grill-paper` ennen muokkausta
 
-## 1. main.md: oma läpilukeminen ja muokkaus (tehdään ensin)
-- [ ] Lue koko main.md ja muokkaa tekstiä. Lähdetarkistus vasta tämän jälkeen, muuten väitelista vanhenee
-- [ ] Mieti, voisiko ottaa esim Obsidianilla kuvan lähteiden riippuvuuksista, ns Graph View, toisiko lisäarvoa tähän
-- [ ] Synteesikohdat: `docs/claims-by-source.md:n` osio *"Claims that rest on the author's own synthesis or are not cited"* (nyt 21 numeroitua kohtaa; 30.10. lähtien tämä osio on ainoa rekisteri omille päätelmille, koska main.md:ssä ei ole "(the author's reasoning)" -merkintöjä). Kohdat 1, 3, 9, 10, 14 ja 15 pehmennettiin 24.10. (ks.` docs/lint-fixes-2026-10-24.md`, ryhmä 7): lue uudet sanamuodot ja päätä, kelpaavatko. Kohdat 2, 4, 5–8 ja 11–13 ovat ennallaan tai merkitty päivitetyiksi; 16, 17 ja 21 ovat outlookin hypoteeseja; 18–20 lisättiin 30.10. (pacing, FPDc-aukko kirjoittajan näkemyksenä, sykekorjaus ei poista kypsymiseen liittyvää muutosta)
-- [ ] Käy läpi omat HTML-kommenttisi main.md:ssä: `grep -n "<!--" main.md` (30.10. jäljellä vain `<!-- jatka -->` Open pipelines -osiossa)
-- [x] Tyylimerkinnät: abstraktin molemmat "not really my style" -kohdat kirjoitettiin uudelleen 27.10. (ks. wiki/log.md). Jos muualla tekstissä on kohtia, jotka eivät kuulosta sinulta, merkitse ne samalla tavalla
+### A2. claims-by-source.md uudelleen valmiista tekstistä
+- [ ] Pyydä Claudea päivittämään numeroidut väitteet valmiista tekstistä. Huomioi: synteesikohta 8 lainaa vielä vanhaa "can substantially influence measured drug effects" (main.md: "can influence", 29.10.); samoin kaikki 27.–30.10. muutetut kohdat (abstrakti, Open pipelines, Fiducial-lista ja Table 2, FPDc-kappaleet, Maturation, High-throughput, Outlook, Conclusion; ks. wiki/log.md). Samalla yhtenäistetään tunnisteet, joista skripti huomautti ([Figure 2], [our interpretation])
+- [ ] Aja `python -I scripts/claim_quotes.py --write`, jolloin jokaisen väitteen alle tulee nykyinen virke main.md:stä. (Kuivaharjoitus ei muuta mitään, esim. `python -I scripts/claim_quotes.py --only Hwang.`)
 
-- [ ] Hankittava PDF: Hu, Sugita, Fujiu, Tixier-Mita & Toshiyoshi (2026), *Biomed. Phys. Eng. Express* 12(4), 045036, doi:10.1088/2057-1976/ae87aa (läpinäkyvä TFT-MEA, sähköisen ja optisen datan piirteet yhdistetty, ohjaamaton ML + SHAP, isoprenaliini-proof-of-concept). Viittaa Ryynänen 2018:aan. Vain abstrakti on nähty; kokotekstistä pitää tarkistaa solutyyppi, otoskoko, piirteet, menetelmät ja rajoitukset. allenna nimellä *raw/hu-2026-tft-mea-multimodal.pdf* ja lisää nimi .gitignoreen ennen committia. Sitten ingest ja outlookin päivitys (sensor fusion -kappale ja lause "mostly analysed separately", synteesikohta 16, wiki/multimodal-measurement.md)
-  - Abstract lupaava: Microelectrode arrays (MEAs) provide powerful platforms for large-scale in vitro cardiac tissue analysis. We present a machine learning (ML)-assisted framework for multimodal characterization of cardiomyocyte activity recorded using a transparent thin-film-transistor MEA, allowing simultaneous acquisition of electrophysiological and optical data. The features of both modalities were integrated, and unsupervised learning identified contraction patterns without prior labels. Reliability was assessed with supervised models and SHapley Additive Explanations to confirm feature importance and label consistency. Pharmacological validation with isoprenaline showed the expected increase in beating frequency, detected automatically by our pipeline. Multimodal feature correlations with emergent labels demonstrated that interpretable ML can extract biologically meaningful insights from complex datasets. While isoprenaline served as a proof-of-concept, the framework is applicable for detecting diverse drug- or disease-induced cardiac network changes. This approach enables scalable, label-free and automated assessment of cardiomyocytes networks for drug discovery, toxicity screening, and mechanistic studies. 
+### A3. Oma lähdetarkistus
+- [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten Altrocchin tapaan. Wikisivut on tarkistettu lähdetekstiä vasten 24.10., mutta numerot ja kuvatulkinnat kannattaa varmistaa itse
+  - Erityisesti: Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten); lukematta jääneet liitteet: Correia ja Scheurer supplementary
+  - Uudet: Hayakawa 2014 ja Vuorenpää 2023 luettu kokonaan (Vuorenpään kuvia ei katsottu); Ryynänen 2018 luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 luettu liitteineen, Li:n luvut tarkistettu Supplementary Tableista 2–3 (main.md käyttää S3:n CV- ja spike amplitude -lukuja). Lue main.md:n tiivistykset itse
+  - Outlookin lauseet ja synteesikohdat 16 ja 17 ovat hypoteeseja, eivät löydöksiä
 
-## 2. Oma lähdetarkistus (kun main.md:n teksti on valmis)
-- [ ] Pyydä Claudea päivittämään `docs/claims-by-source.md` uudelleen valmiista tekstistä
-- [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten. Wikisivut on jo tarkistettu lähdetekstiä vasten (24.10.), mutta numerot ja kuvatulkinnat kannattaa varmistaa itse, ja kaksi lisätiedostoa jäi lukematta (Correia ja Scheurer, supplementary)
-  - Erityisesti: Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten)
-  - Uudet lähteet: Hayakawa 2014 ja Vuorenpää 2023 on luettu kokonaan (kuvia ei katsottu Vuorenpäältä), mutta main.md:n tiivistykset kannattaa lukea itse; Ryynänen 2018 (korvasi Välimäki 2021:n 25.10.) on luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 (30.10., toinen istunto) on luettu kokotekstinä ja liitteineen, ja Li:n luvut on tarkistettu Supplementary Tableista 2–3 (main.md käyttää taulukon S3 CV- ja spike amplitude -lukuja)
-  - Katso erityisesti outlookin lauseet ja synteesikohdat 16 ja 17 (hypoteeseja, ei löydöksiä)
+### A4. Lopputarkistukset
+- [ ] Päätä highlights-kohdasta (tieteelliset havainnot, esim. FPDc-korjauksen validoinnin puute ja MEA-pohjaisten kypsyysviitearvojen puute; LLM-wikin kehityskohdat)
+- [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
+- [ ] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
+- [ ] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
 
-- [ ] mieti lisätä tiivistelmä / highlights kohta, jossa eritellään
-  - [ ] tieteelliset havainnot
-    - the lack of a validated hiPSC-CM–specific formula is a methodological gap that directly limits the comparability of FPDc endpoints between studies.  
-    - No study proposing or validating MEA-derived reference values for hiPSC-CM maturation
-  - [ ] LLM-wiki kehityskohdat
+### Ei tähän versioon
+- Aktivaatio-palautumisintervalli (ARI) vaihtoehtona peak-to-peak-FPD:lle: todellinen tutkimuskäsite, mutta lähde (Chinushi 2001 / Haws & Lux 1990, varmistamatta) pitää ensin löytää ja lukea; alkuperäinen ehdotus on poistetussa docs/peer_review_missing_references_main.md:ssä (git-historia). Ei viitteitä ennen lukemista
 
-- [ ] mahdollinen uusi tarkistus esim OpenAI:n mallilla, Geminillä jo tehty
-- [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
+## B. Julkaisu Zenodoon
+Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.org hylätty seulonnan epävarmuuden vuoksi).
 
-## 3. Ennen vientiä
-- [ ] Idea tutkittavaksi (valinnainen): *aktivaatio-palautumisintervalli (ARI)* vaihtoehtona peak-to-peak-FPD:lle on todellinen tutkimuskäsite. Se pitää ensin löytää ja lukea; alkuperäinen ehdotus (Chinushi 2001 / Haws & Lux 1990, tarkka nimi ja julkaisu varmistamatta) on `docs/peer_review_missing_references_main.md`:ssä (tiedosto on sittemmin poistettu, ks. git-historia). Ei viitteitä paperiin ennen lukemista (AGENTS: ei keksittyjä viitteitä)
-- [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotettu varoitus nyt yksi: Clements 2025 -posterilla ei ole DOI:ta)
+### B1. Vienti (ks. docs/pdf-export-notes.md, "Revised export plan": HTML on pohja, PDF HTML:stä selaimen tulostuksella)
+- [ ] Mermaid-kaaviot (2 kpl) SVG-kuviksi mermaid-liven kautta, upotus kuvina alt-teksteineen (nyt versioimaton unpkg-CDN)
+- [ ] HTML: näkyvä otsikkolohko (otsikko, tekijä, affiliaatio, päivä) ja `<title>`; front matter ei näy nyt
+- [ ] HTML: DOI:t ja muut URL:t klikattaviksi (main.md:ssä noin 28 URL:ia)
+- [ ] Poista HTML-kommentit main.md:stä; varmista `view source` -tarkistuksella
+- [ ] PDF selaimella: `break-inside: avoid` kuville ja taulukoille, ei ylätunnisteita; tarkista kuvat, taulukot, kaava, ei `<!--`, `\#` tai tähtiä tekstissä
 
-## 4. Zenodo-vienti vasta lopuksi
-- [x] Työkalun valinta ja testi tehty 26.10.: VS Code Markdown PDF -lisäosan HTML on hyvä (taulukot, Unicode, kaava, `\#CM01` ok), PDF ei (kuvat jakautuvat sivuille). Päätös: HTML on pohja, PDF tehdään HTML:stä selaimen tulostuksella (ks. docs/pdf-export-notes.md, "Revised export plan")
-- [ ] Mermaid-kaaviot: 2 kpl renderöitävä SVG-kuviksi mermaid-liven kautta ja upotettava kuvina (alt-teksteineen), jotta HTML ei lataa Mermaidia ulkoa (nyt versioimaton unpkg-CDN)
-- [ ] HTML: lisää näkyvä otsikkolohko (otsikko, tekijä, affiliaatio, päivä) ja `<title>`; front matter ei näy nyt lainkaan
-- [ ] HTML: tee DOI- ja muista URL-osoitteista klikattavia (testissä 1 linkki; main.md:ssä nyt 28 URL:ia)
-- [ ] Poista HTML-kommentit main.md:stä ennen vientiä (kohta 1); varmista `view source` -tarkistuksella
-- [ ] PDF: tulosta valmiista HTML:stä selaimella, `break-inside: avoid` kuville ja taulukoille, ei sivun ylätunnisteita; tarkista kuvat, taulukot, kaava, ei `<!--`/`\#`/tähtiä tekstissä
-- [ ] Zenodo: PDF pääasiallisena tiedostona, HTML lisätiedostona; tarkista Zenodon HTML-tiedostojen käsittely ennen kuin luotat pelkkään HTML:ään
-- [ ] Zenodo-metatiedot: lisenssi CC BY 4.0, rahoitus (ei rahoitusta, harrastus), avainsanat, tekijä "Antti-Juhana Mäki, Independent researcher", päivämäärä ja versio
+### B2. Zenodo-tietue
+- [ ] Oma tietue omalla DOI:lla, tyyppi Publication → Preprint (ei uusi versio Mäki 2023 -tietueesta)
+- [ ] Tiedostot: PDF pääasiallisena, HTML lisätiedostona (tarkista Zenodon HTML-käsittely)
+- [ ] Metatiedot: CC BY 4.0; ei rahoitusta (harrasteprojekti); avainsanat; tekijä "Antti-Juhana Mäki, Independent researcher"; ORCID; päivämäärä ja versio
+- [ ] Related identifiers: "references" → Mäki 2023 (10.5281/zenodo.20807245); "is supplemented by" → GitHub-repo (tai repon Zenodo-snapshot GitHub-releasen kautta)
+- [ ] Zenodo Communities: etsi sopiva yhteisö (kardiologia, kantasolut, avoin tiede); liittäminen vaatii ylläpitäjän hyväksynnän
 
-## 5. Päivitykset repoihin kun julkaistu Zenodossa
-- [ ] Päivitä README.md:n alku viittaamaan myös julkaisuun: "The paper is in main.md and published in <link>"
-- [ ] Linkitä README myös https://github.com/AnaHill/llm-wiki-academic-template
-  - [ ] Päivitä tuo akateeminen repo niillä tässä repossa löydetyillä hyvillä muutoksilla, esim skriptit yms, jotka toimisivat heti uuden LLM-wiki akateemisen paperin prosessissa
-- [ ] Linkitä oma blogipostaus
+## C. Repot
 
-- [ ] Poista tämä ToDo.md (temp-tiedosto)
+### C1. Tämä repo (julkaisun jälkeen)
+- [ ] README.md:n alkuun: "The paper is in main.md and published in <Zenodo-linkki>"
+- [ ] README: linkki https://github.com/AnaHill/LLM-wiki-academic-template ja omaan blogipostaukseen
+- [ ] Tag tai GitHub-release julkaistusta versiosta
+- [ ] Poista tämä ToDo.md
 
-## 6. Postaus aiheesta
-- DISCLAIMER alkuun: Vältetään AI sloppya, joten kävin itse läpi kaikki lähteet ja varsinkin väitökset
+### C2. LLM-wiki-academic-template (voi tehdä jo nyt)
+- [ ] Siirrä templaattiin tässä repossa hyväksi todetut, heti käytettävät osat: scripts/check.py, scripts/claim_quotes.py, scripts/render_pdf_pages.py, `.claude/skills/grill-paper`
+- [ ] Siirrä AGENTS.md:n käytännöt: raw-tiedostojen nimeäminen ingestissä, verify-before-ingest, ei hajatageja, finishing check, omien päätelmien rekisteri (claims-by-source), grill-osio ja lokin grill-etuliite
+- [ ] Templaatin README: linkki tähän repoon esimerkkinä
 
-Tärkeimpiä kohtia: 
-- 1) data laatu; uusien lähteiden ja niistä tehtyjen päätösten tarkastaminen heti, ettei väärä informaatio leviä moneen paikkaan, "even though 'vibe-researching' is fun, going through sources as soon as possible infront pays in the end" 
-  - kuinka tekisin uudelleen: datan eli lähteiden tarkasteleminen heti alussa paremmin, datalaatu kunniaan
-  - miten virheellinen tieto leviää tässä repossa (kolme lähtökohtaa):
-    ```
-    Virhe A, lähteen väärinluku (esim. Ismaili, Matsuda, Hwang, Kabanov):
-    raw/lähde.pdf
-      -> wiki/papers/lähde.md          (tiivistys liioittelee tai lukee väärin)
-      -> wiki/<käsitesivu>.md          (esim. hipsc-cm-maturation.md, critical-assessment-maki-claims.md)
-      -> wiki/index.md                 (yhden rivin tiivistelmä)
-      -> main.md                       (useaan osioon: tekstiin, taulukkoon, kuvatekstiin)
-      -> main.md Abstract/Conclusion   (yleistyy entisestään tiivistyksessä)
-      -> docs/claims-by-source.md      (väitelista kopioi virheen main.md:stä)
-
-    Virhe B, tekoälyn oma täydennys ilman lähdettä (esim. "longitudinal" ensimmäisestä luonnoksesta, keksitty "Galli et al. 2024"):
-    AI-luonnos -> main.md -> docs/claims-by-source.md -> (wiki-sivujen "Relevance"-osiot)
-
-    Virhe C, paikkakorjaus (esim. Open pipelines -virke 27.10.):
-    korjaus yhteen kohtaan -> ristiriita saman virkkeen tai muiden kohtien kanssa
-    ```
-    - mikä pysäyttää mitäkin: `check.py` pysäyttää rakennevirheet (puuttuvat viitteet, DOI-erot, rikkinäiset linkit), mutta ei sisältöä, joten A, B ja C menevät siitä läpi; claims-by-source ja lähteen lukeminen pysäyttävät A:n ja B:n, kun väite tarkistetaan lähdettä eikä wikisivua vasten; ihmisen kokonaisluenta pysäyttää C:n ja osioiden väliset ristiriidat
-    - opetus: mitä aikaisemmassa vaiheessa virhe syntyy, sitä useampaan paikkaan se kopioituu, joten tarkistus kannattaa tehdä jo ingestissä eikä vasta main.md:stä
-  - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
-  - esimerkki hakuväitteestä (30.10.): main.md väitti "targeted search of PubMed/MEDLINE, bioRxiv and Scopus (2 July 2026)", mutta haulle ei ollut kirjausta, ja se oli tekoälyn verkkohaku. Korvattiin dokumentoidulla haulla (docs/maturation-mea-search.md), joka löysi myös kaksi oleellista lähdettä (Li 2025, Lin 2023). Virhetyyppi B: uskottavalta kuulostava menetelmäkuvaus ilman tositetta
-  - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
-  - esimerkki human-in-the-loopin tärkeydestä (27.10.): Open pipelines -osion avausvirke oli ristiriitainen. Alku sanoi avoimien analyysiputkien ilmestyneen 2022 jälkeen, ja loppu kumosi sen ("open tools such as MultiElec and CardioMDA already existed before 2022"). Loppu oli lisätty 24.10. tarkistuksessa korjaukseksi, koska sekä Lee et al. (2024, Table 3) että Dunham et al. (2022, s. 2) toteavat, että avoimia työkaluja oli jo ennen, mutta alkua ei silloin muutettu vastaamaan sitä. Automaattiset tarkistukset eivät huomanneet ristiriitaa; löysin sen itse lukiessa. Lähteiden perusteella uutta 2022 jälkeen ei ole avoimuus vaan se, että uusia avoimia työkaluja on tehty uusille datatyypeille: CardioMEA HD-MEA-datalle (Lee) ja PhysioMEA sydänorganoideille (Weiser-Bitoun). Opetus: AI:n tekemä paikkakorjaus voi jättää virkkeen ristiriitaiseksi, joten korjauksen jälkeen koko virke pitää lukea uudelleen
-  - > When correcting a claim, re-read and if needed rewrite the whole sentence, not only the part that was wrong.
-- 2) good-old-googlettu ja lähteiden löytäminen ja niiden lähteiden sekä siihen viittaaminen lähteiden läpikäyminen, 
-- 3) skriptit yms testit varmistamaan datalaatua, 
-  - Kuinka hyvin rakennettu wiki ja muut auttoivat joka kerta kun Claude teki jotain
-    - Claude muisti päivittää pelkän main lisäksi myös login ja indeksit yms oleelliset
-    - tulee aina kelpo Ehdotus commit-viestiksi: *reword the Declarations sentence about colleagues to name the CoEBoC collaboration* (koska haluan nämä aina varmistaa ilman automatisointia)
-- 4) (mieti vielä onko tarpeen) hämmentävä suuri ero Claude code vs Gemini notebook 
-
-- [x] kattavampi blogipostaus aiheesta, joka tukisi hyvin omaa kotisivua, osuus siirretty kotisivun _notes/llm-wiki-post kansioon jonne vapaamuotoista hahmotelmaa aloiteltu
+## D. Postaukset (LinkedIn lyhyt, kotisivun blogi kattava)
+Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
+- [ ] Kopioi postausmuistiinpanot (entinen osio 6) kotisivurepoon; tiedosto on valmiina Clauden scratchpadissa (ks. 31.10. chat)
+- [ ] LinkedIn-postaus
+- [ ] Blogipostaus
