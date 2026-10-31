@@ -1,15 +1,15 @@
 # Tarkistuslista 24.10.2026
 <!-- temp file that will be deleted -->
 <!-- Continue manual check here -->
-jatka kohdasta ## Maturation status as an unresolved confound for MEA-derived metrics
-rivi: 106 No study proposing or validating such MEA-only reference  -> 
+jatka kohdasta:
+- 
 <!-- check: -->
-Ehdotettu järjestys 27.10.
 
 1. Lue ja muokkaa main.md kokonaan. Jos lukiessa herää epäily jostain lähteeseen liittyvästä kohdasta, merkitse se kommentilla ja jatka eteenpäin.
-   - [x] Tarkista onko Table1 ok
-   - Declarations kohdasta alaspäin ok 
-   - [x] Uusi kirjallisuushaku tehty erillisessä chatissa 30.10. (docs/maturation-mea-search.md): MEA-pohjaisia kypsyyden viitearvoja tai luokittelijaa ei löytynyt, aukko pitää. Li 2025 ja Lin 2023 ingestoitu ja lisätty main.md:hen (Scope, Maturation, Conclusion, Declarations); 2.7. dokumentoimaton hakuvirke korvattu
+   - Tarkistettu
+     - [x] Table1 ok
+     - Declarations kohdasta alaspäin ok 
+     - [x] Uusi kirjallisuushaku tehty erillisessä chatissa 30.10. (docs/maturation-mea-search.md): MEA-pohjaisia kypsyyden viitearvoja tai luokittelijaa ei löytynyt, aukko pitää. Li 2025 ja Lin 2023 ingestoitu ja lisätty main.md:hen (Scope, Maturation, Conclusion, Declarations); 2.7. dokumentoimaton hakuvirke korvattu
    - [ ] Morphology-osio: "FP waveform morphology varies substantially across preparations, maturation states, …" (osion alku). Tukevatko lähteet (Ernault 2024, Mäki 2023) sanaa "substantially", vai riittääkö "varies"? Sama tyyppi kuin 29.10. korjattu "can substantially influence" (Fiducial-osio), jolle ei ollut lähdettä
    - [ ] Uusi osio "Discussion and future outlook" (ennen Limitations/Conclusion): lue ja muokkaa omalla tyylilläsi. Kaksi kohtaa: sensor fusion + AI, ja laitteen osuuden poisto signaalista (system identification). 
    - [ ] Kun claims-by-source.md päivitetään: synteesikohta 8 lainaa vielä vanhaa sanamuotoa "can substantially influence measured drug effects"; main.md:ssä on nyt "can influence" (29.10.). Samoin kaikki 27.–30.10. muutetut kohdat (abstrakti, Open pipelines, Fiducial-lista ja Table 2, FPDc-kappaleet, Maturation-osio, High-throughput, Outlook, Conclusion), ks. wiki/log.md. Moni väite on jo merkitty "Revised 2026-10-xx" -huomautuksella, mutta väitetekstejä ei ole kirjoitettu uudelleen
@@ -43,13 +43,19 @@ python -I scripts/claim_quotes.py --only Hwang.
   - Erityisesti: Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten)
   - Uudet lähteet: Hayakawa 2014 ja Vuorenpää 2023 on luettu kokonaan (kuvia ei katsottu Vuorenpäältä), mutta main.md:n tiivistykset kannattaa lukea itse; Ryynänen 2018 (korvasi Välimäki 2021:n 25.10.) on luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 (30.10., toinen istunto) on luettu kokotekstinä ja liitteineen, ja Li:n luvut on tarkistettu Supplementary Tableista 2–3 (main.md käyttää taulukon S3 CV- ja spike amplitude -lukuja)
   - Katso erityisesti outlookin lauseet ja synteesikohdat 16 ja 17 (hypoteeseja, ei löydöksiä)
+
+- [ ] mieti lisätä tiivistelmä / highlights kohta, jossa eritellään
+  - [ ] tieteelliset havainnot
+    - the lack of a validated hiPSC-CM–specific formula is a methodological gap that directly limits the comparability of FPDc endpoints between studies.  
+    - No study proposing or validating MEA-derived reference values for hiPSC-CM maturation
+  - [ ] LLM-wiki kehityskohdat
+
 - [ ] mahdollinen uusi tarkistus esim OpenAI:n mallilla, Geminillä jo tehty
 - [ ] Kun valmis, totea että Declarations-kohdan AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 
 ## 3. Ennen vientiä
 - [ ] Idea tutkittavaksi (valinnainen): *aktivaatio-palautumisintervalli (ARI)* vaihtoehtona peak-to-peak-FPD:lle on todellinen tutkimuskäsite. Se pitää ensin löytää ja lukea; alkuperäinen ehdotus (Chinushi 2001 / Haws & Lux 1990, tarkka nimi ja julkaisu varmistamatta) on `docs/peer_review_missing_references_main.md`:ssä (tiedosto on sittemmin poistettu, ks. git-historia). Ei viitteitä paperiin ennen lukemista (AGENTS: ei keksittyjä viitteitä)
 - [ ] Aja `python -I scripts/check.py`: 0 virhettä (odotettu varoitus nyt yksi: Clements 2025 -posterilla ei ole DOI:ta)
-- [ ] Poista tämä ToDo.md (temp-tiedosto)
 
 ## 4. Zenodo-vienti vasta lopuksi
 - [x] Työkalun valinta ja testi tehty 26.10.: VS Code Markdown PDF -lisäosan HTML on hyvä (taulukot, Unicode, kaava, `\#CM01` ok), PDF ei (kuvat jakautuvat sivuille). Päätös: HTML on pohja, PDF tehdään HTML:stä selaimen tulostuksella (ks. docs/pdf-export-notes.md, "Revised export plan")
@@ -59,12 +65,15 @@ python -I scripts/claim_quotes.py --only Hwang.
 - [ ] Poista HTML-kommentit main.md:stä ennen vientiä (kohta 1); varmista `view source` -tarkistuksella
 - [ ] PDF: tulosta valmiista HTML:stä selaimella, `break-inside: avoid` kuville ja taulukoille, ei sivun ylätunnisteita; tarkista kuvat, taulukot, kaava, ei `<!--`/`\#`/tähtiä tekstissä
 - [ ] Zenodo: PDF pääasiallisena tiedostona, HTML lisätiedostona; tarkista Zenodon HTML-tiedostojen käsittely ennen kuin luotat pelkkään HTML:ään
-- [ ] Zenodo-metatiedot: lisenssi CC BY 4.0, rahoitus (ei rahoitusta, harrastus), avainsanat, tekijä "Antti-Juhana Mäki, Independent researcher", päivämäärä ja versio, tallennus liitetään Mäki-tietueeseen (Version v3)
+- [ ] Zenodo-metatiedot: lisenssi CC BY 4.0, rahoitus (ei rahoitusta, harrastus), avainsanat, tekijä "Antti-Juhana Mäki, Independent researcher", päivämäärä ja versio
 
 ## 5. Päivitykset repoihin kun julkaistu Zenodossa
 - [ ] Päivitä README.md:n alku viittaamaan myös julkaisuun: "The paper is in main.md and published in <link>"
 - [ ] Linkitä README myös https://github.com/AnaHill/llm-wiki-academic-template
   - [ ] Päivitä tuo akateeminen repo niillä tässä repossa löydetyillä hyvillä muutoksilla, esim skriptit yms, jotka toimisivat heti uuden LLM-wiki akateemisen paperin prosessissa
+- [ ] Linkitä oma blogipostaus
+
+- [ ] Poista tämä ToDo.md (temp-tiedosto)
 
 ## 6. Postaus aiheesta
 - DISCLAIMER alkuun: Vältetään AI sloppya, joten kävin itse läpi kaikki lähteet ja varsinkin väitökset
@@ -91,7 +100,6 @@ Tärkeimpiä kohtia:
     ```
     - mikä pysäyttää mitäkin: `check.py` pysäyttää rakennevirheet (puuttuvat viitteet, DOI-erot, rikkinäiset linkit), mutta ei sisältöä, joten A, B ja C menevät siitä läpi; claims-by-source ja lähteen lukeminen pysäyttävät A:n ja B:n, kun väite tarkistetaan lähdettä eikä wikisivua vasten; ihmisen kokonaisluenta pysäyttää C:n ja osioiden väliset ristiriidat
     - opetus: mitä aikaisemmassa vaiheessa virhe syntyy, sitä useampaan paikkaan se kopioituu, joten tarkistus kannattaa tehdä jo ingestissä eikä vasta main.md:stä
-  - 
   - kattavampi lähdehaku useammalla eri tavalla, esim. toinen LLM kuten Gemini, oma googlettelu/Scholar ja lähteiden viitteiden ja viittausten oma tarkastelu
   - esimerkki hakuväitteestä (30.10.): main.md väitti "targeted search of PubMed/MEDLINE, bioRxiv and Scopus (2 July 2026)", mutta haulle ei ollut kirjausta, ja se oli tekoälyn verkkohaku. Korvattiin dokumentoidulla haulla (docs/maturation-mea-search.md), joka löysi myös kaksi oleellista lähdettä (Li 2025, Lin 2023). Virhetyyppi B: uskottavalta kuulostava menetelmäkuvaus ilman tositetta
   - esimerkkinä LLM-wikin riski: wikisivut sisälsivät lähteen vastaisia väitteitä (mm. Ismaili, Matsuda, Hwang, Kabanov), jotka löytyivät vasta lähdetekstin ja väitteiden rivi riviltä -vertailussa
