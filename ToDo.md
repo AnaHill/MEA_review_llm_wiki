@@ -62,14 +62,15 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 
 ### C1. Tämä repo (julkaisun jälkeen)
 - [ ] README.md:n alkuun: "The paper is in main.md and published in <Zenodo-linkki>"
-- [ ] README: linkki https://github.com/AnaHill/LLM-wiki-academic-template ja omaan blogipostaukseen
+- [ ] README: linkki https://github.com/AnaHill/llm-wiki-academic-template ja omaan blogipostaukseen
 - [ ] Tag tai GitHub-release julkaistusta versiosta
 - [ ] Poista tämä ToDo.md
 
-### C2. LLM-wiki-academic-template (voi tehdä jo nyt)
-- [ ] Siirrä templaattiin tässä repossa hyväksi todetut, heti käytettävät osat: scripts/check.py, scripts/claim_quotes.py, scripts/render_pdf_pages.py, `.claude/skills/grill-paper`
-- [ ] Siirrä AGENTS.md:n käytännöt: raw-tiedostojen nimeäminen ingestissä, verify-before-ingest, ei hajatageja, finishing check, omien päätelmien rekisteri (claims-by-source), grill-osio ja lokin grill-etuliite
-- [ ] Templaatin README: linkki tähän repoon esimerkkinä
+### C2. llm-wiki-academic-template (voi tehdä jo nyt)
+Tehty 31.10. paikallisesti (../llm-wiki-academic-template), ei commitoitu eikä pushattu: tarkista `git diff`, commitoi ja pushaa itse.
+- [x] Siirrä templaattiin tässä repossa hyväksi todetut, heti käytettävät osat: scripts/check.py, scripts/claim_quotes.py, scripts/render_pdf_pages.py, `.claude/skills/grill-paper`
+- [x] Siirrä AGENTS.md:n käytännöt: raw-tiedostojen nimeäminen ingestissä, verify-before-ingest, ei hajatageja, finishing check, omien päätelmien rekisteri (claims-by-source), grill-osio ja lokin grill-etuliite
+- [x] Templaatin README: linkki tähän repoon esimerkkinä
 
 ## D. Postaukset (LinkedIn lyhyt, kotisivun blogi kattava)
 Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
