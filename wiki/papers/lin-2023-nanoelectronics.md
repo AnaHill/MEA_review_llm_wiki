@@ -38,6 +38,8 @@ The authors record extracellular field potentials from 3D hiPSC-CM microtissues,
   - **Units of analysis.** The t-tests treat channels or 16-channel "groups" as observations, four groups per well; how many independent devices or differentiations underlie each condition is not clear from the text.
 
 ## Relevance to our paper
+Since 2026-10-31 also cited in the 3D section and the Conclusion's third gap for the authors' argument that conventional MEAs contact a 3D microtissue only at one surface (p. 2; table S1).
+
 Cited in main.md from 2026-10-30 (Maturation section synthesis and the Conclusion's fourth gap) as the closest step towards an FP-based maturity classifier, with the limits in point 2 (a)-(c) stated in the text.
 
 1. **Closest existing analogue of an FP-based maturity metric.** It shows that machine learning on extracellular field-potential waveforms can order recordings along an electrical maturation trajectory and separate two culture conditions. The Conclusion of main.md says the components of an MEA-native maturity classifier exist but "have not yet been combined"; this paper is the nearest combination found in the documented search (docs/maturation-mea-search.md), so the claim must be stated more precisely.

@@ -523,3 +523,25 @@ At the researcher's question, the AIMS \#CM01 page was fetched again for the exa
 ## [2026-10-31] draft | Morphology section: "not assessed" sentence replaced from Mäki 2023
 
 At the researcher's suggestion, the sentence after "a single canonical FP shape cannot be assumed (Ernault et al., 2024; Weiser-Bitoun et al., 2026)", "Whether this differs from earlier studies was not assessed here", was replaced by "Such variation is not new: the opinion paper summarises large differences in FP signal forms and repolarization phases and cites earlier work explaining them by where the activity arises relative to the electrode and by overlapping signals in later cultures (Mäki, 2023)". Checked against raw/maki-2023-opinion.html, section "Understanding FP signals" (citing Meyer et al. 2004 and Egert and Meyer 2005, which are not sources of this review). docs/claims-by-source.md: Mäki (14) added. ToDo.md: the ARI item now points to Riedel et al. (2014), discussed in Mäki (2023), as the starting point (reference copied from Mäki 2023's list, to be checked against the paper).
+
+
+## [2026-10-31] grill | Model complexity section scope
+
+First /grill-paper session; decisions confirmed by the researcher (three rounds, all recommendations accepted):
+1. Keep the section, narrowed to one question: do FP analysis methods developed for 2D monolayers transfer to 3D models? (Needed for the third gap; the topic is too broad to expand.)
+2. Correct the sentence that Maurissen et al. (2024) "reinforce the caution raised by Mäki (2023)": their Fridericia-corrected FPD was nearly the same in 2D and 3D (231/225, 82/87, 323/320 ms; wiki/papers/maurissen-2024-mutation.md).
+3. Move Botti et al. (2026) out of the section (a 2D model; it stays in the Timeline and the Outlook) and rename the section "Three-dimensional cardiomyocyte models".
+4. Keep Hwang et al. (2023) as the first evidence, with its limits (one cell source, two drugs).
+5. Present Maurissen as two findings: FPDc transferred in that setting; TdP/VT-like waveforms were reported in 3D sheets only, not tested in 2D, sheet cTnT purity 25–41 %.
+6. Add Lin et al. (2023) as the authors' argument that conventional MEAs contact 3D tissue only at one surface (p. 2; table S1); mention PhysioMEA only as a tool built for organoids, not as transfer evidence.
+7. Present the Mäki (2023) caution as the section's opening question; drop the "not assessed" sentence.
+8. Abstract: drop "and computational MEA environments" from the list of developments.
+9. Abstract gap (iii): unchanged.
+10. Conclusion, third gap: add one sentence on Maurissen, Hwang and Lin; rest unchanged.
+11. Scope: add a sentence limiting 3D and in silico modelling to the transfer question.
+12. Introduction and the Timeline's Botti entry: unchanged.
+Notes: notes.md has nothing on 3D or in silico. Follow-up run as the Draft entry below.
+
+## [2026-10-31] draft | 3D section rewritten; Abstract, Scope and Conclusion adjusted (grill decisions)
+
+main.md: section "Model complexity: 3D cardiomyocyte systems and in silico models of the MEA" replaced by "Three-dimensional cardiomyocyte models" (one paragraph: Mäki caution as the question; Hwang with its limits; Maurissen's 2D/3D FPDc and the 3D-only TdP/VT-like waveforms with the purity caveat; Lin's contact argument; PhysioMEA as an organoid tool; no systematic 2D/3D comparison of fiducial definitions in the studies examined). Botti et al. (2026) removed from the section. Abstract: "and computational MEA environments" dropped. Scope: sentence limiting 3D and in silico modelling to the transfer question. Conclusion, third gap: sentence added on Maurissen, Hwang and Lin. docs/claims-by-source.md: Maurissen (3) annotated, (5) and (6) added; Hwang (3) annotated, (5) added; Botti (2) marked removed; Lin (5) and Weiser-Bitoun (6) added; Mäki (7) annotated; synthesis items 4 and 10 annotated, item 22 added (our inference "this endpoint transferred in that setting" and the absence claim); section list updated. scripts/claim_quotes.py: heading mapping for the renamed section. Wiki pages of Botti, Maurissen, Hwang and Lin: relevance notes updated.

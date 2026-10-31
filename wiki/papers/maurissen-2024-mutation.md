@@ -41,6 +41,8 @@ Stated by the authors (pp. 3–7):
 - CTS cTnT purity was only 25–41%, and the 3D phenotyping used one clone per genotype (n = 5–13).
 
 ## Relevance to our paper
+Since 2026-10-31 (grill decision) main.md presents this study in the 3D section with two findings: FPDcF close in 2D and 3D for all three genotypes (so this endpoint transferred in that setting), and TdP/VT-like waveforms reported in 3D sheets only, with the purity caveat. The earlier sentence that the findings "reinforce the caution raised by Mäki (2023)" was removed because the 2D/3D values contradict it. Also cited in the Conclusion's third gap.
+
 Cited in main.md for (1) the Fridericia-corrected FPD and (2) as an example of MEA analysis in 3D isogenic mutation-specific tissue models (LQTS and SQTS phenotypes). The review's formula notation RR^0.33 is the review's own; the paper writes the cube root of the inter-spike interval.
 
 ## See also

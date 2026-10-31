@@ -27,7 +27,7 @@ SECTION_TAG = [
     ("Scope and Literature Search", "Scope"), ("Literature review", "Timeline"),
     ("Open analysis pipelines", "Open pipelines"), ("Increasing emphasis", "Fiducial"),
     ("Rate correction", "FPDc"), ("Maturation status", "Maturation"),
-    ("Morphology-aware", "Morphology"), ("Model complexity", "Model complexity"),
+    ("Morphology-aware", "Morphology"), ("Three-dimensional cardiomyocyte", "Model complexity"),
     ("High-throughput", "High-throughput/longitudinal"), ("Limitations of this review", "Limitations"),
     ("Conclusion", "Conclusion"), ("Discussion", "Outlook"), ("Declarations", "Declarations"),
 ]

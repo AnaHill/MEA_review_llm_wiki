@@ -36,6 +36,8 @@ Our observations:
 - The model validation is qualitative and against earlier data.
 
 ## Relevance to our paper
+Since 2026-10-31 (grill decision) Botti is no longer cited in the 3D section of main.md, which was renamed "Three-dimensional cardiomyocyte models"; it remains in the Timeline and in the Discussion and future outlook (forward model).
+
 Cited in main.md as an in silico approach for MEA signals. Its value for the review is that (1) the model predicts different conduction and repolarization behaviour for atrial-like and ventricular-like monolayers, which is relevant to the cell-identity confound of the atrial-like Brugada lines in [[wiki/papers/park-2026-genotype-ml.md]] (a modelling prediction, not data), and (2) it states that FP analysis remains hard to standardize because of variability from cell density, culture conditions, electrode placement and heterogeneity.
 
 ## See also

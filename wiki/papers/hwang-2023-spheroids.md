@@ -28,6 +28,8 @@ Builds in silico three-dimensional models of hiPSC-CM spheroids on an MEA (spher
 No separate limitations section was found. Our observations: the evidence is a simulation matched to a limited in vitro data set; only one cell source, two drugs and two idealised shapes were modelled; the paper does not compare spheroids with 2D monolayers.
 
 ## Relevance to our paper
+Since 2026-10-31 also cited in the Conclusion's third gap; the 3D section now states the simulation's limits (one cell source, two drugs).
+
 Cited in main.md for the statement that three-dimensionality contributes to field potential variability; the corrected wording says that this comes from in silico models compared with in vitro recordings, with variability depending on stimulation and electrode locations. It also adds a study that uses Fridericia correction (FPDc) to the list in the rate-correction section.
 
 ## See also
