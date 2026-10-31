@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 WIKI, RAW, PAPERS = ROOT / "wiki", ROOT / "raw", ROOT / "wiki" / "papers"
-LOG_TYPES = {"init", "ingest", "query", "draft", "lint"}
+LOG_TYPES = {"init", "ingest", "query", "draft", "lint", "grill"}
 NON_PAGES = {"index.md", "log.md", "references.md"}
 
 findings = {"ERROR": [], "WARN": [], "INFO": []}

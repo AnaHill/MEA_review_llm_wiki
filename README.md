@@ -71,4 +71,4 @@ Unless noted otherwise, the written content of this repository (`main.md`, `wiki
 
 ---
 
-*Based on [Andrej Karpathy's LLM wiki idea](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) — see [AnaHill/LLM-wiki-academic-template](https://github.com/AnaHill/LLM-wiki-academic-template) for a reusable blank template.*
+*Based on [Andrej Karpathy's LLM wiki idea](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) — see [AnaHill/llm-wiki-academic-template](https://github.com/AnaHill/llm-wiki-academic-template) for a reusable blank template.*
