@@ -32,14 +32,23 @@ Jos lukiessa herää epäily lähteeseen liittyvästä kohdasta, merkitse se kom
   - Uudet: Hayakawa 2014 ja Vuorenpää 2023 luettu kokonaan (Vuorenpään kuvia ei katsottu); Ryynänen 2018 luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 luettu liitteineen, Li:n luvut tarkistettu Supplementary Tableista 2–3 (main.md käyttää S3:n CV- ja spike amplitude -lukuja). Lue main.md:n tiivistykset itse
   - Outlookin lauseet ja synteesikohdat 16 ja 17 ovat hypoteeseja, eivät löydöksiä
 
+### A3B Highlights alkuun
+- Tehdään tiivistelmä / highlights kohta alkuun, jossa eritellään
+  - [ ] tieteelliset havainnot
+    - "esim. FPDc-korjauksen validoinnin puute ja MEA-pohjaisten kypsyysviitearvojen puute" LLM-wikin kehityskohdat
+    - the lack of a validated hiPSC-CM–specific formula is a methodological gap that directly limits the comparability of FPDc endpoints between studies.  
+    - No study proposing or validating MEA-derived reference values for hiPSC-CM maturation
+    - onko muita
+  - [ ] LLM-wiki kehityskohdat mitä tässä opittin
+
 ### A4. Lopputarkistukset
-- [ ] Päätä highlights-kohdasta (tieteelliset havainnot, esim. FPDc-korjauksen validoinnin puute ja MEA-pohjaisten kypsyysviitearvojen puute; LLM-wikin kehityskohdat)
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
 - [ ] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 - [ ] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
 
 ### Ei tähän versioon
 - Aktivaatio-palautumisintervalli (ARI) vaihtoehtona peak-to-peak-FPD:lle: todellinen tutkimuskäsite, mutta lähde (Chinushi 2001 / Haws & Lux 1990, varmistamatta) pitää ensin löytää ja lukea; alkuperäinen ehdotus on poistetussa docs/peer_review_missing_references_main.md:ssä (git-historia). Ei viitteitä ennen lukemista
+  - Parempi lähtökohta (31.10.): oma Mäki 2023 -paperisi käsittelee jo ARI:ta. Riedel et al. (2014) käyttivät ARI:ta FPD:n sijaan ja ehdottivat sitä "the gold standard measure of repolarization ... in MEA analyses of iPSC CMs"; sinä kritisoit, ettei ARI kuvaa koko repolarisaatiota (loppu repolarisaatioaallon maksimiderivaatassa) ja että se vastaa APD50:tä, joten se ei ehkä havaitse EAD:ta. Viite Mäki 2023:n lähdeluettelosta: Riedel, M., Jou, C. J., Lai, S., Lux, R. L., Moreno, A. P., Spitzer, K. W., Christians, E., Tristani-Firouzi, M., & Benjamin, I. J. (2014), Functional and pharmacological analysis of cardiomyocytes differentiated from human peripheral blood mononuclear-derived pluripotent stem cells, *Stem Cell Reports* 3(1), 131–141, doi:10.1016/j.stemcr.2014.04.017 (tarkista itse paperista ennen käyttöä; avoin julkaisu)
 
 ## B. Julkaisu Zenodoon
 Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.org hylätty seulonnan epävarmuuden vuoksi).
@@ -66,7 +75,9 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 - [ ] Tag tai GitHub-release julkaistusta versiosta
 - [ ] Poista tämä ToDo.md
 
-### C2. llm-wiki-academic-template (voi tehdä jo nyt)
+### C2. llm-wiki-academic-template
+- [ ] tarkista lopuksi, ettei tässä repossa ole tullut mitään uutta hyödyllistä mitä kannattaisi laittaa templaattiin
+
 Tehty 31.10. paikallisesti (../llm-wiki-academic-template), ei commitoitu eikä pushattu: tarkista `git diff`, commitoi ja pushaa itse.
 - [x] Siirrä templaattiin tässä repossa hyväksi todetut, heti käytettävät osat: scripts/check.py, scripts/claim_quotes.py, scripts/render_pdf_pages.py, `.claude/skills/grill-paper`
 - [x] Siirrä AGENTS.md:n käytännöt: raw-tiedostojen nimeäminen ingestissä, verify-before-ingest, ei hajatageja, finishing check, omien päätelmien rekisteri (claims-by-source), grill-osio ja lokin grill-etuliite
@@ -74,6 +85,6 @@ Tehty 31.10. paikallisesti (../llm-wiki-academic-template), ei commitoitu eikä 
 
 ## D. Postaukset (LinkedIn lyhyt, kotisivun blogi kattava)
 Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
-- [ ] Kopioi postausmuistiinpanot (entinen osio 6) kotisivurepoon; tiedosto on valmiina Clauden scratchpadissa (ks. 31.10. chat)
-- [ ] LinkedIn-postaus
-- [ ] Blogipostaus
+- [x] Kopioi postausmuistiinpanot (entinen osio 6) kotisivurepoon; tiedosto on valmiina Clauden scratchpadissa (ks. 31.10. chat)
+- [ ] Blogipostaus ensin. 
+- [ ] LinkedIn-postaus: viittaa repoon, zenodoon ja blogiin
