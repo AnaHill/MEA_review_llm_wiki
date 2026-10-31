@@ -8,6 +8,7 @@ tags: [cardiac-safety, chronic-assay, impedance]
 **Year:** 2023  
 **Venue:** Frontiers in Pharmacology 14:1229960  
 **File:** [[raw/altrocchi-2023-chronic.pdf]]  
+**Supplementary:** [[raw/altrocchi-2023-chronic-supplementary.docx]]  
 **DOI:** 10.3389/fphar.2023.1229960  
 **Affiliation:** Janssen Pharmaceutica NV, Beerse, Belgium
 
@@ -46,8 +47,17 @@ Note: page checked against the source text on 2026-10-24; statements not support
 ## Limitations
 Stated by the authors (p. 14): a single donor, no 3D heart complexity or immune/inflammatory interactions, hiPSC-CM immaturity (low Kir2.x, high HCN, sarcomere structure), and well concentrations that were not measured and may be lower than nominal (10% serum), which affects the fCmax margin comparison. The paper calls the platform medium-throughput.
 
+## Supplementary material
+Read 2026-10-31 (text of the Word file; the embedded TIFF figures were not viewed). Contents:
+- **Tables S1–S6:** percent change from baseline (mean ± SD) of BR, FPD and FPDc (and impedance where given) for every compound, concentration and time point (2, 24, 48, 72, 96 h). The negative controls drift as much as the vehicle or more: captopril and aspirin at all concentrations show BR −15 to −18 %, FPD about +21 to +25 % and FPDc about +15 to +17 % at 96 h (Table S1).
+- **Tables S7–S9:** qualitative event counts per well (beating below threshold, EAD, flat T-wave-like, and others) for the direct cytotoxics, the trafficking inhibitors and the TKis; for example flat T-wave-like waveforms in 5/5 wells with BMS-986094 10 µM at 72 h.
+- **Table S10:** live-cell, caspase 3/7 and necrosis assays for captopril, sunitinib and doxorubicin at 24, 48 and 72 h (for example sunitinib 10 µM: live cells −90 % at 24 h).
+- **Figures S1–S4:** beating-rate time courses per compound group; **Figure S5:** concentration (as fold over median fCmax) at which functional and cytotoxicity parameters first changed significantly at 48 h, for sunitinib and doxorubicin.
+
+Vehicle drift (main paper, Table 2, DMSO 0.1 %, N = 81 wells): mean BR −5.8 %, FPD +10.5 % and FPDc +7.9 % at 96 h, i.e. FPDc drifts over four days despite Fridericia correction. The paper does not attribute the drift to a cause; it handles it by judging compound effects against per-time-point tolerance intervals of the vehicle wells.
+
 ## Relevance to our paper
-Cited in main.md for MEA use in general (Introduction), for Fridericia-corrected FPD, and for the chronic design (48-well plates, acute under 2 h and delayed effects of 24 h or more over four days, TKi, doxorubicin and trafficking inhibitors, FP plus impedance, multi-parameter feature sets). It is cited a second time in the Discussion and future outlook, where the impedance signal (a drop when cells attach less well to the well bottom owing to cell death or morphology changes) is used as the starting point for a hypothesis that an impedance channel could flag FP changes caused by altered attachment rather than altered AP; the hypothesis is the researcher's (your remark of 2026-10-26), not the paper's. main.md does not discuss the tolerance intervals or individual compound results (pentamidine, BMS-986094); the 0.03 µM doxorubicin value belongs to Matsuda et al.
+Cited in main.md for MEA use in general (Introduction), for Fridericia-corrected FPD, and for the chronic design (48-well plates, acute under 2 h and delayed effects of 24 h or more over four days, TKi, doxorubicin and trafficking inhibitors, FP plus impedance, multi-parameter feature sets). It is cited a second time in the Discussion and future outlook, where the impedance signal (a drop when cells attach less well to the well bottom owing to cell death or morphology changes) is used as the starting point for a hypothesis that an impedance channel could flag FP changes caused by altered attachment rather than altered AP; the hypothesis is the researcher's (your remark of 2026-10-26), not the paper's. From 2026-10-31 main.md (High-throughput section) also cites the vehicle drift (Table 2: BR −5.8 %, FPDc +7.9 % at 96 h) and the use of per-time-point tolerance intervals. main.md does not discuss individual compound results (pentamidine, BMS-986094); the 0.03 µM doxorubicin value belongs to Matsuda et al.
 
 ## See also
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
