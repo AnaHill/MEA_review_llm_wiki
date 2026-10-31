@@ -114,7 +114,7 @@ Taken together, the components of an MEA-based maturity classifier exist separat
 ## Morphology-aware analysis and handling of heterogeneous FP waveforms
 Another important methodological development in recent cardiomyocyte MEA studies is the recognition that FP waveform morphology varies substantially across preparations, maturation states, and recording conditions. Pacemaker-like signals lacking a pronounced high peak, waveforms dominated by a single peak, and mixed or atypical morphologies are described in hiPSC-CM cultures (Mäki, 2023), and hiPSC-CM preparations contain nodal-like cells (Park et al., 2026).
 
-The opinion paper explicitly addresses these cases by proposing morphology-aware handling strategies, including specialized interpretation of pacemaker-like signals and pragmatic preprocessing — such as waveform inversion for "only high peak" cases, an approach internally validated in that work but not yet independently replicated — prior to standard analysis (Mäki, 2023).
+The opinion paper (Mäki, 2023) explicitly addresses these cases by proposing morphology-aware handling strategies, including specialized interpretation of pacemaker-like signals and pragmatic preprocessing — such as waveform inversion for "only high peak" cases, an approach internally validated in that work but not yet independently replicated — prior to standard analysis.
 
 *Figure 2. Schematic of a morphology-aware field potential analysis pipeline. Waveform classification determines the analysis branch applied before FPD measurement; rate correction is applied after. The signal-inversion branch is the author's own proposal (Mäki, 2023) and has not been independently validated.*
 
