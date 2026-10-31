@@ -2,7 +2,7 @@
 <!-- temp file that will be deleted -->
 <!-- Continue manual check here -->
 jatka kohdasta:
-- 
+- rivi 148 ## High-throughput and longitudinal assays drive broader feature sets
 
 Järjestys: **A → B → C1 ja D-julkaisu.** C2 ja D-luonnostelu eivät odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
 
@@ -40,6 +40,10 @@ Jos lukiessa herää epäily lähteeseen liittyvästä kohdasta, merkitse se kom
     - No study proposing or validating MEA-derived reference values for hiPSC-CM maturation
     - onko muita
   - [ ] LLM-wiki kehityskohdat mitä tässä opittin
+
+### A3C Abbreviations alkupuolelle? Pitääkö symbolit yms _kursivoida_ tms?
+- Harkitse lyhennelmän listausta alkupuolelle, esim tiivistelmän jälkeen. siitä voisi tehdä myös skriptit tms joka tarkistaa asian. Jos tuollaista tulee, viedään se myös akateemiseen repoon
+- lyhenteiden _kursivointi_ tai vastaava käsittely, kannattaako?!
 
 ### A4. Lopputarkistukset
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
