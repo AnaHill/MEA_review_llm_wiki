@@ -206,11 +206,12 @@ Local file: `raw/kabanov-2026-cardioscripts.pdf`; page `wiki/papers/kabanov-2026
 Claims (tick `[x]` when you have checked the claim against the source):
 
 - [ ] (1) [Timeline] CardioScripts, combined AFM and MEA electromechanical analysis.
-- [ ] (2) [High-throughput/longitudinal] CardioScripts is an open-source Python toolbox tested on HL-1 cells and hESC-derived embryoid bodies.
+- [ ] (2) [High-throughput/longitudinal] CardioScripts is an open-source Python toolbox tested on HL-1 cells and hESC-derived embryoid bodies. Removed from the High-throughput section 2026-11-01 (CardioScripts is a multimodal tool, not a high-throughput or long-term one); items (3) and (4) belonged to that passage and are no longer in main.md. Kabanov remains in the Timeline, Table 1 and the Outlook (6).
 - [ ] (3) it integrates MEA field potential analysis with simultaneous atomic force microscopy (AFM) recordings to quantify electromechanical coupling and decoupling.
 - [ ] (4) dose-dependent lidocaine effects show that electrical and mechanical signals can dissociate in ways that neither modality detects alone.
 - [ ] (5) [Table 1] Python; also named Myopyth; FPD end not reported, T peaks are detected.
 - [ ] (6) [Outlook] contraction force from simultaneous AFM is added to MEA; the synchronous validation was done on embryoid bodies only.
+- [ ] (7) [Fiducial] cited in the lead-in to the FPD convention list: CardioScripts reports QT and T-peak rather than FPD (added 2026-10-29; found missing from the checklist 2026-11-01). Pointer: wiki page, Analysis ("QT and T-peak, not FPD").
 
 Check 2026-10-24: (2) p. 2 ("fully open source and freely available"); the cells are HL-1 (Sigma) and embryoid bodies from hESC line CCTL14, so "hESC-derived cardiomyocytes" was changed to "hESC-derived embryoid bodies". (3)(4) p. 7–8 and Figure 10: lidocaine 25 and 30 µM increased the delay between field potential and contraction in embryoid bodies, dose-dependently; "neither modality alone" is the author's reading. (5) T peaks are detected (p. 3), FPD is not defined.
 
@@ -315,8 +316,8 @@ Claims (tick `[x]` when you have checked the claim against the source):
 - [ ] (2) [Intro] cited, with Blinova et al. and Altrocchi et al., for MEA use in cardiac safety pharmacology, drug discovery and disease modelling, and, with Blinova et al., for FPD metrics being integral to CiPA.
 - [ ] (3) [FPDc] it reports corrected FPD (FPDc) from the vendor software but does not name the formula.
 - [ ] (4) [Open pipelines] the vendor's Cardiac Analysis Tool was used for the analysis.
-- [ ] (5) [High-throughput/longitudinal] it compared eight arrhythmia-inducing drugs (for example E4031, moxifloxacin, quinidine) across healthy and long QT syndrome–derived hiPSC-CM lines via MEA, demonstrating dose-dependent FPD and arrhythmogenic risk and disease-specific sensitivity to hERG blockade.
-- [ ] (6) [High-throughput/longitudinal] it shares group, platform and apparently an LQT line with Park et al. (2026), so the two are one body of evidence.
+- [ ] (5) [High-throughput/longitudinal] it compared eight arrhythmia-inducing drugs (for example E4031, moxifloxacin, quinidine) across healthy and long QT syndrome–derived hiPSC-CM lines via MEA, demonstrating dose-dependent FPD and arrhythmogenic risk and disease-specific sensitivity to hERG blockade. Revised 2026-11-01: shortened to one clause in the High-throughput section ("Disease-line screening is another application: ... Both reported disease-specific drug sensitivities"); the dose-dependent FPD, arrhythmogenic risk and hERG details were dropped from main.md.
+- [ ] (6) [High-throughput/longitudinal] it shares group, platform and apparently an LQT line with Park et al. (2026), so the two are one body of evidence. Moved 2026-11-01 to the machine-learning paragraph of the FPDc section (now tag [FPDc]).
 - [ ] (7) [Motivation] example of mechanistic electrophysiological phenotyping.
 
 Check 2026-10-24: (3) the text (p. 4, p. 8–11) says "corrected FPD (FPDc)" and "Axion's Cardiac Analysis Software", and never mentions Fridericia, so the earlier statement that it uses Fridericia-corrected FPD was replaced. (4) p. 4 and p. 7. (5) matches the abstract (p. 1). (2) the paper says CiPA "facilitated the use of hiPSC-CMs" (p. 2) and that its protocol is "in line with the CiPA core protocol" (p. 4).
@@ -331,9 +332,9 @@ Claims (tick `[x]` when you have checked the claim against the source):
 - [ ] (2) [FPDc] it trained neural-network, random-forest and gradient-boosting classifiers on these features from long QT and Brugada syndrome lines, took the rate correction as given, and did not test how the choice of correction affects performance.
 - [ ] (3) [FPDc] it evaluated on a small test set of 15 drugs by repeated resampling.
 - [ ] (4) [Open pipelines] the vendor's Cardiac Analysis Tool was used.
-- [ ] (5) [High-throughput/longitudinal] the same group applied a similar MEA workflow to patient-derived LQTS and BrS lines and 28 compounds, reporting disease-specific drug sensitivities.
-- [ ] (6) [High-throughput/longitudinal] the two Brugada lines consisted largely of atrial-like cells (100 % and 87.5 % atrial-like in Figure 3), so their comparison with ventricular-like normal lines is confounded by cell identity.
-- [ ] (7) [High-throughput/longitudinal] overlap with Park et al. (2025): same group and platform, apparently the same long QT line (KCNH2 c.453delC).
+- [ ] (5) [High-throughput/longitudinal] the same group applied a similar MEA workflow to patient-derived LQTS and BrS lines and 28 compounds, reporting disease-specific drug sensitivities. Revised 2026-11-01: now "the same group later tested 28 compounds on patient-derived long QT and Brugada syndrome lines (Park et al., 2026). Both reported disease-specific drug sensitivities".
+- [ ] (6) [High-throughput/longitudinal] the two Brugada lines consisted largely of atrial-like cells (100 % and 87.5 % atrial-like in Figure 3), so their comparison with ventricular-like normal lines is confounded by cell identity. Moved 2026-11-01 to the machine-learning paragraph of the FPDc section (now tag [FPDc]).
+- [ ] (7) [High-throughput/longitudinal] overlap with Park et al. (2025): same group and platform, apparently the same long QT line (KCNH2 c.453delC). Moved 2026-11-01 to the machine-learning paragraph of the FPDc section (now tag [FPDc]).
 - [ ] (8) [Maturation] patch-clamp data show ventricular-, atrial- and nodal-like cells in the normal lines (about 70 %, 20 % and 9 %).
 - [ ] (9) The reference year is 2026 (volume 82; online July 2025).
 - [ ] (9b) [Outlook] the machine-learning classifiers were trained on small datasets.
