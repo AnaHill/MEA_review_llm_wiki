@@ -64,7 +64,7 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 ### C2. llm-wiki-academic-template
 - [ ] tarkista lopuksi, ettei tässä repossa ole tullut mitään uutta hyödyllistä mitä kannattaisi laittaa templaattiin
   - Vertailu 1.11.: templaattiin vietäväksi (1) claim_quotes.py:n Mermaid-korjaus (`\n` kaavion tekstissä piilotti nimen tunnistukselta), (2) rekisteriosion uusi nimi "Register of the author's own inferences" ja käytäntö: väitelista kirjoitetaan puhtaaksi valmiista tekstistä, rastit säilytetään muuttumattomille väitteille, historia jää lokiin, (3) valinnainen: yleinen ohje samannimisistä ensimmäisistä kirjoittajista (päätä etukirjaimet ja kirjaa AGENTS.md:hen)
-  - Toiseen suuntaan: templaatin check.py on tätä parempi (ohittaa piilotiedostot raw/-kansiossa, kestää puuttuvan "# References" -otsikon ja kommentit lähdeluettelossa); tuo muutokset tähän repoon
+  - Tehty 1.11.: kohdat (1)–(3) viety templaattiin paikallisesti (claim_quotes.py, AGENTS.md, docs/claims-by-source.md), ei commitoitu, pushaa itse; templaatin parempi check.py tuotu tähän repoon
 
 Tehty 31.10. tehty llm-wiki-academic-template
 - [x] Siirrä templaattiin tässä repossa hyväksi todetut, heti käytettävät osat: scripts/check.py, scripts/claim_quotes.py, scripts/render_pdf_pages.py, `.claude/skills/grill-paper`

@@ -82,7 +82,7 @@ for key in refs:
         report("ERROR", "wiki/references.md", f"{key[0]} {key[1]} has no page in wiki/papers/")
 
 for f in sorted(RAW.iterdir()):
-    if f.is_file() and f"raw/{f.name}" not in raw_used:
+    if f.is_file() and not f.name.startswith(".") and f"raw/{f.name}" not in raw_used:
         report("INFO", f"raw/{f.name}", "not referenced by any paper page (supplementary or not ingested)")
 
 # --- index.md and orphans ------------------------------------------------------------
@@ -121,8 +121,11 @@ for key in sorted(cited - set(refs)):
 for key in sorted(set(refs) - cited):
     report("INFO", "wiki/references.md", f"{key[0]} {key[1]} is not cited in main.md")
 # the reference list at the end of main.md must hold exactly the cited entries, verbatim from wiki/references.md
-ref_lines = [l for l in read(WIKI / "references.md").split("\n---\n", 1)[1].splitlines() if l.strip()]
-main_lines = [l for l in main.split("# References\n", 1)[-1].splitlines() if l.strip()]
+ref_lines = [l for l in read(WIKI / "references.md").split("\n---\n", 1)[-1].splitlines() if l.strip()]
+parts = re.split(r"^# References[ \t]*$", main, maxsplit=1, flags=re.M)
+if len(parts) < 2:
+    report("WARN", "main.md", "no '# References' heading; the reference list cannot be compared with wiki/references.md")
+main_lines = [l for l in parts[-1].splitlines() if l.strip() and not l.lstrip().startswith("<!--")] if len(parts) == 2 else []
 main_keys = set()
 for l in main_lines:
     if l not in ref_lines:

@@ -637,3 +637,7 @@ At the researcher's choice (option b), the fifth highlight stays tied to the fou
 ## [2026-11-01] draft | First highlight: "Open" removed by the researcher
 
 The researcher removed "Open" from the first highlight, which now reads "MEA tools define FPD differently; their FPD values are not directly comparable", because vendor tools also define FPD in their own ways. docs/claims-by-source.md register item 0 rewritten for the six highlights; it notes that the reviewed sources document the open tools' FPD definitions, while the vendor tool's definition is not described in the studies that used it.
+
+## [2026-11-01] lint | check.py taken from the template; fixes ported to the template
+
+scripts/check.py replaced by the template's version (ignores hidden files in raw/, warns if main.md has no "# References" heading, skips HTML comments in the reference list); output unchanged here (0 errors, 1 warning). Ported to ../llm-wiki-academic-template (local, not committed; the researcher pushes): the Mermaid "\n" fix in scripts/claim_quotes.py, the register section renamed "Register of the author's own inferences" with the rewrite-from-scratch practice in AGENTS.md, and a general note on same-surname first authors.
