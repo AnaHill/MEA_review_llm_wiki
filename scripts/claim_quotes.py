@@ -27,8 +27,8 @@ SECTION_TAG = [
     ("Scope and Literature Search", "Scope"), ("Literature review", "Timeline"),
     ("Open analysis pipelines", "Open pipelines"), ("Increasing emphasis", "Fiducial"),
     ("Rate correction", "FPDc"), ("Maturation status", "Maturation"),
-    ("Morphology-aware", "Morphology"), ("Three-dimensional cardiomyocyte", "Model complexity"),
-    ("High-throughput", "High-throughput/longitudinal"), ("Limitations of this review", "Limitations"),
+    ("Morphology-aware", "Morphology"), ("Three-dimensional cardiomyocyte", "3D"),
+    ("High-throughput", "High-throughput"), ("Limitations of this review", "Limitations"),
     ("Conclusion", "Conclusion"), ("Discussion", "Outlook"), ("Declarations", "Declarations"),
 ]
 # Tables sit under these headings; the claims file tags their rows separately.
@@ -41,7 +41,7 @@ SOURCES = {
     "Ernault": r"\bErnault\b", "Fetterman": r"\bFetterman\b", "Guerrelli": r"\bGuerrelli\b",
     "Hayakawa": r"\bHayakawa\b", "Hwang": r"\bHwang\b", "Ismaili": r"\bIsmaili\b",
     "Kabanov": r"\bKabanov\b", "Lee": r"\bLee et al\b", "Li et al. (2025)": r"\bLi et al\.?,? \(?2025",
-    "Lin": r"\bLin et al\b", "Mäki": r"\bMäki,? \(?20",
+    "Lin": r"\bLin et al\b", "Mäki": r"\bMäki\b",
     "Matsuda": r"\bMatsuda\b", "Maurissen": r"\bMaurissen\b",
     "Park et al. (2025)": r"Park et al\.?,? \(?2025|\(Park et al\.\)",
     "Park et al. (2026)": r"Park et al\.?,? \(?2026",
@@ -90,7 +90,8 @@ def main_sentences():
         if line.lstrip().startswith("|"):
             result.append((TABLE_TAG.get(current, current), number, re.sub(r"\s{2,}", " ", line.strip())))
         elif fence:
-            result.append((current, number, line.strip()))
+            # Mermaid labels use a literal "\n" for line breaks; "\nDunham" would hide the name from \b
+            result.append((current, number, line.strip().replace("\\n", " ")))
         else:
             for sentence in split_sentences(line.strip()):
                 result.append((current, number, sentence))
