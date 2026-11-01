@@ -1,20 +1,20 @@
 # ToDo (päivitetty 1.11.2026)
 <!-- temp file that will be deleted -->
-Järjestys: **A → B → C1 ja D-julkaisu.** C2 ja D-luonnostelu eivät odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
+Järjestys: **A → B → C1 ja D-julkaisu.** D-luonnostelu ei odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
 
 ## A. Paperin sisältö (main.md ja tukitiedostot)
 Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vasten.
 
 ### A1. Oma läpiluku ja muokkaus (tehdään ensin, muuten väitelista vanhenee)
+- [x] käyty
+
+### A2. Lähdetarkistus ja claims-by-source.md läpikäynti valmiista tekstistä
+- Vinkki: isommat päätökset/pohdinnat voi käydä läpi komennolla `/grill-paper` 
+- Jos main.md muuttuu tarkistuksen aikana: aja `python -I scripts/claim_quotes.py --write` uudelleen (kuivaharjoitus ei muuta mitään, esim. `python -I scripts/claim_quotes.py --only Hwang`)
+
 - [ ] Omien päätelmien rekisteri, kohdat 1–27 (docs/claims-by-source.md, osio "Register of the author's own inferences", kirjoitettu uudelleen 1.11.): päätä, seisotko jokaisen sanamuodon takana. Erityisesti 1 ja 9 ovat trendiväitteitä ilman lähdettä (Introductionin "As the use of MEA-based assays has grown…" ja Fiducial-osion "growing emphasis" / "trends increasingly seen") ja 20 Morphology-osion "development … varies substantially"; 24–27 ovat outlookin hypoteeseja
-- [ ] Valinnainen: toisiko Obsidianin Graph View -kuva lähteiden riippuvuuksista lisäarvoa? Ainakin README.md, ei 
-- Vinkki: isommat päätökset voi käydä läpi komennolla `/grill-paper` ennen muokkausta
 
-### A2. claims-by-source.md uudelleen valmiista tekstistä
-- [x] Väitelista kirjoitettu puhtaaksi nykyisestä main.md:stä 1.11. (historia lokissa); rastit säilytetty muuttumattomille väitteille (Altrocchi 1–5 ja 7–9, Clements 4, Mäki 8, 11, 13, 14); `claim_quotes.py --write` ajettu, jokaisella väitteellä on virke main.md:stä
-- [ ] Jos main.md muuttuu tarkistuksen aikana: aja `python -I scripts/claim_quotes.py --write` uudelleen (kuivaharjoitus ei muuta mitään, esim. `python -I scripts/claim_quotes.py --only Hwang`)
 
-### A3. Oma lähdetarkistus
 - [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten Altrocchin tapaan (29 lähdettä, noin 190 väitettä; 1.11. tilanne: Altrocchi 8/9, Mäki 4/15, Clements 1/7, muut 0, rekisteri 0/28). Wikisivut on tarkistettu lähdetekstiä vasten (24.10. tai ingest-päivänä), mutta numerot ja kuvatulkinnat kannattaa varmistaa itse
   - Altrocchi: jäljellä vain (6) vertailuliuottimen ajelehtiminen (Table 2)
   - Erityisesti: Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten); lukematta jääneet liitteet: Correia ja Scheurer supplementary
@@ -34,6 +34,7 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
 - [ ] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 - [ ] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
+- [ ] Valinnainen: toisiko Obsidianin Graph View - kuva lähteiden riippuvuuksista lisäarvoa? pohdi lisäämistä `README.md`, ei tähän 
 
 ### Ei tähän versioon
 - Aktivaatio-palautumisintervalli (ARI) vaihtoehtona peak-to-peak-FPD:lle: todellinen tutkimuskäsite: oma Mäki 2023 -paperisi käsittelee jo ARI:ta. Riedel et al. (2014) käyttivät ARI:ta FPD:n sijaan ja ehdottivat sitä "the gold standard measure of repolarization ... in MEA analyses of iPSC CMs"; sinä kritisoit, ettei ARI kuvaa koko repolarisaatiota (loppu repolarisaatioaallon maksimiderivaatassa) ja että se vastaa APD50:tä, joten se ei ehkä havaitse EAD:ta. Viite Mäki 2023:n lähdeluettelosta: Riedel et al. (2014), Functional and pharmacological analysis of cardiomyocytes differentiated from human peripheral blood mononuclear-derived pluripotent stem cells, *Stem Cell Reports* 3(1), 131–141, doi:10.1016/j.stemcr.2014.04.017
@@ -71,7 +72,7 @@ Tehty 31.10. paikallisesti (../llm-wiki-academic-template), ei commitoitu eikä 
 - [x] Siirrä AGENTS.md:n käytännöt: raw-tiedostojen nimeäminen ingestissä, verify-before-ingest, ei hajatageja, finishing check, omien päätelmien rekisteri (claims-by-source), grill-osio ja lokin grill-etuliite
 - [x] Templaatin README: linkki tähän repoon esimerkkinä
 
-## D. Postaukset (LinkedIn lyhyt, kotisivun blogi kattava)
+## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
 Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
 - [x] Kopioi postausmuistiinpanot (entinen osio 6) kotisivurepoon; tiedosto on valmiina Clauden scratchpadissa (ks. 31.10. chat)
 - [ ] Blogipostaus ensin. 
