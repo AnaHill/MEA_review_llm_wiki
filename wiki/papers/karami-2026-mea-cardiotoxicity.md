@@ -32,6 +32,8 @@ Statements relevant to main.md (page numbers of the article):
 Our observations (not from the paper): a narrative review outside the hiPSC-CM analysis focus; several citation slips, for example cell types on p. 11 cited to unrelated papers (heart organoids to Hamill et al., 1981, a patch-clamp paper), "Can be used with heart organoids" listed as a disadvantage in Table 2, Iachetta et al. (2023) labelled "Xu et al. (2022)" in Table 5, and Ghosheh et al. (2023) cited as "Qin et al. 2024". Use it only for textbook-level statements (interface model, superposition, impedance sensitivity) and keep the primary sources in mind (Fromherz et al., 1991; Spira and Hai, 2013; Giaever and Keese, 1991).
 
 ## Relevance to our paper
+Cited in main.md from 2026-11-01 in the device-separation part of the outlook (opening statement, equivalent-circuit sentence, ill-posed sentence, impedance sentence).
+
 Supports the "Separating the recording system from the cellular signal" part of the Discussion and future outlook: (1) a source for the opening statement that the FP is shaped by tissue and hardware; (2) a source for the superposition argument behind the ill-posed inverse problem (register item 26); (3) the cell–electrode equivalent-circuit model as the concrete device model that system identification would have to estimate; (4) mechanistic support for the impedance-as-coupling hypothesis (register item 27). Candidate source found through it, not read: Lee, Park, Kim and Chung (2026), "Integrated electrophysiological and optical analysis of human iPSC-derived cardiomyocytes using transparent ITO microelectrode chip", Int. J. Stem Cells 19, 146–156 (possible hiPSC-CM counterpart to Hu et al., 2026, for the sensor-fusion paragraph).
 
 ## See also

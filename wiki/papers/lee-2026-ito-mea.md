@@ -34,6 +34,8 @@ Stated by the authors: immature hiPSC-CMs and 2D monolayers; contractility and C
 Our observations (not from the paper): one line, small n (4–5 wells per drug); the optical readouts are not synchronised with or analysed jointly with the FP; Ca²⁺ imaging only at baseline; the FPD definition is the vendor software's and not described; the beat period on doxorubicin day 1 (about 8 s, about 7 bpm) lies far outside the 20–90 bpm range accepted in the multisite CiPA study, which is where a Fridericia correction is least trustworthy.
 
 ## Relevance to our paper
+Cited in main.md from 2026-11-01: rate-correction paragraph (doxorubicin example), sensor-fusion paragraph (side by side), device-separation paragraph (hardware alters absolute values).
+
 (1) Rate correction: a concrete case in hiPSC-CMs where Fridericia-corrected FPD moved opposite to FPD when the beating rate slowed sharply (doxorubicin day 1), illustrating that the correction can mislead at extreme rates. (2) Device separation: the authors' statement that MEA chip composition and recording hardware may alter absolute signal values. (3) Sensor fusion: a hiPSC-CM example of FP and optical readouts from the same wells on a transparent MEA, analysed side by side rather than jointly, which supports the outlook's observation that modalities are mostly analysed separately.
 
 ## See also
