@@ -557,3 +557,11 @@ At the researcher's request, the single long paragraph was split into four (Altr
 ## [2026-11-01] draft | High-throughput section tightened to its topic; Park limits moved, Kabanov removed
 
 At the researcher's decision after a per-paragraph review: the Park et al. (2025, 2026) paragraph was shortened to two sentences at the end of the Altrocchi paragraph ("Disease-line screening is another application ... Both reported disease-specific drug sensitivities"); the two limits (one body of evidence; atrial-like Brugada lines) moved to the machine-learning paragraph of the FPDc section, where Park et al. (2026) is discussed, and "the former" there was replaced by "Pramudito et al. (2026)" to stay unambiguous. The CardioScripts sentences (Kabanov et al., 2026) were removed from the section, since the tool is multimodal rather than high-throughput or long-term; Kabanov remains in the Timeline, Table 1 and the Outlook. The section now has three paragraphs. docs/claims-by-source.md: Park 2025 (5)(6), Park 2026 (5)(6)(7) and Kabanov (2) annotated.
+
+## [2026-11-01] draft | Outlook: sensor-fusion paragraph split
+
+At the researcher's request, the sensor-fusion paragraph was split before "In these studies the modalities are mostly analysed separately or side by side": the first paragraph lists the existing multimodal studies, the second states the hypothesis and how it would be done. No wording changed.
+
+## [2026-11-01] draft | Outlook: Li 2025 added to the sensor-fusion example; paragraph split again
+
+The example "adding MEA-derived parameters to a video-based classifier of maturation status" now continues "for which MEA data from the same maturation conditions already exist (Li et al., 2025)" (Scheurer et al., 2025, base their B27 and MM groups on Li et al., 2025; same conditions, not the same cultures). The hypothesis paragraph was split before "The proposal is not to feed raw MEA signals to a model", so the sensor-fusion part now has three paragraphs: existing studies, hypothesis, method and cautions. docs/claims-by-source.md: Li (6) added, synthesis item 16 annotated; Li wiki page relevance note updated.
