@@ -569,3 +569,11 @@ The example "adding MEA-derived parameters to a video-based classifier of matura
 ## [2026-11-01] draft | Outlook: the two hypotheses linked (separated cellular signal as ML input)
 
 On the researcher's idea: the raw MEA signal as it is suits machine learning poorly, but a cellular signal separated from the recording system could be a useful input itself, beyond extracted parameters. The sensor-fusion method paragraph now ends with two sentences making this distinction and noting that whole extracellular waveforms have already been used as machine-learning input in tissue-embedded recordings (Lin et al., 2023); the device-separation paragraph's last sentence now adds that the separated cellular signal could serve as that input. docs/claims-by-source.md: synthesis item 23 (the link is the author's hypothesis) and Lin (6) added; Lin wiki page relevance note updated.
+
+## [2026-11-01] draft | Outlook: device-separation paragraph split into five
+
+At the researcher's request, the paragraph "Separating the recording system from the cellular signal" was split like the sensor-fusion part: (1) the problem and the forward model (Ernault, Lee, Botti); (2) the inverse hypothesis and training data (Mäki, Lee); (3) the recording side changing over time (Altrocchi impedance hypothesis); (4) the open questions (neighbouring cells, ill-posed inverse problem); (5) the digital twin, Vuorenpää and the payoff. Two referents fixed because the split separated them from their antecedents: "The same review notes" became "The review of cardiac microphysiological systems cited above notes", and "If this worked" became "If the separation worked".
+
+## [2026-11-01] draft | Outlook: inverse-hypothesis sentence split into four
+
+At the researcher's request, the long sentence starting "The hypothesis is the inverse direction" was split into four short sentences without changing its content or citation (Mäki, 2023; see the references therein).
