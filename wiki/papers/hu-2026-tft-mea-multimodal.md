@@ -38,6 +38,8 @@ Stated by the authors: a proof of concept; "broader validation across larger num
 Our observations (not from the paper): the number of cultures, chips or recordings is not reported; the labels are derived from the same recording and checked against the drug-addition time, so the 97 % accuracy measures agreement with k-means clusters on one dataset, not prediction on independent data; the "fusion" is shown as separate clustering of each modality (Fig. 4), and the SHAP plots list electrical features only, so how far optical and electrical features were combined in one model is unclear from the paper; the features are depolarization- and rate-based, not FPD; the cells are not hiPSC-CMs.
 
 ## Relevance to our paper
+Cited in main.md from 2026-11-01: in the sensor-fusion part of the Discussion and future outlook (with its limits stated) and in Limitations (ii) as evidence in fetal mouse cells.
+
 Directly relevant to the sensor-fusion part of the Discussion and future outlook: it is a published attempt to analyse simultaneous MEA and video recordings of the same culture jointly with interpretable machine learning, on a transparent MEA in the line of Ryynänen et al. (2018). It qualifies the outlook's observation that the modalities "are mostly analysed separately", but it does not settle the hypothesis: mouse fetal cells, 10 electrodes, a single proof-of-concept experiment, labels tied to one drug's onset, no repolarization features, and an unclear degree of feature-level fusion. Outside the hiPSC-CM scope of the review, so it belongs in the outlook as an example, not among the reviewed hiPSC-CM developments.
 
 ## See also

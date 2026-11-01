@@ -79,7 +79,7 @@ Local file: `raw/botti-2026-insilico.pdf` (+ peer review history); page `wiki/pa
     - > Forward modelling already includes the electrode: a bidomain model with a resistor–capacitor electrode model simulates FPs from phenotype-specific cell models (Botti et al., 2026). — main.md:169
     - > The forward model of Botti et al. (2026) is the closest existing component among the studies examined, but it was not fitted to new measurements. — main.md:177
 - [ ] (4) [Limitations] example of simulation-based evidence.
-    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
+    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
 
 ## Clements et al. (2025)
 
@@ -186,7 +186,7 @@ Local file: `raw/ernault-2024-interpretation.pdf`; page `wiki/papers/ernault-202
     - > The T-wave peak tracks APD90 only when the T wave is biphasic (Ernault et al., 2024), and R-to-T-peak FPD correlated only minimally with APD50 and APD90 from intracellular-like signals on the same electrodes (Lee et al., 2024). — main.md:169
     - > Whether the AP can be recovered from the FP at all is an open question: the FP also depends on current from neighbouring cells (Ernault et al., 2024), so removing the device contribution alone would not be sufficient. — main.md:175
 - [ ] (6) [Limitations] example of evidence in rat cells.
-    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
+    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
 - [ ] (7) [Conclusion] interpretation restricted to biphasic T waves is an example of case-by-case morphology handling.
     - > In the studies examined, morphology handling is described case by case: analysis of inverted signals, exclusion of electrodes, or interpretation restricted to biphasic T waves (Mäki, 2023; Ernault et al., 2024; Weiser-Bitoun et al., 2026). — main.md:202
 
@@ -205,7 +205,7 @@ Local file: `raw/fetterman-2024-maturation.pdf`; page `wiki/papers/fetterman-202
 - [ ] (4) [Conclusion] because maturation is induced largely independently, a benchmark could only cover the electrophysiological axis.
     - > Because functional, metabolic and transcriptional maturation are induced largely independently (Fetterman et al., 2024), such a benchmark could only cover the electrophysiological axis. — main.md:204
 - [ ] (5) [Limitations] example of a non-MEA modality.
-    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
+    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
 
 Pointers: (3) summary p. 2 ("induction of these attributes is largely independent"); p. 7 ("Fatty acids contribute to metabolism but not viability, Ca²⁺ dynamics, impedance, or Nav current"). (2) single-addition and single-subtraction experiments (Figure 2, p. 6); nine formulations in the RNA-seq comparison (Figure 6, p. 10).
 
@@ -257,6 +257,19 @@ Local file: `raw/hayakawa-2014-motion-fp.pdf`; page `wiki/papers/hayakawa-2014-m
 
 Pointers: (1) p. 3 ("The end of the FPD was previously defined as either the peak of the positive deflection ... or the point where the positive deflection returns to the baseline ... The former end-point appears to be correlated with the upstroke of relaxation motion, while the latter ... with the peak of relaxation motion. However, determination of an accurate end-point of FP proved difficult to establish"). (2) TTX section, p. 5: FPD "between the initial negative peak and the peak of positive deflection" (confirmed by the researcher 2026-10-29). (3)(5) abstract p. 1; p. 5–6 (E-4031 R = 0.915, slope 1.362; verapamil R = 0.970, 0.633; isoproterenol R = 0.943, 0.738); p. 11 ("the CRD can be a surrogate of the FPD in non-arrhythmic conditions").
 
+## Hu et al. (2026)
+
+Local file: `raw/hu-2026-tft-mea-multimodal.pdf` (+ supplementary; both git-ignored, not open access); page `wiki/papers/hu-2026-tft-mea-multimodal.md`. Status: full text and supplement read, Figures 2–7 viewed, at ingest 2026-11-01. Fetal mouse cardiomyocytes, outside the hiPSC-CM scope; cited in the outlook only.
+
+- [ ] (1) [Outlook] a proof of concept on a transparent thin-film-transistor MEA recorded field potentials and video of the same culture of fetal mouse cardiomyocytes and analysed both with interpretable machine learning, separating the recording before and after isoprenaline.
+    - > A recent proof of concept on a transparent thin-film-transistor MEA recorded field potentials and video of the same culture of fetal mouse cardiomyocytes and analysed both with interpretable machine learning, separating the recording before and after isoprenaline (Hu et al., 2026). — main.md:163
+- [ ] (2) [Outlook] it used ten electrodes and depolarization-based features without FPD, and the two modalities were clustered separately, so how far they were combined in one model is unclear.
+    - > A recent proof of concept on a transparent thin-film-transistor MEA recorded field potentials and video of the same culture of fetal mouse cardiomyocytes and analysed both with interpretable machine learning, separating the recording before and after isoprenaline (Hu et al., 2026). — main.md:163
+- [ ] (3) [Limitations] example of evidence in fetal mouse cells.
+    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
+
+Pointers: (1) section 2.1.2 (primary prenatal mouse cardiomyocytes, "rather than iPSC-derived cells"), 2.3 (optical flow; alignment by the drug-addition timestamp), 2.6 (k-means, supervised check, SHAP; "a sensor fusion technique"), Fig. 4 (isoprenaline). (2) section 2.2.3 and 3.1 (10 adjacent electrodes), Fig. 3 (features on the depolarization spike: R50/R90 times to and from peak, peak width, peak-to-peak interval), Fig. 4 (k-means per modality), Fig. 6 (SHAP lists electrical features only). "How far they were combined ... is unclear" is our reading of Figs 4 and 6.
+
 ## Hwang et al. (2023)
 
 Local file: `raw/hwang-2023-spheroids.pdf`; page `wiki/papers/hwang-2023-spheroids.md`. Status: checked against the full text 2026-10-24.
@@ -270,7 +283,7 @@ Local file: `raw/hwang-2023-spheroids.pdf`; page `wiki/papers/hwang-2023-spheroi
 - [ ] (4) [Conclusion] in simulations the 3D geometry alone changed FP shape.
     - > In one study, Fridericia-corrected FPD was similar in 2D monolayers and 3D tissue sheets (Maurissen et al., 2024), but in simulations the 3D geometry alone changed FP shape (Hwang et al., 2023), and conventional MEAs contact 3D tissue only on one surface (Lin et al., 2023). — main.md:203
 - [ ] (5) [Limitations] example of simulation-based evidence.
-    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
+    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
 
 Pointers: (3) abstract p. 1 and Discussion p. 7; one cell source and two drugs from the wiki page (Our observations). (2) p. 5 ("FPD corrected with Fridericia's formula").
 
@@ -389,7 +402,7 @@ Local file: `raw/lin-2023-nanoelectronics.pdf` (+ supplementary); page `wiki/pap
 - [ ] (6) [Outlook] whole extracellular waveforms have already been used as machine-learning input, in tissue-embedded recordings.
     - > If the cellular signal could be separated from it, as outlined next, that signal could be a useful input in its own right, beyond the parameters extracted from it; whole extracellular waveforms have already been used as machine-learning input, in tissue-embedded recordings (Lin et al., 2023). — main.md:167
 - [ ] (7) [Limitations] example of evidence from tissue-embedded electrodes.
-    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
+    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
 
 Pointers: (1)(6) Methods p. 14 (PHATE + Slingshot on all channel-averaged waveforms, default parameters), Fig. 4. (3) "spike duration" = time between maximum and minimum dV/dt (p. 14). (4) scRNA-seq on separate cocultures. (5) p. 2 and table S1.
 
@@ -625,7 +638,7 @@ Local files: `raw/scheurer-2025-optical-ai.pdf` (+ supplementary, not read); pag
     - > Video-based beating features have also been classified with an interpretable machine-learning model, although without MEA data (Scheurer et al., 2025), and an MEA with transparent electrodes has been used to record the field potential and the video-based motion of the same single hPS-CM at the same time, although the two recordings were not automatically synchronised (Ryynänen et al., 2018). — main.md:163
     - > A further caution is that machine-learning classifiers in the studies examined were trained on small datasets (Scheurer et al., 2025; Park et al., 2026; Pramudito et al., 2026). — main.md:167
 - [ ] (7) [Limitations] example of a non-MEA modality.
-    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
+    - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:186
 
 Pointers: (3) abstract p. 1 (230 videos, 10 features, accuracy 99.5 ± 1.1 %); p. 5 table (test set n = 46). (4) p. 9 ("Hayakawa et al. simultaneously measured field potentials and motion in iPSC-CMs and observed strong correlations between field potential duration (FPD) and contraction duration"). (5) reference [11], pp. 5–6.
 
@@ -699,7 +712,7 @@ These are statements in `main.md` that no single reference supports, generalisat
 - [ ] 21. [3D, Scope] "so this endpoint transferred in that setting" (Maurissen); "no study examined here compared fiducial definitions between 2D and 3D recordings systematically"; the Scope sentence limiting 3D and in silico modelling to the transfer question (a scope decision). Support: inference (first); thin (second).
 - [ ] 22. [High-throughput] high-throughput and chronic applications "require stable beat detection, robust handling of arrhythmic events, and consistent analysis across extended recording periods and large historical datasets"; multi-parameter feature sets "make clearly defined analysis methods even more important"; "temporal drift and culture equilibration effects can confound interpretation if fiducial definitions and quality control criteria are not reported". Based on: Altrocchi (6), (7); Matsuda; Guerrelli. Support: inference; the drift itself is sourced.
 - [ ] 23. [Motivation, Conclusion] the list of uses in the studies examined, and machine learning "may become a more integral layer of cardiomyocyte MEA workflows". Based on: the studies named. Support: supported for the list; the outlook is an opinion.
-- [ ] 24. [Outlook] sensor fusion: "In these studies the modalities are mostly analysed separately or side by side"; interpreting them jointly with AI support "could give a more complete picture of a preparation than any single signal". Based on: Altrocchi, Lee, Kabanov, Hayakawa, Scheurer, Ryynänen, Li, Vuorenpää, Mäki. Support: thin (observation); none (hypothesis, stated as such).
+- [ ] 24. [Outlook] sensor fusion: "In most of these studies the modalities are analysed separately or side by side, and the one joint analysis is a small proof of concept outside hiPSC-CMs"; interpreting them jointly with AI support "could give a more complete picture of a preparation than any single signal". Based on: Altrocchi, Lee, Kabanov, Hayakawa, Scheurer, Ryynänen, Hu, Li, Vuorenpää, Mäki. Support: thin (observation; Hu et al., 2026, is the one joint analysis found, in fetal mouse cells); none for the hypothesis in hiPSC-CMs (stated as such).
 - [ ] 25. [Outlook] the doubt about raw MEA signals "concerns the raw recording as it is, shaped by the culture and the recording system"; a separated cellular signal "could be a useful input in its own right, beyond the parameters extracted from it", repeated at the end of the device-separation part. The researcher's idea (2026-11-01). Based on: Mäki (the doubt, the two-step approach); Lin (6) is the only sourced part. Support: none for the separated-signal part.
 - [ ] 26. [Outlook] device separation: estimating and separating the MEA device and tissue contribution by reverse engineering (system identification), so that the remaining signal resembles the cellular AP more closely; electroporation data and sensor fusion as training and validation data; "removing the device contribution alone would not be sufficient"; the recovery "may also be an ill-posed inverse problem, because a field potential is a weighted sum of the transmembrane currents of many surrounding cells"; a calibrated model as a digital twin of the recording; more comparable results across hardware. Based on: Mäki, Lee, Ernault, Botti, Vuorenpää. Support: none (hypotheses; the ill-posed point is from extracellular recording theory, unsourced).
 - [ ] 27. [Outlook] impedance as an attachment marker: "such an impedance channel could also indicate FP changes that stem from altered attachment, and thus from altered coupling between cells and electrodes, rather than from changes in the AP of the cells themselves". The researcher's idea (2026-10-26). Based on: Altrocchi (9). Support: none (not tested in that study).

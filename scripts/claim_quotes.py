@@ -39,7 +39,7 @@ SOURCES = {
     "Altrocchi": r"\bAltrocchi\b", "Blinova": r"\bBlinova\b", "Botti": r"\bBotti\b",
     "Clements": r"\bClements\b", "Correia": r"\bCorreia\b", "Dunham": r"\bDunham\b",
     "Ernault": r"\bErnault\b", "Fetterman": r"\bFetterman\b", "Guerrelli": r"\bGuerrelli\b",
-    "Hayakawa": r"\bHayakawa\b", "Hwang": r"\bHwang\b", "Ismaili": r"\bIsmaili\b",
+    "Hayakawa": r"\bHayakawa\b", "Hu": r"\bHu et al\b", "Hwang": r"\bHwang\b", "Ismaili": r"\bIsmaili\b",
     "Kabanov": r"\bKabanov\b", "Lee": r"\bLee et al\b", "Li et al. (2025)": r"\bLi et al\.?,? \(?2025",
     "Lin": r"\bLin et al\b", "Mäki": r"\bMäki\b",
     "Matsuda": r"\bMatsuda\b", "Maurissen": r"\bMaurissen\b",
