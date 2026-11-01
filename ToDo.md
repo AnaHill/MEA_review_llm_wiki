@@ -22,12 +22,9 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
   - Uudet: Hayakawa 2014 ja Vuorenpää 2023 luettu kokonaan (Vuorenpään kuvia ei katsottu); Ryynänen 2018 luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 luettu liitteineen, Li:n luvut tarkistettu Supplementary Tableista 2–3 (main.md käyttää S3:n CV- ja spike amplitude -lukuja); 1.11. lisätyt Hu 2026 (sikiövaiheen hiiren solut, kuvat 2–7 katsottu), Karami 2026 (katsaus, viitevirheitä, käytetään vain MEA-fysiikkaan) ja Lee 2026 (kuva 4 katsottu) luettu kokonaan. Lue main.md:n tiivistykset itse
   - Kaksi auki olevaa tarkistusta: Dunham (5) "R wave" vs R peak ja Lee et al. (2024) (5) "R spike" vs R peak
 
-### A3B Highlights alkuun
-- [x] Tehdään tiivistelmä / highlights tieteelliset havainnot
 
-### A3C Abbreviations alkupuolelle? Pitääkö symbolit yms _kursivoida_ tms?
-- Harkitse lyhennelmän listausta alkupuolelle, esim tiivistelmän jälkeen. siitä voisi tehdä myös skriptit tms joka tarkistaa asian. Jos tuollaista tulee, viedään se myös akateemiseen repoon
-- lyhenteiden _kursivointi_ tai vastaava käsittely, kannattaako?!
+### A3 Abbreviations alkupuolelle? Pitääkö symbolit yms _kursivoida_ tms?
+- toteutetaan
 
 ### A4. Lopputarkistukset
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
