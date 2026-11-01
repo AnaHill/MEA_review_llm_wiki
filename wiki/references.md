@@ -32,6 +32,8 @@ Hwang, M., Lee, S.-J., Lim, C.-H., Shim, E. B., & Lee, H.-A. (2023). The three-d
 
 Ismaili, D., Schulz, C., Eschenhagen, T., Christ, T., Hansen, A., Mika, D., Koivumäki, J. T., & Horváth, A. (2023). Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective. *Frontiers in Physiology*, *14*, 1132165. https://doi.org/10.3389/fphys.2023.1132165
 
+Karami, N., Knafl, S., Wanzenboeck, H. D., & Prado-López, S. (2026). Microelectrode arrays: from electrophysiology to integrated cancer treatment induced cardiotoxicity assessment. *Frontiers in Electronics*, *7*, 1886715. https://doi.org/10.3389/felec.2026.1886715
+
 Kabanov, D. A., Vrana, S., Beckerová, D., Rotrekl, V., Pesl, M., & Přibyl, J. (2026). A comprehensive system of algorithms for characterization of cardiomyocyte mechanical and electrical function. *Biomedical Signal Processing and Control*, *120*, 110125. https://doi.org/10.1016/j.bspc.2026.110125
 
 Lee, J., Duperrex, E., El-Battrawy, I., Hohn, A., Saguner, A. M., Duru, F., Emmenegger, V., Cyganek, L., Hierlemann, A., & Ulusan, H. (2024). CardioMEA: comprehensive data analysis platform for studying cardiac diseases and drug responses. *Frontiers in Physiology*, *15*, 1472126. https://doi.org/10.3389/fphys.2024.1472126
