@@ -2,7 +2,7 @@
 <!-- temp file that will be deleted -->
 <!-- Continue manual check here -->
 jatka kohdasta:
-- rivi 148 ## High-throughput and longitudinal assays drive broader feature sets
+- rivi 148 ## High-throughput and long-term assays (otsikko muutettu 1.11.)
 
 Järjestys: **A → B → C1 ja D-julkaisu.** C2 ja D-luonnostelu eivät odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
 
