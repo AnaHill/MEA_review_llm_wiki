@@ -577,3 +577,7 @@ At the researcher's request, the paragraph "Separating the recording system from
 ## [2026-11-01] draft | Outlook: inverse-hypothesis sentence split into four
 
 At the researcher's request, the long sentence starting "The hypothesis is the inverse direction" was split into four short sentences without changing its content or citation (Mäki, 2023; see the references therein).
+
+## [2026-11-01] draft | Limitations as a list
+
+At the researcher's request, the Limitations paragraph became a lead-in and a bulleted list that keeps the roman numerals (i)–(vii), so cross-references such as "Limitations (vi)" in wiki pages and the claims file stay valid; long sentences were split. Two updates: (i) now mentions the one documented search on maturation reference values (see Scope); (ii) adds tissue-embedded electrodes (Lin et al., 2023) to the kinds of non-standard evidence.
