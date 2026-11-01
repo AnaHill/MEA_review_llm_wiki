@@ -621,3 +621,19 @@ At the researcher's approval. Rate correction: after the cube-root sentence, "In
 ## [2026-11-01] draft | Declarations generalised; Li 2025 and Lee 2026 added to the timeline
 
 Declarations, competing interests: "both cited in the outlook" became "both cited in this review" (Vuorenpää et al., 2023, is also cited in the Motivation and Ryynänen et al., 2018, in the rate-correction section). Figure 1: "MEA parameters differ between maturation conditions (Li et al.)" under 2025 and "Transparent ITO MEA with FP and optical readouts of hiPSC-CMs (Lee et al.)" under 2026. Hu et al. (2026) and Karami et al. (2026) were not added (fetal mouse cells; a review). docs/claims-by-source.md: Timeline claims (0) for Li and Lee 2026, Vuorenpää (4) annotated; scripts/claim_quotes.py: the two "(Lee et al.)" timeline rows are told apart by their text, and "(Li et al.)" is recognised. ToDo.md: source-check item updated with Hu, Karami and Lee 2026 and the open R-peak check pinned to Lee et al. (2024).
+
+## [2026-11-01] draft | Highlights added; Declarations AI sentence on the claims checklist
+
+At the researcher's request, a "Highlights" section of five uncited bullets (at most about 85 characters each) after the Abstract: open tools with differing FPD definitions; no hiPSC-CM-specific rate correction and Fridericia misleading at extreme rates; no validated MEA-derived maturation reference values; case-by-case morphology handling; ML on MEA data possibly learning analysis differences. LLM-wiki lessons were kept out of the highlights (not findings of the review). Declarations, use of AI assistance: added "Every claim that the text attributes to a source is listed in a checklist for verification against that source, and statements that are the author's own inferences are listed separately; both lists are in the project repository" (worded so as not to claim that the verification is complete). docs/claims-by-source.md: Highlights added to the section list and register item 0. Abbreviations list deferred to a later step.
+
+## [2026-11-01] draft | First highlight reworded
+
+The researcher noted that "Open MEA analysis tools have appeared" suggests open tools are new since 2022, which the text itself contradicts (MultiElec, CardioMDA before 2022). The bullet now reads "Open MEA tools define FPD differently; their FPD values are not directly comparable". docs/claims-by-source.md register item 0 updated.
+
+## [2026-11-01] draft | Sixth highlight on raw signals and device separation
+
+At the researcher's choice (option b), the fifth highlight stays tied to the four gaps, and a sixth was added: "Raw MEA signals mix cell, tissue and device; separating them is proposed as a hypothesis". Raw-signal problems come from cultures and recording hardware, not from analysis definitions, so they were kept apart from "Without these". docs/claims-by-source.md register item 0 updated.
+
+## [2026-11-01] draft | First highlight: "Open" removed by the researcher
+
+The researcher removed "Open" from the first highlight, which now reads "MEA tools define FPD differently; their FPD values are not directly comparable", because vendor tools also define FPD in their own ways. docs/claims-by-source.md register item 0 rewritten for the six highlights; it notes that the reviewed sources document the open tools' FPD definitions, while the vendor tool's definition is not described in the studies that used it.

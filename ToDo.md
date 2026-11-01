@@ -21,13 +21,8 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
   - Kaksi auki olevaa tarkistusta: Dunham (5) "R wave" vs R peak ja Lee et al. (2024) (5) "R spike" vs R peak
 
 ### A3B Highlights alkuun
-- Tehdään tiivistelmä / highlights kohta alkuun, jossa eritellään
-  - [ ] tieteelliset havainnot
-    - "esim. FPDc-korjauksen validoinnin puute ja MEA-pohjaisten kypsyysviitearvojen puute" LLM-wikin kehityskohdat
-    - the lack of a validated hiPSC-CM–specific formula is a methodological gap that directly limits the comparability of FPDc endpoints between studies.  
-    - No study proposing or validating MEA-derived reference values for hiPSC-CM maturation
-    - onko muita
-  - [ ] LLM-wiki kehityskohdat mitä tässä opittin
+- [x] Tehdään tiivistelmä / highlights tieteelliset havainnot
+  - [x] HUOM! Ei tehdä tähän: postauksissa/repossa sitten "LLM-wiki kehityskohdat mitä tässä opittin", ei tässä
 
 ### A3C Abbreviations alkupuolelle? Pitääkö symbolit yms _kursivoida_ tms?
 - Harkitse lyhennelmän listausta alkupuolelle, esim tiivistelmän jälkeen. siitä voisi tehdä myös skriptit tms joka tarkistaa asian. Jos tuollaista tulee, viedään se myös akateemiseen repoon
