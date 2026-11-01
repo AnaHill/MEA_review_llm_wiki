@@ -581,3 +581,11 @@ At the researcher's request, the long sentence starting "The hypothesis is the i
 ## [2026-11-01] draft | Limitations as a list
 
 At the researcher's request, the Limitations paragraph became a lead-in and a bulleted list that keeps the roman numerals (i)–(vii), so cross-references such as "Limitations (vi)" in wiki pages and the claims file stay valid; long sentences were split. Two updates: (i) now mentions the one documented search on maturation reference values (see Scope); (ii) adds tissue-embedded electrodes (Lin et al., 2023) to the kinds of non-standard evidence.
+
+## [2026-11-01] draft | Conclusion: the four gaps as a numbered list
+
+At the researcher's request, the long gap paragraph of the Conclusion became a lead-in ("Four methodological gaps stand out as priorities:") and a numbered list, each item opening with its bold gap statement, with shorter sentences. Wording changes besides splitting: gap 1 "would substantially improve the reliability of FPDc" became "would make FPDc a more reliable pharmacological endpoint" (no source measures the size of the effect); gap 4 "would materially improve inter-study comparability" became "would improve comparability between studies", and the unclear analogy "comparable to how FPDc reports how rate-corrected a measurement is" was dropped; the Correia point is now a plain sentence ("for one drug target, in vitro results correlated with in vivo results only in matured cells"). Citations unchanged.
+
+## [2026-11-01] draft | Conclusion: first paragraph tightened
+
+At the researcher's request, "transparent, physiologically reasoned, and model-conscious practices" became "transparent and physiologically reasoned practices", and "model-specific interpretation" was dropped from the list of developments, since the narrowed 3D section no longer supports them.
