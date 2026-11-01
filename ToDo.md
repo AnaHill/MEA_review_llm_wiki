@@ -90,4 +90,5 @@ Tehty 31.10. paikallisesti (../llm-wiki-academic-template), ei commitoitu eikä 
 Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
 - [x] Kopioi postausmuistiinpanot (entinen osio 6) kotisivurepoon; tiedosto on valmiina Clauden scratchpadissa (ks. 31.10. chat)
 - [ ] Blogipostaus ensin. 
+  - [ ] lisää sinne tätä "samalla ne korostavat entisestään laadukkaan dataperustan, hyvän datan hallinnan ja oikeiden arkkitehtuuripäätösten merkitystä." kohtaa, voisiko saada muutakin kuin datalaatu mukaan
 - [ ] LinkedIn-postaus: viittaa repoon, zenodoon ja blogiin
