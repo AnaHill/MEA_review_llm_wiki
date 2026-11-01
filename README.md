@@ -47,7 +47,7 @@ wiki/
 main.md            paper draft — IMRaD sections, single file
 notes.md           the author's own notes (the agent does not edit it)
 docs/              process documents (see docs/README.md): claims-by-source checklist, lint audit trail, PDF export notes, search strategy, maturation search record
-scripts/           check.py (consistency check), render_pdf_pages.py (PDF text and page images), claim_quotes.py (main.md sentences under each source's claims)
+scripts/           check.py (consistency check), render_pdf_pages.py (PDF text and page images), claim_quotes.py (main.md sentences under each source's claims), check_abbreviations.py (abbreviation list)
 skills/            Agent skill definitions (reference)
 .claude/skills/    skills Claude Code loads: grill-paper (/grill-paper)
 AGENTS.md          wiki schema and LLM instructions (CLAUDE.md just imports it)

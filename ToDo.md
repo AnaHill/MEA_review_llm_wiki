@@ -38,8 +38,9 @@ Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: 
 - Lopuksi aja `python -I scripts/check.py`
 
 
-### A3 Abbreviations alkupuolelle? Pitääkö symbolit yms _kursivoida_ tms?
-- toteutetaan
+### A3. Lyhenteet ja kursivointi
+- [x] Tehty 1.11.: `# Abbreviations` highlightsien jälkeen (33 lyhennettä), jokainen auki kirjoitettu ensimmäisellä käyttökerralla; `scripts/check_abbreviations.py` tarkistaa (0 varoitusta); käytännöt AGENTS.md:ssä (lyhenteitä ei kursivoida; geenit kursiivilla, alaindeksit `<sub>`-muodossa, in vitro pystyssä)
+- [ ] Jos main.md muuttuu: aja `python -I scripts/check_abbreviations.py`
 
 ### A4. Lopputarkistukset
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
@@ -75,10 +76,12 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 
 ### C2. llm-wiki-academic-template
 - [ ] tarkista lopuksi, ettei tässä repossa ole tullut mitään uutta hyödyllistä mitä kannattaisi laittaa templaattiin, tehty 1.11. asti muutokset, vain sen jälkeiset
+  - Uusi 1.11.: vie templaattiin `scripts/check_abbreviations.py` (tyhjennä paperikohtainen IGNORE-lista) ja AGENTS.md:n lyhenne- ja kursivointikäytäntö
 
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
 Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
 - [x] Kopioi postausmuistiinpanot (entinen osio 6) kotisivurepoon; tiedosto on valmiina Clauden scratchpadissa (ks. 31.10. chat)
 - [ ] Blogipostaus ensin. 
+  - [ ] lisää Abbreviations helppous lopuksi kun wiki ja kaikki kunnossa; skriptit tarkistaa ettei mitään puutu ja agentti ajaa kunnes valmista
   - [ ] lisää sinne tätä "samalla ne korostavat entisestään laadukkaan dataperustan, hyvän datan hallinnan ja oikeiden arkkitehtuuripäätösten merkitystä." kohtaa, voisiko saada muutakin kuin datalaatu mukaan
 - [ ] LinkedIn-postaus: viittaa repoon, zenodoon ja blogiin
