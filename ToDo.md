@@ -15,8 +15,10 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [ ] Jos main.md muuttuu tarkistuksen aikana: aja `python -I scripts/claim_quotes.py --write` uudelleen (kuivaharjoitus ei muuta mitään, esim. `python -I scripts/claim_quotes.py --only Hwang`)
 
 ### A3. Oma lähdetarkistus
-- [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten Altrocchin tapaan. Wikisivut on tarkistettu lähdetekstiä vasten 24.10., mutta numerot ja kuvatulkinnat kannattaa varmistaa itse
-  - Erityisesti: Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten); lukematta jääneet liitteet: Correia ja Scheurer supplementary
+- [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten Altrocchin tapaan (29 lähdettä, noin 190 väitettä; 1.11. tilanne: Altrocchi 8/9, Mäki 4/15, Clements 1/7, muut 0, rekisteri 0/28). Wikisivut on tarkistettu lähdetekstiä vasten (24.10. tai ingest-päivänä), mutta numerot ja kuvatulkinnat kannattaa varmistaa itse
+  - Altrocchi: jäljellä vain (6) vertailuliuottimen ajelehtiminen (Table 2)
+  - Erityisesti: Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten); lukematta jääneet liitteet: Correia ja Scheurer supplementary
+  - Clements (4): AIMS-sivun lainaus saatiin verkkotyökalun kautta, tarkista sanamuoto itse sivulta
   - Uudet: Hayakawa 2014 ja Vuorenpää 2023 luettu kokonaan (Vuorenpään kuvia ei katsottu); Ryynänen 2018 luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 luettu liitteineen, Li:n luvut tarkistettu Supplementary Tableista 2–3 (main.md käyttää S3:n CV- ja spike amplitude -lukuja); 1.11. lisätyt Hu 2026 (sikiövaiheen hiiren solut, kuvat 2–7 katsottu), Karami 2026 (katsaus, viitevirheitä, käytetään vain MEA-fysiikkaan) ja Lee 2026 (kuva 4 katsottu) luettu kokonaan. Lue main.md:n tiivistykset itse
   - Kaksi auki olevaa tarkistusta: Dunham (5) "R wave" vs R peak ja Lee et al. (2024) (5) "R spike" vs R peak
 
