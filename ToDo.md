@@ -1,6 +1,6 @@
 # ToDo (päivitetty 1.11.2026)
 <!-- temp file that will be deleted -->
-Järjestys: **A → B → C1 ja D-julkaisu.** D-luonnostelu ei odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
+Järjestys: **A → B → C -> D.** D-luonnostelu ei odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
 
 ## A. Paperin sisältö (main.md ja tukitiedostot)
 Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vasten.
@@ -39,7 +39,7 @@ Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: 
 
 
 ### A3. Lyhenteet ja kursivointi
-- [x] Tehty 1.11.: `# Abbreviations` highlightsien jälkeen (33 lyhennettä), jokainen auki kirjoitettu ensimmäisellä käyttökerralla; `scripts/check_abbreviations.py` tarkistaa (0 varoitusta); käytännöt AGENTS.md:ssä (lyhenteitä ei kursivoida; geenit kursiivilla, alaindeksit `<sub>`-muodossa, in vitro pystyssä)
+- [x] Tehty 1.11.: `# Abbreviations` highlightsien jälkeen 
 - [ ] Jos main.md muuttuu: aja `python -I scripts/check_abbreviations.py`
 
 ### A4. Lopputarkistukset
@@ -79,8 +79,28 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
 Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
-- [x] Kopioi postausmuistiinpanot (entinen osio 6) kotisivurepoon; tiedosto on valmiina Clauden scratchpadissa (ks. 31.10. chat)
+
 - [ ] Blogipostaus ensin. 
   - [ ] lisää Abbreviations helppous lopuksi kun wiki ja kaikki kunnossa; skriptit tarkistaa ettei mitään puutu ja agentti ajaa kunnes valmista
   - [ ] lisää sinne tätä "samalla ne korostavat entisestään laadukkaan dataperustan, hyvän datan hallinnan ja oikeiden arkkitehtuuripäätösten merkitystä." kohtaa, voisiko saada muutakin kuin datalaatu mukaan
+  - [ ] peruskuvaus järkevästä tavasta
+    - vibe-reaserching / palloittelu alkuun
+      - raakaversio
+      - lähteiden haku agenttinen + omat etsinnät (suositeltavaa)
+    - kun karkea versio
+      - manuaalinen main luku -> virheet korjataan, lisäykset kannattaa vasta seuraavassa iteraatiossa 
+      - claims-by-source läpikäynti kun vielä vähän -> helpompaa
+    - lisäyksiä / täydennyksiä
+      - uusia ideoita yms
+    - Grinding
+      - lopullisen main.md käynti
+      - claims päivitykset sen jälkeen
+      - manuaalinen läpikäynti jokainen erikseen: DETAILS DO MATTER in Science
+    - Highlights lisäys
+    - (mahdollinen lehden valinta; vittaukset, lähdeluettelo, kuvatekstit yms)
+    - Abrreviations teko
+    - ...
+
+
+
 - [ ] LinkedIn-postaus: viittaa repoon, zenodoon ja blogiin
