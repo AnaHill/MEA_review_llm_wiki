@@ -6,13 +6,12 @@ Järjestys: **A → B → C1 ja D-julkaisu.** C2 ja D-luonnostelu eivät odota m
 ## A. Paperin sisältö (main.md ja tukitiedostot)
 Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vasten.
 
-Jo tehty: Table 1 ok; Declarations alaspäin ok; uusi kypsyyshaku 30.10. (docs/maturation-mea-search.md), Li 2025 ja Lin 2023 ingestoitu ja lisätty main.md:hen.
 
 ### A1. Oma läpiluku ja muokkaus (tehdään ensin, muuten väitelista vanhenee)
 Jos lukiessa herää epäily lähteeseen liittyvästä kohdasta, merkitse se kommentilla ja jatka eteenpäin.
-- [ ] Lue koko main.md ja muokkaa tekstiä
-- [ ] Morphology-osion alku: "FP waveform morphology varies substantially across preparations, maturation states, …". Tukevatko Ernault 2024 ja Mäki 2023 sanaa "substantially", vai riittääkö "varies"? (Sama tyyppi kuin 29.10. korjattu "can substantially influence".)
-- [ ] "Discussion and future outlook": lue ja muokkaa omalla tyylilläsi (sensor fusion + AI; laitteen osuuden poisto signaalista)
+- [x] Lue koko main.md ja muokkaa tekstiä
+- [x] Morphology-osion alku: "FP waveform morphology varies substantially across preparations, maturation states, …". Tukevatko Ernault 2024 ja Mäki 2023 sanaa "substantially", vai riittääkö "varies"? (Sama tyyppi kuin 29.10. korjattu "can substantially influence".)
+- [x] "Discussion and future outlook": lue ja muokkaa omalla tyylilläsi (sensor fusion + AI; laitteen osuuden poisto signaalista)
 - [ ] Synteesikohdat 1–21 (docs/claims-by-source.md, osio "Claims that rest on the author's own synthesis or are not cited", ainoa rekisteri omille päätelmille): kohdat 1, 3, 9, 10, 14 ja 15 pehmennettiin 24.10. (docs/lint-fixes-2026-10-24.md, ryhmä 7), päätä kelpaavatko; 16, 17 ja 21 ovat outlookin hypoteeseja; 18–20 lisättiin 30.10.
 - [ ] Päätä Hu et al. (2026), *Biomed. Phys. Eng. Express* 12(4), 045036, doi:10.1088/2057-1976/ae87aa (läpinäkyvä TFT-MEA, sähköinen + optinen data, ohjaamaton ML + SHAP; vain abstrakti nähty). Jos mukaan: hanki PDF nimellä raw/hu-2026-tft-mea-multimodal.pdf, lisää nimi .gitignoreen ennen committia, ingest ja outlookin päivitys (sensor fusion -kappale, "mostly analysed separately", synteesikohta 16, wiki/multimodal-measurement.md). Jos ei: siirrä "ei tähän versioon" -listalle
 - [ ] Valinnainen: toisiko Obsidianin Graph View -kuva lähteiden riippuvuuksista lisäarvoa?
