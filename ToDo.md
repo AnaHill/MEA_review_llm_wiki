@@ -35,9 +35,6 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [ ] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
 - [ ] Valinnainen: toisiko Obsidianin Graph View - kuva lähteiden riippuvuuksista lisäarvoa? pohdi lisäämistä `README.md`, ei tähän mainiin
 
-### Ei tähän versioon
-- Aktivaatio-palautumisintervalli (ARI) vaihtoehtona peak-to-peak-FPD:lle: todellinen tutkimuskäsite: oma Mäki 2023 -paperisi käsittelee jo ARI:ta. Riedel et al. (2014) käyttivät ARI:ta FPD:n sijaan ja ehdottivat sitä "the gold standard measure of repolarization ... in MEA analyses of iPSC CMs"; sinä kritisoit, ettei ARI kuvaa koko repolarisaatiota (loppu repolarisaatioaallon maksimiderivaatassa) ja että se vastaa APD50:tä, joten se ei ehkä havaitse EAD:ta. Viite Mäki 2023:n lähdeluettelosta: Riedel et al. (2014), Functional and pharmacological analysis of cardiomyocytes differentiated from human peripheral blood mononuclear-derived pluripotent stem cells, *Stem Cell Reports* 3(1), 131–141, doi:10.1016/j.stemcr.2014.04.017
-- Ei tehdä  main.md highlightsiin erillistä kohtaa "LLM-wiki kehityskohdat mitä tässä opittin", kerrotaan tuo sitten postauksissa/repossa sitten 
 
 ## B. Julkaisu Zenodoon
 Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.org hylätty seulonnan epävarmuuden vuoksi).
