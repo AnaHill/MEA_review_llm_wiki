@@ -108,7 +108,7 @@ Links to related wiki pages.
 
 ## Conventions
 
-**Citation format in `wiki/references.md`:** APA by default unless the researcher specifies a different style. One entry per line, sorted alphabetically by first author surname. In-text citations in `main.md` are APA too: (Smith, 2023), (Smith & Jones, 2023), (Smith et al., 2023), several sources separated by semicolons; narrative: Smith et al. (2023) found… The final style follows the target journal and will be reformatted at the end, so do not convert existing entries before then.
+**Citation format in `wiki/references.md`:** APA by default unless the researcher specifies a different style. One entry per line, sorted alphabetically by first author surname. In-text citations in `main.md` are APA too: (Smith, 2023), (Smith & Jones, 2023), (Smith et al., 2023), several sources separated by semicolons; narrative: Smith et al. (2023) found… When two first authors share a surname but the years differ, the initials are left out (Lee et al., 2024; Lee et al., 2026): the year is enough to identify the entry, a deliberate simplification of APA for this preprint. The final style follows the target journal and will be reformatted at the end, so do not convert existing entries before then.
 
 **Log format:** Every `wiki/log.md` entry must start with a consistent prefix so it's grep-parseable:
 ```
