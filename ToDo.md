@@ -8,19 +8,34 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 ### A1. Oma läpiluku ja muokkaus (tehdään ensin, muuten väitelista vanhenee)
 - [x] käyty
 
-### A2. Lähdetarkistus ja claims-by-source.md läpikäynti valmiista tekstistä
-- Vinkki: isommat päätökset/pohdinnat voi käydä läpi komennolla `/grill-paper` 
-- Jos main.md muuttuu tarkistuksen aikana: aja `python -I scripts/claim_quotes.py --write` uudelleen (kuivaharjoitus ei muuta mitään, esim. `python -I scripts/claim_quotes.py --only Hwang`)
+### A2. Lähdetarkistus (docs/claims-by-source.md)
+Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: Altrocchi 8/9, Mäki 4/15, Clements 1/7.
 
-- [ ] Omien päätelmien rekisteri, kohdat 1–27 (docs/claims-by-source.md, osio "Register of the author's own inferences", kirjoitettu uudelleen 1.11.): päätä, seisotko jokaisen sanamuodon takana. Erityisesti 1 ja 9 ovat trendiväitteitä ilman lähdettä (Introductionin "As the use of MEA-based assays has grown…" ja Fiducial-osion "growing emphasis" / "trends increasingly seen") ja 20 Morphology-osion "development … varies substantially"; 24–27 ovat outlookin hypoteeseja
+**Näin käyt yhden lähteen läpi (toista jokaiselle):**
+1. Avaa `docs/claims-by-source.md` ja hyppää lähteen otsikkoon (esim. `## Correia et al. (2024)`).
+2. Avaa lähteen PDF `raw/`-kansiosta (tiedosto lukee otsikon alla "Local file").
+3. Lue väite (`- [ ] (n) …`) ja sen alla oleva `- >` -rivi: se on main.md:n nykyinen virke.
+4. Etsi kohta PDF:stä. Apuna lähteen lopun "Pointers"-kappale (sivu, kuva, taulukko).
+5. Pitääkö virke paikkansa lähteen mukaan? Kyllä → vaihda `[ ]` → `[x]`. Ei tai epävarma → kirjoita Claudelle: "Correia (5) ei pidä: …" tai "tarkista Correia (5)". Claude korjaa main.md:n, väitelistan ja lokin.
+6. Kun lähde on valmis, siirry seuraavaan. Jos main.md muuttui, aja `python -I scripts/claim_quotes.py --write` (päivittää `- >` -rivit).
 
+**Järjestys (rasti kun lähde valmis):**
+- [ ] 1. Altrocchi: vain (6) vertailuliuottimen ajelehtiminen (Table 2) jäljellä
+- [ ] 2. Eniten korjatut: Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025, Scheurer
+- [ ] 3. Uusimmat (luettu kokonaan, mutta tarkistamatta itse): Hu 2026, Karami 2026, Lee 2026, Li 2025, Lin 2023, Hayakawa 2014, Vuorenpää 2023, Ryynänen 2018
+- [ ] 4. Loput: Blinova, Botti, Clements, Dunham, Kabanov, Lee 2024, Mäki, Park 2026, Pramudito, Weiser-Bitoun
+- [ ] 5. Omien päätelmien rekisteri (claims-tiedoston viimeinen osio, kohdat 0–27): tässä ei etsitä lähdettä, vaan päätät, seisotko sanamuodon takana. Rasti kun hyväksyt; muuten pyydä Claudelta pehmennystä tai poistoa
 
-- [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten Altrocchin tapaan (29 lähdettä, noin 190 väitettä; 1.11. tilanne: Altrocchi 8/9, Mäki 4/15, Clements 1/7, muut 0, rekisteri 0/28). Wikisivut on tarkistettu lähdetekstiä vasten (24.10. tai ingest-päivänä), mutta numerot ja kuvatulkinnat kannattaa varmistaa itse
-  - Altrocchi: jäljellä vain (6) vertailuliuottimen ajelehtiminen (Table 2)
-  - Erityisesti: Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten); lukematta jääneet liitteet: Correia ja Scheurer supplementary
-  - Clements (4): AIMS-sivun lainaus saatiin verkkotyökalun kautta, tarkista sanamuoto itse sivulta
-  - Uudet: Hayakawa 2014 ja Vuorenpää 2023 luettu kokonaan (Vuorenpään kuvia ei katsottu); Ryynänen 2018 luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 luettu liitteineen, Li:n luvut tarkistettu Supplementary Tableista 2–3 (main.md käyttää S3:n CV- ja spike amplitude -lukuja); 1.11. lisätyt Hu 2026 (sikiövaiheen hiiren solut, kuvat 2–7 katsottu), Karami 2026 (katsaus, viitevirheitä, käytetään vain MEA-fysiikkaan) ja Lee 2026 (kuva 4 katsottu) luettu kokonaan. Lue main.md:n tiivistykset itse
-  - Kaksi auki olevaa tarkistusta: Dunham (5) "R wave" vs R peak ja Lee et al. (2024) (5) "R spike" vs R peak
+**Erikseen muistettavat kohdat:**
+- Clements (4): AIMS-sivun lainaus saatiin verkkotyökalun kautta, katso sanamuoto itse sivulta (URL väitteen kohdalla)
+- Dunham (5) "R wave" ja Lee et al. (2024) (5) "R spike": varmista, että tarkoittavat R-huippua
+- Rekisteri 1 ja 9 ovat trendiväitteitä ilman lähdettä (Introduction "As the use of MEA-based assays has grown…", Fiducial "growing emphasis" / "trends increasingly seen"); 20 on Morphology-osion "development … varies substantially"
+- Lukematta jääneet liitteet: Correia ja Scheurer (supplementary); Vuorenpään ja Ryynäsen kuvia ei katsottu
+
+**Vinkit:**
+- Kuivaharjoitus yhdelle lähteelle, ei muuta mitään: `python -I scripts/claim_quotes.py --only Correia`
+- Isompi päätös (esim. poistetaanko väite)? Käytä `/grill-paper`
+- Lopuksi aja `python -I scripts/check.py`
 
 
 ### A3 Abbreviations alkupuolelle? Pitääkö symbolit yms _kursivoida_ tms?
