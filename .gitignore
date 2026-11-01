@@ -40,7 +40,11 @@ Thumbs.db
 *.swp
 
 # Not open access
+# Springer Nature (exclusive licence to the Biomedical Engineering Society), all rights reserved by the publisher
 raw/pramudito-2026-ensemble.pdf
+# IOP Publishing, all rights reserved by the publisher
+raw/hu-2026-tft-mea-multimodal.pdf
+raw/hu-2026-tft-mea-multimodal-supplementary.pdf
 
 # Vendor material, not redistributed
 raw/clements-2025-aims-poster.pdf

@@ -13,11 +13,12 @@ Concept page, written 2026-10-24 from the wiki paper pages. It lists where MEA o
 | [[wiki/papers/kabanov-2026-cardioscripts.md]] | simultaneous AFM and MEA (synchronous validation on embryoid bodies only); electromechanical delay |
 | [[wiki/papers/hayakawa-2014-motion-fp.md]] | simultaneous video motion analysis and MEA field potential, with traction force and Ca²⁺ imaging in separate experiments; FPD and contraction–relaxation duration linearly related per drug |
 | [[wiki/papers/ryynanen-2018-single-cell-mea.md]] | MEA field potential and video-based motion analysis of the same single hPS-CM through transparent electrodes (recorded at the same time but not automatically synchronised; FPD, beating rate and beat-to-beat interval comparable between MEA and video where compared) |
+| [[wiki/papers/hu-2026-tft-mea-multimodal.md]] | simultaneous field potentials and video on a transparent TFT-MEA (fetal mouse cardiomyocytes, 10 electrodes), aligned by the drug-addition timestamp; k-means labels per modality, supervised check and SHAP on spike features; called sensor fusion by the authors, but the degree of feature-level fusion is unclear |
 | [[wiki/papers/vuorenpaa-2023-mps-building-blocks.md]] | review: heart microphysiological systems can monitor several modalities concurrently; multimodal measurements give data for parameterising and validating computational models |
 | [[wiki/papers/scheurer-2025-optical-ai.md]] | video-only (no MEA) classification of maturation status, for contrast |
 
 ## Observation (ours)
-In these sources the modalities are mostly analysed separately or side by side. Whether the feature-ranking module of Lee et al. (2024), which handles features from extracellular and intracellular-like signals, combines them in one model was not checked. No source discusses AI-assisted fusion of MEA with another modality as such (web searches on 2026-10-24 found none either, but they were not systematic).
+Since 2026-11-01: Hu et al. (2026) is the one source that analyses MEA and video data of the same culture with machine learning, as a proof of concept in fetal mouse cells; see its page for the limits. In these sources the modalities are mostly analysed separately or side by side. Whether the feature-ranking module of Lee et al. (2024), which handles features from extracellular and intracellular-like signals, combines them in one model was not checked. No source discusses AI-assisted fusion of MEA with another modality as such (web searches on 2026-10-24 found none either, but they were not systematic).
 
 ## See also
 - [[wiki/papers/botti-2026-insilico.md]] (forward model of the MEA and tissue)
