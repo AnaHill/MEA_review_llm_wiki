@@ -46,10 +46,12 @@ timeline
     2025 : UHD-CMOS-MEA field potential imaging (Matsuda et al.)
          : Healthy vs. LQTS hiPSC-CM CiPA drug comparison (Park et al.)
          : Video-based interpretable-AI maturity classifier (Scheurer et al.)
+         : MEA parameters differ between maturation conditions (Li et al.)
     2026 : In silico MEA–tissue biophysical model (Botti et al.)
          : PhysioMEA — cardiac organoid BRV and 2D heatmaps (Weiser-Bitoun et al.)
          : CardioScripts — combined AFM+MEA electromechanical analysis (Kabanov et al.)
          : Stacking ensemble ML for TdP risk prediction (Pramudito et al.)
+         : Transparent ITO MEA with FP and optical readouts of hiPSC-CMs (Lee et al.)
 ```
 
 ## Open analysis pipelines alongside vendor-defined metrics
@@ -211,7 +213,7 @@ Looking forward, machine learning is used in several of the studies examined —
 
 **Status.** This is a preprint and has not been peer reviewed.
 
-**Competing interests.** The author wrote the opinion paper used here as the evaluative framework (Mäki, 2023) and the *DatAnalyzer* tool listed in Table 1, and therefore has an interest in how they are assessed. Several authors of the review Vuorenpää et al. (2023) and of Ryynänen et al. (2018), both cited in the outlook, are colleagues of the author from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) research collaboration at Tampere University; the author is not an author of either. No other competing interests are declared.
+**Competing interests.** The author wrote the opinion paper used here as the evaluative framework (Mäki, 2023) and the *DatAnalyzer* tool listed in Table 1, and therefore has an interest in how they are assessed. Several authors of the review Vuorenpää et al. (2023) and of Ryynänen et al. (2018), both cited in this review, are colleagues of the author from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) research collaboration at Tampere University; the author is not an author of either. No other competing interests are declared.
 
 **Version note.** "Mäki (2023)" refers to the opinion paper whose first version was posted on Zenodo in 2023; the text assessed here is version v3 of the same record, published on 23 June 2026, which slightly updated the original text (mainly outlook).
 

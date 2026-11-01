@@ -1,21 +1,13 @@
-# ToDo (päivitetty 31.10.2026)
+# ToDo (päivitetty 1.11.2026)
 <!-- temp file that will be deleted -->
-<!-- Continue manual check here -->
 Järjestys: **A → B → C1 ja D-julkaisu.** C2 ja D-luonnostelu eivät odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
 
 ## A. Paperin sisältö (main.md ja tukitiedostot)
 Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vasten.
 
-
 ### A1. Oma läpiluku ja muokkaus (tehdään ensin, muuten väitelista vanhenee)
-Jos lukiessa herää epäily lähteeseen liittyvästä kohdasta, merkitse se kommentilla ja jatka eteenpäin.
-- [x] Lue koko main.md ja muokkaa tekstiä
-- [x] Morphology-osion alku: "FP waveform morphology varies substantially across preparations, maturation states, …". Tukevatko Ernault 2024 ja Mäki 2023 sanaa "substantially", vai riittääkö "varies"? (Sama tyyppi kuin 29.10. korjattu "can substantially influence".)
-- [x] "Discussion and future outlook": lue ja muokkaa omalla tyylilläsi (sensor fusion + AI; laitteen osuuden poisto signaalista)
 - [ ] Omien päätelmien rekisteri, kohdat 1–27 (docs/claims-by-source.md, osio "Register of the author's own inferences", kirjoitettu uudelleen 1.11.): päätä, seisotko jokaisen sanamuodon takana. Erityisesti 1 ja 9 ovat trendiväitteitä ilman lähdettä (Introductionin "As the use of MEA-based assays has grown…" ja Fiducial-osion "growing emphasis" / "trends increasingly seen") ja 20 Morphology-osion "development … varies substantially"; 24–27 ovat outlookin hypoteeseja
-- [x] Päätä Hu et al. (2026), *Biomed. Phys. Eng. Express* 12(4), 045036, doi:10.1088/2057-1976/ae87aa (läpinäkyvä TFT-MEA, sähköinen + optinen data, ohjaamaton ML + SHAP; vain abstrakti nähty). Jos mukaan: hanki PDF nimellä raw/hu-2026-tft-mea-multimodal.pdf, lisää nimi .gitignoreen ennen committia, ingest ja outlookin päivitys (sensor fusion -kappale, "mostly analysed separately", rekisterikohta 24, wiki/multimodal-measurement.md). Jos ei: siirrä "ei tähän versioon" -listalle
-  - Ingestoitu 1.11. (wiki/papers/hu-2026-tft-mea-multimodal.md; PDF:t .gitignoressa, koska IOP:n paperi ei open access). Sikiövaiheen hiiren sydänlihassoluja, ei hiPSC-CM:iä. main.md-muutokset odottavat hyväksyntää (outlook, Limitations (ii), claims-tiedosto)
-- [ ] Valinnainen: toisiko Obsidianin Graph View -kuva lähteiden riippuvuuksista lisäarvoa?
+- [ ] Valinnainen: toisiko Obsidianin Graph View -kuva lähteiden riippuvuuksista lisäarvoa? Ainakin README.md, ei 
 - Vinkki: isommat päätökset voi käydä läpi komennolla `/grill-paper` ennen muokkausta
 
 ### A2. claims-by-source.md uudelleen valmiista tekstistä
@@ -25,8 +17,8 @@ Jos lukiessa herää epäily lähteeseen liittyvästä kohdasta, merkitse se kom
 ### A3. Oma lähdetarkistus
 - [ ] Käy jokainen lähde läpi claims-by-source.md:n kappaletta vasten Altrocchin tapaan. Wikisivut on tarkistettu lähdetekstiä vasten 24.10., mutta numerot ja kuvatulkinnat kannattaa varmistaa itse
   - Erityisesti: Altrocchi, Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025 ja Scheurer (näistä on korjattu eniten); lukematta jääneet liitteet: Correia ja Scheurer supplementary
-  - Uudet: Hayakawa 2014 ja Vuorenpää 2023 luettu kokonaan (Vuorenpään kuvia ei katsottu); Ryynänen 2018 luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 luettu liitteineen, Li:n luvut tarkistettu Supplementary Tableista 2–3 (main.md käyttää S3:n CV- ja spike amplitude -lukuja). Lue main.md:n tiivistykset itse
-  - Kaksi auki olevaa tarkistusta: Dunham (5) "R wave" vs R peak ja Lee (5) "R spike" vs R peak
+  - Uudet: Hayakawa 2014 ja Vuorenpää 2023 luettu kokonaan (Vuorenpään kuvia ei katsottu); Ryynänen 2018 luettu kokonaan, kuvia ei katsottu; Li 2025 ja Lin 2023 luettu liitteineen, Li:n luvut tarkistettu Supplementary Tableista 2–3 (main.md käyttää S3:n CV- ja spike amplitude -lukuja); 1.11. lisätyt Hu 2026 (sikiövaiheen hiiren solut, kuvat 2–7 katsottu), Karami 2026 (katsaus, viitevirheitä, käytetään vain MEA-fysiikkaan) ja Lee 2026 (kuva 4 katsottu) luettu kokonaan. Lue main.md:n tiivistykset itse
+  - Kaksi auki olevaa tarkistusta: Dunham (5) "R wave" vs R peak ja Lee et al. (2024) (5) "R spike" vs R peak
 
 ### A3B Highlights alkuun
 - Tehdään tiivistelmä / highlights kohta alkuun, jossa eritellään
