@@ -256,6 +256,7 @@ Claims (tick `[x]` when you have checked the claim against the source):
 - [ ] (3) [Maturation] the features describe only the depolarization spike, not FPD ("spike duration" = time between maximum and minimum dV/dt, p. 14).
 - [ ] (4) [Maturation] no external maturity measure was taken on the same cultures (scRNA-seq on separate cocultures).
 - [ ] (5) [Model complexity, Conclusion] the authors argue that conventional MEAs contact a 3D microtissue only at one surface and lose contact as the tissue contracts (p. 2; table S1), added 2026-10-31 (grill decision, see wiki/log.md); stated in main.md as the authors' argument (Lin did not record with an MEA).
+- [ ] (6) [Outlook] whole extracellular waveforms have already been used as machine-learning input, in tissue-embedded recordings (added 2026-11-01). Pointer: Methods p. 14 (all channel-averaged waveforms used directly as PHATE features).
 
 ## Mäki (2023, version v3)
 
@@ -447,6 +448,8 @@ These are statements in `main.md` that no single reference supports, or that are
 - [ ] 21. [Outlook] Impedance as an attachment marker: "such an impedance channel could also indicate FP changes that stem from altered attachment, and thus from altered coupling between cells and electrodes, rather than from changes in the AP of the cells themselves" (added 2026-10-26 at the researcher's suggestion; its in-text label was removed 2026-10-30). Based on: Altrocchi et al. (2023) (impedance drop with reduced attachment, used as a cytotoxicity readout; see Altrocchi (8)). Support: none (a hypothesis of the author; not tested in that study).
 
 - [ ] 22. [Model complexity] (added 2026-10-31 (grill decision, see wiki/log.md)) "so this endpoint transferred in that setting" (Maurissen et al., 2024: FPDc close in 2D and 3D) and "no study examined here compared fiducial definitions between 2D and 3D recordings systematically". Based on: Maurissen (5); the absence claim rests on the non-systematic selection. Also the Scope sentence "Three-dimensional models and in silico modelling are broad fields that this review touches only where they bear on whether FP analysis methods transfer from 2D monolayers" (a scope decision, not a claim). Support: inference (first), thin (second).
+
+- [ ] 23. [Outlook] (added 2026-11-01, the researcher's idea) Link between the two outlook hypotheses: the doubt about raw MEA signals as machine-learning input concerns the raw recording as shaped by the culture and the recording system; if the cellular signal could be separated from it, that signal could be a useful input in its own right, beyond extracted parameters such as beat rate and FPD; repeated at the end of the device-separation paragraph. Based on: Mäki (2023) (the doubt and the two-step approach), and as the only sourced part, Lin et al. (2023), who used whole extracellular waveforms as input to unsupervised machine learning (pseudotime) in tissue-embedded recordings, not MEA plates. Support: none for the separated-signal part (a hypothesis of the author).
 
 ## Corrections made in the 2026-10-24 verification
 

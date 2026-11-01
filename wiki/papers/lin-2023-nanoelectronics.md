@@ -38,6 +38,8 @@ The authors record extracellular field potentials from 3D hiPSC-CM microtissues,
   - **Units of analysis.** The t-tests treat channels or 16-channel "groups" as observations, four groups per well; how many independent devices or differentiations underlie each condition is not clear from the text.
 
 ## Relevance to our paper
+Since 2026-11-01 also cited in the Discussion and future outlook: whole extracellular waveforms used as machine-learning input, as a counterpoint to the doubt about raw MEA signals and a link to the device-separation hypothesis.
+
 Since 2026-10-31 also cited in the 3D section and the Conclusion's third gap for the authors' argument that conventional MEAs contact a 3D microtissue only at one surface (p. 2; table S1).
 
 Cited in main.md from 2026-10-30 (Maturation section synthesis and the Conclusion's fourth gap) as the closest step towards an FP-based maturity classifier, with the limits in point 2 (a)-(c) stated in the text.
