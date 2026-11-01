@@ -14,6 +14,7 @@ Method page, written 2026-10-24 from the wiki paper pages (each checked against 
 | [[wiki/papers/maurissen-2024-mutation.md]] | FPDcF = FPD divided by the cube root of the inter-spike interval (s); main.md writes this as FPD/RR^0.33, which is the review's notation |
 | [[wiki/papers/park-2026-genotype-ml.md]] | Fridericia FPDc, used as an ML feature as a percent change; quiescence coded as a 100 % FPDc change; the page notes that disease lines differ in beat rate and action potential duration, so FPDc differences may partly reflect rate correction |
 | [[wiki/papers/park-2025-cardiotoxicity.md]] | corrected FPD (FPDc) computed by the vendor software; the formula is not named |
+| [[wiki/papers/lee-2026-ito-mea.md]] | Fridericia FPDc ("the most widely used correction method"); on doxorubicin day 1 the beat period rose to about 8 s and FPDc fell while FPD rose, so the corrected and uncorrected values moved in opposite directions (Fig. 4) |
 | [[wiki/papers/clements-2025-aims-poster.md]] | proposed acceptance criteria include an FPDc window of 200–700 ms and a spontaneous beat period of 750–3000 ms (20–80 bpm) |
 | [[wiki/papers/pramudito-2026-ensemble.md]] | ML on ΔFPDc values already corrected in the public multisite CiPA dataset; the correction is taken as given |
 | [[wiki/papers/lee-2024-cardiomea.md]] | the published CardioMEA feature set contains FPD but no rate-corrected FPD |

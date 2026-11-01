@@ -38,6 +38,8 @@ Kabanov, D. A., Vrana, S., Beckerová, D., Rotrekl, V., Pesl, M., & Přibyl, J. 
 
 Lee, J., Duperrex, E., El-Battrawy, I., Hohn, A., Saguner, A. M., Duru, F., Emmenegger, V., Cyganek, L., Hierlemann, A., & Ulusan, H. (2024). CardioMEA: comprehensive data analysis platform for studying cardiac diseases and drug responses. *Frontiers in Physiology*, *15*, 1472126. https://doi.org/10.3389/fphys.2024.1472126
 
+Lee, S.-G., Park, S., Kim, C.-Y., & Chung, H. M. (2026). Integrated electrophysiological and optical analysis of human iPSC-derived cardiomyocytes using transparent ITO microelectrode chip. *International Journal of Stem Cells*, *19*(2), 146–156. https://doi.org/10.15283/ijsc25077
+
 Li, W., Luo, X., Strano, A., Arun, S., Gamm, O., Poetsch, M. S., Hasse, M., Steiner, R.-P., Fischer, K., Pöche, J., Ulbricht, Y., Lesche, M., Trimaglio, G., El-Armouche, A., Dahl, A., Mirtschink, P., Guan, K., & Schubert, M. (2025). Comprehensive promotion of iPSC-CM maturation by integrating metabolic medium with nanopatterning and electrostimulation. *Nature Communications*, *16*, 2785. https://doi.org/10.1038/s41467-025-58044-6
 
 Lin, Z., Garbern, J. C., Liu, R., Li, Q., Mancheño Juncosa, E., Elwell, H. L. T., Sokol, M., Aoyama, J., Deumer, U.-S., Hsiao, E., Sheng, H., Lee, R. T., & Liu, J. (2023). Tissue-embedded stretchable nanoelectronics reveal endothelial cell–mediated electrical maturation of human 3D cardiac microtissues. *Science Advances*, *9*(10), eade8513. https://doi.org/10.1126/sciadv.ade8513
