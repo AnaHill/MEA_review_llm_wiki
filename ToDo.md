@@ -83,10 +83,14 @@ Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu r
 - [ ] Blogipostaus ensin. 
   - [ ] lisää Abbreviations helppous lopuksi kun wiki ja kaikki kunnossa; skriptit tarkistaa ettei mitään puutu ja agentti ajaa kunnes valmista
   - [ ] lisää sinne tätä "samalla ne korostavat entisestään laadukkaan dataperustan, hyvän datan hallinnan ja oikeiden arkkitehtuuripäätösten merkitystä." kohtaa, voisiko saada muutakin kuin datalaatu mukaan
-  - [ ] korostus joko alkuun tai sopivaan kohtaan: markdown yms tiedostojen läpikäyminen repossa versiohallinnalla mahdollistaa helpon yhteistyön kaikkien kanssa (versiohallinta, branch strategiat yms)
-    - vähemmän teknisille riittää kun suostuu lukemaan, kirjoittamaan ja editoimaan markdown-tiedostoja
-      - toisaalta, agenttien avulla perus git jutut onnistuvat alkuasetusten jälkeen helpohkosti
-    - *IDEA*: ...tai antaa agentin hoitaa tämä siirto -> kanssakirjoittaja kirjoittaa esim Wordilla -> syötä agentille ja käske käydä läpi ja sen perusteella edioitoida tätä "lopullinen totuus" manuskriptia
+  - [ ] Yhteiskirjoittaminen ilman suuria IT-taitoja (alkuun tai omaksi osiokseen). Ydinviesti: single source of truth on main.md versiohallinnassa, mutta kanssakirjoittajan ei tarvitse osata gitiä eikä edes markdownia
+    - kolme tasoa kanssakirjoittajalle:
+      1. kirjoittaa Wordilla (tai sähköpostiin): agentti ingestoi tekstin nimettyyn kappaleeseen tai osioon, näyttää muutokset diffinä ja päivittää samalla lokin, claims-rekisterin ja tarvittaessa viitteet; päävastuullinen hyväksyy
+      2. editoi markdownia suoraan: riittää kun suostuu lukemaan ja kirjoittamaan tekstitiedostoja
+      3. käyttää itse agenttia ja gitiä: agentti hoitaa branchit, commitit ja ristiriidat alkuasetusten jälkeen
+    - miksi toimii: versiohallinta pitää jokaisen muutoksen ja sen tekijän näkyvissä, ja AGENTS.md:n säännöt (lähteet, viitteet, lokit, check.py) koskevat myös kanssakirjoittajan tekstiä, joten laatu ei riipu siitä, millä työkalulla teksti on kirjoitettu
+    - rehellisesti rajoitteet: Word-tekstin muutosmerkinnät ja kommentit pitää tulkita; jos kaksi muokkaa samaa kappaletta, päätös jää ihmiselle; agentin ei pidä yhdistää tekstejä hiljaa vaan näyttää erot; Word-teksti pitää ingestoida nykyistä main.md:tä vasten, ei vanhaa versiota
+    - mahdollinen jatko: `ingest-coauthor`-tyyppinen ohje AGENTS.md:hen tai templaattiin (lähde-Word → osio → diff → hyväksyntä → loki)
   - [ ] peruskuvaus järkevästä tavasta
     - vibe-reaserching / palloittelu alkuun
       - raakaversio
