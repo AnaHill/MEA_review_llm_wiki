@@ -104,3 +104,5 @@ Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu r
 
 
 - [ ] LinkedIn-postaus: viittaa repoon, zenodoon ja blogiin
+  - tagit: mitkä
+  - kuva mikä olisi hyvä? Vai animaatio
