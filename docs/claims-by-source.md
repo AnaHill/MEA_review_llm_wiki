@@ -742,7 +742,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **(1)** "MEA tools define FPD differently; their FPD values are not directly comparable"
     - **Based on:** Table 1, Table 2, Fiducial list; register item 13
     - **Note:** the researcher removed "Open" because vendor tools also differ; the reviewed evidence documents the open tools' definitions, while the vendor tool's definition is not described in the studies that used it
-  - **(2)** no hiPSC-CM–specific rate correction, Fridericia can mislead at extreme rates
+  - **(2)** "No validated hiPSC-CM rate correction found; Fridericia can mislead at extreme rates" (was "No hiPSC-CM–specific rate correction exists"; aligned with (3) as an absence finding, 2026-11-02)
     - **Based on:** Blinova, Clements; one example, Lee et al., 2026; register items 3 and 14
   - **(3)** no validated MEA-derived maturation reference values
     - **Based on:** documented search; register items 6 and 19
@@ -798,7 +798,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Support:** `inference` from five tools
 - [ ] **9. [Abstract, Fiducial]** explicitly stated fiducial definitions (trend wording removed 2026-11-02)
   - **Text:** "In the studies examined, the open platforms state how they define fiducial points, and one study tested a convention against intracellular recordings"
-  - **Text:** the Abstract item "explicitly stated, and in one study physiologically validated, fiducial definitions" and the section heading "Explicit and physiologically motivated fiducial definitions"
+  - **Text:** the Abstract sentence "open analysis software is used alongside vendor software, and the open tools state how they place the waveform landmarks (fiducial points) that define the measured intervals; one study tested such a definition against intracellular recordings" and the section heading "Explicit and physiologically motivated fiducial definitions"
   - **Based on:** Dunham, Lee et al. (2024), Weiser-Bitoun, Kabanov (Fiducial list); Ernault (sharp-electrode comparison)
   - **Note:** the earlier wording ("growing emphasis", Mäki's algorithm "reflects trends increasingly seen in recent literature", Ernault's topic "has received renewed attention", heading "Increasing emphasis on…") had no counts behind it and was removed; "reflects trends" also contradicted the Fiducial list, where CardioMEA and PhysioMEA end FPD at the T-wave peak rather than at baseline return
   - **Support:** `thin` (a summary of the sources listed, no trend claimed)
@@ -853,7 +853,8 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Based on:** Scheurer, Li, Hayakawa, Correia, Lin; the documented search
   - **Note:** the earlier wording "the components … exist separately" / "The pieces for such a reference exist separately" implied that combining them would give a classifier; two things are missing: an independent maturity measure on the same MEA cultures (the reference), and an MEA dataset across controlled maturity levels (Li et al. compare culture conditions, not measured maturity). Hayakawa links FPD to contraction, not to maturity
   - **Support:** `inference`; absence claim as strong as the search
-- [ ] **20. [Morphology]** morphology varies, and some studies handle it explicitly (reworded 2026-11-02)
+- [ ] **20. [Abstract, Morphology]** morphology varies, and some studies handle it explicitly (reworded 2026-11-02)
+  - **Text:** the Abstract sentence "Some studies handle differing FP waveform shapes explicitly" (replaced "structured handling of FP waveform morphology heterogeneity", which contradicted gap (ii) and the Conclusion's "case by case")
   - **Text:** "FP waveform morphology varies between preparations and over culture time, and some of the studies examined handle this variation explicitly"
   - **Text:** "two of them show an awareness of waveform heterogeneity"
   - **Based on:** Mäki (variation between preparations and in later cultures); Ernault, Weiser-Bitoun (explicit handling)
