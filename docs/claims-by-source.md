@@ -45,7 +45,7 @@ Pointers: (3) p. 5 ("Fredericia correction formula, FPDc"). (4) abstract p. 1 ("
 
 Local file: `raw/blinova-2018-multisite.pdf`; page `wiki/papers/blinova-2018-multisite.md`. Status: checked (Methods, Results, Discussion; Figures 1, 2, 5–7 viewed) 2026-10-18.
 
-- [ ] (1) [Intro] cited, with Altrocchi et al. (2023) and Park et al. (2025), for MEA recordings being widely used in cardiac safety pharmacology, drug discovery and disease modelling, and, with Park et al. (2025), for FPD and related metrics being integral to CiPA.
+- [x] (1) [Intro] cited, with Altrocchi et al. (2023) and Park et al. (2025), for the cardiac-safety-pharmacology part: hiPSC-CM use for cardiac safety evaluation "continues to increase" (Introduction, p. 2), and the study itself used MEA at nine of ten sites (p. 3; Methods; site 2 was the only optical site). Drug discovery and disease modelling rest on the other two sources. With Park et al. (2025), also cited for FPD and related metrics being integral to CiPA.
     - > Multielectrode arrays (MEAs) recording extracellular field potentials (FPs) from human induced pluripotent stem cell–derived cardiomyocytes (hiPSC-CMs) are widely used in cardiac safety pharmacology, drug discovery, and disease modelling (Blinova et al., 2018; Altrocchi et al., 2023; Park et al., 2025). — main.md:57
     - > The field potential duration (FPD) and related metrics serve as surrogates for repolarization and are integral to initiatives such as the Comprehensive in Vitro Proarrhythmia Assay (CiPA) (Blinova et al., 2018; Park et al., 2025). — main.md:57
 - [x] (2) [Motivation] example of proarrhythmia risk assessment.
