@@ -29,7 +29,7 @@ Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: 
 **Erikseen muistettavat kohdat:**
 - Clements (4): AIMS-sivun lainaus saatiin verkkotyökalun kautta, katso sanamuoto itse sivulta (URL väitteen kohdalla)
 - Dunham (5) "R wave" ja Lee et al. (2024) (5) "R spike": varmista, että tarkoittavat R-huippua
-- Rekisteri 1 ja 9 ovat trendiväitteitä ilman lähdettä (Introduction "As the use of MEA-based assays has grown…", Fiducial "growing emphasis" / "trends increasingly seen"); 20 on Morphology-osion "development … varies substantially"
+- Rekisteri 1 on trendiväite ilman lähdettä (Introduction "As the use of MEA-based assays has grown…"); 9, 16, 19 ja 20 muotoiltiin uudelleen 2.11. (trendit ja yleistykset pois), käy uudet sanamuodot läpi
 - Lukematta jääneet liitteet: Correia ja Scheurer (supplementary); Vuorenpään ja Ryynäsen kuvia ei katsottu
 
 **Vinkit:**

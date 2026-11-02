@@ -25,7 +25,7 @@ CLAIMS = "docs/claims-by-source.md"
 SECTION_TAG = [
     ("Abstract", "Abstract"), ("Introduction", "Intro"), ("Motivation", "Motivation"),
     ("Scope and Literature Search", "Scope"), ("Literature review", "Timeline"),
-    ("Open analysis pipelines", "Open pipelines"), ("Increasing emphasis", "Fiducial"),
+    ("Open analysis pipelines", "Open pipelines"), ("Explicit and physiologically", "Fiducial"),
     ("Rate correction", "FPDc"), ("Maturation status", "Maturation"),
     ("Morphology-aware", "Morphology"), ("Three-dimensional cardiomyocyte", "3D"),
     ("High-throughput", "High-throughput"), ("Limitations of this review", "Limitations"),
