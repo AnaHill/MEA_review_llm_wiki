@@ -46,7 +46,11 @@ Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: 
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
 - [ ] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 - [ ] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
-- [ ] Valinnainen: toisiko Obsidianin Graph View - kuva lähteiden riippuvuuksista lisäarvoa? pohdi lisäämistä `README.md`, ei tähän mainiin
+
+#### Valinnaisia `README.md`, ei main-tiedostoon
+kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään
+- [ ] toisiko Obsidianin Graph View - kuva lähteiden riippuvuuksista lisäarvoa? 
+- [ ] entä markmap esitys? Kuva postauksen ideoissa
 
 
 ## B. Julkaisu Zenodoon
@@ -78,39 +82,6 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 - [ ] tarkista lopuksi, ettei tässä repossa ole tullut mitään uutta hyödyllistä mitä kannattaisi laittaa templaattiin, tehty 1.11. asti muutokset mm `scripts/check_abbreviations.py`, vain sen jälkeiset
 
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
-Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
-
-- [ ] Blogipostaus ensin. 
-  - [ ] lisää Abbreviations helppous lopuksi kun wiki ja kaikki kunnossa; skriptit tarkistaa ettei mitään puutu ja agentti ajaa kunnes valmista
-  - [ ] lisää sinne tätä "samalla ne korostavat entisestään laadukkaan dataperustan, hyvän datan hallinnan ja oikeiden arkkitehtuuripäätösten merkitystä." kohtaa, voisiko saada muutakin kuin datalaatu mukaan
-  - [ ] Yhteiskirjoittaminen ilman suuria IT-taitoja (alkuun tai omaksi osiokseen). Ydinviesti: single source of truth on main.md versiohallinnassa, mutta kanssakirjoittajan ei tarvitse osata gitiä eikä edes markdownia
-    - kolme tasoa kanssakirjoittajalle:
-      1. kirjoittaa Wordilla (tai sähköpostiin): agentti ingestoi tekstin nimettyyn kappaleeseen tai osioon, näyttää muutokset diffinä ja päivittää samalla lokin, claims-rekisterin ja tarvittaessa viitteet; päävastuullinen hyväksyy
-      2. editoi markdownia suoraan: riittää kun suostuu lukemaan ja kirjoittamaan tekstitiedostoja
-      3. käyttää itse agenttia ja gitiä: agentti hoitaa branchit, commitit ja ristiriidat alkuasetusten jälkeen
-    - miksi toimii: versiohallinta pitää jokaisen muutoksen ja sen tekijän näkyvissä, ja AGENTS.md:n säännöt (lähteet, viitteet, lokit, check.py) koskevat myös kanssakirjoittajan tekstiä, joten laatu ei riipu siitä, millä työkalulla teksti on kirjoitettu
-    - rehellisesti rajoitteet: Word-tekstin muutosmerkinnät ja kommentit pitää tulkita; jos kaksi muokkaa samaa kappaletta, päätös jää ihmiselle; agentin ei pidä yhdistää tekstejä hiljaa vaan näyttää erot; Word-teksti pitää ingestoida nykyistä main.md:tä vasten, ei vanhaa versiota
-    - mahdollinen jatko: `ingest-coauthor`-tyyppinen ohje AGENTS.md:hen tai templaattiin (lähde-Word → osio → diff → hyväksyntä → loki)
-  - [ ] peruskuvaus järkevästä tavasta
-    - vibe-reaserching / palloittelu alkuun
-      - raakaversio
-      - lähteiden haku agenttinen + omat etsinnät (suositeltavaa)
-    - kun karkea versio: "Catch mistakes sooner, not later & save time, hermoja and some money too!"
-      - manuaalinen main luku -> virheet korjataan, lisäykset kannattaa vasta seuraavassa iteraatiossa 
-      - claims-by-source läpikäynti alkupuolella kun tarkastettavia on vasta vähän -> helpompaa
-    - lisäyksiä / täydennyksiä
-      - uusia ideoita yms
-    - Grinding
-      - lopullisen main.md käynti
-      - claims päivitykset sen jälkeen
-      - manuaalinen läpikäynti jokainen erikseen: DETAILS DO MATTER in Science
-    - Highlights lisäys
-    - (mahdollinen lehden valinta; vittaukset, lähdeluettelo, kuvatekstit yms)
-    - Abrreviations teko
-    - ...
-
-
-
-- [ ] LinkedIn-postaus: viittaa repoon, zenodoon ja blogiin
-  - tagit: mitkä
-  - kuva mikä olisi hyvä? Vai animaatio
+Sisältö ja ideat kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post/notes.md (osio "Ideat MEA_review_llm_wiki/ToDo.md:n D-osiosta", siirretty 2.11.). Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
+- [ ] Blogipostaus ensin (kokoa draft.md:hen notes.md:n ideoista)
+- [ ] LinkedIn-postaus blogin jälkeen: viittaa repoon, Zenodoon ja blogiin (AnaHill.github.io/_notes/llm-wiki-post/linkedin_draft.md)
