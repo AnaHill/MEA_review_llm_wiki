@@ -83,13 +83,17 @@ Sisältö kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post. Luonnostelu r
 - [ ] Blogipostaus ensin. 
   - [ ] lisää Abbreviations helppous lopuksi kun wiki ja kaikki kunnossa; skriptit tarkistaa ettei mitään puutu ja agentti ajaa kunnes valmista
   - [ ] lisää sinne tätä "samalla ne korostavat entisestään laadukkaan dataperustan, hyvän datan hallinnan ja oikeiden arkkitehtuuripäätösten merkitystä." kohtaa, voisiko saada muutakin kuin datalaatu mukaan
+  - [ ] korostus joko alkuun tai sopivaan kohtaan: markdown yms tiedostojen läpikäyminen repossa versiohallinnalla mahdollistaa helpon yhteistyön kaikkien kanssa (versiohallinta, branch strategiat yms)
+    - vähemmän teknisille riittää kun suostuu lukemaan, kirjoittamaan ja editoimaan markdown-tiedostoja
+      - toisaalta, agenttien avulla perus git jutut onnistuvat alkuasetusten jälkeen helpohkosti
+    - *IDEA*: ...tai antaa agentin hoitaa tämä siirto -> kanssakirjoittaja kirjoittaa esim Wordilla -> syötä agentille ja käske käydä läpi ja sen perusteella edioitoida tätä "lopullinen totuus" manuskriptia
   - [ ] peruskuvaus järkevästä tavasta
     - vibe-reaserching / palloittelu alkuun
       - raakaversio
       - lähteiden haku agenttinen + omat etsinnät (suositeltavaa)
-    - kun karkea versio
+    - kun karkea versio: "Catch mistakes sooner, not later & save time, hermoja and some money too!"
       - manuaalinen main luku -> virheet korjataan, lisäykset kannattaa vasta seuraavassa iteraatiossa 
-      - claims-by-source läpikäynti kun vielä vähän -> helpompaa
+      - claims-by-source läpikäynti alkupuolella kun tarkastettavia on vasta vähän -> helpompaa
     - lisäyksiä / täydennyksiä
       - uusia ideoita yms
     - Grinding
