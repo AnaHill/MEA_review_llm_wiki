@@ -737,7 +737,7 @@ These are statements in `main.md` that no single reference supports, generalisat
 
 Reading guide for each item: **bold** = the item's topic and where it sits in `main.md`; "quoted" = the wording in `main.md`; **Based on** = the sources behind it; **Support** = my reading, one of `none` (no source supports it), `thin` (one or two studies) or `inference` (a reasoned step from sources).
 
-- [ ] **0. [Highlights]** the six highlights (added 2026-11-01) are uncited summaries
+- [x] **0. [Highlights]** the six highlights (added 2026-11-01) are uncited summaries
   - **Support:** as for the register items named
   - **(1)** "MEA tools define FPD differently; their FPD values are not directly comparable"
     - **Based on:** Table 1, Table 2, Fiducial list; register item 13
@@ -752,17 +752,17 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
     - **Based on:** register item 7
   - **(6)** raw MEA signals mix cell, tissue and device, and separating them is proposed as a hypothesis
     - **Based on:** Karami et al., 2026; Lee et al., 2026; Mäki, 2023; register items 25 and 26
-- [ ] **1. [Intro, Motivation]** growing use of MEA assays as framing
+- [x] **1. [Intro, Motivation]** growing use of MEA assays as framing
   - **Text:** "As the use of MEA-based assays has grown, so has the need for consistent, physiologically meaningful analysis"
   - **Text:** the Motivation heading "why analysis methods became central after 2022"
   - **Support:** `none` (framing; no usage data)
-- [ ] **2. [Abstract, Motivation]** analysis methods as a possible source of inter-study variability
+- [x] **2. [Abstract, Motivation]** analysis methods as a possible source of inter-study variability
   - **Text:** analysis methods "have become a focus of attention as a possible source of inter-study variability"
   - **Text:** fiducial definitions "are a plausible source of variability and a possible limit to inter-study comparability"
   - **Text:** "none of them measures how much variability analysis methods cause", with Vuorenpää et al. (2023) as counterpoint
   - **Based on:** Mäki (2023); Lee, Ernault, Hayakawa (FPD not tracking the AP; end points matching different phases); Table 2
   - **Support:** `inference`; only plausibility is claimed
-- [ ] **3. [Abstract, Conclusion]** Gap 1: no validated rate correction for hiPSC-CMs
+- [x] **3. [Abstract, Conclusion]** Gap 1: no validated rate correction for hiPSC-CMs
   - **Text:** Fridericia "lacks formal validation for the beating rate range and rate–FPD relationship of hiPSC-CM cultures"
   - **Text:** "borrowed from clinical electrocardiography"
   - **Text:** a cell-type–specific formula from multi-laboratory data "would make FPDc a more reliable pharmacological endpoint"
