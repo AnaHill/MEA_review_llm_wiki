@@ -6,7 +6,7 @@ This version was written from scratch on 2026-11-01 from the current `main.md`; 
 
 Sections cited in brackets: Abstract, Highlights, Intro, Motivation, Scope, Timeline (Figure 1), Open pipelines, Table 1, Fiducial, Table 2, FPDc (rate correction), Maturation, Morphology (incl. Figure 2), 3D (section "Three-dimensional cardiomyocyte models"), High-throughput (section "High-throughput and long-term assays"), Outlook (Discussion and future outlook), Limitations, Conclusion, Declarations.
 
-## Altrocchi et al. (2023)
+## ✅ Altrocchi et al. (2023)
 
 Local file: `raw/altrocchi-2023-chronic.pdf` (+ supplementary .docx); page `wiki/papers/altrocchi-2023-chronic.md`. Status: checked against the full text 2026-10-24; supplement text read 2026-10-31.
 
@@ -731,7 +731,7 @@ Local file: `raw/weiser-bitoun-2026-physiomea.pdf`; page `wiki/papers/weiser-bit
 
 Pointers: (2) abstract and p. 2–3 ("45 measures, including time domain, frequency domain, and nonlinear analysis", from PhysioZoo; MATLAB 2023b or standalone .exe). (4) p. 3 ("FPD ... defined as the time difference between the R- and T-peaks"). (5)(7) p. 3 (inverted T waves and low-amplitude R peaks analysed on the inverted signal; electrodes with inconsistent biomarker counts excluded).
 
-## Register of the author's own inferences
+## ✅ Register of the author's own inferences
 
 These are statements in `main.md` that no single reference supports, generalisations from one or two studies, and the author's hypotheses. `main.md` does not mark them in the text, so this list is their only record; every new unsourced inference in `main.md` needs an item here. Tick `[x]` when you have decided that you stand behind the wording.
 

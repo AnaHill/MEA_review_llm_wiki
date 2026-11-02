@@ -673,3 +673,7 @@ The researcher found the run-on after "point the other way" unclear. The sentenc
 ## [2026-11-02] draft | Abstract: bridge to the gaps, "validated" in gap (i)
 
 The Abstract's move from findings to gaps now reads "Despite these developments, **four methodological gaps remain** and are identified as priorities". Gap (i) became "the absence of a validated hiPSC-CM–specific rate correction formula", in line with Highlight 2 ("No validated … found"). Conclusion gap 1 already says the Fridericia formula "lacks formal validation" and was not changed.
+
+## [2026-11-02] lint | claim_quotes.py marks finished sections with ✅
+
+The researcher started marking finished sections of docs/claims-by-source.md with "✅" (the register and Altrocchi). scripts/claim_quotes.py now strips the mark before matching a section title to a source; without this, the Altrocchi quotes would no longer have been updated. With --write it also adds "✅ " to every `## ` section whose top-level checkboxes are all ticked, and removes the mark when a box is unticked. Tested on a temporary copy (untick → mark removed, retick → mark restored). AGENTS.md scripts row updated.

@@ -12,6 +12,8 @@ Usage (run from the repository root):
 Options may be repeated. A sentence is assigned to a claim only by the section tag, so two claims with the same tag
 show the same sentences; the generated quotes are a pointer to the text, not a judgement of which claim they support.
 A sentence that continues a citation without naming the source ("The same study ...") is not found.
+With --write, a `## ` section whose top-level checkboxes are all ticked gets a "✅ " in front of its title, and loses
+it again when a box is unticked.
 """
 import argparse
 import re
@@ -54,6 +56,8 @@ ABBREVIATIONS = {"al", "e.g", "i.e", "vs", "fig", "figs", "approx", "cf", "ca", 
 
 CLAIM = re.compile(r"^- \[[ x]\] \((\d+[a-z]?)\) \[([^\]]+)\]")
 GENERATED = re.compile(r"^ {4}- > ")
+CHECKBOX = re.compile(r"^- \[([ x])\] ")
+DONE = "✅ "
 
 
 def split_sentences(text):
@@ -100,6 +104,7 @@ def main_sentences():
 
 
 def source_of(title):
+    title = title.removeprefix(DONE)
     for name in SOURCES:
         if title.startswith(name):
             return name
@@ -149,6 +154,20 @@ def update(claim_lines, sentences, selected):
     return out, notes, shown
 
 
+def mark_done(lines):
+    """Put DONE in front of every `## ` title whose top-level checkboxes are all ticked; remove it otherwise."""
+    out, changed = list(lines), []
+    starts = [i for i, line in enumerate(lines) if line.startswith("## ")] + [len(lines)]
+    for start, end in zip(starts, starts[1:]):
+        boxes = [CHECKBOX.match(line).group(1) for line in lines[start + 1:end] if CHECKBOX.match(line)]
+        title = lines[start][3:].removeprefix(DONE)
+        heading = "## " + (DONE if boxes and all(b == "x" for b in boxes) else "") + title
+        if heading != lines[start]:
+            out[start] = heading
+            changed.append(heading)
+    return out, changed
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--write", action="store_true", help="update docs/claims-by-source.md (default: dry run)")
@@ -163,12 +182,17 @@ def main():
 
     original = open(CLAIMS, encoding="utf-8").read().split("\n")
     updated, notes, shown = update(original, main_sentences(), selected)
+    updated, changed = mark_done(updated)
     if args.write:
         open(CLAIMS, "w", encoding="utf-8", newline="\n").write("\n".join(updated))
         print(f"wrote {CLAIMS}")
+        for heading in changed:
+            print("heading updated:", heading)
     else:
         print("dry run: nothing written\n")
         print("\n".join(shown))
+        for heading in changed:
+            print("heading would change to:", heading)
     if notes:
         print("\nNotes:")
         for note in notes:
