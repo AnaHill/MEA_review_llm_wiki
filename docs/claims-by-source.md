@@ -768,28 +768,28 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Text:** a cell-type–specific formula from multi-laboratory data "would make FPDc a more reliable pharmacological endpoint"
   - **Based on:** Blinova, Clements, Guerrelli, Altrocchi (vehicle drift)
   - **Support:** `thin` for the gap; the recommendation is an opinion
-- [ ] **4. [Abstract, Conclusion]** Gap 2: no shared morphology criteria
+- [x] **4. [Abstract, Conclusion]** Gap 2: no shared morphology criteria
   - **Text:** shared, validated morphology criteria "were not identified"
   - **Text:** morphology handling is case by case, whereas well-acceptance criteria exist
   - **Text:** standardised morphology assessment "might reduce between-study variability at the data collection stage"
   - **Based on:** Mäki, Ernault, Weiser-Bitoun; Blinova, Clements
   - **Support:** `thin` (absence claim limited to the studies examined); the last part is an untested proposal
-- [ ] **5. [Abstract, Conclusion]** Gap 3: transfer from 2D to 3D and ultra-high-density platforms
+- [x] **5. [Abstract, Conclusion]** Gap 3: transfer from 2D to 3D and ultra-high-density platforms
   - **Text:** the transfer of 2D-calibrated frameworks to 3D models and ultra-high-density platforms "proceeds empirically"
   - **Text:** fiducial definitions and conduction metrics "need dedicated validation"
   - **Based on:** Hwang, Maurissen, Lin, Matsuda, Mäki
   - **Support:** `thin`
-- [ ] **6. [Abstract, Conclusion]** Gap 4: no validated maturation benchmark at recording
+- [x] **6. [Abstract, Conclusion]** Gap 4: no validated maturation benchmark at recording
   - **Text:** such a benchmark "could only cover the electrophysiological axis"
   - **Text:** "even a partial reference would improve comparability between studies and support the translation of MEA findings to adult myocardium"
   - **Text:** the pieces "exist separately"
   - **Based on:** the documented search of 30 October 2026 (`docs/maturation-mea-search.md`), Fetterman, Correia, Scheurer, Li, Hayakawa, Lin, Clements (QC, not staging)
   - **Support:** absence claim as strong as that search; the benefit is an opinion
-- [ ] **7. [Abstract, Conclusion]** data-driven methods may learn analysis differences
+- [x] **7. [Abstract, Conclusion]** data-driven methods may learn analysis differences
   - **Text:** "Until these gaps are addressed, data-driven methods built on MEA parameters may learn differences in analysis methods rather than differences in the cells"
   - **Text:** "without them, models built on MEA parameters may reproduce the inconsistencies between studies instead of revealing biological effects"
   - **Support:** `inference`
-- [ ] **8. [Open pipelines, Conclusion]** open tools as a visible alternative and a trend towards transparency
+- [x] **8. [Open pipelines, Conclusion]** open tools as a visible alternative and a trend towards transparency
   - **Text:** open tools "are a visible alternative" and "several new ones have appeared since 2022"
   - **Text:** "these platforms point toward reproducibility, transparency, and explicit reporting"
   - **Text:** the Conclusion's "methodological development from opaque, vendor-defined workflows toward transparent and physiologically reasoned practices" and "points toward progress in inter-study comparability"
@@ -800,30 +800,30 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Text:** "there has been a growing emphasis on how fiducial points are defined and justified"
   - **Text:** Mäki's algorithm "reflects trends increasingly seen in recent literature"
   - **Support:** `none` for the trend (no counts); consider rewording
-- [ ] **10. [Fiducial]** transparency is essential because definitions affect drug effects
+- [x] **10. [Fiducial]** transparency is essential because definitions affect drug effects
   - **Text:** "Such transparency is essential because differences in fiducial definitions can influence measured drug effects and rate-corrected FPD or QT surrogates."
   - **Support:** `none` as stated (no study compared conventions on the same data)
-- [ ] **11. [Fiducial, Table 2]** the two FPD definitions may measure different quantities
+- [x] **11. [Fiducial, Table 2]** the two FPD definitions may measure different quantities
   - **Text:** "This anchors the T-wave peak, when the waveform is biphasic, to APD90"
   - **Text:** "the two definitions may therefore measure different quantities rather than one being universally more correct"
   - **Text:** the Table 2 caption ("whether it and the T-wave-peak convention measure different physiological quantities is open")
   - **Based on:** Ernault (2), (3); Hayakawa (1)
   - **Support:** `inference`
-- [ ] **12. [Fiducial]** morphology assessment before fiducial analysis
+- [x] **12. [Fiducial]** morphology assessment before fiducial analysis
   - **Text:** "These findings underscore the importance of waveform morphology assessment prior to any fiducial-point-based analysis."
   - **Support:** `inference`
-- [ ] **13. [Fiducial, Morphology]** FPD values not comparable across tools
+- [x] **13. [Fiducial, Morphology]** FPD values not comparable across tools
   - **Text:** "the conventions differ"
   - **Text:** "FPD values are therefore not directly comparable across tools without explicit knowledge of the underlying convention"
   - **Based on:** Table 1 and Table 2
   - **Support:** `inference` from the definitions (no study compared tools on the same data)
-- [ ] **14. [FPDc]** raw FPD is rate-confounded; a fixed correction may fail at the extremes
+- [x] **14. [FPDc]** raw FPD is rate-confounded; a fixed correction may fail at the extremes
   - **Text:** "the beating rate can change substantially during recordings. Therefore, raw FPD values are confounded by rate-dependent repolarization effects"
   - **Text:** "a fixed cube-root correction cannot be assumed to hold across the wide range of spontaneous rates ... so the formula may under- or over-correct at the extremes of this range"
   - **Based on:** Guerrelli (equilibration); Blinova and Clements (rate ranges)
   - **Support:** `inference`
   - **Update 2026-11-01:** the under- or over-correction point has a concrete example: Lee et al. (2026), doxorubicin day 1 (beat period about 8 s, FPDc fell while FPD rose); the general claim remains inference
-- [ ] **15. [FPDc]** the author's view on the missing hiPSC-CM–specific formula
+- [x] **15. [FPDc]** the author's view on the missing hiPSC-CM–specific formula
   - **Text:** "In the author's view, the lack of a validated hiPSC-CM–specific formula is a methodological gap that directly limits the comparability of FPDc endpoints between studies."
   - **Note:** marked in the text as the author's view
   - **Support:** `inference`
@@ -832,14 +832,14 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Text:** "it is not the norm in the studies examined"
   - **Based on:** Guerrelli, Matsuda, Clements
   - **Support:** `inference` (first part); `thin` (second part)
-- [ ] **17. [Maturation]** maturity differences between laboratories; drift is not only a rate effect
+- [x] **17. [Maturation]** maturity differences between laboratories; drift is not only a rate effect
   - **Text:** "In the studies examined, maturation state is rarely quantified beyond culture duration"
   - **Text:** "two laboratories could report different results for the same compound because their cultures differ in maturity rather than in analysis method"
   - **Text:** "so the drift is not only a consequence of the slower beating rate, and rate correction alone would not remove it"
   - **Based on:** Guerrelli (5), (6); Ismaili
   - **Note:** our rough Fridericia check of Guerrelli's spontaneous means (FPDc about 279 ms on day 2 and 481 ms on day 14) is on the wiki page only
   - **Support:** `inference`
-- [ ] **18. [Maturation]** maturation is not a single quantity
+- [x] **18. [Maturation]** maturation is not a single quantity
   - **Text:** "Maturation is therefore not a single quantity. An MEA-derived reference value can only observe electrophysiology, so it would describe one axis of maturity"
   - **Based on:** Fetterman (3)
   - **Support:** `inference`
@@ -854,35 +854,35 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Text:** "two of them show an awareness of waveform heterogeneity"
   - **Based on:** Ernault, Weiser-Bitoun, Mäki
   - **Support:** `thin`; "development" and "substantially" are open (see the ToDo item)
-- [ ] **21. [3D, Scope]** transfer to 3D and the scope limit
+- [x] **21. [3D, Scope]** transfer to 3D and the scope limit
   - **Text:** "so this endpoint transferred in that setting" (Maurissen)
   - **Text:** "no study examined here compared fiducial definitions between 2D and 3D recordings systematically"
   - **Text:** the Scope sentence limiting 3D and in silico modelling to the transfer question (a scope decision)
   - **Support:** `inference` (first); `thin` (second)
-- [ ] **22. [High-throughput]** demands of high-throughput and chronic use
+- [x] **22. [High-throughput]** demands of high-throughput and chronic use
   - **Text:** high-throughput and chronic applications "require stable beat detection, robust handling of arrhythmic events, and consistent analysis across extended recording periods and large historical datasets"
   - **Text:** multi-parameter feature sets "make clearly defined analysis methods even more important"
   - **Text:** "temporal drift and culture equilibration effects can confound interpretation if fiducial definitions and quality control criteria are not reported"
   - **Based on:** Altrocchi (6), (7); Matsuda; Guerrelli
   - **Support:** `inference`; the drift itself is sourced
-- [ ] **23. [Motivation, Conclusion]** uses of MEAs and the machine learning outlook
+- [x] **23. [Motivation, Conclusion]** uses of MEAs and the machine learning outlook
   - **Text:** the list of uses in the studies examined
   - **Text:** machine learning "may become a more integral layer of cardiomyocyte MEA workflows"
   - **Based on:** the studies named
   - **Support:** supported for the list; the outlook is an opinion
-- [ ] **24. [Outlook]** sensor fusion
+- [x] **24. [Outlook]** sensor fusion
   - **Text:** "In most of these studies the modalities are analysed separately or side by side, and the one joint analysis is a small proof of concept outside hiPSC-CMs"
   - **Text:** interpreting them jointly with AI support "could give a more complete picture of a preparation than any single signal"
   - **Based on:** Altrocchi, Lee, Kabanov, Hayakawa, Scheurer, Ryynänen, Hu, Li, Vuorenpää, Mäki
   - **Support:** `thin` (observation; Hu et al., 2026, is the one joint analysis found, in fetal mouse cells); `none` for the hypothesis in hiPSC-CMs (stated as such)
   - **Update 2026-11-01:** also Lee et al. (2026) as a hiPSC-CM example of side-by-side FP and optical readouts
-- [ ] **25. [Outlook]** doubt about raw MEA signals; separated cellular signal as input
+- [x] **25. [Outlook]** doubt about raw MEA signals; separated cellular signal as input
   - **Text:** the doubt "concerns the raw recording as it is, shaped by the culture and the recording system"
   - **Text:** a separated cellular signal "could be a useful input in its own right, beyond the parameters extracted from it", repeated at the end of the device-separation part
   - **Origin:** the researcher's idea (2026-11-01)
   - **Based on:** Mäki (the doubt, the two-step approach); Lin (6) is the only sourced part
   - **Support:** `none` for the separated-signal part
-- [ ] **26. [Outlook]** device separation by reverse engineering
+- [x] **26. [Outlook]** device separation by reverse engineering
   - **Text:** estimating and separating the MEA device and tissue contribution by reverse engineering (system identification), so that the remaining signal resembles the cellular AP more closely
   - **Text:** electroporation data and sensor fusion as training and validation data
   - **Text:** "removing the device contribution alone would not be sufficient"
@@ -891,7 +891,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Based on:** Mäki, Lee, Ernault, Botti, Vuorenpää
   - **Support:** `none` (hypotheses; the ill-posed point is from extracellular recording theory, unsourced)
   - **Update 2026-11-01:** partly sourced: the FP shaped by tissue and hardware, the cell–electrode equivalent circuit and the superposition behind the ill-posed point (Karami et al., 2026), and hardware altering absolute signal values (Lee et al., 2026); the inverse approach, the digital twin and the comparability benefit remain hypotheses
-- [ ] **27. [Outlook]** impedance as an attachment marker
+- [x] **27. [Outlook]** impedance as an attachment marker
   - **Text:** "such an impedance channel could also indicate FP changes that stem from altered attachment, and thus from altered coupling between cells and electrodes, rather than from changes in the AP of the cells themselves"
   - **Origin:** the researcher's idea (2026-10-26)
   - **Based on:** Altrocchi (9)
