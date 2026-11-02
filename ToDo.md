@@ -20,11 +20,11 @@ Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: 
 6. Kun lähde on valmis, siirry seuraavaan. Jos main.md muuttui, aja `python -I scripts/claim_quotes.py --write` (päivittää `- >` -rivit).
 
 **Järjestys (rasti kun lähde valmis):**
-- [ ] 1. Altrocchi: vain (6) vertailuliuottimen ajelehtiminen (Table 2) jäljellä
+- [x] 1. Altrocchi: vain (6) vertailuliuottimen ajelehtiminen (Table 2) jäljellä
 - [ ] 2. Eniten korjatut: Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025, Scheurer
 - [ ] 3. Uusimmat (luettu kokonaan, mutta tarkistamatta itse): Hu 2026, Karami 2026, Lee 2026, Li 2025, Lin 2023, Hayakawa 2014, Vuorenpää 2023, Ryynänen 2018
 - [ ] 4. Loput: Blinova, Botti, Clements, Dunham, Kabanov, Lee 2024, Mäki, Park 2026, Pramudito, Weiser-Bitoun
-- [ ] 5. Omien päätelmien rekisteri (claims-tiedoston viimeinen osio, kohdat 0–27): tässä ei etsitä lähdettä, vaan päätät, seisotko sanamuodon takana. Rasti kun hyväksyt; muuten pyydä Claudelta pehmennystä tai poistoa
+- [x] 5. Omien päätelmien rekisteri (claims-tiedoston viimeinen osio, kohdat 0–27): tässä ei etsitä lähdettä, vaan päätät, seisotko sanamuodon takana. Rasti kun hyväksyt; muuten pyydä Claudelta pehmennystä tai poistoa
 
 **Erikseen muistettavat kohdat:**
 - Clements (4): AIMS-sivun lainaus saatiin verkkotyökalun kautta, katso sanamuoto itse sivulta (URL väitteen kohdalla)
