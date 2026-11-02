@@ -661,3 +661,15 @@ At the researcher's request, the Abstract's five-item list of findings (semicolo
 ## [2026-11-02] draft | Highlight 2 softened to an absence finding
 
 At the researcher's request, Highlight 2 "No hiPSC-CM–specific rate correction exists; …" became "No validated hiPSC-CM rate correction found; Fridericia can mislead at extreme rates" (84 characters). It is now worded like Highlight 3 ("were found"), not as an absolute claim. Register item 0 (2) updated.
+
+## [2026-11-02] draft | Morphology-handling wording made concrete (Abstract, Morphology)
+
+The researcher found "handle differing FP waveform shapes explicitly" unclear. The Abstract now reads "Some tools adapt the analysis to the waveform shape, for example by inverting signals whose peaks point the other way". The Morphology opening now reads "… and some of the studies examined adapt their analysis to it, for example by detecting peaks on the inverted signal". The example comes from PhysioMEA (Weiser-Bitoun et al., 2026) and Mäki (2023). Ernault et al. (2024) is not counted as a handling rule, since it shows why the shape must be checked. Register item 20 updated.
+
+## [2026-11-02] draft | Abstract: last findings sentence split into three
+
+The researcher found the run-on after "point the other way" unclear. The sentence was split into three: "Some tools adapt the analysis to the waveform shape, for example by inverting signals whose peaks point the other way. MEA analysis has also been applied to three-dimensional cardiac models. Assays have expanded to high-throughput and chronic use, with ultra-high-density electrode arrays and machine learning classifiers among the tools used." The content is unchanged; no register item quoted the changed part.
+
+## [2026-11-02] draft | Abstract: bridge to the gaps, "validated" in gap (i)
+
+The Abstract's move from findings to gaps now reads "Despite these developments, **four methodological gaps remain** and are identified as priorities". Gap (i) became "the absence of a validated hiPSC-CM–specific rate correction formula", in line with Highlight 2 ("No validated … found"). Conclusion gap 1 already says the Fridericia formula "lacks formal validation" and was not changed.

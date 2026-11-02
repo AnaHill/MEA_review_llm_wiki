@@ -796,7 +796,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Based on:** the five tools in Table 1
   - **Counter-evidence:** Park et al. (2025, 2026) used the vendor tool, and no adoption data exist (both stated in the text)
   - **Support:** `inference` from five tools
-- [ ] **9. [Abstract, Fiducial]** explicitly stated fiducial definitions (trend wording removed 2026-11-02)
+- [x] **9. [Abstract, Fiducial]** explicitly stated fiducial definitions (trend wording removed 2026-11-02)
   - **Text:** "In the studies examined, the open platforms state how they define fiducial points, and one study tested a convention against intracellular recordings"
   - **Text:** the Abstract sentence "open analysis software is used alongside vendor software, and the open tools state how they place the waveform landmarks (fiducial points) that define the measured intervals; one study tested such a definition against intracellular recordings" and the section heading "Explicit and physiologically motivated fiducial definitions"
   - **Based on:** Dunham, Lee et al. (2024), Weiser-Bitoun, Kabanov (Fiducial list); Ernault (sharp-electrode comparison)
@@ -829,7 +829,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Text:** "In the author's view, the lack of a validated hiPSC-CM–specific formula is a methodological gap that directly limits the comparability of FPDc endpoints between studies."
   - **Note:** marked in the text as the author's view
   - **Support:** `inference`
-- [ ] **16. [FPDc]** fixed-rate pacing as an alternative (reworded 2026-11-02)
+- [x] **16. [FPDc]** fixed-rate pacing as an alternative (reworded 2026-11-02)
   - **Text:** "Pacing at a fixed rate removes the rate dependence"
   - **Based on:** Guerrelli (4), whose authors repeated their measurements under pacing because the metrics are rate dependent; Matsuda (2) and Clements for the rest of the sentence
   - **Note:** the generalisation "it is not the norm in the studies examined" (three examples, no count) was removed; the sentence now lists only what the three sources report
@@ -845,7 +845,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Text:** "Maturation is therefore not a single quantity. An MEA-derived reference value can only observe electrophysiology, so it would describe one axis of maturity"
   - **Based on:** Fetterman (3)
   - **Support:** `inference`
-- [ ] **19. [Maturation, Conclusion]** some ingredients of an MEA-based maturity classifier have been reported separately (reworded 2026-11-02)
+- [x] **19. [Maturation, Conclusion]** some ingredients of an MEA-based maturity classifier have been reported separately (reworded 2026-11-02)
   - **Text:** "some ingredients of an MEA-based maturity classifier have been reported separately"; Conclusion gap 4: "Some ingredients for such a reference have been reported separately"
   - **Text:** "The missing ingredient is an independent maturity measure taken on the same MEA cultures" (Conclusion: "what is missing is …")
   - **Text:** Lin et al. (2023) as "the closest step towards combining them"
@@ -853,11 +853,11 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Based on:** Scheurer, Li, Hayakawa, Correia, Lin; the documented search
   - **Note:** the earlier wording "the components … exist separately" / "The pieces for such a reference exist separately" implied that combining them would give a classifier; two things are missing: an independent maturity measure on the same MEA cultures (the reference), and an MEA dataset across controlled maturity levels (Li et al. compare culture conditions, not measured maturity). Hayakawa links FPD to contraction, not to maturity
   - **Support:** `inference`; absence claim as strong as the search
-- [ ] **20. [Abstract, Morphology]** morphology varies, and some studies handle it explicitly (reworded 2026-11-02)
-  - **Text:** the Abstract sentence "Some studies handle differing FP waveform shapes explicitly" (replaced "structured handling of FP waveform morphology heterogeneity", which contradicted gap (ii) and the Conclusion's "case by case")
-  - **Text:** "FP waveform morphology varies between preparations and over culture time, and some of the studies examined handle this variation explicitly"
+- [x] **20. [Abstract, Morphology]** morphology varies, and some studies adapt their analysis to the waveform shape (reworded 2026-11-02)
+  - **Text:** the Abstract sentence "Some tools adapt the analysis to the waveform shape, for example by inverting signals whose peaks point the other way" (replaced "structured handling of FP waveform morphology heterogeneity", which contradicted gap (ii) and the Conclusion's "case by case")
+  - **Text:** "FP waveform morphology varies between preparations and over culture time, and some of the studies examined adapt their analysis to it, for example by detecting peaks on the inverted signal"
   - **Text:** "two of them show an awareness of waveform heterogeneity"
-  - **Based on:** Mäki (variation between preparations and in later cultures); Ernault, Weiser-Bitoun (explicit handling)
+  - **Based on:** Mäki (variation between preparations and in later cultures); Weiser-Bitoun (peaks detected on the inverted signal for low R peaks and inverted T waves), Mäki (inversion of "only high peak" signals); Ernault is the reason to check the shape (T-wave peak tracks APD90 only for biphasic T waves), not a handling rule
   - **Note:** the earlier opening ("Another important methodological development … is the recognition that FP waveform morphology varies substantially across preparations, maturation states, and recording conditions") was removed: it presented old knowledge as a recent development, contradicting "Such variation is not new" later in the section, and "substantially" and "recording conditions" had no source
   - **Support:** `thin`
 - [x] **21. [3D, Scope]** transfer to 3D and the scope limit
