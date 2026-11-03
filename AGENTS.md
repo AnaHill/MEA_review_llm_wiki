@@ -12,7 +12,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 
 | Path | Purpose |
 |------|---------|
-| `raw/` | Immutable source documents — PDFs, papers, notes. Never modify or delete; the only permitted change is renaming a file at ingest (see "Naming raw files"). |
+| `raw/` | Source documents — PDFs, papers, notes. Their source text is never modified, and nothing is added to it; the researcher may highlight and annotate PDFs, and the only change an agent may make is renaming a file at ingest (see "Naming raw files"). |
 | `wiki/` | LLM-maintained markdown pages. You own this layer entirely. |
 | `wiki/papers/` | One summary page per ingested source paper. |
 | `wiki/index.md` | Content catalog — read this first when answering any query. |
@@ -125,7 +125,7 @@ Links to related wiki pages.
 
 **Index format:** Each entry in `wiki/index.md` should include a link, a one-line summary, and optionally metadata (year, venue). Organize by the categories defined in `wiki/index.md`.
 
-**Raw sources are immutable.** Never edit files in `raw/`. The LLM reads from them; that's all. The one exception is renaming a file at ingest so its stem matches its wiki page (see "Naming raw files").
+**Raw sources are immutable.** Never edit files in `raw/`. The LLM reads from them; that's all. The one exception is renaming a file at ingest so its stem matches its wiki page (see "Naming raw files"). The researcher may highlight and annotate raw PDFs (for example to mark the passages that support a claim); such annotations are expected changes, not an error to report or revert. Nobody adds to or changes the source text itself.
 
 **Draft is a single file.** `main.md` contains the full paper with IMRaD sections as `#` headings. Update only the section asked about. Do not restructure the file unless explicitly asked.
 

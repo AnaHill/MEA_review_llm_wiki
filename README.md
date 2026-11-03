@@ -1,4 +1,4 @@
-# Charting the Field: Cardiomyocyte MEA Analysis Evolution Since 2022
+# Four Gaps Limiting Comparability in MEA Analysis of hiPSC-Cardiomyocytes
 
 A narrative review paper by Antti-Juhana Mäki, maintained with an LLM-assisted academic wiki workflow using VS Code + [Foam](https://foambubble.github.io/foam/) or [Obsidian](https://obsidian.md/).
 

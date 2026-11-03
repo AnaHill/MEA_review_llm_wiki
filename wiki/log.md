@@ -677,3 +677,25 @@ The Abstract's move from findings to gaps now reads "Despite these developments,
 ## [2026-11-02] lint | claim_quotes.py marks finished sections with ✅
 
 The researcher started marking finished sections of docs/claims-by-source.md with "✅" (the register and Altrocchi). scripts/claim_quotes.py now strips the mark before matching a section title to a source; without this, the Altrocchi quotes would no longer have been updated. With --write it also adds "✅ " to every `## ` section whose top-level checkboxes are all ticked, and removes the mark when a box is unticked. Tested on a temporary copy (untick → mark removed, retick → mark restored). AGENTS.md scripts row updated.
+
+## [2026-11-03] lint | Lint findings 1–4 and 6 fixed (title, trend wording, gap 1, raw annotations)
+
+From the lint of 2026-11-03, at the researcher's decision:
+(1) Title. "Charting the Field: Cardiomyocyte MEA Analysis Evolution Since 2022" became "Four Gaps Limiting the Comparability of Multielectrode Array Analyses of hiPSC-Derived Cardiomyocytes: A Review Since 2022" in the main.md front matter and README.md. The description line was rewritten without "evolution".
+(2) Open pipelines. "represents an early example of this transition" became "is the earliest of the open pipelines published since 2022 that are examined here".
+(3) Conclusion opening. The trend sentence ("methodological development … toward transparent and physiologically reasoned practices", "points toward progress in inter-study comparability") was replaced by what the studies show and by "These are preconditions for comparing results between studies, but whether they have improved comparability cannot be judged from this small evidence base".
+(4) Gap 1 worded as a finding of this review. Abstract: "the absence, in the studies examined, of a validated …". Conclusion heading: "No validated FPD rate correction for hiPSC-CMs was found".
+(6) AGENTS.md now allows the researcher's highlights and annotations in raw PDFs; the source text is never changed or added to.
+The researcher removed the leftover "<!-- jatka -->" comment (finding 5). Register items 3 and 8 updated.
+
+## [2026-11-03] draft | Title shortened, description expanded
+
+At the researcher's request, the title became "Four Gaps Limiting Comparability in MEA Analysis of hiPSC-Cardiomyocytes" (main.md front matter and README.md). The front-matter description now carries what the title leaves out: that this is a narrative review since 2022, the spelled-out terms, and the four gaps.
+
+## [2026-11-03] draft | Abstract: scope qualifier stated once for the four gaps
+
+The repeated "in the studies examined" in gaps (i) and (ii) was removed. The qualifier now appears once, in "**four methodological gaps remain** in the studies examined", and covers all four gaps. Register item 3 updated.
+
+## [2026-11-03] draft | Highlight 5: "ML" spelled out
+
+Highlight 5 became "Without these, machine learning may learn analysis differences rather than biology" (83 characters). "machine learning" replaces the abbreviation, since highlights are read on their own, and "on MEA data" was dropped to stay within 85 characters. ML remains in the Abbreviations list because it is still used in the text. Register item 0 (5) updated.
