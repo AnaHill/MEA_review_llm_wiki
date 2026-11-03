@@ -35,7 +35,7 @@ Note: page checked against the source text on 2026-10-24; statements not support
 ## Relevance to our paper
 Cited in main.md as direct empirical support for the morphology-aware analysis argument: the finding that Tpeak↔APD90 correlation depends on T-wave morphology underscores the importance of waveform classification before fiducial-point-based analysis. Also relevant to LEAP as an alternative recording modality.
 
-**main.md updated (2026-07-02):** the "Increasing emphasis on..." section now specifies NRVM (rat) rather than generic "cardiomyocyte monolayers," and notes that the biphasic T-wave morphology required for the Tpeak↔APD90 correlation was observed in only a minority of recorded monolayers.
+**main.md updated (2026-07-02):** the fiducial-definitions section (then "Increasing emphasis on...", since 2026-11-02 "Explicit and physiologically motivated fiducial definitions") now specifies NRVM (rat) rather than generic "cardiomyocyte monolayers," and notes that the biphasic T-wave morphology required for the Tpeak↔APD90 correlation was observed in only a minority of recorded monolayers.
 
 ## See also
 - [[wiki/papers/ismaili-2023-hamburg.md]]

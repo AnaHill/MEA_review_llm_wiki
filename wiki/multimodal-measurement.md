@@ -16,6 +16,7 @@ Concept page, written 2026-10-24 from the wiki paper pages. It lists where MEA o
 | [[wiki/papers/hu-2026-tft-mea-multimodal.md]] | simultaneous field potentials and video on a transparent TFT-MEA (fetal mouse cardiomyocytes, 10 electrodes), aligned by the drug-addition timestamp; k-means labels per modality, supervised check and SHAP on spike features; called sensor fusion by the authors, but the degree of feature-level fusion is unclear |
 | [[wiki/papers/lee-2026-ito-mea.md]] | hiPSC-CMs on a transparent ITO MEA: FP with bright-field morphology and baseline Ca²⁺ imaging of the same wells, plus end-point viability and sarcomere staining; reported side by side, not analysed jointly |
 | [[wiki/papers/vuorenpaa-2023-mps-building-blocks.md]] | review: heart microphysiological systems can monitor several modalities concurrently; multimodal measurements give data for parameterising and validating computational models |
+| [[wiki/papers/karami-2026-mea-cardiotoxicity.md]] | review: transparent TFT-MEAs that record optical, voltage and impedance signals (citing Hu et al., 2025 and 2026); impedance is sensitive to cell–electrode distance, cell morphology and viability, so it carries information on coupling as well as on the cells (our reading) |
 | [[wiki/papers/scheurer-2025-optical-ai.md]] | video-only (no MEA) classification of maturation status, for contrast |
 
 ## Observation (ours)
@@ -23,3 +24,4 @@ Since 2026-11-01: Hu et al. (2026) is the one source that analyses MEA and video
 
 ## See also
 - [[wiki/papers/botti-2026-insilico.md]] (forward model of the MEA and tissue)
+- [[wiki/signal-separation.md]] (device and tissue contributions to the FP; the outlook's second hypothesis)

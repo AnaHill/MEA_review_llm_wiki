@@ -74,6 +74,8 @@ for page in sorted(PAPERS.glob("*.md")):
         raw_stem = Path(f.group(1)).stem
         if not raw_stem.startswith(page.stem):
             report("WARN", where, f"raw file stem '{raw_stem}' differs from page stem '{page.stem}' (rename per AGENTS.md)")
+    # supplementary files linked anywhere on the page (e.g. a **Supplementary:** line) count as referenced
+    raw_used.update(r for r in re.findall(r"\[\[(raw/[^\]|#]+)", text) if (ROOT / r).exists())
     d = re.search(r"\*\*DOI:\*\*\s*(\S+)", text)
     if d and refs.get(key) and d.group(1).rstrip(".") != refs[key]:
         report("ERROR", where, f"DOI {d.group(1)} differs from references.md ({refs[key]})")

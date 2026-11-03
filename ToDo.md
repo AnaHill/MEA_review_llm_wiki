@@ -46,6 +46,9 @@ Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: 
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
 - [ ] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
 - [ ] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
+- [ ] Wiki kuntoon lopuksi: `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
+- [ ] Pohdi, kannattaako tehdä dokumentoitu haku aukolle (i), hiPSC-CM-kohtainen FPD:n taajuuskorjaus (lint 3.11., kohta 13). Esim. PubMed: "iPSC cardiomyocyte" + "rate correction" / "FPDc" / "Fridericia" / "Bazett" + "field potential". Tulos joko tukee Highlight 2:ta ("No validated … found") tai muuttaa sitä. Mallina `docs/maturation-mea-search.md`
+- [ ] Matalampi prioriteetti: vastaava haku aukolle (ii), morfologian luokittelukriteerit (lint 3.11., kohta 16). "In the studies examined" -rajaus suojaa nykyistä väitettä, joten haku tarvitaan vain, jos väitettä halutaan laajentaa
 
 #### Valinnaisia `README.md`, ei main-tiedostoon
 kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään

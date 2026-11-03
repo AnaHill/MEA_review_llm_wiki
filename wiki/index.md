@@ -48,6 +48,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 - [hiPSC-CM maturation status as a confound for MEA-derived metrics](hipsc-cm-maturation.md) — Maturation fractionates into independent functional/metabolic/transcriptional axes (Fetterman et al. 2024); maturation status gates in vitro-to-in vivo translatability (Correia et al. 2024); a validated non-MEA maturity classifier exists (Scheurer et al. 2025, video-based, 99.5% accuracy) but no MEA-native equivalent; culture-age electrophysiological drift already quantified (Guerrelli et al. 2024) but not linked to a maturity metric; MEA CV, spike amplitude and slope differ between the media that define Scheurer's labels (Li et al. 2025), without reference values; unsupervised ML pseudotime on extracellular waveforms from tissue-embedded electronics in 3D (Lin et al. 2023) is the closest FP-based maturity analysis found.
 
 - [Multimodal measurement of hiPSC-CMs](multimodal-measurement.md) — Where MEA is combined with impedance, intracellular-like electroporation signals, AFM, video, Ca²⁺ imaging or traction force (Altrocchi, Lee, Kabanov, Hayakawa, Ryynänen, Vuorenpää); the sensor-fusion hypotheses themselves are only in main.md.
+- [Separating cell, tissue and device contributions to the field potential](signal-separation.md) — What the sources say about the device and tissue share of the FP (Karami, Ernault, Lee 2024, Botti, Altrocchi, Lee 2026, Lin, Vuorenpää), kept apart from the author's inverse-approach and impedance hypotheses (Highlight 6, Outlook).
 - [CiPA in the reviewed papers](cipa.md) — How Blinova 2018, Park 2025/2026, Pramudito 2026, Clements 2025 and Matsuda 2025 relate to the Comprehensive in vitro Proarrhythmia Assay.
 
 *(other candidates: hERG trafficking, 3D vs 2D cultures)*
@@ -81,4 +82,4 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 ---
 
-*Last updated: 2026-11-01*
+*Last updated: 2026-11-03*
