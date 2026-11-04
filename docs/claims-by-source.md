@@ -116,9 +116,9 @@ Pointers: poster, box "AIMS \#CM01: Proposed standards" (spike amplitude ≥ 0.5
 
 Local files: `raw/correia-2024-acc2.pdf` (+ supplementary, not read); page `wiki/papers/correia-2024-acc2.md`. Status: checked against the full text and Figure 7F 2026-10-24.
 
-- [ ] (1) [Timeline] "ACC2-inhibitor maturation medium improves in vitro-to-in vivo translatability" (2024).
+- [x] (1) [Timeline] "ACC2-inhibitor maturation medium improves in vitro-to-in vivo translatability" (2024).
     - > : ACC2-inhibitor maturation medium improves in vitro-to-in vivo translatability (Correia et al.) — main.md:86
-- [ ] (2) [Maturation] hiPSC-CMs retain a fetal-like phenotype (cited with Scheurer et al., 2025).
+- [x] (2) [Maturation] hiPSC-CMs retain a fetal-like phenotype (cited with Scheurer et al., 2025).
     - > Maturation adds a further complication for comparisons between studies, distinct from but interacting with rate correction. hiPSC-CMs are electrophysiologically immature compared with adult cardiomyocytes and retain a fetal-like phenotype (Correia et al., 2024; Scheurer et al., 2025). — main.md:142
     - > Correia et al. (2024) developed a maturation medium based on galactose and fatty acids, with a cocktail of triiodothyronine, insulin-like growth factor 1 (IGF-1) and dexamethasone and a small-molecule inhibitor of acetyl-CoA carboxylase 2 (ACC2). — main.md:150
     - > Taken together, some ingredients of an MEA-based maturity classifier have been reported separately: an interpretable machine-learning method validated on video features (Scheurer et al., 2025), MEA parameters that differ between the same maturation conditions (Li et al., 2025, whose B27 and maturation-medium groups Scheurer et al. follow), a reported link between FPD and contraction (Hayakawa et al., 2014), and evidence that maturation status matters for translation (Correia et al., 2024). — main.md:154
