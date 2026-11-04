@@ -41,7 +41,7 @@ Local file: `raw/altrocchi-2023-chronic.pdf` (+ supplementary .docx); page `wiki
 
 Pointers: (3) p. 5 ("Fredericia correction formula, FPDc"). (4) abstract p. 1 ("recordings were conducted for 4 days"), Methods 2.3 (baseline and 2, 24, 48, 72, 96 h), "developed and validated a functional assay" (p. 3). (5) abstract p. 1, Methods p. 3 (Axion Cytoview M768-tMEA-48B); doxorubicin is the only anthracycline; "a medium-throughput, human-based platform" (Discussion). (6) Table 2 (DMSO 0.1 %, N = 81; BR mean −5.8, FPDc mean 7.9 at 96 h; median 6.9, tolerance interval 0.4 to 20.8). Δ% is each well's change from its own baseline before compound or vehicle addition (Methods 2.3; 2.5 "the percent change from the baseline (Δ%)"); FP data are not DMSO-normalised. The paper names no cause for the drift. (7) the study reports beating rate, FP amplitude, FPD/FPDc, impedance and arrhythmic events; Supplementary Tables S7–S9 count events per well (beating below threshold, EAD, flat T-wave-like); beat-to-beat variability and conduction come from Matsuda. (9) Methods, data analysis on Imp (p. 5): "a reduction in the attachment of hiPSC-CMs to the bottom of the well due to cell death or changes in the monolayer morphology, causes a drop in the impedance signal".
 
-## Blinova et al. (2018)
+## ✅ Blinova et al. (2018)
 
 Local file: `raw/blinova-2018-multisite.pdf`; page `wiki/papers/blinova-2018-multisite.md`. Status: checked (Methods, Results, Discussion; Figures 1, 2, 5–7 viewed) 2026-10-18.
 
@@ -70,8 +70,8 @@ Pointers: Fridericia statement and the 20–90 bpm criterion in the Data Analysi
 
 Local file: `raw/botti-2026-insilico.pdf` (+ peer review history); page `wiki/papers/botti-2026-insilico.md`. Status: checked against the Europe PMC full text 2026-10-18; compare with the PDF. Reference year 2026 (issue 604(19), October 2026; online 11 May 2025).
 
-- [ ] (1) [Timeline] "In silico MEA–tissue biophysical model", listed under 2026.
-    - > 2026 : In silico MEA–tissue biophysical model (Botti et al.) — main.md:91
+- [ ] (1) [Timeline] "In silico model of hiPSC-CM tissue coupled to MEA electrodes", listed under 2026 (reworded 2026-11-04 from "In silico MEA–tissue biophysical model"; Discussion: the framework "incorporates a model of electrodes that couples with the bidomain framework").
+    - > 2026 : In silico model of hiPSC-CM tissue coupled to MEA electrodes (Botti et al.) — main.md:91
 - [ ] (2) [Outlook] forward modelling already includes the electrode: a bidomain model with a resistor–capacitor electrode model simulates FPs from phenotype-specific cell models.
     - > Forward modelling already includes the electrode: a bidomain model with a resistor–capacitor electrode model simulates FPs from phenotype-specific cell models (Botti et al., 2026). — main.md:211
     - > The forward model of Botti et al. (2026) is the closest existing component among the studies examined, but it was not fitted to new measurements. — main.md:219

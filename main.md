@@ -88,7 +88,7 @@ timeline
          : Healthy vs. LQTS hiPSC-CM CiPA drug comparison (Park et al.)
          : Video-based interpretable-AI maturity classifier (Scheurer et al.)
          : MEA parameters differ between maturation conditions (Li et al.)
-    2026 : In silico MEA–tissue biophysical model (Botti et al.)
+    2026 : In silico model of hiPSC-CM tissue coupled to MEA electrodes (Botti et al.)
          : PhysioMEA — cardiac organoid BRV and 2D heatmaps (Weiser-Bitoun et al.)
          : CardioScripts — combined AFM+MEA electromechanical analysis (Kabanov et al.)
          : Stacking ensemble ML for TdP risk prediction (Pramudito et al.)
