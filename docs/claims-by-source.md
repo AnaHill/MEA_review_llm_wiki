@@ -70,16 +70,18 @@ Pointers: Fridericia statement and the 20–90 bpm criterion in the Data Analysi
 
 Local file: `raw/botti-2026-insilico.pdf` (+ peer review history); page `wiki/papers/botti-2026-insilico.md`. Status: checked against the Europe PMC full text 2026-10-18; compare with the PDF. Reference year 2026 (issue 604(19), October 2026; online 11 May 2025).
 
-- [ ] (1) [Timeline] "In silico model of hiPSC-CM tissue coupled to MEA electrodes", listed under 2026 (reworded 2026-11-04 from "In silico MEA–tissue biophysical model"; Discussion: the framework "incorporates a model of electrodes that couples with the bidomain framework").
+- [x] (1) [Timeline] "In silico model of hiPSC-CM tissue coupled to MEA electrodes", listed under 2026 (reworded 2026-11-04 from "In silico MEA–tissue biophysical model"; Discussion: the framework "incorporates a model of electrodes that couples with the bidomain framework").
     - > 2026 : In silico model of hiPSC-CM tissue coupled to MEA electrodes (Botti et al.) — main.md:91
-- [ ] (2) [Outlook] forward modelling already includes the electrode: a bidomain model with a resistor–capacitor electrode model simulates FPs from phenotype-specific cell models.
+- [x] (2) [Outlook] forward modelling already includes the electrode: a bidomain model with a resistor–capacitor electrode model simulates FPs from phenotype-specific cell models.
     - > Forward modelling already includes the electrode: a bidomain model with a resistor–capacitor electrode model simulates FPs from phenotype-specific cell models (Botti et al., 2026). — main.md:211
     - > The forward model of Botti et al. (2026) is the closest existing component among the studies examined, but it was not fitted to new measurements. — main.md:219
-- [ ] (3) [Outlook] it is the closest existing component of a digital twin of the recording among the studies examined, but it was not fitted to new measurements.
+- [x] (3) [Outlook] it is the closest existing component of a digital twin of the recording among the studies examined, but it was not fitted to new measurements.
     - > Forward modelling already includes the electrode: a bidomain model with a resistor–capacitor electrode model simulates FPs from phenotype-specific cell models (Botti et al., 2026). — main.md:211
     - > The forward model of Botti et al. (2026) is the closest existing component among the studies examined, but it was not fitted to new measurements. — main.md:219
-- [ ] (4) [Limitations] example of simulation-based evidence.
+- [x] (4) [Limitations] example of simulation-based evidence.
     - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or non-MEA modalities (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:228
+- [x] (5) [Intro] reliable MEA recordings are essential for using hiPSC-CMs in drug development (added 2026-11-04). Quote supplied by the researcher: "To enhance the utility of hiPSC-CMs in drug development, reliable MEA recordings are essential." Locate its page in the PDF.
+    - > Reliable MEA recordings are considered essential for using hiPSC-CMs in drug development (Botti et al., 2026), and that reliability depends not only on the recording but also on consistent, physiologically meaningful analysis of FP waveforms. — main.md:57
 
 ## Clements et al. (2025)
 
@@ -731,7 +733,7 @@ Local file: `raw/weiser-bitoun-2026-physiomea.pdf`; page `wiki/papers/weiser-bit
 
 Pointers: (2) abstract and p. 2–3 ("45 measures, including time domain, frequency domain, and nonlinear analysis", from PhysioZoo; MATLAB 2023b or standalone .exe). (4) p. 3 ("FPD ... defined as the time difference between the R- and T-peaks"). (5)(7) p. 3 (inverted T waves and low-amplitude R peaks analysed on the inverted signal; electrodes with inconsistent biomarker counts excluded).
 
-## ✅ Register of the author's own inferences
+## Register of the author's own inferences
 
 These are statements in `main.md` that no single reference supports, generalisations from one or two studies, and the author's hypotheses. `main.md` does not mark them in the text, so this list is their only record; every new unsourced inference in `main.md` needs an item here. Tick `[x]` when you have decided that you stand behind the wording.
 
@@ -752,10 +754,12 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
     - **Based on:** register item 7
   - **(6)** raw MEA signals mix cell, tissue and device, and separating them is proposed as a hypothesis
     - **Based on:** Karami et al., 2026; Lee et al., 2026; Mäki, 2023; register items 25 and 26
-- [x] **1. [Intro, Motivation]** growing use of MEA assays as framing
-  - **Text:** "As the use of MEA-based assays has grown, so has the need for consistent, physiologically meaningful analysis"
-  - **Text:** the Motivation heading "why analysis methods became central after 2022"
-  - **Support:** `none` (framing; no usage data)
+- [ ] **1. [Intro, Motivation]** reliable recordings need consistent analysis (reworded 2026-11-04)
+  - **Text:** "that reliability depends not only on the recording but also on consistent, physiologically meaningful analysis of FP waveforms"
+  - **Text:** "This review examines methods and analysis practices in cardiomyocyte MEA studies published since 2022"; the Motivation heading "why analysis methods matter"
+  - **Based on:** Botti (5) for the first half of the sentence ("reliable MEA recordings are essential")
+  - **Note:** the trend framing ("As the use of MEA-based assays has grown, so has the need …", "have evolved since 2022", heading "why analysis methods became central after 2022") had no usage data and was removed; the step from reliable recordings to consistent analysis is the author's inference
+  - **Support:** `inference`
 - [x] **2. [Abstract, Motivation]** analysis methods as a possible source of inter-study variability
   - **Text:** analysis methods "have become a focus of attention as a possible source of inter-study variability"
   - **Text:** fiducial definitions "are a plausible source of variability and a possible limit to inter-study comparability"

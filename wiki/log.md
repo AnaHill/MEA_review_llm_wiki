@@ -715,3 +715,7 @@ The researcher checked Ernault et al. (2024). Its neighbouring-cell current conc
 ## [2026-11-04] draft | Timeline: Botti label clarified
 
 At the researcher's request, the Figure 1 label "In silico MEA–tissue biophysical model (Botti et al.)" became "In silico model of hiPSC-CM tissue coupled to MEA electrodes (Botti et al.)", matching the paper's Discussion (a bidomain tissue model with a coupled electrode model). Botti claim (1) updated.
+
+## [2026-11-04] draft | Introduction and Motivation: trend framing replaced, Botti cited
+
+The researcher pointed to a sentence in Botti et al. (2026): "To enhance the utility of hiPSC-CMs in drug development, reliable MEA recordings are essential." The unsourced trend sentence "As the use of MEA-based assays has grown, so has the need for consistent, physiologically meaningful analysis of FP waveforms" (register item 1) became "Reliable MEA recordings are considered essential for using hiPSC-CMs in drug development (Botti et al., 2026), and that reliability depends not only on the recording but also on consistent, physiologically meaningful analysis of FP waveforms". "how methods and analysis practices … have evolved since 2022" became "This review examines methods and analysis practices in cardiomyocyte MEA studies published since 2022". The heading "Motivation: why analysis methods became central after 2022" became "Motivation: why analysis methods matter". README.md was aligned. Register item 1 was reworded and unticked for review, and Botti claim (5) added.
