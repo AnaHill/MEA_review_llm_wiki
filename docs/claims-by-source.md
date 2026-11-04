@@ -112,7 +112,7 @@ Local file: `raw/clements-2025-aims-poster.pdf` (git-ignored); page `wiki/papers
 
 Pointers: poster, box "AIMS \#CM01: Proposed standards" (spike amplitude ≥ 0.5 mV on ≥ 50 % of electrodes, synchronised beating, "Spontaneous beat period of 750-3000 ms (i.e. 20-80 beats per minute, BPM)", FPDc 200–700 ms with Fridericia); "Presented at ISSCR 2025, Hong Kong, June 11, 2025". (4) web page, criterion 3, "Additional Information": maturation "can result in spontaneous beat periods greater than 3000 ms"; such cells are impractical because of long recordings; external pacing "will probably be required to make these cells more practical to work with"; "A paced hiPSC-CM assay could be the subject of a future AIMS but is beyond the scope of this AIMS" (quoted by the tool as verbatim; check on the page).
 
-## Correia et al. (2024)
+## ✅ Correia et al. (2024)
 
 Local files: `raw/correia-2024-acc2.pdf` (+ supplementary, not read); page `wiki/papers/correia-2024-acc2.md`. Status: checked against the full text and Figure 7F 2026-10-24.
 
@@ -142,9 +142,9 @@ Pointers: (3) p. 3 (medium composition), p. 14 (MDP −79.2 vs −74.3 mV; dV/dt
 
 Local file: `raw/dunham-2022-cardiopyemea.pdf`; page `wiki/papers/dunham-2022-cardiopyemea.md`. Status: checked against the abstract and the FPD section 2026-10-24.
 
-- [ ] (1) [Timeline] Cardio PyMEA, an open-source Python pipeline, 2022.
+- [x] (1) [Timeline] Cardio PyMEA, an open-source Python pipeline, 2022.
     - > 2022 : Cardio PyMEA — open-source Python pipeline (Dunham et al.) — main.md:73
-- [ ] (2) [Open pipelines] open analysis tools existed before 2022 (cited with Lee et al., 2024; the names MultiElec and CardioMDA come from Lee).
+- [x] (2) [Open pipelines] open analysis tools existed before 2022 (cited with Lee et al., 2024; the names MultiElec and CardioMDA come from Lee).
     - > Such tools are not new, as MultiElec and CardioMDA, for example, existed before 2022 (Dunham et al., 2022; Lee et al., 2024), but several new ones have appeared since 2022, some of them built for new kinds of data such as high-density arrays (Lee et al., 2024) and cardiac organoids (Weiser-Bitoun et al., 2026). — main.md:95
     - > This open-source Python-based application enables explicit analysis of cardiomyocyte MEA recordings, including beat detection, pacemaker origin estimation, beat interval and amplitude analysis, local activation time, upstroke velocity, and conduction velocity (Dunham et al., 2022). — main.md:97
 - [ ] (3) [Open pipelines] Cardio PyMEA, introduced in 2022, is an open-source Python application for beat detection, pacemaker origin estimation, beat interval and amplitude analysis, local activation time, upstroke velocity and conduction velocity; an early example of open pipelines.
