@@ -53,15 +53,15 @@ Local file: `raw/blinova-2018-multisite.pdf`; page `wiki/papers/blinova-2018-mul
 - [x] (3) [FPDc] Fridericia correction was already in use before 2022: the blinded multisite CiPA study (ten sites, 28 reference drugs) applied it to all its FPD data.
     - > Fridericia correction was already in use before 2022: the blinded multisite CiPA study (ten sites, 28 reference drugs) applied it to all its FPD data, although its authors noted that the formula had not been thoroughly validated for hiPSC-CMs (Blinova et al., 2018). — main.md:135
     - > Furthermore, a fixed cube-root correction cannot be assumed to hold across the wide range of spontaneous rates of hiPSC-CMs, which are accepted at 20–90 bpm in the multisite CiPA study (Blinova et al., 2018) and 20–80 bpm in a proposed acceptance standard (Clements et al., 2025), so the formula may under- or over-correct at the extremes of this range. — main.md:137
-- [ ] (4) [FPDc] its authors noted that the Fridericia formula had not been thoroughly validated for hiPSC-CMs.
+- [x] (4) [FPDc] its authors noted that the Fridericia formula had not been thoroughly validated for hiPSC-CMs.
     - > Fridericia correction was already in use before 2022: the blinded multisite CiPA study (ten sites, 28 reference drugs) applied it to all its FPD data, although its authors noted that the formula had not been thoroughly validated for hiPSC-CMs (Blinova et al., 2018). — main.md:135
     - > Furthermore, a fixed cube-root correction cannot be assumed to hold across the wide range of spontaneous rates of hiPSC-CMs, which are accepted at 20–90 bpm in the multisite CiPA study (Blinova et al., 2018) and 20–80 bpm in a proposed acceptance standard (Clements et al., 2025), so the formula may under- or over-correct at the extremes of this range. — main.md:137
-- [ ] (5) [FPDc] spontaneous rates of hiPSC-CMs were accepted at 20–90 bpm (baseline inclusion criterion).
+- [x] (5) [FPDc] spontaneous rates of hiPSC-CMs were accepted at 20–90 bpm (baseline inclusion criterion).
     - > Fridericia correction was already in use before 2022: the blinded multisite CiPA study (ten sites, 28 reference drugs) applied it to all its FPD data, although its authors noted that the formula had not been thoroughly validated for hiPSC-CMs (Blinova et al., 2018). — main.md:135
     - > Furthermore, a fixed cube-root correction cannot be assumed to hold across the wide range of spontaneous rates of hiPSC-CMs, which are accepted at 20–90 bpm in the multisite CiPA study (Blinova et al., 2018) and 20–80 bpm in a proposed acceptance standard (Clements et al., 2025), so the formula may under- or over-correct at the extremes of this range. — main.md:137
-- [ ] (6) [Limitations] cited only as pre-2022 background, not as one of the post-2022 developments.
+- [x] (6) [Limitations] cited only as pre-2022 background, not as one of the post-2022 developments.
     - > - (vi) A few works from before 2022, such as Blinova et al. (2018), Hayakawa et al. (2014) and Ryynänen et al. (2018), are cited only as background for conventions, datasets and earlier multimodal work. — main.md:232
-- [ ] (7) [Conclusion] quantitative criteria exist for well acceptance (amplitude, rate, beat period).
+- [x] (7) [Conclusion] quantitative criteria exist for well acceptance (amplitude, rate, beat period).
     - > In contrast, quantitative criteria exist for well acceptance, such as amplitude, rate and beat period (Blinova et al., 2018; Clements et al., 2025). — main.md:244
 
 Pointers: Fridericia statement and the 20–90 bpm criterion in the Data Analysis section of the Experimental Procedures; ten sites and 28 drugs in the Summary.
