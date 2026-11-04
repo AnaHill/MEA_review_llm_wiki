@@ -723,3 +723,7 @@ The researcher pointed to a sentence in Botti et al. (2026): "To enhance the uti
 ## [2026-11-04] draft | FPDc: Clements pacing sentence clarified
 
 At the researcher's request, the Clements part of the pacing sentence now reads "…defined for spontaneously beating cells: more mature cells can beat with periods longer than its 3000 ms upper limit, which makes recordings impractically long, so pacing would probably be needed, a paced assay being left to a possible future standard (Clements et al., 2025)". This makes explicit that 3000 ms is the upper limit of the 750–3000 ms window and that the standard's reason for pacing is practical, not rate correction. Clements claim (4) updated.
+
+## [2026-11-04] draft | Detail trimmed in maturation, open pipelines, FPDc, 3D and high-throughput sections
+
+Removed detail not needed for the argument: Correia medium composition, patch-clamp values and BCKDK/IC50 details (paragraph now one sentence; timeline label without ACC2); Altrocchi plate format and compound classes; Park 2025 example drugs; classifier types for Pramudito 2026 and Park 2026; CardioMEA SQL/dashboard and PhysioMEA MATLAB/executable (both remain in Table 1); Li 2025 numerical values; Scheurer SVM/Shapley parenthesis; Maurissen example FPDc values. Abbreviations ACC2, BCKDK, IC50 and IGF-1 removed from the list. Matching claims in docs/claims-by-source.md reworded; Correia claims (5) and (6) dropped, (7) renumbered to (5).
