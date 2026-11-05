@@ -751,3 +751,11 @@ Figures 4 (left plot), 5A–B and 6C–D extracted from raw/dunham-2022-cardiopy
 ## [2026-11-05] draft | Figure 2: biphasic condition on the T-wave-peak branch
 
 From the Ernault et al. (2024) claim check: the Figure 2 node "APD90 surrogate" now reads "APD90 surrogate if biphasic T wave", because the paper found the T-wave peak to coincide with APD90 only for biphasic T waves, a minority of the monolayers (p. H803). Claim Ernault (4) and its quote updated.
+
+## [2026-11-05] draft | Maturation: Fetterman paragraph shortened, timeline wording
+
+From the Fetterman et al. (2024) claim check. Timeline label now says "largely independent", as the source does. In the maturation section the method sentence (single additions and subtractions, nine formulations by RNA sequencing) and the fatty-acid example were merged into one general sentence: functional, metabolic and transcriptional maturation responded largely independently when medium components were added or removed one at a time. Claims in docs/claims-by-source.md: Fetterman (2) reworded, former (3) dropped, (4) and (5) renumbered to (3) and (4); register item 18 now points to Fetterman (2).
+
+## [2026-11-05] draft | Limitations: "non-MEA modalities" reworded
+
+Fetterman et al. (2024) call their impedance recordings MEA-based but recorded no field potentials; Scheurer et al. (2025) used video-based analysis (checked by the researcher). Limitations item (ii) now says "modalities other than field potentials". Fetterman (4) and Scheurer (7) in docs/claims-by-source.md updated.
