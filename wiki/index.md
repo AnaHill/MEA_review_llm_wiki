@@ -49,6 +49,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 - [Multimodal measurement of hiPSC-CMs](multimodal-measurement.md) — Where MEA is combined with impedance, intracellular-like electroporation signals, AFM, video, Ca²⁺ imaging or traction force (Altrocchi, Lee, Kabanov, Hayakawa, Ryynänen, Vuorenpää); the sensor-fusion hypotheses themselves are only in main.md.
 - [Separating cell, tissue and device contributions to the field potential](signal-separation.md) — What the sources say about the device and tissue share of the FP (Karami, Ernault, Lee 2024, Botti, Altrocchi, Lee 2026, Lin, Vuorenpää), kept apart from the author's inverse-approach and impedance hypotheses (Highlight 6, Outlook).
+- [Field potential polarity: the Cardio PyMEA example recordings](fp-polarity.md) — Whether Dunham et al. (2022) Figs 4–6 are shown with the polarity their analysis assumes; the researcher's inverted, pacemaker-like reading with arguments for and against and possible tests; only a neutral polarity paragraph went into main.md (morphology).
 - [CiPA in the reviewed papers](cipa.md) — How Blinova 2018, Park 2025/2026, Pramudito 2026, Clements 2025 and Matsuda 2025 relate to the Comprehensive in vitro Proarrhythmia Assay.
 
 *(other candidates: hERG trafficking, 3D vs 2D cultures)*

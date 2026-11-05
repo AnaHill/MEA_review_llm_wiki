@@ -48,3 +48,4 @@ Cited in main.md as an early example (2022) of the transition from vendor-define
 - [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
 - [[wiki/papers/maki-2023-opinion.md]]
+- [[wiki/fp-polarity.md]]

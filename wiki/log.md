@@ -739,3 +739,11 @@ GitHub API: AnaHill/DatAnalyzer now has an MIT licence (LICENSE). Mäki 2023 pag
 ## [2026-11-05] draft | Timeline: own work shown once
 
 The separate 2023 entry for the Mäki opinion paper was merged into the 2022 DatAnalyzer entry, which now names the paper as the description of the method.
+
+## [2026-11-05] draft | Morphology: FP polarity as an unstated assumption
+
+From the researcher's flipped screenshots of Dunham et al. (2022) Figs 4–6. Added one neutral paragraph at the end of the morphology section (Dunham beat and LAT definitions presuppose polarity, not stated; Karami: FP may follow Vm or its first or second derivative). New concept page wiki/fp-polarity.md keeps the inverted, pacemaker-like reading, arguments for and against and possible tests; linked from index, Dunham, Mäki and Karami pages. Claims Dunham (7), Karami (5) and register item 28 added.
+
+## [2026-11-05] query | FP polarity page: Dunham figures added
+
+Figures 4 (left plot), 5A–B and 6C–D extracted from raw/dunham-2022-cardiopyemea.pdf, cropped and shown as published next to a vertically flipped copy in wiki/assets/fp-polarity/; embedded on wiki/fp-polarity.md with CC BY attribution and a note of the changes. The researcher's Word file is no longer needed.

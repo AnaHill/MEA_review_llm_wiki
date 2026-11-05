@@ -68,3 +68,4 @@ This is the evaluative anchor for main.md. The review explicitly uses this opini
 - [[wiki/papers/ismaili-2023-hamburg.md]]
 - [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
 - [[wiki/papers/dunham-2022-cardiopyemea.md]]
+- [[wiki/fp-polarity.md]]
