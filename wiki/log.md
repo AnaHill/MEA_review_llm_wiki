@@ -735,3 +735,7 @@ GitHub repository AnaHill/DatAnalyzer: created 2022-04-27, language MATLAB, no l
 ## [2026-11-05] query | DatAnalyzer licence confirmed
 
 GitHub API: AnaHill/DatAnalyzer now has an MIT licence (LICENSE). Mäki 2023 page updated; "open-source" in Table 1 caption now holds for DatAnalyzer too.
+
+## [2026-11-05] draft | Timeline: own work shown once
+
+The separate 2023 entry for the Mäki opinion paper was merged into the 2022 DatAnalyzer entry, which now names the paper as the description of the method.

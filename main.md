@@ -71,9 +71,8 @@ This is a narrative review of methodological developments in cardiomyocyte MEA a
 timeline
     title Post-2022 developments in cardiomyocyte MEA analysis methodology
     2022 : Cardio PyMEA — open-source Python pipeline (Dunham et al.)
-         : DatAnalyzer — MATLAB tool with morphology-aware FPD (own work; Mäki)
-    2023 : Mäki opinion paper describing the DatAnalyzer method (own work, not peer reviewed)
-         : Hamburg perspective on hiPSC-CM limitations (Ismaili et al.)
+         : DatAnalyzer — MATLAB tool with morphology-aware FPD (own work; method in Mäki 2023, not peer reviewed)
+    2023 : Hamburg perspective on hiPSC-CM limitations (Ismaili et al.)
          : 3D spheroid geometry as FP variability source (Hwang et al.)
     2024 : CardioMEA platform — scalable open analysis (Lee et al.)
          : T-wave peak = APD90 for biphasic T-waves, in NRVM (Ernault et al.)
