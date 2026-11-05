@@ -747,3 +747,7 @@ From the researcher's flipped screenshots of Dunham et al. (2022) Figs 4–6. Ad
 ## [2026-11-05] query | FP polarity page: Dunham figures added
 
 Figures 4 (left plot), 5A–B and 6C–D extracted from raw/dunham-2022-cardiopyemea.pdf, cropped and shown as published next to a vertically flipped copy in wiki/assets/fp-polarity/; embedded on wiki/fp-polarity.md with CC BY attribution and a note of the changes. The researcher's Word file is no longer needed.
+
+## [2026-11-05] draft | Figure 2: biphasic condition on the T-wave-peak branch
+
+From the Ernault et al. (2024) claim check: the Figure 2 node "APD90 surrogate" now reads "APD90 surrogate if biphasic T wave", because the paper found the T-wave peak to coincide with APD90 only for biphasic T waves, a minority of the monolayers (p. H803). Claim Ernault (4) and its quote updated.
