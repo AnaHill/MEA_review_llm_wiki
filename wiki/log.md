@@ -727,3 +727,11 @@ At the researcher's request, the Clements part of the pacing sentence now reads 
 ## [2026-11-04] draft | Detail trimmed in maturation, open pipelines, FPDc, 3D and high-throughput sections
 
 Removed detail not needed for the argument: Correia medium composition, patch-clamp values and BCKDK/IC50 details (paragraph now one sentence; timeline label without ACC2); Altrocchi plate format and compound classes; Park 2025 example drugs; classifier types for Pramudito 2026 and Park 2026; CardioMEA SQL/dashboard and PhysioMEA MATLAB/executable (both remain in Table 1); Li 2025 numerical values; Scheurer SVM/Shapley parenthesis; Maurissen example FPDc values. Abbreviations ACC2, BCKDK, IC50 and IGF-1 removed from the list. Matching claims in docs/claims-by-source.md reworded; Correia claims (5) and (6) dropped, (7) renumbered to (5).
+
+## [2026-11-05] draft | DatAnalyzer dated 2022 and language corrected to MATLAB
+
+GitHub repository AnaHill/DatAnalyzer: created 2022-04-27, language MATLAB, no licence at the time (the author is adding MIT). Timeline: DatAnalyzer moved to 2022, separate 2023 entry for the opinion paper. Table 1: year 2022, language Python corrected to MATLAB, caption explains the year column. Open pipelines: DatAnalyzer released the same year as Cardio PyMEA, which stays the earliest (its repository dates from 2020). Mäki 2023 page and claims (2), (4) updated.
+
+## [2026-11-05] query | DatAnalyzer licence confirmed
+
+GitHub API: AnaHill/DatAnalyzer now has an MIT licence (LICENSE). Mäki 2023 page updated; "open-source" in Table 1 caption now holds for DatAnalyzer too.

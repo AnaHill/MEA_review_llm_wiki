@@ -14,7 +14,7 @@ tags: [open-platform, fiducial-definition, waveform-morphology, rate-correction,
 
 ## Contribution
 
-Argues that the two most common conventions for measuring FPD from hiPSC-CM MEA recordings are physiologically wrong, and proposes an alternative algorithmic method that is implemented in the open-source *DatAnalyzer* tool (GitHub: https://github.com/AnaHill/DatAnalyzer).
+Argues that the two most common conventions for measuring FPD from hiPSC-CM MEA recordings are physiologically wrong, and proposes an alternative algorithmic method that is implemented in the *DatAnalyzer* tool (GitHub: https://github.com/AnaHill/DatAnalyzer). The paper says only that the tool is freely available on GitHub; per the GitHub repository (checked 2026-11-05) it is written in MATLAB and the repository was created on 2022-04-27. An MIT licence was added on 2026-11-05 (LICENSE file, checked via the GitHub API), so the tool is open source.
 
 The two challenged conventions:
 1. Using the **first positive peak** as the start of FPD — this peak reflects depolarization of *neighboring* cells, not the locally recorded cell
