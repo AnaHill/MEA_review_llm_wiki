@@ -195,13 +195,13 @@ Pointers: (2) abstract p. 1 and p. 4 ("only in the monolayers exhibiting field p
 
 Local file: `raw/fetterman-2024-maturation.pdf`; page `wiki/papers/fetterman-2024-maturation.md`. Status: checked against the full text 2026-10-24.
 
-- [ ] (1) [Timeline] "Functional/metabolic/transcriptional maturation shown largely independent" ("largely" added 2026-11-05).
+- [x] (1) [Timeline] "Functional/metabolic/transcriptional maturation shown largely independent" ("largely" added 2026-11-05).
     - > : Functional/metabolic/transcriptional maturation shown largely independent (Fetterman et al.) — main.md:81
-- [ ] (2) [Maturation] when the components of a maturation medium were added or removed one at a time, functional (electrophysiology and excitation–contraction coupling), metabolic and transcriptional maturation responded largely independently (shortened 2026-11-05: the method sentence and the fatty-acid example were merged into this one claim; former (3) dropped, (4) and (5) renumbered).
+- [x] (2) [Maturation] when the components of a maturation medium were added or removed one at a time, functional (electrophysiology and excitation–contraction coupling), metabolic and transcriptional maturation responded largely independently (shortened 2026-11-05: the method sentence and the fatty-acid example were merged into this one claim; former (3) dropped, (4) and (5) renumbered).
     - > A recent high-throughput study outside the MEA literature limits what such a reference value could measure: when the components of a maturation medium were added or removed one at a time, functional (electrophysiology and excitation–contraction coupling), metabolic and transcriptional maturation responded largely independently (Fetterman et al., 2024). — main.md:142
-- [ ] (3) [Conclusion] because maturation is induced largely independently, a benchmark could only cover the electrophysiological axis.
+- [x] (3) [Conclusion] because maturation is induced largely independently, a benchmark could only cover the electrophysiological axis.
     - > Because functional, metabolic and transcriptional maturation are induced largely independently (Fetterman et al., 2024), such a benchmark could only cover the electrophysiological axis. — main.md:244
-- [ ] (4) [Limitations] example of a modality other than field potentials (was "non-MEA modalities" until 2026-11-05; the paper calls its impedance recordings MEA-based, but no FPs were recorded: Ca²⁺ imaging, impedance, patch clamp).
+- [x] (4) [Limitations] example of a modality other than field potentials (was "non-MEA modalities" until 2026-11-05; the paper calls its impedance recordings MEA-based, but no FPs were recorded: Ca²⁺ imaging, impedance, patch clamp).
     - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or modalities other than field potentials (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:226
 
 Pointers: (1)(2) summary p. 2 ("induction of these attributes is largely independent"); highlights p. 1 ("Functional and metabolic maturation are largely independent"). (2) single-addition experiments in MMb and single-subtraction experiments in MMc (p. 5, Figure 2); p. 7 ("Fatty acids contribute to metabolism but not viability, Ca²⁺ dynamics, impedance, or Nav current"); nine formulations in the RNA-seq comparison (Figure 6, p. 10).
@@ -659,7 +659,7 @@ Pointers: (1) p. 4 ("Bazett's formula was used to calculate the beat-rate-correc
 
 Local files: `raw/scheurer-2025-optical-ai.pdf` (+ supplementary, not read); page `wiki/papers/scheurer-2025-optical-ai.md`. Status: checked against the abstract, Results and Discussion 2026-10-24.
 
-- [ ] (1) [Timeline] "Video-based interpretable-AI maturity classifier".
+- [x] (1) [Timeline] "Video-based interpretable-AI maturity classifier".
     - > : Video-based interpretable-AI maturity classifier (Scheurer et al.) — main.md:85
 - [ ] (2) [Maturation] hiPSC-CMs retain a fetal-like phenotype (cited with Correia et al., 2024).
     - > Maturation adds a further complication for comparisons between studies, distinct from but interacting with rate correction. hiPSC-CMs are electrophysiologically immature compared with adult cardiomyocytes and retain a fetal-like phenotype (Correia et al., 2024; Scheurer et al., 2025). — main.md:138
