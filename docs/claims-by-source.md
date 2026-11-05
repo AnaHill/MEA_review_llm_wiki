@@ -152,14 +152,14 @@ Local file: `raw/dunham-2022-cardiopyemea.pdf`; page `wiki/papers/dunham-2022-ca
     - > This open-source Python-based application enables explicit analysis of cardiomyocyte MEA recordings, including beat detection, pacemaker origin estimation, beat interval and amplitude analysis, local activation time, upstroke velocity, and conduction velocity (Dunham et al., 2022). — main.md:97
 - [x] (4) [Table 1] Python; FPD end at a T-wave endpoint located with a trapezoid-area algorithm; beat detection, LAT, conduction velocity, pacemaker origin estimation.
     - > | Cardio PyMEA (Dunham et al., 2022) | 2022 | Python | T-wave endpoint (trapezoid-area algorithm) | Beat detection, LAT, conduction velocity, pacemaker origin estimation | — main.md:105
-- [ ] (5) [Fiducial, Table 2] FPD runs from the R peak to a T-wave endpoint located with a trapezoid-area algorithm, not validated against the AP in the paper. To check: the paper says "R wave"; confirm that the start is the R peak.
+- [x] (5) [Fiducial, Table 2] FPD runs from the R peak to a T-wave endpoint located with a trapezoid-area algorithm, not validated against the AP in the paper.
     - > - **Cardio PyMEA**: from the R peak to a T-wave endpoint located with a trapezoid-area algorithm (Dunham et al., 2022) — main.md:116
     - > | T-wave endpoint (trapezoid area) | R peak | T-wave end located with a trapezoid-area algorithm | Not validated against the AP in the source | Dunham et al., 2022 | — main.md:128
-- [ ] (6) [Morphology] Figure 2 shows the trapezoid-area T-wave endpoint as a third FPD end convention ("End of the T wave").
+- [x] (6) [Morphology] Figure 2 shows the trapezoid-area T-wave endpoint as a third FPD end convention ("End of the T wave").
     - > J -->|T-wave endpoint trapezoid area| P[End of the T wave Dunham et al., 2022] — main.md:174
     - > Cardio PyMEA detects beats at the most prominent peak of the field potential and places local activation at the steepest negative deflection after it (Dunham et al., 2022), so its analysis presupposes the polarity of its recordings, which the paper does not state. — main.md:183
 
-- [ ] (7) [Morphology] beats are detected at the most prominent peak of the field potential and local activation is placed at the steepest negative deflection after it; the paper does not state the polarity convention of the recording system (added 2026-11-05; that the analysis therefore presupposes the polarity is our inference, register item 28; see wiki/fp-polarity.md).
+- [x] (7) [Morphology] beats are detected at the most prominent peak of the field potential and local activation is placed at the steepest negative deflection after it; the paper does not state the polarity convention of the recording system (added 2026-11-05; that the analysis therefore presupposes the polarity is our inference, register item 28; see wiki/fp-polarity.md).
     - > J -->|T-wave endpoint trapezoid area| P[End of the T wave Dunham et al., 2022] — main.md:174
     - > Cardio PyMEA detects beats at the most prominent peak of the field potential and places local activation at the steepest negative deflection after it (Dunham et al., 2022), so its analysis presupposes the polarity of its recordings, which the paper does not state. — main.md:183
 
