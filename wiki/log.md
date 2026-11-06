@@ -787,3 +787,7 @@ Dropped 257 ms, 27.5-fold, 30 days, the I<sub>K1</sub> parenthesis, 1.5 Hz and 2
 ## [2026-11-06] draft | High-throughput: Guerrelli equilibration percentages dropped
 
 The researcher removed the 22.6 % and 7.7 % values from the high-throughput section; Guerrelli claim (7) updated to match. All Guerrelli claims checked by the researcher.
+
+## [2026-11-06] draft | Abbreviations cut from 25 to 17 entries; detail trimmed
+
+Spelled out or dropped so they leave the list: 1D, AFM, AIMS, BRV, CMOS, FPDcF, ITO, LAT, LQTS, ML, NR, UHD (timeline, Table 1, formula, Figure 2, Matsuda and Lee 2026 sentences). Trimmed detail: Cardio PyMEA and PhysioMEA feature lists (kept in Table 1), CardioMEA parallel processing/dashboard in Table 1, Maurissen mutation codes, Matsuda 0.03 µM / 10-fold. Equivalent-circuit detail (Karami) kept at the researcher's request. Matching claims reworded.
