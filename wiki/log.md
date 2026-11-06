@@ -771,3 +771,11 @@ Maturation: Clements amplitude criterion (≥ 0.5 mV) depends on recording day (
 ## [2026-11-06] draft | Maturation: amplitude sentence simplified
 
 "day 2 after thawing" replaced with Guerrelli's own term "post-defrost"; exact amplitude values dropped (below 0.5 mV on day 2, several millivolts by day 14).
+
+## [2026-11-06] draft | FPDc: Guerrelli equilibration sentence made precise
+
+The 15–20 min recommendation is now attributed to the authors with its basis (changes for 7–12 min in iCell², longer than the manufacturer's 10 min) and the absence of the effect in Cor.4U. Guerrelli claim (3) reworded, pointers added.
+
+## [2026-11-06] draft | FPDc: Guerrelli pacing sentence covers drug tests
+
+The pacing sentence now names both uses of external pacing in Guerrelli et al. (2024): across days in culture (1.5 Hz) and in drug tests (rate chosen per drug). Claim (4) reworded, pointers added.
