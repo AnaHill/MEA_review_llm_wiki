@@ -791,3 +791,7 @@ The researcher removed the 22.6 % and 7.7 % values from the high-throughput sect
 ## [2026-11-06] draft | Abbreviations cut from 25 to 17 entries; detail trimmed
 
 Spelled out or dropped so they leave the list: 1D, AFM, AIMS, BRV, CMOS, FPDcF, ITO, LAT, LQTS, ML, NR, UHD (timeline, Table 1, formula, Figure 2, Matsuda and Lee 2026 sentences). Trimmed detail: Cardio PyMEA and PhysioMEA feature lists (kept in Table 1), CardioMEA parallel processing/dashboard in Table 1, Maurissen mutation codes, Matsuda 0.03 µM / 10-fold. Equivalent-circuit detail (Karami) kept at the researcher's request. Matching claims reworded.
+
+## [2026-11-06] ingest | Hayakawa 2014 — supplementary methods
+
+The researcher added the publisher supplement mmc1.docx; renamed to raw/hayakawa-2014-motion-fp-supplementary.docx. It holds only expanded methods (MEA seeding inside a silicone ring, 3–6 days on the probe, one cell lot; block-matching motion vector algorithm; stage-top incubator for simultaneous FP and motion; traction force microscopy), no further results. Wiki page updated (Supplementary line, culture details under Methodology, new "Supplementary material" section); claims-by-source status line updated. No change to main.md, wiki/references.md or wiki/index.md.

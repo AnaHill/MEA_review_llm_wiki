@@ -250,7 +250,7 @@ Pointers: abstract p. 1 (22.6 % and 7.7 % in 20 min; −12.7 beats/min and +257 
 
 ## Hayakawa et al. (2014)
 
-Local file: `raw/hayakawa-2014-motion-fp.pdf`; page `wiki/papers/hayakawa-2014-motion-fp.md`. Status: checked against the full text 2026-10-24 (text extraction; figures not viewed; supplementary materials not available).
+Local file: `raw/hayakawa-2014-motion-fp.pdf`; page `wiki/papers/hayakawa-2014-motion-fp.md`. Status: checked against the full text 2026-10-24 (text extraction; figures not viewed; supplementary materials not available then). Supplementary methods (`raw/hayakawa-2014-motion-fp-supplementary.docx`) read 2026-11-06: methods only, no effect on the claims below.
 
 - [ ] (1) [Fiducial] with simultaneous video and MEA recordings in iCell monolayers, the two FPD end points in use at the time (peak of the positive deflection; return of the positive deflection to baseline) appeared to correspond to different phases of the relaxation motion (its upstroke and its peak), and an accurate end point was difficult to establish.
     - > Earlier work with simultaneous video and MEA recordings in iCell monolayers likewise noted that the two FPD end points in use at the time, the peak of the positive deflection and the return of the positive deflection to baseline, appeared to correspond to different phases of the relaxation motion (its upstroke and its peak, respectively), and that an accurate end point was difficult to establish (Hayakawa et al., 2014). — main.md:110
