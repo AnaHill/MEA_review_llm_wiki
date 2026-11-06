@@ -779,3 +779,11 @@ The 15–20 min recommendation is now attributed to the authors with its basis (
 ## [2026-11-06] draft | FPDc: Guerrelli pacing sentence covers drug tests
 
 The pacing sentence now names both uses of external pacing in Guerrelli et al. (2024): across days in culture (1.5 Hz) and in drug tests (rate chosen per drug). Claim (4) reworded, pointers added.
+
+## [2026-11-06] draft | Maturation: Guerrelli drift paragraph without exact values
+
+Dropped 257 ms, 27.5-fold, 30 days, the I<sub>K1</sub> parenthesis, 1.5 Hz and 275.5 → 336.0 ms; the text now says FPD lengthened markedly when spontaneous and significantly when paced. Values remain in the claims and on the Guerrelli page. Claim (5) reworded.
+
+## [2026-11-06] draft | High-throughput: Guerrelli equilibration percentages dropped
+
+The researcher removed the 22.6 % and 7.7 % values from the high-throughput section; Guerrelli claim (7) updated to match. All Guerrelli claims checked by the researcher.
