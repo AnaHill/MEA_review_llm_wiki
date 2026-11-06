@@ -8,6 +8,7 @@ tags: [temporal-confounder, maturation, equilibration, reproducibility, well-pos
 **Year:** 2024  
 **Venue:** American Journal of Physiology–Heart and Circulatory Physiology 327(1):H12–H27  
 **File:** [[raw/guerrelli-2024-hipscm.pdf]]  
+**Supplementary:** [[raw/guerrelli-2024-hipscm-supplementary.pdf]] (figshare, https://doi.org/10.6084/m9.figshare.24222883)  
 **DOI:** 10.1152/ajpheart.00631.2023
 
 ## Contribution
@@ -30,6 +31,15 @@ Note: page checked against the source text on 2026-10-24; statements not support
 - **Drift under pacing:** because the metrics are rate dependent, the authors repeated the measurements under external pacing at 1.5 Hz; FPD still lengthened from 275.5 ± 13.8 ms on day 3 to 336.0 ± 14 ms on day 14 (+21.9 %, against +54.8 % for spontaneous beating), with most of the change in the first week and a plateau after day 9 (Fig. 5A). So the drift is not only a rate effect. (Our rough check, not in the paper: Fridericia correction of the spontaneous means gives FPDc ≈ 279 ms on day 2 and ≈ 481 ms on day 14, so correction does not remove the drift either; the paper reports no FPDc.)
 - **Drug responsiveness differs by age:** E-4031 prolonged FPD more at day 4 than at day 10 (+31.2% vs +17.2%); isoproterenol and nifedipine responses also changed with culture time. The authors say culture time should be considered in drug screening.
 - **Gene expression:** KCNJ2 increases 27.5-fold over 30 days in iCell² (vs 5.0-fold in Cor.4U), suggesting continued maturation in culture.
+
+### Supplementary material
+Read 2026-11-06 from the text layer (14 pages; figures were not analysed). Supplemental Figures S1–S6 and Tables S1–S8:
+- **Fig. S1:** FPD was similar across the 16 electrodes of a well (coefficient of variation 1.85–3.79 %, main text p. 3), the basis for analysing one representative electrode per well. The main text adds that electrodes were chosen with "an upright t-wave or the positive portion of a biphasic t-wave" and averaged over 30 s.
+- **Tables S1–S3 (iCell²):** minute-by-minute equilibration values and daily spontaneous and paced (1.5 Hz) values for beat rate, FPD, spike amplitude and conduction velocity, with p values and effect sizes versus day 7 (or minute 20). Spike amplitude rose about twelve-fold over days 2–14 (0.301 ± 0.238 to 3.611 ± 0.774 mV, spontaneous), conduction velocity changed little (about 0.21–0.35 mm/ms).
+- **Table S4 (iCell², LEAP, paced 1.5 Hz, days 4–10):** APD30, APD50 and APD90 per day; APD90 319.6 ± 15.3 to 399.2 ± 15.5 ms (the end points are also in the main text). Paced FPD over the same days (Table S3) rose from 282.1 ± 18.5 to 333.7 ± 13.8 ms; FPD and APD come from different well subsets (different n), so the two series are not paired.
+- **Figs S2–S5, Tables S5–S7 (Cor.4U):** spontaneous FPD 182.0 ± 13.3 ms (day 2) to a peak of 261.3 ± 23.4 ms (day 13) and 236.5 ± 22.8 ms on day 14, beat rate oscillating around 66–82 bpm; paced at 2 Hz (not 1.5 Hz) FPD stayed about 190–215 ms; no equilibration effect over 20 min (FPD 224.1 to 226.3 ms). Spike amplitude rose from 0.228 to 8.093 mV.
+- **Fig. S6:** Cor.4U gene expression over one month (NKX2.5, VIM, TNNI3, CACNA1C, CASQ2, ATP2A1, SCN5A, *KCNJ2*).
+- **Table S8, "Example reporting datasheet":** fields for hiPSC-CM parameters (manufacturer, line, product and lot number, donor sex and age, purity, vials, plating density), experimental parameters (plates, time post-defrost, equilibration, temperature, CO₂, recording length, sampling frequency), pacing settings (frequency, stimulus duration, voltage, current, stimulus type) and analysis parameters, the last limited to the number of electrodes analysed and the averaging time. It has no field for the FPD fiducial definition, rate correction or analysis software (our observation).
 
 ## Practical recommendations
 - Allow **15–20 min equilibration** before recording baselines.

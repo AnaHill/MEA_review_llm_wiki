@@ -759,3 +759,15 @@ From the Fetterman et al. (2024) claim check. Timeline label now says "largely i
 ## [2026-11-05] draft | Limitations: "non-MEA modalities" reworded
 
 Fetterman et al. (2024) call their impedance recordings MEA-based but recorded no field potentials; Scheurer et al. (2025) used video-based analysis (checked by the researcher). Limitations item (ii) now says "modalities other than field potentials". Fetterman (4) and Scheurer (7) in docs/claims-by-source.md updated.
+
+## [2026-11-06] ingest | Guerrelli 2024 — supplementary material
+
+raw/guerrelli-2024-hipscm-supplementary.pdf (figshare 10.6084/m9.figshare.24222883) read from the text layer; Supplementary line and a "Supplementary material" section added to the Guerrelli page (Figs S1–S6, Tables S1–S8: intrawell FPD homogeneity, daily and paced values, LEAP APD, Cor.4U, reporting datasheet S8 without fiducial or rate-correction fields). main.md not changed; proposals to the researcher.
+
+## [2026-11-06] draft | Guerrelli supplement used in maturation, high-throughput and morphology sections
+
+Maturation: Clements amplitude criterion (≥ 0.5 mV) depends on recording day (Guerrelli Suppl. Tables S2, S5: day 2 below 0.5 mV in both lines, 3.6 and 8.1 mV on day 14; Clements leaves culture protocols to vendors). High-throughput: Guerrelli's reporting datasheet (Table S8) has no field for FPD definition or rate correction. Morphology: Guerrelli chose electrodes by T-wave shape. Claims Guerrelli (9)–(11), Clements (8) and register item 29 added.
+
+## [2026-11-06] draft | Maturation: amplitude sentence simplified
+
+"day 2 after thawing" replaced with Guerrelli's own term "post-defrost"; exact amplitude values dropped (below 0.5 mV on day 2, several millivolts by day 14).
