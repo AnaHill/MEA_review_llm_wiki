@@ -795,3 +795,7 @@ Spelled out or dropped so they leave the list: 1D, AFM, AIMS, BRV, CMOS, FPDcF, 
 ## [2026-11-06] ingest | Hayakawa 2014 — supplementary methods
 
 The researcher added the publisher supplement mmc1.docx; renamed to raw/hayakawa-2014-motion-fp-supplementary.docx. It holds only expanded methods (MEA seeding inside a silicone ring, 3–6 days on the probe, one cell lot; block-matching motion vector algorithm; stage-top incubator for simultaneous FP and motion; traction force microscopy), no further results. Wiki page updated (Supplementary line, culture details under Methodology, new "Supplementary material" section); claims-by-source status line updated. No change to main.md, wiki/references.md or wiki/index.md.
+
+## [2026-11-07] query | Hayakawa 2014 claim check: isoproterenol slope
+
+The paper gives the isoproterenol FPD/CRD slope as 0.737 in the Results text (p. 6) and 0.738 in the Fig. 8B caption. The wiki page and the Pointers line in docs/claims-by-source.md gave only 0.738; both now give both values. main.md does not cite the number.
