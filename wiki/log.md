@@ -799,3 +799,7 @@ The researcher added the publisher supplement mmc1.docx; renamed to raw/hayakawa
 ## [2026-11-07] query | Hayakawa 2014 claim check: isoproterenol slope
 
 The paper gives the isoproterenol FPD/CRD slope as 0.737 in the Results text (p. 6) and 0.738 in the Fig. 8B caption. The wiki page and the Pointers line in docs/claims-by-source.md gave only 0.738; both now give both values. main.md does not cite the number.
+
+## [2026-11-08] draft | Outlook: Hu et al. (2026) on sensor fusion
+
+Prompted by the researcher after the Hu claim check. One sentence added after the sensor-fusion hypothesis in the Discussion and future outlook: the authors of the proof of concept see combining a transparent MEA with machine learning as moving beyond single-modality analyses towards sensor fusion (Hu et al., 2026, Conclusion, p. 9). Worded as their view, since their own analysis clustered the modalities separately. "likewise" in the following Vuorenpää sentence changed to "also". New claim Hu (4) in docs/claims-by-source.md; register item 24 updated.
