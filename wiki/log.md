@@ -807,3 +807,11 @@ Prompted by the researcher after the Hu claim check. One sentence added after th
 ## [2026-11-09] query | grinding skill added
 
 New skill .claude/skills/grinding (MIT licence, written for this repository): `/grinding <source>` checks every claim listed for that source in docs/claims-by-source.md against the full source and reports a verdict per claim, read-only until fixes are asked for. Formalises the claim-check reports used for Ernault, Fetterman, Guerrelli and Hayakawa. AGENTS.md (directory table, new "Grinding" section), README.md (usage, layout, licence) and ToDo.md (A2 tips) updated.
+
+## [2026-11-09] draft | 3D and Conclusion: Hwang 2023 wording; supplement ingested
+
+From the /grinding check of Hwang et al. (2023). The supplement raw/hwang-2023-spheroids-supplementary.pdf (Figures S1 and S2: experimental FP, simulated FP and simulated AP for E-4031 and nifedipine concentration series) was added by the researcher and viewed; summarised on the wiki page. main.md: the 3D section now follows the authors (three-dimensionality "contributes", as they "take to imply") and names the adult human ventricular cell model of the simulation; the Conclusion gap 3 no longer says "the 3D geometry alone changed FP shape" but that FP shape varied with stimulation and electrode locations in a 3D geometry with a single cell type. Wiki page: Supplementary line, cell model in Methodology, new finding on FP repolarization peaks at high concentrations, Limitations corrected (the paper does have a limitations paragraph, p. 8). docs/claims-by-source.md: Hwang (3), (4), status and Pointers updated ((2) is on p. 3, not p. 5).
+
+## [2026-11-09] draft | 3D section: Hwang sentence refined
+
+After the researcher compared the new wording with the paper: "hiPSC-CM" restored in "simulations of hiPSC-CM spheroids" (the paper's name for its geometric model), "adult" dropped (the paper says only "human ventricular cell model"), and the authors' other sources of heterogeneity (cell types, differentiation) added. Hwang (3), its Pointers and the wiki page updated to match.
