@@ -819,3 +819,15 @@ After the researcher compared the new wording with the paper: "hiPSC-CM" restore
 ## [2026-11-09] draft | Ismaili 2023: author order and timeline entry
 
 Grinding Ismaili. The reference had the authors in the wrong order; corrected from p. 1 of the PDF in both wiki/references.md and the main.md reference list (Ismaili, Schulz, Horváth, Koivumäki, Mika, Hansen, Eschenhagen, Christ). Wiki page: Authors line reordered and "Donatus Mika" corrected to "Delphine Mika". main.md timeline (2023): "Hamburg perspective on hiPSC-CM limitations" replaced by "hiPSC-CMs as electrophysiological models — opportunities and challenges", following the paper's title (the paper covers opportunities as well, and "Hamburg" means little to a reader). docs/claims-by-source.md: Ismaili (1), status and Pointers updated.
+
+## [2026-11-09] ingest | Kabanov 2026 — supplementary material
+
+The researcher added the supplement of Kabanov et al. (2026) (mmc1.docx), renamed to raw/kabanov-2026-cardioscripts-supplementary.docx. Six figures of example traces (S1–S2 AFM on EBs with 1 mM aminophylline, isoprenaline, metoprolol; S3–S5 HL-1 MEA with detected peaks and the filtering; S6 cantilever position on the EB); no data bearing on the claims in main.md. Summarised on the wiki page.
+
+## [2026-11-09] draft | Kabanov 2026: grinding and Outlook wording
+
+Grinding Kabanov: claims (1)–(3) hold. main.md Outlook: "contraction force from simultaneous atomic force microscopy" reworded to "a mechanical contraction signal from simultaneous atomic force microscopy, used to measure the delay between field potential and contraction", because the synchronous recordings were analysed for timing (force came from AFM alone, Fig. 7). Wiki page: aminophylline concentrations and cell types corrected (arrhythmia 10 µM in EBs, QT prolongation 128 µM in HL-1), the Fig. 5 scheme of the QT interval (Q to the T-wave end) and T-offset (to the T peak) added, the inconsistent QT error (Table 1 19.4 ms on artificial data, text 0.06719 s, Fig. 9 caption 0.2) recorded, page numbers of the limitations corrected. docs/claims-by-source.md: Kabanov (4), status and Pointers updated (T-peak detection is on p. 5, not p. 3; Fig. 10 on p. 9).
+
+## [2026-11-09] draft | Table 1 and fiducial list: CardioScripts QT end point
+
+After the researcher read the zoomed Fig. 6D of Kabanov et al. (2026) (Q marker just before the R peak, T marker on the T-wave peak) and the script detects no T-wave end (p. 5; Table 1 labels Q, R, S, T), the Table 1 cell "Not reported (T peaks detected)" became "T peak (QT measured from the Q point to the T peak; no FPD)", and the fiducial-list parenthesis now says that CardioScripts reports "a QT interval from the Q point to the T peak rather than an FPD". The Fig. 5 schematic, which draws the QT brace to the T-wave end, is noted on the wiki page as not matching the detected points. Kabanov (2), (3) and Pointers updated.
