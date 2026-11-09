@@ -31,6 +31,8 @@ The author selects the sources, directs the agents and is responsible for the fi
 
 Before a non-trivial choice (what a section should claim, which sources to ingest or cite, which lint findings to fix), type `/grill-paper`: the agent interviews you in rounds, looks up the facts in the wiki itself and leaves the decisions to you.
 
+To check the claims cited to one source, type `/grinding <source>` (for example `/grinding Hayakawa`): the agent reads the source in full and reports a verdict per claim in `docs/claims-by-source.md`, with the sentence from `main.md`, the supporting passage and its page, without changing anything.
+
 See [AGENTS.md](AGENTS.md) for the full schema and [llm-wiki.md](llm-wiki.md) for the pattern.
 
 ---
@@ -49,7 +51,7 @@ notes.md           the author's own notes (the agent does not edit it)
 docs/              process documents (see docs/README.md): claims-by-source checklist, lint audit trail, PDF export notes, search strategy, maturation search record
 scripts/           check.py (consistency check), render_pdf_pages.py (PDF text and page images), claim_quotes.py (main.md sentences under each source's claims), check_abbreviations.py (abbreviation list)
 skills/            Agent skill definitions (reference)
-.claude/skills/    skills Claude Code loads: grill-paper (/grill-paper)
+.claude/skills/    skills Claude Code loads: grill-paper (/grill-paper), grinding (/grinding)
 AGENTS.md          wiki schema and LLM instructions (CLAUDE.md just imports it)
 llm-wiki.md        the wiki pattern explained
 ```
@@ -58,7 +60,7 @@ llm-wiki.md        the wiki pattern explained
 
 ## Licence
 
-Unless noted otherwise, the written content of this repository (`main.md`, `wiki/`, `docs/` and `notes.md`) is released under the [Creative Commons Attribution 4.0 International licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); the full text is in [LICENSE](LICENSE). This is the same licence that the Declarations of the paper give to the text. The code in `scripts/` is released under the MIT licence ([scripts/LICENSE](scripts/LICENSE)). `skills/` and `llm-wiki.md` come from other authors and keep their own terms (the skill states MIT in its front matter); `.claude/skills/grill-paper` is adapted from Matt Pocock's `grilling` skill and keeps its MIT licence. The source documents in `raw/` are not covered: they keep the licences and copyrights of their publishers and authors, and the non-open-access ones are kept out of the repository (see `.gitignore`).
+Unless noted otherwise, the written content of this repository (`main.md`, `wiki/`, `docs/` and `notes.md`) is released under the [Creative Commons Attribution 4.0 International licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/); the full text is in [LICENSE](LICENSE). This is the same licence that the Declarations of the paper give to the text. The code in `scripts/` is released under the MIT licence ([scripts/LICENSE](scripts/LICENSE)). `skills/` and `llm-wiki.md` come from other authors and keep their own terms (the skill states MIT in its front matter); `.claude/skills/grill-paper` is adapted from Matt Pocock's `grilling` skill and keeps its MIT licence; `.claude/skills/grinding` is written for this repository and released under the MIT licence, like the scripts. The source documents in `raw/` are not covered: they keep the licences and copyrights of their publishers and authors, and the non-open-access ones are kept out of the repository (see `.gitignore`).
 
 ## Tips
 

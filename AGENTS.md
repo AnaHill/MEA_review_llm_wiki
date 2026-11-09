@@ -20,7 +20,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 | `wiki/references.md` | Auto-maintained citation list, populated on each ingest. |
 | `main.md` | Evolving paper draft — single file with IMRaD sections. |
 | `skills/` | Agent skill definitions (Claude Code skill format), kept for reference. |
-| `.claude/skills/` | Skills Claude Code loads: `grill-paper` (see "Grill before deciding" below). |
+| `.claude/skills/` | Skills Claude Code loads: `grill-paper` (see "Grill before deciding" below) and `grinding` (see "Grinding" below). |
 | `scripts/` | Helper scripts: `check.py` (consistency check, see "Finishing check" below), `render_pdf_pages.py` (PDF text dump and page-to-PNG rendering for figure inspection), `claim_quotes.py` (lists the sentences of `main.md` that cite each source under that source's claims in `docs/claims-by-source.md`, and with `--write` puts ✅ in front of a section title once all its checkboxes are ticked; dry run by default), `check_abbreviations.py` (checks the `# Abbreviations` list of `main.md`: every abbreviation listed, spelled out at first use, none unused). |
 | `notes.md` | The researcher's own thinking — read-only for you (see "Researcher notes" below). |
 | `docs/` | Project/process documentation (e.g. literature search strategy). Not part of the wiki. |
@@ -61,6 +61,9 @@ Typical trigger phrases: *"write the introduction"*, *"update the related work s
 
 ### Grill before deciding
 When the researcher types `/grill-paper`, follow `.claude/skills/grill-paper/SKILL.md`: interview them in rounds about an open decision (what a section claims and how strongly, which sources to ingest or cite, which lint findings to fix), look up facts in the wiki and sources yourself, and leave the decisions to them. Change nothing during the session; afterwards offer a `## [YYYY-MM-DD] grill | <topic>` log entry and the follow-up operation. The skill is only run when the researcher calls it.
+
+### Grinding
+When the researcher types `/grinding <source>`, follow `.claude/skills/grinding/SKILL.md`: read that source's claims in `docs/claims-by-source.md` and the source itself in full, and report one verdict per claim (holds / check / does not hold) with the sentence from `main.md`, the supporting passage and its page, and a concrete rewording where needed. Change nothing and tick nothing; apply fixes only when asked, then update the claims list and the log and run the scripts. The skill is only run when the researcher calls it.
 
 ### Lint
 When the researcher asks for a health check:

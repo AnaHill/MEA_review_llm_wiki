@@ -803,3 +803,7 @@ The paper gives the isoproterenol FPD/CRD slope as 0.737 in the Results text (p.
 ## [2026-11-08] draft | Outlook: Hu et al. (2026) on sensor fusion
 
 Prompted by the researcher after the Hu claim check. One sentence added after the sensor-fusion hypothesis in the Discussion and future outlook: the authors of the proof of concept see combining a transparent MEA with machine learning as moving beyond single-modality analyses towards sensor fusion (Hu et al., 2026, Conclusion, p. 9). Worded as their view, since their own analysis clustered the modalities separately. "likewise" in the following Vuorenpää sentence changed to "also". New claim Hu (4) in docs/claims-by-source.md; register item 24 updated.
+
+## [2026-11-09] query | grinding skill added
+
+New skill .claude/skills/grinding (MIT licence, written for this repository): `/grinding <source>` checks every claim listed for that source in docs/claims-by-source.md against the full source and reports a verdict per claim, read-only until fixes are asked for. Formalises the claim-check reports used for Ernault, Fetterman, Guerrelli and Hayakawa. AGENTS.md (directory table, new "Grinding" section), README.md (usage, layout, licence) and ToDo.md (A2 tips) updated.

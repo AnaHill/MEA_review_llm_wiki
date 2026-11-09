@@ -33,6 +33,7 @@ Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: 
 - Lukematta jääneet liitteet: Correia ja Scheurer (supplementary); Vuorenpään ja Ryynäsen kuvia ei katsottu
 
 **Vinkit:**
+- Clauden tarkistusraportti yhdestä lähteestä (ei muuta mitään): `/grinding Correia`
 - Kuivaharjoitus yhdelle lähteelle, ei muuta mitään: `python -I scripts/claim_quotes.py --only Correia`
 - Isompi päätös (esim. poistetaanko väite)? Käytä `/grill-paper`
 - Lopuksi aja `python -I scripts/check.py`
