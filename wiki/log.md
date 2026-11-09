@@ -835,3 +835,11 @@ After the researcher read the zoomed Fig. 6D of Kabanov et al. (2026) (Q marker 
 ## [2026-11-09] draft | Outlook: Karami 2026 sentences made more general
 
 Grinding Karami. At the researcher's request the Karami sentences in "Separating the recording system from the cellular signal" now say less detail and more generally: the opening sentence says that an FP reflects not only the AP and the recording electronics but also the surrounding tissue and its coupling to the electrodes (adhesion, electrode geometry, cell density, gap junctions); the equivalent-circuit sentence adds that the membrane-potential case needs very tight contact and low junctional membrane resistance (the source's text and Table 4 disagree here); the impedance sentence says "far smaller than a cell" instead of "about 1 nm"; and the ill-posed sentence now cites Karami only for the contribution of surrounding cells and their adhesion, with the device-removal and ill-posed parts left as the author's inference (register item 26 updated). Wiki page: text–Table 4 disagreement recorded as substantive. docs/claims-by-source.md: Karami (1)–(4), status and Pointers updated.
+
+## [2026-11-09] ingest | Lee 2024 — supplementary material
+
+The researcher added the supplement of Lee et al. (2024) ("lee2024_table 1.docx"), renamed to raw/lee-2024-cardiomea-supplementary.docx. Figures S1–S11 (processing time, simultaneous patch-clamp and HD-MEA intracellular-like recordings reprinted from Lee et al., 2022, dose series for six drugs on SQT5 cultures and two on iCell cardiomyocytes, dashboard tab), Supplementary Method 1 (electroporation protocol) and Method 2 with Table S1 (AUTO-SKLEARN candidate models). No claim in main.md changes; summarised on the wiki page with the caption slips ("four baseline measurements (file_1 to file_3)").
+
+## [2026-11-09] draft | Fiducial: Lee 2024 attribution softened
+
+Grinding Lee 2024: all eight claims hold. main.md: "which the authors attribute to small, noisy T waves" became "which the authors suggest may reflect small, noisy T waves" (the paper: "This could be attributed to"). Claim (5) resolved from Fig. 2A (FPD from the positive R peak to the T-wave peak). Wiki page: outdated note on the unreadable PDF replaced, Fig. 2A and Fig. 4 values added. docs/claims-by-source.md: Lee 2024 (5), (6), status and Pointers updated.
