@@ -84,6 +84,7 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 
 ### C2. llm-wiki-academic-template
 - [ ] tarkista lopuksi, ettei tässä repossa ole tullut mitään uutta hyödyllistä mitä kannattaisi laittaa templaattiin, tehty 1.11. asti muutokset mm `scripts/check_abbreviations.py`, vain sen jälkeiset
+  - [ ] /grinding skills ainakin
 
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
 Sisältö ja ideat kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post/notes.md (osio "Ideat MEA_review_llm_wiki/ToDo.md:n D-osiosta", siirretty 2.11.). Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
