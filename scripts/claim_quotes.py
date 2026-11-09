@@ -7,6 +7,10 @@ Only those generated sub-bullets are rewritten; checkbox state, claim text and e
 Usage (run from the repository root):
     python -I scripts/claim_quotes.py                       dry run for all sources: prints the result, writes nothing
     python -I scripts/claim_quotes.py --only Altrocchi      dry run for the sources whose section title starts so
+    python -I scripts/claim_quotes.py --write               update the file for all sources and refresh the ✅ marks
+    python -I scripts/claim_quotes.py --write --only Hwang  update the quotes of the sources named; ✅ marks are
+                                                            still refreshed for every section (use it to mark a
+                                                            source as done once all its boxes are ticked)
     python -I scripts/claim_quotes.py --write --skip Altrocchi
                                                             update the file for all sources except those named
 Options may be repeated. A sentence is assigned to a claim only by the section tag, so two claims with the same tag
