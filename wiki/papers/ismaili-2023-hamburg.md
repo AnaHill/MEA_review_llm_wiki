@@ -4,13 +4,13 @@ tags: [review-perspective, maturation]
 
 # Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective
 
-**Authors:** Djemail Ismaili, Carl Schulz, Thomas Eschenhagen, Torsten Christ, Arne Hansen, Donatus Mika, Jussi T. Koivumäki, András Horváth  
+**Authors:** Djemail Ismaili, Carl Schulz, András Horváth, Jussi T. Koivumäki, Delphine Mika, Arne Hansen, Thomas Eschenhagen, Torsten Christ  
 **Year:** 2023  
 **Venue:** Frontiers in Physiology 14:1132165 (published 16 Feb 2023; open access, CC BY)  
 **File:** [[raw/ismaili-2023-hamburg.pdf]]  
 **DOI:** 10.3389/fphys.2023.1132165
 
-> **Note:** Page rewritten 2026-10-24 after checking the full text. The earlier version said that the paper discusses MEA field potentials, FPD as a QT surrogate and Fridericia rate correction; the paper contains none of these (MEA, FPD and Fridericia are not mentioned). It is a patch-clamp-centred perspective.
+> **Note:** Page rewritten 2026-10-24 after checking the full text; author order and the name Delphine Mika corrected from p. 1 on 2026-11-09. The earlier version said that the paper discusses MEA field potentials, FPD as a QT surrogate and Fridericia rate correction; the paper contains none of these (MEA, FPD and Fridericia are not mentioned). It is a patch-clamp-centred perspective.
 
 ## Contribution
 A perspective from the Hamburg group on using hiPSC-CMs as an electrophysiological model, organised as questions: which ion currents hiPSC-CMs express ("all aboard or even stowaways?"), how atrial-like cells can be obtained, how specific computational models are, whether automated patch clamp suits hiPSC-CMs, and further topics (LQT1 phenotypes, Na⁺/Ca²⁺ exchanger, PDE4, interpretation of Ca²⁺ currents, dynamic clamp).

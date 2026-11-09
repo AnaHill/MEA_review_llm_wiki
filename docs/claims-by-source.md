@@ -306,22 +306,22 @@ Local file: `raw/hwang-2023-spheroids.pdf` (+ `raw/hwang-2023-spheroids-suppleme
 
 Pointers: (2) p. 3, section 2.2 ("FPDcF (FP duration (FPD) corrected with Fridericia's formula: FPDcF = FPD/Beat Period0.33)"; also the captions of Figs 3, 6 and 7). (3)(4) abstract p. 1; Discussion p. 7 ("the variability of the FPs was observed depending on the stimulation sites and electrode locations even when a single cell type was present in the model. This implies that the three-dimensionality of the spheroid on MEA system contributes to the variability of the FPs although other factors such as different cell types and the level of differentiation are definite sources of the heterogeneity"); p. 8 ("More study seems to be needed to clarify the role of three-dimensionality"; "The cellular electrophysiological model used is not hiPSC-CM model, and single cell type was implemented"); "the O'Hara-Rudy dynamic (ORd) human ventricular cell model was used", p. 4, mid-myocardial variant, p. 5; one cell source (Cardiosight-S, four batches) and two drugs (E-4031, nifedipine), p. 2–3. Supplementary Figures S1–S2: experimental FP, simulated FP and simulated AP per concentration; no claim depends on them.
 
-## Ismaili et al. (2023)
+## ✅ Ismaili et al. (2023)
 
-Local file: `raw/ismaili-2023-hamburg.pdf`; page `wiki/papers/ismaili-2023-hamburg.md`. Status: checked against the full text 2026-10-24.
+Local file: `raw/ismaili-2023-hamburg.pdf`; page `wiki/papers/ismaili-2023-hamburg.md`. Status: checked against the full text 2026-10-24; checked claim by claim 2026-11-09 (author order in the reference corrected).
 
-- [ ] (1) [Timeline] "Hamburg perspective on hiPSC-CM limitations".
-    - > 2023 : Hamburg perspective on hiPSC-CM limitations (Ismaili et al.) — main.md:65
-- [ ] (2) [Motivation] broader methodological and biological challenges of hiPSC-CMs as electrophysiological models, including ion channel expression, resting membrane potential and the identity of cell subtypes, discussed from a critical perspective.
+- [x] (1) [Timeline] "hiPSC-CMs as electrophysiological models — opportunities and challenges" (the paper's own title words; "limitations" and "Hamburg" dropped 2026-11-09).
+    - > 2023 : hiPSC-CMs as electrophysiological models — opportunities and challenges (Ismaili et al.) — main.md:65
+- [x] (2) [Motivation] broader methodological and biological challenges of hiPSC-CMs as electrophysiological models, including ion channel expression, resting membrane potential and the identity of cell subtypes, discussed from a critical perspective.
     - > Broader methodological and biological challenges of hiPSC-CMs as electrophysiological models—including ion channel expression, resting membrane potential, and the identity of cell subtypes—have been discussed from a critical perspective (Ismaili et al., 2023). — main.md:48
-- [ ] (3) [Maturation] hiPSC-CMs express ion channels that are absent from adult working myocardium, notably the funny current (If) and occasionally the T-type Ca²⁺ current, although the latter is not necessarily a sign of immaturity.
+- [x] (3) [Maturation] hiPSC-CMs express ion channels that are absent from adult working myocardium, notably the funny current (If) and occasionally the T-type Ca²⁺ current, although the latter is not necessarily a sign of immaturity.
     - > They express ion channels that are absent from adult working myocardium, notably the funny current (I<sub>f</sub>) and occasionally the T-type Ca²⁺ current, although the latter is not necessarily a sign of immaturity (Ismaili et al., 2023). — main.md:128
     - > Whether ventricular-, atrial- and nodal-like cells form distinct subpopulations within one preparation is debated (Ismaili et al., 2023), but patch-clamp data show such subtypes in the lines of Park et al. (2026). — main.md:128
-- [ ] (4) [Maturation] whether ventricular-, atrial- and nodal-like cells form distinct subpopulations within one preparation is debated.
+- [x] (4) [Maturation] whether ventricular-, atrial- and nodal-like cells form distinct subpopulations within one preparation is debated.
     - > They express ion channels that are absent from adult working myocardium, notably the funny current (I<sub>f</sub>) and occasionally the T-type Ca²⁺ current, although the latter is not necessarily a sign of immaturity (Ismaili et al., 2023). — main.md:128
     - > Whether ventricular-, atrial- and nodal-like cells form distinct subpopulations within one preparation is debated (Ismaili et al., 2023), but patch-clamp data show such subtypes in the lines of Park et al. (2026). — main.md:128
 
-Pointers: (3) p. 3 ("clearly express ion channels that are absent in the adult human working myocardium"; HCN4; ICa,T "cannot necessarily be taken as an indication of immaturity"). (4) p. 4 (a study of 320 cells with a single Gaussian APD90 distribution "arguing against ... a truly mixed cell population"). The paper does not mention MEA, FPD or rate correction.
+Pointers: author order p. 1 (Ismaili, Schulz, Horváth, Koivumäki, Mika, Hansen, Eschenhagen, Christ). (1) title, p. 1 ("Opportunities and challenges"). (3) p. 3 ("clearly express ion channels that are absent in the adult human working myocardium"; HCN4; ICa,T "cannot necessarily be taken as an indication of immaturity"). (4) p. 4 (a study of 320 cells with a single Gaussian APD90 distribution "arguing against ... a truly mixed cell population"). The paper does not mention MEA, FPD or rate correction.
 
 ## Kabanov et al. (2026)
 

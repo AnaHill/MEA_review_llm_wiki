@@ -815,3 +815,7 @@ From the /grinding check of Hwang et al. (2023). The supplement raw/hwang-2023-s
 ## [2026-11-09] draft | 3D section: Hwang sentence refined
 
 After the researcher compared the new wording with the paper: "hiPSC-CM" restored in "simulations of hiPSC-CM spheroids" (the paper's name for its geometric model), "adult" dropped (the paper says only "human ventricular cell model"), and the authors' other sources of heterogeneity (cell types, differentiation) added. Hwang (3), its Pointers and the wiki page updated to match.
+
+## [2026-11-09] draft | Ismaili 2023: author order and timeline entry
+
+Grinding Ismaili. The reference had the authors in the wrong order; corrected from p. 1 of the PDF in both wiki/references.md and the main.md reference list (Ismaili, Schulz, Horváth, Koivumäki, Mika, Hansen, Eschenhagen, Christ). Wiki page: Authors line reordered and "Donatus Mika" corrected to "Delphine Mika". main.md timeline (2023): "Hamburg perspective on hiPSC-CM limitations" replaced by "hiPSC-CMs as electrophysiological models — opportunities and challenges", following the paper's title (the paper covers opportunities as well, and "Hamburg" means little to a reader). docs/claims-by-source.md: Ismaili (1), status and Pointers updated.

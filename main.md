@@ -62,7 +62,7 @@ timeline
     title Post-2022 developments in cardiomyocyte MEA analysis methodology
     2022 : Cardio PyMEA — open-source Python pipeline (Dunham et al.)
          : DatAnalyzer — MATLAB tool with morphology-aware FPD (own work; method in Mäki 2023, not peer reviewed)
-    2023 : Hamburg perspective on hiPSC-CM limitations (Ismaili et al.)
+    2023 : hiPSC-CMs as electrophysiological models — opportunities and challenges (Ismaili et al.)
          : 3D spheroid geometry as FP variability source (Hwang et al.)
     2024 : CardioMEA platform — scalable open analysis (Lee et al.)
          : T-wave peak = APD90 for biphasic T-waves, in NRVM (Ernault et al.)
@@ -281,7 +281,7 @@ Hu, X., Sugita, J., Fujiu, K., Tixier-Mita, A., & Toshiyoshi, H. (2026). Unsuper
 
 Hwang, M., Lee, S.-J., Lim, C.-H., Shim, E. B., & Lee, H.-A. (2023). The three-dimensionality of the hiPSC-CM spheroid contributes to the variability of the field potential. *Frontiers in Physiology*, *14*, 1123190. https://doi.org/10.3389/fphys.2023.1123190
 
-Ismaili, D., Schulz, C., Eschenhagen, T., Christ, T., Hansen, A., Mika, D., Koivumäki, J. T., & Horváth, A. (2023). Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective. *Frontiers in Physiology*, *14*, 1132165. https://doi.org/10.3389/fphys.2023.1132165
+Ismaili, D., Schulz, C., Horváth, A., Koivumäki, J. T., Mika, D., Hansen, A., Eschenhagen, T., & Christ, T. (2023). Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective. *Frontiers in Physiology*, *14*, 1132165. https://doi.org/10.3389/fphys.2023.1132165
 
 Kabanov, D. A., Vrana, S., Beckerová, D., Rotrekl, V., Pesl, M., & Přibyl, J. (2026). A comprehensive system of algorithms for characterization of cardiomyocyte mechanical and electrical function. *Biomedical Signal Processing and Control*, *120*, 110125. https://doi.org/10.1016/j.bspc.2026.110125
 
