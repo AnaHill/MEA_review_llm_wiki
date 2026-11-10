@@ -405,22 +405,22 @@ Local file: `raw/lee-2024-cardiomea.pdf`; page `wiki/papers/lee-2024-cardiomea.m
 
 Pointers: (1), (3) p. 1 ("designed specifically for HD-MEA data", "scalable data processing pipelines"). (2) Table 3, p. 9 (CardioMDA, Pradhapan et al., 2013; MultiElec, Georgiadis et al., 2015; it compares language, GUI, pipeline execution, condition comparison, wave propagation and intracellular-like analysis, not FPD definitions). (4) Table 1, p. 5 (features), Table 3, p. 9 (Python), AutoML p. 11 (the Feature Analysis tab is "exclusively available for the Extracellular Analysis panel"). (5) Table 1, p. 5 ("Distance between the R spike and the T wave signal peak") and Fig. 2A, p. 6. (6) text p. 8 ("showed minimal correlation with all AP-related features. This could be attributed to the noise levels"), Fig. 4, p. 9 (Spearman ρ −0.04 APD50, −0.07 APD90; 3,987 electrodes, 29 iCell cultures). (7) p. 8 ("recorded by the very same electrodes and originating from the same cells"); Supplementary Figure S2 shows the intracellular-like signal is attenuated and fades as the membrane reseals. (8) pp. 11–13 (AutoML, permutation feature importance). Supplement adds nothing that changes a claim.
 
-## Lee et al. (2026)
+## ✅ Lee et al. (2026)
 
-Local file: `raw/lee-2026-ito-mea.pdf` (+ supplementary; open access, CC BY-NC); page `wiki/papers/lee-2026-ito-mea.md`. Status: read in full at ingest 2026-11-01; Figure 4 viewed. First author S.-G. Lee, not the J. Lee of CardioMEA.
+Local file: `raw/lee-2026-ito-mea.pdf` (+ supplementary; open access, CC BY-NC); page `wiki/papers/lee-2026-ito-mea.md`. Status: read in full at ingest 2026-11-01; Figure 4 viewed; claims (1) and (2) rechecked against the text dump 2026-11-10. First author S.-G. Lee, not the J. Lee of CardioMEA.
 
-- [ ] (0) [Timeline] "Transparent MEA with FP and optical readouts of hiPSC-CMs", 2026 (added 2026-11-01; ITO dropped 2026-11-06).
+- [x] (0) [Timeline] "Transparent MEA with FP and optical readouts of hiPSC-CMs", 2026 (added 2026-11-01; ITO dropped 2026-11-06).
     - > : Transparent MEA with FP and optical readouts of hiPSC-CMs (Lee et al.) — main.md:81
-- [ ] (1) [FPDc] in one hiPSC-CM study, doxorubicin slowed the beat period to about 8 s, and Fridericia-corrected FPD then fell while uncorrected FPD rose.
-    - > In one hiPSC-CM study, doxorubicin slowed the beat period to about 8 s, and Fridericia-corrected FPD then fell while uncorrected FPD rose (Lee et al., 2026). — main.md:123
-- [ ] (2) [Outlook] a transparent MEA (indium tin oxide electrodes; material dropped from the text 2026-11-06) was used to record field potentials, morphology and Ca²⁺ imaging of hiPSC-CMs in the same wells, with the readouts reported side by side.
-    - > A transparent MEA has also been used to record field potentials, morphology and Ca²⁺ imaging of hiPSC-CMs in the same wells, with the readouts reported side by side (Lee et al., 2026). — main.md:193
+- [x] (1) [FPDc] in a two-day doxorubicin exposure of hiPSC-CMs, beating slowed so much on the first day that Fridericia-corrected FPD fell while uncorrected FPD rose (generalised 2026-11-10; was "slowed the beat period to about 8 s"; 3 µM, day 1, Fig. 4B–D).
+    - > In a two-day doxorubicin exposure of hiPSC-CMs, beating slowed so much on the first day that Fridericia-corrected FPD fell while uncorrected FPD rose (Lee et al., 2026). — main.md:123
+- [x] (2) [Outlook] a transparent MEA (indium tin oxide electrodes; material dropped from the text 2026-11-06) was used to record field potentials, morphology and, at baseline, Ca²⁺ imaging of hiPSC-CMs in the same wells, with the readouts reported side by side ("at baseline" added 2026-11-10).
+    - > A transparent MEA has also been used to record field potentials, morphology and, at baseline, Ca²⁺ imaging of hiPSC-CMs in the same wells, with the readouts reported side by side (Lee et al., 2026). — main.md:193
     - > If the separation worked, it would also make FP-derived results from different hardware more comparable, since chip composition and recording hardware can alter absolute signal values (Lee et al., 2026), and the separated cellular signal could serve as the machine-learning input discussed above, rather than only the parameters extracted from the raw recording. — main.md:207
-- [ ] (3) [Outlook] chip composition and recording hardware can alter absolute signal values.
-    - > A transparent MEA has also been used to record field potentials, morphology and Ca²⁺ imaging of hiPSC-CMs in the same wells, with the readouts reported side by side (Lee et al., 2026). — main.md:193
+- [x] (3) [Outlook] chip composition and recording hardware can alter absolute signal values.
+    - > A transparent MEA has also been used to record field potentials, morphology and, at baseline, Ca²⁺ imaging of hiPSC-CMs in the same wells, with the readouts reported side by side (Lee et al., 2026). — main.md:193
     - > If the separation worked, it would also make FP-derived results from different hardware more comparable, since chip composition and recording hardware can alter absolute signal values (Lee et al., 2026), and the separated cellular signal could serve as the machine-learning input discussed above, rather than only the parameters extracted from the raw recording. — main.md:207
 
-Pointers: (1) Results on doxorubicin and Fig. 4B–D (beat period 8.213 s on day 1 against 1.961 s in controls; FPD 0.382, 0.448, 0.495 s; FPDc fell on day 1 "due to the sharp BP prolongation"). (2) Methods (CFPS-ITO-16W2E plates; Fluo-4 imaging at baseline only) and Figs 2–4. (3) Discussion, first paragraph ("differences in MEA chip composition and recording hardware may alter absolute signal values").
+Pointers: (1) Results, "Monitoring cardiotoxic responses to DOX using ITO MEA", pp. 152–154, and Fig. 4B–D (Strategy 2: 3 µM for 2 days, FP on days 0, 1 and 2; beat period 8.213 s on day 1 against 1.961 s in controls, 4.177 s on day 2; cell density, viability and spike amplitude fell at the same time, Fig. 4E–G; FPD 0.382, 0.448, 0.495 s; FPDc fell on day 1 "due to the sharp BP prolongation"). (2) Methods, p. 149 (CFPS-ITO-16W2E plates; Fluo-4 videos "around the ITO electrode region in each well", at baseline only, Fig. 2C–F, not during FP recording or drug exposure) and Figs 2–4 (morphology after drugs, Figs 3D and 4F). (3) Discussion, first paragraph ("differences in MEA chip composition and recording hardware may alter absolute signal values").
 
 ## Li et al. (2025)
 

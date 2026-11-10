@@ -843,3 +843,7 @@ The researcher added the supplement of Lee et al. (2024) ("lee2024_table 1.docx"
 ## [2026-11-09] draft | Fiducial: Lee 2024 attribution softened
 
 Grinding Lee 2024: all eight claims hold. main.md: "which the authors attribute to small, noisy T waves" became "which the authors suggest may reflect small, noisy T waves" (the paper: "This could be attributed to"). Claim (5) resolved from Fig. 2A (FPD from the positive R peak to the T-wave peak). Wiki page: outdated note on the unreadable PDF replaced, Fig. 2A and Fig. 4 values added. docs/claims-by-source.md: Lee 2024 (5), (6), status and Pointers updated.
+
+## [2026-11-10] draft | FPDc and Outlook: Lee 2026 sentences
+
+Grinding Lee 2026 (claims (1) and (2)). Rate-correction section: "doxorubicin slowed the beat period to about 8 s, and Fridericia-corrected FPD then fell while uncorrected FPD rose" generalised to "In a two-day doxorubicin exposure of hiPSC-CMs, beating slowed so much on the first day that Fridericia-corrected FPD fell while uncorrected FPD rose". Outlook: "at baseline" added to the Ca²⁺ imaging of the transparent-MEA study (Fluo-4 imaging was done only at baseline, separately from FP recording). docs/claims-by-source.md: Lee 2026 (1), (2), status and Pointers updated.
