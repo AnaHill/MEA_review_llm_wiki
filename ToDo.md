@@ -89,4 +89,6 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
 Sisältö ja ideat kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post/notes.md (osio "Ideat MEA_review_llm_wiki/ToDo.md:n D-osiosta", siirretty 2.11.). Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
 - [ ] Blogipostaus ensin (kokoa draft.md:hen notes.md:n ideoista)
+  - [ ] tarkista, että /grinding skills mainittu
 - [ ] LinkedIn-postaus blogin jälkeen: viittaa repoon, Zenodoon ja blogiin (AnaHill.github.io/_notes/llm-wiki-post/linkedin_draft.md)
+  - [ ] tarkista, että /grinding skills mainittu
