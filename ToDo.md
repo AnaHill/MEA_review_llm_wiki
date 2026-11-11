@@ -85,10 +85,13 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 ### C2. llm-wiki-academic-template
 - [ ] tarkista lopuksi, ettei tässä repossa ole tullut mitään uutta hyödyllistä mitä kannattaisi laittaa templaattiin, tehty 1.11. asti muutokset mm `scripts/check_abbreviations.py`, vain sen jälkeiset
   - [ ] /grinding skills ainakin
+  - [ ] `.claude/settings.json` (deny `raw/**` ja `notes.md`, PostToolUse-hook) ja `scripts/hooks/main_md_checks.py` (lisätty 11.11.)
+- [ ] myöhemmin: Ingest- ja Lint-menettelyt omiksi skilleiksi AGENTS.md:stä (ks. AGENTS.md "Schema evolution")
 
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
 Sisältö ja ideat kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post/notes.md (osio "Ideat MEA_review_llm_wiki/ToDo.md:n D-osiosta", siirretty 2.11.). Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
 - [ ] Blogipostaus ensin (kokoa draft.md:hen notes.md:n ideoista)
   - [ ] tarkista, että /grinding skills mainittu
+  - [ ] kuinka otettu toteutusideologiaa tästä https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
 - [ ] LinkedIn-postaus blogin jälkeen: viittaa repoon, Zenodoon ja blogiin (AnaHill.github.io/_notes/llm-wiki-post/linkedin_draft.md)
   - [ ] tarkista, että /grinding skills mainittu

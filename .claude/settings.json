@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(raw/**)",
+      "Edit(notes.md)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -I \"$CLAUDE_PROJECT_DIR/scripts/hooks/main_md_checks.py\"",
+            "timeout": 60,
+            "statusMessage": "Checking main.md"
+          }
+        ]
+      }
+    ]
+  }
+}

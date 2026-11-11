@@ -847,3 +847,11 @@ Grinding Lee 2024: all eight claims hold. main.md: "which the authors attribute 
 ## [2026-11-10] draft | FPDc and Outlook: Lee 2026 sentences
 
 Grinding Lee 2026 (claims (1) and (2)). Rate-correction section: "doxorubicin slowed the beat period to about 8 s, and Fridericia-corrected FPD then fell while uncorrected FPD rose" generalised to "In a two-day doxorubicin exposure of hiPSC-CMs, beating slowed so much on the first day that Fridericia-corrected FPD fell while uncorrected FPD rose". Outlook: "at baseline" added to the Ca²⁺ imaging of the transparent-MEA study (Fluo-4 imaging was done only at baseline, separately from FP recording). docs/claims-by-source.md: Lee 2026 (1), (2), status and Pointers updated.
+
+## [2026-11-11] query | Harness guardrails after the single-loop agent article
+
+Added project .claude/settings.json: permission deny rules Edit(raw/**) and Edit(notes.md) (they cover Write too), and a PostToolUse hook on Edit|Write that runs scripts/hooks/main_md_checks.py, which runs check_abbreviations.py and check.py when main.md was edited and returns the output to the model. Pipe-tested and seen firing on a main.md edit. AGENTS.md: Finishing check and Schema evolution updated; moving Ingest and Lint into skills noted as planned. ToDo C2 updated.
+
+## [2026-11-11] query | README: agent design section
+
+README "How it works" gained a subsection "Agent design: a single loop with progressive disclosure", linking Anthropic's article on folding subagents into the main loop and mapping its system prompt / thin tools / guardrails summary onto AGENTS.md, the scripts, the skills, .claude/settings.json and the claims checklist.

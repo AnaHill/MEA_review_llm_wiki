@@ -35,6 +35,16 @@ To check the claims cited to one source, type `/grinding <source>` (for example 
 
 See [AGENTS.md](AGENTS.md) for the full schema and [llm-wiki.md](llm-wiki.md) for the pattern.
 
+### Agent design: a single loop with progressive disclosure
+
+The repository follows the single-agent-loop design described in Anthropic's article [Building agents: when to fold subagents into your main agent loop](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop): one agent in one context window, instead of an orchestrator handing work to specialist subagents. The article's summary, "one clear system prompt, 4-5 thin data tools, and firm output guardrails would cover most of the use case", maps onto this repository as follows:
+
+- **One clear system prompt:** [AGENTS.md](AGENTS.md), with a single owner (the author).
+- **Thin data tools:** four scripts in `scripts/` (`check.py`, `claim_quotes.py`, `check_abbreviations.py`, `render_pdf_pages.py`), each doing one mechanical job and returning plain text the agent can read.
+- **Progressive disclosure:** procedures that are needed only sometimes live in skills that load on demand (`/grill-paper`, `/grinding`); moving Ingest and Lint into skills is planned.
+- **Guardrails in the harness, not only in the prompt:** [.claude/settings.json](.claude/settings.json) denies file edits to `raw/` and `notes.md`, and a hook runs the abbreviation and consistency checks after every edit of `main.md`.
+- **Checking the output:** [docs/claims-by-source.md](docs/claims-by-source.md) lists every claim in `main.md` per source and is ticked off against the sources by hand, which serves as the evaluation set.
+
 ---
 
 ## Repository layout

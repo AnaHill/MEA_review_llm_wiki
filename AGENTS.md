@@ -74,6 +74,8 @@ When the researcher asks for a health check:
 - Present one prioritized list (script errors, then your own judgement findings, then warnings, then suggestions). Do not auto-fix; wait for the researcher's go-ahead.
 
 ### Finishing check
+The harness enforces part of this: `.claude/settings.json` has a PostToolUse hook (`scripts/hooks/main_md_checks.py`) that runs `check_abbreviations.py` and `check.py` after every Edit or Write of `main.md` and shows their output, and permission rules that deny file edits to `raw/` and `notes.md`. Edits made through a shell command (for example a Python script) do not trigger the hook, so run the scripts yourself after those.
+
 Before ending any task that changed `wiki/`, `wiki/references.md` or `main.md`, run `python -I scripts/check.py`. It verifies that every paper page has a `references.md` entry, an `index.md` entry and an existing raw file, that DOIs agree between page and reference list, that links are not broken, and that every citation in `main.md` exists in `wiki/references.md`. The `# References` list at the end of `main.md` must contain exactly the entries cited in `main.md`, each a verbatim copy of its entry in `wiki/references.md` (same style, same text); `wiki/references.md` may hold more (ingested but not yet cited). Never edit one copy without the other; the script reports differences, and cited-but-unlisted entries, as errors. Fix any ERROR it reports, or tell the researcher why you did not. It cannot verify that author lists or findings are true; that still requires the source itself.
 
 ### Researcher notes
@@ -135,6 +137,8 @@ Links to related wiki pages.
 ## Schema evolution
 
 This AGENTS.md *is* the schema for this wiki instance. Update it as conventions evolve in collaboration with the researcher.
+
+Hard limits belong in the harness rather than only in this text: when a rule here is absolute and mechanical, prefer enforcing it with a permission rule or hook in `.claude/settings.json`. Planned (2026-11-11): move the Ingest and Lint procedures into skills of their own, so this file stays short and their steps load only when needed (progressive disclosure).
 
 ## Behavioral guidelines
 
