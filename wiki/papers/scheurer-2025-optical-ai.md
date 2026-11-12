@@ -13,11 +13,12 @@ tags: [maturation, machine-learning]
 ## Contribution
 An interpretable-AI (SVM + SHAP) classifier that stages iPSC-CM maturation status purely from non-invasive, video-based beating/motion analysis, achieving >99% accuracy discriminating immature (day 21) from lipid-medium-matured (day 42, MM) cultures. Applied to B27 cultures (day 42), which a previous study found less mature, the binary classifier gave a heterogeneous distribution between the two clusters (p. 8). Acquisition is non-invasive, but peaks and start/end points of contraction and relaxation were adjusted manually (p. 3). The paper's only claim about prior art is that AI had been used but not for iPSC-CM maturity assessment (p. 2).
 
-Note: page checked against the source text on 2026-10-24; statements not supported by the paper were removed or reworded.
+Note: page checked against the source text on 2026-10-24; statements not supported by the paper were removed or reworded. Checked claim by claim 2026-11-12 (all claims hold); own observations on the class design and the train–test split added.
 
 ## Methodology
 - 362 phase-contrast videos (60 fps, Hamamatsu ORCA Flash 4.0 V3, 0.65 µm/pixel) from 4 iPSC donor lines, analyzed with Maia motion-analysis software (block-matching, comparable to MUSCLEMOTION/OpenHeartWare).
-- Three groups: immature (day 21, n=130), mature (day 42, lipid-supplemented maturation medium MM, n=115), intermediate (day 42, B27 medium — lower fatty-acid content, n=117).
+- Three groups: immature (day 20/21, n=130), mature (day 42, lipid-supplemented maturation medium MM, n=115), intermediate (day 42, B27 medium — lower fatty-acid content, n=117). All cultures were in B27 medium until day 21, when they were split into B27 and MM (p. 3721).
+- Two videos were recorded per well/culture at different, randomly selected positions (p. 3721).
 - Balanced/stratified subsampling to 230 videos; 80/20 train–test split; 5-fold cross-validation; grid-search hyperparameter optimization.
 - 10 extracted beating features: displacement, contraction time (C time), relaxation time (R time), contraction–relaxation interval, beating duration (0–1 time), contraction-rise time, relaxation-rise time, max. contraction velocity (Max C), max. relaxation velocity (Max R), spontaneous beating rate.
 - Support vector machine (SVM) classifier; SHAP (Shapley Additive Explanations) for per-feature and per-sample interpretability; decision-function distance from the SVM hyperplane analyzed as a continuous maturity proxy (not just the binary class label).
@@ -35,8 +36,12 @@ Note: page checked against the source text on 2026-10-24; statements not support
 - How the beating features correlate with molecular cellular properties, particularly calcium handling and electrophysiology, is left to future studies (p. 8); the hypotheses cite several earlier studies, not measurements in the same cells.
 - Some mature cultures sat near the hyperplane, which the authors link to line-specific backgrounds (p. 8). The 0–1 time was missing in 33.1% of samples and was calculated from other features (p. 3). It remains unclear whether the SVM classifies iPSC-CMs from other lines correctly (p. 9).
 
+### Our observations (not from the paper)
+- The two classes differ in both culture age and medium (day 20/21 in B27 against day 42 in MM), so the classifier separates age and medium together; the day-42 B27 cultures, which share the age but not the medium, fell between the two clusters (Fig. 8, p. 3726).
+- The 230 videos were split 80/20 per video, stratified by class and cell line (p. 3722). With two videos per well, the paper does not say whether both videos of a well were kept in the same split; if not, the hold-out accuracy may be optimistic. The 5-fold cross-validation on the full dataset has the same open question.
+
 ## Relevance to our paper
-Cited in main.md as an optical, video-based maturity classifier (99.5% test accuracy; hold-out of 46 videos; 5-fold cross-validation on 230 videos from four healthy lines, 2025), with generalisation to other lines untested. Our reading, not the paper's: a classifier of this kind has not, to our knowledge, been assembled from MEA field-potential features. The documented search of 2026-10-30 (docs/maturation-mea-search.md) found none; the nearest work is the unsupervised pseudotime analysis of extracellular waveforms from tissue-embedded electronics in 3D by Lin et al. (2023), see [[wiki/papers/lin-2023-nanoelectronics.md]]; the paper itself does not discuss MEA reference values, and the FPD–contraction-duration correlation it cites does not show that FPD tracks maturation.
+Cited in main.md as an optical, video-based maturity classifier; since 2026-11-12 the maturation section states only that it can separate immature from more mature hiPSC-CM cultures using non-invasive, video-based beating features (the accuracy and test-set size were dropped as unnecessary detail; they are 99.5 % on a hold-out of 46 videos, 5-fold cross-validation on 230 videos from four healthy lines). Generalisation to other lines is untested. Our reading, not the paper's: a classifier of this kind has not, to our knowledge, been assembled from MEA field-potential features. The documented search of 2026-10-30 (docs/maturation-mea-search.md) found none; the nearest work is the unsupervised pseudotime analysis of extracellular waveforms from tissue-embedded electronics in 3D by Lin et al. (2023), see [[wiki/papers/lin-2023-nanoelectronics.md]]; the paper itself does not discuss MEA reference values, and the FPD–contraction-duration correlation it cites does not show that FPD tracks maturation.
 
 ## See also
 - [[wiki/hipsc-cm-maturation.md]]

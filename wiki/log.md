@@ -863,3 +863,23 @@ New sections before Declarations: thanks to former colleagues (no names, at the 
 ## [2026-11-12] draft | About the author: links to dissertation and DatAnalyzer
 
 After the researcher's own edits: dissertation title linked to its URN (from the researcher's academic portfolio page), DatAnalyzer linked to its GitHub repository, and the last sentence made grammatical ("combining agent-assisted workflows with attention to data quality is part of daily work").
+
+## [2026-11-12] draft | Maturation and Outlook: Li 2025 sentences
+
+Grinding Li 2025. Maturation section: the CV and spike-amplitude sentence generalised to "increased as maturation stimuli were added to the culture (a lipid- and calcium-enriched medium, nanopatterning and electrostimulation)", naming the medium's higher calcium, which the authors link strongly to electrophysiological maturation; "the authors do not propose these values as maturity markers" became "the authors read these changes as signs of electrophysiological maturation but do not propose reference values" (Discussion, p. 10). The classifier-ingredients sentence drops "the same" ("MEA parameters that differ between maturation conditions"). Outlook: "MEA data from the same maturation conditions" became "from the same culture media" (the schedules of Li and Scheurer differ). Wiki page Limitations and docs/claims-by-source.md Li (1), (3), (6), status and Pointers updated.
+
+## [2026-11-12] draft | Maturation: Li 2025 clause removed
+
+The researcher removed "but do not propose reference values" from the Li 2025 sentence in the maturation section as not essential; the paragraph's last sentence already states that no reference value for standard MEA recordings has been reported. docs/claims-by-source.md Li (3) updated to match.
+
+## [2026-11-12] draft | Outlook: Scheurer 2025 cited for the video-based classifier
+
+At the researcher's suggestion the sensor-fusion sentence now cites Scheurer et al. (2025) directly for "a video-based classifier of maturation status" (their SVM separates day-21 from day-42 maturation-medium cultures on beating features, p. 9), before the Li et al. (2025) citation for the MEA data. docs/claims-by-source.md Scheurer (6) updated.
+
+## [2026-11-12] draft | Maturation: Scheurer 2025 sentence generalised
+
+Grinding Scheurer: all seven claims hold. At the researcher's request the maturation-section sentence was made more general: "Scheurer et al. (2025) showed that an interpretable machine-learning classifier can separate immature from more mature hiPSC-CM cultures using only non-invasive, video-based beating features" (the days, the 99.5 % accuracy and the 46-video test set dropped; the separate sentence on video-based features merged into it). docs/claims-by-source.md Scheurer (3) and Pointers updated (journal page numbers).
+
+## [2026-11-12] query | Scheurer 2025 wiki page updated after grinding
+
+Wiki page: the B27-to-MM split on day 21 and two videos per well added to Methodology; a new "Our observations" subsection notes that the classes differ in both age and medium, and that the per-video train–test split may let both videos of a well fall on different sides (not stated in the paper); Relevance updated to the generalised main.md sentence.
