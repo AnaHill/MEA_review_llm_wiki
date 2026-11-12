@@ -855,3 +855,11 @@ Added project .claude/settings.json: permission deny rules Edit(raw/**) and Edit
 ## [2026-11-11] query | README: agent design section
 
 README "How it works" gained a subsection "Agent design: a single loop with progressive disclosure", linking Anthropic's article on folding subagents into the main loop and mapping its system prompt / thin tools / guardrails summary onto AGENTS.md, the scripts, the skills, .claude/settings.json and the claims checklist.
+
+## [2026-11-12] draft | Acknowledgements and About the author added
+
+New sections before Declarations: thanks to former colleagues (no names, at the researcher's request) and a short author description based on the researcher's academic portfolio page (D.Sc. (Tech.) 2018, doctoral and postdoctoral work 2011–2022, visiting scholar until 2024, DatAnalyzer) and current work described generally as data and AI expert. The researcher added "PhD" to the author line in the front matter.
+
+## [2026-11-12] draft | About the author: links to dissertation and DatAnalyzer
+
+After the researcher's own edits: dissertation title linked to its URN (from the researcher's academic portfolio page), DatAnalyzer linked to its GitHub repository, and the last sentence made grammatical ("combining agent-assisted workflows with attention to data quality is part of daily work").

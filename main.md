@@ -237,6 +237,14 @@ Looking forward, machine learning is used in several of the studies examined —
 
 ---
 
+# Acknowledgements
+
+The author thanks former colleagues for useful follow-up questions, for suggesting sources and for the research done together over the years.
+
+# About the author
+
+Antti-Juhana Mäki received a D.Sc. (Tech.) from Tampere University of Technology in 2018 with the dissertation [*Modeling and Control of Microscale Cell Culture Environments*](https://urn.fi/URN:ISBN:978-952-15-4174-2). As a postdoctoral researcher at Tampere University of Technology and Tampere University (2018–2022), the author worked on microfluidics, control engineering and biosignal analysis, including field potentials of hiPSC-CMs, and developed the [DatAnalyzer](https://github.com/AnaHill/DatAnalyzer) tool. The author now works as a data and AI expert, where combining agent-assisted workflows with attention to data quality is part of daily work.
+
 # Declarations
 
 **Status.** This is a preprint and has not been peer reviewed.
