@@ -887,3 +887,7 @@ Wiki page: the B27-to-MM split on day 21 and two videos per well added to Method
 ## [2026-11-13] draft | Conclusion: machine-learning outlook paragraph
 
 The researcher rewrote the paragraph; language corrected ("It is clear that ... will" changed to an attributed opinion, "the previous section" to the Discussion and future outlook section, the sentence fragment starting with "And" joined, typo "reseach"). Register item 23 updated.
+
+## [2026-11-13] draft | About the author: two hiPSC-CM MEA studies linked
+
+DatAnalyzer sentence now names its use in two co-authored hiPSC-CM studies, linked by DOI: Häkli et al. (2021), Scientific Reports 11, 4153 (cardiac ischemia), and Häkli et al. (2022), Stem Cells International 2022, 9438281 (acute hypoxia and reoxygenation). Details from the researcher's publications.bib; linked, not cited, so they stay out of the reference list.

@@ -243,7 +243,7 @@ The author thanks former colleagues for useful follow-up questions, for suggesti
 
 # About the author
 
-Antti-Juhana Mäki received a D.Sc. (Tech.) from Tampere University of Technology in 2018 with the dissertation [*Modeling and Control of Microscale Cell Culture Environments*](https://urn.fi/URN:ISBN:978-952-15-4174-2). As a postdoctoral researcher at Tampere University of Technology and Tampere University (2018–2022), the author worked on microfluidics, control engineering and biosignal analysis, including field potentials of hiPSC-CMs, and developed the [DatAnalyzer](https://github.com/AnaHill/DatAnalyzer) tool. The author now works as a data and AI expert, where combining agent-assisted workflows with attention to data quality is part of daily work.
+Antti-Juhana Mäki received a D.Sc. (Tech.) from Tampere University of Technology in 2018 with the dissertation [*Modeling and Control of Microscale Cell Culture Environments*](https://urn.fi/URN:ISBN:978-952-15-4174-2). As a postdoctoral researcher at Tampere University of Technology and Tampere University (2018–2022), the author worked on microfluidics, control engineering and biosignal analysis, including field potentials of hiPSC-CMs, and developed the [DatAnalyzer](https://github.com/AnaHill/DatAnalyzer) tool for the MEA analysis of two co-authored studies of hiPSC-CMs, on [modelling cardiac ischemia](https://doi.org/10.1038/s41598-021-83740-w) and on [acute hypoxia and reoxygenation](https://doi.org/10.1155/2022/9438281). The author now works as a data and AI expert, where combining agent-assisted workflows with attention to data quality is part of daily work.
 
 # Declarations
 
