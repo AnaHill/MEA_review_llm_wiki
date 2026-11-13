@@ -883,3 +883,7 @@ Grinding Scheurer: all seven claims hold. At the researcher's request the matura
 ## [2026-11-12] query | Scheurer 2025 wiki page updated after grinding
 
 Wiki page: the B27-to-MM split on day 21 and two videos per well added to Methodology; a new "Our observations" subsection notes that the classes differ in both age and medium, and that the per-video train–test split may let both videos of a well fall on different sides (not stated in the paper); Relevance updated to the generalised main.md sentence.
+
+## [2026-11-13] draft | Conclusion: machine-learning outlook paragraph
+
+The researcher rewrote the paragraph; language corrected ("It is clear that ... will" changed to an attributed opinion, "the previous section" to the Discussion and future outlook section, the sentence fragment starting with "And" joined, typo "reseach"). Register item 23 updated.

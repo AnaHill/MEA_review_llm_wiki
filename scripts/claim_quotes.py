@@ -48,7 +48,7 @@ SOURCES = {
     "Hayakawa": r"\bHayakawa\b", "Hu": r"\bHu et al\b", "Hwang": r"\bHwang\b", "Ismaili": r"\bIsmaili\b",
     "Kabanov": r"\bKabanov\b", "Lee et al. (2024)": r"\bLee et al\.?,? \(?2024|CardioMEA platform.*\(Lee et al\.\)",
     "Lee et al. (2026)": r"\bLee et al\.?,? \(?2026|Transparent MEA.*\(Lee et al\.\)", "Karami": r"\bKarami\b", "Li et al. (2025)": r"\bLi et al\.?,? \(?2025|\(Li et al\.\)",
-    "Lin": r"\bLin et al\b", "Mäki": r"\bMäki\b",
+    "Lin": r"\bLin et al\b", "Mäki": r"(?<!Antti-Juhana )\bMäki\b",
     "Matsuda": r"\bMatsuda\b", "Maurissen": r"\bMaurissen\b",
     "Park et al. (2025)": r"Park et al\.?,? \(?2025|\(Park et al\.\)",
     "Park et al. (2026)": r"Park et al\.?,? \(?2026",

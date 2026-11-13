@@ -401,7 +401,7 @@ Local file: `raw/lee-2024-cardiomea.pdf`; page `wiki/papers/lee-2024-cardiomea.m
     - > The T-wave peak tracks APD90 only when the T wave is biphasic (Ernault et al., 2024), and R-to-T-peak FPD correlated only minimally with APD50 and APD90 from intracellular-like signals on the same electrodes (Lee et al., 2024). — main.md:199
     - > Electroporation through the recording electrodes (Lee et al., 2024) yields paired FP and AP-like signals from the same electrodes and is therefore a candidate source of training and validation data, and AI-assisted sensor fusion of further simultaneous modalities could add ground truth. — main.md:201
 - [x] (8) [Conclusion] automated feature ranking in an open platform is one of the machine-learning uses in the studies examined.
-    - > Looking forward, machine learning is used in several of the studies examined — from ensemble classifiers for TdP risk prediction (Pramudito et al., 2026) and genotype-specific risk models (Park et al., 2026) to automated feature ranking in an open platform (Lee et al., 2024) — and it may become a more integral layer of cardiomyocyte MEA workflows. — main.md:236
+    - > Looking forward, machine learning is already used in several of the studies examined, from ensemble classifiers for TdP risk prediction (Pramudito et al., 2026) and genotype-specific risk models (Park et al., 2026) to automated feature ranking in an open platform (Lee et al., 2024). — main.md:236
 
 Pointers: (1), (3) p. 1 ("designed specifically for HD-MEA data", "scalable data processing pipelines"). (2) Table 3, p. 9 (CardioMDA, Pradhapan et al., 2013; MultiElec, Georgiadis et al., 2015; it compares language, GUI, pipeline execution, condition comparison, wave propagation and intracellular-like analysis, not FPD definitions). (4) Table 1, p. 5 (features), Table 3, p. 9 (Python), AutoML p. 11 (the Feature Analysis tab is "exclusively available for the Extracellular Analysis panel"). (5) Table 1, p. 5 ("Distance between the R spike and the T wave signal peak") and Fig. 2A, p. 6. (6) text p. 8 ("showed minimal correlation with all AP-related features. This could be attributed to the noise levels"), Fig. 4, p. 9 (Spearman ρ −0.04 APD50, −0.07 APD90; 3,987 electrodes, 29 iCell cultures). (7) p. 8 ("recorded by the very same electrodes and originating from the same cells"); Supplementary Figure S2 shows the intracellular-like signal is attenuated and fades as the membrane reseals. (8) pp. 11–13 (AutoML, permutation feature importance). Supplement adds nothing that changes a claim.
 
@@ -634,8 +634,8 @@ Local files: `raw/park-2026-genotype-ml.pdf` (+ supplementary methods and Data s
     - > Disease-line screening is another application: Park et al. (2025) compared eight arrhythmia-inducing drugs on healthy and long QT syndrome–derived hiPSC-CM lines, and the same group later tested 28 compounds on patient-derived long QT and Brugada syndrome lines (Park et al., 2026). — main.md:181
 - [ ] (11) [Outlook] its machine-learning classifiers were trained on a small dataset.
     - > A further caution is that machine-learning classifiers in the studies examined were trained on small datasets (Scheurer et al., 2025; Park et al., 2026; Pramudito et al., 2026). — main.md:197
-- [ ] (12) [Conclusion] genotype-specific risk models are one of the machine-learning uses in the studies examined.
-    - > Looking forward, machine learning is used in several of the studies examined — from ensemble classifiers for TdP risk prediction (Pramudito et al., 2026) and genotype-specific risk models (Park et al., 2026) to automated feature ranking in an open platform (Lee et al., 2024) — and it may become a more integral layer of cardiomyocyte MEA workflows. — main.md:236
+- [x] (12) [Conclusion] genotype-specific risk models are one of the machine-learning uses in the studies examined.
+    - > Looking forward, machine learning is already used in several of the studies examined, from ensemble classifiers for TdP risk prediction (Pramudito et al., 2026) and genotype-specific risk models (Park et al., 2026) to automated feature ranking in an open platform (Lee et al., 2024). — main.md:236
 
 Pointers: (6)(8) Figure 3 (patch-clamp subtype classification; normal lines about 70 % ventricular-, 20 % atrial- and 9 % nodal-like). (7) Figure 6–7 (11 training and 15 test drugs; 10,000 resamplings).
 
@@ -645,7 +645,7 @@ Local file: `raw/pramudito-2026-ensemble.pdf` (git-ignored); page `wiki/papers/p
 
 - [ ] (1) [Timeline, Conclusion] "Stacking ensemble machine learning for TdP risk prediction" (ML spelled out 2026-11-06); the Conclusion's "ensemble classifiers for TdP risk prediction".
     - > : Stacking ensemble machine learning for TdP risk prediction (Pramudito et al.) — main.md:80
-    - > Looking forward, machine learning is used in several of the studies examined — from ensemble classifiers for TdP risk prediction (Pramudito et al., 2026) and genotype-specific risk models (Park et al., 2026) to automated feature ranking in an open platform (Lee et al., 2024) — and it may become a more integral layer of cardiomyocyte MEA workflows. — main.md:236
+    - > Looking forward, machine learning is already used in several of the studies examined, from ensemble classifiers for TdP risk prediction (Pramudito et al., 2026) and genotype-specific risk models (Park et al., 2026) to automated feature ranking in an open platform (Lee et al., 2024). — main.md:236
 - [ ] (2) [Motivation] example of proarrhythmia risk assessment.
     - > In the studies examined, multielectrode array (MEA) recordings from human induced pluripotent stem cell–derived cardiomyocytes (hiPSC-CMs) are used not only for basic measurements such as beating rate and field potential duration (FPD), but also for mechanistic electrophysiological phenotyping (Maurissen et al., 2024; Park et al., 2025; Park et al., 2026), proarrhythmia risk assessment (Blinova et al., 2018; Pramudito et al., 2026), chronic drug testing (Altrocchi et al., 2023) and recordings repeated over days in culture (Guerrelli et al., 2024). — main.md:46
 - [ ] (3) [FPDc] a stacking ensemble of several classifiers outperformed each of its constituent classifiers in predicting TdP risk on 16 held-out CiPA reference compounds.
@@ -901,6 +901,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
 - [x] **23. [Motivation, Conclusion]** uses of MEAs and the machine learning outlook
   - **Text:** the list of uses in the studies examined
   - **Text:** machine learning "may become a more integral layer of cardiomyocyte MEA workflows"
+  - **Update 2026-11-13:** reworded by the researcher to a stronger opinion: "In the author's view, machine learning and other AI methods are likely to become an integral layer of cardiomyocyte MEA analysis workflows", followed by the author's expectation for AI-assisted fusion and signal separation (register items 24 and 26)
   - **Based on:** the studies named
   - **Support:** supported for the list; the outlook is an opinion
 - [x] **24. [Outlook]** sensor fusion
