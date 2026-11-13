@@ -143,7 +143,7 @@ Local files: `raw/correia-2024-acc2.pdf` (+ supplementary, not read); page `wiki
 
 Pointers: (3) p. 3 (medium composition), p. 14 (MDP −79.2 vs −74.3 mV; dV/dt max 68.6 vs 23.4 V/s), p. 16 (IK1 −27.3 vs −4.1 pA/pF). (4) Figure 7F, p. 22 (r 0.85, R² 0.72, p < 0.0001, 21 BCKDK inhibitors), p. 23 ("not possible to obtain using standard medium"; BCAT inhibitors responded in both media).
 
-## ✅ Dunham et al. (2022)
+## Dunham et al. (2022)
 
 Local file: `raw/dunham-2022-cardiopyemea.pdf`; page `wiki/papers/dunham-2022-cardiopyemea.md`. Status: checked against the abstract and the FPD section 2026-10-24.
 
@@ -168,9 +168,11 @@ Local file: `raw/dunham-2022-cardiopyemea.pdf`; page `wiki/papers/dunham-2022-ca
     - > J -->|T-wave endpoint trapezoid area| P[End of the T wave Dunham et al., 2022] — main.md:164
     - > Cardio PyMEA detects beats at the most prominent peak of the field potential and places local activation at the steepest negative deflection after it (Dunham et al., 2022), so its analysis presupposes the polarity of its recordings, which the paper does not state. — main.md:173
 
+- [ ] (8) [Personal] Cardio PyMEA locates the end of the T wave (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
+    - > Two of the open tools examined end the FPD at the T-wave peak (Lee et al., 2024; Weiser-Bitoun et al., 2026), Cardio PyMEA locates the end of the T wave (Dunham et al., 2022), and none of the studies compared the end of the wave with the action potential. — main.md:244
 Pointers: (2) p. 2 ("open-access tools offering enhanced functionality beyond ... proprietary software"). (3) abstract p. 1 (free, modifiable, open source under GPL; Python 3, PyQt5 GUI). (5) section "Field potential duration calculation", p. 10 (R wave to the T-wave endpoint; trapezoid with a mobile point, maximum area gives the endpoint; method of Vázquez-Seisdedos et al.). (7) Methods, beat detection ("identified in MEAs as the most prominent peak of the field potential", SciPy findpeaks); LAT calculation ("maximal negative intrinsicoid deflection"), Figure 5B; no polarity convention found in the text.
 
-## ✅ Ernault et al. (2024)
+## Ernault et al. (2024)
 
 Local file: `raw/ernault-2024-interpretation.pdf`; page `wiki/papers/ernault-2024-interpretation.md`. Status: checked against the abstract and Results 2026-10-24.
 
@@ -194,6 +196,9 @@ Local file: `raw/ernault-2024-interpretation.pdf`; page `wiki/papers/ernault-202
 - [x] (7) [Conclusion] interpretation restricted to biphasic T waves is an example of case-by-case morphology handling.
     - > In the studies examined, morphology handling is described case by case: analysis of inverted signals, exclusion of electrodes, or interpretation restricted to biphasic T waves (Mäki, 2023; Ernault et al., 2024; Weiser-Bitoun et al., 2026). — main.md:232
 
+- [ ] (8) [Personal] the T-wave peak tracks APD90 when the T wave is biphasic; in rat monolayers a positive T wave ended before the action potential did (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
+    - > Happy, because the T-wave peak now has a measured link to APD90, at least when the T wave is biphasic (Ernault et al., 2024), and its timing is worth recording; DatAnalyzer records it too. — main.md:244
+    - > The end is no simple answer either: in rat monolayers, a positive T wave ended before the action potential did (Ernault et al., 2024). — main.md:244
 Pointers: (2) abstract p. 1 and p. 4 ("only in the monolayers exhibiting field potentials with a biphasic T wave ... only the case in the minority of the monolayers"). (3) Results on Fig. 3A: "Often the field potentials showed only a positive T wave that ended before the end of the action potential"; the paper does not test the baseline-return convention. (5) the dependence on neighbouring cells is the paper's point on the LEAP; the "not sufficient" step is ours.
 
 ## ✅ Fetterman et al. (2024)
@@ -368,7 +373,7 @@ Local file: `raw/karami-2026-mea-cardiotoxicity.pdf` (open access, CC BY); page 
 
 Pointers: (1) p. 9 ("FPD and APD are not equivalent measurements ... electrode geometry, cell-electrode coupling, cell density and degree of gap junctional coupling and conduction properties"). (2) pp. 13–14, Figure 5B, Equations 4–7 (point-contact model for a single cell attached to the electrode, Fromherz et al., 1991; Shaik et al., 2022); the text says a tight seal gives the membrane potential itself (pp. 13–14), whereas Table 4 (p. 15) says a passive MEA signal follows the first derivative with a high seal ("typical for MEAs") and the second with a loose seal, and p. 16 calls the second-derivative shape the most observed; main.md follows the text and adds that the membrane-potential case needs very tight contact. (3) p. 14 ("the potential changes of all transmembrane ion currents of all cells will contribute to the potential at the distant electrode … the recorded signal will be a superposition of these individual signals"; said for cells not or loosely attached; adhesion from (1), p. 9); the device-removal and ill-posed parts are register item 26. (4) p. 18 ("capable of measuring distance changes of 1 nm", citing Giaever and Keese, 1991). (5) pp. 13–14; Table 4 on p. 15 (derivative cases).
 
-## ✅ Lee et al. (2024)
+## Lee et al. (2024)
 
 Local file: `raw/lee-2024-cardiomea.pdf`; page `wiki/papers/lee-2024-cardiomea.md`. Status: checked against the Europe PMC full text 2026-10-18 (Table 1, Table 3, Results); Table 3 rechecked in the PDF 2026-10-29; checked claim by claim against the PDF, Figures 2 and 4 and the supplement 2026-11-09.
 
@@ -403,6 +408,8 @@ Local file: `raw/lee-2024-cardiomea.pdf`; page `wiki/papers/lee-2024-cardiomea.m
 - [x] (8) [Conclusion] automated feature ranking in an open platform is one of the machine-learning uses in the studies examined.
     - > Looking forward, machine learning is already used in several of the studies examined, from ensemble classifiers for TdP risk prediction (Pramudito et al., 2026) and genotype-specific risk models (Park et al., 2026) to automated feature ranking in an open platform (Lee et al., 2024). — main.md:236
 
+- [ ] (9) [Personal] CardioMEA ends the FPD at the T-wave peak (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
+    - > Two of the open tools examined end the FPD at the T-wave peak (Lee et al., 2024; Weiser-Bitoun et al., 2026), Cardio PyMEA locates the end of the T wave (Dunham et al., 2022), and none of the studies compared the end of the wave with the action potential. — main.md:244
 Pointers: (1), (3) p. 1 ("designed specifically for HD-MEA data", "scalable data processing pipelines"). (2) Table 3, p. 9 (CardioMDA, Pradhapan et al., 2013; MultiElec, Georgiadis et al., 2015; it compares language, GUI, pipeline execution, condition comparison, wave propagation and intracellular-like analysis, not FPD definitions). (4) Table 1, p. 5 (features), Table 3, p. 9 (Python), AutoML p. 11 (the Feature Analysis tab is "exclusively available for the Extracellular Analysis panel"). (5) Table 1, p. 5 ("Distance between the R spike and the T wave signal peak") and Fig. 2A, p. 6. (6) text p. 8 ("showed minimal correlation with all AP-related features. This could be attributed to the noise levels"), Fig. 4, p. 9 (Spearman ρ −0.04 APD50, −0.07 APD90; 3,987 electrodes, 29 iCell cultures). (7) p. 8 ("recorded by the very same electrodes and originating from the same cells"); Supplementary Figure S2 shows the intracellular-like signal is attenuated and fades as the membrane reseals. (8) pp. 11–13 (AutoML, permutation feature importance). Supplement adds nothing that changes a claim.
 
 ## ✅ Lee et al. (2026)
@@ -531,12 +538,14 @@ Local file: `raw/maki-2023-opinion.html`; page `wiki/papers/maki-2023-opinion.md
 - [x] (13) [Conclusion] analysis of inverted signals is an example of case-by-case morphology handling.
     - > In the studies examined, morphology handling is described case by case: analysis of inverted signals, exclusion of electrodes, or interpretation restricted to biphasic T waves (Mäki, 2023; Ernault et al., 2024; Weiser-Bitoun et al., 2026). — main.md:232
 - [x] (14) [Declarations] competing-interest statement: the author wrote this paper and DatAnalyzer.
-    - > The author wrote the opinion paper used here as the evaluative framework (Mäki, 2023) and the *DatAnalyzer* tool listed in Table 1, and therefore has an interest in how they are assessed. — main.md:252
-    - > "Mäki (2023)" refers to the opinion paper whose first version was posted on Zenodo in 2023; the text assessed here is version v3 of the same record, published on 23 June 2026, which slightly updated the original text (mainly outlook). — main.md:254
+    - > The author wrote the opinion paper used here as the evaluative framework (Mäki, 2023) and the *DatAnalyzer* tool listed in Table 1, and therefore has an interest in how they are assessed. — main.md:260
+    - > "Mäki (2023)" refers to the opinion paper whose first version was posted on Zenodo in 2023; the text assessed here is version v3 of the same record, published on 23 June 2026, which slightly updated the original text (mainly outlook). — main.md:262
 - [ ] (15) [Declarations] version note: first version on Zenodo in 2023; the text assessed is v3 of the same record, published 23 June 2026.
-    - > The author wrote the opinion paper used here as the evaluative framework (Mäki, 2023) and the *DatAnalyzer* tool listed in Table 1, and therefore has an interest in how they are assessed. — main.md:252
-    - > "Mäki (2023)" refers to the opinion paper whose first version was posted on Zenodo in 2023; the text assessed here is version v3 of the same record, published on 23 June 2026, which slightly updated the original text (mainly outlook). — main.md:254
+    - > The author wrote the opinion paper used here as the evaluative framework (Mäki, 2023) and the *DatAnalyzer* tool listed in Table 1, and therefore has an interest in how they are assessed. — main.md:260
+    - > "Mäki (2023)" refers to the opinion paper whose first version was posted on Zenodo in 2023; the text assessed here is version v3 of the same record, published on 23 June 2026, which slightly updated the original text (mainly outlook). — main.md:262
 
+- [ ] (16) [Personal] the opinion paper (2023) argued that the FPD end should be measured where the repolarization wave returns to baseline (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
+    - > When I wrote the opinion paper in 2023 (Mäki, 2023), I hoped that the end of the FPD would come to be measured where the repolarization wave returns to baseline, not only at the T-wave peak. — main.md:244
 Pointers: (3)(6) the sections on FPD start and end; 10 % thresholds in the algorithm description (wiki page, steps 4 and 6). (8) section "Understanding FP signals": "measured FP-signals have large differences in i) amplitude ... ii) frequency ... iii) signal forms: "high and low peak" vs "only low peak", large differences in repolarization phases"; "FP-signals may overlap in recordings from later stages, resulting in complex mixed waveforms" (Meyer et al. 2004; Egert and Meyer 2005, not sources of this review). (10) its Limitations: the analysis "might not be as easily ... extrapolated to the 3D model". (15) Zenodo record 20807245 version list ("Version v3, 10.5281/zenodo.20807245, Jun 23, 2026").
 
 ## Matsuda et al. (2025)
@@ -673,7 +682,7 @@ Local file: `raw/ryynanen-2018-single-cell-mea.pdf`; page `wiki/papers/ryynanen-
 - [ ] (3) [Limitations] pre-2022 work cited as background.
     - > - (vi) A few works from before 2022, such as Blinova et al. (2018), Hayakawa et al. (2014) and Ryynänen et al. (2018), are cited only as background for conventions, datasets and earlier multimodal work. — main.md:220
 - [ ] (4) [Declarations] several of its authors are colleagues of the researcher from the Centre of Excellence in Body-on-Chip Research (CoEBoC) collaboration at Tampere University; the researcher is not an author.
-    - > Several authors of the review Vuorenpää et al. (2023) and of Ryynänen et al. (2018), both cited in this review, are colleagues of the author from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) research collaboration at Tampere University; the author is not an author of either. — main.md:252
+    - > Several authors of the review Vuorenpää et al. (2023) and of Ryynänen et al. (2018), both cited in this review, are colleagues of the author from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) research collaboration at Tampere University; the author is not an author of either. — main.md:260
 
 Pointers: (1) p. 4 ("Bazett's formula was used to calculate the beat-rate-corrected FPD (cFPD)"). (2) pp. 2–3 (aim), p. 5 ("the recordings were not automatically synchronized in this study"), p. 7.
 
@@ -722,7 +731,7 @@ Local file: `raw/vuorenpaa-2023-mps-building-blocks.pdf`; page `wiki/papers/vuor
     - > A review of cardiac microphysiological systems also sees potential in combining different measurement modalities, which heart-on-chip systems can monitor concurrently (Vuorenpää et al., 2023). — main.md:195
     - > The review of cardiac microphysiological systems cited above notes that continuous, multimodal measurements give a holistic data set for parameterising and validating computational models and that, to its authors' knowledge, integrative simulations of all building blocks of a microphysiological system had not been published (Vuorenpää et al., 2023). — main.md:207
 - [ ] (4) [Declarations] several of its authors are colleagues of the researcher from CoEBoC at Tampere University; the researcher is not an author (Declarations: "both cited in this review", generalised 2026-11-01).
-    - > Several authors of the review Vuorenpää et al. (2023) and of Ryynänen et al. (2018), both cited in this review, are colleagues of the author from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) research collaboration at Tampere University; the author is not an author of either. — main.md:252
+    - > Several authors of the review Vuorenpää et al. (2023) and of Ryynänen et al. (2018), both cited in this review, are colleagues of the author from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) research collaboration at Tampere University; the author is not an author of either. — main.md:260
 
 Pointers: (1) section 6.1.1 ("The parametrization of APs and field potentials has been well established, enabling clear comparison of results between studies"). (2) section 6.1 (p. 12–13). (3) section 7 (p. 20) and 7.3 (p. 21, "To our knowledge, multiphysics models that would put together all the building blocks of MPS in integrative simulations have not yet been published"). The text contains no machine learning or digital twin discussion.
 
@@ -750,6 +759,8 @@ Local file: `raw/weiser-bitoun-2026-physiomea.pdf`; page `wiki/papers/weiser-bit
 - [ ] (7) [Conclusion] analysis of inverted signals and exclusion of electrodes are examples of case-by-case morphology handling.
     - > In the studies examined, morphology handling is described case by case: analysis of inverted signals, exclusion of electrodes, or interpretation restricted to biphasic T waves (Mäki, 2023; Ernault et al., 2024; Weiser-Bitoun et al., 2026). — main.md:232
 
+- [ ] (8) [Personal] PhysioMEA ends the FPD at the T-wave peak (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
+    - > Two of the open tools examined end the FPD at the T-wave peak (Lee et al., 2024; Weiser-Bitoun et al., 2026), Cardio PyMEA locates the end of the T wave (Dunham et al., 2022), and none of the studies compared the end of the wave with the action potential. — main.md:244
 Pointers: (2) abstract and p. 2–3 ("45 measures, including time domain, frequency domain, and nonlinear analysis", from PhysioZoo; MATLAB 2023b or standalone .exe). (4) p. 3 ("FPD ... defined as the time difference between the R- and T-peaks"). (5)(7) p. 3 (inverted T waves and low-amplitude R peaks analysed on the inverted signal; electrodes with inconsistent biomarker counts excluded).
 
 ## Register of the author's own inferences
@@ -943,3 +954,9 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Origin:** the researcher's check of Guerrelli Supplementary Tables 2, 5 and 6 (2026-11-06)
   - **Based on:** Guerrelli (11), Clements (8)
   - **Support:** `sourced` for the values; the comparison is ours and loose, because Guerrelli reports well means from one electrode and Clements a share of electrodes ≥ 0.5 mV. Both lines are below 0.5 mV on day 2, so the day dependence holds across the two lines; the size of the rise differs by line (3.6 vs 8.1 mV on day 14; paced Cor.4U 0.72 mV on day 3, 8.38 mV on day 14, Table S6)
+- [ ] **30. [Personal]** the personal note on the FPD end
+  - **Text:** "APD90 is not complete repolarization, and I still have not found a physiological reason to stop the FPD at APD90 instead of also measuring the end of the wave" (the researcher's own question: why stop at APD90 rather than also measure complete repolarization); "none of the studies compared the end of the wave with the action potential"; a difficult measurement "is not a reason to leave it out"
+  - **Origin:** the researcher (2026-11-13), written in the first person and marked as a personal view
+  - **Based on:** Ernault (8), Lee 2024 (9), Weiser-Bitoun (8), Dunham (8), Mäki (16); the "none compared" statement matches the Fiducial section and Table 2 caption
+  - **Support:** `opinion`, with the sourced parts restating checked claims
+  - **Update 2026-11-13:** an added sentence on early afterdepolarizations (citing Mäki, 2023) was replaced by a neutral one ("The last part of repolarization, between APD90 and the return to baseline, would then be measured as well, and changes that appear only there would not be missed"), because only phase-3 EADs fall into that window; see wiki/critical-assessment-maki-claims.md, Claim 2

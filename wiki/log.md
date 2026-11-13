@@ -891,3 +891,15 @@ The researcher rewrote the paragraph; language corrected ("It is clear that ... 
 ## [2026-11-13] draft | About the author: two hiPSC-CM MEA studies linked
 
 DatAnalyzer sentence now names its use in two co-authored hiPSC-CM studies, linked by DOI: Häkli et al. (2021), Scientific Reports 11, 4153 (cardiac ischemia), and Häkli et al. (2022), Stem Cells International 2022, 9438281 (acute hypoxia and reoxygenation). Details from the researcher's publications.bib; linked, not cited, so they stay out of the reference list.
+
+## [2026-11-13] draft | Personal note added after the Conclusion
+
+First-person section on the FPD end point: T-wave peak linked to APD90 for biphasic T waves (Ernault), two open tools end at the T-wave peak (Lee 2024, Weiser-Bitoun), Cardio PyMEA locates the T-wave end (Dunham), no study compared the wave end with the AP, a positive T wave ended before the AP (Ernault); a difficult measurement is not a reason to skip it. claim_quotes.py maps the section to the tag [Personal]; claims Ernault (8), Lee 2024 (9), Weiser-Bitoun (8), Dunham (8), Mäki (16) and register item 30 added. ToDo A3b personal note done as a first version.
+
+## [2026-11-13] draft | Personal note: early afterdepolarizations as the reason for the full FPD end
+
+The researcher's added sentence reworded and sourced to Mäki (2023): early afterdepolarizations may go unnoticed when the FPD ends at the repolarization peak. Mäki claim (16) extended.
+
+## [2026-11-13] draft | Personal note: EAD sentence replaced; afterdepolarization note on the critical assessment page
+
+The EAD sentence in the personal note was replaced by a neutral one about measuring the last part of repolarization, without a citation. Critical assessment, Claim 2: removed the unqualified "tail matters for EAD risk" and added a note that the opinion paper's EAD argument is broader than the physiology supports (phase-2 EADs early in the AP, only phase-3 EADs near the end of repolarization, DADs after it). Mäki claim (16) back to its original scope; register item 30 updated.

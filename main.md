@@ -237,6 +237,14 @@ Looking forward, machine learning is already used in several of the studies exam
 
 ---
 
+# Personal note
+
+This section is my own view, written less formally than the rest of the review.
+
+When I wrote the opinion paper in 2023 (Mäki, 2023), I hoped that the end of the FPD would come to be measured where the repolarization wave returns to baseline, not only at the T-wave peak. After this review I am both happy and puzzled. Happy, because the T-wave peak now has a measured link to APD90, at least when the T wave is biphasic (Ernault et al., 2024), and its timing is worth recording; DatAnalyzer records it too. Puzzled, because APD90 is not complete repolarization, and I still have not found a physiological reason to stop the FPD at APD90 instead of also measuring the end of the wave. The last part of repolarization, between APD90 and the return to baseline, would then be measured as well, and changes that appear only there would not be missed. Two of the open tools examined end the FPD at the T-wave peak (Lee et al., 2024; Weiser-Bitoun et al., 2026), Cardio PyMEA locates the end of the T wave (Dunham et al., 2022), and none of the studies compared the end of the wave with the action potential. The end is no simple answer either: in rat monolayers, a positive T wave ended before the action potential did (Ernault et al., 2024).
+
+The practical reason is clear to me: a peak is much easier to find than the point where a small, noisy wave returns to baseline. But a measurement being difficult is not a reason to leave it out. Making it reliable is the challenge, and that is what science is for.
+
 # Acknowledgements
 
 The author thanks former colleagues for useful follow-up questions, for suggesting sources and for the research done together over the years.

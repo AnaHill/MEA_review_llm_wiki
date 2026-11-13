@@ -35,7 +35,8 @@ SECTION_TAG = [
     ("Rate correction", "FPDc"), ("Maturation status", "Maturation"),
     ("Morphology-aware", "Morphology"), ("Three-dimensional cardiomyocyte", "3D"),
     ("High-throughput", "High-throughput"), ("Limitations of this review", "Limitations"),
-    ("Conclusion", "Conclusion"), ("Discussion", "Outlook"), ("Declarations", "Declarations"),
+    ("Conclusion", "Conclusion"), ("Discussion", "Outlook"), ("Personal note", "Personal"),
+    ("Declarations", "Declarations"),
 ]
 # Tables sit under these headings; the claims file tags their rows separately.
 TABLE_TAG = {"Open pipelines": "Table 1", "Fiducial": "Table 2"}
