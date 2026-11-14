@@ -143,7 +143,7 @@ Local files: `raw/correia-2024-acc2.pdf` (+ supplementary, not read); page `wiki
 
 Pointers: (3) p. 3 (medium composition), p. 14 (MDP −79.2 vs −74.3 mV; dV/dt max 68.6 vs 23.4 V/s), p. 16 (IK1 −27.3 vs −4.1 pA/pF). (4) Figure 7F, p. 22 (r 0.85, R² 0.72, p < 0.0001, 21 BCKDK inhibitors), p. 23 ("not possible to obtain using standard medium"; BCAT inhibitors responded in both media).
 
-## Dunham et al. (2022)
+## ✅ Dunham et al. (2022)
 
 Local file: `raw/dunham-2022-cardiopyemea.pdf`; page `wiki/papers/dunham-2022-cardiopyemea.md`. Status: checked against the abstract and the FPD section 2026-10-24.
 
@@ -163,16 +163,14 @@ Local file: `raw/dunham-2022-cardiopyemea.pdf`; page `wiki/papers/dunham-2022-ca
 - [x] (6) [Morphology] Figure 2 shows the trapezoid-area T-wave endpoint as a third FPD end convention ("End of the T wave").
     - > J -->|T-wave endpoint trapezoid area| P[End of the T wave Dunham et al., 2022] — main.md:164
     - > Cardio PyMEA detects beats at the most prominent peak of the field potential and places local activation at the steepest negative deflection after it (Dunham et al., 2022), so its analysis presupposes the polarity of its recordings, which the paper does not state. — main.md:173
-
 - [x] (7) [Morphology] beats are detected at the most prominent peak of the field potential and local activation is placed at the steepest negative deflection after it; the paper does not state the polarity convention of the recording system (added 2026-11-05; that the analysis therefore presupposes the polarity is our inference, register item 28; see wiki/fp-polarity.md).
     - > J -->|T-wave endpoint trapezoid area| P[End of the T wave Dunham et al., 2022] — main.md:164
     - > Cardio PyMEA detects beats at the most prominent peak of the field potential and places local activation at the steepest negative deflection after it (Dunham et al., 2022), so its analysis presupposes the polarity of its recordings, which the paper does not state. — main.md:173
-
-- [ ] (8) [Personal] Cardio PyMEA locates the end of the T wave (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
+- [x] (8) [Personal] Cardio PyMEA locates the end of the T wave (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
     - > Two of the open tools examined end the FPD at the T-wave peak (Lee et al., 2024; Weiser-Bitoun et al., 2026), Cardio PyMEA locates the end of the T wave (Dunham et al., 2022), and none of the studies compared the end of the wave with the action potential. — main.md:244
 Pointers: (2) p. 2 ("open-access tools offering enhanced functionality beyond ... proprietary software"). (3) abstract p. 1 (free, modifiable, open source under GPL; Python 3, PyQt5 GUI). (5) section "Field potential duration calculation", p. 10 (R wave to the T-wave endpoint; trapezoid with a mobile point, maximum area gives the endpoint; method of Vázquez-Seisdedos et al.). (7) Methods, beat detection ("identified in MEAs as the most prominent peak of the field potential", SciPy findpeaks); LAT calculation ("maximal negative intrinsicoid deflection"), Figure 5B; no polarity convention found in the text.
 
-## Ernault et al. (2024)
+## ✅ Ernault et al. (2024)
 
 Local file: `raw/ernault-2024-interpretation.pdf`; page `wiki/papers/ernault-2024-interpretation.md`. Status: checked against the abstract and Results 2026-10-24.
 
@@ -195,8 +193,7 @@ Local file: `raw/ernault-2024-interpretation.pdf`; page `wiki/papers/ernault-202
     - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or modalities other than field potentials (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:216
 - [x] (7) [Conclusion] interpretation restricted to biphasic T waves is an example of case-by-case morphology handling.
     - > In the studies examined, morphology handling is described case by case: analysis of inverted signals, exclusion of electrodes, or interpretation restricted to biphasic T waves (Mäki, 2023; Ernault et al., 2024; Weiser-Bitoun et al., 2026). — main.md:232
-
-- [ ] (8) [Personal] the T-wave peak tracks APD90 when the T wave is biphasic; in rat monolayers a positive T wave ended before the action potential did (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
+- [x] (8) [Personal] the T-wave peak tracks APD90 when the T wave is biphasic; in rat monolayers a positive T wave ended before the action potential did (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
     - > Happy, because the T-wave peak now has a measured link to APD90, at least when the T wave is biphasic (Ernault et al., 2024), and its timing is worth recording; DatAnalyzer records it too. — main.md:244
     - > The end is no simple answer either: in rat monolayers, a positive T wave ended before the action potential did (Ernault et al., 2024). — main.md:244
 Pointers: (2) abstract p. 1 and p. 4 ("only in the monolayers exhibiting field potentials with a biphasic T wave ... only the case in the minority of the monolayers"). (3) Results on Fig. 3A: "Often the field potentials showed only a positive T wave that ended before the end of the action potential"; the paper does not test the baseline-return convention. (5) the dependence on neighbouring cells is the paper's point on the LEAP; the "not sufficient" step is ours.
