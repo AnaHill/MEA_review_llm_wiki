@@ -43,14 +43,6 @@ Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: 
 - [x] Tehty 1.11.: `# Abbreviations` highlightsien jälkeen 
 - [ ] Jos main.md muuttuu: aja `python -I scripts/check_abbreviations.py`
 
-### A3b. Lisäkohtia mahdollisesti
-- [x] About Author: nämä linkkeinä (13.11.) 
-  - Häkli, M. et al. (2022). Electrophysiological changes of human-induced pluripotent stem cell-derived cardiomyocytes during acute hypoxia and reoxygenation. Stem Cells International, Vol. 2022, 9438281. https://doi.org/10.1155/2022/9438281
-  - Häkli, M. et al. (2021). Human induced pluripotent stem cell-based platform for modeling cardiac ischemia. Scientific Reports, Vol. 11(1), 4153. https://doi.org/10.1038/s41598-021-83740-w
-
-- [x] Personal note (ensimmäinen versio 13.11., muokataan tarvittaessa)
-  - epävirallisempi, henk koht sektio loppuun, missä kuvia yms ja totean, että vieläkin 4 vuoden jälkeen ei ole tullut perusteluja, miksi signaalin loppuosa ei pitäisi ottaa FPD:n mukaan
-
 ### A4. Lopputarkistukset
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
 - [ ] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
