@@ -5,7 +5,9 @@ Run from anywhere: python -I scripts/check.py
 Exit code 1 if any ERROR is found (warnings and info do not fail the run).
 
 It cannot verify that author lists or findings are true (that needs the source itself),
-but it catches structural ways a citation can appear without a source behind it.
+but it catches structural ways a citation can appear without a source behind it. It also
+reports where main.md has made a connection the wiki lacks (sources cited in one sentence
+whose pages do not link each other) and wiki tags outside the vocabulary in AGENTS.md.
 """
 import re
 import sys
@@ -141,6 +143,64 @@ for key in sorted(main_keys - cited):
     report("WARN", "main.md", f"{key[0]} {key[1]} is in the # References list but not cited in the text")
 if "[CITATION NEEDED]" in main:
     report("INFO", "main.md", f"{main.count('[CITATION NEEDED]')} open [CITATION NEEDED] flag(s)")
+
+# --- write-back from main.md to the wiki ---------------------------------------------
+# main.md compares sources and gathers themes; the wiki should carry the same connections.
+# (1) Sources cited in one sentence of main.md should have linked wiki pages (INFO).
+#     The "Limitations of this review" section is skipped: it lists sources as examples.
+def cite_keys(text):
+    keys = set()
+    for group in re.findall(r"\(([^()]*\d{4}[a-z]?[^()]*)\)", text):
+        for part in group.split(";"):
+            m = re.match(r"\s*([A-ZÄÖÅ][\w\-äöåÄÖÅ]+)(?:,?\s+(?:et al\.|and\s+[A-ZÄÖÅ][\w\-]+|&\s+[A-ZÄÖÅ][\w\-]+))?,?\s+((?:19|20)\d{2})[a-z]?\s*$", part)
+            if m:
+                keys.add((norm(m.group(1)), m.group(2)))
+    for m in re.finditer(r"([A-ZÄÖÅ][\w\-äöåÄÖÅ]+)(?:\s+et al\.|\s+and\s+[A-ZÄÖÅ][\w\-]+)?\s+\(((?:19|20)\d{2})[a-z]?\)", text):
+        keys.add((norm(m.group(1)), m.group(2)))
+    return {k for k in keys if k in page_keys}
+
+
+body = re.split(r"^# References[ \t]*$", main, maxsplit=1, flags=re.M)[0]
+body = re.sub(r"^# Limitations of this review.*?(?=^# )", "", body, flags=re.M | re.S)
+# A pair counts as connected if one paper page links the other, or if a concept page
+# (outside wiki/papers/) links both: list-like sentences ("used in A, B and C") belong on a hub page.
+stem_key = {p.stem: k for k, p in page_keys.items()}
+def paper_links(path):
+    return {stem_key[t] for t in re.findall(r"\[\[wiki/papers/([^\]|#]+?)(?:\.md)?\]\]", read(path)) if t in stem_key}
+linked = set()
+for key, page in page_keys.items():
+    linked.update(frozenset((key, k2)) for k2 in paper_links(page) if k2 != key)
+for p in WIKI.glob("*.md"):
+    if p.name not in NON_PAGES:
+        hub = sorted(paper_links(p))
+        linked.update(frozenset((a, b)) for i, a in enumerate(hub) for b in hub[i + 1:])
+unlinked = {}
+for line in body.splitlines():
+    for sentence in re.split(r"(?<=[.!?])\s+(?=[A-Z*])", line):
+        keys = sorted(cite_keys(sentence))
+        for i, a in enumerate(keys):
+            for b in keys[i + 1:]:
+                if frozenset((a, b)) not in linked:
+                    unlinked[(a, b)] = unlinked.get((a, b), 0) + 1
+for (a, b), n in sorted(unlinked.items()):
+    report("INFO", "main.md", f"{page_keys[a].stem} and {page_keys[b].stem} are cited in the same sentence "
+           f"({n}x) but their wiki pages do not link each other (write back, AGENTS.md Draft)")
+
+# (2) Tags come from the vocabulary in AGENTS.md ("Tag vocabulary"), so the graph groups by theme (WARN).
+agents = ROOT / "AGENTS.md"
+vocab_line = next((l for l in read(agents).splitlines() if l.startswith("**Tag vocabulary.**")), "") if agents.exists() else ""
+vocab = {t for t in re.findall(r"`([a-z0-9/\-]+)`", vocab_line) if not t.endswith("/")}
+if vocab:
+    for p in sorted(WIKI.rglob("*.md")):
+        if p.parent == WIKI and p.name in NON_PAGES:
+            continue
+        fm = re.match(r"---\r?\ntags:\s*\[([^\]]*)\]", read(p))
+        tags = [t.strip() for t in fm.group(1).split(",") if t.strip()] if fm else []
+        if not tags:
+            report("WARN", rel(p), "no tags in the front matter (see Tag vocabulary in AGENTS.md)")
+        for t in tags:
+            if t not in vocab:
+                report("WARN", rel(p), f"tag '{t}' is not in the Tag vocabulary of AGENTS.md")
 
 # --- log.md header format ------------------------------------------------------------
 for i, line in enumerate(read(WIKI / "log.md").splitlines(), 1):

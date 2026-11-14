@@ -43,6 +43,7 @@ The repository follows the single-agent-loop design described in Anthropic's art
 - **Thin data tools:** four scripts in `scripts/` (`check.py`, `claim_quotes.py`, `check_abbreviations.py`, `render_pdf_pages.py`), each doing one mechanical job and returning plain text the agent can read.
 - **Progressive disclosure:** procedures that are needed only sometimes live in skills that load on demand (`/grill-paper`, `/grinding`); moving Ingest and Lint into skills is planned.
 - **Guardrails in the harness, not only in the prompt:** [.claude/settings.json](.claude/settings.json) denies file edits to `raw/` and `notes.md`, and a hook runs the abbreviation and consistency checks after every edit of `main.md`.
+- **Rule plus mechanical check:** a rule in AGENTS.md alone gets forgotten, and a script alone cannot judge what makes a good tag or link. So each important convention has both: for example, the Draft operation tells the agent to write connections made in `main.md` back to the wiki, and `check.py` lists sources that `main.md` cites in one sentence but the wiki does not connect, and tags outside the agreed vocabulary.
 - **Checking the output:** [docs/claims-by-source.md](docs/claims-by-source.md) lists every claim in `main.md` per source and is ticked off against the sources by hand, which serves as the evaluation set.
 
 ---

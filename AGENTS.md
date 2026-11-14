@@ -21,7 +21,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 | `main.md` | Evolving paper draft — single file with IMRaD sections. |
 | `skills/` | Agent skill definitions (Claude Code skill format), kept for reference. |
 | `.claude/skills/` | Skills Claude Code loads: `grill-paper` (see "Grill before deciding" below) and `grinding` (see "Grinding" below). |
-| `scripts/` | Helper scripts: `check.py` (consistency check, see "Finishing check" below), `render_pdf_pages.py` (PDF text dump and page-to-PNG rendering for figure inspection), `claim_quotes.py` (lists the sentences of `main.md` that cite each source under that source's claims in `docs/claims-by-source.md`, and with `--write` puts ✅ in front of a section title once all its checkboxes are ticked; dry run by default; `--only <source>` limits the quote update to that source, while the ✅ marks are always refreshed for every section), `check_abbreviations.py` (checks the `# Abbreviations` list of `main.md`: every abbreviation listed, spelled out at first use, none unused). |
+| `scripts/` | Helper scripts: `check.py` (consistency check, see "Finishing check" below; also reports connections made in `main.md` but missing from the wiki and tags outside the Tag vocabulary), `render_pdf_pages.py` (PDF text dump and page-to-PNG rendering for figure inspection), `claim_quotes.py` (lists the sentences of `main.md` that cite each source under that source's claims in `docs/claims-by-source.md`, and with `--write` puts ✅ in front of a section title once all its checkboxes are ticked; dry run by default; `--only <source>` limits the quote update to that source, while the ✅ marks are always refreshed for every section), `check_abbreviations.py` (checks the `# Abbreviations` list of `main.md`: every abbreviation listed, spelled out at first use, none unused). |
 | `notes.md` | The researcher's own thinking — read-only for you (see "Researcher notes" below). |
 | `docs/` | Project/process documentation (e.g. literature search strategy). Not part of the wiki. |
 | `docs/private/` | The researcher's private drafts (e.g. blog and LinkedIn posts about this project). Git-ignored, not part of the wiki or the paper; edit only when asked. |
@@ -56,7 +56,8 @@ When the researcher asks to write or update the paper draft:
 2. Read relevant wiki pages for the section being worked on, and any related entries in `notes.md`.
 3. Update the relevant section(s) in `main.md` — surgical edits only.
 4. Do not touch sections the researcher did not ask about, uncless you noticed that something should be changed. Ask then permission before touching any other section.
-5. Append an entry to `wiki/log.md`.
+5. Write back to the wiki. When the edit compares sources, gathers a theme or introduces a concept that the wiki does not yet carry: add the missing link (with a short reason) to the "See also" of the paper pages involved, or to the concept page that covers the theme; give a recurring theme its own concept page; and if a good tag emerges, add it to the Tag vocabulary only when it fits at least three pages. `scripts/check.py` reports, as INFO, sources cited in one sentence of `main.md` whose pages are not connected (directly or through a concept page that links both), and tags outside the vocabulary as WARN.
+6. Append an entry to `wiki/log.md`, naming the wiki pages changed in step 5.
 
 Typical trigger phrases: *"write the introduction"*, *"update the related work section"*, *"draft the abstract based on what we have"*, or the researcher selects a section in the editor and says *"rewrite this"*.
 
@@ -70,6 +71,7 @@ When the researcher types `/grinding <source>`, follow `.claude/skills/grinding/
 When the researcher asks for a health check:
 - Look for contradictions between pages, stale claims superseded by newer sources, orphan pages (no inbound links), concepts mentioned but lacking their own page, and missing cross-references.
 - Check `main.md` for claims that are not backed by any page in `wiki/`.
+- Check that the wiki carries the connections `main.md` makes: every main.md section with several sources has a concept page, paper pages link the concept pages that cite them, and tags follow the Tag vocabulary (`check.py` reports the mechanical part).
 - Suggest new questions, missing papers, or sources that would fill visible gaps.
 - Run `python -I scripts/check.py` and include its output.
 - Present one prioritized list (script errors, then your own judgement findings, then warnings, then suggestions). Do not auto-fix; wait for the researcher's go-ahead.
