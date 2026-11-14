@@ -425,6 +425,17 @@ Local file: `raw/lee-2026-ito-mea.pdf` (+ supplementary; open access, CC BY-NC);
 
 Pointers: (1) Results, "Monitoring cardiotoxic responses to DOX using ITO MEA", pp. 152–154, and Fig. 4B–D (Strategy 2: 3 µM for 2 days, FP on days 0, 1 and 2; beat period 8.213 s on day 1 against 1.961 s in controls, 4.177 s on day 2; cell density, viability and spike amplitude fell at the same time, Fig. 4E–G; FPD 0.382, 0.448, 0.495 s; FPDc fell on day 1 "due to the sharp BP prolongation"). (2) Methods, p. 149 (CFPS-ITO-16W2E plates; Fluo-4 videos "around the ITO electrode region in each well", at baseline only, Fig. 2C–F, not during FP recording or drug exposure) and Figs 2–4 (morphology after drugs, Figs 3D and 4F). (3) Discussion, first paragraph ("differences in MEA chip composition and recording hardware may alter absolute signal values").
 
+## ✅ Li et al. (2024)
+
+Local file: `raw/li-2024-closed-loop.pdf` (open access, CC BY); page `wiki/papers/li-2024-closed-loop.md`. Status: ingested 2026-11-14 from the text dump; figures not viewed. A different group from Li et al. (2025).
+
+- [x] (1) [Maturation] rapid pacing by a self-sustained traveling wave raised MEA conduction velocity and changed the responses to several drugs.
+    - > Rapid pacing by a self-sustained traveling wave likewise raised MEA conduction velocity and changed the responses to several drugs (Li et al., 2024). — main.md:134
+- [x] (2) [FPDc] pacing can precede the recording: two weeks of rapid pacing served to mature the cells and was stopped before the drug tests, after which the tissues beat at about 1 Hz.
+    - > Pacing can also precede the recording: in one study, two weeks of rapid pacing served to mature the cells and was stopped before the drug tests, after which the tissues beat at about 1 Hz (Li et al., 2024). — main.md:123
+
+Pointers: (1) Fig. 4B–C (conduction velocity, maximum delay; n = 3–5), Table 1 and pp. 7–9 (verapamil, ranolazine, quinidine, pimozide; the verapamil difference holds for 253G1 but not iCell2). (2) p. 2 (TW pacing 220 ± 74 bpm, maintained 14 days before assays) and p. 11 ("the TW was stopped before the hiPSC-CMs were used for drug assessment … stabilize at approximately 1 Hz").
+
 ## ✅ Li et al. (2025)
 
 Local file: `raw/li-2025-maturation.pdf` (+ supplementary); page `wiki/papers/li-2025-maturation.md`. Status: full text and Supplementary Tables 2–3 read at ingest 2026-10-30; checked claim by claim 2026-11-12 (text dump, Supplementary Tables 1–3, Scheurer Methods).

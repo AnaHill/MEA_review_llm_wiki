@@ -923,3 +923,11 @@ The researcher added the supplement of Matsuda et al. (2025) (toxsci-25-0276-Fil
 ## [2026-11-14] draft | High-throughput: Matsuda 2025 doxorubicin sentence
 
 Grinding Matsuda: all five claims hold. At the researcher's request the doxorubicin sentence was generalised by attributing it to the authors ("The authors report that the platform detected doxorubicin-induced cardiotoxicity at lower concentrations than earlier studies"), since the earlier studies used other readouts and partly animal cells. Wiki page: the nature of those earlier studies added, page-number convention noted. docs/claims-by-source.md: Matsuda (5), status and Pointers (journal page numbers) updated.
+
+## [2026-11-14] ingest | Li 2024 — Human iPSC-derived closed-loop cardiac tissue for drug assessment
+
+The researcher added raw/Li_2025_PIIS258900422400213X.pdf (to be renamed raw/li-2024-closed-loop.pdf by the researcher; the rename was blocked by the deny rule on raw/). The paper is from 2024 (iScience 27:108992, published 23 January 2024), not 2025. New page wiki/papers/li-2024-closed-loop.md; reference added to wiki/references.md and main.md; index entry; hipsc-cm-maturation.md (new bullet) and fridericia-rate-correction.md (new row) updated. Chosen over the EMA review by Mondéjar-Parreño et al. (2026), which was assessed and not ingested (general NAM review; it misdescribes Matsuda 2025 and this paper as using controlled pacing).
+
+## [2026-11-14] draft | Maturation and FPDc: Li 2024 added
+
+Two short sentences, kept minimal at the researcher's request: maturation section ("Rapid pacing by a self-sustained traveling wave likewise raised MEA conduction velocity and changed the responses to several drugs") and rate-correction section (pacing before the recording as a maturation step, stopped before drug tests, tissues then at about 1 Hz). Wiki write-back: li-2024-closed-loop.md links li-2025-maturation, guerrelli and matsuda with reasons and the two concept pages. docs/claims-by-source.md: new section Li et al. (2024) with two claims.
