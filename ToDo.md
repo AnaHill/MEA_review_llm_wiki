@@ -1,4 +1,4 @@
-# ToDo (päivitetty 1.11.2026)
+# ToDo (päivitetty 14.11.2026)
 <!-- temp file that will be deleted -->
 Järjestys: **A → B → C -> D.** D-luonnostelu ei odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
 
@@ -9,28 +9,25 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [x] käyty
 
 ### A2. Lähdetarkistus (docs/claims-by-source.md)
-Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: Altrocchi 8/9, Mäki 4/15, Clements 1/7.
-
 **Näin käyt yhden lähteen läpi (toista jokaiselle):**
 1. Avaa `docs/claims-by-source.md` ja hyppää lähteen otsikkoon (esim. `## Correia et al. (2024)`).
 2. Avaa lähteen PDF `raw/`-kansiosta (tiedosto lukee otsikon alla "Local file").
-3. Lue väite (`- [ ] (n) …`) ja sen alla oleva `- >` -rivi: se on main.md:n nykyinen virke.
-4. Etsi kohta PDF:stä. Apuna lähteen lopun "Pointers"-kappale (sivu, kuva, taulukko).
-5. Pitääkö virke paikkansa lähteen mukaan? Kyllä → vaihda `[ ]` → `[x]`. Ei tai epävarma → kirjoita Claudelle: "Correia (5) ei pidä: …" tai "tarkista Correia (5)". Claude korjaa main.md:n, väitelistan ja lokin.
-6. Kun lähde on valmis, siirry seuraavaan. Jos main.md muuttui, aja `python -I scripts/claim_quotes.py --write` (päivittää `- >` -rivit). Kun kaikki lähteen ruudut on rastitettu, sama komento (tai `--write --only Hwang`) lisää otsikkoon ✅.
+3. Käytä `/grinding <authorname>` skills saadaksesi koosteen väitteistä läpikäyntiin
+   1. Lue väite (`- [ ] (n) …`) ja sen alla oleva `- >` -rivi: se on main.md:n nykyinen virke.
+   2. Etsi kohta PDF:stä. Apuna lähteen lopun "Pointers"-kappale (sivu, kuva, taulukko).
+4. Pitääkö virke paikkansa lähteen mukaan? Kyllä → vaihda `[ ]` → `[x]`. Ei tai epävarma → kirjoita Claudelle: "Correia (5) ei pidä: …" tai "tarkista Correia (5)". Claude korjaa main.md:n, väitelistan ja lokin.
+5. Kun lähde on valmis, siirry seuraavaan. Jos main.md muuttui, aja `python -I scripts/claim_quotes.py --write` (päivittää `- >` -rivit). Kun kaikki lähteen ruudut on rastitettu, sama komento (tai `--write --only Hwang`) lisää otsikkoon ✅.
 
 **Järjestys (rasti kun lähde valmis):**
 - [x] 1. Altrocchi: vain (6) vertailuliuottimen ajelehtiminen (Table 2) jäljellä
-- [ ] 2. Eniten korjatut: Correia, Ernault, Fetterman, Guerrelli, Hwang, Ismaili, Matsuda, Maurissen, Park 2025, Scheurer
-- [ ] 3. Uusimmat (luettu kokonaan, mutta tarkistamatta itse): Hu 2026, Karami 2026, Lee 2026, Li 2025, Lin 2023, Hayakawa 2014, Vuorenpää 2023, Ryynänen 2018
-- [ ] 4. Loput: Blinova, Botti, Clements, Dunham, Kabanov, Lee 2024, Mäki, Park 2026, Pramudito, Weiser-Bitoun
-- [x] 5. Omien päätelmien rekisteri (claims-tiedoston viimeinen osio, kohdat 0–27): tässä ei etsitä lähdettä, vaan päätät, seisotko sanamuodon takana. Rasti kun hyväksyt; muuten pyydä Claudelta pehmennystä tai poistoa
+- [ ] 2. Eniten korjatut (jäljellä): Matsuda, Maurissen, Park 2025 (kaikki tarkistettu 24.10. vain osittain)
+- [ ] 3. Uusimmat (jäljellä): Vuorenpää 2023, Ryynänen 2018 (kummankin kuvat katsomatta)
+- [ ] 4. Loput (jäljellä): Park 2026, Pramudito, Weiser-Bitoun
+- [x] 5. Omien päätelmien rekisteri (claims-tiedoston viimeinen osio): kaikki kohdat hyväksytty 14.11. Jos uusia omia päätelmiä lisätään, käy ne läpi samalla tavalla
 
 **Erikseen muistettavat kohdat:**
-- Clements (4): AIMS-sivun lainaus saatiin verkkotyökalun kautta, katso sanamuoto itse sivulta (URL väitteen kohdalla)
-- Dunham (5) "R wave" ja Lee et al. (2024) (5) "R spike": varmista, että tarkoittavat R-huippua
-- Rekisteri 1 on trendiväite ilman lähdettä (Introduction "As the use of MEA-based assays has grown…"); 9, 16, 19 ja 20 muotoiltiin uudelleen 2.11. (trendit ja yleistykset pois), käy uudet sanamuodot läpi
-- Lukematta jääneet liitteet: Correia ja Scheurer (supplementary); Vuorenpään ja Ryynäsen kuvia ei katsottu
+- Vuorenpään ja Ryynäsen kuvia (Vuorenpää myös taulukot) ei ole katsottu; hoituu niiden grindingissa
+- Correian ja Scheurerin liitteet lukematta, mutta yksikään väite ei nojaa niihin (molemmat ✅)
 
 **Vinkit:**
 - Clauden tarkistusraportti yhdestä lähteestä (ei muuta mitään): `/grinding Correia`
@@ -45,16 +42,20 @@ Tilanne 1.11.: 29 lähdettä, noin 190 väitettä + rekisteri 28 kohtaa. Tehty: 
 
 ### A4. Lopputarkistukset
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
-- [ ] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa
+- [ ] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa (nyt: väitteet "listed in a checklist for verification"); kun A2 valmis, voi vahvistaa muotoon "…was checked against that source by the author"
 - [ ] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
-- [ ] Wiki kuntoon lopuksi: `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
 - [ ] Pohdi, kannattaako tehdä dokumentoitu haku aukolle (i), hiPSC-CM-kohtainen FPD:n taajuuskorjaus (lint 3.11., kohta 13). Esim. PubMed: "iPSC cardiomyocyte" + "rate correction" / "FPDc" / "Fridericia" / "Bazett" + "field potential". Tulos joko tukee Highlight 2:ta ("No validated … found") tai muuttaa sitä. Mallina `docs/maturation-mea-search.md`
 - [ ] Matalampi prioriteetti: vastaava haku aukolle (ii), morfologian luokittelukriteerit (lint 3.11., kohta 16). "In the studies examined" -rajaus suojaa nykyistä väitettä, joten haku tarvitaan vain, jos väitettä halutaan laajentaa
 
-#### Valinnaisia `README.md`, ei main-tiedostoon
-kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään
-- [ ] toisiko Obsidianin Graph View - kuva lähteiden riippuvuuksista lisäarvoa? 
-- [ ] entä markmap esitys? Kuva postauksen ideoissa
+#### Valinnaisia muualle kuin main.md tiedostoon
+- [ ] Wiki kuntoon lopuksi: 
+  - [ ] saisiko backlinkit ja tagit paremmaksi, jotta graafiesitys paranisi?
+  - [ ] `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
+
+- [ ]`README.md` päivityksiä
+  - [ ] kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään
+  - [ ] toisiko Obsidianin Graph View - kuva lähteiden riippuvuuksista lisäarvoa? 
+  - [ ] entä markmap esitys? Kuva postauksen ideoissa
 
 
 ## B. Julkaisu Zenodoon
@@ -87,6 +88,9 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 - [ ] tarkista lopuksi, ettei tässä repossa ole tullut mitään uutta hyödyllistä mitä kannattaisi laittaa templaattiin, tehty 1.11. asti muutokset mm `scripts/check_abbreviations.py`, vain sen jälkeiset
   - [ ] /grinding skills ainakin
   - [ ] `.claude/settings.json` (deny `raw/**` ja `notes.md`, PostToolUse-hook) ja `scripts/hooks/main_md_checks.py` (lisätty 11.11.)
+  - [ ] `scripts/claim_quotes.py`: `--write`, `--only` ja otsikoiden ✅-merkinnät
+  - [ ] `docs/private/` (git-ignored, yksityiset luonnokset) ja sen maininta AGENTS.md:ssä
+  - [ ] täydennysaineistojen nimeäminen myös muille kuin PDF:ille (`<stem>-supplementary.docx`), ja .docx-kuvien purku `figure_analysis/`-kansioon tarkastelua varten
 - [ ] myöhemmin: Ingest- ja Lint-menettelyt omiksi skilleiksi AGENTS.md:stä (ks. AGENTS.md "Schema evolution")
 
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)

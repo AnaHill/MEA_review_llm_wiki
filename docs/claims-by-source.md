@@ -370,7 +370,7 @@ Local file: `raw/karami-2026-mea-cardiotoxicity.pdf` (open access, CC BY); page 
 
 Pointers: (1) p. 9 ("FPD and APD are not equivalent measurements ... electrode geometry, cell-electrode coupling, cell density and degree of gap junctional coupling and conduction properties"). (2) pp. 13–14, Figure 5B, Equations 4–7 (point-contact model for a single cell attached to the electrode, Fromherz et al., 1991; Shaik et al., 2022); the text says a tight seal gives the membrane potential itself (pp. 13–14), whereas Table 4 (p. 15) says a passive MEA signal follows the first derivative with a high seal ("typical for MEAs") and the second with a loose seal, and p. 16 calls the second-derivative shape the most observed; main.md follows the text and adds that the membrane-potential case needs very tight contact. (3) p. 14 ("the potential changes of all transmembrane ion currents of all cells will contribute to the potential at the distant electrode … the recorded signal will be a superposition of these individual signals"; said for cells not or loosely attached; adhesion from (1), p. 9); the device-removal and ill-posed parts are register item 26. (4) p. 18 ("capable of measuring distance changes of 1 nm", citing Giaever and Keese, 1991). (5) pp. 13–14; Table 4 on p. 15 (derivative cases).
 
-## Lee et al. (2024)
+## ✅ Lee et al. (2024)
 
 Local file: `raw/lee-2024-cardiomea.pdf`; page `wiki/papers/lee-2024-cardiomea.md`. Status: checked against the Europe PMC full text 2026-10-18 (Table 1, Table 3, Results); Table 3 rechecked in the PDF 2026-10-29; checked claim by claim against the PDF, Figures 2 and 4 and the supplement 2026-11-09.
 
@@ -404,8 +404,7 @@ Local file: `raw/lee-2024-cardiomea.pdf`; page `wiki/papers/lee-2024-cardiomea.m
     - > Electroporation through the recording electrodes (Lee et al., 2024) yields paired FP and AP-like signals from the same electrodes and is therefore a candidate source of training and validation data, and AI-assisted sensor fusion of further simultaneous modalities could add ground truth. — main.md:201
 - [x] (8) [Conclusion] automated feature ranking in an open platform is one of the machine-learning uses in the studies examined.
     - > Looking forward, machine learning is already used in several of the studies examined, from ensemble classifiers for TdP risk prediction (Pramudito et al., 2026) and genotype-specific risk models (Park et al., 2026) to automated feature ranking in an open platform (Lee et al., 2024). — main.md:236
-
-- [ ] (9) [Personal] CardioMEA ends the FPD at the T-wave peak (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
+- [x] (9) [Personal] CardioMEA ends the FPD at the T-wave peak (added 2026-11-13; restates claims already checked in the Fiducial section and Tables 1–2).
     - > Two of the open tools examined end the FPD at the T-wave peak (Lee et al., 2024; Weiser-Bitoun et al., 2026), Cardio PyMEA locates the end of the T wave (Dunham et al., 2022), and none of the studies compared the end of the wave with the action potential. — main.md:244
 Pointers: (1), (3) p. 1 ("designed specifically for HD-MEA data", "scalable data processing pipelines"). (2) Table 3, p. 9 (CardioMDA, Pradhapan et al., 2013; MultiElec, Georgiadis et al., 2015; it compares language, GUI, pipeline execution, condition comparison, wave propagation and intracellular-like analysis, not FPD definitions). (4) Table 1, p. 5 (features), Table 3, p. 9 (Python), AutoML p. 11 (the Feature Analysis tab is "exclusively available for the Extracellular Analysis panel"). (5) Table 1, p. 5 ("Distance between the R spike and the T wave signal peak") and Fig. 2A, p. 6. (6) text p. 8 ("showed minimal correlation with all AP-related features. This could be attributed to the noise levels"), Fig. 4, p. 9 (Spearman ρ −0.04 APD50, −0.07 APD90; 3,987 electrodes, 29 iCell cultures). (7) p. 8 ("recorded by the very same electrodes and originating from the same cells"); Supplementary Figure S2 shows the intracellular-like signal is attenuated and fades as the membrane reseals. (8) pp. 11–13 (AutoML, permutation feature importance). Supplement adds nothing that changes a claim.
 
@@ -759,7 +758,7 @@ Local file: `raw/weiser-bitoun-2026-physiomea.pdf`; page `wiki/papers/weiser-bit
     - > Two of the open tools examined end the FPD at the T-wave peak (Lee et al., 2024; Weiser-Bitoun et al., 2026), Cardio PyMEA locates the end of the T wave (Dunham et al., 2022), and none of the studies compared the end of the wave with the action potential. — main.md:244
 Pointers: (2) abstract and p. 2–3 ("45 measures, including time domain, frequency domain, and nonlinear analysis", from PhysioZoo; MATLAB 2023b or standalone .exe). (4) p. 3 ("FPD ... defined as the time difference between the R- and T-peaks"). (5)(7) p. 3 (inverted T waves and low-amplitude R peaks analysed on the inverted signal; electrodes with inconsistent biomarker counts excluded).
 
-## Register of the author's own inferences
+## ✅ Register of the author's own inferences
 
 These are statements in `main.md` that no single reference supports, generalisations from one or two studies, and the author's hypotheses. `main.md` does not mark them in the text, so this list is their only record; every new unsourced inference in `main.md` needs an item here. Tick `[x]` when you have decided that you stand behind the wording.
 
@@ -780,7 +779,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
     - **Based on:** register item 7
   - **(6)** raw MEA signals mix cell, tissue and device, and separating them is proposed as a hypothesis
     - **Based on:** Karami et al., 2026; Lee et al., 2026; Mäki, 2023; register items 25 and 26
-- [ ] **1. [Intro, Motivation]** reliable recordings need consistent analysis (reworded 2026-11-04)
+- [x] **1. [Intro, Motivation]** reliable recordings need consistent analysis (reworded 2026-11-04)
   - **Text:** "that reliability depends not only on the recording but also on consistent, physiologically meaningful analysis of FP waveforms"
   - **Text:** "This review examines methods and analysis practices in cardiomyocyte MEA studies published since 2022"; the Motivation heading "why analysis methods matter"
   - **Based on:** Botti (5) for the first half of the sentence ("reliable MEA recordings are essential")
@@ -940,17 +939,17 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Based on:** Altrocchi (9)
   - **Support:** `none` (not tested in that study)
   - **Update 2026-11-01:** supported in mechanism by Karami et al. (2026) (impedance sensitive to cell–electrode distance, about 1 nm); its use to flag FP changes remains untested
-- [ ] **28. [Morphology]** polarity as an unstated assumption
+- [x] **28. [Morphology]** polarity as an unstated assumption
   - **Text:** Cardio PyMEA's analysis "presupposes the polarity of its recordings, which the paper does not state"; the sign of the repolarization wave "cannot simply be assumed"
   - **Origin:** the researcher's reading of Dunham et al. (2022), Figures 4–6 (2026-11-05); the inverted, pacemaker-like reading and the EAD interpretation are kept out of main.md, on wiki/fp-polarity.md
   - **Based on:** Dunham (7), Karami (5)
   - **Support:** `sourced` for the definitions and for the missing polarity statement; the inference that the analysis depends on polarity follows from the definitions
-- [ ] **29. [Maturation]** the Clements amplitude criterion depends on recording day
+- [x] **29. [Maturation]** the Clements amplitude criterion depends on recording day
   - **Text:** "Whether a culture meets the amplitude criterion also depends on when it is recorded"
   - **Origin:** the researcher's check of Guerrelli Supplementary Tables 2, 5 and 6 (2026-11-06)
   - **Based on:** Guerrelli (11), Clements (8)
   - **Support:** `sourced` for the values; the comparison is ours and loose, because Guerrelli reports well means from one electrode and Clements a share of electrodes ≥ 0.5 mV. Both lines are below 0.5 mV on day 2, so the day dependence holds across the two lines; the size of the rise differs by line (3.6 vs 8.1 mV on day 14; paced Cor.4U 0.72 mV on day 3, 8.38 mV on day 14, Table S6)
-- [ ] **30. [Personal]** the personal note on the FPD end
+- [x] **30. [Personal]** the personal note on the FPD end
   - **Text:** "APD90 is not complete repolarization, and I still have not found a physiological reason to stop the FPD at APD90 instead of also measuring the end of the wave" (the researcher's own question: why stop at APD90 rather than also measure complete repolarization); "none of the studies compared the end of the wave with the action potential"; a difficult measurement "is not a reason to leave it out"
   - **Origin:** the researcher (2026-11-13), written in the first person and marked as a personal view
   - **Based on:** Ernault (8), Lee 2024 (9), Weiser-Bitoun (8), Dunham (8), Mäki (16); the "none compared" statement matches the Fiducial section and Table 2 caption
