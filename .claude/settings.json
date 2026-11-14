@@ -1,8 +1,10 @@
 {
   "permissions": {
     "deny": [
-      "Edit(raw/**)",
       "Edit(notes.md)"
+    ],
+    "ask": [
+      "Edit(raw/**)"
     ]
   },
   "hooks": {

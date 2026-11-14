@@ -931,3 +931,7 @@ The researcher added raw/Li_2025_PIIS258900422400213X.pdf (to be renamed raw/li-
 ## [2026-11-14] draft | Maturation and FPDc: Li 2024 added
 
 Two short sentences, kept minimal at the researcher's request: maturation section ("Rapid pacing by a self-sustained traveling wave likewise raised MEA conduction velocity and changed the responses to several drugs") and rate-correction section (pacing before the recording as a maturation step, stopped before drug tests, tissues then at about 1 Hz). Wiki write-back: li-2024-closed-loop.md links li-2025-maturation, guerrelli and matsuda with reasons and the two concept pages. docs/claims-by-source.md: new section Li et al. (2024) with two claims.
+
+## [2026-11-14] ingest | Li 2024 — supplementary material and raw renames
+
+The raw/ rule in .claude/settings.json was changed from deny to ask at the researcher's request (edits to raw/ now need approval, so renames at ingest are possible; notes.md stays denied). The researcher's files were renamed to raw/li-2024-closed-loop.pdf and raw/li-2024-closed-loop-supplementary.pdf. Supplement (Figures S1–S8) summarised on the wiki page; Figure S4 shows QT of about 0.15 s with the traveling wave running against about 0.6 s in controls, a rate effect, whereas the main text reports about 300 ms in both groups after the wave was stopped. No main.md change. AGENTS.md and README.md updated to describe the ask rule.
