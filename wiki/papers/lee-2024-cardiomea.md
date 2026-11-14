@@ -1,5 +1,5 @@
 ---
-tags: [open-platform, disease-model, high-throughput, machine-learning]
+tags: [open-platform, fiducial-definition, machine-learning, multimodal]
 ---
 
 # CardioMEA: comprehensive data analysis platform for studying cardiac diseases and drug responses
@@ -59,3 +59,11 @@ Our observations:
 - [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
 - [[wiki/papers/ernault-2024-interpretation.md]]
+- [[wiki/papers/maki-2023-opinion.md]] — R-to-T-peak FPD, the convention the opinion paper criticises; FPD tracked APD poorly in CardioMEA
+- [[wiki/papers/hayakawa-2014-motion-fp.md]] — FPD end compared with another readout (relaxation motion versus intracellular-like APD)
+- [[wiki/fpd-end-conventions.md]]
+- [[wiki/fridericia-rate-correction.md]]
+- [[wiki/multimodal-measurement.md]]
+- [[wiki/signal-separation.md]]
+- [[wiki/open-analysis-platforms.md]]
+- [[wiki/machine-learning-mea.md]]

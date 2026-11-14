@@ -1,5 +1,5 @@
 ---
-tags: [concept, fp-polarity, morphology, fiducial-points, hypothesis]
+tags: [type/concept, waveform-morphology]
 ---
 
 # Field potential polarity: the Cardio PyMEA example recordings

@@ -1,5 +1,5 @@
 ---
-tags: [review, microphysiological-system, multimodal, in-silico]
+tags: [multimodal, in-silico, 3d-model, type/review]
 ---
 
 # Building blocks of microphysiological system to model physiology and pathophysiology of human heart
@@ -42,3 +42,6 @@ Cited in main.md (Discussion and future outlook) in two places: as a review that
 - [[wiki/papers/botti-2026-insilico.md]]
 - [[wiki/papers/dunham-2022-cardiopyemea.md]]
 - [[wiki/papers/maki-2023-opinion.md]]
+- [[wiki/multimodal-measurement.md]]
+- [[wiki/signal-separation.md]]
+- [[wiki/3d-models.md]]

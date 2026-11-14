@@ -1,5 +1,5 @@
 ---
-tags: [machine-learning, cardiac-safety]
+tags: [machine-learning, cardiac-safety, rate-correction]
 ---
 
 # Stacking ensemble machine learning for cardiac safety assessment using hiPSC-CM MEA data
@@ -62,3 +62,6 @@ Related papers from its reference list: Blinova et al. 2018 (the dataset source)
 - [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
 - [[wiki/papers/blinova-2018-multisite.md]]
 - [[wiki/papers/park-2026-genotype-ml.md]]
+- [[wiki/cipa.md]]
+- [[wiki/fridericia-rate-correction.md]]
+- [[wiki/machine-learning-mea.md]]

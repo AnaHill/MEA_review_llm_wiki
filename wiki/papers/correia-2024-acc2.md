@@ -1,5 +1,5 @@
 ---
-tags: [maturation, in-vitro-maturation-media, electromechanical, 3d-model, disease-model]
+tags: [maturation, 3d-model]
 ---
 
 # Enhancing Maturation and Translatability of Human Pluripotent Stem Cell-Derived Cardiomyocytes through a Novel Medium Containing Acetyl-CoA Carboxylase 2 Inhibitor
@@ -48,3 +48,5 @@ A second maturation-medium study for the wiki's maturation-gap thread, directly 
 - [[wiki/papers/fetterman-2024-maturation.md]]
 - [[wiki/hipsc-cm-maturation.md]]
 - [[wiki/papers/maurissen-2024-mutation.md]]
+- [[wiki/papers/scheurer-2025-optical-ai.md]] — both cited for the fetal-like phenotype of hiPSC-CMs and for maturation status mattering
+- [[wiki/3d-models.md]]

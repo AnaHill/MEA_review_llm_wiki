@@ -1,3 +1,7 @@
+---
+tags: [type/analysis, fiducial-definition, waveform-morphology]
+---
+
 # Critical assessment: key methodological claims in Mäki (2023)
 
 **Date:** 2026-06-22 (updated 2026-10-24 after the source verification; the sentences changed then are listed in docs/lint-fixes-2026-10-24.md)  

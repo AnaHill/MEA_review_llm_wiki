@@ -1,5 +1,5 @@
 ---
-tags: [fiducial-definition, waveform-morphology]
+tags: [fiducial-definition, waveform-morphology, signal-separation]
 ---
 
 # Interpretation of field and LEAP potentials recorded from cardiomyocyte monolayers
@@ -43,3 +43,9 @@ Cited in main.md as direct empirical support for the morphology-aware analysis a
 - [[wiki/papers/maki-2023-opinion.md]]
 - [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
 - [[wiki/papers/dunham-2022-cardiopyemea.md]]
+- [[wiki/papers/hayakawa-2014-motion-fp.md]] — what the T-wave peak corresponds to (APD90 in biphasic T waves versus relaxation motion)
+- [[wiki/papers/karami-2026-mea-cardiotoxicity.md]] — the FP does not map directly onto the local AP
+- [[wiki/critical-assessment-maki-claims.md]]
+- [[wiki/fp-polarity.md]]
+- [[wiki/fpd-end-conventions.md]]
+- [[wiki/signal-separation.md]]

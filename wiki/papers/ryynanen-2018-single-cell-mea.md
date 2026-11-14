@@ -1,5 +1,5 @@
 ---
-tags: [multimodal, video, single-cell, field-potential]
+tags: [multimodal]
 ---
 
 # Microelectrode array for noninvasive analysis of cardiomyocytes at the single-cell level
@@ -42,3 +42,4 @@ Cited in main.md (Discussion and future outlook) as an example of simultaneous f
 - [[wiki/papers/vuorenpaa-2023-mps-building-blocks.md]]
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
 - [[wiki/multimodal-measurement.md]]
+- [[wiki/fridericia-rate-correction.md]]

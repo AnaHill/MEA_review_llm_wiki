@@ -1,5 +1,5 @@
 ---
-tags: [maturation, high-throughput, in-vitro-maturation-media]
+tags: [maturation]
 ---
 
 # Independent compartmentalization of functional, metabolic, and transcriptional maturation of hiPSC-derived cardiomyocytes

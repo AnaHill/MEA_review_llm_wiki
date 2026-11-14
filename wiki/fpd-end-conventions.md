@@ -1,5 +1,5 @@
 ---
-tags: [method, fiducial-definition, fpd]
+tags: [type/method, fiducial-definition]
 ---
 
 # FPD start and end conventions in the reviewed papers

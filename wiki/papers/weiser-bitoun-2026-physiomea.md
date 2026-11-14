@@ -1,5 +1,5 @@
 ---
-tags: [open-platform, fiducial-definition, waveform-morphology, spatial-analysis, brv]
+tags: [open-platform, fiducial-definition, spatial-analysis, 3d-model]
 ---
 
 # PhysioMEA: Signal processing platform for rate and rhythm analysis of multi-electrode array cardiac electrophysiological recordings
@@ -65,3 +65,7 @@ Cited in main.md as an open-source platform (MATLAB) with 2D spatial analysis an
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/ismaili-2023-hamburg.md]]
+- [[wiki/critical-assessment-maki-claims.md]]
+- [[wiki/fpd-end-conventions.md]]
+- [[wiki/open-analysis-platforms.md]]
+- [[wiki/3d-models.md]]

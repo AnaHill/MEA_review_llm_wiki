@@ -1,5 +1,5 @@
 ---
-tags: [open-platform, fiducial-definition, conduction-velocity]
+tags: [open-platform, fiducial-definition, waveform-morphology, spatial-analysis]
 ---
 
 # Cardio PyMEA: A user-friendly, open-source Python application for cardiomyocyte microelectrode array analysis
@@ -49,3 +49,6 @@ Cited in main.md as an early example (2022) of the transition from vendor-define
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
 - [[wiki/papers/maki-2023-opinion.md]]
 - [[wiki/fp-polarity.md]]
+- [[wiki/critical-assessment-maki-claims.md]]
+- [[wiki/fpd-end-conventions.md]]
+- [[wiki/open-analysis-platforms.md]]

@@ -1,5 +1,5 @@
 ---
-tags: [maturation, machine-learning]
+tags: [maturation, machine-learning, multimodal]
 ---
 
 # Non-invasive maturity assessment of iPSC-CMs based on optical maturity characteristics using interpretable AI
@@ -49,3 +49,6 @@ Cited in main.md as an optical, video-based maturity classifier; since 2026-11-1
 - [[wiki/papers/fetterman-2024-maturation.md]]
 - [[wiki/papers/pramudito-2026-ensemble.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
+- [[wiki/papers/correia-2024-acc2.md]] — both cited for the fetal-like phenotype of hiPSC-CMs and for maturation status mattering
+- [[wiki/multimodal-measurement.md]]
+- [[wiki/machine-learning-mea.md]]

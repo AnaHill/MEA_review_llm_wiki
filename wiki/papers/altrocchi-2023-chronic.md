@@ -1,5 +1,5 @@
 ---
-tags: [cardiac-safety, chronic-assay, impedance]
+tags: [cardiac-safety, multimodal, signal-separation, rate-correction]
 ---
 
 # Evaluation of chronic drug-induced electrophysiological and cytotoxic effects using human-induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs)
@@ -64,3 +64,7 @@ Cited in main.md for MEA use in general (Introduction), for Fridericia-corrected
 - [[wiki/papers/park-2025-cardiotoxicity.md]]
 - [[wiki/papers/matsuda-2025-uhd.md]]
 - [[wiki/papers/pramudito-2026-ensemble.md]]
+- [[wiki/papers/park-2026-genotype-ml.md]] — both report Fridericia-corrected FPD
+- [[wiki/fridericia-rate-correction.md]]
+- [[wiki/multimodal-measurement.md]]
+- [[wiki/signal-separation.md]]

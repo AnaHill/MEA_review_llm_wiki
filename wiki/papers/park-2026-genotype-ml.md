@@ -1,5 +1,5 @@
 ---
-tags: [machine-learning, disease-model, lqts, cardiac-safety, rate-correction]
+tags: [machine-learning, disease-model, rate-correction]
 ---
 
 # A machine learning platform for genotype-specific cardiotoxicity risk prediction using patient-derived iPSC-CMs
@@ -63,3 +63,9 @@ An MEA-based use of disease lines and ML, with FPDc as the core feature, so it f
 - [[wiki/papers/blinova-2018-multisite.md]]
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/ismaili-2023-hamburg.md]]
+- [[wiki/papers/altrocchi-2023-chronic.md]] — both report Fridericia-corrected FPD
+- [[wiki/cipa.md]]
+- [[wiki/critical-assessment-maki-claims.md]]
+- [[wiki/fridericia-rate-correction.md]]
+- [[wiki/open-analysis-platforms.md]]
+- [[wiki/machine-learning-mea.md]]

@@ -1,5 +1,5 @@
 ---
-tags: [3d-model, disease-model, lqts]
+tags: [3d-model, disease-model, rate-correction]
 ---
 
 # Modeling mutation-specific arrhythmogenic phenotypes in isogenic human iPSC-derived cardiac tissues
@@ -51,3 +51,6 @@ Cited in main.md for (1) the Fridericia-corrected FPD and (2) as an example of M
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/papers/botti-2026-insilico.md]]
 - [[wiki/papers/ismaili-2023-hamburg.md]]
+- [[wiki/papers/blinova-2018-multisite.md]] — both report Fridericia-corrected FPD
+- [[wiki/fridericia-rate-correction.md]]
+- [[wiki/3d-models.md]]

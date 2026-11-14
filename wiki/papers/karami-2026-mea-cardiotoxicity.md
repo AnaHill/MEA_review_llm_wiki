@@ -1,5 +1,5 @@
 ---
-tags: [review, mea-physics, cell-electrode-coupling, impedance, electroporation, cardiotoxicity]
+tags: [signal-separation, multimodal, waveform-morphology, type/review]
 ---
 
 # Microelectrode arrays: from electrophysiology to integrated cancer treatment induced cardiotoxicity assessment
@@ -44,3 +44,4 @@ Supports the "Separating the recording system from the cellular signal" part of 
 - [[wiki/multimodal-measurement.md]]
 - [[wiki/signal-separation.md]]
 - [[wiki/fp-polarity.md]]
+- [[wiki/papers/ernault-2024-interpretation.md]] — the FP does not map directly onto the local AP

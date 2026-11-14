@@ -1,5 +1,5 @@
 ---
-tags: [in-silico, 3d-model, disease-model, conduction-velocity]
+tags: [in-silico, disease-model, signal-separation]
 ---
 
 # In silico modelling of multi-electrode arrays for enhancing cardiac drug testing on hiPSC-CM heterogeneous tissues
@@ -47,3 +47,5 @@ Cited in main.md as an in silico approach for MEA signals. Its value for the rev
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/park-2026-genotype-ml.md]]
 - [[wiki/signal-separation.md]]
+- [[wiki/multimodal-measurement.md]]
+- [[wiki/3d-models.md]]

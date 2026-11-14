@@ -1,5 +1,5 @@
 ---
-tags: [multimodal, sensor-fusion, machine-learning, transparent-mea, video]
+tags: [multimodal, machine-learning]
 ---
 
 # Unsupervised machine learning-assisted multimodal characterization of cardiomyocytes on a thin-film-transistor microelectrode array (TFT-MEA)
@@ -48,3 +48,4 @@ Directly relevant to the sensor-fusion part of the Discussion and future outlook
 - [[wiki/papers/scheurer-2025-optical-ai.md]]
 - [[wiki/papers/lin-2023-nanoelectronics.md]]
 - [[wiki/multimodal-measurement.md]]
+- [[wiki/machine-learning-mea.md]]

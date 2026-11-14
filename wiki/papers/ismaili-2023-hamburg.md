@@ -1,5 +1,5 @@
 ---
-tags: [review-perspective, maturation]
+tags: [maturation, type/review]
 ---
 
 # Human induced pluripotent stem cell-derived cardiomyocytes as an electrophysiological model: Opportunities and challenges—The Hamburg perspective
@@ -39,3 +39,4 @@ Cited in main.md for: the broad challenges of hiPSC-CMs as electrophysiological 
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/fetterman-2024-maturation.md]]
 - [[wiki/hipsc-cm-maturation.md]]
+- [[wiki/critical-assessment-maki-claims.md]]

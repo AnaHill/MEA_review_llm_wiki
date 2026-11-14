@@ -1,5 +1,5 @@
 ---
-tags: [concept, signal-separation, cell-electrode-coupling, impedance, digital-twin]
+tags: [type/concept, signal-separation]
 ---
 
 # Separating cell, tissue and device contributions to the field potential

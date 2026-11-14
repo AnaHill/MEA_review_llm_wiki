@@ -1,5 +1,5 @@
 ---
-tags: [maturation, machine-learning, 3d]
+tags: [maturation, machine-learning, 3d-model]
 ---
 
 # Tissue-embedded stretchable nanoelectronics reveal endothelial cell–mediated electrical maturation of human 3D cardiac microtissues
@@ -53,3 +53,7 @@ Cited in main.md from 2026-10-30 (Maturation section synthesis and the Conclusio
 - [[wiki/papers/scheurer-2025-optical-ai.md]]
 - [[wiki/papers/li-2025-maturation.md]]
 - [[wiki/papers/hwang-2023-spheroids.md]] — another 3D hiPSC-CM FP study
+- [[wiki/papers/maki-2023-opinion.md]] — whole-waveform machine learning versus the opinion paper's doubt about raw MEA signals as model input
+- [[wiki/signal-separation.md]]
+- [[wiki/3d-models.md]]
+- [[wiki/machine-learning-mea.md]]

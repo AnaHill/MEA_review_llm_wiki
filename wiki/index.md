@@ -51,8 +51,11 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 - [Separating cell, tissue and device contributions to the field potential](signal-separation.md) — What the sources say about the device and tissue share of the FP (Karami, Ernault, Lee 2024, Botti, Altrocchi, Lee 2026, Lin, Vuorenpää), kept apart from the author's inverse-approach and impedance hypotheses (Highlight 6, Outlook).
 - [Field potential polarity: the Cardio PyMEA example recordings](fp-polarity.md) — Whether Dunham et al. (2022) Figs 4–6 are shown with the polarity their analysis assumes; the researcher's inverted, pacemaker-like reading with arguments for and against and possible tests; only a neutral polarity paragraph went into main.md (morphology).
 - [CiPA in the reviewed papers](cipa.md) — How Blinova 2018, Park 2025/2026, Pramudito 2026, Clements 2025 and Matsuda 2025 relate to the Comprehensive in vitro Proarrhythmia Assay.
+- [Open analysis platforms](open-analysis-platforms.md) — Cardio PyMEA, DatAnalyzer, CardioMEA, CardioScripts and PhysioMEA side by side (language, FPD or interval end, scope); vendor software still used in the Park studies.
+- [3D cardiomyocyte models and MEA recording](3d-models.md) — Spheroid simulations (Hwang), 2D versus 3D tissue sheets (Maurissen), tissue-embedded electrodes (Lin), organoid analysis (Weiser-Bitoun); no systematic 2D–3D comparison of fiducial definitions.
+- [Machine learning in the reviewed studies](machine-learning-mea.md) — Models, inputs and caveats in Pramudito, Park 2026, Lee 2024, Scheurer, Lin and Hu; raw signals versus extracted parameters (Mäki).
 
-*(other candidates: hERG trafficking, 3D vs 2D cultures)*
+*(other candidates: hERG trafficking)*
 
 ---
 
@@ -83,4 +86,4 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 ---
 
-*Last updated: 2026-11-03*
+*Last updated: 2026-11-14*

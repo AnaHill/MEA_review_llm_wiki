@@ -1,5 +1,5 @@
 ---
-tags: [temporal-confounder, maturation, equilibration, reproducibility, well-position]
+tags: [maturation, rate-correction]
 ---
 
 # hiPSC-CM electrophysiology: impact of temporal changes and study parameters on experimental reproducibility
@@ -63,3 +63,6 @@ Cited in main.md in the FPDc rate-correction, maturation-confound and longitudin
 - [[wiki/papers/fetterman-2024-maturation.md]]
 - [[wiki/hipsc-cm-maturation.md]]
 - [[wiki/papers/blinova-2018-multisite.md]]
+- [[wiki/critical-assessment-maki-claims.md]]
+- [[wiki/fridericia-rate-correction.md]]
+- [[wiki/papers/clements-2025-aims-poster.md]] — Clements amplitude criterion versus Guerrelli spike amplitudes that rose with days in culture

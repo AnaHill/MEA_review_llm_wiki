@@ -1,5 +1,5 @@
 ---
-tags: [open-platform, fiducial-definition, waveform-morphology, rate-correction, review-perspective]
+tags: [open-platform, fiducial-definition, waveform-morphology, type/review]
 ---
 
 # Opinion: The correct way to analyze FP signals
@@ -69,3 +69,11 @@ This is the evaluative anchor for main.md. The review explicitly uses this opini
 - [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
 - [[wiki/papers/dunham-2022-cardiopyemea.md]]
 - [[wiki/fp-polarity.md]]
+- [[wiki/papers/lin-2023-nanoelectronics.md]] — whole-waveform machine learning versus the opinion paper's doubt about raw MEA signals as model input
+- [[wiki/papers/lee-2024-cardiomea.md]] — R-to-T-peak FPD, the convention the opinion paper criticises; FPD tracked APD poorly in CardioMEA
+- [[wiki/critical-assessment-maki-claims.md]]
+- [[wiki/fpd-end-conventions.md]]
+- [[wiki/signal-separation.md]]
+- [[wiki/open-analysis-platforms.md]]
+- [[wiki/3d-models.md]]
+- [[wiki/machine-learning-mea.md]]

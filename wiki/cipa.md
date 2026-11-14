@@ -1,5 +1,5 @@
 ---
-tags: [concept, cipa, cardiac-safety]
+tags: [type/concept, cardiac-safety]
 ---
 
 # CiPA in the reviewed papers

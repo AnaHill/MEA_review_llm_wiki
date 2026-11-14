@@ -1,5 +1,5 @@
 ---
-tags: [maturation, concept, research-gap]
+tags: [type/concept, maturation]
 ---
 
 # hiPSC-CM maturation status as a confound for MEA-derived metrics

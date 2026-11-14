@@ -1,5 +1,5 @@
 ---
-tags: [concept, multimodal, sensor-fusion]
+tags: [type/concept, multimodal]
 ---
 
 # Multimodal measurement of hiPSC-CMs in the reviewed sources

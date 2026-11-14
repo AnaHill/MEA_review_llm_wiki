@@ -47,3 +47,6 @@ Cited in main.md for the statement that three-dimensionality contributes to fiel
 - [[wiki/papers/ernault-2024-interpretation.md]]
 - [[wiki/papers/botti-2026-insilico.md]]
 - [[wiki/papers/maki-2023-opinion.md]]
+- [[wiki/critical-assessment-maki-claims.md]]
+- [[wiki/fridericia-rate-correction.md]]
+- [[wiki/3d-models.md]]

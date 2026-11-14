@@ -49,7 +49,7 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 
 #### Valinnaisia muualle kuin main.md tiedostoon
 - [ ] Wiki kuntoon lopuksi: 
-  - [ ] saisiko backlinkit ja tagit paremmaksi, jotta graafiesitys paranisi?
+  - [x] saisiko backlinkit ja tagit paremmaksi, jotta graafiesitys paranisi?
   - [ ] `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
 
 - [ ]`README.md` päivityksiä

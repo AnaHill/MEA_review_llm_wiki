@@ -1,5 +1,5 @@
 ---
-tags: [open-platform, electromechanical]
+tags: [open-platform, multimodal, fiducial-definition]
 ---
 
 # A comprehensive system of algorithms for characterization of cardiomyocyte mechanical and electrical function
@@ -67,3 +67,5 @@ Cited in main.md as an example of expanding the feature set beyond purely electr
 - [[wiki/papers/lee-2024-cardiomea.md]]
 - [[wiki/papers/weiser-bitoun-2026-physiomea.md]]
 - [[wiki/papers/matsuda-2025-uhd.md]]
+- [[wiki/multimodal-measurement.md]]
+- [[wiki/open-analysis-platforms.md]]

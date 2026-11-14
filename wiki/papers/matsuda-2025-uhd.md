@@ -1,5 +1,5 @@
 ---
-tags: [spatial-analysis, cardiac-safety, conduction-velocity]
+tags: [spatial-analysis, cardiac-safety]
 ---
 
 # Advanced cardiotoxicity profiling using field potential imaging with UHD-CMOS-MEA in human iPSC-derived cardiomyocytes
@@ -46,3 +46,5 @@ Cited in main.md for the multi-parameter feature-set shift and for the UHD-CMOS-
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/papers/pramudito-2026-ensemble.md]]
 - [[wiki/papers/lee-2024-cardiomea.md]]
+- [[wiki/cipa.md]]
+- [[wiki/fridericia-rate-correction.md]]

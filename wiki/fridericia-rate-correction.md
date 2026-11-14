@@ -1,5 +1,5 @@
 ---
-tags: [method, rate-correction, fridericia]
+tags: [type/method, rate-correction]
 ---
 
 # Fridericia and other rate corrections of FPD in the reviewed papers

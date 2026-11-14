@@ -1,5 +1,5 @@
 ---
-tags: [multimodal, video, contractility, field-potential]
+tags: [multimodal, fiducial-definition]
 ---
 
 # Image-based evaluation of contraction–relaxation kinetics of human-induced pluripotent stem cell-derived cardiomyocytes: Correlation and complementarity with extracellular electrophysiology
@@ -48,3 +48,9 @@ Cited in main.md (1) for the link between FPD and contraction duration, as the p
 - [[wiki/papers/ryynanen-2018-single-cell-mea.md]]
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
 - [[wiki/papers/maki-2023-opinion.md]]
+- [[wiki/papers/lee-2024-cardiomea.md]] — FPD end compared with another readout (relaxation motion versus intracellular-like APD)
+- [[wiki/papers/ernault-2024-interpretation.md]] — what the T-wave peak corresponds to (APD90 in biphasic T waves versus relaxation motion)
+- [[wiki/critical-assessment-maki-claims.md]]
+- [[wiki/fpd-end-conventions.md]]
+- [[wiki/hipsc-cm-maturation.md]]
+- [[wiki/multimodal-measurement.md]]

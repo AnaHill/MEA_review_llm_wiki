@@ -1,5 +1,5 @@
 ---
-tags: [cardiac-safety, disease-model, lqts]
+tags: [cardiac-safety, disease-model, rate-correction]
 ---
 
 # Human induced pluripotent stem cell-cardiomyocytes for cardiotoxicity assessment: a comparative study of arrhythmia-inducing drugs with multi-electrode array analysis
@@ -51,3 +51,7 @@ Overlap note (added 2026-10-18, checked 2026-10-24): the same group's later pape
 - [[wiki/papers/ismaili-2023-hamburg.md]]
 - [[wiki/papers/pramudito-2026-ensemble.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
+- [[wiki/papers/blinova-2018-multisite.md]] — Fridericia-corrected FPD in drug testing of hiPSC-CMs
+- [[wiki/cipa.md]]
+- [[wiki/fridericia-rate-correction.md]]
+- [[wiki/open-analysis-platforms.md]]

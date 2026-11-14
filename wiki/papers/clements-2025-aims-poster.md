@@ -1,5 +1,5 @@
 ---
-tags: [high-throughput, rate-correction, maturation, 2d-culture]
+tags: [cardiac-safety, rate-correction, maturation]
 ---
 
 # Standards for hiPSC-derived cardiomyocyte electrophysiology using the MEA assay (AIMS \#CM01 poster)
@@ -41,5 +41,7 @@ Our observations: it is a proposal from a MEA vendor with academic and industry 
 ## See also
 - [[wiki/papers/blinova-2018-multisite.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
-- [[wiki/papers/guerrelli-2024-hipscm.md]]
+- [[wiki/papers/guerrelli-2024-hipscm.md]] — Clements amplitude criterion versus Guerrelli spike amplitudes that rose with days in culture
 - [[wiki/hipsc-cm-maturation.md]]
+- [[wiki/cipa.md]]
+- [[wiki/fridericia-rate-correction.md]]

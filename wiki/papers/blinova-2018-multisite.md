@@ -1,5 +1,5 @@
 ---
-tags: [cardiac-safety, rate-correction, high-throughput, 2d-culture]
+tags: [cardiac-safety, rate-correction]
 ---
 
 # International multisite study of human-induced pluripotent stem cell-derived cardiomyocytes for drug proarrhythmic potential assessment
@@ -65,3 +65,7 @@ Our observations:
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/ismaili-2023-hamburg.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
+- [[wiki/papers/park-2025-cardiotoxicity.md]] — Fridericia-corrected FPD in drug testing of hiPSC-CMs
+- [[wiki/papers/maurissen-2024-mutation.md]] — both report Fridericia-corrected FPD
+- [[wiki/cipa.md]]
+- [[wiki/fridericia-rate-correction.md]]

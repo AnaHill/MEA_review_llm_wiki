@@ -1,5 +1,5 @@
 ---
-tags: [transparent-mea, multimodal, cardiotoxicity, rate-correction, doxorubicin]
+tags: [multimodal, rate-correction, cardiac-safety]
 ---
 
 # Integrated electrophysiological and optical analysis of human iPSC-derived cardiomyocytes using transparent ITO microelectrode chip
@@ -45,3 +45,4 @@ Cited in main.md from 2026-11-01: rate-correction paragraph (doxorubicin example
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/fridericia-rate-correction.md]]
 - [[wiki/multimodal-measurement.md]]
+- [[wiki/signal-separation.md]]
