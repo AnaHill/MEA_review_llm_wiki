@@ -451,34 +451,34 @@ Local file: `raw/li-2025-maturation.pdf` (+ supplementary); page `wiki/papers/li
 
 Pointers: (1) Supplementary Table 3, p. 10 (mean ± SD, n = 24 cultures per group); MM has 1.8 mM Ca²⁺ against 0.4 mM in B27 (Supplementary Table 1), and DMEM + B27 with 1.8 mM Ca²⁺ reproduced the MM effects on INa and Ca²⁺ handling (p. 4; no MEA in that group). (3) Discussion, p. 10 ("maturation of electrophysiology (more negative RMP, shorter APD, higher Vmax, APA, CV and spike amplitude …) … similar to adult CMs"); no thresholds or reference values. (2) Supplementary Table 2 (INa, IK1, RMP, Vmax); patch clamp on single cells, MEA on replated monolayers. (4) Scheurer et al. (2025), reference [11], pp. 5–6; same group, matching media. (6) "the same conditions" means the culture conditions, not the same cultures; MEA recordings were made after replating on day 42 and 7 days of recovery, all groups in MM for one hour before recording.
 
-## Lin et al. (2023)
+## ✅ Lin et al. (2023)
 
-Local file: `raw/lin-2023-nanoelectronics.pdf` (+ supplementary); page `wiki/papers/lin-2023-nanoelectronics.md`. Status: full text and supplement read at ingest 2026-10-30.
+Local file: `raw/lin-2023-nanoelectronics.pdf` (+ supplementary); page `wiki/papers/lin-2023-nanoelectronics.md`. Status: full text and supplement read at ingest 2026-10-30; checked claim by claim 2026-11-14.
 
-- [ ] (1) [Maturation, Conclusion] extracellular waveforms were ordered along an electrical-maturation trajectory by unsupervised machine learning (pseudotime).
+- [x] (1) [Maturation, Conclusion] extracellular waveforms were ordered along an electrical-maturation trajectory by unsupervised machine learning (pseudotime).
     - > The closest step towards combining them is Lin et al. (2023), who ordered extracellular waveforms along an electrical-maturation trajectory by unsupervised machine learning (pseudotime). — main.md:140
     - > In one study, Fridericia-corrected FPD was similar in 2D monolayers and 3D tissue sheets (Maurissen et al., 2024), but in simulations FP shape varied with the stimulation and electrode locations in a 3D geometry even with a single cell type (Hwang et al., 2023), and conventional MEAs contact 3D tissue only on one surface (Lin et al., 2023). — main.md:233
     - > Unsupervised tracking of electrical maturation from extracellular waveforms has been shown with tissue-embedded electrodes in 3D microtissues (Lin et al., 2023), but no classifier or reference values have been reported for standard MEA recordings. — main.md:234
-- [ ] (2) [Maturation, Conclusion] the recordings came from stretchable electrodes embedded in 3D microtissues, not from MEA plates.
+- [x] (2) [Maturation, Conclusion] the recordings came from stretchable electrodes embedded in 3D microtissues, not from MEA plates.
     - > The closest step towards combining them is Lin et al. (2023), who ordered extracellular waveforms along an electrical-maturation trajectory by unsupervised machine learning (pseudotime). — main.md:140
     - > In one study, Fridericia-corrected FPD was similar in 2D monolayers and 3D tissue sheets (Maurissen et al., 2024), but in simulations FP shape varied with the stimulation and electrode locations in a 3D geometry even with a single cell type (Hwang et al., 2023), and conventional MEAs contact 3D tissue only on one surface (Lin et al., 2023). — main.md:233
     - > Unsupervised tracking of electrical maturation from extracellular waveforms has been shown with tissue-embedded electrodes in 3D microtissues (Lin et al., 2023), but no classifier or reference values have been reported for standard MEA recordings. — main.md:234
-- [ ] (3) [Maturation] the features describe only the depolarization spike, not FPD.
+- [x] (3) [Maturation] the features describe only the depolarization spike, not FPD.
     - > The closest step towards combining them is Lin et al. (2023), who ordered extracellular waveforms along an electrical-maturation trajectory by unsupervised machine learning (pseudotime). — main.md:140
-- [ ] (4) [Maturation] no external maturity measure was taken on the same cultures.
+- [x] (4) [Maturation] the trajectory was not validated against an independent maturity measure (reworded 2026-11-14; was "no external maturity measure was taken on the same cultures", which overlooked the end-point sarcomere imaging of the same tissues, p. 5, Fig. 2E–G).
     - > The closest step towards combining them is Lin et al. (2023), who ordered extracellular waveforms along an electrical-maturation trajectory by unsupervised machine learning (pseudotime). — main.md:140
-- [ ] (5) [3D, Conclusion] the authors argue that conventional MEAs contact a 3D microtissue only at one surface and lose contact as the tissue contracts.
+- [x] (5) [3D, Conclusion] the authors argue that conventional MEAs contact a 3D microtissue only at one surface and lose contact as the tissue contracts.
     - > The recording itself may also be limited: the authors of a study with tissue-embedded electrodes argue that conventional MEAs contact a 3D microtissue only at one surface and lose contact as the tissue contracts (Lin et al., 2023). — main.md:176
     - > In one study, Fridericia-corrected FPD was similar in 2D monolayers and 3D tissue sheets (Maurissen et al., 2024), but in simulations FP shape varied with the stimulation and electrode locations in a 3D geometry even with a single cell type (Hwang et al., 2023), and conventional MEAs contact 3D tissue only on one surface (Lin et al., 2023). — main.md:233
     - > Unsupervised tracking of electrical maturation from extracellular waveforms has been shown with tissue-embedded electrodes in 3D microtissues (Lin et al., 2023), but no classifier or reference values have been reported for standard MEA recordings. — main.md:234
-- [ ] (6) [Outlook] whole extracellular waveforms have already been used as machine-learning input, in tissue-embedded recordings.
+- [x] (6) [Outlook] whole extracellular waveforms have already been used as machine-learning input, in tissue-embedded recordings.
     - > If the cellular signal could be separated from it, as outlined next, that signal could be a useful input in its own right, beyond the parameters extracted from it; whole extracellular waveforms have already been used as machine-learning input, in tissue-embedded recordings (Lin et al., 2023). — main.md:197
-- [ ] (7) [Limitations] example of evidence from tissue-embedded electrodes.
+- [x] (7) [Limitations] example of evidence from tissue-embedded electrodes.
     - > Most methodological statements rest on one or two studies, and some rest on rat cells (Ernault et al., 2024), fetal mouse cells (Hu et al., 2026), simulations (Hwang et al., 2023; Botti et al., 2026), tissue-embedded electrodes (Lin et al., 2023) or modalities other than field potentials (Fetterman et al., 2024; Scheurer et al., 2025). — main.md:216
 
-Pointers: (1)(6) Methods p. 14 (PHATE + Slingshot on all channel-averaged waveforms, default parameters), Fig. 4. (3) "spike duration" = time between maximum and minimum dV/dt (p. 14). (4) scRNA-seq on separate cocultures. (5) p. 2 and table S1.
+Pointers: (1)(6) Methods p. 14 (PHATE + Slingshot on all channel-averaged waveforms, default parameters), Fig. 4. (3) "spike duration" = time between maximum and minimum dV/dt (p. 14). (4) scRNA-seq on separate cocultures in 24-well plates (pp. 8, 13); sarcomere alignment imaged in the same tissue/electronics hybrids after the month-long recording (p. 5, Fig. 2E–G, three samples), not related to pseudotime. (5) p. 2, p. 5 and table S1 (the authors cite refs 17 and 20 for the one-surface contact).
 
-## Mäki (2023, version v3)
+## ✅ Mäki (2023, version v3)
 
 Local file: `raw/maki-2023-opinion.html`; page `wiki/papers/maki-2023-opinion.md`; also `wiki/critical-assessment-maki-claims.md`. Status: claims on the conventions, thresholds and the Limitations sentence checked against the HTML 2026-10-24; the waveform-variation passage 2026-10-31. This is the author's own opinion paper.
 

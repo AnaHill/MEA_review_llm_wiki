@@ -903,3 +903,7 @@ The researcher's added sentence reworded and sourced to Mäki (2023): early afte
 ## [2026-11-13] draft | Personal note: EAD sentence replaced; afterdepolarization note on the critical assessment page
 
 The EAD sentence in the personal note was replaced by a neutral one about measuring the last part of repolarization, without a citation. Critical assessment, Claim 2: removed the unqualified "tail matters for EAD risk" and added a note that the opinion paper's EAD argument is broader than the physiology supports (phase-2 EADs early in the AP, only phase-3 EADs near the end of repolarization, DADs after it). Mäki claim (16) back to its original scope; register item 30 updated.
+
+## [2026-11-14] draft | Maturation: Lin 2023 validation sentence
+
+Grinding Lin: six of seven claims hold. Claim (4) overlooked that sarcomere alignment was imaged in the same tissue/electronics hybrids after recording (p. 5, Fig. 2E–G); main.md now says "and the trajectory was not validated against an independent maturity measure" instead of "no external maturity measure was taken on the same cultures". Same correction on wiki/papers/lin-2023-nanoelectronics.md (Limitations, Relevance 2c) and wiki/hipsc-cm-maturation.md. docs/claims-by-source.md Lin (4), status and Pointers updated (sarcomere imaging; p. 5 for the one-surface MEA argument).
