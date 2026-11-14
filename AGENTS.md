@@ -24,6 +24,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 | `scripts/` | Helper scripts: `check.py` (consistency check, see "Finishing check" below), `render_pdf_pages.py` (PDF text dump and page-to-PNG rendering for figure inspection), `claim_quotes.py` (lists the sentences of `main.md` that cite each source under that source's claims in `docs/claims-by-source.md`, and with `--write` puts ✅ in front of a section title once all its checkboxes are ticked; dry run by default; `--only <source>` limits the quote update to that source, while the ✅ marks are always refreshed for every section), `check_abbreviations.py` (checks the `# Abbreviations` list of `main.md`: every abbreviation listed, spelled out at first use, none unused). |
 | `notes.md` | The researcher's own thinking — read-only for you (see "Researcher notes" below). |
 | `docs/` | Project/process documentation (e.g. literature search strategy). Not part of the wiki. |
+| `docs/private/` | The researcher's private drafts (e.g. blog and LinkedIn posts about this project). Git-ignored, not part of the wiki or the paper; edit only when asked. |
 
 ## Four operations
 

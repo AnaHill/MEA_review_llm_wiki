@@ -54,3 +54,6 @@ raw/clements-2025-aims-poster.pdf
 
 # IDE
 .obsidian/
+
+# Researcher's private drafts (blog, LinkedIn), not published with the repo
+docs/private/
