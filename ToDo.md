@@ -98,7 +98,19 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
   - [ ] `docs/private/` (git-ignored, yksityiset luonnokset) ja sen maininta AGENTS.md:ssä
   - [ ] täydennysaineistojen nimeäminen myös muille kuin PDF:ille (`<stem>-supplementary.docx`), ja .docx-kuvien purku `figure_analysis/`-kansioon tarkastelua varten
   - [ ] wikin paluusuunta (14.11.): AGENTS.md Draft-askel 5 "Write back to the wiki", Lint-kohta, Tag vocabulary -konventio, `check.py`:n kaksi tarkistusta (samassa virkkeessä siteeratut mutta wikissä yhdistämättömät lähteet; tagit sanaston ulkopuolelta) ja README:n "Rule plus mechanical check" -periaate
+  - [ ] valinnainen: päätöskirjaus `grill-paper`-skillin loppuun (idea Matt Pocockin `grill-with-docs`/`domain-modeling`-skilleistä): päätös, perustelu ja hylätyt vaihtoehdot lyhyinä merkintöinä esim. `docs/decisions.md`:hen, ettei päätöksiä tarvitse kaivaa lokista
 - [ ] myöhemmin: Ingest- ja Lint-menettelyt omiksi skilleiksi AGENTS.md:stä (ks. AGENTS.md "Schema evolution")
+  - Ohjeena Matt Pocockin `writing-for-agents` (https://github.com/mattpocock/skills/blob/main/skills/productivity/writing-for-agents/SKILL.md, MIT). Käytä silloin, kun teet Ingest- ja Lint-skillit, ja templaatin AGENTS.md:n siistimiseen, ei paperin loppusuoralla. Mitä tehdä:
+    - karsi toistot: kukin sääntö yhteen paikkaan ("raw/ muuttumaton" nyt kolmessa kohdassa, `notes.md`-sääntö kahdessa)
+    - korjaa otsikko "Four operations" (operaatioita on nyt seitsemän)
+    - kiellot ("Never", "Do not") vain koville rajoille, muut myönteisiksi ohjeiksi
+    - jokaiselle vaiheelle tarkistettava valmiin kriteeri (Finishing check on hyvä malli, Ingestistä se puuttuu)
+    - siirretyille osille lyhyet osoittimet, laukaisusana ensin ("When ingesting, read …")
+
+#### Valinnaisia muita Matt Pocockin skillejä (https://github.com/mattpocock/skills, MIT)
+- `handoff`: tiivistää pitkän keskustelun dokumentiksi, jolla uusi keskustelu jatkaa (hyödyllinen pitkissä istunnoissa)
+- `retro`: ehdottaa istunnon jälkeen parannuksia agentin ympäristöön (vrt. 11.11. hook ja estosäännöt)
+- `research`: tutkii kysymyksen primäärilähteistä ja tallentaa lähdeviitteellisen markdownin; lähellä Queryä ja kirjallisuushakua, oma prosessi tiukempi
 
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
 Sisältö ja ideat kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post/notes.md (osio "Ideat MEA_review_llm_wiki/ToDo.md:n D-osiosta", siirretty 2.11.). Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
