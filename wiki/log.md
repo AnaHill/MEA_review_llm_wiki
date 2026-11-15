@@ -935,3 +935,11 @@ Two short sentences, kept minimal at the researcher's request: maturation sectio
 ## [2026-11-14] ingest | Li 2024 — supplementary material and raw renames
 
 The raw/ rule in .claude/settings.json was changed from deny to ask at the researcher's request (edits to raw/ now need approval, so renames at ingest are possible; notes.md stays denied). The researcher's files were renamed to raw/li-2024-closed-loop.pdf and raw/li-2024-closed-loop-supplementary.pdf. Supplement (Figures S1–S8) summarised on the wiki page; Figure S4 shows QT of about 0.15 s with the traveling wave running against about 0.6 s in controls, a rate effect, whereas the main text reports about 300 ms in both groups after the wave was stopped. No main.md change. AGENTS.md and README.md updated to describe the ask rule.
+
+## [2026-11-15] ingest | Maurissen 2024 — supplementary material
+
+Supplement (Figures S1–S8, Tables S1–S11) read and summarised on the wiki page. It adds the per-probe and per-sheet values behind the group means: the spread within a genotype is wide and tracks the differentiation run and cardiomyocyte purity; every 3D sheet used was mixed 1:1 with mesenchymal cells; the 3D long-QT group pools LQT46 and LQT26 while the 2D value is LQT26 alone, and the E-4031 dose–response in 3D is LQT46; most arrhythmias first appeared at 1000 nM, above the 100 nM cut-off of the arrhythmogenic score; clone-to-clone differences within one genotype are as large as some genotype differences (Supplementary Fig. 7a); and individual sheets span roughly 5–60 % cardiomyocytes. Our calculation: the ± values of the main text match neither the standard deviation nor the standard error of the per-probe values for most groups, while the means match exactly.
+
+## [2026-11-15] draft | 3D section: two word-level corrections after the Maurissen supplement
+
+"for both mutant lines" became "for both mutant genotypes", because the 3D long-QT group pools LQT46 and LQT26 while the 2D value is LQT26 alone. "the cardiomyocyte purity of the sheets was 25–41%" became "averaged 25–41%", because that is the range of the three group means and individual sheets span roughly 5–60 %. docs/claims-by-source.md: Maurissen (5), (6), status and Pointers updated; the Pointers now also record that the paper defines its FPD end point explicitly (p. 9), which Table 2 of main.md does not list.

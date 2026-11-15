@@ -576,7 +576,7 @@ Pointers (journal pages): (1), (4) abstract p. 384 (236,880 electrodes, 5.9 × 5
 
 ## Maurissen et al. (2024)
 
-Local file: `raw/maurissen-2024-mutation.pdf`; page `wiki/papers/maurissen-2024-mutation.md`. Status: checked against the abstract and Results 2026-10-24.
+Local file: `raw/maurissen-2024-mutation.pdf`; page `wiki/papers/maurissen-2024-mutation.md`. Status: checked against the abstract and Results 2026-10-24; checked claim by claim against the full text 2026-11-14 and against the supplement 2026-11-15.
 
 - [ ] (1) [Timeline] "KCNH2 mutation phenotyping in 3D tissues".
     - > : KCNH2 mutation phenotyping in 3D tissues (Maurissen et al.) — main.md:70
@@ -586,13 +586,13 @@ Local file: `raw/maurissen-2024-mutation.pdf`; page `wiki/papers/maurissen-2024-
     - > By analogy with the clinical QT interval, the Fridericia formula ($FPDc = FPD/RR^{0.33}$, where RR is the interval between beats) is the correction used in the studies examined here that report rate-corrected FPD (Altrocchi et al., 2023; Hwang et al., 2023; Maurissen et al., 2024; Park et al., 2026); Park et al. (2025) also report corrected FPD but do not name the formula. — main.md:121
 - [ ] (4) [3D] gene-edited long QT and short QT KCNH2 lines (N588D and N588K; codes dropped from the text 2026-11-06) were recorded both as 2D monolayers and as 3D cardiac tissue sheets on MEAs.
     - > Maurissen et al. (2024) recorded gene-edited long QT and short QT *KCNH2* lines both as 2D monolayers and as 3D cardiac tissue sheets on MEAs. — main.md:176
-- [ ] (5) [3D, Conclusion] Fridericia-corrected FPD was close in the two formats for both mutant lines and the isogenic control (reworded 2026-11-06 from "all three genotypes").
+- [ ] (5) [3D, Conclusion] Fridericia-corrected FPD was close in the two formats for both mutant genotypes and the isogenic control (reworded 2026-11-06 from "all three genotypes"; "lines" became "genotypes" 2026-11-15, because the 3D long-QT group pools LQT46 and LQT26 while the 2D value is LQT26 alone, Supplementary Table 4).
     - > Maurissen et al. (2024) recorded gene-edited long QT and short QT *KCNH2* lines both as 2D monolayers and as 3D cardiac tissue sheets on MEAs. — main.md:176
     - > In one study, Fridericia-corrected FPD was similar in 2D monolayers and 3D tissue sheets (Maurissen et al., 2024), but in simulations FP shape varied with the stimulation and electrode locations in a 3D geometry even with a single cell type (Hwang et al., 2023), and conventional MEAs contact 3D tissue only on one surface (Lin et al., 2023). — main.md:233
-- [ ] (6) [3D] TdP- and VT-like waveforms with E-4031 were reported in the 3D sheets, which the authors, citing their earlier work, consider necessary for inducing them; the same conditions were not tested in 2D; the cardiomyocyte purity of the sheets was 25–41 %.
+- [ ] (6) [3D] TdP- and VT-like waveforms with E-4031 were reported in the 3D sheets, which the authors, citing their earlier work, consider necessary for inducing them; the same conditions were not tested in 2D; the cardiomyocyte purity of the sheets averaged 25–41 % ("averaged" added 2026-11-15: 25–41 % is the range of the three group means, while individual sheets span roughly 5–60 %, Supplementary Fig. 8b).
     - > Maurissen et al. (2024) recorded gene-edited long QT and short QT *KCNH2* lines both as 2D monolayers and as 3D cardiac tissue sheets on MEAs. — main.md:176
 
-Pointers: (3)(5) p. 3 (FPDcF; 2D 231/82/323 ms, 3D 225/87/320 ms for parent/SQT/LQT, wiki page Findings). (6) wiki page Findings and Limitations (cTnT purity 25–41 %).
+Pointers: (3) p. 3 (FPDcF) and p. 9 (the formula: FPD divided by the cube root of the inter-spike interval in seconds); the paper also defines FPD explicitly, "from the first peak (depolarization) to the second peak (repolarization)" (p. 9), a definition not yet in Table 2 of main.md. (4) p. 2 (2D monolayers, cardiomyocytes only, probes below 65 % purity excluded) and p. 9 (3D sheets mix cardiomyocytes and mesenchymal cells; Supplementary Table 4 shows 1:1 in every sheet used). (5) p. 3 (2D 231/82/323 ms, 3D 225/87/320 ms for parent/SQT/LQT); the two formats are not compared statistically, and the 3D long-QT group pools LQT46 and LQT26 (Supplementary Table 4; Fig. 4c caption). (6) p. 3 (TdP-like and VT-like waveforms; purity 25 ± 6 / 41 ± 10 / 29 ± 15 %); Supplementary Fig. 8b for the per-sheet spread and Supplementary Table 11 for the concentrations at which arrhythmias first appeared.
 
 ## Park et al. (2025)
 
