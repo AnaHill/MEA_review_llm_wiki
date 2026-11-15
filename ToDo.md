@@ -61,6 +61,12 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 ## B. Julkaisu Zenodoon
 Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.org hylätty seulonnan epävarmuuden vuoksi).
 
+### B0. Ulkopuolinen itsearviointi ennen vientiä (valinnainen)
+- [ ] Kokeile kerran Open ScholarPeeriä (https://github.com/amirkiarafiei/open-scholar-peer, MIT; ScholarPeer-protokolla, arXiv 2601.22638): AI-vertaisarvioija, jonka kirjallisuushaku kattaa myös Europe PMC:n ja joka etsii puuttuvia vertailukohtia.
+  - Asenna **erilliseen kansioon**, ei tähän repoon (asennus `curl | bash` luo `.brain/`, `.venv`, `.env`, `.mcp.json` ja muuttaa `.gitignore`a). Kopioi sinne main.md tai PDF.
+  - Anna arviointikriteerit itse (Zenodolla ei ole lehden ohjeita) tai käytä jonkin lehden reviewer-ohjeita.
+  - Käsittele tulos listana: ehdotetut lähteet verify-before-ingest-vaiheen kautta, kritiikki `/grill-paper`-skillillä. Ei korvaa `/grinding`ia eikä claims-listaa (ei tarkista väitteitä lähteitä vasten).
+
 ### B1. Vienti (ks. docs/pdf-export-notes.md, "Revised export plan": HTML on pohja, PDF HTML:stä selaimen tulostuksella)
 - [ ] Mermaid-kaaviot (2 kpl) SVG-kuviksi mermaid-liven kautta, upotus kuvina alt-teksteineen (nyt versioimaton unpkg-CDN)
 - [ ] HTML: näkyvä otsikkolohko (otsikko, tekijä, affiliaatio, päivä) ja `<title>`; front matter ei näy nyt
