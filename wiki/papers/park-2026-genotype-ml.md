@@ -40,6 +40,13 @@ Builds a machine-learning platform for TdP risk prediction on MEA data from pati
 - **Reclassification claims:** clarithromycin, clozapine and loratadine (labelled low in this paper) scored high with the LQTS-trained ANN, and the authors read this as hidden risk in disease backgrounds; amiodarone and remdesivir scored high in all lines, highest in LQTS (≥ 0.8).
 - **Phenotype penetrance:** three of eight mutation lines did not express the disease phenotype, so genotype alone was not sufficient.
 
+### Supplementary methods (read 2026-11-15)
+- **Subtype criteria:** ventricular-like = amplitude ≥100 mV, Vmax ≥10 V/s, APD80 ≥200 ms, APD20-30/APD70-80 ratio ≥2.5; atrial-like = Vmax ≥10 V/s, APD80 ≤200 ms, ratio ≤2.5; nodal-like = amplitude ≤100 mV, Vmax ≤10 V/s. Our observation: the two features that separate ventricular from atrial, APD80 and the plateau ratio, both move with a disease that shortens the action potential or flattens its plateau. The two Brugada lines had APD80 of 119 and 94 ms and showed loss of the plateau phase, so their classification as almost entirely atrial-like follows partly from the criteria themselves. This supports the authors' own reading, that the atrial-like shape reflects the disease rather than atrial differentiation, and is the basis of the sentence added to main.md on 2026-11-15 (register item 33).
+- **Shared cell lines with Park et al. (2025):** the normal lines are CMC-hiPSC-011, PB01-EiPS21 and TnR-hiPS-4F, so CMC-011 appears in both studies alongside the long QT line DPHCi01.
+- **Data augmentation** means averaging the four concentrations per drug, so it reduces rather than adds data points.
+- **Test sets:** performance comes from 10,000 test sets, each holding the same 15 test drugs; what varies between them is which cell-line sample is drawn for each drug, so this is resampling over replicates rather than independent test data.
+- **What the paper does not say:** it never calls its own dataset small. Its closest statement is that "AI analytics still heavily rely on the quantity and quality of data" and that validation against real-world clinical datasets is needed.
+
 ## Limitations
 Stated by the authors: MEA captures only extracellular field potentials (not re-entry or local conduction block); model quality depends on data quantity and quality; need for correlation with real-world clinical datasets.
 
