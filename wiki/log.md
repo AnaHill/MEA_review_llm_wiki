@@ -943,3 +943,7 @@ Supplement (Figures S1–S8, Tables S1–S11) read and summarised on the wiki pa
 ## [2026-11-15] draft | 3D section: two word-level corrections after the Maurissen supplement
 
 "for both mutant lines" became "for both mutant genotypes", because the 3D long-QT group pools LQT46 and LQT26 while the 2D value is LQT26 alone. "the cardiomyocyte purity of the sheets was 25–41%" became "averaged 25–41%", because that is the range of the three group means and individual sheets span roughly 5–60 %. docs/claims-by-source.md: Maurissen (5), (6), status and Pointers updated; the Pointers now also record that the paper defines its FPD end point explicitly (p. 9), which Table 2 of main.md does not list.
+
+## [2026-11-15] draft | 3D section simplified and Maurissen added to Table 2
+
+At the researcher's request the Maurissen passage in the three-dimensional models section was shortened from three sentences to two: the KCNH2 gene name, the genotype enumeration and the cardiomyocyte purity percentage were dropped. The purity number was replaced by what it reflects, namely that the sheets mix cardiomyocytes with mesenchymal cells, which the authors consider necessary for the arrhythmic waveforms alongside the three-dimensional structure (p. 3 and p. 7). Table 2 now lists Maurissen et al. (2024) under the R-to-T-peak convention, since the paper states its end point explicitly (p. 9); wiki/fpd-end-conventions.md gained the matching row and the paper page links it. docs/claims-by-source.md: Maurissen (5) and (6) reworded, new claim (7) for Table 2, Pointers updated.

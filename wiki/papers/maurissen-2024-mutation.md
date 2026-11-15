@@ -59,7 +59,7 @@ Our observations (not from the paper), from the supplement: the 3D LQT group poo
 ## Relevance to our paper
 Since 2026-10-31 (grill decision) main.md presents this study in the 3D section with two findings: FPDcF close in 2D and 3D for all three genotypes (so this endpoint transferred in that setting), and TdP/VT-like waveforms reported in 3D sheets only, with the purity caveat. The earlier sentence that the findings "reinforce the caution raised by Mäki (2023)" was removed because the 2D/3D values contradict it. Also cited in the Conclusion's third gap.
 
-Cited in main.md for (1) the Fridericia-corrected FPD and (2) as an example of MEA analysis in 3D isogenic mutation-specific tissue models (LQTS and SQTS phenotypes). The review's formula notation RR^0.33 is the review's own; the paper writes the cube root of the inter-spike interval.
+Cited in main.md for (1) the Fridericia-corrected FPD, (2) as an example of MEA analysis in 3D isogenic mutation-specific tissue models (LQTS and SQTS phenotypes), and (3) since 2026-11-15 in Table 2 as a study that states its FPD end point (first peak to second peak, i.e. R-to-T-peak); see [[wiki/fpd-end-conventions.md]]. The 3D passage was simplified the same day: the genotype enumeration and the cardiomyocyte purity percentage were dropped, the latter replaced by the mesenchymal cells it reflects. The review's formula notation RR^0.33 is the review's own; the paper writes the cube root of the inter-spike interval.
 
 ## See also
 - [[wiki/papers/park-2025-cardiotoxicity.md]]
@@ -70,3 +70,4 @@ Cited in main.md for (1) the Fridericia-corrected FPD and (2) as an example of M
 - [[wiki/papers/blinova-2018-multisite.md]] — both report Fridericia-corrected FPD
 - [[wiki/fridericia-rate-correction.md]]
 - [[wiki/3d-models.md]]
+- [[wiki/fpd-end-conventions.md]]
