@@ -13,9 +13,14 @@ Usage (run from the repository root):
                                                             source as done once all its boxes are ticked)
     python -I scripts/claim_quotes.py --write --skip Altrocchi
                                                             update the file for all sources except those named
-Options may be repeated. A sentence is assigned to a claim only by the section tag, so two claims with the same tag
-show the same sentences; the generated quotes are a pointer to the text, not a judgement of which claim they support.
-A sentence that continues a citation without naming the source ("The same study ...") is not found.
+Options may be repeated. A sentence is assigned to a claim by the section tag, so two claims with the same tag show
+the same sentences unless the claim narrows them itself: a claim line may end with `{q: <regex>}`, and then the
+sentences of that section matching that regex are listed under it instead. Use it where one section holds several
+claims about the same source, for example `{q: two ΔFPDc-derived}`; without it the generated quotes are a pointer to
+the text, not a judgement of which claim they support. The regex replaces the citation test, so it also reaches a
+sentence that continues a citation without naming the source ("Both evaluated their models on small test sets ..."),
+which is otherwise not found at all. A regex that matches nothing is reported, and so is a sentence citing the source
+that no claim lists once any claim of that section is narrowed.
 With --write, a `## ` section whose top-level checkboxes are all ticked gets a "✅ " in front of its title, and loses
 it again when a box is unticked.
 """
@@ -60,6 +65,7 @@ SOURCES = {
 ABBREVIATIONS = {"al", "e.g", "i.e", "vs", "fig", "figs", "approx", "cf", "ca", "no", "dr", "eg", "ie"}
 
 CLAIM = re.compile(r"^- \[[ x]\] \((\d+[a-z]?)\) \[([^\]]+)\]")
+NARROW = re.compile(r"\{q:\s*(.+?)\}\s*$")
 GENERATED = re.compile(r"^ {4}- > ")
 CHECKBOX = re.compile(r"^- \[([ x])\] ")
 DONE = "✅ "
@@ -116,18 +122,25 @@ def source_of(title):
     return None
 
 
-def quote_lines(sentences, source, tag):
-    pattern = re.compile(SOURCES[source])
+def quote_lines(sentences, source, tag, narrow=None):
+    """The sentences of section `tag` that cite `source`, or, when `narrow` is given, those matching that regex.
+
+    A `{q: ...}` regex replaces the citation test rather than adding to it, so a claim can also pick up a sentence
+    that continues a citation without naming the source ("Both evaluated their models on small test sets ...").
+    """
+    pattern = re.compile(narrow if narrow else SOURCES[source])
     seen, lines = set(), []
     for sentence_tag, number, sentence in sentences:
-        if sentence_tag == tag and pattern.search(sentence) and (number, sentence) not in seen:
-            seen.add((number, sentence))
-            lines.append(f"    - > {sentence} — main.md:{number}")
+        if sentence_tag != tag or not pattern.search(sentence) or (number, sentence) in seen:
+            continue
+        seen.add((number, sentence))
+        lines.append(f"    - > {sentence} — main.md:{number}")
     return lines
 
 
 def update(claim_lines, sentences, selected):
     out, source, claimed, notes, shown = [], None, {}, [], []
+    narrowed, listed = set(), {}  # (source, tag) pairs that use {q: ...}, and the quote lines they produced
     i = 0
     while i < len(claim_lines):
         line = claim_lines[i]
@@ -142,11 +155,23 @@ def update(claim_lines, sentences, selected):
             i += 1
             while i < len(claim_lines) and GENERATED.match(claim_lines[i]):
                 i += 1
+            narrowing = NARROW.search(line)
+            narrow = narrowing.group(1) if narrowing else None
+            if narrow:
+                try:
+                    re.compile(narrow)
+                except re.error as error:
+                    notes.append(f"{source} claim ({m.group(1)}): {{q: {narrow}}} is not a valid regex ({error})")
+                    narrow = None
             for tag in [t.strip() for t in m.group(2).split(",")]:
                 claimed.setdefault(source, set()).add(tag)
-                found = quote_lines(sentences, source, tag)
+                found = quote_lines(sentences, source, tag, narrow)
                 if not found:
-                    notes.append(f"{source} claim ({m.group(1)}) [{tag}]: no sentence found in main.md")
+                    reason = f" matching {{q: {narrow}}}" if narrow else ""
+                    notes.append(f"{source} claim ({m.group(1)}) [{tag}]: no sentence found in main.md{reason}")
+                if narrow:
+                    narrowed.add((source, tag))
+                listed.setdefault((source, tag), set()).update(found)
                 out.extend(found)
                 shown.extend(found)
             continue
@@ -156,6 +181,11 @@ def update(claim_lines, sentences, selected):
         cited = {t for t, _, s in sentences if re.search(SOURCES[source], s)}
         for tag in sorted(cited - tags):
             notes.append(f"{source}: cited in main.md section [{tag}] but no claim carries that tag")
+    # Where {q: ...} is used, every sentence of that section should still end up under some claim.
+    for source, tag in sorted(narrowed):
+        for line in quote_lines(sentences, source, tag):
+            if line not in listed[(source, tag)]:
+                notes.append(f"{source} [{tag}]: no claim lists {line.strip()[:90]}…")
     return out, notes, shown
 
 
