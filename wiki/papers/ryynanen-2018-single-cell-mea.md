@@ -1,5 +1,5 @@
 ---
-tags: [multimodal]
+tags: [multimodal, rate-correction]
 ---
 
 # Microelectrode array for noninvasive analysis of cardiomyocytes at the single-cell level
@@ -27,7 +27,7 @@ A custom MEA platform for recording the field potential from single beating huma
 - Layout 1 gave mostly noise (one cell on a 100 µm test electrode gave a preliminary signal); Layout 2 gave signals from some electrodes; with Layout 3 the electrical activity of all beating cells on electrodes was detectable (4 MEA chambers, 1–4 signals per chamber).
 - Signals were clear enough to measure beating rate, beat-to-beat interval and FPD, and resembled those of hPS-CM aggregates on commercial MEAs.
 - E-4031 prolonged the FPD at the single-cell level in the examples of Table I (for example cell 4: FPD 604 to 829 ms, cFPD 673 to 786 ms; cell 5: 1563 to 1821 ms, cFPD 844 to 858 ms; cell 6: 702 to 825 ms, cFPD 714 to 735 ms).
-- On the transparent electrodes the beating rate and beat-to-beat interval from the MEA and from the video were similar (Table I, cells 1–3). The authors conclude that the platform records electrophysiological and biomechanical data simultaneously from single cells; opaque electrodes allowed beating to be seen but not video analysis.
+- On the transparent electrodes the beating rate and beat-to-beat interval from the MEA and from the video were similar (Table I, cells 1–4 at baseline; cells 5–6 and the E-4031 recordings have no video data). The authors conclude that the platform records electrophysiological and biomechanical data simultaneously from single cells; opaque electrodes allowed beating to be seen but not video analysis.
 
 ## Limitations
 Stated by the authors: the correlation between the electrical and mechanical function of single cells was left to future studies; the impedance of the transparent electrodes is higher than that of conventional electrodes and lowering it without losing transparency is difficult; the stimulation (pacing) capability of the electrodes was not studied; only a small share of the plated cells ended up on electrodes (selective patterning of matrix proteins or cell printing are suggested).

@@ -568,17 +568,17 @@ Local file: `raw/pramudito-2026-ensemble.pdf` (git-ignored); page `wiki/papers/p
 
 Pointers: (3) Methods, p. 2: "relies on only two MEA-derived biomarkers" and "we derived two ΔFPDc-based predictors" (maximum ΔFPDc over the tested concentrations; ΔFPDc interpolated to the clinical Cmax, p. 2–3). (4) Datasets, p. 2: "we did not reanalyze raw MEA signals; instead, we relied directly on the ΔFPDc values provided in the curated dataset"; no correction formula is named and none is compared. (5) Methods, p. 3–4: 12 training and 16 test drugs, and "The test set itself did not change, so the 10,000 resampling trials do not represent independent test sets". (6) Limitations, p. 9: "The dataset is small". Tables 3 and 4 give the single versus stacked classifier results, no longer cited in main.md.
 
-## Ryynänen et al. (2018)
+## ✅ Ryynänen et al. (2018)
 
-Local file: `raw/ryynanen-2018-single-cell-mea.pdf`; page `wiki/papers/ryynanen-2018-single-cell-mea.md`. Status: checked against the full text 2026-10-25 (text extraction; figures not viewed; supplementary videos not available). The researcher is not an author.
+Local file: `raw/ryynanen-2018-single-cell-mea.pdf`; page `wiki/papers/ryynanen-2018-single-cell-mea.md`. Status: checked against the full text 2026-10-25 (text extraction; figures not viewed; supplementary videos not available); checked claim by claim 2026-11-19. The researcher is not an author.
 
-- [ ] (1) [FPDc] an exception to Fridericia: this pre-2022 single-cell study corrected FPD with Bazett's formula.
+- [x] (1) [FPDc] an exception to Fridericia: this pre-2022 single-cell study corrected FPD with Bazett's formula.
     - > An exception is the pre-2022 single-cell study of Ryynänen et al. (2018), which corrected FPD with Bazett's formula. — main.md:121
-- [ ] (2) [Outlook] an MEA with transparent electrodes was used to record the field potential and the video-based motion of the same single hPS-CM at the same time, although the two recordings were not automatically synchronised.
+- [x] (2) [Outlook] an MEA with transparent electrodes was used to record the field potential and the video-based motion of the same single hPS-CM at the same time, although the two recordings were not automatically synchronised.
     - > Video-based beating features have also been classified with an interpretable machine-learning model, although without MEA data (Scheurer et al., 2025), and an MEA with transparent electrodes has been used to record the field potential and the video-based motion of the same single human pluripotent stem cell–derived cardiomyocyte at the same time, although the two recordings were not automatically synchronised (Ryynänen et al., 2018). — main.md:193
-- [ ] (3) [Limitations] pre-2022 work cited as background.
+- [x] (3) [Limitations] pre-2022 work cited as background.
     - > - (vi) A few works from before 2022, such as Blinova et al. (2018), Hayakawa et al. (2014) and Ryynänen et al. (2018), are cited only as background for conventions, datasets and earlier multimodal work. — main.md:220
-- [ ] (4) [Declarations] several of its authors are colleagues of the researcher from the Centre of Excellence in Body-on-Chip Research (CoEBoC) collaboration at Tampere University; the researcher is not an author.
+- [x] (4) [Declarations] several of its authors are colleagues of the researcher from the Centre of Excellence in Body-on-Chip Research (CoEBoC) collaboration at Tampere University; the researcher is not an author.
     - > Several authors of the review Vuorenpää et al. (2023) and of Ryynänen et al. (2018), both cited in this review, are colleagues of the author from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) research collaboration at Tampere University; the author is not an author of either. — main.md:260
 
 Pointers: (1) p. 4 ("Bazett's formula was used to calculate the beat-rate-corrected FPD (cFPD)"). (2) pp. 2–3 (aim), p. 5 ("the recordings were not automatically synchronized in this study"), p. 7.
@@ -609,18 +609,18 @@ Pointers: (3) abstract p. 3719 (230 videos, 10 features, accuracy 99.5 ± 1.1 %)
 
 ## Vuorenpää et al. (2023)
 
-Local file: `raw/vuorenpaa-2023-mps-building-blocks.pdf`; page `wiki/papers/vuorenpaa-2023-mps-building-blocks.md`. Status: checked against the full text 2026-10-24 (text extraction; figures and tables not viewed). Two of the authors are colleagues of the researcher from CoEBoC; disclosed in the Declarations.
+Local file: `raw/vuorenpaa-2023-mps-building-blocks.pdf`; page `wiki/papers/vuorenpaa-2023-mps-building-blocks.md`. Status: checked against the full text 2026-10-24 (text extraction; figures and tables not viewed); checked claim by claim 2026-11-19. Two of the authors are colleagues of the researcher from CoEBoC; disclosed in the Declarations.
 
-- [ ] (1) [Motivation] the review describes the parametrization of action potentials and field potentials as well established and as enabling clear comparison of results between studies.
-    - > The studies reviewed below show that conventions differ and that FPD does not always track the action potential, but none of them measures how much variability analysis methods cause, and a review of cardiac microphysiological systems describes the parametrization of action potentials and field potentials as well established and as enabling clear comparison of results between studies (Vuorenpää et al., 2023). — main.md:46
-- [ ] (2) [Outlook] it sees potential in combining different measurement modalities, which heart-on-chip systems can monitor concurrently. {q: sees potential in combining different measurement modalities}
+- [x] (1) [Limitations] the review describes the parametrization of action potentials and field potentials as well established and as enabling clear comparison of results between studies (moved 2026-11-19 from the Motivation section to Limitations (iv), where the contested standing of the review's own premise is already admitted; in Motivation the sentence arrived without a stated role and interrupted the argument, and the statement is thin for that position: one clause of a review that is not about MEA analysis methods, attributed onwards to Kussauer et al., 2019).
+    - > The premise that FP analysis methods are a source of inter-study variability is not universally shared either: a review of cardiac microphysiological systems describes the parametrization of action potentials and field potentials as well established and as enabling clear comparison of results between studies (Vuorenpää et al., 2023). — main.md:218
+- [x] (2) [Outlook] it sees potential in combining different measurement modalities, which heart-on-chip systems can monitor concurrently. {q: sees potential in combining different measurement modalities}
     - > A review of cardiac microphysiological systems also sees potential in combining different measurement modalities, which heart-on-chip systems can monitor concurrently (Vuorenpää et al., 2023). — main.md:195
-- [ ] (3) [Outlook] it notes that continuous, multimodal measurements give a holistic data set for parameterising and validating computational models, and that, to its authors' knowledge, integrative simulations of all building blocks of a microphysiological system had not been published. {q: holistic data set}
+- [x] (3) [Outlook] it notes that continuous, multimodal measurements give a holistic data set for parameterising and validating computational models, and that, to its authors' knowledge, integrative simulations of all building blocks of a microphysiological system had not been published. {q: holistic data set}
     - > The review of cardiac microphysiological systems cited above notes that continuous, multimodal measurements give a holistic data set for parameterising and validating computational models and that, to its authors' knowledge, integrative simulations of all building blocks of a microphysiological system had not been published (Vuorenpää et al., 2023). — main.md:207
-- [ ] (4) [Declarations] several of its authors are colleagues of the researcher from CoEBoC at Tampere University; the researcher is not an author (Declarations: "both cited in this review", generalised 2026-11-01).
+- [x] (4) [Declarations] several of its authors are colleagues of the researcher from CoEBoC at Tampere University; the researcher is not an author (Declarations: "both cited in this review", generalised 2026-11-01).
     - > Several authors of the review Vuorenpää et al. (2023) and of Ryynänen et al. (2018), both cited in this review, are colleagues of the author from the Centre of Excellence in Body-on-Chip Research ([CoEBoC](https://research.tuni.fi/coeboc/)) research collaboration at Tampere University; the author is not an author of either. — main.md:260
 
-Pointers: (1) section 6.1.1 ("The parametrization of APs and field potentials has been well established, enabling clear comparison of results between studies"). (2) section 6.1 (p. 12–13). (3) section 7 (p. 20) and 7.3 (p. 21, "To our knowledge, multiphysics models that would put together all the building blocks of MPS in integrative simulations have not yet been published"). The text contains no machine learning or digital twin discussion.
+Pointers: (1) section 6.1.1 ("The parametrization of APs and field potentials has been well established, enabling clear comparison of results between studies"). (2) section 6.1 (p. 15). (3) section 7 (p. 20) and 7.3 (p. 21, "To our knowledge, multiphysics models that would put together all the building blocks of MPS in integrative simulations have not yet been published"). The text contains no machine learning or digital twin discussion.
 
 ## Weiser-Bitoun et al. (2026)
 
@@ -678,7 +678,8 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
 - [x] **2. [Abstract, Motivation]** analysis methods as a possible source of inter-study variability
   - **Text:** analysis methods "have become a focus of attention as a possible source of inter-study variability"
   - **Text:** fiducial definitions "are a plausible source of variability and a possible limit to inter-study comparability"
-  - **Text:** "none of them measures how much variability analysis methods cause", with Vuorenpää et al. (2023) as counterpoint
+  - **Text:** "None of them applies two analysis conventions to the same recordings and reports how much the results differ" (narrowed 2026-11-19 from "none of them measures how much variability analysis methods cause", which read as a universal negative about measuring variability at all; Hwang et al., 2023, and Guerrelli et al., 2024, do measure other sources of FP variability, and Lee et al., 2024, and Ernault et al., 2024, test one convention against the action potential but do not compare two conventions)
+  - **Counterpoint:** Vuorenpää et al. (2023) describe the parametrization as well established; the sentence stood in Motivation until 2026-11-19 and now sits in Limitations (iv), so the Motivation paragraph ends on the gap and the contested premise is admitted where the author's own framework is already admitted
   - **Based on:** Mäki (2023); Lee, Ernault, Hayakawa (FPD not tracking the AP; end points matching different phases); Table 2
   - **Support:** `inference`; only plausibility is claimed
 - [x] **3. [Abstract, Conclusion]** Gap 1: no validated rate correction for hiPSC-CMs
