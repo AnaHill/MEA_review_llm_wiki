@@ -50,6 +50,7 @@ Cited in main.md (1) for the link between FPD and contraction duration, as the p
 - [[wiki/papers/maki-2023-opinion.md]]
 - [[wiki/papers/lee-2024-cardiomea.md]] — FPD end compared with another readout (relaxation motion versus intracellular-like APD)
 - [[wiki/papers/ernault-2024-interpretation.md]] — what the T-wave peak corresponds to (APD90 in biphasic T waves versus relaxation motion)
+- [[wiki/papers/weiser-bitoun-2026-physiomea.md]] — opposite R-peak polarity inside the same R-to-T-peak convention (initial negative peak versus positive spike; Table 2)
 - [[wiki/critical-assessment-maki-claims.md]]
 - [[wiki/fpd-end-conventions.md]]
 - [[wiki/hipsc-cm-maturation.md]]

@@ -21,7 +21,7 @@ Introduces **PhysioMEA**, an open-source platform (MATLAB 2023b or standalone .e
 
 - **Model:** hiPSC-CM-derived cardiac organoids on MEA chips, formed through a seeding guide ring with a 1.5 mm² hole (§2.2); hiPSC line from a 46-year-old female volunteer (§2.1)
 - **1D biomarkers:** FPD, AMP (spike amplitude), Slope (maximum dV/dt of the depolarization spike), PPD (peak-to-peak duration), IBI (inter-beat interval). The 1D and BRV analyses used one selected electrode per organoid.
-- **FPD definition:** R-peak (depolarization maximum) to T-wave peak (repolarization maximum), not baseline return; this differs from the convention advocated by Mäki (2023)
+- **FPD definition:** R-peak to T-wave peak (repolarization maximum), not baseline return; this differs from the convention advocated by Mäki (2023). The R-peak here is the **positive** sharp spike, detected by a positive-amplitude threshold (default 50 µV, §2.5), followed by a negative S-peak (§1) — the opposite polarity to the initial negative peak that Hayakawa et al. (2014) call the R peak, although Table 2 of main.md groups both under the same R-to-T-peak convention.
 - **2D analysis:** spatiotemporal heatmaps of AMP, Slope, PPD, FPD per electrode per beat; coefficient of variation (CV) of the spatial variability; only the 2D analysis uses many electrodes
 - **BRV analysis:** 45 measures (time-domain, frequency-domain, non-linear); VLF/LF cutoffs adjusted for organoids (0.025 Hz vs 0.046 Hz for humans)
 - **Morphology handling (p. 3):** for low-amplitude R peaks the minimum peaks of the signal are found on the inverted signal; for inverted T waves the inverse segment of the signal is used to detect the inverted T peaks; electrode data with inconsistent biomarker value counts are excluded.
@@ -49,6 +49,7 @@ Stated by the authors (§4.6):
 
 Our observations (not from the paper):
 - FPD is R-to-T-peak, and the paper offers no systematic comparison with baseline-return definitions.
+- The construct is called a cardiac organoid but is never described as three-dimensional: the only "three-dimensional" in the text is the X/Y/beat-number matrix behind the heatmaps (§2.7), the dimensional language is 1D versus 2D in the electrode plane ("the 2D cardiac sample", §4.3), and the cells are seeded directly onto the plate inside a 1.5 mm² ring. Treat it as evidence about organoid-labelled constructs, not about recording from thick 3D tissue.
 - The Brugada comparison used externally sourced recordings from a different MEA geometry and a single SCN5A variant.
 - 2D heatmaps include interpolated values at missing electrodes.
 
@@ -62,6 +63,7 @@ Cited in main.md as an open-source platform (MATLAB) with 2D spatial analysis an
 - [[wiki/papers/dunham-2022-cardiopyemea.md]]
 - [[wiki/papers/lee-2024-cardiomea.md]]
 - [[wiki/papers/ernault-2024-interpretation.md]]
+- [[wiki/papers/hayakawa-2014-motion-fp.md]] — opposite R-peak polarity inside the same R-to-T-peak convention (positive spike versus initial negative peak; Table 2)
 - [[wiki/papers/kabanov-2026-cardioscripts.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/ismaili-2023-hamburg.md]]
