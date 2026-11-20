@@ -41,19 +41,19 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [x] Jos main.md muuttuu: aja `python -I scripts/check_abbreviations.py`
 
 ### A4. Lopputarkistukset
-- [ ] Uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty). **Anna arvioijalle `docs/ai-review-brief.md` + `main.md`, ei muuta** — main.md on itsenäinen (koko teksti, molemmat kuvat, lähdeluettelo). Brief kertoo arvioijalle, mitä katsaus jo myöntää itsestään (ei toisteta rajoituksia), mikä palaute on hyödyllistä, DOI-vaatimuksen jokaiselle ehdotetulle lähteelle ja palautusmuodon (koko vastaus yhdessä nelibacktick-lohkossa, valmiina liitettäväksi). Liitä vastaus Claudelle: kritiikki käsitellään listana, mahdolliset lähde-ehdotukset verify-before-ingest -vaiheen kautta
+- [x] Uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty). **Anna arvioijalle `docs/ai-review-brief.md` + `main.md`, ei muuta** — main.md on itsenäinen (koko teksti, molemmat kuvat, lähdeluettelo). Brief kertoo arvioijalle, mitä katsaus jo myöntää itsestään (ei toisteta rajoituksia), mikä palaute on hyödyllistä, DOI-vaatimuksen jokaiselle ehdotetulle lähteelle ja palautusmuodon (koko vastaus yhdessä nelibacktick-lohkossa, valmiina liitettäväksi). Liitä vastaus Claudelle: kritiikki käsitellään listana, mahdolliset lähde-ehdotukset verify-before-ingest -vaiheen kautta
 - [x] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa (nyt: väitteet "listed in a checklist for verification"); kun A2 valmis, voi vahvistaa muotoon "…was checked against that source by the author"
 - [x] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
 
-#### Valinnaisia muualle kuin main.md tiedostoon
+### A5 Valinnaisia muualle kuin main.md tiedostoon
 - [x] Wiki kuntoon lopuksi: 
   - [x] saisiko backlinkit ja tagit paremmaksi, jotta graafiesitys paranisi?
   - [x] `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
 
-- [ ] ota lähteet talteen lopuksi omaan paikkaan
+- [x] ota lähteet talteen lopuksi omaan paikkaan
 
 - [ ]`README.md` päivityksiä
-  - [ ] kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään
+  - [x] kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään
   - [ ] toisiko Obsidianin Graph View - kuva lähteiden riippuvuuksista lisäarvoa? 
   - [ ] entä markmap esitys? Kuva postauksen ideoissa
 
