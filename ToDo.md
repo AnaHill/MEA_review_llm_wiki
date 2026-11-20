@@ -46,10 +46,11 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [x] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
 
 #### Valinnaisia muualle kuin main.md tiedostoon
-- [ ] Wiki kuntoon lopuksi: 
+- [x] Wiki kuntoon lopuksi: 
   - [x] saisiko backlinkit ja tagit paremmaksi, jotta graafiesitys paranisi?
-  - [ ] `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
-- [ ] ota lähteet talteen lopuksi
+  - [x] `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
+
+- [ ] ota lähteet talteen lopuksi omaan paikkaan
 
 - [ ]`README.md` päivityksiä
   - [ ] kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään
@@ -67,7 +68,7 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
   - Käsittele tulos listana: ehdotetut lähteet verify-before-ingest-vaiheen kautta, kritiikki `/grill-paper`-skillillä. Ei korvaa `/grinding`ia eikä claims-listaa (ei tarkista väitteitä lähteitä vasten).
 
 ### B1. Vienti (ks. docs/pdf-export-notes.md, "Revised export plan": HTML on pohja, PDF HTML:stä selaimen tulostuksella)
-- [ ] Mermaid-kaaviot (2 kpl) SVG-kuviksi mermaid-liven kautta, upotus kuvina alt-teksteineen (nyt versioimaton unpkg-CDN)
+- [ ] Mermaid-kaaviot (2 kpl) SVG-kuviksi mermaid-liven kautta, upotus kuvina alt-teksteineen (nyt versioimaton unpkg-CDN). **Työkalut valmiina 20.11.2026** (`docs/pdf-export-notes.md`, "Figure workflow"): `figures/*.mmd` on jo irrotettu, enää puuttuu Mermaid Live -renderöinti nimillä `figures/fig1-timeline.svg` ja `figures/fig2-morphology-pipeline.svg`; sen jälkeen `python -I scripts/figures.py --export` ja vienti tiedostosta `main-export.md`. check.py varoittaa kunnes kuvat ovat olemassa
 - [ ] HTML: näkyvä otsikkolohko (otsikko, tekijä, affiliaatio, päivä) ja `<title>`; front matter ei näy nyt
 - [ ] HTML: DOI:t ja muut URL:t klikattaviksi (main.md:ssä noin 28 URL:ia)
 - [ ] varmista, että tekijä löytyy alusta
@@ -112,9 +113,9 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 - `research`: tutkii kysymyksen primäärilähteistä ja tallentaa lähdeviitteellisen markdownin; lähellä Queryä ja kirjallisuushakua, oma prosessi tiukempi
 
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
-Sisältö ja ideat kotisivurepossa: AnaHill.github.io/_notes/llm-wiki-post/notes.md (osio "Ideat MEA_review_llm_wiki/ToDo.md:n D-osiosta", siirretty 2.11.). Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
-- [ ] Blogipostaus ensin (kokoa draft.md:hen notes.md:n ideoista)
-  - [ ] tarkista, että /grinding skills mainittu
+Sisältö ja ideat `docs\private\llm-wiki-post` Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin).
+- [ ] Blogipostaus ensin `2026-11-10-llm-wiki-and-academic-review.md`
+  - [ ] tarkista, että `/grinding` skills mainittu
   - [ ] kuinka otettu toteutusideologiaa tästä https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
-- [ ] LinkedIn-postaus blogin jälkeen: viittaa repoon, Zenodoon ja blogiin (AnaHill.github.io/_notes/llm-wiki-post/linkedin_draft.md)
-  - [ ] tarkista, että /grinding skills mainittu
+- [ ] LinkedIn-postaus blogin jälkeen `docs\private\llm-wiki-post\linkedin_draft.md`: viittaa repoon, Zenodoon ja blogiin
+  - [ ] tarkista, että `/grinding` skills mainittu
