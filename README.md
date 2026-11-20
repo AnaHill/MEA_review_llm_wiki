@@ -20,6 +20,26 @@ This repository explores using AI agents as helpers in writing a review paper on
 
 The author selects the sources, directs the agents and is responsible for the final text. The agents summarise sources, maintain the wiki and draft text. `scripts/check.py` checks that citations, the reference list and the wiki pages are consistent, but it cannot verify that a claim is true; that requires reading the source, and every claim in the paper is checked against its source before publication (see `docs/claims-by-source.md`). Not every intermediate commit has been reviewed in detail.
 
+### The work that is easy to skip: keeping the wiki honest
+
+The appeal of an LLM wiki is that it compounds. In Karpathy's description of the pattern:
+
+> This is the key difference: the wiki is a persistent, compounding artifact. The cross-references are already there. The contradictions have already been flagged. The synthesis already reflects everything you've read. The wiki keeps getting richer with every source you add and every question you ask.
+
+What is easy to miss is the sentence that makes that possible, a few lines further down:
+
+> The LLM makes edits based on our conversation, and I browse the results in real time — following links, checking the graph view, reading the updated pages. Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase.
+
+*Browsing the results in real time* is the whole job. An unsupervised wiki does not stay empty, which would at least be obvious; it fills with plausible, well-formatted, confidently cross-referenced material that nobody has checked. It compounds either way. The reviewing is what decides which way.
+
+This repository is a record of that work rather than an argument for it. What the reviewing caught here:
+
+- **Invented sources.** Fabricated author lists for what became Dunham et al. (2022) and Hwang et al. (2023); an unverifiable Blinova 2025 entry, removed; and "Galli et al. 2024", a paper that does not exist, which reached the draft text and the reference list before it was found. The rule that every bibliographic detail is verified or flagged (`AGENTS.md`) was written because of these, not in anticipation of them.
+- **Claims that outran their source.** Every claim the paper attributes to a source was read back against that source, one source at a time: 199 claims across 30 sources. Several did not survive unchanged. A statement that no study measured analysis-method variability became the narrower one that none compares two conventions on the same recordings. A tool described as built for 3D preparations turned out to rest on the word "organoid"; its source never calls the construct three-dimensional. A sentence saying "two of them" did not survive counting.
+- **The author's own reasoning, separated from the sources.** Thirty-five statements in the paper are generalisations, reasoned steps or hypotheses that no single source supports. They are listed, each with where its warrant comes from, so that what the paper asserts on its own account is visible instead of blending into the cited material.
+
+The division of labour that makes this sustainable is mechanical checks for what a script can decide and human reading for what it cannot. `check.py` knows that a citation has no reference entry, that a tag is outside the vocabulary, that a rendered figure is older than its diagram. It cannot know that a page summarises a study it misrepresents. Both halves are needed, and only one of them can be automated.
+
 ## How it works
 
 | Layer | Path | Who owns it |

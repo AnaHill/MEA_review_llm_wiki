@@ -117,5 +117,6 @@ Sisältö ja ideat `docs\private\llm-wiki-post` Luonnostelu rinnakkain, julkaisu
 - [ ] Blogipostaus ensin `2026-11-10-llm-wiki-and-academic-review.md`
   - [ ] tarkista, että `/grinding` skills mainittu
   - [ ] kuinka otettu toteutusideologiaa tästä https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop
+  - [ ] **pääviesti: wikin ylläpito on se osa, joka unohtuu.** Karpathyn gistin kaksi kohtaa ("The synthesis already reflects everything you've read" ja "I browse the results in real time — following links, checking the graph view, reading the updated pages") — jälkimmäinen on se, mikä tekee edellisestä totta. Näyttö tästä reposta: keksityt lähteet (Galli 2024 ei ole olemassa, Dunham/Hwang tekijälistat, Blinova 2025), 199 väitteen läpikäynti lähde kerrallaan ja 35 omaa päätelmää erikseen kirjattuna. README:ssä nyt osio "The work that is easy to skip: keeping the wiki honest" — käytä sitä runkona
 - [ ] LinkedIn-postaus blogin jälkeen `docs\private\llm-wiki-post\linkedin_draft.md`: viittaa repoon, Zenodoon ja blogiin
   - [ ] tarkista, että `/grinding` skills mainittu
