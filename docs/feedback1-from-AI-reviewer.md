@@ -1,12 +1,12 @@
 Feedback from AI (chatGPT free version), 2026-11-20
-## Finnish short version
+# Finnish short version
 Pidin käsikirjoitusta kokonaisuutena onnistuneena, asiantuntevana ja johdonmukaisena narratiivisena katsauksena. Sen vahvuus on, että se ei ainoastaan luettele MEA-menetelmiä, vaan pyrkii jäsentämään, miksi mittaustulosten fysiologinen tulkinta, fidusiaaliset pisteet, syketaajuuden korjaus ja solujen kypsyys ovat edelleen ongelmallisia. Neljän tutkimusaukon kokonaisuus on pääosin perusteltu, ja tekstin rajaukset sekä kirjoittajan oma näkökulma on tuotu avoimesti esiin.
 
 Suurimmat korjaustarpeet liittyvät muutamaan kohtaan, joissa tulkinta menee näyttöä pidemmälle. Erityisesti T-aallon huipun rinnastaminen APD90:een on liian vahva väite, ja lähtötasoon palaamista ei pitäisi esittää automaattisesti täydellisen repolarisaation mittana. Lisäksi 3D-MEA-menetelmistä on tullut uutta merkittävää tutkimusta vuosina 2025–2026, mikä kannattaa huomioida ja samalla täsmentää, mitä 3D-mittausten validoinnissa oikeastaan vielä puuttuu.
 
 En siis pitäisi käsikirjoituksen perusajatusta tai rakennetta uudistamista vaativana. Kyse on pikemminkin muutamien väitteiden täsmentämisestä ja ajantasaisuuden parantamisesta. Näillä korjauksilla tekstistä voisi tulla vakuuttava ja hyödyllinen katsaus, jossa sen keskeinen argumentti säilyy ennallaan.
 
-
+# Eka koko palaute
 **## Verdict**
 
 The review is substantially sound, unusually careful about distinguishing evidence from the author's hypotheses, and its central argument carries. The four gaps are mostly defensible, although the third combines two technically different problems, and the second needs a clearer distinction between waveform morphology classification and fiducial-point selection.
@@ -210,3 +210,101 @@ I would not add a long list of further papers merely to increase the reference c
 - **Personal note:** Although it revisits the FPD endpoint argument, it adds a useful account of the author's reasoning and does not introduce an inconsistency with the scientific sections.
 
 **Overall recommendation:** Make findings 1–5 the priority, incorporate the two missing 3D publications, and retain the rest of the manuscript substantially as it is. The review has a defensible central thesis and does not need a larger or more elaborate structure to become a useful preprint.
+
+
+# Palaute kun tehtiin muutokset
+Olen käynyt uuden version läpi. **Muutokset ovat mielestäni selvästi parantaneet käsikirjoitusta.** Erityisesti APD90:n ja T-aallon huipun suhdetta käsittelevä kohta on nyt asianmukaisen varovainen: rajaat näytön biphasisiin T-aaltoihin ja NRVM-soluihin etkä enää esitä sitä yleispätevänä APD90-surrogaattina. Myös 3D- ja spatiaalisen analyysin ongelmat on nyt erotettu toisistaan, ja Kim et al. (2026) on tuotu mukaan konkreettisena esimerkkinä uudesta 3D-mittausgeometriasta.
+
+Kokonaisuutena käsikirjoituksen argumentti on nyt tasapainoisempi: et väitä, ettei menetelmiä olisi kehitetty, vaan että niiden fysiologinen tulkinta ja vertailukelpoisuus vaativat vielä validointia. Tämä on mielestäni paljon vahvempi ja puolustettavampi väite.
+
+## **Mitä vielä muuttaisin?**
+
+**1. Choi et al. kannattaa mainita, vaikka koko tekstiä ei saanut ladattua.**
+
+En sanoisi, että artikkeli on välttämätön käsikirjoituksen argumentin kannalta, mutta se on varsin relevantti juuri kolmannen tutkimusaukon yhteydessä. Choi et al. esittelee sydänorganoideja ympäröivän, mukautuvan shell-MEA:n, jolla tuotetaan kolmiulotteisia isokroni- ja johtumisnopeuskarttoja. Sähköisiä tuloksia myös verrataan kalsiumkuvantamiseen. Tämä on tärkeä esimerkki siitä, että 3D-spatiaalinen mittaaminen ja sen rinnakkaisvalidointi ovat jo edenneet.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://advanced.onlinelibrary.wiley.com\&sz=32)
+
+The Advanced Portfolio+1
+
+
+
+Artikkeli ei kuitenkaan näytä ratkaisevan käsikirjoituksesi ydinkysymystä: se ei sellaisenaan validoi FPD:n fidusiaalisia määritelmiä eikä osoita, että 2D-monolayerien analyysikäytännöt siirtyisivät 3D-malleihin. Siksi sen puuttuminen ei kaada johtopäätöksiä. Lisäisin sen silti yhdellä virkkeellä 3D-osioon, esimerkiksi:
+
+> Choi et al. (2026) extended this approach with organoid-encapsulating shell MEAs that provide three-dimensional isochrone and conduction-velocity maps, with calcium imaging used to corroborate the electrophysiological findings. This demonstrates progress in 3D spatial recording, but does not establish the transferability of conventional FPD fiducial definitions.
+
+Viitteen DOI on 10.1002/adma.202506793. Julkaisijan sivulta ja PubMedistä löytyvät ainakin bibliografiset tiedot ja abstrakti, joten koko artikkelin lataaminen ei ole välttämätöntä tämän rajatun maininnan tekemiseksi.
+
+**2. Kolmannen tutkimusaukon sanamuotoa voisi vielä hieman täsmentää.**
+
+Nykyinen muotoilu on jo huomattavasti parempi, koska erotat 3D-kudokset ja spatiaalisen mittaamisen. Choi-artikkelin lisäämisen jälkeen välttäisin kuitenkin vaikutelmaa, ettei 3D-analyysimenetelmiä tai niiden validointia olisi vielä olemassa. Ongelma on pikemminkin, ettei niiden fysiologista tulkintaa ja mittaustulosten vertailukelpoisuutta ole validoitu riittävän kattavasti tai yhtenäisesti.
+
+Esimerkiksi nykyisen kohdan 234 ensimmäinen virke voisi olla:
+
+> **Analysis frameworks and quantitative endpoints have not yet been validated systematically across 3D tissues and spatially resolved MEA settings, which pose different methodological problems.**
+
+Tämä jättää tilaa sekä Kim- että Choi-tutkimusten edistysaskeleille mutta säilyttää tutkimusaukon.
+
+**3. Muut huomiot**
+
+- **APD90-kohta:** Nyt hyvä. Erottelu korrelaation ja surrogaattimittarin validoinnin välillä on selkeä.
+- **Baseline return:** Olet käsitellyt tämän asiallisesti. Taulukossa ilmaus *“Intended to capture the full repolarization wave”* on hyväksyttävä, koska se on selvästi Mäki (2023) -menetelmän tarkoitus eikä osoitettu fysiologinen tosiasia.
+- **Fridericia-korjaus:** RR:n yksikön ilmoittaminen sekunteina korjaa aiemman epäselvyyden. Myös väite korjauksen mahdollisesta ali- tai ylikorjauksesta on nyt asianmukaisesti rajattu testaamattomaksi kysymykseksi.
+- **Neljän tutkimusaukon kokonaisuus:** Pidän sitä edelleen toimivana. Kolmas kohta on laaja, mutta sen kaksi erillistä ongelmaa on nyt selitetty.
+- **Johtopäätös:** Se vastaa nyt paremmin varsinaista kirjallisuuskatsausta eikä esitä tutkimusaukkoja vahvempina kuin aineisto sallii.
+
+## **Kokonaisarvio**
+
+Minusta tämä versio on jo varsin lähellä julkaisukelpoista preprintiä. En lähtisi enää muuttamaan rakennetta tai lisäämään uusia suuria aihealueita. Tekstin vahvuus on nimenomaan sen rajatussa näkökulmassa: MEA-signaalien mittaaminen on edistynyt, mutta mittaustulosten fysiologinen tulkinta ja vertailukelpoisuus eivät ole kehittyneet samassa tahdissa.
+
+**Choi-artikkelin lisääminen olisi viimeinen selkeä sisältöparannus, jonka itse tekisin.** Sen jälkeen keskittyisin lähinnä lopulliseen tekniseen ja kielelliseen viimeistelyyn.
+
+# Meidän vastine tähän
+
+
+Written by Claude (Opus 5) on 2026-11-20, after both rounds of the review above were worked through. It records what was changed, what was not, and why — so that the reasoning survives the session.
+
+## Round 1: six findings
+
+Five of the six were acted on. The reviewer was right about the substance in each case, and twice the problem reached further than the reviewer could see from the text alone.
+
+**1. T-wave peak and APD90 (major) — acted on, and wider than reported.** The reviewer named one sentence and the Figure 2 node. The same step from correlation to identity appeared in five places: the Figure 1 timeline ("T-wave peak = APD90", the strongest of them), the sentence in the fiducial section, Table 2 ("coincided with"), Figure 2 node K ("APD90 surrogate") and the Discussion ("tracks APD90"). All five now say "correlates with", and the sentence states plainly that this is conditional evidence, not validation of a general surrogate. The wiki page for Ernault et al. (2024) also records that FPD to the T-wave peak is *longer* than APD in ventricular iPSC-CMs, so the identity reading was never available.
+
+**2. The two missing 3D publications (major) — half acted on.** See the Choi section below for the half that was not. Kim et al. (2026) was obtained, read in full with its supplement, ingested, and is now cited in three places.
+
+**3. Fridericia at extreme rates (moderate) — acted on.** The sentence read the accepted rate ranges as evidence of miscorrection; it now says only that this has not been tested in the studies examined. RR is specified in seconds. The doxorubicin example of Lee et al. (2026) stays, as the reviewer advised. This change had a consequence the reviewer could not see: the Highlights still carried "Fridericia can mislead at extreme rates", which the body had just withdrawn. That line now reports the doxorubicin case instead.
+
+**4. Baseline return as full repolarization (moderate) — acted on for the figure, not for Table 2.** Table 2 already said "Intended to capture ... not compared with the AP", which the reviewer accepted in round 2. Figure 2 node L was the problem: it asserted "Full repolarization" as fact. Both branch labels of that figure now carry the same level of caution, so the diagram does not look tilted toward the author's own convention.
+
+**5. Gap 3 combines two problems (moderate) — acted on, with a defect the reviewer did not find.** The gap now names 3D tissues and spatially resolved recordings as separate settings with different problems. The deeper issue was that the gap's heading mentioned ultra-high-density platforms while all three pieces of evidence under it were 3D; the high-density side had no source at all. It now cites Lee et al. (2024) and Matsuda et al. (2025).
+
+**6. Morphology classification versus fiducial choice (minor) — acted on,** in the Conclusion and the Abstract.
+
+## Round 2: Choi et al. (2026) — deliberately not added
+
+This is the one recommendation declined. The reasoning is not about whether the paper exists: its DOI, title, author list, journal and volume were checked against the Crossref record on 2026-11-20 and are sound. It is about what may be claimed from an abstract.
+
+The review's one hard guarantee is that every claim attributed to a source has been checked against that source, one source at a time, and limitation (v) states that full texts were consulted wherever available. A sentence written from an abstract breaks both, and the reader cannot see which sentence it is.
+
+Kim et al. (2026) had just demonstrated the cost. Its abstract says the region-specific waveforms were "validated by calcium imaging". In the full text, the Fluo-4 imaging compares whole normal and DMD organoids; it is not a per-electrode comparison of calcium with the field potential. The sentence proposed for Choi contains the same construction — "with calcium imaging used to corroborate the electrophysiological findings" — and would have repeated, from an abstract, exactly the error that reading a full text had just caught.
+
+By the reviewer's own account Choi does not resolve the review's central question and its absence does not undermine the conclusions. The gain is one sentence; the risk is the property that makes this review trustworthy. If the full text becomes available, it should be ingested properly and the decision revisited. The register of inferences (item 5) records that the paper is known, verified bibliographically, and consciously left out.
+
+## Round 2: the gap 3 wording — acted on, but for a different reason
+
+The reviewer asked for wording that leaves room for the progress Kim and Choi represent. The real defect was narrower and was introduced by the round 1 rewrite: gap 3 had become the only one of the four stated as a fact about the literature rather than as a finding of this review. Gaps 1 and 2 say "was found" and "were not identified"; gap 4 states an absolute, but it is the one gap backed by a documented search. Gap 3's support value in the register is `thin`, meaning the absence is limited to the studies examined — so the heading was promising more than the register allows.
+
+It now reads "Dedicated validation of 2D-calibrated analysis frameworks was not found for either 3D tissues or spatially resolved recordings, two settings that pose different problems." The reviewer's own suggested wording was not used: it drops "calibrated on 2D monolayers", which carries the point, and adds "systematically", which is vaguer than the hedge the register actually requires.
+
+## Two things the review found that no finding mentioned
+
+Working through the findings surfaced two defects of its own, both recorded in `wiki/log.md`:
+
+- A highlight that outlived the claim it summarised (finding 3 above). Neither `check.py` nor `claim_quotes.py` can see that a summary has drifted from the section it summarises; the register is the only place that link is written down.
+- Figure 1 promised more than it delivered. Nine post-2022 sources carry no entry, against 19 on the figure, and two pairs were treated unequally — Pramudito et al. (2026) on it and Park et al. (2026) not, though both are 2026 machine-learning risk classifiers; Lee et al. (2026) on it and Hu et al. (2026) not, though both pair transparent electrodes with optical recording. The caption now states that the figure is a selection and names the kinds of source left out, rather than the figure being extended.
+
+Gap 3 also gained a highlight: it had been the only one of the four with none.
+
+## Where this leaves the manuscript
+
+Both rounds agreed on the main point, and so do we: the structure holds, the argument carries, and no new subject area should be added. What changed was the strength of a handful of claims, not what the review says. The remaining work is the figures and the export, not the text.
