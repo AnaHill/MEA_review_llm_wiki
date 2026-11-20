@@ -51,6 +51,7 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [ ] Wiki kuntoon lopuksi: 
   - [x] saisiko backlinkit ja tagit paremmaksi, jotta graafiesitys paranisi?
   - [ ] `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
+- [ ] ota lähteet talteen lopuksi
 
 - [ ]`README.md` päivityksiä
   - [ ] kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään
