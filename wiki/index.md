@@ -36,7 +36,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 - [Pramudito et al. 2026](papers/pramudito-2026-ensemble.md) — Stacking ensemble (RF/XGBoost/ANN → meta-classifier) on two ΔFPDc predictors from the public Blinova 2018 CiPA MEA dataset; reports AUC 1.000 on 16 held-out drugs, but resampling gives pseudo-replicates and meta-feature leakage is not excluded; ML runs on pre-computed ΔFPDc, no signal analysis. *Ann Biomed Eng* 54:1334–1344.
 - [Ryynänen et al. 2018](papers/ryynanen-2018-single-cell-mea.md) — Single-cell MEA with 80 µm electrodes (opaque and transparent ITO): field potential, beating rate, FPD (Bazett cFPD) and E-4031 effect from single hPS-CMs, with simultaneous video-based motion analysis (not automatically synchronised). *Jpn J Appl Phys* 57:117001. Pre-2022 background; open access.
 - [Scheurer et al. 2025](papers/scheurer-2025-optical-ai.md) — Video-based SVM/SHAP classifier separating immature (day 21) from lipid-medium-matured (day 42) iPSC-CM cultures from beating features (99.5 % test accuracy; binary, with a heterogeneous less-mature B27 group); not MEA; cites Hayakawa et al. for the FPD–contraction link. TU Dresden, *Comput Struct Biotechnol J* 27:3719–3728.
-- [Vuorenpää et al. 2023](papers/vuorenpaa-2023-mps-building-blocks.md) — Review of cardiac microphysiological system building blocks (cells, matrix, stimulation, functional measurements, computational modelling); multimodal concurrent measurements give data for parameterising and validating models. *Front Physiol* 14:1213959.
+- [Vuorenpää et al. 2023](papers/vuorenpaa-2023-mps-building-blocks.md) — Review of cardiac microphysiological system building blocks (cells, matrix, stimulation, functional measurements, computational modelling); multimodal concurrent measurements give data for parameterising and validating models. Its statement that AP and FP parametrization is "well established, enabling clear comparison of results between studies" is the counterpoint to this review's own premise, cited in Limitations (iv). *Front Physiol* 14:1213959.
 - [Weiser-Bitoun et al. 2026](papers/weiser-bitoun-2026-physiomea.md) — PhysioMEA: open-source MATLAB for cardiac organoid MEA; 1D/2D biomarker heatmaps (AMP, Slope, PPD, FPD); BRV with 45 HRV-adapted measures; Brugada Syndrome (SCN5A) validation. Technion, *J Mol Cell Cardiol* 210:137–149.
 
 ---
@@ -87,4 +87,4 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 ---
 
-*Last updated: 2026-11-14*
+*Last updated: 2026-11-20*
