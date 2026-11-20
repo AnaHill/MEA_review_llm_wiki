@@ -23,6 +23,9 @@ which is otherwise not found at all. A regex that matches nothing is reported, a
 that no claim lists once any claim of that section is narrowed.
 With --write, a `## ` section whose top-level checkboxes are all ticked gets a "✅ " in front of its title, and loses
 it again when a box is unticked.
+A `## ` section missing from the SOURCES table is given a pattern derived from the surname in its title, and the run
+says so under Notes, so that a newly ingested source works without editing this file. Where the surname is shared by
+two sections the script will not guess: it collects nothing for them and asks for an explicit entry with the year.
 """
 import argparse
 import re
@@ -46,13 +49,17 @@ SECTION_TAG = [
 # Tables sit under these headings; the claims file tags their rows separately.
 TABLE_TAG = {"Open pipelines": "Table 1", "Fiducial": "Table 2"}
 
-# claims-file section title prefix -> regex that recognises a citation of that source in main.md
+REGISTER = "Register of the author's own inferences"  # the one `## ` section that is not a source
+
+# claims-file section title prefix -> regex that recognises a citation of that source in main.md.
+# A section missing from here does not fail: its pattern is derived from the surname in its title
+# (see resolve_sources), and a note says so. Add an entry when the surname alone is not enough.
 SOURCES = {
     "Altrocchi": r"\bAltrocchi\b", "Blinova": r"\bBlinova\b", "Botti": r"\bBotti\b",
     "Clements": r"\bClements\b", "Correia": r"\bCorreia\b", "Dunham": r"\bDunham\b",
     "Ernault": r"\bErnault\b", "Fetterman": r"\bFetterman\b", "Guerrelli": r"\bGuerrelli\b",
     "Hayakawa": r"\bHayakawa\b", "Hu": r"\bHu et al\b", "Hwang": r"\bHwang\b", "Ismaili": r"\bIsmaili\b",
-    "Kabanov": r"\bKabanov\b", "Lee et al. (2024)": r"\bLee et al\.?,? \(?2024|CardioMEA platform.*\(Lee et al\.\)",
+    "Kabanov": r"\bKabanov\b", "Kim": r"\bKim et al\b", "Lee et al. (2024)": r"\bLee et al\.?,? \(?2024|CardioMEA platform.*\(Lee et al\.\)",
     "Lee et al. (2026)": r"\bLee et al\.?,? \(?2026|Transparent MEA.*\(Lee et al\.\)", "Karami": r"\bKarami\b", "Li et al. (2024)": r"\bLi et al\.?,? \(?2024", "Li et al. (2025)": r"\bLi et al\.?,? \(?2025|\(Li et al\.\)",
     "Lin": r"\bLin et al\b", "Mäki": r"(?<!Antti-Juhana )\bMäki\b",
     "Matsuda": r"\bMatsuda\b", "Maurissen": r"\bMaurissen\b",
@@ -114,21 +121,57 @@ def main_sentences():
     return result
 
 
-def source_of(title):
+def surname_of(title):
+    """The first word of a section title: "Weiser-Bitoun et al. (2026)" -> "Weiser-Bitoun"."""
+    return re.split(r"[ (]", title.removeprefix(DONE).strip())[0]
+
+
+def resolve_sources(claim_lines):
+    """SOURCES, plus a pattern derived from the title for any source section not listed there.
+
+    Without this a newly ingested source matches nothing: its claims collect no sentences and simply
+    look empty, with no error anywhere — the failure is silent, which is how an ingest can look done
+    while every quote under it is missing. Deriving `\\bSurname\\b` keeps a fresh ingest working, and
+    the note tells the next reader to add an explicit entry where the surname is not enough: a year
+    to separate two first authors of the same name, or an alternation for a citation that omits the
+    surname (a Figure 1 timeline label, say).
+    """
+    titles = [line[3:].removeprefix(DONE).strip() for line in claim_lines if line.startswith("## ")]
+    patterns, notes, by_surname = dict(SOURCES), [], {}
+    for title in titles:
+        if title != REGISTER:
+            by_surname.setdefault(surname_of(title), []).append(title)
+    for title in titles:
+        if title == REGISTER or any(title.startswith(name) for name in SOURCES):
+            continue
+        surname = surname_of(title)
+        if len(by_surname[surname]) > 1:
+            notes.append(f"{title}: not in SOURCES, and '{surname}' heads {len(by_surname[surname])} sections — "
+                         f"add a pattern that includes the year to scripts/claim_quotes.py; no quotes were "
+                         f"collected for this source")
+            continue
+        patterns[title] = rf"\b{re.escape(surname)}\b"
+        notes.append(f"{title}: not in SOURCES; using the derived pattern {patterns[title]}. Add an entry to "
+                     f"scripts/claim_quotes.py if this source is ever cited without the surname, or if a later "
+                     f"source shares it")
+    return patterns, notes
+
+
+def source_of(title, patterns):
     title = title.removeprefix(DONE)
-    for name in SOURCES:
+    for name in patterns:
         if title.startswith(name):
             return name
     return None
 
 
-def quote_lines(sentences, source, tag, narrow=None):
+def quote_lines(sentences, source, tag, patterns, narrow=None):
     """The sentences of section `tag` that cite `source`, or, when `narrow` is given, those matching that regex.
 
     A `{q: ...}` regex replaces the citation test rather than adding to it, so a claim can also pick up a sentence
     that continues a citation without naming the source ("Both evaluated their models on small test sets ...").
     """
-    pattern = re.compile(narrow if narrow else SOURCES[source])
+    pattern = re.compile(narrow if narrow else patterns[source])
     seen, lines = set(), []
     for sentence_tag, number, sentence in sentences:
         if sentence_tag != tag or not pattern.search(sentence) or (number, sentence) in seen:
@@ -138,14 +181,15 @@ def quote_lines(sentences, source, tag, narrow=None):
     return lines
 
 
-def update(claim_lines, sentences, selected):
-    out, source, claimed, notes, shown = [], None, {}, [], []
+def update(claim_lines, sentences, selected, patterns, notes):
+    out, source, claimed, shown = [], None, {}, []
+    notes = list(notes)
     narrowed, listed = set(), {}  # (source, tag) pairs that use {q: ...}, and the quote lines they produced
     i = 0
     while i < len(claim_lines):
         line = claim_lines[i]
         if line.startswith("## "):
-            source = source_of(line[3:])
+            source = source_of(line[3:], patterns)
             if source and selected(source):
                 shown.append(line)
         m = CLAIM.match(line)
@@ -165,7 +209,7 @@ def update(claim_lines, sentences, selected):
                     narrow = None
             for tag in [t.strip() for t in m.group(2).split(",")]:
                 claimed.setdefault(source, set()).add(tag)
-                found = quote_lines(sentences, source, tag, narrow)
+                found = quote_lines(sentences, source, tag, patterns, narrow)
                 if not found:
                     reason = f" matching {{q: {narrow}}}" if narrow else ""
                     notes.append(f"{source} claim ({m.group(1)}) [{tag}]: no sentence found in main.md{reason}")
@@ -178,12 +222,12 @@ def update(claim_lines, sentences, selected):
         out.append(line)
         i += 1
     for source, tags in claimed.items():
-        cited = {t for t, _, s in sentences if re.search(SOURCES[source], s)}
+        cited = {t for t, _, s in sentences if re.search(patterns[source], s)}
         for tag in sorted(cited - tags):
             notes.append(f"{source}: cited in main.md section [{tag}] but no claim carries that tag")
     # Where {q: ...} is used, every sentence of that section should still end up under some claim.
     for source, tag in sorted(narrowed):
-        for line in quote_lines(sentences, source, tag):
+        for line in quote_lines(sentences, source, tag, patterns):
             if line not in listed[(source, tag)]:
                 notes.append(f"{source} [{tag}]: no claim lists {line.strip()[:90]}…")
     return out, notes, shown
@@ -216,7 +260,8 @@ def main():
         return not any(source.startswith(s) for s in args.skip)
 
     original = open(CLAIMS, encoding="utf-8").read().split("\n")
-    updated, notes, shown = update(original, main_sentences(), selected)
+    patterns, source_notes = resolve_sources(original)
+    updated, notes, shown = update(original, main_sentences(), selected, patterns, source_notes)
     updated, changed = mark_done(updated)
     if args.write:
         open(CLAIMS, "w", encoding="utf-8", newline="\n").write("\n".join(updated))

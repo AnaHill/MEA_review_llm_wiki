@@ -36,6 +36,8 @@ Karami, N., Knafl, S., Wanzenboeck, H. D., & Prado-López, S. (2026). Microelect
 
 Kabanov, D. A., Vrana, S., Beckerová, D., Rotrekl, V., Pesl, M., & Přibyl, J. (2026). A comprehensive system of algorithms for characterization of cardiomyocyte mechanical and electrical function. *Biomedical Signal Processing and Control*, *120*, 110125. https://doi.org/10.1016/j.bspc.2026.110125
 
+Kim, Y. S., Jeong, J., Heo, G., Kwon, Y. W., Lee, J., Jeong, Y. J., Park, G. T., Jeong, S., Hwang, K. W., Choi, M., Shin, J., Hong, S. W., & Kim, J. H. (2026). Conformable microelectrode arrays integrated with a scoop-shaped slide-well for dynamic electrophysiological profiling of patient-derived cardiac organoids. *Advanced Science*, *13*(31), e14365. https://doi.org/10.1002/advs.202514365
+
 Lee, J., Duperrex, E., El-Battrawy, I., Hohn, A., Saguner, A. M., Duru, F., Emmenegger, V., Cyganek, L., Hierlemann, A., & Ulusan, H. (2024). CardioMEA: comprehensive data analysis platform for studying cardiac diseases and drug responses. *Frontiers in Physiology*, *15*, 1472126. https://doi.org/10.3389/fphys.2024.1472126
 
 Lee, S.-G., Park, S., Kim, C.-Y., & Chung, H. M. (2026). Integrated electrophysiological and optical analysis of human iPSC-derived cardiomyocytes using transparent ITO microelectrode chip. *International Journal of Stem Cells*, *19*(2), 146–156. https://doi.org/10.15283/ijsc25077

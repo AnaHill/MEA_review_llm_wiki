@@ -23,6 +23,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 - [Ismaili et al. 2023](papers/ismaili-2023-hamburg.md) — Hamburg perspective review: hiPSC-CM If/ICa,T expression, the mixed-population (ventricular/atrial/nodal) debate, atrial models, automated patch clamp; the paper does not discuss MEA, FPD or rate correction. *Front Physiol* 14:1132165.
 - [Karami et al. 2026](papers/karami-2026-mea-cardiotoxicity.md) — Review of MEAs for cancer-treatment cardiotoxicity; used for MEA physics: cell–electrode equivalent circuit, FP as superposition of transmembrane currents, impedance sensitivity to cell–electrode distance. Front. Electron. 2026, CC BY.
 - [Kabanov et al. 2026](papers/kabanov-2026-cardioscripts.md) — CardioScripts/Myopyth: open-source Python for combined AFM+MEA electromechanical analysis; electromechanical coupling/decoupling; lidocaine validation. CEITEC MU, *Biomed Signal Process Control* 120:110125.
+- [Kim et al. 2026](papers/kim-2026-organoid-mea.md) — Conformable 4 µm six-channel MEA in a concave "scoop" well for patient-derived hiPSC cardiac organoids (healthy and Duchenne); gravity-guided placement, contact confirmed by an impedance drop at 300 Hz, channel-to-channel waveform differences, E-4031 prolonged FPD and triggered arrhythmia in DMD organoids at 10 nM; no FPD fiducial definition stated anywhere, repolarization metrics reported only where the morphology was judged to allow it. Pusan National University, *Adv Sci* 13(31):e14365.
 - [Lee et al. 2024](papers/lee-2024-cardiomea.md) — CardioMEA: open-source Python platform for HD-MEA data (parallel processing, SQL, web dashboard, extracellular and intracellular-like features, AutoML feature importance); FPD = R spike to T-wave peak, no FPDc; FPD tracked APD poorly in iCell recordings. ETH Zürich / UZH, *Front Physiol* 15:1472126.
 - [Lee et al. 2026](papers/lee-2026-ito-mea.md) — hiPSC-CMs on a transparent ITO MEA: FP with morphology and Ca²⁺ imaging side by side; E-4031, nifedipine, doxorubicin; on doxorubicin FPDc fell while FPD rose when the beat period jumped to about 8 s. Int. J. Stem Cells 2026.
 - [Li et al. 2024](papers/li-2024-closed-loop.md) — Closed-loop hiPSC-CM monolayer: a spontaneous traveling wave paces the cells at about 220 bpm for 14 days, then is stopped before MEA drug tests (about 1 Hz); higher MEA conduction velocity and changed drug responses (verapamil, ranolazine, quinidine, pimozide); Fridericia "cQT" with an unstated end point. Osaka University, *iScience* 27:108992.
@@ -53,7 +54,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 - [Field potential polarity: the Cardio PyMEA example recordings](fp-polarity.md) — Whether Dunham et al. (2022) Figs 4–6 are shown with the polarity their analysis assumes; the researcher's inverted, pacemaker-like reading with arguments for and against and possible tests; only a neutral polarity paragraph went into main.md (morphology).
 - [CiPA in the reviewed papers](cipa.md) — How Blinova 2018, Park 2025/2026, Pramudito 2026, Clements 2025 and Matsuda 2025 relate to the Comprehensive in vitro Proarrhythmia Assay.
 - [Open analysis platforms](open-analysis-platforms.md) — Cardio PyMEA, DatAnalyzer, CardioMEA, CardioScripts and PhysioMEA side by side (language, FPD or interval end, scope); vendor software still used in the Park studies.
-- [3D cardiomyocyte models and MEA recording](3d-models.md) — Spheroid simulations (Hwang), 2D versus 3D tissue sheets (Maurissen), tissue-embedded electrodes (Lin), organoid analysis (Weiser-Bitoun); no systematic 2D–3D comparison of fiducial definitions.
+- [3D cardiomyocyte models and MEA recording](3d-models.md) — Spheroid simulations (Hwang), 2D versus 3D tissue sheets (Maurissen), tissue-embedded electrodes (Lin), conformable organoid recording (Kim), organoid analysis (Weiser-Bitoun); no systematic 2D–3D comparison of fiducial definitions.
 - [Machine learning in the reviewed studies](machine-learning-mea.md) — Models, inputs and caveats in Pramudito, Park 2026, Lee 2024, Scheurer, Lin and Hu; raw signals versus extracted parameters (Mäki).
 
 *(other candidates: hERG trafficking)*
@@ -65,7 +66,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 <!-- Methodological approaches worth their own page — when a method appears across multiple papers. -->
 <!-- Single-paper methods belong in the paper page, not here. -->
 
-- [FPD end conventions](fpd-end-conventions.md) — The FPD start and end definitions documented on the paper pages (Mäki, Dunham, Lee, Weiser-Bitoun, Ernault, Hayakawa), side by side; basis of Table 2 in main.md.
+- [FPD end conventions](fpd-end-conventions.md) — The FPD start and end definitions documented on the paper pages (Mäki, Dunham, Lee, Maurissen, Weiser-Bitoun, Hayakawa, Ernault, and Kim, who states none), side by side; basis of Table 2 in main.md.
 - [Fridericia and other rate corrections](fridericia-rate-correction.md) — Which reviewed papers correct FPD for rate, how, and which do not; equilibration drift (Guerrelli).
 
 *(other candidates: LEAP recording, tolerance intervals)*
