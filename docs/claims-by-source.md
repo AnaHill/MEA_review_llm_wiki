@@ -692,7 +692,7 @@ These are not points on one scale. `thin` is sourced but narrow; `inference` is 
   - **Support:** `inference`; only plausibility is claimed
 - [x] **3. [Abstract, Conclusion]** Gap 1: no validated rate correction for hiPSC-CMs
   - **Text:** Abstract "**four methodological gaps remain** in the studies examined … (*i*) the absence of a validated hiPSC-CM–specific rate correction formula" (scope stated once for all four gaps, 2026-11-03) and Conclusion heading "No validated FPD rate correction for hiPSC-CMs was found" (reworded 2026-11-03 as a finding of this review; were "the absence of …" and "FPD rate correction remains unsolved")
-  - **Note:** no documented search lies behind this absence finding (unlike gap 4, docs/maturation-mea-search.md)
+  - **Note:** no documented search lies behind this absence finding (unlike gap 4, docs/maturation-mea-search.md); the decision not to run one, and what makes it defensible, is in the log entry of 2026-11-20. Widening this claim beyond "the studies examined" would require the search first.
   - **Text:** Fridericia "lacks formal validation for the beating rate range and rate–FPD relationship of hiPSC-CM cultures"
   - **Text:** "borrowed from clinical electrocardiography"
   - **Text:** a cell-type–specific formula from multi-laboratory data "would make FPDc a more reliable pharmacological endpoint"
