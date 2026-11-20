@@ -1173,3 +1173,24 @@ The second round of AI review 1 asked for two things: a one-sentence mention of 
 **Gap 3 was reworded, but not as asked.** The real defect was narrower and was ours, introduced by the first-round rewrite: gap 3 had become the only one of the four stated as a fact about the literature instead of as a finding of this review. Gaps 1 and 2 say "was found" and "were not identified"; gap 4 states an absolute, but it is the gap with a documented search behind it. Gap 3's Support is `thin` — absence limited to the studies examined — so the heading promised more than the register allows. It now reads "Dedicated validation of 2D-calibrated analysis frameworks was not found for either 3D tissues or spatially resolved recordings, two settings that pose different problems." The reviewer's own wording was not used: it drops "calibrated on 2D monolayers", which carries the point, and adds "systematically", which is vaguer than the hedge needed.
 
 A written response to both rounds now sits at the end of `docs/feedback1-from-AI-reviewer.md` under "Meidän vastine tähän": what was changed, what was not, and why. It also records the two defects the review process surfaced that no finding mentioned — the highlight that outlived its claim, and Figure 1 promising more than it delivered.
+
+## [2026-11-20] draft | AI review 2: three changes made, four findings declined
+
+A second AI review (`docs/feedback2-from-AI-reviewer.md`, a different model) argues that the four-gap framing is overdrawn relative to a thin, non-systematic sample, and that the main fix is to stop presenting the sample's silences as field-wide gaps. Each of its eight findings was checked against the text.
+
+**Made:**
+
+- **Gap 1 (finding 1).** The heading was already hedged ("was found"), but the sentence under it was not: Fridericia "lacks formal validation for the beating rate range and rate–FPD relationship of hiPSC-CM cultures". The reviewer missed the defence — the CiPA authors say the same (Blinova et al., 2018) — but the real defect is adjacent and was ours: that statement is from 2018, and the sentence carried it to the present tense as a fact about the field, which register item 3 already says would need a documented search first. It now attributes and dates the statement and limits the absence since then to the studies examined. Blinova claim (4) gained the Conclusion tag.
+- **Motivation (finding 5).** "None of them applies two analysis conventions to the same recordings" became "None of the studies reviewed below ...". The antecedent was the previous sentence, so the scope was already bounded, but a sentence-initial "None of them" reads loosely.
+- **Discussion (finding 7).** A bridging sentence now says that neither hypothesis solves the four gaps and what they address instead. Register item 37, `opinion`; it lowers the claim rather than raising it.
+
+**Declined, because the text already does what is asked:**
+
+- **Finding 2 (gap 2 conflates classification with fiducial rules; baseline return as benchmark).** That Ernault, Weiser-Bitoun and Kim are not trying to solve morphology classification *is* the finding, not a conflation — and the claims file already records that Weiser-Bitoun's "awareness" is read off its algorithm rather than stated by its authors. On the benchmark charge, the fiducial section says the two definitions "may therefore measure different quantities rather than one being universally more correct", Table 2 and Figure 2 were hedged earlier the same day, and Limitations (iv) calls the author's convention one of several.
+- **Finding 3 (gap 3 bundles geometry, contact and spatial mapping).** The split the reviewer asks for is in the gap's own paragraph: 3D geometry changing electrode contact and signal contributions, high-density arrays raising how local fiducial points and propagation metrics relate to the cells. The reviewer appears to have read the bold heading only.
+- **Finding 4 (gap 4 self-undermined, outside MEA scope).** Its suggested reframing — a reporting and confounding issue, maturity rarely measured alongside MEA in the same wells — is the text's own wording ("what is missing is an independent maturity measure taken on the same MEA cultures"), as is the limit to the electrophysiological axis.
+- **Finding 8 (tension with Vuorenpää).** Limitations (iv) keeps that tension visible, which is what the finding asks for.
+
+**Not taken: the reframings of gaps 1–4.** Recasting them as "practices vary" would be weaker than the material allows and, for gap 1, weaker than what the CiPA authors themselves wrote. Finding 6 (Botti "not fitted", small test sets) was left for the language pass.
+
+Two reviews now point the same way, which is a reason to watch for over-hedging rather than to keep hedging: the gaps are already scoped to the studies examined in the Abstract, in three of four headings, and in Limitations (i). The fourth is the one with a documented search behind it.
