@@ -624,7 +624,7 @@ Pointers: (1) section 6.1.1 ("The parametrization of APs and field potentials ha
 
 ## Weiser-Bitoun et al. (2026)
 
-Local file: `raw/weiser-bitoun-2026-physiomea.pdf`; page `wiki/papers/weiser-bitoun-2026-physiomea.md`. Status: checked against the abstract, Methods and Discussion 2026-10-24; checked claim by claim against the full text, Results included, 2026-11-19 (figures not re-viewed; the claims do not rest on them).
+Local file: `raw/weiser-bitoun-2026-physiomea.pdf`; page `wiki/papers/weiser-bitoun-2026-physiomea.md`. Status: checked against the abstract, Methods and Discussion 2026-10-24; checked claim by claim against the full text, Results included, 2026-11-19 (figures not re-viewed; the claims do not rest on them). Reference year 2026 (volume 210, 2026, pp. 137–149 in the article header; online 17 November 2025, which is the year of the copyright line, the DOI, Elsevier's Cite widget and the authors' own GitHub README — see the paper page). Software links checked 2026-11-20: GitHub (GPL-3.0), lab documentation and novelty pages.
 
 - [x] (1) [Timeline] "PhysioMEA — cardiac organoid beat rate variability and 2D heatmaps" (reworded 2026-11-06: detail and abbreviations not needed for the argument removed).
     - > : PhysioMEA — cardiac organoid beat rate variability and 2D heatmaps (Weiser-Bitoun et al.) — main.md:78

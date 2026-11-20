@@ -11,7 +11,16 @@ tags: [open-platform, fiducial-definition, spatial-analysis, 3d-model]
 **DOI:** 10.1016/j.yjmcc.2025.11.006  
 **Affiliation:** Technion – Israel Institute of Technology, Israel (the first author also at Rambam Health Care Campus)
 
-Note: page checked against the source text on 2026-10-24; statements not supported by the paper were removed or reworded.
+**Software** (checked 2026-11-20):
+- Source code: <https://github.com/PhysioMEA/PhysioMEA> — MATLAB sources (`PhysioMEA_GUI.m`, `PhysioMEABatch_GUI.m`, `Config`, `GUI` and a bundled `mhrv` folder, the toolbox behind the BRV measures), **GPL-3.0**. No tagged releases and no installer in the repository; the standalone .exe is distributed from the lab site instead.
+- Documentation: <https://bioelectric-bioenergetic-lab.net.technion.ac.il/documentation/> — a step-by-step user manual in four parts (loading and saving raw .mcd or .h5 data and selecting channels and time ranges; peak detection and biomarker parameters; 2D heatmap frames, videos and 3D views; batch BRV analysis). Separate Download, About and Novelty pages are linked from its menu.
+- Novelty page: <https://bioelectric-bioenergetic-lab.net.technion.ac.il/novelty/> — the lab's own two novelty claims, 2D biomarker analysis with heatmaps and batch BRV analysis of cardiac constructs, both "presented for the first time on PhysioMEA Platform". It names no competing tool, so it is weaker than the Discussion of the paper (§4.5), which does compare MultiElec, CardioMDA, Cardio PyMEA, Cardio2D, Axion Maestro and EMapScope.
+
+The paper's own pointer is the lab site root (Programs > PhysioMEA, p. 2); the GitHub repository is not named in the paper.
+
+**Year.** Cited here as **2026**, from the article header "Journal of Molecular and Cellular Cardiology 210 (2026) 137–149". Several places give 2025 instead: the article was available online 17 November 2025, the copyright line reads "© 2025 The Author(s)", the DOI contains `2025`, Elsevier's own Cite widget gives "2025; 210, 137-149", and the authors' GitHub README cites their paper as "(2025)". This is the ordinary Elsevier split between online-first year and issue year; the issue year is used here, as for [[wiki/papers/botti-2026-insilico.md]] and [[wiki/papers/park-2026-genotype-ml.md]].
+
+Note: page checked against the source text on 2026-10-24; statements not supported by the paper were removed or reworded. Checked claim by claim against the full text, Results included, 2026-11-19.
 
 ## Contribution
 
