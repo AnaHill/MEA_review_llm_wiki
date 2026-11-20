@@ -41,7 +41,7 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [x] Jos main.md muuttuu: aja `python -I scripts/check_abbreviations.py`
 
 ### A4. Lopputarkistukset
-- [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
+- [ ] Uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty). **Anna arvioijalle `docs/ai-review-brief.md` + `main.md`, ei muuta** — main.md on itsenäinen (koko teksti, molemmat kuvat, lähdeluettelo). Brief kertoo arvioijalle, mitä katsaus jo myöntää itsestään (ei toisteta rajoituksia), mikä palaute on hyödyllistä, DOI-vaatimuksen jokaiselle ehdotetulle lähteelle ja palautusmuodon (koko vastaus yhdessä nelibacktick-lohkossa, valmiina liitettäväksi). Liitä vastaus Claudelle: kritiikki käsitellään listana, mahdolliset lähde-ehdotukset verify-before-ingest -vaiheen kautta
 - [x] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa (nyt: väitteet "listed in a checklist for verification"); kun A2 valmis, voi vahvistaa muotoon "…was checked against that source by the author"
 - [x] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
 
@@ -61,11 +61,8 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 ## B. Julkaisu Zenodoon
 Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.org hylätty seulonnan epävarmuuden vuoksi).
 
-### B0. Ulkopuolinen itsearviointi ennen vientiä (valinnainen)
-- [ ] Kokeile kerran Open ScholarPeeriä (https://github.com/amirkiarafiei/open-scholar-peer, MIT; ScholarPeer-protokolla, arXiv 2601.22638): AI-vertaisarvioija, jonka kirjallisuushaku kattaa myös Europe PMC:n ja joka etsii puuttuvia vertailukohtia.
-  - Asenna **erilliseen kansioon**, ei tähän repoon (asennus `curl | bash` luo `.brain/`, `.venv`, `.env`, `.mcp.json` ja muuttaa `.gitignore`a). Kopioi sinne main.md tai PDF.
-  - Anna arviointikriteerit itse (Zenodolla ei ole lehden ohjeita) tai käytä jonkin lehden reviewer-ohjeita.
-  - Käsittele tulos listana: ehdotetut lähteet verify-before-ingest-vaiheen kautta, kritiikki `/grill-paper`-skillillä. Ei korvaa `/grinding`ia eikä claims-listaa (ei tarkista väitteitä lähteitä vasten).
+### B0. Ulkopuolinen itsearviointi ennen vientiä — **luovuttu 20.11.2026**
+Open ScholarPeeriä ei kokeilla. Ulkopuolinen arviointi hoidetaan A4:n toisen mallin tarkistuksella (`docs/ai-review-brief.md` + `main.md`), joka antaa tekstitason kritiikin ilman asennusta. Perustelu kirjattu lokiin 20.11.2026. Jos kattavuus alkaa epäilyttää ennen vientiä, päätös on avattavissa — mutta silloin ennen B1:tä, koska uusi lähde tarkoittaa ingestiä, uusia väitteitä ja grindausta.
 
 ### B1. Vienti (ks. docs/pdf-export-notes.md, "Revised export plan": HTML on pohja, PDF HTML:stä selaimen tulostuksella)
 - [ ] Mermaid-kaaviot (2 kpl) SVG-kuviksi mermaid-liven kautta, upotus kuvina alt-teksteineen (nyt versioimaton unpkg-CDN). **Työkalut valmiina 20.11.2026** (`docs/pdf-export-notes.md`, "Figure workflow"): `figures/*.mmd` on jo irrotettu, enää puuttuu Mermaid Live -renderöinti nimillä `figures/fig1-timeline.svg` ja `figures/fig2-morphology-pipeline.svg`; sen jälkeen `python -I scripts/figures.py --export` ja vienti tiedostosta `main-export.md`. check.py varoittaa kunnes kuvat ovat olemassa
