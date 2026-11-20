@@ -2,13 +2,13 @@
   "fig1-timeline": {
     "figure": 1,
     "caption": "Timeline of key methodological developments in cardiomyocyte MEA analysis, 2022–2026.",
-    "sha256": "d47cebe024818e2ea6d5daf8a8ce3a6ed356e00e8e5c9235edc48b6cace513e0",
+    "sha256": "be3a398326d6f6aea81caad887e5224c14f826f4a1f23dbc8ef5d9c6e412c647",
     "image": "fig1-timeline.svg"
   },
   "fig2-morphology-pipeline": {
     "figure": 2,
     "caption": "Schematic of a morphology-aware field potential analysis pipeline. Waveform classification determines the analysis branch applied before FPD measurement; rate correction is applied after. The signal-inversion branch is the author's own proposal (Mäki, 2023) and has not been independently validated.",
-    "sha256": "b4e067b8371d7aaa7075eaf10e7f7fe3a8548c7dba2fe22b3a089e74cc835686",
+    "sha256": "6945e62895e867f06c23641ea0263423f2dd246e5f1680df9fdc2e542e180ef5",
     "image": "fig2-morphology-pipeline.svg"
   }
 }
