@@ -57,9 +57,13 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
   - [ ] toisiko Obsidianin Graph View - kuva lähteiden riippuvuuksista lisäarvoa? 
   - [ ] entä markmap esitys? Kuva postauksen ideoissa
 
-
 ## B. Julkaisu Zenodoon
 Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.org hylätty seulonnan epävarmuuden vuoksi).
+
+- [ ] Seuraava vaihe on `docs/pdf-export-notes.md`:n kuusivaiheinen lista: 
+  - [ ] Renderöi `figures/fig1-timeline.mmd` ja `figures/fig2-morphology-pipeline.mmd` Mermaid Livessä SVG:ksi. Katso kuvan 2 solmut K ja L: niiden tekstit pitenivät tänään, ja laatikot voivat levitä.
+  - [ ] aja `python -I scripts/export.py --write` 
+  - [ ] tee PDF selaimesta, taustagrafiikat päällä ja ylä- ja alatunnisteet pois.
 
 ### B0. Ulkopuolinen itsearviointi ennen vientiä — **luovuttu 20.11.2026**
 Open ScholarPeeriä ei kokeilla. Ulkopuolinen arviointi hoidetaan A4:n toisen mallin tarkistuksella (`docs/ai-review-brief.md` + `main.md`), joka antaa tekstitason kritiikin ilman asennusta. Perustelu kirjattu lokiin 20.11.2026. Jos kattavuus alkaa epäilyttää ennen vientiä, päätös on avattavissa — mutta silloin ennen B1:tä, koska uusi lähde tarkoittaa ingestiä, uusia väitteitä ja grindausta.

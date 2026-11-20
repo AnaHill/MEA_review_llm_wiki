@@ -1139,3 +1139,27 @@ Found during the Kim ingest the same day: the source had no pattern in the `SOUR
 Fixed in the script rather than in AGENTS.md, following the rule that a mechanical requirement belongs in the harness. `resolve_sources` now builds the pattern table from the file itself: a `## ` section not in `SOURCES` (the register section excepted) gets `\bSurname\b` derived from its title, and a note says which pattern was derived and when to replace it with an explicit entry. Where a surname heads two sections — the Lee, Li and Park pairs — the script refuses to guess a year, collects nothing and says so, which is the one case that still needs a hand-written pattern. Both branches were tested by removing the Kim entry and by appending a second Kim section.
 
 The explicit `"Kim"` entry was kept: derivation is a safety net, not the preferred state. AGENTS.md ("Claims file") now says a new source needs no script edit, when an explicit entry is still required, and that the Notes of a `--write` run are the place where a source that collected nothing shows up.
+
+## [2026-11-20] lint | a highlight left asserting what the body no longer claims
+
+Checking whether `main.md` was ready for the figure and export step turned up one real inconsistency, caused by the morning's own edit. Highlight (2) read "No validated hiPSC-CM rate correction found; Fridericia can mislead at extreme rates", while the FPDc section had been reworded a few hours earlier, after AI review 1, to say that whether the formula under- or over-corrects at particular rates has not been tested in the studies examined. The highlight therefore asserted what the body had just withdrawn.
+
+It now reads "in one study the correction reversed the direction of an FPD change", which is the doxorubicin case of Lee et al. (2026) and already a checked claim. Register item 0 (2) records the old wording and why it went.
+
+Worth noting as a pattern rather than a one-off: the Highlights and the Abstract restate the gaps in their own words, and neither `check.py` nor `claim_quotes.py` can see that a summary has drifted from the section it summarises — the register is the only place the link is written down. After rewording a claim in the body, read register item 0 and the Abstract before calling the change done.
+
+## [2026-11-20] draft | Highlights: the one gap that had no highlight
+
+Reading the four gaps against the six highlights showed that gap 3 was the only one not summarised: rate correction, maturation and morphology each had a line, the transfer of 2D-calibrated analysis to 3D and spatially resolved recordings had none. Added as "2D-calibrated analysis is carried over to 3D tissues and to high-density arrays, validated in neither", which follows the two-setting split the gap was given earlier the same day. Register item 0 now lists seven highlights; the machine-learning and signal-separation lines are renumbered (5)→(6) and (6)→(7), with the old numbers noted so the history stays readable.
+
+Figure 1 was checked at the same time and left alone. Nine post-2022 sources are not on it (Altrocchi, Clements, Hu, Karami, Kim, Li 2024, Lin, Park 2026, Vuorenpää), so it is a selection of 19 entries, not a chronology of the corpus. The caption does not say so, which is the open question left for the researcher.
+
+## [2026-11-20] draft | Figure 1 caption states what the timeline is a selection of
+
+Decision by the researcher: fix the caption, not the figure. The old caption, "Timeline of key methodological developments in cardiomyocyte MEA analysis, 2022–2026", promised more than the figure delivers — nine post-2022 sources carry no entry (Altrocchi, Clements, Hu, Karami, Kim, Li 2024, Lin, Park 2026, Vuorenpää) against 19 entries on it. The caption now says the entries are a selection chosen to show the range, names the three kinds of source that are left out (reviews, the non-peer-reviewed acceptance standard, studies whose contribution is to the recording rather than the analysis), and states that the figure is a chronology neither of the field nor of the reference list.
+
+This settles two asymmetries found while checking: Pramudito et al. (2026) is on the figure and Park et al. (2026) is not, though both are 2026 machine-learning risk classifiers; Lee et al. (2026) is on it and Hu et al. (2026) is not, though both pair transparent electrodes with optical recording. Under the old caption those looked like omissions; under the new one the figure never claims to be complete. Adding Park et al. (2026) was considered and declined — the 2026 row already carries five entries and has to stay legible in the PDF.
+
+Register item 36 records the caption. The diagram itself is unchanged, so `figures.py` reports no drift and the `.mmd` files are still in step; the caption sits outside the fenced block and reaches the export as the image's alt text.
+
+Also fixed here: the item added this morning for "recording geometry has advanced further than the analysis conventions" had been numbered 27, which was already the impedance item. It is now item 35, with the collision noted. The register has 37 items and no duplicate numbers.

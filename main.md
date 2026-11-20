@@ -14,9 +14,10 @@ Multielectrode array (MEA) recordings of extracellular field potentials (FPs) fr
 # Highlights
 
 - MEA tools define FPD differently; their FPD values are not directly comparable
-- No validated hiPSC-CM rate correction found; Fridericia can mislead at extreme rates
+- No validated hiPSC-CM rate correction found; in one study the correction reversed the direction of an FPD change
 - No validated MEA-derived reference values for hiPSC-CM maturation were found
 - Waveform morphology is handled case by case, without shared criteria
+- 2D-calibrated analysis is carried over to 3D tissues and to high-density arrays, validated in neither
 - Without these, machine learning may learn analysis differences rather than biology
 - Raw MEA signals mix cell, tissue and device; separating them is proposed as a hypothesis
 
@@ -55,7 +56,7 @@ This is a narrative review of methodological developments in cardiomyocyte MEA a
 
 # Literature review
 
-*Figure 1. Timeline of key methodological developments in cardiomyocyte MEA analysis, 2022–2026.*
+*Figure 1. Timeline of methodological developments in cardiomyocyte MEA analysis, 2022–2026. The entries are a selection from the studies examined, chosen to show the range of developments rather than to list them: about a third of the post-2022 sources cited in this review do not appear, among them reviews, a non-peer-reviewed acceptance standard, and studies whose contribution is to the recording rather than to the analysis. The figure is therefore not a chronology of the field, nor of the reference list.*
 
 ```mermaid
 timeline
