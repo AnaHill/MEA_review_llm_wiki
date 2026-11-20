@@ -1,0 +1,19 @@
+flowchart TD
+    A[Raw MEA recording] --> B[Beat detection and segmentation]
+    B --> C[Beat averaging to reduce noise]
+    C --> D{Waveform morphology\nclassification}
+    D -->|Non-pacemaker\nhigh peak + trough + repolarization| E[Standard fiducial analysis]
+    D -->|Pacemaker-like\nno high peak| F[Pacemaker fiducial analysis]
+    D -->|Only high peak\nno depolarization trough| G[Signal inversion\nthen pacemaker analysis]
+    D -->|Noise / unclassifiable| H[Electrode exclusion]
+    E --> I[FPD measurement]
+    F --> I
+    G --> I
+    I --> J{FPD end convention}
+    J -->|T-wave peak| K[APD90 surrogate if biphasic T wave\nErnault et al., 2024]
+    J -->|Baseline return| L[Full repolarization\nMäki, 2023]
+    J -->|T-wave endpoint\ntrapezoid area| P[End of the T wave\nDunham et al., 2022]
+    K --> M[Rate correction — Fridericia]
+    L --> M
+    P --> M
+    M --> N[Pharmacological and safety interpretation]

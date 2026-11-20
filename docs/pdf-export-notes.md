@@ -23,7 +23,7 @@ The checklist below was written for a generic Markdown-to-PDF route; items about
 
 ## Elements in main.md that need handling
 
-- **Mermaid diagrams (2).** Figure 1 (timeline) and Figure 2 (flowchart) are fenced ```mermaid blocks. Pandoc and most Markdown-to-PDF tools print them as code. Render them to SVG or PNG first (for example with mermaid-cli) and replace the blocks with images, keeping the captions that sit above them as italic lines.
+- **Mermaid diagrams (2). Solved 2026-11-20, see "Figure workflow" below.** Figure 1 (timeline) and Figure 2 (flowchart) are fenced ```mermaid blocks. Pandoc and most Markdown-to-PDF tools print them as code. Render them to SVG or PNG first (for example with mermaid-cli) and replace the blocks with images, keeping the captions that sit above them as italic lines.
 - **Mermaid labels with line breaks.** Figure 2 uses literal `\n` inside node labels. This is correct for Mermaid, but check the rendered image for overlong boxes.
 - **Inline LaTeX (1).** The Fridericia formula `$FPDcF = FPD/RR^{0.33}$` needs math support in the converter. If the tool has none, the dollar signs appear as plain text.
 - **Tables (2).** Table 1 has long cell text in the last column and Table 2 has five columns; both can overflow the page width or split badly. Use landscape pages or a smaller table font, or allow column wrapping, and check that the header row repeats on page breaks.
@@ -60,3 +60,15 @@ The Declarations point to https://github.com/AnaHill/MEA_review_llm_wiki for the
 - [ ] After the Zenodo deposit is published, add its link to the start of `README.md` (the ToDo item "Kun julkaistu Zenodossa").
 - [x] Licence: `LICENSE` (CC BY 4.0 for the written content), `scripts/LICENSE` (MIT for the code) and a README section were added on 2026-10-24.
 - [ ] Check that the non-open-access PDFs (`raw/pramudito-2026-ensemble.pdf`, `raw/clements-2025-aims-poster.pdf`) are not in the pushed history: `git log --all -- raw/pramudito-2026-ensemble.pdf raw/clements-2025-aims-poster.pdf` printed nothing on 2026-10-24.
+
+## Figure workflow (added 2026-11-20)
+
+The diagrams stay in `main.md` as ```mermaid blocks, because `scripts/claim_quotes.py` reads those blocks as sentences of the draft: 18 Timeline claims and the Figure 2 claims in `docs/claims-by-source.md` are quoted from inside them, and replacing a block with an image reference would leave each of them with no sentence to point at. The export therefore works from a generated copy instead of from `main.md` itself.
+
+1. `python -I scripts/figures.py --write` copies each block to `figures/<slug>.mmd` and records its SHA-256 in `figures/figures.json`. These `.mmd` files are generated; edit the block in `main.md` and run the command again, never the other way round.
+2. Open the `.mmd` file in [Mermaid Live](https://mermaid.live), check the rendering and export **SVG** to `figures/<slug>.svg`, keeping the file name. Figure 2 uses a literal `\n` inside node labels: recent Mermaid versions may print it instead of breaking the line, so check the boxes before exporting. Do not change the `\n` in `main.md` without checking `claim_quotes.py`, which strips it when it reads the block.
+3. `python -I scripts/figures.py --export` writes `main-export.md`, a copy of the paper in which each block is replaced by `![caption](figures/<slug>.svg)`, alt text taken from the figure caption. The file is git-ignored; it is a build input, not a second draft.
+4. Build the HTML and then the PDF from `main-export.md`. This removes two problems found in the test export: the HTML no longer loads Mermaid from an unpinned `unpkg.com` URL and no longer draws the diagrams in the reader's browser, so a reader offline sees them; and the PDF cannot split a diagram across pages the way Figure 2 was split over pages 9–11 with an empty grey box.
+5. `python -I scripts/check.py` warns while a rendered image is missing, and warns again if a diagram in `main.md` changes after its image was recorded. Both warnings are expected until step 2 is done for the first time.
+
+A rendered image that no longer matches its diagram is the kind of error nobody notices by reading, which is why the hash is checked rather than trusted.

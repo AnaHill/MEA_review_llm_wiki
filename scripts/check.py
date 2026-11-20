@@ -209,6 +209,46 @@ for i, line in enumerate(read(WIKI / "log.md").splitlines(), 1):
         if not m or m.group(1) not in LOG_TYPES:
             report("WARN", f"wiki/log.md:{i}", f"non-standard log header: {line[:60]}")
 
+# --- figures: the rendered images against their Mermaid source -------------------------
+# The ```mermaid blocks in main.md are the source of truth (claim_quotes.py quotes from them).
+# scripts/figures.py copies each to figures/*.mmd and records its hash; a stale image is the kind
+# of error nobody notices, so the hash is compared here. This repeats the fence scan of figures.py
+# in a few lines; keep the two in step if the fence or caption format changes.
+FIG_DIR = ROOT / "figures"
+manifest_path = FIG_DIR / "figures.json"
+if manifest_path.exists():
+    import hashlib
+    import json
+
+    manifest = json.loads(read(manifest_path))
+    by_caption, main_lines = {}, read(ROOT / "main.md").split("\n")
+    i = 0
+    while i < len(main_lines):
+        if main_lines[i].strip().startswith("```mermaid"):
+            start = i
+            i += 1
+            while i < len(main_lines) and not main_lines[i].strip().startswith("```"):
+                i += 1
+            body = "\n".join(main_lines[start + 1:i])
+            number = None
+            for back in range(start - 1, max(start - 6, -1), -1):
+                m = re.match(r"^\*Figure (\d+)\.", main_lines[back].strip())
+                if m:
+                    number = int(m.group(1))
+                    break
+            by_caption[number] = hashlib.sha256(body.encode("utf-8")).hexdigest()
+        i += 1
+    for slug, entry in manifest.items():
+        image = FIG_DIR / entry.get("image", slug + ".svg")
+        current = by_caption.get(entry.get("figure"))
+        if current is None:
+            report("WARN", f"figures/{slug}", "no ```mermaid block in main.md matches this figure number")
+        elif current != entry.get("sha256"):
+            report("WARN", f"figures/{slug}", "the diagram in main.md changed since this image was recorded; "
+                                              "re-render it and run python -I scripts/figures.py --write")
+        if not image.exists():
+            report("WARN", rel(image), "rendered image missing; export it from figures/%s.mmd" % slug)
+
 # --- register of own inferences: the Support vocabulary --------------------------------
 # Every **Support:** line of docs/claims-by-source.md names where a statement's warrant comes
 # from, with a value from the fixed list defined in that file's reading guide. The values grew
