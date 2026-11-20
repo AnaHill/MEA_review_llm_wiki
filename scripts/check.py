@@ -209,6 +209,26 @@ for i, line in enumerate(read(WIKI / "log.md").splitlines(), 1):
         if not m or m.group(1) not in LOG_TYPES:
             report("WARN", f"wiki/log.md:{i}", f"non-standard log header: {line[:60]}")
 
+# --- register of own inferences: the Support vocabulary --------------------------------
+# Every **Support:** line of docs/claims-by-source.md names where a statement's warrant comes
+# from, with a value from the fixed list defined in that file's reading guide. The values grew
+# past the guide once before, so the list is checked here; extend it in the guide, then here.
+SUPPORT_VALUES = {"sourced", "thin", "inference", "opinion", "none", "inherited"}
+CLAIMS = ROOT / "docs" / "claims-by-source.md"
+if CLAIMS.exists():
+    for n, line in enumerate(read(CLAIMS).splitlines(), 1):
+        m = re.match(r"\s*- \*\*Support:\*\* (.+)", line)
+        if not m:
+            continue
+        used = set(re.findall(r"`([a-z]+)`", m.group(1)))
+        unknown = used - SUPPORT_VALUES
+        if unknown:
+            report("WARN", f"{rel(CLAIMS)}:{n}",
+                   f"support value(s) outside the vocabulary: {', '.join(sorted(unknown))}")
+        elif not used:
+            report("WARN", f"{rel(CLAIMS)}:{n}",
+                   "no support value; use one of " + ", ".join(sorted(SUPPORT_VALUES)))
+
 # --- accidental Obsidian tags ----------------------------------------------------------
 # A '#word' in prose is read as a tag in Obsidian. Tags belong in the front matter only.
 # Always escape the hash with a backslash (\#word); quotes do not count as an escape.
