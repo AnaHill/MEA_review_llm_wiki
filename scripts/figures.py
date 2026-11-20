@@ -10,15 +10,12 @@ outside `main.md`:
   * `--write` copies each block to `figures/<slug>.mmd`, for uploading to Mermaid Live, and records
     its SHA-256 in `figures/figures.json`. `check.py` compares that hash with the current block and
     warns when a rendered image is older than the diagram it was made from.
-  * `--export` writes `main-export.md`, a copy of `main.md` in which each block is replaced by an
-    image reference with alt text taken from the figure caption. Build the HTML and the PDF from
-    that copy: the diagrams are then ordinary images, so a reader offline sees them, nothing is
-    drawn at view time from an unpinned CDN, and the PDF cannot split a diagram across pages.
+`scripts/export.py` reads that manifest when it builds `main-export.md`, the copy of the paper in
+which the diagrams are replaced by the rendered images.
 
 Usage (run from the repository root):
     python -I scripts/figures.py             dry run: report the figures found and their state
     python -I scripts/figures.py --write     write figures/*.mmd and figures/figures.json
-    python -I scripts/figures.py --export    write main-export.md with image references
 
 The .mmd files are generated, like the `- >` lines of the claims file: edit the block in `main.md`
 and run `--write` again, never the other way round.
@@ -78,7 +75,6 @@ def digest(body):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--write", action="store_true", help="write figures/*.mmd and figures/figures.json")
-    parser.add_argument("--export", action="store_true", help="write main-export.md with image references")
     args = parser.parse_args()
 
     lines = MAIN.read_text(encoding="utf-8").split("\n")
@@ -112,27 +108,6 @@ def main():
         MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
                             encoding="utf-8", newline="\n")
         print(f"\nwrote {len(blocks)} .mmd file(s) and {MANIFEST.relative_to(ROOT).as_posix()}")
-
-    if args.export:
-        out, used = [], 0
-        replace = {start: (slug, caption, end) for _, slug, caption, _, start, end in blocks}
-        i = 0
-        while i < len(lines):
-            if i in replace:
-                slug, caption, end = replace[i]
-                alt = caption.replace("]", ")").replace("[", "(") or slug
-                out.append(f"![{alt}](figures/{slug}{IMAGE_SUFFIX})")
-                used += 1
-                i = end + 1
-                continue
-            out.append(lines[i])
-            i += 1
-        target = ROOT / "main-export.md"
-        target.write_text("\n".join(out), encoding="utf-8", newline="\n")
-        print(f"\nwrote {target.relative_to(ROOT).as_posix()} with {used} diagram(s) replaced by images")
-        missing = [s for _, s, _, _, _, _ in blocks if not (FIGURES / (s + IMAGE_SUFFIX)).exists()]
-        if missing:
-            print("    the image file does not exist yet for: " + ", ".join(missing))
 
 
 main()

@@ -72,3 +72,26 @@ The diagrams stay in `main.md` as ```mermaid blocks, because `scripts/claim_quot
 5. `python -I scripts/check.py` warns while a rendered image is missing, and warns again if a diagram in `main.md` changes after its image was recorded. Both warnings are expected until step 2 is done for the first time.
 
 A rendered image that no longer matches its diagram is the kind of error nobody notices by reading, which is why the hash is checked rather than trusted.
+
+## Build checklist (added 2026-11-20)
+
+The build copy is generated, so the sequence is short. Run it from the repository root.
+
+1. `python -I scripts/figures.py --write` — only needed if a diagram in `main.md` changed; it refreshes `figures/*.mmd` and the hashes.
+2. Render `figures/fig1-timeline.svg` and `figures/fig2-morphology-pipeline.svg` in Mermaid Live if they are missing or if `check.py` says the diagram changed.
+3. `python -I scripts/export.py --write` — writes `main-export.md`: diagrams replaced by the rendered images with alt text, a visible title block built from the front matter, 31 bare URLs turned into links, HTML comments stripped. Add `--date 2026-11-25` to stamp a date other than today.
+4. Convert `main-export.md` to HTML with the usual tool. Keep the output small: the test export was 1.5 MB because the editor's stylesheet, KaTeX fonts and dark-theme logic were embedded.
+5. Attach `docs/print.css` to the HTML, as a `<link>` next to the file or pasted into a `<style>` block in `<head>`.
+6. Print to PDF from Chrome or Edge, **with "Headers and footers" unticked** in the print dialog. No CSS removes the browser's running header; that option is the only way.
+
+Checks on the finished files, in this order because each one has failed before:
+
+- [ ] Open the HTML **with the network disabled**: both figures appear. This is what the old Mermaid-from-CDN build failed.
+- [ ] Title, author and date are visible at the top, and the browser tab shows the title.
+- [ ] Click a DOI in the reference list and the CoEBoC link in the Declarations.
+- [ ] View source: no `<!--`, no YAML printed as text.
+- [ ] In the PDF, each figure sits on one page with its caption, Table 1 and Table 2 are readable and not cut off at the right margin, and the Fridericia formula renders as a formula.
+- [ ] Search the PDF for `\#` and for stray `*`: the escaped hash must print as \#CM01 without its backslash, and no asterisk may show as a character.
+- [ ] Page through once for a heading left alone at the foot of a page.
+
+`main-export.md` is git-ignored. It is a build artefact; fix anything wrong in `main.md` and run step 3 again.

@@ -66,11 +66,8 @@ Open ScholarPeeriä ei kokeilla. Ulkopuolinen arviointi hoidetaan A4:n toisen ma
 
 ### B1. Vienti (ks. docs/pdf-export-notes.md, "Revised export plan": HTML on pohja, PDF HTML:stä selaimen tulostuksella)
 - [ ] Mermaid-kaaviot (2 kpl) SVG-kuviksi mermaid-liven kautta, upotus kuvina alt-teksteineen (nyt versioimaton unpkg-CDN). **Työkalut valmiina 20.11.2026** (`docs/pdf-export-notes.md`, "Figure workflow"): `figures/*.mmd` on jo irrotettu, enää puuttuu Mermaid Live -renderöinti nimillä `figures/fig1-timeline.svg` ja `figures/fig2-morphology-pipeline.svg`; sen jälkeen `python -I scripts/figures.py --export` ja vienti tiedostosta `main-export.md`. check.py varoittaa kunnes kuvat ovat olemassa
-- [ ] HTML: näkyvä otsikkolohko (otsikko, tekijä, affiliaatio, päivä) ja `<title>`; front matter ei näy nyt
-- [ ] HTML: DOI:t ja muut URL:t klikattaviksi (main.md:ssä noin 28 URL:ia)
-- [ ] varmista, että tekijä löytyy alusta
-- [ ] Poista HTML-kommentit main.md:stä; varmista `view source` -tarkistuksella
-- [ ] PDF selaimella: `break-inside: avoid` kuville ja taulukoille, ei ylätunnisteita; tarkista kuvat, taulukot, kaava, ei `<!--`, `\#` tai tähtiä tekstissä
+- [x] HTML: näkyvä otsikkolohko, URL:ien linkitys ja HTML-kommenttien poisto — **koneellistettu 20.11.2026** `scripts/export.py --write`:iin (otsikkolohko front matterista, 31 URL:ia linkitetty, kommentit pois; main.md pysyy siistinä). main.md:ssä ei ollut enää yhtään HTML-kommenttia
+- [ ] Rakennus ja tarkistukset: `docs/pdf-export-notes.md`, "Build checklist" (6 askelta + tarkistuslista). Print-CSS valmiina: `docs/print.css` (`break-inside: avoid` kuville ja taulukoille, hanging indent lähdeluetteloon, taulukot 8,5 pt). **Ylätunnisteita ei poisteta CSS:llä** — selaimen tulostusvalinnasta "Headers and footers" pois
 
 ### B2. Zenodo-tietue
 - [ ] Oma tietue omalla DOI:lla, tyyppi Publication → Preprint (ei uusi versio Mäki 2023 -tietueesta)
