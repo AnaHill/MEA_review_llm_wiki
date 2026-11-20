@@ -44,8 +44,6 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [ ] Valinnainen: uusi tarkistus toisella mallilla (esim. OpenAI; Geminillä tehty)
 - [x] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa (nyt: väitteet "listed in a checklist for verification"); kun A2 valmis, voi vahvistaa muotoon "…was checked against that source by the author"
 - [x] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
-- [x] (PÄÄTÖS: ei tehdä, logimerkintä 2026-11-20) Pohdi, kannattaako tehdä dokumentoitu haku aukolle (i), hiPSC-CM-kohtainen FPD:n taajuuskorjaus (lint 3.11., kohta 13). Esim. PubMed: "iPSC cardiomyocyte" + "rate correction" / "FPDc" / "Fridericia" / "Bazett" + "field potential". Tulos joko tukee Highlight 2:ta ("No validated … found") tai muuttaa sitä. Mallina `docs/maturation-mea-search.md`. **Päätös: hakua ei tehdä**; perustelu kirjattu lokiin 20.11.2026 (väitteen "in the studies examined" -rajaus ei vaadi hakua; haku tarvitaan vasta jos väitettä laajennetaan)
-- [x] (PÄÄTÖS: ei tehdä, logimerkintä 2026-11-20) Matalampi prioriteetti: vastaava haku aukolle (ii), morfologian luokittelukriteerit (lint 3.11., kohta 16). "In the studies examined" -rajaus suojaa nykyistä väitettä, joten haku tarvitaan vain, jos väitettä halutaan laajentaa
 
 #### Valinnaisia muualle kuin main.md tiedostoon
 - [ ] Wiki kuntoon lopuksi: 
