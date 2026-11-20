@@ -652,7 +652,15 @@ Pointers: (2) abstract and p. 2–3 ("45 measures, including time domain, freque
 
 These are statements in `main.md` that no single reference supports, generalisations from one or two studies, and the author's hypotheses. `main.md` does not mark them in the text, so this list is their only record; every new unsourced inference in `main.md` needs an item here. Tick `[x]` when you have decided that you stand behind the wording.
 
-Reading guide for each item: **bold** = the item's topic and where it sits in `main.md`; "quoted" = the wording in `main.md`; **Based on** = the sources behind it; **Support** = my reading, one of `none` (no source supports it), `thin` (one or two studies) or `inference` (a reasoned step from sources).
+Reading guide for each item: **bold** = the item's topic and where it sits in `main.md`; "quoted" = the wording in `main.md`; **Based on** = the sources behind it; **Origin** = whose idea it was and when, where that is worth recording; **Support** = my reading of where the statement's warrant comes from, one of:
+
+- `sourced` — a source states this directly, and the evidence behind it carries the wording used.
+- `thin` — a source states it, but on one or two studies, so the risk is that it does not generalise.
+- `inference` — no source states it, but it follows by a reasoned step from what sources do state. The risk is in the step, not in the sources: the item can fail although every source is right.
+- `opinion` — a judgement or a preference of the author, not a claim about the world that a source could settle.
+- `none` — no source supports it at all: a hypothesis or an idea of the author's own, and `main.md` says so where it appears.
+
+These are not points on one scale. `thin` is sourced but narrow; `inference` is not sourced as such but derived; they fail in different ways and need different fixes, a better study for the first and a better argument for the second. Where parts of one item have different support, each part is named ("`sourced` for the values; the comparison is ours"). An absence claim ("no study examined here ...") is only as strong as the search behind it, so its Support names that search instead of a value. Item 0 is the one exception to all of this: the highlights inherit the support of the items they summarise.
 
 - [x] **0. [Highlights]** the six highlights (added 2026-11-01) are uncited summaries
   - **Support:** as for the register items named
@@ -689,7 +697,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Text:** "borrowed from clinical electrocardiography"
   - **Text:** a cell-type–specific formula from multi-laboratory data "would make FPDc a more reliable pharmacological endpoint"
   - **Based on:** Blinova, Clements, Guerrelli, Altrocchi (vehicle drift)
-  - **Support:** `thin` for the gap; the recommendation is an opinion
+  - **Support:** `thin` for the gap; the recommendation is an `opinion`
 - [x] **4. [Abstract, Conclusion]** Gap 2: no shared morphology criteria
   - **Text:** shared, validated morphology criteria "were not identified"
   - **Text:** morphology handling is case by case, whereas well-acceptance criteria exist
@@ -706,7 +714,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Text:** "even a partial reference would improve comparability between studies and support the translation of MEA findings to adult myocardium"
   - **Text:** the pieces "exist separately"
   - **Based on:** the documented search of 30 October 2026 (`docs/maturation-mea-search.md`), Fetterman, Correia, Scheurer, Li, Hayakawa, Lin, Clements (QC, not staging)
-  - **Support:** absence claim as strong as that search; the benefit is an opinion
+  - **Support:** absence claim as strong as that search (`docs/maturation-mea-search.md`); the benefit is an `opinion`
 - [x] **7. [Abstract, Conclusion]** data-driven methods may learn analysis differences
   - **Text:** "Until these gaps are addressed, data-driven methods built on MEA parameters may learn differences in analysis methods rather than differences in the cells"
   - **Text:** "without them, models built on MEA parameters may reproduce the inconsistencies between studies instead of revealing biological effects"
@@ -800,7 +808,7 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Text:** machine learning "may become a more integral layer of cardiomyocyte MEA workflows"
   - **Update 2026-11-13:** reworded by the researcher to a stronger opinion: "In the author's view, machine learning and other AI methods are likely to become an integral layer of cardiomyocyte MEA analysis workflows", followed by the author's expectation for AI-assisted fusion and signal separation (register items 24 and 26)
   - **Based on:** the studies named
-  - **Support:** supported for the list; the outlook is an opinion
+  - **Support:** `sourced` for the list; the outlook is an `opinion`
 - [x] **24. [Outlook]** sensor fusion
   - **Text:** "In most of these studies the modalities are analysed separately or side by side, and the one joint analysis is a small proof of concept outside hiPSC-CMs"
   - **Text:** interpreting them jointly with AI support "could give a more complete picture of a preparation than any single signal"
@@ -846,22 +854,22 @@ Reading guide for each item: **bold** = the item's topic and where it sits in `m
   - **Based on:** Ernault (8), Lee 2024 (9), Weiser-Bitoun (8), Dunham (8), Mäki (16); the "none compared" statement matches the Fiducial section and Table 2 caption
   - **Support:** `opinion`, with the sourced parts restating checked claims
   - **Update 2026-11-13:** an added sentence on early afterdepolarizations (citing Mäki, 2023) was replaced by a neutral one ("The last part of repolarization, between APD90 and the return to baseline, would then be measured as well, and changes that appear only there would not be missed"), because only phase-3 EADs fall into that window; see wiki/critical-assessment-maki-claims.md, Claim 2
-- [ ] **31. [FPDc]** the two Park studies as one body of evidence
+- [x] **31. [FPDc]** the two Park studies as one body of evidence
   - **Text:** Park et al. (2026) "shares its group, platform and two cell lines with Park et al. (2025), so the two are better read as one body of evidence than as independent replication" ("apparently a long QT line" became "two cell lines" 2026-11-15, after the supplement showed the normal line CMC-011 in both studies)
   - **Based on:** the two papers themselves (same corresponding authors, Axion MEA, a long QT line of the same name and gene); neither paper says this
   - **Note:** added 2026-11-15 during the grinding of the two studies. The sentence that followed it, "so their comparison with ventricular-like normal lines is confounded by cell identity", was removed the same day, because the authors test that explanation with marker expression and reject it
   - **Support:** `inference`
-- [ ] **32. [FPDc]** the unnamed correction of Park et al. (2025) is probably Fridericia
+- [x] **32. [FPDc]** the unnamed correction of Park et al. (2025) is probably Fridericia
   - **Text:** Park et al. (2025) "report corrected FPD without naming it, though they use the same vendor software as studies that name Fridericia"
   - **Based on:** Li et al. (2025), which names Fridericia for the same Axion Cardiac Analysis Tool; Altrocchi et al. (2023) and Park et al. (2026), which use the same vendor platform and name Fridericia; Clements et al. (2025), the vendor's own poster, which ties its FPDc criterion to Fridericia
   - **Note:** added 2026-11-15 at the researcher's request. The text stops short of saying which formula Park et al. (2025) used, because the paper does not say; the clause only points at the vendor software. The paper is also an example of the review's own point that analysis definitions are not always reported
   - **Support:** `inference`
-- [ ] **33. [Maturation]** action potential thresholds can confound subtype with disease
+- [x] **33. [Maturation]** action potential thresholds can confound subtype with disease
   - **Text:** "Such classifications rest on action potential thresholds, so a disease phenotype that shortens the action potential can shift cells into the atrial-like class"
   - **Based on:** Park et al. (2026), whose subtype criteria separate ventricular from atrial by APD80 (≥200 against ≤200 ms) and by the APD20-30/APD70-80 ratio, and whose two Brugada lines, with APD80 of 119 and 94 ms and a lost plateau, were classified almost entirely atrial-like; the authors themselves attribute that to the disease rather than to atrial differentiation
   - **Note:** added 2026-11-15. The first half is sourced, since the criteria are stated in the Supplementary Methods; the consequence is the author's generalisation and no source states it
   - **Support:** `inference`
-- [ ] **34. [Outlook]** the machine-learning studies were trained on small datasets
+- [x] **34. [Outlook]** the machine-learning studies were trained on small datasets
   - **Text:** "A further caution is that machine-learning classifiers in the studies examined were trained on small datasets (Scheurer et al., 2025; Park et al., 2026; Pramudito et al., 2026)"
   - **Based on:** Scheurer et al. (2025), whose authors call it "a relatively small data set of 230 videos", and Pramudito et al. (2026), whose authors write of "the small-test-set conditions of this study"; for Park et al. (2026) it is the review's own description of 26 drugs split 11 for training and 15 for testing
   - **Note:** added 2026-11-15 after the researcher asked what each paper actually says. Two of the three call their own datasets small; Park et al. (2026) say only that "AI analytics still heavily rely on the quantity and quality of data" and ask for validation against real-world clinical datasets, which is not the same statement

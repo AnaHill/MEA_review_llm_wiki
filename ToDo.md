@@ -20,8 +20,8 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 
 **Järjestys (rasti kun lähde valmis):**
 - [x] 1. Altrocchi: vain (6) vertailuliuottimen ajelehtiminen (Table 2) jäljellä
-- [ ] 2. Eniten korjatut (jäljellä): Matsuda, Maurissen, Park 2025 (kaikki tarkistettu 24.10. vain osittain)
-- [ ] 3. Uusimmat (jäljellä): Vuorenpää 2023, Ryynänen 2018 (kummankin kuvat katsomatta)
+- [x] 2. Eniten korjatut (jäljellä): Matsuda, Maurissen, Park 2025 (kaikki tarkistettu 24.10. vain osittain)
+- [x] 3. Uusimmat (jäljellä): Vuorenpää 2023, Ryynänen 2018 (kummankin kuvat katsomatta)
 - [ ] 4. Loput (jäljellä): Park 2026, Pramudito, Weiser-Bitoun
 - [x] 5. Omien päätelmien rekisteri (claims-tiedoston viimeinen osio): kaikki kohdat hyväksytty 14.11. Jos uusia omia päätelmiä lisätään, käy ne läpi samalla tavalla
 
