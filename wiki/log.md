@@ -1322,3 +1322,17 @@ The author field now reads "Antti-Juhana Mäki, D.Sc. (Tech.), Independent resea
 The reasoning for having both is that they do different work. The byline tells a reader of a single-author, non-peer-reviewed preprint that the author is trained in the field, where "Independent researcher" alone can read as no background at all. The ORCID is the machine-readable half: it ties this preprint to the rest of the author's record and is what the Zenodo deposit will ask for.
 
 Two small things checked rather than assumed: `check_abbreviations.py` flagged ORCID, which is the name of a registry and not an abbreviation to spell out, so it went into `IGNORE` beside PubMed and MEDLINE; and `export.py` was run to confirm the bare URL becomes a link in `main-export.md` without swallowing the sentence period.
+
+## [2026-11-21] lint | the claims file stops storing main.md line numbers
+
+The researcher noticed that every quote line in `docs/claims-by-source.md` ends with `— main.md:NNN`, so any structural edit renumbers all of them and the diff hides the one change that matters. Measured before deciding: the staged diff at that moment was 246 changed lines, of which 246 differed only in the number and **none** in content; across the twelve commits that touched the file, 1152 of 1261 changed lines were line numbers alone, 91 %. Structural edits produced 123–256 noise lines with 0–4 real ones, while content edits diffed cleanly.
+
+That is not only noise, it is why a defect got past review this week: the highlight that kept claiming what the body had withdrawn was found by reading, not from the diff it should have stood out in.
+
+The quotes now carry no line number. `quote_lines()` returns `(line, number)` pairs — the line is stored, the number travels alongside so the dry run can print it beside each quote. The jump-to-line workflow survives where it is useful, while the git history stops carrying data that is stale the moment a paragraph is added. Same principle as `main-export.md` being generated and ignored.
+
+Four options were weighed. Dropping the pointer entirely and keeping it in the tool's output were the same change to the file, so they merged. A stable locator (`— Fiducial §3`) still churns within a section and repeats the tag the claim line already carries. A git-level fix was rejected on inspection: `.gitattributes` with a `textconv` driver needs local `git config` that does not travel with a clone, which is wrong for a template repo, and `git diff -I` would hide genuinely changed quotes too, since those lines match the same pattern.
+
+Verified rather than assumed: no script parses the pointer, so nothing broke mechanically; and after the change, inserting a paragraph before the Conclusion — which shifts every line number below it — leaves the claims file byte-identical. The one-off cost was a single 246-line commit.
+
+One real dependency did turn up and was fixed: `.claude/skills/grinding/SKILL.md` told the reviewer that the `- >` lines come with line numbers and to check those numbers against `main.md`. It now says to check the quoted text, and points at the dry run for line numbers. AGENTS.md records the format, the reason and the dry-run affordance.

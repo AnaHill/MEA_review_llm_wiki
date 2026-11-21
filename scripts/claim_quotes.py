@@ -1,11 +1,18 @@
 """Attach the sentences of main.md that cite a source under that source's claims in docs/claims-by-source.md.
 
 For every numbered claim line such as `- [ ] (2) [High-throughput] ...` the sentences of main.md that cite the same
-source in the section named in brackets are listed below the claim as `    - > sentence — main.md:line` sub-bullets.
+source in the section named in brackets are listed below the claim as `    - > sentence` sub-bullets.
+
+The stored lines carry no main.md line number, deliberately. They used to, and the number changed in every quote of
+the file whenever a paragraph was split or a heading added: over twelve commits, 1152 of 1261 changed lines were
+line numbers alone, which buried the quotes that had really changed. Without them a quote line changes only when
+its sentence does, so `git diff docs/claims-by-source.md` shows exactly which claims moved. The numbers are still
+printed by a dry run, which is where they are useful — while you are working, not in the history.
 Only those generated sub-bullets are rewritten; checkbox state, claim text and everything else in the file are kept.
 
 Usage (run from the repository root):
-    python -I scripts/claim_quotes.py                       dry run for all sources: prints the result, writes nothing
+    python -I scripts/claim_quotes.py                       dry run: prints the result with main.md line numbers,
+                                                            writes nothing — use it to locate a sentence
     python -I scripts/claim_quotes.py --only Altrocchi      dry run for the sources whose section title starts so
     python -I scripts/claim_quotes.py --write               update the file for all sources and refresh the ✅ marks
     python -I scripts/claim_quotes.py --write --only Hwang  update the quotes of the sources named; ✅ marks are
@@ -196,6 +203,9 @@ def quote_lines(sentences, source, tag, patterns, narrow=None):
 
     A `{q: ...}` regex replaces the citation test rather than adding to it, so a claim can also pick up a sentence
     that continues a citation without naming the source ("Both evaluated their models on small test sets ...").
+
+    Returns [(line, number)]: the line is what the claims file stores and carries no line number, so a quote
+    changes in git only when its sentence changes; the number travels alongside for the dry run to print.
     """
     pattern = re.compile(narrow if narrow else patterns[source])
     seen, lines = set(), []
@@ -203,7 +213,7 @@ def quote_lines(sentences, source, tag, patterns, narrow=None):
         if sentence_tag != tag or not pattern.search(sentence) or (number, sentence) in seen:
             continue
         seen.add((number, sentence))
-        lines.append(f"    - > {sentence} — main.md:{number}")
+        lines.append((f"    - > {sentence}", number))
     return lines
 
 
@@ -241,9 +251,9 @@ def update(claim_lines, sentences, selected, patterns, notes):
                     notes.append(f"{source} claim ({m.group(1)}) [{tag}]: no sentence found in main.md{reason}")
                 if narrow:
                     narrowed.add((source, tag))
-                listed.setdefault((source, tag), set()).update(found)
-                out.extend(found)
-                shown.extend(found)
+                listed.setdefault((source, tag), set()).update(line for line, _ in found)
+                out.extend(line for line, _ in found)
+                shown.extend(f"{line} — main.md:{number}" for line, number in found)
             continue
         out.append(line)
         i += 1
@@ -253,9 +263,9 @@ def update(claim_lines, sentences, selected, patterns, notes):
             notes.append(f"{source}: cited in main.md section [{tag}] but no claim carries that tag")
     # Where {q: ...} is used, every sentence of that section should still end up under some claim.
     for source, tag in sorted(narrowed):
-        for line in quote_lines(sentences, source, tag, patterns):
+        for line, number in quote_lines(sentences, source, tag, patterns):
             if line not in listed[(source, tag)]:
-                notes.append(f"{source} [{tag}]: no claim lists {line.strip()[:90]}…")
+                notes.append(f"{source} [{tag}]: no claim lists main.md:{number} {line.strip()[:90]}…")
     return out, notes, shown
 
 
