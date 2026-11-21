@@ -1254,3 +1254,11 @@ The line settled after three wordings were weighed against each other. "A docume
 Two shorter forms were declined, both proposed by the researcher and both defensible. "No MEA-derived reference values for hiPSC-CM maturation were found" takes the same shape as the three gap restatements removed from the list that morning, so it hides the one thing that earns this line its place. "hiPSC-CM maturation is missing MEA-derived reference values" is the Conclusion's gap 4 heading almost word for word — it would have put the same sentence at both ends of the paper, which is the duplication we removed between the Abstract and the Conclusion for gap (ii) the day before. A grammatical slip was fixed on the way: the source sentence reads "No **study** ... **was** found", and shortening it to "reference values ... was found" left the verb agreeing with nothing.
 
 Highlights now: seven lines, 521 characters, longest 88. Register item 0 holds every wording of the day with the reason each was kept or dropped.
+
+## [2026-11-21] draft | a paragraph between the Literature review heading and Figure 1
+
+The section opened straight onto the figure caption, so the reader met a diagram before being told what the section does. Three sentences now stand between them: the developments are grouped by the analysis problem they bear on rather than by year, with the seven problems named in the order the subsections take them; several studies bear on more than one and are discussed in more than one subsection; and Figure 1 keeps the chronological view alongside that grouping.
+
+The last point also gives the figure a job. Until now the timeline sat in a section organised by theme without anything saying why both views are there.
+
+Nothing is claimed about the literature, only about this review, so no citation is involved; register item 38 records it as `sourced` by the draft itself, like item 36 for the figure caption. The diagram is untouched, so `figures.py` reports no drift.

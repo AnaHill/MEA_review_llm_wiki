@@ -65,6 +65,8 @@ This is a narrative review of methodological developments in cardiomyocyte MEA a
 
 # Literature review
 
+The developments examined below are grouped by the analysis problem they bear on rather than by the year they appeared: the tools used, the definition of the measured interval, its correction for beating rate, the maturity of the cells it is measured in, the shape of the waveform it is read from, the geometry of the preparation, and the scale of the assay. Several studies bear on more than one of these and are discussed in more than one subsection. Figure 1 keeps the chronological view alongside that grouping.
+
 *Figure 1. Timeline of methodological developments in cardiomyocyte MEA analysis, 2022–2026. The entries are a selection from the studies examined, chosen to show the range of developments rather than to list them: about a third of the post-2022 sources cited in this review do not appear, among them reviews, a non-peer-reviewed acceptance standard, and studies whose contribution is to the recording rather than to the analysis. The figure is therefore not a chronology of the field, nor of the reference list.*
 
 ```mermaid
