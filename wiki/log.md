@@ -1306,3 +1306,11 @@ So the fix is in the script rather than only in the text. `SECTION_TAG` now hold
 Tested both ways: the current draft produces no notes, and renaming one subheading produces the heading note first, followed by the Outlook claims it emptied.
 
 AGENTS.md now carries both failure modes in one place, with the rule that follows from them: this script fails by producing nothing rather than by erroring, so read the Notes after every run, and after a structural edit to `main.md` run it once without `--write` before writing.
+
+## [2026-11-21] draft | the title stops claiming what the text only calls plausible
+
+Two days of scoping the claims had left the title as the strongest statement in the paper, which is backwards: "Four Gaps Limiting Comparability in MEA Analysis of hiPSC-Cardiomyocytes" asserts both that the gaps exist in the field and that they limit comparability, while register item 2 says fiducial definitions are "a plausible source of variability and a possible limit to inter-study comparability", `inference`, only plausibility claimed — and Limitations (iv) admits the premise is not universally shared, citing Vuorenpää et al. (2023) against it. The same defect as the highlight that outlived its claim, in the one sentence most readers see alone.
+
+It now reads **"Four Methodological Gaps in Field Potential Analysis of hiPSC-Cardiomyocytes: A Narrative Review of Multielectrode Array Studies Since 2022"**. "Methodological" replaces the unproven effect, the subtitle states the scope the old title left to the description, and the words readers search for — field potential, multielectrode array — are in it. The "four gaps" spine stays, because the Abstract and the Conclusion are built on it.
+
+The description carried the same claim and was reworded with it: "In the studies examined, four methodological gaps remain", with gap 2 and gap 3 brought into line with the wordings the Conclusion settled on this week. `README.md` carries the title too and was updated; `main-export.md` is generated and git-ignored, so it will pick the title up at the next `export.py --write`. The old title survives in `docs/private/llm-wiki-post/`, which is the researcher's own draft and not edited from here.

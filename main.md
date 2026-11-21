@@ -1,6 +1,6 @@
 ---
-title: "Four Gaps Limiting Comparability in MEA Analysis of hiPSC-Cardiomyocytes"
-description: "Narrative review of field potential analysis methods for multielectrode array (MEA) recordings of human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs) since 2022. It identifies four gaps that limit comparability between studies: no validated hiPSC-CM-specific rate correction for field potential duration, no shared waveform morphology criteria, limited validation in three-dimensional and spatially resolved settings, and no MEA-derived reference values for maturation."
+title: "Four Methodological Gaps in Field Potential Analysis of hiPSC-Cardiomyocytes: A Narrative Review of Multielectrode Array Studies Since 2022"
+description: "Narrative review of field potential analysis methods for multielectrode array (MEA) recordings of human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs) since 2022. In the studies examined, four methodological gaps remain: no validated hiPSC-CM-specific rate correction for field potential duration, no shared criteria for waveform morphology or for the fiducial points valid within each class, no dedicated validation for three-dimensional or spatially resolved recordings, and no MEA-derived reference values for maturation."
 author: "Antti-Juhana Mäki, Independent researcher"
 keywords: [multielectrode array, hiPSC-cardiomyocytes, field potential duration, rate correction, cardiac safety pharmacology, review]
 # output: html_document
