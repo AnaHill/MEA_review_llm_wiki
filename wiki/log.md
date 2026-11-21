@@ -1202,3 +1202,55 @@ The researcher had split the Abstract into three paragraphs and put the four gap
 They are now a bulleted list, which is real structure and survives to the PDF. The roman numerals are plain, not italic and not bold: the Limitations list already uses plain `- (i)` through `- (vii)`, so the Abstract was the only place with italic numerals, and bold is reserved here for the gap headings in the Conclusion and for the phrase "four methodological gaps remain". No wording changed; register item 3 records the change of form.
 
 Nothing broke in the scripts, and nothing would have warned if it had: no source claim carries the `[Abstract]` tag, and register items are quoted by hand rather than generated, so `claim_quotes.py` never reads these lines. Checked before editing rather than after.
+
+## [2026-11-21] draft | the Highlights now say what was found, the Abstract what is missing
+
+The researcher asked whether the Abstract's new gap list repeats the other sections. The Abstract-to-Conclusion overlap is what an abstract is for and was left alone, except that gap (ii) is worth varying later: both now carry the same long clause word for word, from the widening on 2026-11-20. The Highlights were the real duplication, and it was ours: four of the seven lines restated the four gaps, so the gaps were stated three times before the body, and the set became an exact parallel of the Abstract list the day before, when the gap that had no highlight was given one.
+
+Rather than deleting a highlight or accepting the repetition as the journal convention it is, the division of labour changed: the Highlights now carry findings and the Abstract carries the gaps. The four restatements were replaced by four findings already checked against their sources — the one FPD end point tested against intracellular recordings and the condition it holds under (Ernault), rate correction reversing the direction of an FPD change (Lee et al., 2026, doxorubicin), FPD drifting over days in culture even under fixed-rate pacing (Guerrelli), and recording geometry for 3D models having moved ahead of the analysis (register item 35). The machine-learning line lost "Without these", which no longer had an antecedent once the preceding lines stopped being the gaps.
+
+One line was dropped rather than replaced: "Raw MEA signals mix cell, tissue and device; separating them is proposed as a hypothesis". It was the only highlight that led with a hypothesis of the author's, which does not fit a list of findings; the hypothesis stays in the Discussion. Register item 0 records every old wording, including this one, and notes that re-adding it would be a judgement call rather than a correction.
+
+A consequence worth keeping in view: yesterday's "one gap has no highlight" problem no longer exists, because the highlights are no longer a mapping of the gaps. That earlier fix was right for the structure as it then was and is what made the duplication visible.
+
+## [2026-11-21] draft | Highlights shortened to seven, and the gap (ii) duplication broken
+
+Two small things after the rewrite earlier today.
+
+**Gap (ii) now reads differently in the two places it appears.** The widening of 2026-11-20 had left the Abstract and the Conclusion carrying the same long clause word for word, so the pair read as copied rather than summarised. The Abstract now says "the absence of shared criteria for sorting waveforms by shape, and for deciding which fiducial points remain meaningful in each shape"; the Conclusion keeps the technical wording. Same claim, plainer words.
+
+**The Highlights were measured rather than eyeballed.** With the separation hypothesis restored at the researcher's request the list stood at eight lines, 686 characters, four of them over the 85-character convention — a paragraph's worth of text, which stops being a list one can scan. It is now seven lines and 570 characters, the longest 92. Two lines were merged: the drift under pacing and the rarely measured maturity, which belong together because the drift is what makes the missing measurement matter. The others were tightened without losing anything.
+
+One shortening was declined. "Intracellular recordings" could have become "an action potential", saving five characters, but it is exactly what separates Ernault's sharp-microelectrode comparison from the intracellular-*like* electroporation signals of Lee et al. (2024), and it is what makes "the one" true. "In rat cells" was dropped from that line instead; the species is still in the Fiducial section and in Table 2.
+
+Register item 0 carries every old wording and the reasoning for each merge, so the seven lines can be traced back to the eight they came from.
+
+## [2026-11-21] draft | the APD90 highlight made plain, and the 3D highlight dropped
+
+Two changes the researcher asked for after reading the shortened list.
+
+**The second highlight was unclear, and the diagnosis was grammatical.** "The one FPD end point tested against intracellular recordings held only for biphasic T waves" makes the reader unpack a reduced relative clause — the one end point *that was* tested — before the sentence resolves, and then "held" never says what held. It now names the landmark and the measure outright: "In rat cells, the T-wave peak correlates with APD90 only when the T wave is biphasic". Shorter by 23 characters, and the rat caveat fits again.
+
+What the plainer line gives up is the claim that this is the *only* end point ever tested against intracellular recordings. That fact stays in the Abstract; the conditionality, which is what AI review 1 required, is what a highlight should carry. APD90 is used unspelled, consistent with FPD and MEA in the same list, and the Abbreviations section follows immediately — checked against `check_abbreviations.py`, which passes.
+
+**The 3D highlight was dropped,** at the researcher's judgement that 3D sits at the edge of this review rather than at its centre. It was also the one highlight resting on an inference across five studies rather than on a finding from one. Gap 3 is unaffected: it is stated in the Abstract and the Conclusion, and register item 35 keeps the inference.
+
+The list is now six lines and 483 characters, the longest 88 — from eight lines and 686 characters this morning, with no claim lost that is not stated elsewhere. Register item 0 holds every wording the list has had today.
+
+## [2026-11-21] draft | the maturation absence returns to the Highlights, as the one with a search behind it
+
+The researcher noticed that the morning's rewrite had lost "No validated MEA-derived reference values for hiPSC-CM maturation were found", first by replacing it with a statement about practice and then by merging that away. The instinct was right, and for a better reason than the line reading well.
+
+Gap 4 is the only one of the four with a documented search behind it: PubMed/MEDLINE on 30 October 2026, no date limit, with citation chasing and bioRxiv searches, recorded in `docs/maturation-mea-search.md`. The other three are of the form "not found among the studies examined", which is a limit of the sample. That difference makes gap 4 a result of this review rather than a scoping statement, which is why it belongs in a list of findings even though the division of labour otherwise leaves the gaps to the Abstract. The highlight says "A documented search found no ..." so that the distinction is visible in the line itself rather than only in the register.
+
+The drift finding stands alone again, as it did before the merge. The practice statement that replaced the absence claim — maturity is rarely measured in the same wells — stays in the Maturation section and the Conclusion, where it belongs.
+
+Seven lines, 525 characters, longest 88. Register item 0 now records three states for this line in one day: restated gap, replaced by a practice statement, merged away, restored with the search named.
+
+## [2026-11-21] draft | the maturation highlight names PubMed
+
+The line settled after three wordings were weighed against each other. "A documented search found no MEA-derived reference values for hiPSC-CM maturation" became "A PubMed search ...": naming the database is concrete and checkable, where "documented" only asserts that documentation exists somewhere. The search is PubMed/MEDLINE with citation chasing and bioRxiv web searches, so the line names its core rather than all of it; the Scope and the Maturation section carry the full description.
+
+Two shorter forms were declined, both proposed by the researcher and both defensible. "No MEA-derived reference values for hiPSC-CM maturation were found" takes the same shape as the three gap restatements removed from the list that morning, so it hides the one thing that earns this line its place. "hiPSC-CM maturation is missing MEA-derived reference values" is the Conclusion's gap 4 heading almost word for word — it would have put the same sentence at both ends of the paper, which is the duplication we removed between the Abstract and the Conclusion for gap (ii) the day before. A grammatical slip was fixed on the way: the source sentence reads "No **study** ... **was** found", and shortening it to "reference values ... was found" left the verb agreeing with nothing.
+
+Highlights now: seven lines, 521 characters, longest 88. Register item 0 holds every wording of the day with the reason each was kept or dropped.

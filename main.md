@@ -14,7 +14,7 @@ Multielectrode array (MEA) recordings of extracellular field potentials (FPs) fr
 Despite these developments, **four methodological gaps remain** in the studies examined and are identified as priorities:
 
 - (i) the absence of a validated hiPSC-CM–specific rate correction formula for field potential duration (FPD);
-- (ii) the absence of shared and validated criteria for classifying waveform morphology and for choosing the fiducial definitions valid within each class;
+- (ii) the absence of shared criteria for sorting waveforms by shape, and for deciding which fiducial points remain meaningful in each shape;
 - (iii) the need for dedicated validation of analytical frameworks in three-dimensional and spatially resolved MEA settings; and
 - (iv) the absence of validated MEA-derived reference values for staging the electrophysiological axis of hiPSC-CM maturation status.
 
@@ -23,11 +23,11 @@ Until these gaps are addressed, data-driven methods built on MEA parameters may 
 # Highlights
 
 - MEA tools define FPD differently; their FPD values are not directly comparable
-- No validated hiPSC-CM rate correction found; in one study the correction reversed the direction of an FPD change
-- No validated MEA-derived reference values for hiPSC-CM maturation were found
-- Waveform morphology is handled case by case, without shared criteria
-- 2D-calibrated analysis is carried over to 3D tissues and to high-density arrays, validated in neither
-- Without these, machine learning may learn analysis differences rather than biology
+- In rat cells, the T-wave peak correlates with APD90 only when the T wave is biphasic
+- Rate correction can reverse the direction of an FPD change
+- FPD drifts over days in culture even under pacing
+- A PubMed search found no MEA-derived reference values for hiPSC-CM maturation
+- Machine learning on MEA parameters may learn analysis differences, not cell differences
 - Raw MEA signals mix cell, tissue and device; separating them is proposed as a hypothesis
 
 # Abbreviations
