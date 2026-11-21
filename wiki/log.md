@@ -1278,3 +1278,11 @@ The Scope said only that the record of the maturation search "is in the project 
 The chain was checked end to end rather than assumed: the file exists and is tracked (142 lines, written 30 October 2026), the Declarations give the repository URL under Data and code availability, the repository answers unauthenticated, and the raw file is reachable there. The promise is not empty.
 
 What the check did surface is that the link is to a mutable repository while the preprint is permanent — and this is the claim the review leans on hardest, now also in the Highlights. That is a publication-time decision, not a text change, so it went into `ToDo.md` under B2: archive a repository snapshot to Zenodo through a GitHub release at the same time as the preprint, and use its DOI in the "is supplemented by" related identifier.
+
+## [2026-11-21] draft | the 3D section split into three paragraphs
+
+One paragraph carried three different jobs: whether 2D-calibrated endpoints transfer at all (Mäki's caution, the Hwang simulations, the Maurissen 2D-versus-3D comparison), what is being done about the recording and the tools (Lin on one-surface contact, PhysioMEA targeting organoids but analysing in the plane, Kim's conformable array), and what is still open. It is now three paragraphs on those lines, with the closing sentence standing alone so the gap is not buried at the end of a long block.
+
+No sentence was moved. A reordering is available and was not taken: Kim sits after PhysioMEA, so the middle paragraph alternates recording, tools, recording. Putting Kim next to Lin would group the recording-side points, at the cost of separating the two 2026 organoid studies, which the text currently contrasts — an analysis tool that states its convention and a device paper that states none. That contrast is worth more than the tidier grouping, so the order stands.
+
+Quotes refreshed; the Scope and 3D claims keep the same sentences at new line numbers.
