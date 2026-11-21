@@ -44,6 +44,9 @@ SECTION_TAG = [
     ("Morphology-aware", "Morphology"), ("Three-dimensional cardiomyocyte", "3D"),
     ("High-throughput", "High-throughput"), ("Limitations of this review", "Limitations"),
     ("Conclusion", "Conclusion"), ("Discussion", "Outlook"), ("Personal note", "Personal"),
+    # The two subsections of the Discussion keep its tag; without these, every [Outlook] claim
+    # silently loses its sentences, because an unmapped heading becomes a section tag of its own.
+    ("Multimodal recordings", "Outlook"), ("Separating the recording system", "Outlook"),
     ("Declarations", "Declarations"),
 ]
 # Tables sit under these headings; the claims file tags their rows separately.
