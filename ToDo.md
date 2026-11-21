@@ -45,7 +45,7 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [x] Totea, että Declarationsin AI-lauseen väite lähteiden tarkistuksesta pitää paikkansa (nyt: väitteet "listed in a checklist for verification"); kun A2 valmis, voi vahvistaa muotoon "…was checked against that source by the author"
 - [x] `python -I scripts/check.py`: 0 virhettä (odotettu varoitus yksi: Clements 2025 -posterilla ei DOI:ta)
 
-### A5 Valinnaisia muualle kuin main.md tiedostoon
+## A5 Valinnaisia muualle kuin main.md tiedostoon
 - [x] Wiki kuntoon lopuksi: 
   - [x] saisiko backlinkit ja tagit paremmaksi, jotta graafiesitys paranisi?
   - [x] `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
@@ -56,6 +56,12 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
   - [x] kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään
   - [ ] toisiko Obsidianin Graph View - kuva lähteiden riippuvuuksista lisäarvoa? 
   - [ ] entä markmap esitys? Kuva postauksen ideoissa
+    - **Ongelma (mitattu 21.11.2026):** `main.md`:n markmap toimii vain `foldLevel: 1`:llä. Tasolla 2 markmap 0.3 tekee solmun jokaisesta listakohdasta (kappaleista ei), eli kuvaan tulee 40 listasolmua: Conclusion 4 kpl (pisin **1304 merkkiä**, ka 960), Limitations 7 kpl (628 / 320), Abstract 4 kpl (141 / 128), Abbreviations 15 kpl, Highlights 7 kpl. `wrapWidth: 300` muuttaa tuhannen merkin solmun kymmenen rivin palstaksi — siksi kuva hajoaa. Otsikon pituus ei ole syy.
+    - **Ratkaisu: erillinen `docs/paper-outline.md`**, jossa on vain otsikkopuu ja lyhyt otsikko. Markmap näyttää silloin rakenteen (Literature review'n 7 alalukua, Discussionin 2) ilman listakohinaa, eikä paperin lähdetiedostoon tule esitysasiaa.
+      - [ ] `scripts/outline.py`: lue `main.md`:n `#`- ja `##`-otsikot (ohita front matter ja `# References`, sama logiikka kuin `claim_quotes.py`:n `main_sentences`), kirjoita `docs/paper-outline.md`: front matter (lyhyt `title`, `markmap: foldLevel/theme/wrapWidth`) ja otsikot sellaisinaan, ei listoja
+      - [ ] pidä ajan tasalla samalla tavalla kuin kuvat: tallenna otsikkopuun hash, ja anna `check.py`:n varoittaa kun `main.md`:n otsikot ovat muuttuneet mutta jäsennystä ei ole ajettu uudelleen (`figures.py`/`figures.json` on valmis malli)
+      - [ ] renderöi kuva vasta kun paperin otsikot ovat lukossa (otsikko vaihtui 21.11., Discussion sai 2 alalukua)
+    - **Hylätty vaihtoehto:** `foldLevel: 2` + `<!-- markmap: fold -->` -direktiivit. Asennettu markmap-vscode 0.3.1 tunnistaa `fold`- ja `foldAll`-direktiivit (varmistettu laajennuksen koodista), mutta direktiivi tarvittaisiin viiteen osioon, ja rivi `# Highlights <!-- markmap: fold -->` rikkoisi `check_abbreviations.py`:n: sen `section()` vaatii otsikkorivin päättyvän otsikkoon, joten Highlights ei enää rajautuisi pois lyhennetarkistuksesta ja APD90, FPD ja MEA alkaisivat varoittaa. Korjattavissa yhden rivin muutoksella skriptiin, mutta hinta on esitysasiaa paperin lähdekoodissa
 
 ## B. Julkaisu Zenodoon
 Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.org hylätty seulonnan epävarmuuden vuoksi).
