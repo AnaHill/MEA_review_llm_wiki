@@ -78,6 +78,7 @@ Open ScholarPeeriä ei kokeilla. Ulkopuolinen arviointi hoidetaan A4:n toisen ma
 - [ ] Tiedostot: PDF pääasiallisena, HTML lisätiedostona (tarkista Zenodon HTML-käsittely)
 - [ ] Metatiedot: CC BY 4.0; ei rahoitusta (harrasteprojekti); avainsanat; tekijä "Antti-Juhana Mäki, Independent researcher"; ORCID; päivämäärä ja versio
 - [ ] Related identifiers: "references" → Mäki 2023 (10.5281/zenodo.20807245); "is supplemented by" → GitHub-repo (tai repon Zenodo-snapshot GitHub-releasen kautta)
+- [ ] **Arkistoi repon tilannevedos Zenodoon** (GitHub-release → Zenodon GitHub-integraatio) samassa yhteydessä kuin preprint, ja käytä sen DOI:ta yllä olevassa "is supplemented by" -kohdassa GitHub-URL:n sijaan tai rinnalla. Perustelu (21.11.2026): Scope vetoaa hakukirjaukseen todisteena ja nimeää nyt tiedoston `docs/maturation-mea-search.md`, ja Declarations linkittää GitHubiin, joka on muuttuva — repo voi siirtyä, muuttua tai kadota, mutta preprint jää. Snapshot antaa version, joka vastaa julkaistua tekstiä. Tämä koskee myös Highlightsin riviä "A PubMed search found no MEA-derived reference values for hiPSC-CM maturation", joka nojaa samaan kirjaukseen
 - [ ] Zenodo Communities: etsi sopiva yhteisö (kardiologia, kantasolut, avoin tiede); liittäminen vaatii ylläpitäjän hyväksynnän
 
 ## C. Repot
