@@ -1,7 +1,7 @@
 ---
 title: "Four Methodological Gaps in Field Potential Analysis of hiPSC-Cardiomyocytes: A Narrative Review of Multielectrode Array Studies Since 2022"
 description: "Narrative review of field potential analysis methods for multielectrode array (MEA) recordings of human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs) since 2022. In the studies examined, four methodological gaps remain: no validated hiPSC-CM-specific rate correction for field potential duration, no shared criteria for waveform morphology or for the fiducial points valid within each class, no dedicated validation for three-dimensional or spatially resolved recordings, and no MEA-derived reference values for maturation."
-author: "Antti-Juhana Mäki, Independent researcher"
+author: "Antti-Juhana Mäki, D.Sc. (Tech.), Independent researcher"
 keywords: [multielectrode array, hiPSC-cardiomyocytes, field potential duration, rate correction, cardiac safety pharmacology, review]
 # output: html_document
 ---
@@ -273,7 +273,7 @@ The author thanks former colleagues for useful follow-up questions, for suggesti
 
 # About the author
 
-Antti-Juhana Mäki received a D.Sc. (Tech.) from Tampere University of Technology in 2018 with the dissertation [*Modeling and Control of Microscale Cell Culture Environments*](https://urn.fi/URN:ISBN:978-952-15-4174-2). As a postdoctoral researcher at Tampere University of Technology and Tampere University (2018–2022), the author worked on microfluidics, control engineering and biosignal analysis, including field potentials of hiPSC-CMs, and developed the [DatAnalyzer](https://github.com/AnaHill/DatAnalyzer) tool for the MEA analysis of two co-authored studies of hiPSC-CMs, on [modelling cardiac ischemia](https://doi.org/10.1038/s41598-021-83740-w) and on [acute hypoxia and reoxygenation](https://doi.org/10.1155/2022/9438281). The author now works as a data and AI expert, where combining agent-assisted workflows with attention to data quality is part of daily work.
+Antti-Juhana Mäki received a D.Sc. (Tech.) from Tampere University of Technology in 2018 with the dissertation [*Modeling and Control of Microscale Cell Culture Environments*](https://urn.fi/URN:ISBN:978-952-15-4174-2). As a postdoctoral researcher at Tampere University of Technology and Tampere University (2018–2022), the author worked on microfluidics, control engineering and biosignal analysis, including field potentials of hiPSC-CMs, and developed the [DatAnalyzer](https://github.com/AnaHill/DatAnalyzer) tool for the MEA analysis of two co-authored studies of hiPSC-CMs, on [modelling cardiac ischemia](https://doi.org/10.1038/s41598-021-83740-w) and on [acute hypoxia and reoxygenation](https://doi.org/10.1155/2022/9438281). The author now works as a data and AI expert, where combining agent-assisted workflows with attention to data quality is part of daily work. ORCID: https://orcid.org/0000-0001-7565-3530.
 
 # Declarations
 

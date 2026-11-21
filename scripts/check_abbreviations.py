@@ -23,7 +23,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 IGNORE = {
     "BioSystems", "BY", "CC", "CM01", "CoA", "CoEBoC", "CardioMDA", "CardioMEA", "CardioScripts",
     "DatAnalyzer", "iPSC", "KCNH2", "KCNJ2", "MATLAB", "MEDLINE", "MultiElec", "N588D", "N588K", "PhysioMEA",
-    "PubMed", "PyMEA", "QT", "RNA", "SQL", "TD",
+    "ORCID", "PubMed", "PyMEA", "QT", "RNA", "SQL", "TD",
 }
 SUFFIXES = ("s", "-like", "-based", "-derived", "-assisted", "-end")
 TOKEN = re.compile(r"\b(?:\d[A-Z]|[a-z]{0,6}[A-Z][A-Za-z0-9]*[A-Z0-9][A-Za-z0-9\-]*)\b")

@@ -1314,3 +1314,11 @@ Two days of scoping the claims had left the title as the strongest statement in 
 It now reads **"Four Methodological Gaps in Field Potential Analysis of hiPSC-Cardiomyocytes: A Narrative Review of Multielectrode Array Studies Since 2022"**. "Methodological" replaces the unproven effect, the subtitle states the scope the old title left to the description, and the words readers search for — field potential, multielectrode array — are in it. The "four gaps" spine stays, because the Abstract and the Conclusion are built on it.
 
 The description carried the same claim and was reworded with it: "In the studies examined, four methodological gaps remain", with gap 2 and gap 3 brought into line with the wordings the Conclusion settled on this week. `README.md` carries the title too and was updated; `main-export.md` is generated and git-ignored, so it will pick the title up at the next `export.py --write`. The old title survives in `docs/private/llm-wiki-post/`, which is the researcher's own draft and not edited from here.
+
+## [2026-11-21] draft | the byline carries the degree, and About the author carries the ORCID
+
+The author field now reads "Antti-Juhana Mäki, D.Sc. (Tech.), Independent researcher", and About the author ends with the ORCID as a bare URL. The degree is written as D.Sc. (Tech.), not PhD: the section itself says a D.Sc. (Tech.) from Tampere University of Technology, and PhD would have been the wrong name for it.
+
+The reasoning for having both is that they do different work. The byline tells a reader of a single-author, non-peer-reviewed preprint that the author is trained in the field, where "Independent researcher" alone can read as no background at all. The ORCID is the machine-readable half: it ties this preprint to the rest of the author's record and is what the Zenodo deposit will ask for.
+
+Two small things checked rather than assumed: `check_abbreviations.py` flagged ORCID, which is the name of a registry and not an abbreviation to spell out, so it went into `IGNORE` beside PubMed and MEDLINE; and `export.py` was run to confirm the bare URL becomes a link in `main-export.md` without swallowing the sentence period.
