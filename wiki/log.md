@@ -1262,3 +1262,19 @@ The section opened straight onto the figure caption, so the reader met a diagram
 The last point also gives the figure a job. Until now the timeline sat in a section organised by theme without anything saying why both views are there.
 
 Nothing is claimed about the literature, only about this review, so no citation is involved; register item 38 records it as `sourced` by the draft itself, like item 36 for the figure caption. The diagram is untouched, so `figures.py` reports no drift.
+
+## [2026-11-21] draft | the Scope section split into three paragraphs
+
+The section was one paragraph carrying four separate things: what kind of review this is and how candidates were found, the one documented search, what was not recorded about the rest of the selection, the subject-matter limit on 3D and in silico work, and the author's own opinion paper as the evaluative anchor. It now reads as three: how the selection was made, what that method does not cover, and the evaluative framework with its competing interest. The break points are the end of the documented-search sentence and the end of the 2D-to-3D scope sentence.
+
+One error fixed in passing: "research assistants working from the terms like" lost its article mismatch and reads "from terms like".
+
+No wording else changed and no claim moved section, so the quotes under the Scope claims are the same sentences at new line numbers; `claim_quotes.py --write` refreshed them and reported nothing.
+
+## [2026-11-21] draft | the documented search names its file, and the archival gap is written down
+
+The Scope said only that the record of the maturation search "is in the project repository (see Declarations)", which left the reader three steps from it: find the Declarations, follow the GitHub link, then find one file among hundreds. The sentence now names it: "its record is in the project repository, as docs/maturation-mea-search.md (see Declarations)". Written as plain text, because `main.md` uses no inline code formatting anywhere else.
+
+The chain was checked end to end rather than assumed: the file exists and is tracked (142 lines, written 30 October 2026), the Declarations give the repository URL under Data and code availability, the repository answers unauthenticated, and the raw file is reachable there. The promise is not empty.
+
+What the check did surface is that the link is to a mutable repository while the preprint is permanent — and this is the claim the review leans on hardest, now also in the Highlights. That is a publication-time decision, not a text change, so it went into `ToDo.md` under B2: archive a repository snapshot to Zenodo through a GitHub release at the same time as the preprint, and use its DOI in the "is supplemented by" related identifier.
