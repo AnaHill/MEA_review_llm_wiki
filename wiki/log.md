@@ -1194,3 +1194,11 @@ A second AI review (`docs/feedback2-from-AI-reviewer.md`, a different model) arg
 **Not taken: the reframings of gaps 1–4.** Recasting them as "practices vary" would be weaker than the material allows and, for gap 1, weaker than what the CiPA authors themselves wrote. Finding 6 (Botti "not fitted", small test sets) was left for the language pass.
 
 Two reviews now point the same way, which is a reason to watch for over-hedging rather than to keep hedging: the gaps are already scoped to the studies examined in the Abstract, in three of four headings, and in Limitations (i). The fourth is the one with a documented search behind it.
+
+## [2026-11-21] draft | the four gaps in the Abstract become a real list
+
+The researcher had split the Abstract into three paragraphs and put the four gaps on separate lines. The paragraph split is an improvement and was kept. The gap enumeration was not doing what it looked like: the four lines ended in a single trailing space, which Markdown reads as a soft break, so Pandoc would have rejoined them into one running paragraph and the exported PDF would have looked exactly as before. It also left one paragraph spread over five lines, against the no-soft-wrap rule in the researcher's own instructions, which allows a line break only where it is real structure.
+
+They are now a bulleted list, which is real structure and survives to the PDF. The roman numerals are plain, not italic and not bold: the Limitations list already uses plain `- (i)` through `- (vii)`, so the Abstract was the only place with italic numerals, and bold is reserved here for the gap headings in the Conclusion and for the phrase "four methodological gaps remain". No wording changed; register item 3 records the change of form.
+
+Nothing broke in the scripts, and nothing would have warned if it had: no source claim carries the `[Abstract]` tag, and register items are quoted by hand rather than generated, so `claim_quotes.py` never reads these lines. Checked before editing rather than after.
