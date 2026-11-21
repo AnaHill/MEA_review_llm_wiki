@@ -1336,3 +1336,21 @@ Four options were weighed. Dropping the pointer entirely and keeping it in the t
 Verified rather than assumed: no script parses the pointer, so nothing broke mechanically; and after the change, inserting a paragraph before the Conclusion — which shifts every line number below it — leaves the claims file byte-identical. The one-off cost was a single 246-line commit.
 
 One real dependency did turn up and was fixed: `.claude/skills/grinding/SKILL.md` told the reviewer that the `- >` lines come with line numbers and to check those numbers against `main.md`. It now says to check the quoted text, and points at the dry run for line numbers. AGENTS.md records the format, the reason and the dry-run affordance.
+
+## [2026-11-21] lint | the line-number removal verified against five cases
+
+The change above was committed on the strength of one test. The researcher asked the right follow-up — what happens when a change to `main.md` moves the linked line for most claims, not just a few — so it was tested properly afterwards. Five cases, with the working tree checksummed before and restored after.
+
+| | What was done | Result |
+|---|---|---|
+| A | Five paragraphs inserted after the Abstract, shifting the line of **all 246 quotes** | the claims file came out byte-identical |
+| B | One quoted sentence reworded (the Kim impedance sentence) | exactly two lines changed — the two claims that quote it |
+| C | Every printed line number checked against the line it names, after the shift | 245 of 246 matched; the one miss was the test's own fault |
+| D | A sentence no claim quotes deleted | no notes, as it should be |
+| E | A sentence Kim claim (4) quotes deleted | reported: "no sentence found in main.md matching {q: measured it at a single frequency}" |
+
+Case E is the one that answers the underlying worry. Dropping the stored numbers did not weaken the check that a quote still exists: a sentence that disappears or drifts out of its `{q:}` pattern is still named in the Notes. It is now easier to see, because it is no longer printed beside 246 renumbered lines.
+
+Case C's single miss is worth recording so nobody reads it as a one-in-246 defect: the line is a Mermaid label containing a literal `\n`, which `main_sentences` replaces with a space before matching, while the comparison in the test looked for the replaced text in the raw line. The number was right; the test was wrong.
+
+Why it works at all: the line number was never used to find anything. Quotes are re-derived on every run from the section tag and the citation pattern, so the number was only ever an output that happened to be stored. Removing it took away nothing the matching relies on.
