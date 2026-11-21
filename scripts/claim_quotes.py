@@ -26,6 +26,10 @@ it again when a box is unticked.
 A `## ` section missing from the SOURCES table is given a pattern derived from the surname in its title, and the run
 says so under Notes, so that a newly ingested source works without editing this file. Where the surname is shared by
 two sections the script will not guess: it collects nothing for them and asks for an explicit entry with the year.
+A heading of main.md missing from SECTION_TAG is reported the same way: its sentences are tagged with the heading's
+own text, so every claim tagged otherwise finds nothing, and renaming a section or promoting a bold label to a `##`
+heading empties that section's claims at once. Both failures produce no quotes rather than an error, so read the
+Notes after every run, and run without --write first after a structural edit to main.md.
 """
 import argparse
 import re
@@ -36,8 +40,13 @@ sys.stdout.reconfigure(encoding="utf-8")
 MAIN = "main.md"
 CLAIMS = "docs/claims-by-source.md"
 
+# Every heading of main.md belongs here. An unmapped heading becomes a tag of its own and quietly
+# takes the sentences under it away from the tag the claims use, so the table is kept complete and
+# main_sentences() reports anything missing from it.
 SECTION_TAG = [
-    ("Abstract", "Abstract"), ("Introduction", "Intro"), ("Motivation", "Motivation"),
+    ("Abstract", "Abstract"), ("Highlights", "Highlights"), ("Abbreviations", "Abbreviations"),
+    ("Acknowledgements", "Acknowledgements"), ("About the author", "About the author"),
+    ("Introduction", "Intro"), ("Motivation", "Motivation"),
     ("Scope and Literature Search", "Scope"), ("Literature review", "Timeline"),
     ("Open analysis pipelines", "Open pipelines"), ("Explicit and physiologically", "Fiducial"),
     ("Rate correction", "FPDc"), ("Maturation status", "Maturation"),
@@ -96,10 +105,19 @@ def split_sentences(text):
 
 
 def main_sentences():
-    """Return [(tag, line number, sentence)] for the body of main.md (everything before the reference list)."""
+    """Return ([(tag, line number, sentence)], notes) for the body of main.md, up to the reference list.
+
+    The notes name any heading missing from SECTION_TAG. Such a heading is not an error in itself —
+    its sentences simply get the heading's own text as their tag — but it is how a renamed or newly
+    added section takes every sentence away from the tag its claims carry, which shows up only as
+    claims that find nothing.
+    """
     lines = open(MAIN, encoding="utf-8").read().split("\n")
-    result, current, fence = [], None, False
-    for number, raw in enumerate(lines, 1):
+    result, current, fence, notes = [], None, False, []
+    first = 0
+    if lines and lines[0].strip() == "---":  # YAML front matter: not part of the text
+        first = next((i for i, line in enumerate(lines[1:], 1) if line.strip() == "---"), 0) + 1
+    for number, raw in enumerate(lines[first:], first + 1):
         if raw.startswith("# References"):
             break
         line = re.sub(r"<!--.*?-->", "", raw).rstrip()
@@ -109,7 +127,12 @@ def main_sentences():
         heading = re.match(r"^(#{1,3}) (.+)", line)
         if heading and not fence:
             title = heading.group(2)
-            current = next((tag for key, tag in SECTION_TAG if title.startswith(key)), title)
+            current = next((tag for key, tag in SECTION_TAG if title.startswith(key)), None)
+            if current is None:
+                notes.append(f'main.md:{number}: the heading "{title}" is not in SECTION_TAG, so its sentences '
+                             f'are tagged "{title}" and no claim tagged otherwise can reach them — add it to '
+                             f'scripts/claim_quotes.py if claims should see this section under another tag')
+                current = title
             continue
         if current is None or not line.strip():
             continue
@@ -121,7 +144,7 @@ def main_sentences():
         else:
             for sentence in split_sentences(line.strip()):
                 result.append((current, number, sentence))
-    return result
+    return result, notes
 
 
 def surname_of(title):
@@ -264,7 +287,8 @@ def main():
 
     original = open(CLAIMS, encoding="utf-8").read().split("\n")
     patterns, source_notes = resolve_sources(original)
-    updated, notes, shown = update(original, main_sentences(), selected, patterns, source_notes)
+    sentences, heading_notes = main_sentences()
+    updated, notes, shown = update(original, sentences, selected, patterns, heading_notes + source_notes)
     updated, changed = mark_done(updated)
     if args.write:
         open(CLAIMS, "w", encoding="utf-8", newline="\n").write("\n".join(updated))

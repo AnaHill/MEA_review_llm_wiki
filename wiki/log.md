@@ -1294,3 +1294,15 @@ Quotes refreshed; the Scope and 3D claims keep the same sentences at new line nu
 **The two parts of the Discussion are now `##` subsections** instead of bold run-in labels, matching how the Literature review is structured. The researcher asked for visual separation and was unsure whether subheadings were right; they are, because the Discussion was the only `#` section carrying two long themes with nothing in the table of contents to show it.
 
 That change broke something that would not have announced itself. `claim_quotes.py` assigns each sentence to the section heading above it, and an unmapped heading becomes a tag of its own — so both new headings silently took every sentence out of `[Outlook]`, and all 33 Outlook claims lost their quotes at once. The dry run showed it before anything was written; `SECTION_TAG` now maps both subsection titles to `Outlook`, with a comment saying why. A second instance of the same lesson as the Kim ingest: this script fails by producing nothing rather than by erroring, so a structural edit to `main.md` deserves a dry run before a `--write`.
+
+## [2026-11-21] lint | the section table completed, and an unmapped heading now says so
+
+Asked whether this morning's lesson was written down anywhere, the honest answer was half. AGENTS.md had the `SOURCES` half from yesterday — a new source needs no script edit, and the Notes are where a source that collected nothing shows up — but nothing about `SECTION_TAG`, which is what the Discussion subheadings broke.
+
+Worth correcting one thing said earlier today: that failure was not silent. The run reported 33 claims finding no sentence. What it did not do was name the cause, so the reader sees 33 symptoms and has to infer the one change behind them.
+
+So the fix is in the script rather than only in the text. `SECTION_TAG` now holds every heading of `main.md` — Highlights, Abbreviations, Acknowledgements and About the author were missing and worked only because an unmapped heading falls back to its own title, which happened to match the tag the claims used. With the table complete, any unmapped heading is an anomaly, and `main_sentences` reports it with its line number and what it does to the claims, ahead of the claims that went empty because of it. The YAML front matter is skipped too: `# output: html_document` inside it had been parsed as a heading all along.
+
+Tested both ways: the current draft produces no notes, and renaming one subheading produces the heading note first, followed by the Outlook claims it emptied.
+
+AGENTS.md now carries both failure modes in one place, with the rule that follows from them: this script fails by producing nothing rather than by erroring, so read the Notes after every run, and after a structural edit to `main.md` run it once without `--write` before writing.
