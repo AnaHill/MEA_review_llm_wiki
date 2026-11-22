@@ -1,5 +1,5 @@
 ---
-tags: [maturation]
+tags: [maturation, high-throughput]
 ---
 
 # Independent compartmentalization of functional, metabolic, and transcriptional maturation of hiPSC-derived cardiomyocytes
@@ -43,6 +43,7 @@ Individual medium components (galactose vs. glucose, fatty acids, T3, dexamethas
 This paper does not itself provide MEA-derived reference values for hiPSC-CM maturation. Its own conclusion is that functional, metabolic and transcriptional maturation are induced largely independently. Our inference, not the paper's: an MEA-FP-derived maturation benchmark could then characterise only the electrophysiological compartment. Its patch-clamp values (MMc vs RBAI, specific lines, day 30, one protocol: MDP, Vmax, Nav density) are not proposed by the authors as reference values. Its RNA-seq shows medium-dependent ion-channel expression (higher KCNJ2, CACNA1C and KCNQ1, lower HCN4, no SCN5A change in MMc vs RBAI), which parallels the culture-age changes of Guerrelli et al. (2024), although this paper did not vary culture age.
 
 ## See also
+- [[wiki/high-throughput-assays.md]] — high-throughput screening of culture conditions, outside MEA
 - [[wiki/papers/ismaili-2023-hamburg.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/maki-2023-opinion.md]]

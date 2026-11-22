@@ -55,6 +55,7 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 - [CiPA in the reviewed papers](cipa.md) — How Blinova 2018, Park 2025/2026, Pramudito 2026, Clements 2025 and Matsuda 2025 relate to the Comprehensive in vitro Proarrhythmia Assay.
 - [Open analysis platforms](open-analysis-platforms.md) — Cardio PyMEA, DatAnalyzer, CardioMEA, CardioScripts and PhysioMEA side by side (language, FPD or interval end, scope); vendor software still used in the Park studies.
 - [3D cardiomyocyte models and MEA recording](3d-models.md) — Spheroid simulations (Hwang), 2D versus 3D tissue sheets (Maurissen), tissue-embedded electrodes (Lin), conformable organoid recording (Kim), organoid analysis (Weiser-Bitoun); no systematic 2D–3D comparison of fiducial definitions.
+- [High-throughput and long-term MEA assays](high-throughput-assays.md) — What changes when an assay runs for days or across many wells: vehicle drift despite Fridericia correction (Altrocchi), equilibration and culture-time drift (Guerrelli), ultra-high-density endpoints (Matsuda), well-acceptance criteria (Clements), and a two-day exposure where the correction reversed the sign of the effect (Lee et al., 2026).
 - [Machine learning in the reviewed studies](machine-learning-mea.md) — Models, inputs and caveats in Pramudito, Park 2026, Lee 2024, Scheurer, Lin and Hu; raw signals versus extracted parameters (Mäki).
 
 *(other candidates: hERG trafficking)*
@@ -88,4 +89,6 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 ---
 
-*Last updated: 2026-11-20*
+All citations are listed in [references.md](references.md); the operation history is in [log.md](log.md).
+
+*Last updated: 2026-11-22*

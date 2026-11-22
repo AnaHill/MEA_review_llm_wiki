@@ -1,5 +1,5 @@
 ---
-tags: [cardiac-safety, rate-correction, maturation]
+tags: [cardiac-safety, rate-correction, maturation, high-throughput]
 ---
 
 # Standards for hiPSC-derived cardiomyocyte electrophysiology using the MEA assay (AIMS \#CM01 poster)
@@ -39,6 +39,7 @@ Our observations: it is a proposal from a MEA vendor with academic and industry 
 (1) A citable source for the industry-led acceptance criteria mentioned in main.md, which target assay quality control and not maturation staging. (2) A source for the accepted spontaneous rate range of hiPSC-CM MEA assays (20–80 bpm here, 20–90 bpm in Blinova et al. 2018), used in the FPDc section. (3) Shows the Fridericia correction being built into a proposed acceptance standard (FPDc window of 200–700 ms), which reinforces the rate-correction gap. Two of the poster's authors share names with first authors of reviewed studies (Altrocchi et al., 2023; Guerrelli et al., 2024); the affiliations on the standard's web page make it very probable that they are the same people (see above). (4) Since 2026-10-31 main.md cites the web page's point that more mature cells may beat too slowly for the criteria and would need pacing, outside the standard's scope (FPDc section).
 
 ## See also
+- [[wiki/high-throughput-assays.md]] — acceptance criteria are the quality control these assays need
 - [[wiki/papers/blinova-2018-multisite.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/papers/guerrelli-2024-hipscm.md]] — Clements amplitude criterion versus Guerrelli spike amplitudes that rose with days in culture

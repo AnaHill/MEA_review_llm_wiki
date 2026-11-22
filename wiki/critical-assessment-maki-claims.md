@@ -101,6 +101,11 @@ The *existence* of pacemaker-like cells in hiPSC-CM cultures is supported in par
 
 ---
 
+## See also (concept pages)
+- [[wiki/fpd-end-conventions.md]] — the conventions these claims are assessed against, side by side
+- [[wiki/fp-polarity.md]] — the polarity assumption behind Claim 4 (signal inversion)
+- [[wiki/open-analysis-platforms.md]] — the tools whose stated definitions make the assessment possible
+
 ## Summary
 
 | Claim | Verdict | Key challenge | Priority |

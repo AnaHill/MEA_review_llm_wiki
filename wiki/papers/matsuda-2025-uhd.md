@@ -1,5 +1,5 @@
 ---
-tags: [spatial-analysis, cardiac-safety]
+tags: [spatial-analysis, cardiac-safety, high-throughput]
 ---
 
 # Advanced cardiotoxicity profiling using field potential imaging with UHD-CMOS-MEA in human iPSC-derived cardiomyocytes
@@ -49,6 +49,7 @@ Our observations (not from the paper): the paper defines risk zones from the SD 
 Cited in main.md for the multi-parameter feature-set shift and for the UHD-CMOS-MEA with about 236,880 electrodes, its spatial endpoints and the 0.03 µM doxorubicin result. The "state of the art" framing is ours.
 
 ## See also
+- [[wiki/high-throughput-assays.md]] — the hardware end of the same theme: more electrodes, more endpoints, same analysis questions
 - [[wiki/papers/botti-2026-insilico.md]]
 - [[wiki/papers/maurissen-2024-mutation.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]

@@ -1,5 +1,5 @@
 ---
-tags: [maturation, rate-correction]
+tags: [maturation, rate-correction, high-throughput]
 ---
 
 # hiPSC-CM electrophysiology: impact of temporal changes and study parameters on experimental reproducibility
@@ -56,6 +56,7 @@ Two lines were tested (iCell², main; Cor.4U for key experiments). Cor.4U showed
 Cited in main.md in the FPDc rate-correction, maturation-confound and longitudinal-assay passages (line 142 gives the 22.6%/7.7% figures explicitly). The paper does not discuss FPDc; that recording-time standardisation matters for rate-corrected endpoints is our inference.
 
 ## See also
+- [[wiki/high-throughput-assays.md]] — equilibration and culture-time drift as confounds of long assays
 - [[wiki/papers/ismaili-2023-hamburg.md]]
 - [[wiki/papers/altrocchi-2023-chronic.md]]
 - [[wiki/papers/park-2025-cardiotoxicity.md]]

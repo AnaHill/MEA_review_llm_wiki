@@ -168,7 +168,7 @@ Applied the species/prevalence caveat flagged above to main.md's "Increasing emp
 
 ## [2026-06-28] lint | Graph improvement B+A — YAML frontmatter tags and cross-paper wikilinks added to all 15 wiki/papers/*.md files
 
-Added YAML frontmatter `tags:` blocks to all 15 paper pages (tag vocabulary: open-platform, fiducial-definition, waveform-morphology, rate-correction, temporal-confounder, maturation, 3d-model, in-silico, high-throughput, spatial-analysis, cardiac-safety, disease-model, lqts, machine-learning, electromechanical, conduction-velocity, review-perspective, brv, 2d-culture). Expanded cross-paper `[[wikilinks]]` in all See also sections so the Obsidian/Foam graph forms thematic clusters rather than a pure star topology. Side fixes: stale `[[wiki/citation-issues.md]]` links removed from dunham, hwang, pramudito; stale citation-error blockquotes removed from altrocchi, dunham, hwang, ismaili; kabanov "Not currently in main.md" note updated.
+Added YAML frontmatter `tags:` blocks to all 15 paper pages (tag vocabulary: open-platform, fiducial-definition, waveform-morphology, rate-correction, temporal-confounder, maturation, 3d-model, in-silico, high-throughput, spatial-analysis, cardiac-safety, disease-model, lqts, machine-learning, electromechanical, conduction-velocity, review-perspective, brv, 2d-culture). Expanded cross-paper `wikilinks` in all See also sections so the Obsidian/Foam graph forms thematic clusters rather than a pure star topology. Side fixes: stale ``wiki/citation-issues.md`` links removed from dunham, hwang, pramudito; stale citation-error blockquotes removed from altrocchi, dunham, hwang, ismaili; kabanov "Not currently in main.md" note updated.
 
 ## [2026-07-02] ingest | Fetterman 2024 — Independent compartmentalization of functional, metabolic, and transcriptional maturation of hiPSC-derived cardiomyocytes
 
@@ -1354,3 +1354,23 @@ Case E is the one that answers the underlying worry. Dropping the stored numbers
 Case C's single miss is worth recording so nobody reads it as a one-in-246 defect: the line is a Mermaid label containing a literal `\n`, which `main_sentences` replaces with a space before matching, while the comparison in the test looked for the replaced text in the raw line. The number was right; the test was wrong.
 
 Why it works at all: the line number was never used to find anything. Quotes are re-derived on every run from the section tag and the citation pattern, so the number was only ever an output that happened to be stored. Removing it took away nothing the matching relies on.
+
+## [2026-11-22] lint | wiki audit: a missing theme, two dead ends, two phantom nodes
+
+The researcher asked for a critical pass over `wiki/`: graph quality, links between pages, and whether the tags are the right ones. Measured rather than eyeballed, across all 45 pages.
+
+**What held up.** No orphans; every one of the 31 paper pages links at least one concept page and 3–10 other papers; all 17 vocabulary tags in use and none outside it. Near-duplicate tags were checked by co-occurrence rather than by eye: the highest Jaccard overlap is 0.50 (`cardiac-safety`+`rate-correction`, `fiducial-definition`+`open-platform`), which is two different things that travel together, not one thing named twice — a duplicate would sit at 0.8–1.0.
+
+**The real gap: one section of main.md had neither a tag nor a concept page.** "High-throughput and long-term assays" was the only one of ten. Six pages carry the theme, twice the threshold AGENTS.md sets for a new tag. Added `high-throughput` to the Tag vocabulary and to Altrocchi, Guerrelli, Matsuda, Clements, Lee et al. (2026) and Fetterman, and wrote `wiki/high-throughput-assays.md`. The new page makes the point the scattered pages could not: three of those sources show an endpoint moving with no treatment — vehicle drift over four days, equilibration and culture-time drift, and a rate correction reversing the sign of a drug effect — and in all three the Fridericia correction fails to absorb it, which is why this material supports gap 1 rather than standing beside it.
+
+`check.py` accepted the new tag without being touched: it reads the vocabulary out of the AGENTS.md line itself, so the rule lives in one place. Worth remembering before anyone adds a second list.
+
+**Two pages carried a single tag**, against the two-to-four convention: Fetterman and Li et al. (2025), both only `maturation`. Fetterman is a high-throughput screen, so the new tag fits it. Li et al. (2025) got `rate-correction`, which its page earns — Fridericia-corrected FPDc drug responses, including the E-4031 prolongation absent in B27 cultures.
+
+**One tag had to give way.** Altrocchi was already at four, and the theme genuinely applies, so `signal-separation` was dropped from it: the paper's own contribution is recording impedance alongside the field potential, while separation is this review's hypothesis about what such a channel could do. The `signal-separation` concept page still links Altrocchi, so no graph edge was lost — only the tag-level grouping. Say so if the trade reads wrong.
+
+**Two concept pages were dead ends in the concept backbone** — `hipsc-cm-maturation` (13 inbound) and `critical-assessment-maki-claims` linked only to paper pages, making stars rather than a network. Both now carry a "See also (concept pages)" block. The maturation one was the more wrong of the two: culture-time drift, rate correction and the video classifier are the same argument seen from three pages.
+
+**Two phantom nodes removed.** `log.md` referenced `[[wiki/citation-issues.md]]` and `[[wikilinks]]`, a deleted file and a word in prose, which Foam and Obsidian draw as placeholder nodes. The history is unchanged; only the brackets went, so the entries still say what happened. `references.md` also had no inbound link and is now reachable from `index.md`.
+
+After the pass: no unresolved links, no orphans, no dead ends among concept pages, no page with fewer than two tags.

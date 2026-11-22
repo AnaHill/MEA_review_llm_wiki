@@ -38,3 +38,9 @@ No study reviewed here proposes or validates MEA-derived reference values that s
 - [[wiki/papers/lin-2023-nanoelectronics.md]]
 - [[wiki/papers/hayakawa-2014-motion-fp.md]]
 - [[wiki/papers/li-2024-closed-loop.md]]
+
+## See also (concept pages)
+- [[wiki/fridericia-rate-correction.md]] — rate correction does not absorb maturation drift: in Guerrelli et al. (2024) FPD lengthened over days even under fixed-rate pacing
+- [[wiki/high-throughput-assays.md]] — the same drift seen from the assay side, as a confound of long recordings
+- [[wiki/multimodal-measurement.md]] — the video-based maturity classifier (Scheurer et al., 2025) that an MEA-derived measure would have to be validated against
+- [[wiki/machine-learning-mea.md]] — classifiers are where an unstated maturation difference would be learned as if it were biology

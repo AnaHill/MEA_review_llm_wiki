@@ -1,5 +1,5 @@
 ---
-tags: [multimodal, rate-correction, cardiac-safety]
+tags: [multimodal, rate-correction, cardiac-safety, high-throughput]
 ---
 
 # Integrated electrophysiological and optical analysis of human iPSC-derived cardiomyocytes using transparent ITO microelectrode chip
@@ -39,6 +39,7 @@ Cited in main.md from 2026-11-01: rate-correction paragraph (doxorubicin example
 (1) Rate correction: a concrete case in hiPSC-CMs where Fridericia-corrected FPD moved opposite to FPD when the beating rate slowed sharply (doxorubicin day 1), illustrating that the correction can mislead at extreme rates. (2) Device separation: the authors' statement that MEA chip composition and recording hardware may alter absolute signal values. (3) Sensor fusion: a hiPSC-CM example of FP and optical readouts from the same wells on a transparent MEA, analysed side by side rather than jointly, which supports the outlook's observation that modalities are mostly analysed separately.
 
 ## See also
+- [[wiki/high-throughput-assays.md]] — the two-day doxorubicin case, where a long assay broke the rate correction
 - [[wiki/papers/hu-2026-tft-mea-multimodal.md]]
 - [[wiki/papers/karami-2026-mea-cardiotoxicity.md]]
 - [[wiki/papers/ryynanen-2018-single-cell-mea.md]]

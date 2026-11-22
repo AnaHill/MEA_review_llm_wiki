@@ -1,5 +1,5 @@
 ---
-tags: [cardiac-safety, multimodal, signal-separation, rate-correction]
+tags: [cardiac-safety, multimodal, rate-correction, high-throughput]
 ---
 
 # Evaluation of chronic drug-induced electrophysiological and cytotoxic effects using human-induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs)
@@ -60,6 +60,7 @@ Vehicle drift (main paper, Table 2, DMSO 0.1 %, N = 81 wells): mean BR −5.8 %,
 Cited in main.md for MEA use in general (Introduction), for Fridericia-corrected FPD, and for the chronic design (48-well plates, acute under 2 h and delayed effects of 24 h or more over four days, TKi, doxorubicin and trafficking inhibitors, FP plus impedance, multi-parameter feature sets). It is cited a second time in the Discussion and future outlook, where the impedance signal (a drop when cells attach less well to the well bottom owing to cell death or morphology changes) is used as the starting point for a hypothesis that an impedance channel could flag FP changes caused by altered attachment rather than altered AP; the hypothesis is the researcher's (your remark of 2026-10-26), not the paper's. From 2026-10-31 main.md (High-throughput section) also cites the vehicle drift (Table 2: BR −5.8 %, FPDc +7.9 % at 96 h) and the use of per-time-point tolerance intervals. main.md does not discuss individual compound results (pentamidine, BMS-986094); the 0.03 µM doxorubicin value belongs to Matsuda et al.
 
 ## See also
+- [[wiki/high-throughput-assays.md]] — the chronic and large-scale setting this assay belongs to; its vehicle drift is the clearest case there
 - [[wiki/papers/guerrelli-2024-hipscm.md]]
 - [[wiki/papers/park-2025-cardiotoxicity.md]]
 - [[wiki/papers/matsuda-2025-uhd.md]]

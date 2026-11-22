@@ -1,5 +1,5 @@
 ---
-tags: [maturation]
+tags: [maturation, rate-correction]
 ---
 
 # Comprehensive promotion of iPSC-CM maturation by integrating metabolic medium with nanopatterning and electrostimulation
