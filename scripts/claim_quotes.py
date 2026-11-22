@@ -288,6 +288,8 @@ def main():
     parser.add_argument("--write", action="store_true", help="update docs/claims-by-source.md (default: dry run)")
     parser.add_argument("--only", action="append", default=[], help="only sources whose name starts with this")
     parser.add_argument("--skip", action="append", default=[], help="leave sources whose name starts with this")
+    parser.add_argument("--check", action="store_true",
+                        help="print only whether the file is out of date and the Notes (used by the main.md hook)")
     args = parser.parse_args()
 
     def selected(source):
@@ -300,6 +302,20 @@ def main():
     sentences, heading_notes = main_sentences()
     updated, notes, shown = update(original, sentences, selected, patterns, heading_notes + source_notes)
     updated, changed = mark_done(updated)
+    if args.check:
+        # Short form for the PostToolUse hook: both failure modes of this script produce nothing
+        # rather than an error, so the Notes are what the agent must see after an edit of main.md.
+        stale = sum(1 for a, b in zip(original, updated) if a != b) + abs(len(original) - len(updated))
+        if stale:
+            print(f"docs/claims-by-source.md is out of date with main.md ({stale} line(s) would change); "
+                  "run python -I scripts/claim_quotes.py --write")
+        else:
+            print("docs/claims-by-source.md is up to date with main.md")
+        if notes:
+            print("Notes:")
+            for note in notes:
+                print("-", note)
+        return
     if args.write:
         open(CLAIMS, "w", encoding="utf-8", newline="\n").write("\n".join(updated))
         print(f"wrote {CLAIMS}")

@@ -78,6 +78,14 @@ for page in sorted(PAPERS.glob("*.md")):
             report("WARN", where, f"raw file stem '{raw_stem}' differs from page stem '{page.stem}' (rename per AGENTS.md)")
     # supplementary files linked anywhere on the page (e.g. a **Supplementary:** line) count as referenced
     raw_used.update(r for r in re.findall(r"\[\[(raw/[^\]|#]+)", text) if (ROOT / r).exists())
+    # the first author on the page must be the surname the page and the reference are keyed on;
+    # an author-order error once survived here for weeks (Ismaili, corrected 2026-11-09)
+    a = re.search(r"^\*\*Authors:\*\*\s*([^,\n]+)", text, re.M)
+    if a:
+        first = a.group(1).replace("\\*", "").replace("*", "").strip()
+        if norm(first.split()[-1]) != key[0] and norm(first) != key[0]:
+            report("WARN", where, f"first author on the page ('{first}') does not match the page "
+                                  f"and reference key '{key[0]}'; check the author order against the PDF")
     d = re.search(r"\*\*DOI:\*\*\s*(\S+)", text)
     if d and refs.get(key) and d.group(1).rstrip(".") != refs[key]:
         report("ERROR", where, f"DOI {d.group(1)} differs from references.md ({refs[key]})")
@@ -268,6 +276,35 @@ if CLAIMS.exists():
         elif not used:
             report("WARN", f"{rel(CLAIMS)}:{n}",
                    "no support value; use one of " + ", ".join(sorted(SUPPORT_VALUES)))
+
+# --- claims file: no number used twice within a section ---------------------------------
+# Claims are cited by number ("Guerrelli (4)", "register item 35"), so a duplicate makes a
+# reference ambiguous. One slipped in on 2026-11-20 (two register items 27) and was found by eye.
+if CLAIMS.exists():
+    section, seen = None, {}
+    for n, line in enumerate(read(CLAIMS).splitlines(), 1):
+        if line.startswith("## "):
+            section, seen = line[3:].replace("✅", "").strip(), {}
+            continue
+        m = re.match(r"- \[[ xX]\] (?:\((\w+)\)|\*\*(\w+)\.)", line)
+        if not m or section is None:
+            continue
+        num = m.group(1) or m.group(2)
+        if num in seen:
+            report("WARN", f"{rel(CLAIMS)}:{n}", f"number {num} is used twice in '{section}' "
+                                                f"(first on line {seen[num]})")
+        else:
+            seen[num] = n
+
+# --- Highlights: the 85-character convention --------------------------------------------
+# Journals that ask for highlights (Elsevier among them) cap each at 85 characters with spaces.
+# A preprint has no hard limit, so a longer line is reported as INFO, not as a warning.
+HIGHLIGHT_MAX = 85
+hl = re.search(r"^# Highlights[ \t]*\n(.*?)(?=^# )", main, re.M | re.S)
+if hl:
+    for line in hl.group(1).splitlines():
+        if line.startswith("- ") and len(line) - 2 > HIGHLIGHT_MAX:
+            report("INFO", "main.md", f"highlight is {len(line) - 2} characters (convention {HIGHLIGHT_MAX}): {line[2:50]}…")
 
 # --- accidental Obsidian tags ----------------------------------------------------------
 # A '#word' in prose is read as a tag in Obsidian. Tags belong in the front matter only.
