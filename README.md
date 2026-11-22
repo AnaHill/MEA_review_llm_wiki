@@ -81,7 +81,7 @@ raw/               source documents (immutable; files are only renamed at ingest
 wiki/
   papers/          one page per ingested paper (firstauthor-year-keyword.md)
   index.md         content catalog — LLM reads this first on every query
-  log.md           append-only operation log
+  log.md           append-only operation log (June–October 2026 in log-2026-06-to-10.md)
   references.md    auto-maintained citation list (APA)
 main.md            paper draft — IMRaD sections, single file (the two figures are ```mermaid blocks)
 figures/           the diagrams copied out of main.md (.mmd, generated) and rendered for export (.svg)

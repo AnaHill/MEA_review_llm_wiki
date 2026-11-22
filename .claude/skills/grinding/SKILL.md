@@ -61,6 +61,7 @@ Apply only the fixes named. Then, under the Draft rules of AGENTS.md:
 - edit `main.md` surgically, and keep the matching claim in `docs/claims-by-source.md` in step (reword it, note the change and its date; when a claim is dropped or merged, renumber and update every reference to its number, such as the register);
 - fix the wiki page and the Pointers line when they were wrong;
 - add or update a register item for any new own inference;
+- after a change of wording, re-read the title, the Highlights (register item 0) and the Abstract: a summary that restates the changed claim does not change with it, and only a quoted wording in the register is checked by script;
 - append a `wiki/log.md` entry (`draft` when `main.md` changed, otherwise `query`);
 - run `python -I scripts/claim_quotes.py --write`, `python -I scripts/check.py` and, if `main.md` changed, `python -I scripts/check_abbreviations.py`;
 - end with a proposed commit message in the style the researcher uses.

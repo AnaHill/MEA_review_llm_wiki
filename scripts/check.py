@@ -17,7 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 WIKI, RAW, PAPERS = ROOT / "wiki", ROOT / "raw", ROOT / "wiki" / "papers"
 LOG_TYPES = {"init", "ingest", "query", "draft", "lint", "grill"}
-NON_PAGES = {"index.md", "log.md", "references.md"}
+NON_PAGES = {"index.md", "log.md", "log-2026-06-to-10.md", "references.md"}
 
 findings = {"ERROR": [], "WARN": [], "INFO": []}
 
@@ -211,11 +211,14 @@ if vocab:
                 report("WARN", rel(p), f"tag '{t}' is not in the Tag vocabulary of AGENTS.md")
 
 # --- log.md header format ------------------------------------------------------------
-for i, line in enumerate(read(WIKI / "log.md").splitlines(), 1):
-    if line.startswith("## [") and "YYYY" not in line:
-        m = re.match(r"## \[\d{4}-\d{2}-\d{2}\] (\w+) \| .+", line)
-        if not m or m.group(1) not in LOG_TYPES:
-            report("WARN", f"wiki/log.md:{i}", f"non-standard log header: {line[:60]}")
+for log_file in ("log.md", "log-2026-06-to-10.md"):
+    if not (WIKI / log_file).exists():
+        continue
+    for i, line in enumerate(read(WIKI / log_file).splitlines(), 1):
+        if line.startswith("## [") and "YYYY" not in line:
+            m = re.match(r"## \[\d{4}-\d{2}-\d{2}\] (\w+) \| .+", line)
+            if not m or m.group(1) not in LOG_TYPES:
+                report("WARN", f"wiki/{log_file}:{i}", f"non-standard log header: {line[:60]}")
 
 # --- figures: the rendered images against their Mermaid source -------------------------
 # The ```mermaid blocks in main.md are the source of truth (claim_quotes.py quotes from them).

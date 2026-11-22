@@ -31,11 +31,11 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 - [x] Vaihe 1: vanhentuneet luvut ja tiedot (README pyöristetty; blogi ja LinkedIn)
 - [x] Vaihe 2: `check.py`:hin ensimmäinen kirjoittaja, tuplanumerot ja highlightien pituus; hookiin `claim_quotes.py --check`
 - [x] Vaihe 3 (22.11.): rekisterin käsin kirjoitetut lainaukset (**Text:** ja highlightit) tarkistetaan `claim_quotes.py`:ssä main.md:tä vasten; generoituja `{q:}`-lainauksia ei tehty, koska ne olisivat toistaneet käsin kirjoitetut. Ensimmäinen ajo löysi kolme vanhentunutta lainausta (kohdat 6, 22, 23), korjattu
-- [ ] Vaihe 4: säännöt ja loki
-  - [ ] AGENTS.md: vuosisääntö (issue year, ei online-first; päätetty kolmesti: Botti, Park 2026, Weiser-Bitoun)
-  - [ ] AGENTS.md: päätökset kirjataan lokiin, ei ToDo:hon (ToDo poistetaan julkaisussa)
-  - [ ] grinding-skill: muutoksen jälkeen lue rekisterin kohta 0, abstrakti ja otsikko
-  - [ ] loki: kesä–lokakuu arkistoon omaan tiedostoonsa (loki on noin 100 000 tokenia, ei mahdu yhteen lukuun); otsakkeen formaattilistaan `grill`
+- [x] Vaihe 4 (22.11.): säännöt ja loki
+  - [x] AGENTS.md: vuosisääntö (Citation format -kappaleessa) ja "Decisions go in the log"
+  - [x] grinding-skill: muutoksen jälkeen lue otsikko, highlightit (rekisterin kohta 0) ja abstrakti
+  - [x] loki: kesä–lokakuu tiedostoon `wiki/log-2026-06-to-10.md`; formaattilistaan `grill`; NUL-tavu korjattu
+  - [ ] marraskuun loki on yksinäänkin noin 160 kt (noin 40 000 tokenia), ei mahdu yhteen lukuun; jaa tarvittaessa 1.–15.11. omaksi tiedostokseen
   - [ ] valinnainen: `docs/lessons.md`, lokista poimitut opit (pohja blogille ja templaatille)
 - [x] Vaihe 5: Weiser-Bitoun p. 11 Motivationiin (22.11.; rastitus kohdassa A)
 

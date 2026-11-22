@@ -16,7 +16,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 | `wiki/` | LLM-maintained markdown pages. You own this layer entirely. |
 | `wiki/papers/` | One summary page per ingested source paper. |
 | `wiki/index.md` | Content catalog — read this first when answering any query. |
-| `wiki/log.md` | Append-only chronological log of all operations. |
+| `wiki/log.md` | Append-only chronological log of all operations; entries from June to October 2026 are in `wiki/log-2026-06-to-10.md`. |
 | `wiki/references.md` | Auto-maintained citation list, populated on each ingest. |
 | `main.md` | Evolving paper draft — single file with IMRaD sections. |
 | `skills/` | Agent skill definitions (Claude Code skill format), kept for reference. |
@@ -116,7 +116,7 @@ Links to related wiki pages.
 
 ## Conventions
 
-**Citation format in `wiki/references.md`:** APA by default unless the researcher specifies a different style. One entry per line, sorted alphabetically by first author surname. In-text citations in `main.md` are APA too: (Smith, 2023), (Smith & Jones, 2023), (Smith et al., 2023), several sources separated by semicolons; narrative: Smith et al. (2023) found… When two first authors share a surname but the years differ, the initials are left out (Lee et al., 2024; Lee et al., 2026): the year is enough to identify the entry, a deliberate simplification of APA for this preprint. The final style follows the target journal and will be reformatted at the end, so do not convert existing entries before then.
+**Citation format in `wiki/references.md`:** APA by default unless the researcher specifies a different style. One entry per line, sorted alphabetically by first author surname. In-text citations in `main.md` are APA too: (Smith, 2023), (Smith & Jones, 2023), (Smith et al., 2023), several sources separated by semicolons; narrative: Smith et al. (2023) found… When two first authors share a surname but the years differ, the initials are left out (Lee et al., 2024; Lee et al., 2026): the year is enough to identify the entry, a deliberate simplification of APA for this preprint. The final style follows the target journal and will be reformatted at the end, so do not convert existing entries before then. **Year of a reference:** the issue year once volume and pages exist, not the online-first year, even when the publisher's citation tool or the authors' own page gives the earlier one (decided for Botti et al., 2026, Park et al., 2026 and Weiser-Bitoun et al., 2026); record both dates on the paper page.
 
 **Log format:** Every `wiki/log.md` entry must start with a consistent prefix so it's grep-parseable:
 ```
@@ -126,6 +126,8 @@ Links to related wiki pages.
 ## [YYYY-MM-DD] lint | pass
 ## [YYYY-MM-DD] grill | Decision topic
 ```
+
+**Decisions go in the log.** A decision and its reasons (what to cite or leave out, why a search was or was not run, which option was declined) get a `wiki/log.md` entry, even when nothing else changes. `ToDo.md` is a working file that is deleted at publication, so a decision recorded only there leaves no trace.
 
 **No stray tags.** The wiki is read in Obsidian, where a `#word` in prose becomes a tag. Tags belong only in the `tags:` front matter. Whenever a hash-prefixed identifier appears in text and is not meant as a tag (for example the standard AIMS `\#CM01` or the cell-line catalogue number `\#HPS0076`), always write the hash with a backslash escape, as in `\#CM01`, so it displays as "#CM01" without becoming a tag. Do not use quotes, bare hashes or dropped hashes for this, and keep the identifier as the source writes it. This applies to every markdown file, including `wiki/log.md` and `main.md` (Pandoc prints the escaped hash without the backslash). `scripts/check.py` warns about unescaped hashes.
 
