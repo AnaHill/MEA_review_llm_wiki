@@ -5,7 +5,7 @@ Järjestys: **A → B → C -> D.** D-luonnostelu ei odota mitään. Tehdyt kohd
 ## A. Paperin sisältö (main.md ja tukitiedostot)
 Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vasten. Lähdetarkistus (A2), lyhenteet (A3) ja lopputarkistukset kahdella ulkopuolisella mallilla (A4: ChatGPT ja NotebookLM/Gemini) on tehty; kohdat poistettu 22.11.
 
-- [ ] Rastita Weiser-Bitoun (9) `docs/claims-by-source.md`:ssä (lisätty 22.11. Motivationiin: kehittäjien suositus standardoida piikkien tunnistus ja biomarkkerien laskenta, Discussion 4.2, s. 11). Rastin jälkeen `python -I scripts/claim_quotes.py --write` palauttaa otsikon ✅:n
+- [x] Rastita Weiser-Bitoun (9) `docs/claims-by-source.md`:ssä (lisätty 22.11. Motivationiin: kehittäjien suositus standardoida piikkien tunnistus ja biomarkkerien laskenta, Discussion 4.2, s. 11). Rastin jälkeen `python -I scripts/claim_quotes.py --write` palauttaa otsikon ✅:n
 - [ ] Kuvan 1 teksti "Functional/metabolic/transcriptional" valuu laatikon yli renderöidyssä SVG:ssä (22.11.). Korjaus vaatii tekstimuutoksen `main.md`:n Mermaid-lohkoon; sen jälkeen `figures.py --write`, renderöinti uudelleen ja `claim_quotes.py --write` (Timeline-väite lainaa tätä riviä)
 - Päätetty 22.11.: kaksi highlightia saa ylittää 85 merkkiä (87 ja 88); `check.py` näyttää ne INFO-rivinä
 
@@ -30,7 +30,7 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 ## A6. Työkalut ja säännöt ennen vientiä (lokin läpikäynti 22.11.)
 - [x] Vaihe 1: vanhentuneet luvut ja tiedot (README pyöristetty; blogi ja LinkedIn)
 - [x] Vaihe 2: `check.py`:hin ensimmäinen kirjoittaja, tuplanumerot ja highlightien pituus; hookiin `claim_quotes.py --check`
-- [ ] Vaihe 3: rekisterin kohtiin generoidut lainaukset (`{q:}`), jotta highlightien, abstraktin ja otsikon muutos näkyy diffissä (virhetyyppi D: tiivistelmä jää jälkeen leipätekstistä). Kertaluonteinen iso diffi claims-tiedostoon, oma commit
+- [x] Vaihe 3 (22.11.): rekisterin käsin kirjoitetut lainaukset (**Text:** ja highlightit) tarkistetaan `claim_quotes.py`:ssä main.md:tä vasten; generoituja `{q:}`-lainauksia ei tehty, koska ne olisivat toistaneet käsin kirjoitetut. Ensimmäinen ajo löysi kolme vanhentunutta lainausta (kohdat 6, 22, 23), korjattu
 - [ ] Vaihe 4: säännöt ja loki
   - [ ] AGENTS.md: vuosisääntö (issue year, ei online-first; päätetty kolmesti: Botti, Park 2026, Weiser-Bitoun)
   - [ ] AGENTS.md: päätökset kirjataan lokiin, ei ToDo:hon (ToDo poistetaan julkaisussa)

@@ -269,6 +269,67 @@ def update(claim_lines, sentences, selected, patterns, notes):
     return out, notes, shown
 
 
+def _top_level_quotes(text):
+    """The "double-quoted" strings of `text` that are not inside parentheses.
+
+    Register items keep the history of a wording in parentheses ("(was "..." until 2026-11-13)"), so a
+    quote inside them is an old wording and is not expected to be found in main.md.
+    """
+    out, depth, i = [], 0, 0
+    while i < len(text):
+        c = text[i]
+        if c == '"':
+            j = text.find('"', i + 1)
+            if j < 0:
+                break
+            if depth == 0 and not text[j + 1:].lstrip().startswith("became"):
+                out.append(text[i + 1:j])  # '"old" became "new"': the first one is history too
+            i = j + 1
+            continue
+        depth += {"(": 1, ")": -1}.get(c, 0)
+        depth = max(depth, 0)
+        i += 1
+    return out
+
+
+def _flat(text):
+    text = text.replace("*", "").replace("\\#", "#").replace("’", "'")
+    return re.sub(r"\s+", " ", text).strip().lower()
+
+
+def register_drift(claim_lines):
+    """Notes for quoted wordings in the register that main.md no longer contains.
+
+    The register quotes main.md by hand (**Text:** lines, and the highlights under item 0), and a
+    quote that outlives its sentence is how a summary drifts from the text it summarises: a highlight
+    or an abstract line kept asserting what the body had withdrawn, and the register still showed the
+    old wording. Each quote is split at an ellipsis and every fragment of 12 or more characters must
+    occur in main.md, ignoring case, emphasis markers and line breaks.
+    """
+    main_text = _flat(open(MAIN, encoding="utf-8").read())
+    notes, item, inside = [], None, False
+    for line in claim_lines:
+        if line.startswith("## "):
+            inside = line[3:].removeprefix(DONE).strip() == REGISTER
+            continue
+        if not inside:
+            continue
+        m = re.match(r"- \[[ x]\] \*\*(\d+)\.", line)
+        if m:
+            item = m.group(1)
+            continue
+        m = re.match(r"\s+- \*\*(?:Text:|\(\d+\))\*\*\s*(.*)", line)
+        if not m or item is None:
+            continue
+        for quote in _top_level_quotes(m.group(1)):
+            for fragment in re.split(r"\s*(?:…|\.\.\.)\s*", quote):
+                fragment = _flat(fragment).strip(" ,;:")
+                if len(fragment) >= 12 and fragment not in main_text:
+                    notes.append(f'register item {item}: quoted wording not found in main.md: "{fragment[:90]}" — '
+                                 f'update the quote, or put the old wording in parentheses as history')
+    return notes
+
+
 def mark_done(lines):
     """Put DONE in front of every `## ` title whose top-level checkboxes are all ticked; remove it otherwise."""
     out, changed = list(lines), []
@@ -301,6 +362,7 @@ def main():
     patterns, source_notes = resolve_sources(original)
     sentences, heading_notes = main_sentences()
     updated, notes, shown = update(original, sentences, selected, patterns, heading_notes + source_notes)
+    notes += register_drift(original)
     updated, changed = mark_done(updated)
     if args.check:
         # Short form for the PostToolUse hook: both failure modes of this script produce nothing

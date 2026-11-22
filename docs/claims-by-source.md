@@ -747,7 +747,7 @@ These are not points on one scale. `thin` is sourced but narrow; `inference` is 
 - [x] **6. [Abstract, Conclusion]** Gap 4: no validated maturation benchmark at recording
   - **Text:** such a benchmark "could only cover the electrophysiological axis"
   - **Text:** "even a partial reference would improve comparability between studies and support the translation of MEA findings to adult myocardium"
-  - **Text:** the pieces "exist separately"
+  - **Text:** some ingredients "have been reported separately" (was "the pieces exist separately"; quote brought up to date 2026-11-22, the main.md wording had changed on 2026-11-02)
   - **Based on:** the documented search of 30 October 2026 (`docs/maturation-mea-search.md`), Fetterman, Correia, Scheurer, Li, Hayakawa, Lin, Clements (QC, not staging)
   - **Support:** absence claim as strong as that search (`docs/maturation-mea-search.md`); the benefit is an `opinion`
 - [x] **7. [Abstract, Conclusion]** data-driven methods may learn analysis differences
@@ -834,13 +834,13 @@ These are not points on one scale. `thin` is sourced but narrow; `inference` is 
   - **Support:** `inference` (first); `thin` (second)
 - [x] **22. [High-throughput]** demands of high-throughput and chronic use
   - **Text:** high-throughput and chronic applications "require stable beat detection, robust handling of arrhythmic events, and consistent analysis across extended recording periods and large historical datasets"
-  - **Text:** multi-parameter feature sets "make clearly defined analysis methods even more important"
+  - **Text:** after the multi-parameter feature sets, "This makes clearly defined analysis methods even more important" (quote brought up to date 2026-11-22; the sentence had been split from the feature-set sentence)
   - **Text:** "temporal drift and culture equilibration effects can confound interpretation if fiducial definitions and quality control criteria are not reported"
   - **Based on:** Altrocchi (6), (7); Matsuda; Guerrelli
   - **Support:** `inference`; the drift itself is sourced
 - [x] **23. [Motivation, Conclusion]** uses of MEAs and the machine learning outlook
   - **Text:** the list of uses in the studies examined; its category labels are the review's own. "Mechanistic electrophysiological phenotyping" became "genotype-specific electrophysiological phenotyping" on 2026-11-15, because none of the three sources measures the underlying currents: Maurissen infers IKr from FPD and the mutation, Park 2026 uses "mechanistic" only of a procedure-based system and of in silico models, and Park 2025 uses neither word
-  - **Text:** machine learning "may become a more integral layer of cardiomyocyte MEA workflows"
+  - **Text:** "In the author's view, machine learning and other AI methods are likely to become an integral layer of cardiomyocyte MEA analysis workflows" (was "may become a more integral layer of cardiomyocyte MEA workflows" until the researcher's rewording of 2026-11-13, recorded below; the Text line was brought up to date 2026-11-22)
   - **Update 2026-11-13:** reworded by the researcher to a stronger opinion: "In the author's view, machine learning and other AI methods are likely to become an integral layer of cardiomyocyte MEA analysis workflows", followed by the author's expectation for AI-assisted fusion and signal separation (register items 24 and 26)
   - **Based on:** the studies named
   - **Support:** `sourced` for the list; the outlook is an `opinion`
