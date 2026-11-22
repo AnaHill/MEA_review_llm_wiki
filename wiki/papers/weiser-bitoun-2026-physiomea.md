@@ -64,7 +64,7 @@ Our observations (not from the paper):
 
 ## Relevance to our paper
 
-Cited in main.md as an open-source platform (MATLAB) with 2D spatial analysis and BRV, and as an example of the R-to-T-peak FPD convention. The paper compares MultiElec, CardioMDA, Cardio PyMEA, Cardio2D, Axion and EMapScope; it does not mention CardioMEA. The "post-2022 shift away from vendor tools" framing is ours, not the paper's.
+Cited in main.md as an open-source platform (MATLAB) with 2D spatial analysis and BRV, and as an example of the R-to-T-peak FPD convention. Since 2026-11-22 also cited in the Motivation: its Discussion (4.2, p. 11) calls for standardising peak detection and biomarker calculation to improve comparability between studies of cardiac organoids, which is the only statement of this review's premise by a group other than the author's. The evidence behind it is amplitude and slope, not FPD, and the causes it names include equipment and culture time, so main.md presents it as "a similar call", not as support for fiducial definitions as the source of variability. The paper compares MultiElec, CardioMDA, Cardio PyMEA, Cardio2D, Axion and EMapScope; it does not mention CardioMEA. The "post-2022 shift away from vendor tools" framing is ours, not the paper's.
 
 ## See also
 
