@@ -1374,3 +1374,7 @@ The researcher asked for a critical pass over `wiki/`: graph quality, links betw
 **Two phantom nodes removed.** `log.md` referenced `[[wiki/citation-issues.md]]` and `[[wikilinks]]`, a deleted file and a word in prose, which Foam and Obsidian draw as placeholder nodes. The history is unchanged; only the brackets went, so the entries still say what happened. `references.md` also had no inbound link and is now reachable from `index.md`.
 
 After the pass: no unresolved links, no orphans, no dead ends among concept pages, no page with fewer than two tags.
+
+## [2026-11-22] lint | README: claim counts rounded
+
+The README gave exact counts (199 claims across 30 sources, thirty-five registered inferences), which had already gone stale: the Kim ingest and the register items added on 2026-11-20 and 2026-11-21 brought them to 205 claims, 31 sources and 39 items. The README now says "over 200 claims across more than 30 sources" and "nearly forty statements", and points to `docs/claims-by-source.md` for the exact counts, one checkbox per claim. A rounded figure stays true through the next few ingests, where an exact one goes stale silently.
