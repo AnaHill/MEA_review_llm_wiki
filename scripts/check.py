@@ -230,6 +230,19 @@ for log_file in ["log.md"] + sorted(p.name for p in WIKI.glob("log-*.md") if LOG
             if not m or m.group(1) not in LOG_TYPES:
                 report("WARN", f"wiki/{log_file}:{i}", f"non-standard log header: {line[:60]}")
 
+# --- docs/lessons.md: every lesson traceable to the log --------------------------------
+# A lesson cites its evidence as "log <date> <type>", which must match a "## [<date>] <type> |"
+# header in wiki/log.md or one of its archives; the date-and-type form survives log rotation.
+LESSONS = ROOT / "docs" / "lessons.md"
+if LESSONS.exists():
+    headers = set()
+    for log_path in WIKI.glob("log*.md"):
+        headers.update(re.findall(r"^## \[(\d{4}-\d{2}-\d{2})\] (\w+) \|", read(log_path), re.M))
+    for n, line in enumerate(read(LESSONS).splitlines(), 1):
+        for d, kind in re.findall(r"\blog (\d{4}-\d{2}-\d{2}) (\w+)\b", line):
+            if (d, kind) not in headers:
+                report("WARN", f"docs/lessons.md:{n}", f"evidence 'log {d} {kind}' matches no entry in wiki/log*.md")
+
 # --- figures: the rendered images against their Mermaid source -------------------------
 # The ```mermaid blocks in main.md are the source of truth (claim_quotes.py quotes from them).
 # scripts/figures.py copies each to figures/*.mmd and records its hash; a stale image is the kind

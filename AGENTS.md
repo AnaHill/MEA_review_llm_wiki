@@ -127,7 +127,7 @@ Links to related wiki pages.
 ## [YYYY-MM-DD] grill | Decision topic
 ```
 
-**Decisions go in the log.** A decision and its reasons (what to cite or leave out, why a search was or was not run, which option was declined) get a `wiki/log.md` entry, even when nothing else changes. `ToDo.md` is a working file that is deleted at publication, so a decision recorded only there leaves no trace.
+**Decisions go in the log.** When a task adds a rule, a check or a limit because something went wrong, also add a lesson to `docs/lessons.md` (evidence as `log <date> <type>`, which `check.py` verifies, what changed, and a status). A decision and its reasons (what to cite or leave out, why a search was or was not run, which option was declined) get a `wiki/log.md` entry, even when nothing else changes. `ToDo.md` is a working file that is deleted at publication, so a decision recorded only there leaves no trace.
 
 **No stray tags.** The wiki is read in Obsidian, where a `#word` in prose becomes a tag. Tags belong only in the `tags:` front matter. Whenever a hash-prefixed identifier appears in text and is not meant as a tag (for example the standard AIMS `\#CM01` or the cell-line catalogue number `\#HPS0076`), always write the hash with a backslash escape, as in `\#CM01`, so it displays as "#CM01" without becoming a tag. Do not use quotes, bare hashes or dropped hashes for this, and keep the identifier as the source writes it. This applies to every markdown file, including `wiki/log.md` and `main.md` (Pandoc prints the escaped hash without the backslash). `scripts/check.py` warns about unescaped hashes.
 

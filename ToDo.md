@@ -36,7 +36,8 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
   - [x] grinding-skill: muutoksen jälkeen lue otsikko, highlightit (rekisterin kohta 0) ja abstrakti
   - [x] loki: kesä–lokakuu tiedostoon `wiki/log-2026-06-to-10.md`; formaattilistaan `grill`; NUL-tavu korjattu
   - [x] lokin jako puoliautomaattiseksi (22.11.): `scripts/rotate_log.py` siirtää vanhimmat merkinnät enintään 40 kt:n arkistoihin, kun `log.md` ylittää 40 kt; `check.py` varoittaa. Koko historia: `grep wiki/log*.md`
-  - [ ] valinnainen: `docs/lessons.md`, lokista poimitut opit (pohja blogille ja templaatille)
+  - [x] `docs/lessons.md` (22.11.): 29 opetusta, evidenssi tarkistetaan `check.py`:ssä
+  - [ ] lisää AGENTS.md:hen "when you correct a claim, rewrite the whole sentence" (lessons: open; blogi väittää säännön olevan olemassa)
 - [x] Vaihe 5: Weiser-Bitoun p. 11 Motivationiin (22.11.; rastitus kohdassa A)
 
 ## B. Julkaisu Zenodoon
@@ -77,6 +78,7 @@ Open ScholarPeeriä ei kokeilla. Ulkopuolinen arviointi tehtiin kahdella mallill
   - [ ] `scripts/check.py`: Support-sanaston tarkistus, kuvien hash-tarkistus, ensimmäinen kirjoittaja, tuplanumerot, highlightien pituus (22.11.)
   - [ ] `scripts/figures.py` (`--write`, `--render`), `scripts/export.py` ja `docs/print.css`: vienti generoidusta kopiosta, main.md pysyy lähteenä
   - [ ] AGENTS.md: "Register of the author's own inferences" ja Support-arvot; "Figures stay as Mermaid in main.md"
+  - [ ] `docs/lessons.md` -malli (otsikkorakenne, Evidence/Changed/Status) ja sen tarkistus `check.py`:ssä
   - [ ] `docs/ai-review-brief.md` (ohje ulkopuoliselle AI-arvioijalle) yleistettynä
   - [ ] `docs/private/` (git-ignored, yksityiset luonnokset) ja sen maininta AGENTS.md:ssä
   - [ ] täydennysaineistojen nimeäminen myös muille kuin PDF:ille (`<stem>-supplementary.docx`), ja .docx-kuvien purku `figure_analysis/`-kansioon tarkastelua varten
@@ -102,9 +104,10 @@ Sisältö ja ideat `docs\private\llm-wiki-post`. Luonnostelu rinnakkain, julkais
   - [x] `/grinding` skills mainittu
   - [x] Anthropicin single-loop-artikkeli mukana (osio "One agent, thin tools, hard limits")
   - [ ] **pääviesti: wikin ylläpito on se osa, joka unohtuu.** Karpathyn gistin kaksi kohtaa ("The synthesis already reflects everything you've read" ja "I browse the results in real time — following links, checking the graph view, reading the updated pages") — jälkimmäinen on se, mikä tekee edellisestä totta. Näyttö tästä reposta: keksityt lähteet (Galli 2024 ei ole olemassa, Dunham/Hwang tekijälistat, Blinova 2025), yli 200 väitteen läpikäynti lähde kerrallaan ja lähes 40 omaa päätelmää erikseen kirjattuna. README:ssä osio "The work that is easy to skip: keeping the wiki honest" — käytä sitä runkona
-  - [ ] Vaihe 6: lokista poimitut opit sopiviin osioihin: virhetyyppi D (tiivistelmä ja otsikko jäävät jälkeen leipätekstistä), luettava diff (rivinumerot olivat 91 % diffistä), työkalu joka epäonnistuu tuottamalla ei mitään, mitä läpikäynti muutti ("organoid"-sana, "two of them"), 24.10. verifioinnin tulos (kaikilla 12 sivulla lähteen ylittäviä väitteitä), kuvat ja liitteet paljastavat tekstiekstraktion ohittamaa, AI-arvioijat (abstrakti ei ole lähde; varo ylivarovaisuutta), poissaoloväite on hakunsa kokoinen, liian kova deny-sääntö → ask, lähteissäkin on virheitä, rekisteri ja Support-arvot
-  - [ ] järjestys-TODO (osio "The workflow in practice") lokin aikajanalla
-  - [ ] katkennut "Rem…"-kohta (TODO-kommentti blogissa)
+  - [x] Vaihe 6 (22.11.): lokista poimitut opit sopiviin osioihin: virhetyyppi D (tiivistelmä ja otsikko jäävät jälkeen leipätekstistä), luettava diff (rivinumerot olivat 91 % diffistä), työkalu joka epäonnistuu tuottamalla ei mitään, mitä läpikäynti muutti ("organoid"-sana, "two of them"), 24.10. verifioinnin tulos (kaikilla 12 sivulla lähteen ylittäviä väitteitä), kuvat ja liitteet paljastavat tekstiekstraktion ohittamaa, AI-arvioijat (abstrakti ei ole lähde; varo ylivarovaisuutta), poissaoloväite on hakunsa kokoinen, liian kova deny-sääntö → ask, lähteissäkin on virheitä, rekisteri ja Support-arvot
+  - [x] järjestys-TODO (osio "The workflow in practice") lokin aikajanalla
+  - [x] katkennut "Rem…"-kohta poistettu (virke oli jo valmis)
+  - [ ] tarkista blogin `[CLAUDE 22.11.]`-merkityt kohdat (11 kpl) ja poista merkinnät
 - [ ] LinkedIn-postaus blogin jälkeen `docs\private\llm-wiki-post\linkedin_draft.md`: viittaa repoon, Zenodoon ja blogiin
   - [ ] tarkista, että `/grinding` skills mainittu
-  - [ ] uusi avausvaihtoehto "The strongest claim in my paper was its title." ja mahdollisesti bulletti tiivistelmien jälkeen jäämisestä
+  - [ ] valitse avaus A tai B ja mahdollinen bulletinvaihto (vaihtoehdot `linkedin_draft.md`:ssä, "Vaihtoehtoja versioon E")
