@@ -66,7 +66,7 @@ See [AGENTS.md](AGENTS.md) for the full schema and [llm-wiki.md](llm-wiki.md) fo
 The repository follows the single-agent-loop design described in Anthropic's article [Building agents: when to fold subagents into your main agent loop](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop): one agent in one context window, instead of an orchestrator handing work to specialist subagents. The article's summary, "one clear system prompt, 4-5 thin data tools, and firm output guardrails would cover most of the use case", maps onto this repository as follows:
 
 - **One clear system prompt:** [AGENTS.md](AGENTS.md), with a single owner (the author).
-- **Thin data tools:** six scripts in `scripts/` (`check.py`, `claim_quotes.py`, `check_abbreviations.py`, `render_pdf_pages.py`, `figures.py`, `export.py`), each doing one mechanical job and returning plain text the agent can read.
+- **Thin data tools:** seven scripts in `scripts/` (`check.py`, `claim_quotes.py`, `check_abbreviations.py`, `render_pdf_pages.py`, `figures.py`, `export.py`, `rotate_log.py`), each doing one mechanical job and returning plain text the agent can read.
 - **Progressive disclosure:** procedures that are needed only sometimes live in skills that load on demand (`/grill-paper`, `/grinding`); moving Ingest and Lint into skills is planned.
 - **Guardrails in the harness, not only in the prompt:** [.claude/settings.json](.claude/settings.json) denies file edits to `notes.md` and asks before any write to `raw/` (renames at ingest are approved one by one), and a hook runs the abbreviation and consistency checks after every edit of `main.md`, and reports whether the claims checklist is out of date with it.
 - **Rule plus mechanical check:** a rule in AGENTS.md alone gets forgotten, and a script alone cannot judge what makes a good tag or link. So each important convention has both: for example, the Draft operation tells the agent to write connections made in `main.md` back to the wiki, and `check.py` lists sources that `main.md` cites in one sentence but the wiki does not connect, and tags outside the agreed vocabulary.
@@ -81,7 +81,7 @@ raw/               source documents (immutable; files are only renamed at ingest
 wiki/
   papers/          one page per ingested paper (firstauthor-year-keyword.md)
   index.md         content catalog — LLM reads this first on every query
-  log.md           append-only operation log (June–October 2026 in log-2026-06-to-10.md)
+  log.md           append-only operation log (older entries in log-<from>-to-<to>.md archives, see scripts/rotate_log.py)
   references.md    auto-maintained citation list (APA)
 main.md            paper draft — IMRaD sections, single file (the two figures are ```mermaid blocks)
 figures/           the diagrams copied out of main.md (.mmd, generated) and rendered for export (.svg)

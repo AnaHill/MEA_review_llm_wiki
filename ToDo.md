@@ -35,7 +35,7 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
   - [x] AGENTS.md: vuosisääntö (Citation format -kappaleessa) ja "Decisions go in the log"
   - [x] grinding-skill: muutoksen jälkeen lue otsikko, highlightit (rekisterin kohta 0) ja abstrakti
   - [x] loki: kesä–lokakuu tiedostoon `wiki/log-2026-06-to-10.md`; formaattilistaan `grill`; NUL-tavu korjattu
-  - [ ] marraskuun loki on yksinäänkin noin 160 kt (noin 40 000 tokenia), ei mahdu yhteen lukuun; jaa tarvittaessa 1.–15.11. omaksi tiedostokseen
+  - [x] lokin jako puoliautomaattiseksi (22.11.): `scripts/rotate_log.py` siirtää vanhimmat merkinnät enintään 40 kt:n arkistoihin, kun `log.md` ylittää 40 kt; `check.py` varoittaa. Koko historia: `grep wiki/log*.md`
   - [ ] valinnainen: `docs/lessons.md`, lokista poimitut opit (pohja blogille ja templaatille)
 - [x] Vaihe 5: Weiser-Bitoun p. 11 Motivationiin (22.11.; rastitus kohdassa A)
 

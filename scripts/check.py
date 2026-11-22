@@ -17,7 +17,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 WIKI, RAW, PAPERS = ROOT / "wiki", ROOT / "raw", ROOT / "wiki" / "papers"
 LOG_TYPES = {"init", "ingest", "query", "draft", "lint", "grill"}
-NON_PAGES = {"index.md", "log.md", "log-2026-06-to-10.md", "references.md"}
+NON_PAGES = {"index.md", "log.md", "references.md"}
+# Archives of the log written by scripts/rotate_log.py: not wiki pages (no index entry, no tags).
+LOG_ARCHIVE = re.compile(r"^log-\d{4}-\d{2}-\d{2}-to-\d{4}-\d{2}-\d{2}(?:-\d+)?\.md$")
+LOG_LIMIT = 40_000  # bytes; keep in step with --limit in scripts/rotate_log.py
+
+
+def non_page(p):
+    return p.parent == WIKI and (p.name in NON_PAGES or bool(LOG_ARCHIVE.match(p.name)))
 
 findings = {"ERROR": [], "WARN": [], "INFO": []}
 
@@ -105,7 +112,7 @@ for target in re.findall(r"\]\(([^)#]+\.md)\)", index_text):
     indexed.add(path)
     if not path.exists():
         report("ERROR", "wiki/index.md", f"broken link {target}")
-pages = [p for p in WIKI.rglob("*.md") if p.name not in NON_PAGES or p.parent != WIKI]
+pages = [p for p in WIKI.rglob("*.md") if not non_page(p)]
 for p in pages:
     if p.resolve() not in indexed:
         report("ERROR", rel(p), "not listed in wiki/index.md")
@@ -179,7 +186,7 @@ linked = set()
 for key, page in page_keys.items():
     linked.update(frozenset((key, k2)) for k2 in paper_links(page) if k2 != key)
 for p in WIKI.glob("*.md"):
-    if p.name not in NON_PAGES:
+    if not non_page(p):
         hub = sorted(paper_links(p))
         linked.update(frozenset((a, b)) for i, a in enumerate(hub) for b in hub[i + 1:])
 unlinked = {}
@@ -200,7 +207,7 @@ vocab_line = next((l for l in read(agents).splitlines() if l.startswith("**Tag v
 vocab = {t for t in re.findall(r"`([a-z0-9/\-]+)`", vocab_line) if not t.endswith("/")}
 if vocab:
     for p in sorted(WIKI.rglob("*.md")):
-        if p.parent == WIKI and p.name in NON_PAGES:
+        if non_page(p):
             continue
         fm = re.match(r"---\r?\ntags:\s*\[([^\]]*)\]", read(p))
         tags = [t.strip() for t in fm.group(1).split(",") if t.strip()] if fm else []
@@ -211,7 +218,10 @@ if vocab:
                 report("WARN", rel(p), f"tag '{t}' is not in the Tag vocabulary of AGENTS.md")
 
 # --- log.md header format ------------------------------------------------------------
-for log_file in ("log.md", "log-2026-06-to-10.md"):
+if (WIKI / "log.md").stat().st_size > LOG_LIMIT:
+    report("WARN", "wiki/log.md", f"{(WIKI / 'log.md').stat().st_size} bytes, over {LOG_LIMIT}: "
+                                  "run python -I scripts/rotate_log.py --write to move the oldest entries to archives")
+for log_file in ["log.md"] + sorted(p.name for p in WIKI.glob("log-*.md") if LOG_ARCHIVE.match(p.name)):
     if not (WIKI / log_file).exists():
         continue
     for i, line in enumerate(read(WIKI / log_file).splitlines(), 1):
