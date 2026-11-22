@@ -67,7 +67,7 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
 Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.org hylätty seulonnan epävarmuuden vuoksi).
 
 - [ ] Seuraava vaihe on `docs/pdf-export-notes.md`:n kuusivaiheinen lista: 
-  - [ ] Renderöi `figures/fig1-timeline.mmd` ja `figures/fig2-morphology-pipeline.mmd` Mermaid Livessä SVG:ksi. Katso kuvan 2 solmut K ja L: niiden tekstit pitenivät tänään, ja laatikot voivat levitä.
+  - [x] Renderöi `figures/fig1-timeline.mmd` ja `figures/fig2-morphology-pipeline.mmd` SVG:ksi. Katso kuvan 2 solmut K ja L: niiden tekstit pitenivät tänään, ja laatikot voivat levitä. **Tehty 22.11.2026** komennolla `python -I scripts/figures.py --render`; Mermaid Liven vienti ei kelvannut (tallensi esikatselun tumman teeman ja zoomauksen). K ja L mahtuvat. Kuvan 1 "Functional/metabolic/transcriptional" valuu laatikon yli; korjaus vaatisi tekstimuutoksen `main.md`:hen.
   - [ ] aja `python -I scripts/export.py --write` 
   - [ ] tee PDF selaimesta, taustagrafiikat päällä ja ylä- ja alatunnisteet pois.
 
@@ -75,7 +75,7 @@ Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.o
 Open ScholarPeeriä ei kokeilla. Ulkopuolinen arviointi hoidetaan A4:n toisen mallin tarkistuksella (`docs/ai-review-brief.md` + `main.md`), joka antaa tekstitason kritiikin ilman asennusta. Perustelu kirjattu lokiin 20.11.2026. Jos kattavuus alkaa epäilyttää ennen vientiä, päätös on avattavissa — mutta silloin ennen B1:tä, koska uusi lähde tarkoittaa ingestiä, uusia väitteitä ja grindausta.
 
 ### B1. Vienti (ks. docs/pdf-export-notes.md, "Revised export plan": HTML on pohja, PDF HTML:stä selaimen tulostuksella)
-- [ ] Mermaid-kaaviot (2 kpl) SVG-kuviksi mermaid-liven kautta, upotus kuvina alt-teksteineen (nyt versioimaton unpkg-CDN). **Työkalut valmiina 20.11.2026** (`docs/pdf-export-notes.md`, "Figure workflow"): `figures/*.mmd` on jo irrotettu, enää puuttuu Mermaid Live -renderöinti nimillä `figures/fig1-timeline.svg` ja `figures/fig2-morphology-pipeline.svg`; sen jälkeen `python -I scripts/figures.py --export` ja vienti tiedostosta `main-export.md`. check.py varoittaa kunnes kuvat ovat olemassa
+- [ ] Mermaid-kaaviot (2 kpl) SVG-kuviksi, upotus kuvina alt-teksteineen (nyt versioimaton unpkg-CDN). **Työkalut valmiina 20.11.2026** (`docs/pdf-export-notes.md`, "Figure workflow"): **kuvat renderöity 22.11.2026** (`python -I scripts/figures.py --render`, Mermaid Live hylätty); enää `python -I scripts/export.py --write` ja vienti tiedostosta `main-export.md`
 - [x] HTML: näkyvä otsikkolohko, URL:ien linkitys ja HTML-kommenttien poisto — **koneellistettu 20.11.2026** `scripts/export.py --write`:iin (otsikkolohko front matterista, 31 URL:ia linkitetty, kommentit pois; main.md pysyy siistinä). main.md:ssä ei ollut enää yhtään HTML-kommenttia
 - [ ] Rakennus ja tarkistukset: `docs/pdf-export-notes.md`, "Build checklist" (6 askelta + tarkistuslista). Print-CSS valmiina: `docs/print.css` (`break-inside: avoid` kuville ja taulukoille, hanging indent lähdeluetteloon, taulukot 8,5 pt). **Ylätunnisteita ei poisteta CSS:llä** — selaimen tulostusvalinnasta "Headers and footers" pois
 

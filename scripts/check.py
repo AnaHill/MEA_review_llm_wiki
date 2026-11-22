@@ -253,9 +253,9 @@ if manifest_path.exists():
             report("WARN", f"figures/{slug}", "no ```mermaid block in main.md matches this figure number")
         elif current != entry.get("sha256"):
             report("WARN", f"figures/{slug}", "the diagram in main.md changed since this image was recorded; "
-                                              "re-render it and run python -I scripts/figures.py --write")
+                                              "re-render it with python -I scripts/figures.py --render")
         if not image.exists():
-            report("WARN", rel(image), "rendered image missing; export it from figures/%s.mmd" % slug)
+            report("WARN", rel(image), "rendered image missing; render it with python -I scripts/figures.py --render")
 
 # --- register of own inferences: the Support vocabulary --------------------------------
 # Every **Support:** line of docs/claims-by-source.md names where a statement's warrant comes
