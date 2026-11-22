@@ -50,7 +50,7 @@ Valmis, kun teksti on lukittu ja jokainen väite on tarkistettu lähdettä vaste
   - [x] saisiko backlinkit ja tagit paremmaksi, jotta graafiesitys paranisi?
   - [x] `wiki/index.md`:n "Last updated" -päiväys ja muu siistintä (lint 3.11., kohta 10)
 
-- [x] ota lähteet talteen lopuksi omaan paikkaan
+- [x] ota lähteet talteen lopuksi omaan paikkaan -> Drive: Projektit -> Wiki
 
 - [ ]`README.md` päivityksiä
   - [x] kuvat siirretty postauksen alla. Tuo sieltä tai luo lopulliset versiot READMEta varten jos näitä käytetään
