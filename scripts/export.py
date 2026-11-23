@@ -162,7 +162,7 @@ def main():
     print(f"title block:                 {'yes' if heading.startswith('#') else 'no title in front matter'}")
     if missing:
         print("\nthe rendered image is missing for: " + ", ".join(missing))
-        print("export it from figures/*.mmd in Mermaid Live before building the HTML")
+        print("render it with python -I scripts/figures.py --render before building the HTML")
 
     if args.write:
         TARGET.write_text(result.rstrip("\n") + "\n", encoding="utf-8", newline="\n")

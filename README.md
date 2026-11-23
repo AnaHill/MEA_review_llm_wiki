@@ -14,6 +14,8 @@ Its two figures are Mermaid diagrams inside `main.md`, which keeps them in the t
 
 This repository explores using AI agents as helpers in writing a review paper on MEA analysis of hiPSC-CMs since 2022. A second goal is to log the process (`wiki/log.md`) so that the workflow itself can be evaluated: how AI-assisted paper writing can be done efficiently, and where it goes wrong (for example, hallucinated citations caught during the work).
 
+A blank template with the scripts, skills and conventions of this repository, for starting a paper of your own, is [llm-wiki-academic-template](https://github.com/AnaHill/llm-wiki-academic-template).
+
 The author selects the sources, directs the agents and is responsible for the final text. The agents summarise sources, maintain the wiki and draft text. `scripts/check.py` checks that citations, the reference list and the wiki pages are consistent, but it cannot verify that a claim is true; that requires reading the source, and every claim in the paper is checked against its source before publication (see `docs/claims-by-source.md`). Not every intermediate commit has been reviewed in detail.
 
 ### The work that is easy to skip: keeping the wiki honest
