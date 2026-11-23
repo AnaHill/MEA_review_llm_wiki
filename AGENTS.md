@@ -54,7 +54,7 @@ When the researcher asks a question:
 When the researcher asks to write or update the paper draft:
 1. Read `main.md` to understand what is already written.
 2. Read relevant wiki pages for the section being worked on, and any related entries in `notes.md`.
-3. Update the relevant section(s) in `main.md` — surgical edits only.
+3. Update the relevant section(s) in `main.md` — surgical edits only. When correcting a claim, re-read the whole sentence and rewrite it if needed, not only the part that was wrong (a correction appended to a sentence once left its beginning saying the opposite); then re-read the title, the Highlights and the Abstract, which restate claims in their own words and do not change with them.
 4. Do not touch sections the researcher did not ask about, uncless you noticed that something should be changed. Ask then permission before touching any other section.
 5. Write back to the wiki. When the edit compares sources, gathers a theme or introduces a concept that the wiki does not yet carry: add the missing link (with a short reason) to the "See also" of the paper pages involved, or to the concept page that covers the theme; give a recurring theme its own concept page; and if a good tag emerges, add it to the Tag vocabulary only when it fits at least three pages. `scripts/check.py` reports, as INFO, sources cited in one sentence of `main.md` whose pages are not connected (directly or through a concept page that links both), and tags outside the vocabulary as WARN.
 6. Append an entry to `wiki/log.md`, naming the wiki pages changed in step 5.

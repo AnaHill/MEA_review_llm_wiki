@@ -2,7 +2,7 @@
   "fig1-timeline": {
     "figure": 1,
     "caption": "Timeline of methodological developments in cardiomyocyte MEA analysis, 2022–2026. The entries are a selection from the studies examined, chosen to show the range of developments rather than to list them: about a third of the post-2022 sources cited in this review do not appear, among them reviews, a non-peer-reviewed acceptance standard, and studies whose contribution is to the recording rather than to the analysis. The figure is therefore not a chronology of the field, nor of the reference list.",
-    "sha256": "be3a398326d6f6aea81caad887e5224c14f826f4a1f23dbc8ef5d9c6e412c647",
+    "sha256": "7135c90fdbdc223d902fb1657d0e24ec0a72aaba676ac7db9ee14dcf75a1f928",
     "image": "fig1-timeline.svg"
   },
   "fig2-morphology-pipeline": {

@@ -59,8 +59,8 @@ The wiki looks tidy and confident, and its errors are invisible from inside it: 
 ### When you correct a claim, rewrite the whole sentence
 A correction appended to the end of a sentence left its beginning saying the opposite; the automatic checks could not see it, and reading found it.
 - **Evidence:** log 2026-10-27 draft
-- **Changed:** recorded in the log only
-- **Status:** open (the rule is not in `AGENTS.md` or in a skill, although the blog draft says the agent has it)
+- **Changed:** Draft step 3 in `AGENTS.md` (2026-11-22; until then the rule was only in the log, although the blog draft already said the agent had it)
+- **Status:** rule only
 
 ### Narrow a universal statement to what was actually checked
 "None of the studies measures how much variability analysis methods cause" was contradicted by studies the review itself cites; it became "none applies two conventions to the same recordings". A tool "built for 3D preparations" rested on the word "organoid" alone. "Two of them" did not survive counting.

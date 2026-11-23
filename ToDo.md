@@ -5,8 +5,7 @@ Järjestys: **A → B → C -> D.** D-luonnostelu ei odota mitään. Tehdyt kohd
 ## A. Paperin sisältö ja säännöt
 Lähdetarkistus, lyhenteet ja kahden ulkopuolisen mallin arviointi (ChatGPT ja NotebookLM/Gemini) on tehty; jäljellä:
 
-- [ ] Kuvan 1 teksti "Functional/metabolic/transcriptional" valuu laatikon yli renderöidyssä SVG:ssä (22.11.). Korjaus vaatii tekstimuutoksen `main.md`:n Mermaid-lohkoon; sen jälkeen `figures.py --write`, renderöinti uudelleen (`figures.py --render`) ja `claim_quotes.py --write` (Timeline-väite lainaa tätä riviä)
-- [ ] AGENTS.md:hen sääntö "when you correct a claim, rewrite the whole sentence" (`docs/lessons.md`: status open; blogi väittää säännön olevan olemassa)
+- [ ] Rastita Fetterman (1) `docs/claims-by-source.md`:ssä (kuvan 1 label muotoiltu 22.11. uudelleen ylivuodon takia) ja katso uusi `figures/fig1-timeline.svg`
 - Päätetty 22.11.: kaksi highlightia saa ylittää 85 merkkiä (87 ja 88); `check.py` näyttää ne INFO-rivinä
 
 **Vinkit, jos main.md vielä muuttuu:**

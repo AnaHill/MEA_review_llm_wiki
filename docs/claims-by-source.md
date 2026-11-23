@@ -164,8 +164,8 @@ Pointers: (2) abstract p. 1 and p. 4 ("only in the monolayers exhibiting field p
 
 Local file: `raw/fetterman-2024-maturation.pdf`; page `wiki/papers/fetterman-2024-maturation.md`. Status: checked against the full text 2026-10-24.
 
-- [x] (1) [Timeline] "Functional/metabolic/transcriptional maturation shown largely independent" ("largely" added 2026-11-05).
-    - > : Functional/metabolic/transcriptional maturation shown largely independent (Fetterman et al.)
+- [x] (1) [Timeline] "Functional, metabolic and transcriptional maturation largely independent" ("largely" added 2026-11-05; the slashes became words and "shown" was dropped 2026-11-22, because the slash-joined words could not wrap and ran out of their box in the rendered figure; meaning unchanged).
+    - > : Functional, metabolic and transcriptional maturation largely independent (Fetterman et al.)
 - [x] (2) [Maturation] when the components of a maturation medium were added or removed one at a time, functional (electrophysiology and excitation–contraction coupling), metabolic and transcriptional maturation responded largely independently (shortened 2026-11-05: the method sentence and the fatty-acid example were merged into this one claim; former (3) dropped, (4) and (5) renumbered).
     - > A recent high-throughput study outside the MEA literature limits what such a reference value could measure: when the components of a maturation medium were added or removed one at a time, functional (electrophysiology and excitation–contraction coupling), metabolic and transcriptional maturation responded largely independently (Fetterman et al., 2024).
 - [x] (3) [Conclusion] because maturation is induced largely independently, a benchmark could only cover the electrophysiological axis.
