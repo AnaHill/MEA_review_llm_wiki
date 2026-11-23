@@ -3,10 +3,8 @@
 Järjestys: **A → B → C -> D.** D-luonnostelu ei odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
 
 ## A. Paperin sisältö ja säännöt
-Lähdetarkistus, lyhenteet ja kahden ulkopuolisen mallin arviointi (ChatGPT ja NotebookLM/Gemini) on tehty; jäljellä:
-
-- [x] Rastita Fetterman (1) `docs/claims-by-source.md`:ssä (kuvan 1 label muotoiltu 22.11. uudelleen ylivuodon takia) ja katso uusi `figures/fig1-timeline.svg`
-- Päätetty 22.11.: kaksi highlightia saa ylittää 85 merkkiä (87 ja 88); `check.py` näyttää ne INFO-rivinä
+- Lähdetarkistus, lyhenteet ja kahden ulkopuolisen mallin arviointi ✅
+- Päätetty 22.11.: highlight saa ylittää 85 merkkiä ✅; `check.py` näyttää ne INFO-rivinä
 
 **Vinkit, jos main.md vielä muuttuu:**
 - Clauden tarkistusraportti yhdestä lähteestä (ei muuta mitään): `/grinding Correia`
@@ -14,19 +12,8 @@ Lähdetarkistus, lyhenteet ja kahden ulkopuolisen mallin arviointi (ChatGPT ja N
 - Isompi päätös (esim. poistetaanko väite)? `/grill-paper`
 - Hook ajaa main.md:n muokkauksen jälkeen `check_abbreviations.py`:n, `check.py`:n ja `claim_quotes.py --check`:n; lue Notes
 
-## A5. Valinnaisia muualle kuin main.md tiedostoon
-- [ ] `README.md`:n kuvat (kuvat siirretty postauksen alle; tuo sieltä tai luo lopulliset versiot, jos käytetään)
-  - [ ] toisiko Obsidianin Graph View -kuva lähteiden riippuvuuksista lisäarvoa?
-  - [ ] entä markmap-esitys? Kuva postauksen ideoissa
-    - **Ongelma (mitattu 21.11.2026):** `main.md`:n markmap toimii vain `foldLevel: 1`:llä. Tasolla 2 markmap 0.3 tekee solmun jokaisesta listakohdasta (kappaleista ei), eli kuvaan tulee 40 listasolmua: Conclusion 4 kpl (pisin **1304 merkkiä**, ka 960), Limitations 7 kpl (628 / 320), Abstract 4 kpl (141 / 128), Abbreviations 15 kpl, Highlights 7 kpl. `wrapWidth: 300` muuttaa tuhannen merkin solmun kymmenen rivin palstaksi — siksi kuva hajoaa. Otsikon pituus ei ole syy.
-    - **Ratkaisu: erillinen `docs/paper-outline.md`**, jossa on vain otsikkopuu ja lyhyt otsikko. Markmap näyttää silloin rakenteen (Literature review'n 7 alalukua, Discussionin 2) ilman listakohinaa, eikä paperin lähdetiedostoon tule esitysasiaa.
-      - [ ] `scripts/outline.py`: lue `main.md`:n `#`- ja `##`-otsikot (ohita front matter ja `# References`, sama logiikka kuin `claim_quotes.py`:n `main_sentences`), kirjoita `docs/paper-outline.md`: front matter (lyhyt `title`, `markmap: foldLevel/theme/wrapWidth`) ja otsikot sellaisinaan, ei listoja
-      - [ ] pidä ajan tasalla samalla tavalla kuin kuvat: tallenna otsikkopuun hash, ja anna `check.py`:n varoittaa kun `main.md`:n otsikot ovat muuttuneet mutta jäsennystä ei ole ajettu uudelleen (`figures.py`/`figures.json` on valmis malli)
-      - [ ] renderöi kuva vasta kun paperin otsikot ovat lukossa (otsikko vaihtui 21.11., Discussion sai 2 alalukua)
-    - **Hylätty vaihtoehto:** `foldLevel: 2` + `<!-- markmap: fold -->` -direktiivit. Asennettu markmap-vscode 0.3.1 tunnistaa `fold`- ja `foldAll`-direktiivit (varmistettu laajennuksen koodista), mutta direktiivi tarvittaisiin viiteen osioon, ja rivi `# Highlights <!-- markmap: fold -->` rikkoisi `check_abbreviations.py`:n: sen `section()` vaatii otsikkorivin päättyvän otsikkoon, joten Highlights ei enää rajautuisi pois lyhennetarkistuksesta ja APD90, FPD ja MEA alkaisivat varoittaa. Korjattavissa yhden rivin muutoksella skriptiin, mutta hinta on esitysasiaa paperin lähdekoodissa
-
 ## B. Julkaisu Zenodoon
-Valmis, kun paperilla on DOI. Päätetty 31.10.: Zenodo (ei lehteä; Preprints.org hylätty seulonnan epävarmuuden vuoksi). Ulkopuolisesta itsearviointityökalusta (Open ScholarPeer) luovuttiin 20.11. (perustelu lokissa); jos kattavuus alkaa epäilyttää, päätös on avattava ennen B1:tä, koska uusi lähde tarkoittaa ingestiä, uusia väitteitä ja grindausta.
+Valmis, kun paperilla on DOI Zenodossa ✅
 
 ### B1. Vienti (ks. `docs/pdf-export-notes.md`: "Figure workflow" ja "Build checklist"; HTML on pohja, PDF HTML:stä selaimen tulostuksella)
 Kuvat on renderöity 22.11. (`python -I scripts/figures.py --render`), ja otsikkolohko, URL:ien linkitys ja kommenttien poisto on koneellistettu `export.py`:hin. Jäljellä:
@@ -85,7 +72,7 @@ Sisältö ja ideat `docs\private\llm-wiki-post`. Luonnostelu rinnakkain, julkais
 - [ ] Blogipostaus ensin `2026-11-10-llm-wiki-and-academic-review.md`
   - [ ] **pääviesti: wikin ylläpito on se osa, joka unohtuu.** Karpathyn gistin kaksi kohtaa ("The synthesis already reflects everything you've read" ja "I browse the results in real time — following links, checking the graph view, reading the updated pages") — jälkimmäinen on se, mikä tekee edellisestä totta. Näyttö tästä reposta: keksityt lähteet (Galli 2024 ei ole olemassa, Dunham/Hwang tekijälistat, Blinova 2025), yli 200 väitteen läpikäynti lähde kerrallaan ja lähes 40 omaa päätelmää erikseen kirjattuna. README:ssä osio "The work that is easy to skip: keeping the wiki honest" — käytä sitä runkona
   - [ ] tarkista blogin `[CLAUDE 22.11.]`-merkityt kohdat (11 kpl) ja poista merkinnät
-  - [ ] blogin muut TODO-kommentit (mm. Markmap-kuva, työnkulkukaavio, uusi graafikuva, käännöksen tarkistus, Zenodo-DOI)
+  - [ ] blogin muut TODO-kommentit (mm. työnkulkukaavio, graafikuvan kopiointi kotisivulle, käännöksen tarkistus, Zenodo-DOI)
   - [ ] postaus on noin 6 700 sanaa; lyhennysehdokkaat "Co-writing without git skills" (kokeilematon idea) ja "Where the paper is published"
 - [ ] LinkedIn-postaus blogin jälkeen `docs\private\llm-wiki-post\linkedin_draft.md`: viittaa repoon, Zenodoon ja blogiin
   - [ ] tarkista, että `/grinding` skills mainittu

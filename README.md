@@ -49,6 +49,10 @@ The division of labour that makes this sustainable is mechanical checks for what
 | Paper draft | `main.md` | LLM writes, author directs and edits |
 | Own thinking | `notes.md` | Author only; the agent reads it, never edits it |
 
+![Obsidian graph view of the wiki with the fpd-end-conventions page highlighted and its links to paper pages, concept pages and tags.](docs/images/fpd-end-conventions-graph-view.png)
+
+*The wiki in Obsidian's graph view (2026-11-23): paper pages in blue, concept and method pages in orange, tags in green. Highlighted is [fpd-end-conventions](wiki/fpd-end-conventions.md), the method page that sets side by side how each source defines the start and end of the field potential duration, the subject of one of the four gaps of the paper. Its links reach fourteen paper pages, six concept pages and two tags. The page adds no evidence of its own: it gathers what the paper pages record and backs Table 2 of the draft. A reference manager stores the sources; the wiki also stores how they relate.*
+
 **Four operations (ask agent):**
 - **Ingest** — drop a PDF into `raw/`, LLM reads it, creates a summary page, updates the wiki, appends citation
 - **Query** — ask anything; LLM reads the wiki and synthesizes an answer with citations
@@ -86,7 +90,7 @@ wiki/
 main.md            paper draft — IMRaD sections, single file (the two figures are ```mermaid blocks)
 figures/           the diagrams copied out of main.md (.mmd, generated) and rendered for export (.svg)
 notes.md           the author's own notes (the agent does not edit it)
-docs/              process documents (see docs/README.md): claims-by-source checklist, lint audit trail, PDF export notes, search strategy, maturation search record
+docs/              process documents (see docs/README.md): claims-by-source checklist, lint audit trail, PDF export notes, search strategy, maturation search record; images/ holds the images of this README
 scripts/           check.py (consistency check), render_pdf_pages.py (PDF text and page images), claim_quotes.py (main.md sentences under each source's claims; dry run by default, `--write` updates the file and puts ✅ on sources whose claims are all ticked), check_abbreviations.py (abbreviation list)
 skills/            Agent skill definitions (reference)
 .claude/skills/    skills Claude Code loads: grill-paper (/grill-paper), grinding (/grinding)
