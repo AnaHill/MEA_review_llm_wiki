@@ -156,3 +156,11 @@ The old README image (`maturation_graph_view.png`, centred on `hipsc-cm-maturati
 ## [2026-11-23] lint | the graph view recipe and the markmap decision kept in docs/images/README.md
 
 Before the README-image section (A5) was removed from `ToDo.md`, which is deleted at publication, its content was moved to `docs/images/README.md`: the Obsidian graph view settings (filter, the ordered colour groups, the root-pages query, tags, text fade), the link counts behind the choice of `fpd-end-conventions`, and how to recount the caption when the image is retaken. The same file keeps the markmap outline of `main.md` that was considered and not made: the measured problem (list items become nodes at `foldLevel: 2`, up to 1304 characters each), the planned `scripts/outline.py` with a hash check, and the rejected fold directives, which would have broken the Highlights exclusion in `check_abbreviations.py`. Decided not to carry the markmap out for now; the README uses the graph view image.
+
+## [2026-11-23] lint | three optional skills parked in docs/ideas.md
+
+The ToDo list named three further skills from Matt Pocock's collection (`handoff`, `retro`, `research`) as optional. Decided not to carry them out now: the paper is close to publication and none of them would change it, and Claude Code's own summarising of long conversations already covers most of what `handoff` would do. Because `ToDo.md` is deleted at publication, they are kept with these reasons in a new `docs/ideas.md` (listed in `docs/README.md`), meant for ideas that wait rather than ideas that were rejected.
+
+## [2026-11-23] lint | the remaining later and optional items moved from ToDo.md to docs/ideas.md
+
+`ToDo.md` now opens with a pointer to `docs/ideas.md` and keeps only work that is planned. Moved there, translated and unchanged in substance: Ingest and Lint as skills of their own (the Ingest checklist drawn from the log, and the `writing-for-agents` points for tidying the template's AGENTS.md), and the optional decision record at the end of `/grill-paper`. The pointer line left earlier the same day for the three Pocock skills was removed. The template transfer (C2) stays in `ToDo.md` as planned work; the two shortening candidates of the blog post stay as an open decision.

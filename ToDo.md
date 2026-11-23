@@ -1,6 +1,7 @@
 # ToDo (päivitetty 22.11.2026)
 <!-- temp file that will be deleted -->
 Järjestys: **A → B → C -> D.** D-luonnostelu ei odota mitään. Tehdyt kohdat poistetaan (git-historia säilyttää ne).
+Pohditut mutta nyt toteuttamatta jätetyt ideat ovat tiedostossa [docs/ideas.md](docs/ideas.md) (mm. Ingest- ja Lint-skillit, päätöskirjaus `/grill-paper`-skilliin, Matt Pocockin muut skillit).
 
 ## A. Paperin sisältö ja säännöt
 - Lähdetarkistus, lyhenteet ja kahden ulkopuolisen mallin arviointi ✅
@@ -52,25 +53,11 @@ Kuvat on renderöity 22.11. (`python -I scripts/figures.py --render`), ja otsikk
   - [ ] `docs/private/` (git-ignored, yksityiset luonnokset) ja sen maininta AGENTS.md:ssä
   - [ ] täydennysaineistojen nimeäminen myös muille kuin PDF:ille (`<stem>-supplementary.docx`), ja .docx-kuvien purku `figure_analysis/`-kansioon tarkastelua varten
   - [ ] wikin paluusuunta: AGENTS.md Draft-askel 5 "Write back to the wiki", Lint-kohta, Tag vocabulary -konventio, `check.py`:n kaksi tarkistusta (samassa virkkeessä siteeratut mutta wikissä yhdistämättömät lähteet; tagit sanaston ulkopuolelta) ja README:n "Rule plus mechanical check" -periaate
-  - [ ] valinnainen: päätöskirjaus `grill-paper`-skillin loppuun (idea Matt Pocockin `grill-with-docs`/`domain-modeling`-skilleistä): päätös, perustelu ja hylätyt vaihtoehdot lyhyinä merkintöinä esim. `docs/decisions.md`:hen, ettei päätöksiä tarvitse kaivaa lokista
-- [ ] myöhemmin: Ingest- ja Lint-menettelyt omiksi skilleiksi AGENTS.md:stä (ks. AGENTS.md "Schema evolution")
-  - Ingest-skillin tarkistuslista lokin perusteella: kuvien katsominen, liitteiden lukeminen, kirjoittajajärjestys PDF:n sivulta 1, vuosisääntö, lähteen omien ristiriitojen kirjaaminen, `SOURCES`-kuvio samannimisille
-  - Ohjeena Matt Pocockin `writing-for-agents` (https://github.com/mattpocock/skills/blob/main/skills/productivity/writing-for-agents/SKILL.md, MIT). Käytä silloin, kun teet Ingest- ja Lint-skillit, ja templaatin AGENTS.md:n siistimiseen, ei paperin loppusuoralla. Mitä tehdä:
-    - karsi toistot: kukin sääntö yhteen paikkaan ("raw/ muuttumaton" nyt kolmessa kohdassa, `notes.md`-sääntö kahdessa)
-    - korjaa otsikko "Four operations" (operaatioita on nyt seitsemän)
-    - kiellot ("Never", "Do not") vain koville rajoille, muut myönteisiksi ohjeiksi
-    - jokaiselle vaiheelle tarkistettava valmiin kriteeri (Finishing check on hyvä malli, Ingestistä se puuttuu)
-    - siirretyille osille lyhyet osoittimet, laukaisusana ensin ("When ingesting, read …")
-
-#### Valinnaisia muita Matt Pocockin skillejä (https://github.com/mattpocock/skills, MIT)
-- `handoff`: tiivistää pitkän keskustelun dokumentiksi, jolla uusi keskustelu jatkaa (hyödyllinen pitkissä istunnoissa)
-- `retro`: ehdottaa istunnon jälkeen parannuksia agentin ympäristöön (vrt. 11.11. hook ja estosäännöt)
-- `research`: tutkii kysymyksen primäärilähteistä ja tallentaa lähdeviitteellisen markdownin; lähellä Queryä ja kirjallisuushakua, oma prosessi tiukempi
 
 ## D. Postaukset (kotisivun blogi kattava ensin, LinkedIn lyhyt sen jälkeen)
 Sisältö ja ideat `docs\private\llm-wiki-post`. Luonnostelu rinnakkain, julkaisu vasta B:n jälkeen (tarvitsee linkin). Luvut pyöristetään ("yli 200 väitettä", "yli 30 lähdettä", "lähes 40 omaa päätelmää"), kun tarkka arvo ei ole oleellinen.
 - [ ] Blogipostaus ensin `2026-11-10-llm-wiki-and-academic-review.md`
-  - [ ] **pääviesti: wikin ylläpito on se osa, joka unohtuu.** Karpathyn gistin kaksi kohtaa ("The synthesis already reflects everything you've read" ja "I browse the results in real time — following links, checking the graph view, reading the updated pages") — jälkimmäinen on se, mikä tekee edellisestä totta. Näyttö tästä reposta: keksityt lähteet (Galli 2024 ei ole olemassa, Dunham/Hwang tekijälistat, Blinova 2025), yli 200 väitteen läpikäynti lähde kerrallaan ja lähes 40 omaa päätelmää erikseen kirjattuna. README:ssä osio "The work that is easy to skip: keeping the wiki honest" — käytä sitä runkona
+  - [ ] **pääviesti: wikin ylläpito on se osa, joka unohtuu.** Karpathyn gistin kohdat kuten "The synthesis already reflects everything you've read" ja "I browse the results in real time — following links, checking the graph view, reading the updated pages" 
   - [ ] tarkista blogin `[CLAUDE 22.11.]`-merkityt kohdat (11 kpl) ja poista merkinnät
   - [ ] blogin muut TODO-kommentit (mm. työnkulkukaavio, graafikuvan kopiointi kotisivulle, käännöksen tarkistus, Zenodo-DOI)
   - [ ] postaus on noin 6 700 sanaa; lyhennysehdokkaat "Co-writing without git skills" (kokeilematon idea) ja "Where the paper is published"
