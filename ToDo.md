@@ -50,7 +50,7 @@ Sisältö ja ideat `docs\private\llm-wiki-post`. Luonnostelu rinnakkain, julkais
 - [ ] Blogipostaus ensin `2026-11-10-llm-wiki-and-academic-review.md`
   - [ ] **pääviesti: wikin ylläpito on se osa, joka unohtuu.** Karpathyn gistin kohdat kuten "The synthesis already reflects everything you've read" ja "I browse the results in real time — following links, checking the graph view, reading the updated pages" 
   - [ ] tarkista blogin `[CLAUDE 22.11.]`-merkityt kohdat (11 kpl) ja poista merkinnät
-  - [ ] blogin muut TODO-kommentit (mm. työnkulkukaavio, graafikuvan kopiointi kotisivulle, käännöksen tarkistus, Zenodo-DOI)
+  - [ ] blogin muut TODO-kommentit (mm. työnkulkukaavio, käännöksen tarkistus)
   - [ ] postaus on noin 6 700 sanaa; lyhennysehdokkaat "Co-writing without git skills" (kokeilematon idea) ja "Where the paper is published"
 - [ ] LinkedIn-postaus blogin jälkeen `docs\private\llm-wiki-post\linkedin_draft.md`: viittaa repoon, Zenodoon ja blogiin
   - [ ] tarkista, että `/grinding` skills mainittu
