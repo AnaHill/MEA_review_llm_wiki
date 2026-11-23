@@ -83,6 +83,8 @@ The build copy is generated, so the sequence is short. Run it from the repositor
 4. Convert `main-export.md` to HTML with the usual tool. Keep the output small: the test export was 1.5 MB because the editor's stylesheet, KaTeX fonts and dark-theme logic were embedded.
 5. Attach `docs/print.css` to the HTML: paste it into a `<style>` block just before `</head>`, so its rules come after the converter's and the deposited HTML stays self-contained (a `<link>` breaks once the HTML is downloaded alone). In the same `<head>`, replace `<title>main-export.md</title>` with the paper's title: the converter names the page after the file, and the browser copies the title into the tab and into the Title field of the printed PDF.
 6. Print to PDF from Chrome or Edge, **with "Headers and footers" unticked** in the print dialog. No CSS removes the browser's running header; that option is the only way. Choose the printer "Save as PDF" (not "Microsoft Print to PDF", which drops the links), margins "Default" (the `@page` rule sets them), and save as `Maki-2026-four-methodological-gaps.pdf`: the browser otherwise names the file after the title, with the colon turned into an underscore. The name is git-ignored with the other export files.
+7. Fill in the PDF's Author and Keywords, which the browser leaves empty (it copies only the title). PyMuPDF writes them without touching the pages:
+   `python -I -c "import fitz; d=fitz.open('Maki-2026-four-methodological-gaps.pdf'); m=d.metadata; m['author']='Antti-Juhana Mäki'; m['keywords']='<keywords from the front matter of main.md>'; d.set_metadata(m); d.saveIncr()"`
 
 Checks on the finished files, in this order because each one has failed before:
 

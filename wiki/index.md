@@ -91,4 +91,4 @@ Content catalog for this wiki. The LLM updates this on every ingest. When answer
 
 All citations are listed in [references.md](references.md); the operation history is in [log.md](log.md), whose header lists the archive files of older entries.
 
-*Last updated: 2026-11-22*
+*Last updated: 2026-11-23*

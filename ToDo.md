@@ -16,12 +16,8 @@ Pohditut mutta nyt toteuttamatta jätetyt ideat ovat tiedostossa [docs/ideas.md]
 ## B. Julkaisu Zenodoon
 Valmis, kun paperilla on DOI Zenodossa ✅
 
-### B1. Vienti (ks. `docs/pdf-export-notes.md`: "Figure workflow" ja "Build checklist"; HTML on pohja, PDF HTML:stä selaimen tulostuksella)
-Kuvat on renderöity 22.11. (`python -I scripts/figures.py --render`), ja otsikkolohko, URL:ien linkitys ja kommenttien poisto on koneellistettu `export.py`:hin. Jäljellä:
-- [ ] aja `python -I scripts/export.py --write` (tekee `main-export.md`:n, josta HTML ja PDF tehdään)
-- [ ] Rakennus ja tarkistukset: `docs/pdf-export-notes.md`, "Build checklist" (6 askelta + tarkistuslista). Print-CSS valmiina: `docs/print.css` (`break-inside: avoid` kuville ja taulukoille, hanging indent lähdeluetteloon, taulukot 8,5 pt)
-- [ ] tee PDF selaimesta, taustagrafiikat päällä; ylä- ja alatunnisteet pois selaimen tulostusvalinnasta (CSS ei poista niitä)
-- [ ] leimaa `wiki/index.md`:n "Last updated" viennin päivälle
+### B1. Vienti ✅ (23.11.)
+`Maki-2026-four-methodological-gaps.pdf` (30 s., Title, Author ja Keywords metatiedoissa) ja `main-export.html` repon juuressa, git-ignoroituja. Ohje: `docs/pdf-export-notes.md`, "Build checklist". Jos `main.md` vielä muuttuu tai talletuspäivä on muu kuin 23.11., tee vienti uudelleen (`export.py --write --date <päivä>`).
 
 ### B2. Zenodo-tietue
 - [ ] Oma tietue omalla DOI:lla, tyyppi Publication → Preprint (ei uusi versio Mäki 2023 -tietueesta)
