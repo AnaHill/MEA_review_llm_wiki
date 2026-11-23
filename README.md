@@ -8,11 +8,7 @@ A narrative review paper by Antti-Juhana Mäki, maintained with an LLM-assisted 
 
 The paper is in **[main.md](main.md)**.
 
-Its two figures are written as Mermaid diagrams inside `main.md`, which keeps them in the text that the claim checklist quotes from. `scripts/figures.py` copies each diagram to [figures/](figures/) as a `.mmd` file and records its hash, and `--export` writes a build copy of the paper in which the diagrams are replaced by the rendered images, so that the HTML and the PDF carry real pictures instead of drawing them in the reader's browser.
-
-![Timeline of key methodological developments in cardiomyocyte MEA analysis, 2022–2026.](figures/fig1-timeline.svg)
-
-![Schematic of a morphology-aware field potential analysis pipeline.](figures/fig2-morphology-pipeline.svg)
+Its two figures are Mermaid diagrams inside `main.md`, which keeps them in the text that the claim checklist quotes from; GitHub draws them there. For the HTML and the PDF, `scripts/figures.py --render` draws them as images in [figures/](figures/), and `scripts/export.py --write` makes the build copy of the paper that uses those images.
 
 ## About this repository and AI assistance
 
@@ -44,7 +40,7 @@ The division of labour that makes this sustainable is mechanical checks for what
 
 | Layer | Path | Who owns it |
 |-------|------|-------------|
-| Source papers | `raw/` | PDFs. Immutable. |
+| Source papers | `raw/` | PDFs and other source files (e.g. supplementary data). Immutable; only renamed at ingest. |
 | Wiki pages | `wiki/` | LLM — paper summaries, concepts, gaps |
 | Paper draft | `main.md` | LLM writes, author directs and edits |
 | Own thinking | `notes.md` | Author only; the agent reads it, never edits it |
@@ -54,7 +50,7 @@ The division of labour that makes this sustainable is mechanical checks for what
 *The wiki in Obsidian's graph view (2026-11-23): paper pages in blue, concept and method pages in orange, tags in green. Highlighted is [fpd-end-conventions](wiki/fpd-end-conventions.md), the method page that sets side by side how each source defines the start and end of the field potential duration, the subject of one of the four gaps of the paper. Its links reach fourteen paper pages, six concept pages and two tags. The page adds no evidence of its own: it gathers what the paper pages record and backs Table 2 of the draft. A reference manager stores the sources; the wiki also stores how they relate.*
 
 **Four operations (ask agent):**
-- **Ingest** — drop a PDF into `raw/`, LLM reads it, creates a summary page, updates the wiki, appends citation
+- **Ingest** — drop a file (e.g. PDF) into `raw/`, LLM reads it, creates a summary page, updates the wiki, appends citation
 - **Query** — ask anything; LLM reads the wiki and synthesizes an answer with citations
 - **Draft** — ask to write or rewrite any section of `main.md`
 - **Lint** — health check: stale claims, orphans, unsupported draft assertions; runs `scripts/check.py`
@@ -74,7 +70,7 @@ The repository follows the single-agent-loop design described in Anthropic's art
 - **Progressive disclosure:** procedures that are needed only sometimes live in skills that load on demand (`/grill-paper`, `/grinding`); moving Ingest and Lint into skills is planned.
 - **Guardrails in the harness, not only in the prompt:** [.claude/settings.json](.claude/settings.json) denies file edits to `notes.md` and asks before any write to `raw/` (renames at ingest are approved one by one), and a hook runs the abbreviation and consistency checks after every edit of `main.md`, and reports whether the claims checklist is out of date with it.
 - **Rule plus mechanical check:** a rule in AGENTS.md alone gets forgotten, and a script alone cannot judge what makes a good tag or link. So each important convention has both: for example, the Draft operation tells the agent to write connections made in `main.md` back to the wiki, and `check.py` lists sources that `main.md` cites in one sentence but the wiki does not connect, and tags outside the agreed vocabulary.
-- **Checking the output:** [docs/claims-by-source.md](docs/claims-by-source.md) lists every claim in `main.md` per source and is ticked off against the sources by hand, which serves as the evaluation set. Its last section registers the statements that are deliberately not sourced — generalisations, reasoned steps and the author's hypotheses — each with a **Support** value (`sourced`, `thin`, `inference`, `opinion`, `none`) saying where its warrant comes from, so that what the paper asserts on its own account is written down rather than left to the reader to spot.
+- **Checking the output:** [docs/claims-by-source.md](docs/claims-by-source.md) lists every claim in `main.md` per source and is ticked off against the sources by hand, which serves as the evaluation set. Its last section registers the statements that are deliberately not sourced — generalisations, reasoned steps and the author's hypotheses — each with a **Support** value (`sourced`, `thin`, `inference`, `opinion`, `none`, `inherited`) saying where its warrant comes from, so that what the paper asserts on its own account is written down rather than left to the reader to spot.
 
 ---
 
@@ -89,10 +85,12 @@ wiki/
   references.md    auto-maintained citation list (APA)
 main.md            paper draft — IMRaD sections, single file (the two figures are ```mermaid blocks)
 figures/           the diagrams copied out of main.md (.mmd, generated) and rendered for export (.svg)
+main-export.md     build copy of main.md for the HTML and the PDF (generated by scripts/export.py, not in git)
 notes.md           the author's own notes (the agent does not edit it)
-docs/              process documents (see docs/README.md): claims-by-source checklist, lint audit trail, PDF export notes, search strategy, maturation search record; images/ holds the images of this README
-scripts/           check.py (consistency check), render_pdf_pages.py (PDF text and page images), claim_quotes.py (main.md sentences under each source's claims; dry run by default, `--write` updates the file and puts ✅ on sources whose claims are all ticked), check_abbreviations.py (abbreviation list)
+docs/              process documents (see docs/README.md): claims-by-source checklist, lessons learned, AI reviewer brief, lint audit trail, PDF export notes, search strategy, maturation search record; images/ holds the images of this README
+scripts/           check.py (consistency check), claim_quotes.py (main.md sentences under each source's claims; dry run by default, `--write` updates the file and puts ✅ on sources whose claims are all ticked), check_abbreviations.py (abbreviation list), render_pdf_pages.py (PDF text and page images), figures.py (diagrams to .mmd and .svg), export.py (build copy for HTML and PDF), rotate_log.py (log archives); hooks/ holds the hook that runs the checks after every edit of main.md
 skills/            Agent skill definitions (reference)
+.claude/settings.json  permission rules (notes.md denied, raw/ asks) and the hook
 .claude/skills/    skills Claude Code loads: grill-paper (/grill-paper), grinding (/grinding)
 AGENTS.md          wiki schema and LLM instructions (CLAUDE.md just imports it)
 llm-wiki.md        the wiki pattern explained
@@ -108,7 +106,7 @@ Unless noted otherwise, the written content of this repository (`main.md`, `wiki
 
 - **Select a section** in `main.md` and say *"rewrite this"* — agent edits only that section.
 - **`[CITATION NEEDED]`** markers mean no supporting source was found — add the paper and re-ingest.
-- **Graph view** in Foam or Obsidian shows how paper pages link across the wiki — useful for spotting coverage gaps.
+- **Graph view** in Foam or Obsidian shows how paper pages link across the wiki — useful for spotting coverage gaps. The settings behind the image above are in [docs/images/README.md](docs/images/README.md).
 - **`wiki/references.md`** is copy-paste ready for submission; tell agent your citation style if not APA.
 - **`python -I scripts/check.py`** is run after every change to the wiki or `main.md`; it reports broken links, missing references and unescaped hashes (a `#word` in prose becomes a tag in Obsidian, so write it as `\#word`).
 - **`docs/claims-by-source.md`** lists every claim in `main.md` per source, for checking the paper against the sources.
