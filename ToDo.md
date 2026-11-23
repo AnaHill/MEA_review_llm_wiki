@@ -20,19 +20,14 @@ Valmis, kun paperilla on DOI Zenodossa ✅
 `Maki-2026-four-methodological-gaps.pdf` (30 s., Title, Author ja Keywords metatiedoissa) ja `main-export.html` repon juuressa, git-ignoroituja. Ohje: `docs/pdf-export-notes.md`, "Build checklist". Jos `main.md` vielä muuttuu tai talletuspäivä on muu kuin 23.11., tee vienti uudelleen (`export.py --write --date <päivä>`).
 
 ### B2. Zenodo-tietue
-- [ ] Oma tietue omalla DOI:lla, tyyppi Publication → Preprint (ei uusi versio Mäki 2023 -tietueesta)
-- [ ] Tiedostot: vain PDF (`Maki-2026-four-methodological-gaps.pdf`); lähdeteksti on repon Zenodo-snapshotissa (päätetty 23.11., perustelu lokissa)
-- [ ] Metatiedot: CC BY 4.0; ei rahoitusta (harrasteprojekti); avainsanat; tekijä "Antti-Juhana Mäki, D.Sc. (Tech.), Independent researcher"; ORCID; päivämäärä ja versio
-- [ ] Related identifiers: "references" → Mäki 2023 (10.5281/zenodo.20807245); "is supplemented by" → GitHub-repo (tai repon Zenodo-snapshot GitHub-releasen kautta)
-- [ ] **Arkistoi repon tilannevedos Zenodoon** (GitHub-release → Zenodon GitHub-integraatio) samassa yhteydessä kuin preprint, ja käytä sen DOI:ta yllä olevassa "is supplemented by" -kohdassa GitHub-URL:n sijaan tai rinnalla. Perustelu (21.11.2026): Scope vetoaa hakukirjaukseen todisteena ja nimeää tiedoston `docs/maturation-mea-search.md`, ja Declarations linkittää GitHubiin, joka on muuttuva — repo voi siirtyä, muuttua tai kadota, mutta preprint jää. Snapshot antaa version, joka vastaa julkaistua tekstiä. Tämä koskee myös Highlightsin riviä "A PubMed search found no MEA-derived reference values for hiPSC-CM maturation", joka nojaa samaan kirjaukseen
+Julkaistu 23.11.: paperi https://doi.org/10.5281/zenodo.24459573 (Preprint, vain PDF) ja repon snapshot `v1.0` https://doi.org/10.5281/zenodo.24459822 (Software, *Is supplement to* → paperin concept DOI 10.5281/zenodo.24459572). Jäljellä:
+- [ ] Paperin tietue: Edit → Related works → **Is supplemented by** → `10.5281/zenodo.24459822` (Software) → Publish (vain metatiedot, ei uutta versiota)
 - [ ] Zenodo Communities: etsi sopiva yhteisö (kardiologia, kantasolut, avoin tiede); liittäminen vaatii ylläpitäjän hyväksynnän
 
 ## C. Repot
 
 ### C1. Tämä repo (julkaisun jälkeen)
-- [ ] README.md:n alkuun: "The paper is in main.md and published in <Zenodo-linkki>"
 - [ ] README: linkki https://github.com/AnaHill/llm-wiki-academic-template ja omaan blogipostaukseen
-- [ ] Tag tai GitHub-release julkaistusta versiosta
 - [ ] Poista tämä ToDo.md
 
 ### C2. llm-wiki-academic-template

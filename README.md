@@ -6,7 +6,7 @@ A narrative review paper by Antti-Juhana Mäki, maintained with an LLM-assisted 
 
 ## Paper
 
-The paper is in **[main.md](main.md)**.
+The paper is in **[main.md](main.md)**. It is published as a preprint on Zenodo: **https://doi.org/10.5281/zenodo.24459573** (PDF, version 1, 2026-11-23). The state of this repository at publication, release `v1.0`, is archived as https://doi.org/10.5281/zenodo.24459822; `main.md` may change after that, and the published text is the PDF.
 
 Its two figures are Mermaid diagrams inside `main.md`, which keeps them in the text that the claim checklist quotes from; GitHub draws them there. For the HTML and the PDF, `scripts/figures.py --render` draws them as images in [figures/](figures/), and `scripts/export.py --write` makes the build copy of the paper that uses those images.
 
