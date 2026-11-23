@@ -61,6 +61,10 @@ MERMAID_CONFIG = {
     "look": "classic",
     "fontFamily": "Arial, Helvetica, sans-serif",
     "flowchart": {"htmlLabels": False},
+    # The timeline colours its sections from a cycle of 12 scales; with the default theme some
+    # sections (2022, 2025) got white text on light purple, which nearly vanishes in print
+    # (found in the first PDF, 2026-11-23). Black labels on every scale.
+    "themeVariables": {f"cScaleLabel{i}": "#000000" for i in range(12)},
     "securityLevel": "strict",
 }
 BROWSERS = [

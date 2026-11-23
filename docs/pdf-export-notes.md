@@ -81,8 +81,8 @@ The build copy is generated, so the sequence is short. Run it from the repositor
 2. Open `figures/fig1-timeline.svg` and `figures/fig2-morphology-pipeline.svg` and look at them: no text running out of a box, no literal `\n`.
 3. `python -I scripts/export.py --write` — writes `main-export.md`: diagrams replaced by the rendered images with alt text, a visible title block built from the front matter, 31 bare URLs turned into links, HTML comments stripped. Add `--date 2026-11-25` to stamp a date other than today.
 4. Convert `main-export.md` to HTML with the usual tool. Keep the output small: the test export was 1.5 MB because the editor's stylesheet, KaTeX fonts and dark-theme logic were embedded.
-5. Attach `docs/print.css` to the HTML, as a `<link>` next to the file or pasted into a `<style>` block in `<head>`.
-6. Print to PDF from Chrome or Edge, **with "Headers and footers" unticked** in the print dialog. No CSS removes the browser's running header; that option is the only way.
+5. Attach `docs/print.css` to the HTML: paste it into a `<style>` block just before `</head>`, so its rules come after the converter's and the deposited HTML stays self-contained (a `<link>` breaks once the HTML is downloaded alone). In the same `<head>`, replace `<title>main-export.md</title>` with the paper's title: the converter names the page after the file, and the browser copies the title into the tab and into the Title field of the printed PDF.
+6. Print to PDF from Chrome or Edge, **with "Headers and footers" unticked** in the print dialog. No CSS removes the browser's running header; that option is the only way. Choose the printer "Save as PDF" (not "Microsoft Print to PDF", which drops the links), margins "Default" (the `@page` rule sets them), and save as `Maki-2026-four-methodological-gaps.pdf`: the browser otherwise names the file after the title, with the colon turned into an underscore. The name is git-ignored with the other export files.
 
 Checks on the finished files, in this order because each one has failed before:
 

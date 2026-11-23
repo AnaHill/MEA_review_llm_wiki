@@ -30,7 +30,13 @@ table {
   page-break-inside: avoid;  /* older engines */
 }
 
-p:has(> em):has(+ p > img) {
+/* The caption paragraph before a figure or a table stays whole and on the same page as what it
+   describes. In the first PDF (2026-11-23) both table captions were left at the foot of the page
+   before their table, and the Figure 2 caption was split over two pages, apart from the figure. */
+p:has(> em):has(+ p > img),
+p:has(> em):has(+ table) {
+  break-inside: avoid;
+  page-break-inside: avoid;
   break-after: avoid;
   page-break-after: avoid;
 }
@@ -38,6 +44,13 @@ p:has(> em):has(+ p > img) {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* A figure must leave room for its caption on the same page: the printable height of A4 with the
+   margins above is 257 mm, and Figure 2 (a tall flowchart) took almost all of it. */
+p > img {
+  max-height: 200mm;
+  object-fit: contain;
 }
 
 /* A heading should not be the last thing on a page. */
@@ -55,6 +68,18 @@ h1 {
 body > h1:first-of-type {
   break-before: auto;
   page-break-before: auto;
+}
+
+/* Short sections follow the one before them instead of taking a nearly empty page each: the
+   Highlights and Abbreviations after the Abstract, the Acknowledgements and About the author after
+   the Personal note. The main sections still start a new page. */
+h1#highlights,
+h1#abbreviations,
+h1#acknowledgements,
+h1#about-the-author {
+  break-before: auto;
+  page-break-before: auto;
+  margin-top: 1.5em;
 }
 
 /* Table 1 has long cells and Table 2 has five columns; both overflow at body font size. */
