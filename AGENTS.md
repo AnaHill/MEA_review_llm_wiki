@@ -16,7 +16,7 @@ The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starti
 | `wiki/` | LLM-maintained markdown pages. You own this layer entirely. |
 | `wiki/papers/` | One summary page per ingested source paper. |
 | `wiki/index.md` | Content catalog — read this first when answering any query. |
-| `wiki/log.md` | Append-only chronological log of all operations. When it passes 40 kB (`check.py` warns), `python -I scripts/rotate_log.py --write` moves the oldest entries, unchanged, to `wiki/log-<from>-to-<to>.md` archives of at most 40 kB each, listed in the log's header. To search the whole history, grep `wiki/log*.md`. |
+| `wiki/log.md` | Append-only chronological log of all operations. When it passes 40 kB (`check.py` warns), `python -I scripts/rotate_log.py --write` moves the oldest entries, unchanged, to `wiki/log-archive/log-<from>-to-<to>.md` archives of at most 40 kB each, listed in the log's header; `log.md` itself stays in `wiki/`. To search the whole history, grep `wiki/log.md wiki/log-archive/`. |
 | `wiki/references.md` | Auto-maintained citation list, populated on each ingest. |
 | `main.md` | Evolving paper draft — single file with IMRaD sections. |
 | `skills/` | Agent skill definitions (Claude Code skill format), kept for reference. |

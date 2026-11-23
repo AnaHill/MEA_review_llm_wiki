@@ -4,7 +4,7 @@ The log is append-only and grows with every operation; at about 290 kB (2026-11-
 through, and an agent starting a session reads it for context. When log.md is larger than --limit bytes, the oldest
 entries are moved, unchanged and in their original order, until what stays is at most --keep bytes. The moved
 entries are written to archive files of at most --chunk bytes each, named by the dates they span
-(wiki/log-2026-11-01-to-2026-11-09.md), so every archive can also be read in one go. The list of archives in the
+in wiki/log-archive/ (wiki/log-archive/log-2026-11-01-to-2026-11-09.md), so every archive can also be read in one go. The list of archives in the
 header of log.md, between the two `archives` comment lines, is rewritten on every run.
 
 The gap between --limit and --keep is deliberate: after a rotation the log has room to grow again, so the script is
@@ -25,6 +25,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 WIKI = Path("wiki")
 LOG = WIKI / "log.md"
+ARCHIVE_DIR = WIKI / "log-archive"  # its own folder, so the archives do not crowd the concept pages in wiki/
 ENTRY = re.compile(r"^## \[(\d{4}-\d{2}-\d{2})\] ")
 ARCHIVE_NAME = re.compile(r"^log-(\d{4}-\d{2}-\d{2})-to-(\d{4}-\d{2}-\d{2})(?:-(\d+))?\.md$")
 
@@ -68,22 +69,22 @@ def chunks(entries, limit):
 def archive_path(group, taken):
     dates = [ENTRY.match(e).group(1) for e in group]
     stem = f"log-{min(dates)}-to-{max(dates)}"
-    path, n = WIKI / f"{stem}.md", 2
+    path, n = ARCHIVE_DIR / f"{stem}.md", 2
     while path.exists() or path in taken:
-        path, n = WIKI / f"{stem}-{n}.md", n + 1
+        path, n = ARCHIVE_DIR / f"{stem}-{n}.md", n + 1
     return path
 
 
 def archive_text(path, group):
     m = ARCHIVE_NAME.match(path.name)
     return (f"# Wiki Log, {m.group(1)} to {m.group(2)}\n\n"
-            f"Entries moved from [log.md](log.md) by `scripts/rotate_log.py` on {date.today().isoformat()}, unchanged "
+            f"Entries moved from [log.md](../log.md) by `scripts/rotate_log.py` on {date.today().isoformat()}, unchanged "
             f"and in their original order (the entries before 2026-07 are not in date order; that is how they were "
-            f"written). New entries go to [log.md](log.md).\n\n---\n\n" + "\n\n".join(group) + "\n")
+            f"written). New entries go to [log.md](../log.md).\n\n---\n\n" + "\n\n".join(group) + "\n")
 
 
 def with_archive_list(header, names):
-    listing = "\n".join([BEGIN] + [f"- [{n}]({n})" for n in names] + [END])
+    listing = "\n".join([BEGIN] + [f"- [{n}]({ARCHIVE_DIR.name}/{n})" for n in names] + [END])
     if BEGIN in header:
         return re.sub(re.escape(BEGIN) + r".*?" + re.escape(END), lambda _: listing, header, flags=re.S)
     return header.replace("\nFormat:", f"\nOlder entries are in these archive files, oldest first:\n\n{listing}\n\nFormat:", 1)
@@ -101,7 +102,7 @@ def main():
     if "\x00" in text:
         sys.exit("log.md contains a NUL byte, which makes grep treat it as binary; fix it first")
     header, entries = split_log(text)
-    existing = sorted((p.name for p in WIKI.glob("log-*.md") if ARCHIVE_NAME.match(p.name)), key=archive_order)
+    existing = sorted((p.name for p in ARCHIVE_DIR.glob("log-*.md") if ARCHIVE_NAME.match(p.name)), key=archive_order)
     print(f"log.md: {size(text)} bytes, {len(entries)} entries; limit {args.limit}, keep {args.keep}")
     if size(text) <= args.limit:
         print("nothing to do")
@@ -123,6 +124,7 @@ def main():
     if not args.write:
         print("dry run: nothing written")
         return
+    ARCHIVE_DIR.mkdir(exist_ok=True)
     for path, group in plan:
         path.write_text(archive_text(path, group), encoding="utf-8", newline="\n")
     names = existing + [p.name for p, _ in plan]

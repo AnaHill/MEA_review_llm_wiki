@@ -18,13 +18,14 @@ ROOT = Path(__file__).resolve().parent.parent
 WIKI, RAW, PAPERS = ROOT / "wiki", ROOT / "raw", ROOT / "wiki" / "papers"
 LOG_TYPES = {"init", "ingest", "query", "draft", "lint", "grill"}
 NON_PAGES = {"index.md", "log.md", "references.md"}
-# Archives of the log written by scripts/rotate_log.py: not wiki pages (no index entry, no tags).
+# Archives of the log written by scripts/rotate_log.py, in wiki/log-archive/: not wiki pages (no index entry, no tags).
+LOG_DIR = WIKI / "log-archive"
 LOG_ARCHIVE = re.compile(r"^log-\d{4}-\d{2}-\d{2}-to-\d{4}-\d{2}-\d{2}(?:-\d+)?\.md$")
 LOG_LIMIT = 40_000  # bytes; keep in step with --limit in scripts/rotate_log.py
 
 
 def non_page(p):
-    return p.parent == WIKI and (p.name in NON_PAGES or bool(LOG_ARCHIVE.match(p.name)))
+    return (p.parent == WIKI and p.name in NON_PAGES) or (p.parent == LOG_DIR and bool(LOG_ARCHIVE.match(p.name)))
 
 findings = {"ERROR": [], "WARN": [], "INFO": []}
 
@@ -221,14 +222,15 @@ if vocab:
 if (WIKI / "log.md").stat().st_size > LOG_LIMIT:
     report("WARN", "wiki/log.md", f"{(WIKI / 'log.md').stat().st_size} bytes, over {LOG_LIMIT}: "
                                   "run python -I scripts/rotate_log.py --write to move the oldest entries to archives")
-for log_file in ["log.md"] + sorted(p.name for p in WIKI.glob("log-*.md") if LOG_ARCHIVE.match(p.name)):
-    if not (WIKI / log_file).exists():
+LOG_FILES = [WIKI / "log.md"] + sorted(p for p in LOG_DIR.glob("log-*.md") if LOG_ARCHIVE.match(p.name))
+for log_path in LOG_FILES:
+    if not log_path.exists():
         continue
-    for i, line in enumerate(read(WIKI / log_file).splitlines(), 1):
+    for i, line in enumerate(read(log_path).splitlines(), 1):
         if line.startswith("## [") and "YYYY" not in line:
             m = re.match(r"## \[\d{4}-\d{2}-\d{2}\] (\w+) \| .+", line)
             if not m or m.group(1) not in LOG_TYPES:
-                report("WARN", f"wiki/{log_file}:{i}", f"non-standard log header: {line[:60]}")
+                report("WARN", f"{rel(log_path)}:{i}", f"non-standard log header: {line[:60]}")
 
 # --- docs/lessons.md: every lesson traceable to the log --------------------------------
 # A lesson cites its evidence as "log <date> <type>", which must match a "## [<date>] <type> |"
@@ -236,12 +238,12 @@ for log_file in ["log.md"] + sorted(p.name for p in WIKI.glob("log-*.md") if LOG
 LESSONS = ROOT / "docs" / "lessons.md"
 if LESSONS.exists():
     headers = set()
-    for log_path in WIKI.glob("log*.md"):
+    for log_path in LOG_FILES:
         headers.update(re.findall(r"^## \[(\d{4}-\d{2}-\d{2})\] (\w+) \|", read(log_path), re.M))
     for n, line in enumerate(read(LESSONS).splitlines(), 1):
         for d, kind in re.findall(r"\blog (\d{4}-\d{2}-\d{2}) (\w+)\b", line):
             if (d, kind) not in headers:
-                report("WARN", f"docs/lessons.md:{n}", f"evidence 'log {d} {kind}' matches no entry in wiki/log*.md")
+                report("WARN", f"docs/lessons.md:{n}", f"evidence 'log {d} {kind}' matches no entry in wiki/log.md or wiki/log-archive/")
 
 # --- figures: the rendered images against their Mermaid source -------------------------
 # The ```mermaid blocks in main.md are the source of truth (claim_quotes.py quotes from them).

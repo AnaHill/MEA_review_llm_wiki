@@ -4,7 +4,7 @@ What went wrong or worked during the project, and what changed because of it, ga
 
 Each lesson has three lines:
 
-- **Evidence:** the log entries it rests on, as `log <date> <type>`, which match a `## [<date>] <type> |` header in `wiki/log*.md`. `scripts/check.py` reports a reference that matches no header, so every lesson can be traced to what actually happened. A lesson that the log does not record names its other source instead.
+- **Evidence:** the log entries it rests on, as `log <date> <type>`, which match a `## [<date>] <type> |` header in `wiki/log.md` or its archives in `wiki/log-archive/`. `scripts/check.py` reports a reference that matches no header, so every lesson can be traced to what actually happened. A lesson that the log does not record names its other source instead.
 - **Changed:** what was added to the harness because of it (a rule in `AGENTS.md`, a script, a setting, a skill), with the date.
 - **Status:** `rule + check` (a rule and a mechanical check that notices when it is broken), `rule only` (written down, but depends on someone remembering it), or `open` (learned, but nothing in the repository enforces or even states it yet). The `open` and `rule only` items are the ones to carry into the next project deliberately.
 

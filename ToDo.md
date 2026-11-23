@@ -5,7 +5,7 @@ Järjestys: **A → B → C -> D.** D-luonnostelu ei odota mitään. Tehdyt kohd
 ## A. Paperin sisältö ja säännöt
 Lähdetarkistus, lyhenteet ja kahden ulkopuolisen mallin arviointi (ChatGPT ja NotebookLM/Gemini) on tehty; jäljellä:
 
-- [ ] Rastita Fetterman (1) `docs/claims-by-source.md`:ssä (kuvan 1 label muotoiltu 22.11. uudelleen ylivuodon takia) ja katso uusi `figures/fig1-timeline.svg`
+- [x] Rastita Fetterman (1) `docs/claims-by-source.md`:ssä (kuvan 1 label muotoiltu 22.11. uudelleen ylivuodon takia) ja katso uusi `figures/fig1-timeline.svg`
 - Päätetty 22.11.: kaksi highlightia saa ylittää 85 merkkiä (87 ja 88); `check.py` näyttää ne INFO-rivinä
 
 **Vinkit, jos main.md vielä muuttuu:**
