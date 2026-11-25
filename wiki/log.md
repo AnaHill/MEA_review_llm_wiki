@@ -101,3 +101,7 @@ The researcher's idea: grinding at the wiki layer, right after ingest, before a 
 ## [2026-11-25] lint | wiki grinding mentioned once per ingest batch
 
 The researcher's decision: checking the wiki stays the researcher's choice, made when they call `/grinding wiki` (the skill cannot be started by the agent), so that several sources can be added before the wiki is checked. The ingest skill (here and in `llm-wiki-academic-template`) now mentions the wiki grinding once, at the end of a batch, instead of offering it after every source.
+
+## [2026-11-25] lint | read deny rules for files the agent never needs
+
+The researcher's decision, after a LinkedIn tip on deny lists: `.claude/settings.json` now denies Read on `.obsidian/**` (editor plugins) and on the paper's export files (`main-export.*`, `Maki-2026-*.pdf`), which only duplicate `main.md` in the context. Not denied: `raw/` and `figure_analysis/` (read at ingest and grinding), `docs/private/` (read when the researcher asks for help with it). The gain is small: Grep and Glob already skip git-ignored files, and a shell command is not covered. Carried into the templates without the paper-specific PDF name (not committed): `llm-wiki-academic-template` denies Read on `.obsidian/**` and `main-export.*`, `llm-wiki-template` on `.obsidian/**`, since both READMEs suggest Obsidian as the viewer.

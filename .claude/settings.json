@@ -1,7 +1,10 @@
 {
   "permissions": {
     "deny": [
-      "Edit(/notes.md)"
+      "Edit(/notes.md)",
+      "Read(/.obsidian/**)",
+      "Read(/main-export.*)",
+      "Read(/Maki-2026-*.pdf)"
     ],
     "ask": [
       "Edit(raw/**)"
