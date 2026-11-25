@@ -12,7 +12,7 @@ Source: https://github.com/mattpocock/skills (MIT). One skill of this repository
 
 ## Ingest and Lint as skills of their own
 
-Planned in `AGENTS.md` ("Schema evolution", 2026-11-11): move the Ingest and Lint procedures out of `AGENTS.md` into skills that load only when needed (progressive disclosure), so the schema stays short. Waits until after publication; best done together with the template.
+Done 2026-11-25 (after outside feedback that AGENTS.md was too long for a file sent with every request): Ingest, Draft and Lint are skills in `.claude/skills/`, and AGENTS.md keeps only what applies to every task. The Ingest checklist below and the first, fourth and fifth points of the guide went into the new files; what remains is open.
 
 - **An Ingest checklist drawn from the log:** look at the figures, read the supplements, take the author order from page 1 of the PDF, apply the reference-year rule, record the source's own inconsistencies, add a `SOURCES` pattern in `claim_quotes.py` when two sources share a surname.
 - **Guide:** Matt Pocock's `writing-for-agents` (https://github.com/mattpocock/skills/blob/main/skills/productivity/writing-for-agents/SKILL.md, MIT), for the two skills and for tidying the template's `AGENTS.md`, not during the final stretch of the paper. What to do with it:

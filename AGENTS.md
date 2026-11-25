@@ -1,166 +1,42 @@
 # AGENTS.md
 
-This file provides guidance to the coding agent (e.g. Claude Code, Codex, or similar) when working in this repository.
+Guidance for the coding agent (Claude Code, Codex or similar) in this repository: an LLM-maintained academic wiki behind one review paper. The researcher curates sources and makes the decisions; you keep the wiki and draft the paper. The pattern is in [llm-wiki.md](llm-wiki.md); what the repository does and why is in [README.md](README.md).
 
-## What this repository is
+## Layout
 
-This is an **LLM-maintained academic wiki** for a researcher writing a journal paper. There is no build system, no tests, no deployment. The LLM (you) is the wiki maintainer and writing assistant. The researcher curates sources (PDFs, papers) and asks questions; the LLM does the bookkeeping and drafting.
+- `raw/` — source documents (PDFs, supplements).
+- `wiki/` — yours: `papers/` (one page per source), concept pages, `index.md` (catalog; read it first), `log.md` (append-only log; older entries in `log-archive/`), `references.md` (APA list of every ingested source).
+- `main.md` — the paper: one file, IMRaD sections as `#` headings.
+- `notes.md` — the researcher's own thinking.
+- `docs/` — project/process documentation, not part of the wiki; `docs/claims-by-source.md` lists the claims of `main.md` per source. Edit `docs/private/` only when asked.
+- `scripts/` — check and build scripts; each describes itself in its docstring.
 
-The full pattern is described in [llm-wiki.md](llm-wiki.md). Read it when starting a new session.
+## Procedures
 
-## Directory layout
+The steps of each operation are in `.claude/skills/<name>/SKILL.md`. Claude Code loads them by itself; with another agent, read the file before starting the task.
 
-| Path | Purpose |
-|------|---------|
-| `raw/` | Source documents — PDFs, papers, notes. Their source text is never modified, and nothing is added to it; the researcher may highlight and annotate PDFs, and the only change an agent may make is renaming a file at ingest (see "Naming raw files"). |
-| `wiki/` | LLM-maintained markdown pages. You own this layer entirely. |
-| `wiki/papers/` | One summary page per ingested source paper. |
-| `wiki/index.md` | Content catalog — read this first when answering any query. |
-| `wiki/log.md` | Append-only chronological log of all operations. When it passes 40 kB (`check.py` warns), `python -I scripts/rotate_log.py --write` moves the oldest entries, unchanged, to `wiki/log-archive/log-<from>-to-<to>.md` archives of at most 40 kB each, listed in the log's header; `log.md` itself stays in `wiki/`. To search the whole history, grep `wiki/log.md wiki/log-archive/`. |
-| `wiki/references.md` | Auto-maintained citation list, populated on each ingest. |
-| `main.md` | Evolving paper draft — single file with IMRaD sections. |
-| `skills/` | Agent skill definitions (Claude Code skill format), kept for reference. |
-| `.claude/skills/` | Skills Claude Code loads: `grill-paper` (see "Grill before deciding" below) and `grinding` (see "Grinding" below). |
-| `scripts/` | Helper scripts: `check.py` (consistency check, see "Finishing check" below; also reports connections made in `main.md` but missing from the wiki, a paper page whose first author differs from its reference key, a claim or register number used twice in one section of the claims file, highlights longer than 85 characters (INFO), tags outside the Tag vocabulary, Support values outside the register vocabulary, and a rendered figure that is missing or older than the diagram it was made from), `render_pdf_pages.py` (PDF text dump and page-to-PNG rendering for figure inspection), `claim_quotes.py` (lists the sentences of `main.md` that cite each source under that source's claims in `docs/claims-by-source.md`, and with `--write` puts ✅ in front of a section title once all its checkboxes are ticked; dry run by default; `--check` prints only whether the file is out of date with `main.md` and the Notes, which is what the hook shows; `--only <source>` limits the quote update to that source, while the ✅ marks are always refreshed for every section; a claim line ending with `{q: <regex>}` lists the sentences matching that regex instead of every sentence of its section, see "Claims file" below), `check_abbreviations.py` (checks the `# Abbreviations` list of `main.md`: every abbreviation listed, spelled out at first use, none unused), `figures.py` (the Mermaid diagrams of `main.md`: `--write` copies each block to `figures/<slug>.mmd` and records its hash so `check.py` can see a stale image; `--render` does the same and draws `figures/<slug>.svg` with a pinned Mermaid in headless Edge or Chrome), `export.py` (`--write` builds `main-export.md`, the copy the HTML and the PDF are made from: diagrams replaced by the rendered images, a visible title block from the front matter, bare URLs linked, HTML comments stripped; see the build checklist in `docs/pdf-export-notes.md`), `rotate_log.py` (moves the oldest entries of `wiki/log.md` to archive files when it passes 40 kB; dry run by default, `--write` to apply). |
-| `notes.md` | The researcher's own thinking — read-only for you (see "Researcher notes" below). |
-| `docs/` | Project/process documentation (e.g. literature search strategy). Not part of the wiki. |
-| `docs/private/` | The researcher's private drafts (e.g. blog and LinkedIn posts about this project). Git-ignored, not part of the wiki or the paper; edit only when asked. |
+| When | Skill |
+|------|-------|
+| the researcher adds sources to `raw/` and asks to process or check them | `ingest` |
+| writing or revising `main.md` or `docs/claims-by-source.md` | `draft` |
+| the researcher asks for a health check | `lint` |
+| `/grill-paper`: interview before a decision (only when called) | `grill-paper` |
+| `/grinding <source>`: claim-by-claim check against a source (only when called) | `grinding` |
 
-## Four operations
+To answer a question, read `wiki/index.md` and `notes.md`, drill into the relevant pages and answer with citations; offer to file a substantial comparison or synthesis as a new wiki page.
 
-### Ingest
-When the researcher drops a source (typically a PDF) into `raw/` and asks you to process it:
-1. Read the source. If the Read tool cannot open a PDF (e.g. `pdftoppm` missing), run `python scripts/render_pdf_pages.py raw/<file>.pdf --text` and read `figure_analysis/<pdf-name>/text.txt`. For figures, run it again without `--text` (auto-detects pages with figure/table captions; `--pages 3,5` limits it) and view the rendered PNGs in the same folder. Describe what each figure shows, and note that schematics carry no data.
-2. Discuss key takeaways if the researcher wants to stay involved.
-3. Create `wiki/papers/<firstauthor-year-keyword>.md` with the standard paper page format (see below).
-4. Update any relevant concept, method, or research-gap pages in `wiki/`.
-5. Append the formatted citation to `wiki/references.md`.
-6. Update `wiki/index.md`.
-7. Append an entry to `wiki/log.md`.
+## Rules that always apply
 
-A single source may touch 5–10 wiki pages. That's normal.
-
-**Naming raw files.** The raw file and its wiki page share one stem: the source `raw/XYZ.pdf` that becomes `wiki/papers/botti-2025-insilico.md` is renamed to `raw/botti-2025-insilico.pdf` (extension unchanged), and supplementary files become `raw/botti-2025-insilico-supplementary.<ext>`. Do the rename in the same step as creating the page, so the page's `**File:** [[raw/...]]` line is correct from the start. Only the file name changes, never the content. Use `git mv` if the file is tracked, a plain move if it is untracked. Never rename during the verify-before-ingest pass, and never rename a file the researcher has not asked you to ingest. Before renaming, check `.gitignore` for the old name (non-open-access PDFs are git-ignored by name); if it is listed, tell the researcher the entry must change to the new name, so the PDF does not become trackable by accident.
-
-**Batch or undirected additions — verify before ingesting.** If the researcher says something like "I added sources to raw/, go check them" without naming files: detect what's new via `git status` (untracked files in `raw/`) or by diffing `raw/` against the paper list in `wiki/index.md`. Read each candidate and report a relevance verdict per source — worth ingesting, marginal, or out of scope — *before* creating any wiki pages, updating `wiki/references.md`, or touching `main.md`. This is a separate first pass, not a one-shot ingest: wait for the researcher's go-ahead on which sources to actually ingest before running the full Ingest steps above on any of them.
-
-### Query
-When the researcher asks a question:
-1. Read `wiki/index.md` first to find relevant pages, and `notes.md` for the researcher's own views on the topic.
-2. Drill into those pages and synthesize an answer with citations.
-3. If the answer is substantial (comparison, analysis, new synthesis), offer to file it as a new wiki page.
-
-### Draft
-When the researcher asks to write or update the paper draft:
-1. Read `main.md` to understand what is already written.
-2. Read relevant wiki pages for the section being worked on, and any related entries in `notes.md`.
-3. Update the relevant section(s) in `main.md` — surgical edits only. When correcting a claim, re-read the whole sentence and rewrite it if needed, not only the part that was wrong (a correction appended to a sentence once left its beginning saying the opposite); then re-read the title, the Highlights and the Abstract, which restate claims in their own words and do not change with them.
-4. Do not touch sections the researcher did not ask about, uncless you noticed that something should be changed. Ask then permission before touching any other section.
-5. Write back to the wiki. When the edit compares sources, gathers a theme or introduces a concept that the wiki does not yet carry: add the missing link (with a short reason) to the "See also" of the paper pages involved, or to the concept page that covers the theme; give a recurring theme its own concept page; and if a good tag emerges, add it to the Tag vocabulary only when it fits at least three pages. `scripts/check.py` reports, as INFO, sources cited in one sentence of `main.md` whose pages are not connected (directly or through a concept page that links both), and tags outside the vocabulary as WARN.
-6. Append an entry to `wiki/log.md`, naming the wiki pages changed in step 5.
-
-Typical trigger phrases: *"write the introduction"*, *"update the related work section"*, *"draft the abstract based on what we have"*, or the researcher selects a section in the editor and says *"rewrite this"*.
-
-### Grill before deciding
-When the researcher types `/grill-paper`, follow `.claude/skills/grill-paper/SKILL.md`: interview them in rounds about an open decision (what a section claims and how strongly, which sources to ingest or cite, which lint findings to fix), look up facts in the wiki and sources yourself, and leave the decisions to them. Change nothing during the session; afterwards offer a `## [YYYY-MM-DD] grill | <topic>` log entry and the follow-up operation. The skill is only run when the researcher calls it.
-
-### Grinding
-When the researcher types `/grinding <source>`, follow `.claude/skills/grinding/SKILL.md`: read that source's claims in `docs/claims-by-source.md` and the source itself in full, and report one verdict per claim (holds / check / does not hold) with the sentence from `main.md`, the supporting passage and its page, and a concrete rewording where needed. Change nothing and tick nothing; apply fixes only when asked, then update the claims list and the log and run the scripts. The skill is only run when the researcher calls it.
-
-### Lint
-When the researcher asks for a health check:
-- Look for contradictions between pages, stale claims superseded by newer sources, orphan pages (no inbound links), concepts mentioned but lacking their own page, and missing cross-references.
-- Check `main.md` for claims that are not backed by any page in `wiki/`.
-- Check that the wiki carries the connections `main.md` makes: every main.md section with several sources has a concept page, paper pages link the concept pages that cite them, and tags follow the Tag vocabulary (`check.py` reports the mechanical part).
-- Suggest new questions, missing papers, or sources that would fill visible gaps.
-- Run `python -I scripts/check.py` and include its output.
-- Present one prioritized list (script errors, then your own judgement findings, then warnings, then suggestions). Do not auto-fix; wait for the researcher's go-ahead.
-
-### Finishing check
-The harness enforces part of this: `.claude/settings.json` has a PostToolUse hook (`scripts/hooks/main_md_checks.py`) that runs `check_abbreviations.py`, `check.py` and `claim_quotes.py --check` (is the claims file out of date, and its Notes) after every Edit or Write of `main.md` and shows their output, a permission rule that denies file edits to `notes.md`, and one that asks the researcher before any write to `raw/` (so renames at ingest go through with approval, while accidental edits to sources are caught). Edits made through a shell command (for example a Python script) do not trigger the hook, so run the scripts yourself after those.
-
-Before ending any task that changed `wiki/`, `wiki/references.md` or `main.md`, run `python -I scripts/check.py`. It verifies that every paper page has a `references.md` entry, an `index.md` entry and an existing raw file, that DOIs agree between page and reference list, that links are not broken, and that every citation in `main.md` exists in `wiki/references.md`. The `# References` list at the end of `main.md` must contain exactly the entries cited in `main.md`, each a verbatim copy of its entry in `wiki/references.md` (same style, same text); `wiki/references.md` may hold more (ingested but not yet cited). Never edit one copy without the other; the script reports differences, and cited-but-unlisted entries, as errors. Fix any ERROR it reports, or tell the researcher why you did not. It cannot verify that author lists or findings are true; that still requires the source itself.
-
-### Researcher notes
-`notes.md` holds the researcher's own thoughts: hunches, objections, things to try, reactions to papers. It is written by the researcher only. Never edit it, and never rewrite its content into wiki pages as if it were sourced fact. When you use it, say so ("your note of 2026-10-15") and keep it distinct from claims backed by `wiki/papers/`. If the researcher gives you a thought to remember, append it as a dated bullet at the top of the list only when asked to.
-## Paper page format
-
-Every file in `wiki/papers/` should follow this structure:
-
-```markdown
-# Title
-
-**Authors:** …  
-**Year:** …  
-**Venue:** …  
-**File:** [[raw/filename.pdf]]
-
-## Contribution
-One paragraph: what does this paper claim to contribute?
-
-## Methodology
-Key methods, datasets, experimental setup.
-
-## Findings
-Main results and conclusions.
-
-## Limitations
-What the authors acknowledge as limitations or what you observe.
-
-## Relevance to our paper
-How this source relates to, supports, challenges, or fits into the paper being written.
-
-## See also
-Links to related wiki pages.
-```
-
-## Conventions
-
-**Citation format in `wiki/references.md`:** APA by default unless the researcher specifies a different style. One entry per line, sorted alphabetically by first author surname. In-text citations in `main.md` are APA too: (Smith, 2023), (Smith & Jones, 2023), (Smith et al., 2023), several sources separated by semicolons; narrative: Smith et al. (2023) found… When two first authors share a surname but the years differ, the initials are left out (Lee et al., 2024; Lee et al., 2026): the year is enough to identify the entry, a deliberate simplification of APA for this preprint. The final style follows the target journal and will be reformatted at the end, so do not convert existing entries before then. **Year of a reference:** the issue year once volume and pages exist, not the online-first year, even when the publisher's citation tool or the authors' own page gives the earlier one (decided for Botti et al., 2026, Park et al., 2026 and Weiser-Bitoun et al., 2026); record both dates on the paper page.
-
-**Log format:** Every `wiki/log.md` entry must start with a consistent prefix so it's grep-parseable:
-```
-## [YYYY-MM-DD] ingest | Author Year — Paper Title
-## [YYYY-MM-DD] query | Question summary
-## [YYYY-MM-DD] draft | Section updated
-## [YYYY-MM-DD] lint | pass
-## [YYYY-MM-DD] grill | Decision topic
-```
-
-**Decisions go in the log.** When a task adds a rule, a check or a limit because something went wrong, also add a lesson to `docs/lessons.md` (evidence as `log <date> <type>`, which `check.py` verifies, what changed, and a status). A decision and its reasons (what to cite or leave out, why a search was or was not run, which option was declined) get a `wiki/log.md` entry, even when nothing else changes. `ToDo.md` is a working file that is deleted at publication, so a decision recorded only there leaves no trace.
-
-**No stray tags.** The wiki is read in Obsidian, where a `#word` in prose becomes a tag. Tags belong only in the `tags:` front matter. Whenever a hash-prefixed identifier appears in text and is not meant as a tag (for example the standard AIMS `\#CM01` or the cell-line catalogue number `\#HPS0076`), always write the hash with a backslash escape, as in `\#CM01`, so it displays as "#CM01" without becoming a tag. Do not use quotes, bare hashes or dropped hashes for this, and keep the identifier as the source writes it. This applies to every markdown file, including `wiki/log.md` and `main.md` (Pandoc prints the escaped hash without the backslash). `scripts/check.py` warns about unescaped hashes.
-
-**Tag vocabulary.** Tags in the `tags:` front matter come from a fixed list, so that the Obsidian graph groups pages by theme instead of showing one-off tag nodes. Theme tags follow the sections of `main.md`: `open-platform`, `fiducial-definition`, `rate-correction`, `waveform-morphology`, `maturation`, `3d-model`, `spatial-analysis`, `multimodal`, `machine-learning`, `signal-separation`, `cardiac-safety`, `disease-model`, `in-silico`, `high-throughput` (added 2026-11-22: the "High-throughput and long-term assays" section was the only one of the ten with neither a tag nor a concept page, and six pages carry the theme). Page-type tags: `type/concept`, `type/method`, `type/analysis` for pages outside `wiki/papers/`, and `type/review` for review or perspective papers. Give each page two to four tags; add a new tag to this list only when it fits at least three pages. In a paper page's "See also", link the concept pages that cite the paper, and give a short reason after a link to another paper ("— T-wave peak versus APD90").
-
-**Abbreviations and italics in `main.md`.** Every abbreviation is spelled out at its first use in the running text and listed under `# Abbreviations` (after the Highlights); names of tools, databases, genes and mutations are not abbreviations (see `IGNORE` in `scripts/check_abbreviations.py`). Abbreviations are not italicised. Italics are used for gene names (*KCNH2*, *KCNJ2*); symbols with subscripts are written with `<sub>` (I<sub>K1</sub>, I<sub>f</sub>); Latin terms such as in vitro stay upright.
-
-**Claims file.** In `docs/claims-by-source.md` the `    - > sentence` lines under each claim are generated by `claim_quotes.py` and are never edited by hand; a hand-edit is overwritten on the next `--write`. They carry no `main.md` line number on purpose: the number used to change in every quote of the file whenever a paragraph was split or a heading added (over twelve commits, 1152 of 1261 changed lines were line numbers alone), which buried the quotes that had really changed. Now a quote line changes only when its sentence does, so `git diff docs/claims-by-source.md` is a review surface — it shows exactly which claims moved. Run the script without `--write` when you want the line numbers; the dry run prints them beside each quote. By default a claim is given every sentence of its section that cites the source, so claims sharing a section tag show the same sentences. Where a section holds several claims about one source, end the claim line with `{q: <regex>}` naming a distinctive phrase of the sentence that claim is about (`{q: 7–12 min}`, `{q: recorded under external pacing}`). The regex replaces the citation test rather than narrowing it, so it also reaches a sentence that continues a citation without naming the source ("Both evaluated their models on small test sets ..."), which is otherwise listed nowhere. Two claims may legitimately share one sentence; leave the marker off only when a section has a single claim for that source. The script reports a regex that matches nothing, and a sentence that no claim lists once any claim of that section is narrowed. A newly ingested source needs no edit to the script: a `## ` section that is not in the `SOURCES` table of `claim_quotes.py` gets a pattern derived from the surname in its title, and the run says so in its Notes. Add an explicit entry when the surname alone is not enough — when the source is cited somewhere without it (a Figure 1 timeline label, for example), or when two sections share a surname, which the script refuses to guess at and reports instead. The same holds for the sections: every heading of `main.md` belongs in the `SECTION_TAG` table, because a heading missing from it becomes a tag of its own and takes the sentences under it away from the tag the claims carry — renaming a section, or promoting a bold run-in label to a `##` heading, empties every claim of that section at once. The script names such a heading in its Notes, before the claims that went empty because of it. **Read the Notes after every run: both of this script's failure modes produce nothing rather than an error, so a source or a section whose claims collected no sentences shows up only there.** After a structural edit to `main.md` — a new or renamed heading, a new source — run the script without `--write` first and read the Notes, then write.
-
-**Register of the author's own inferences.** The last section of `docs/claims-by-source.md` is the only record of the statements in `main.md` that no single source supports: generalisations over several studies, reasoned steps beyond what any source says, and the author's hypotheses. `main.md` does not mark them in the text, so every new unsourced statement written into the draft needs an item here, with the wording it has in `main.md`, the sources it builds on and a **Support** value. The values are `sourced`, `thin`, `inference`, `opinion`, `none` and `inherited`; what each claims and how it fails is defined in the reading guide at the top of that section, which is the authority. Do not invent a seventh value: add one to the guide first, then to `SUPPORT_VALUES` in `scripts/check.py`, which warns about a Support line carrying an unknown value or none. The register quotes `main.md` by hand (the **Text:** lines and the highlights under item 0), and `claim_quotes.py` reports a quoted wording that `main.md` no longer contains, so a summary or an inference that has drifted from the text shows up in the Notes (and in the hook after every edit of `main.md`). When a wording changes, update the quote; keep the old wording in parentheses, which the check skips as history.
-
-**Index format:** Each entry in `wiki/index.md` should include a link, a one-line summary, and optionally metadata (year, venue). Organize by the categories defined in `wiki/index.md`.
-
-**Raw sources are immutable.** Never edit files in `raw/`. The LLM reads from them; that's all. The one exception is renaming a file at ingest so its stem matches its wiki page (see "Naming raw files"). The researcher may highlight and annotate raw PDFs (for example to mark the passages that support a claim); such annotations are expected changes, not an error to report or revert. Nobody adds to or changes the source text itself.
-
-**Draft is a single file.** `main.md` contains the full paper with IMRaD sections as `#` headings. Update only the section asked about. Do not restructure the file unless explicitly asked.
-
-**Figures stay as Mermaid in `main.md`.** The two figures are fenced ```mermaid blocks, and they stay there: `claim_quotes.py` reads the blocks as sentences of the draft, so the Timeline claims and the Figure 2 claims in `docs/claims-by-source.md` are quoted from inside them, and replacing a block with an image would leave those claims with nothing to point at. The rendered `figures/*.svg` are for the export only, made from `figures/*.mmd`, which `figures.py --write` copies out of `main.md`. After changing a diagram, run `figures.py --render` and look at the images; `check.py` warns until they are in step. Do not render in Mermaid Live: its SVG export keeps the preview's dark theme and pan-zoom scaling. `main-export.md` is likewise generated, by `export.py --write`: never edit it, and never put a fix there that belongs in `main.md`.
+- **Never invent citations, authors or facts.** If an author list, DOI, venue or finding cannot be verified from the source itself (or a reliable secondary confirmation), say so and mark it unverified. This repository has had fabricated author lists (for what became Dunham et al. 2022 and Hwang et al. 2023), an unverifiable Blinova 2025 entry and a wholly invented "Galli et al. 2024" in the draft: an uncorroborated bibliographic detail is a stop-and-flag case.
+- **`raw/` is immutable.** Never edit a source; the only change allowed is renaming a file at ingest. Highlights and annotations the researcher adds to PDFs are expected, not an error.
+- **`notes.md` is the researcher's.** Never edit it, and never turn its content into wiki pages as if it were sourced fact. When you use it, say so ("your note of 2026-10-15"). If the researcher wants a thought kept, write it in the chat, dated and ready to paste; they add it themselves.
+- **No stray tags.** The wiki is read in Obsidian, where `#word` in prose becomes a tag. In every markdown file write an identifier that starts with a hash with a backslash escape (`\#CM01`, `\#HPS0076`), keeping it as the source writes it; not with quotes, a bare hash or a dropped hash.
+- **Tag vocabulary.** Tags in the `tags:` front matter come from this list. Theme tags: `open-platform`, `fiducial-definition`, `rate-correction`, `waveform-morphology`, `maturation`, `3d-model`, `spatial-analysis`, `multimodal`, `machine-learning`, `signal-separation`, `cardiac-safety`, `disease-model`, `in-silico`, `high-throughput`. Page-type tags: `type/concept`, `type/method`, `type/analysis` (pages outside `wiki/papers/`), `type/review` (review or perspective papers). Two to four tags per page; add a tag here only when it fits at least three pages.
+- **References.** `wiki/references.md` lists every ingested source in APA, one entry per line, sorted by first-author surname. The year is the issue year once volume and pages exist, not the online-first year, even when the publisher's citation tool or the authors' own page gives the earlier one (decided for Botti et al., 2026, Park et al., 2026 and Weiser-Bitoun et al., 2026); the paper page records both dates. The `# References` list of `main.md` holds exactly the entries cited there, each a verbatim copy of its line in `wiki/references.md`: never edit one copy without the other.
+- **Decisions go in the log.** Each `wiki/log.md` entry starts `## [YYYY-MM-DD] <type> | <subject>`, with type `ingest`, `query`, `draft`, `lint` or `grill`. A decision and its reasons (what to cite or leave out, which option was declined) get an entry even when nothing else changes. When a task adds a rule, a check or a limit because something went wrong, also add a lesson to `docs/lessons.md` (evidence as `log <date> <type>`). To search the history, grep `wiki/log.md wiki/log-archive/`.
+- **Finish with the checks.** Before ending a task that changed `wiki/` or `main.md`, run `python -I scripts/check.py` and fix every ERROR, or say why not. After editing `main.md` also run `check_abbreviations.py` and `claim_quotes.py --check`; Claude Code's hook does this after its own Edit and Write, but not after a change made by a shell command or by another agent.
+- **Surgical and minimal.** State assumptions; ask when a source's relevance or a request is ambiguous. Change only what the request or the new source warrants. Note a concept inline where it first appears, and give it a page of its own when it recurs or becomes central.
 
 ## Schema evolution
 
-This AGENTS.md *is* the schema for this wiki instance. Update it as conventions evolve in collaboration with the researcher.
-
-Hard limits belong in the harness rather than only in this text: when a rule here is absolute and mechanical, prefer enforcing it with a permission rule or hook in `.claude/settings.json`. Planned (2026-11-11): move the Ingest and Lint procedures into skills of their own, so this file stays short and their steps load only when needed (progressive disclosure).
-
-## Behavioral guidelines
-
-**Think before acting.** State assumptions explicitly. If a source is ambiguous (e.g. unclear relevance to the paper topic), ask.
-
-**Surgical changes.** When updating a wiki page or the draft, change only what the new source or the request warrants.
-
-**Minimum necessary.** Don't create new wiki pages speculatively. If a concept appears once, note it inline. Create a dedicated page when it recurs or becomes central.
-
-**Cite everything in the draft.** Every factual claim in `main.md` should be traceable to a page in `wiki/papers/`. If a claim lacks a source, flag it with `[CITATION NEEDED]`. A statement that is deliberately not sourced — a generalisation, a reasoned step or a hypothesis of the author's — is not a missing citation: it goes in the register of the author's own inferences (see "Claims file" above), with its Support value.
-
-**Never invent citations, authors, or facts.** If you cannot verify an author list, DOI, venue, or finding directly from the source (PDF, HTML, or a reliable secondary confirmation), say so explicitly and mark the entry as unverified rather than filling the gap plausibly. This repo has hit real hallucinated-citation incidents before (fabricated author lists for what became Dunham et al. 2022 and Hwang et al. 2023; an unverifiable Blinova 2025 entry that was later removed; and "Galli et al. 2024", a wholly invented paper that appeared in an earlier draft's text and reference list and could not be found anywhere, so it was removed) — treat any uncorroborated bibliographic detail as a stop-and-flag case, not a best-guess case.
+This file is the schema of the wiki; update it with the researcher as conventions evolve. Keep here only what applies to every task, and put a procedure in a skill. When a rule is absolute and mechanical, also enforce it in `.claude/settings.json` (permission rule or hook).
