@@ -21,10 +21,12 @@ If the researcher says something like "I added sources to raw/, go check them" w
 5. **Update concept, method and research-gap pages** the source bears on. Link the concept pages that cite the paper from its "See also", and give a short reason after a link to another paper ("— T-wave peak versus APD90"). Two to four tags from the Tag vocabulary.
 6. **Append the reference** to `wiki/references.md` (format below).
 7. **Add the index line** to `wiki/index.md`, under its category: link, one-line summary, optionally year and venue.
-8. **Append the log entry** `## [YYYY-MM-DD] ingest | Author Year — Paper Title`, naming the pages touched.
+8. **Append the log entry** `## [YYYY-MM-DD] ingest | Author Year — Paper Title`, naming the pages touched, with a line that records what steps 1–2 actually did (`check.py` warns when it is missing from an ingest entry):
+   `Checks: full text read (or why not) | figures viewed: pages 3, 5 (or none with data) | supplements: read (or none) | authors from page 1 | dates: online-first …, issue … | inconsistencies: none (or where they are recorded)`
 9. **Run `python -I scripts/check.py`** and fix its ERRORs. If the source will be cited in `main.md` and shares a surname with another source, or is cited somewhere without its surname, add an entry to `SOURCES` in `scripts/claim_quotes.py`.
+10. **Mention `/grinding wiki <source>` once**, at the end of the batch rather than after every source: the check of the new pages and the wiki sentences citing them against the sources, before anything from them reaches `main.md`. Running it, and when, is the researcher's choice; several sources are often added before the wiki is checked.
 
-A single source often touches 5–10 wiki pages. **Done when:** the page, the renamed raw file, the reference, the index line and the log entry exist, and `check.py` reports no ERROR for the source.
+A single source often touches 5–10 wiki pages. **Done when:** the page, the renamed raw file, the reference, the index line and the log entry with its `Checks:` line exist, and `check.py` reports no ERROR for the source.
 
 ## Naming the raw file
 

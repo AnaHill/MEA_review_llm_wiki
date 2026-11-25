@@ -21,7 +21,7 @@ The steps of each operation are in `.claude/skills/<name>/SKILL.md`. Claude Code
 | writing or revising `main.md` or `docs/claims-by-source.md` | `draft` |
 | the researcher asks for a health check | `lint` |
 | `/grill-paper`: interview before a decision (only when called) | `grill-paper` |
-| `/grinding <source>`: claim-by-claim check against a source (only when called) | `grinding` |
+| `/grinding <source>`: claim-by-claim check of `main.md` against a source; `/grinding wiki <source>`: the same for the wiki, right after ingest (only when called) | `grinding` |
 
 To answer a question, read `wiki/index.md` and `notes.md`, drill into the relevant pages and answer with citations; offer to file a substantial comparison or synthesis as a new wiki page.
 
@@ -35,6 +35,7 @@ To answer a question, read `wiki/index.md` and `notes.md`, drill into the releva
 - **References.** `wiki/references.md` lists every ingested source in APA, one entry per line, sorted by first-author surname. The year is the issue year once volume and pages exist, not the online-first year, even when the publisher's citation tool or the authors' own page gives the earlier one (decided for Botti et al., 2026, Park et al., 2026 and Weiser-Bitoun et al., 2026); the paper page records both dates. The `# References` list of `main.md` holds exactly the entries cited there, each a verbatim copy of its line in `wiki/references.md`: never edit one copy without the other.
 - **Decisions go in the log.** Each `wiki/log.md` entry starts `## [YYYY-MM-DD] <type> | <subject>`, with type `ingest`, `query`, `draft`, `lint` or `grill`. A decision and its reasons (what to cite or leave out, which option was declined) get an entry even when nothing else changes. When a task adds a rule, a check or a limit because something went wrong, also add a lesson to `docs/lessons.md` (evidence as `log <date> <type>`). To search the history, grep `wiki/log.md wiki/log-archive/`.
 - **Finish with the checks.** Before ending a task that changed `wiki/` or `main.md`, run `python -I scripts/check.py` and fix every ERROR, or say why not. After editing `main.md` also run `check_abbreviations.py` and `claim_quotes.py --check`; Claude Code's hook does this after its own Edit and Write, but not after a change made by a shell command or by another agent.
+- **Commit messages** (the researcher's preference; change or delete this line freely): propose one line, lowercase, in the present tense, completing "In this commit, I …", alone in a code block, with no body or trailer. The researcher commits.
 - **Surgical and minimal.** State assumptions; ask when a source's relevance or a request is ambiguous. Change only what the request or the new source warrants. Note a concept inline where it first appears, and give it a page of its own when it recurs or becomes central.
 
 ## Schema evolution

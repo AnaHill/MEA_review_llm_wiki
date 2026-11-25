@@ -15,37 +15,37 @@ Add a lesson when a task adds a rule, a check or a limit because something went 
 ### Look at the figures, not only the extracted text
 The first visual pass over two papers found what text extraction had hidden: the key analysis of one study used rat cells, not human ones, and the other's carbachol result had been read the wrong way round.
 - **Evidence:** log 2026-07-02 query
-- **Changed:** `scripts/render_pdf_pages.py` renders pages for viewing; Ingest step 1 in `AGENTS.md` (2026-10-18)
-- **Status:** rule only (nothing checks that a figure behind a claim was viewed)
+- **Changed:** `scripts/render_pdf_pages.py` renders pages for viewing; Ingest step 1 in `AGENTS.md` (2026-10-18), step 1 of the ingest skill since 2026-11-25
+- **Status:** rule + check (the `Checks:` line of an ingest log entry records it from 2026-11-25, and `check.py` warns when the line is missing; it sees the record, not whether the figures were read well)
 
 ### Read the supplements
 Supplementary files changed claims more than once: the ± values of one paper matched, for most groups, neither the standard deviation nor the standard error of its per-sample data; another's supplement showed that a QT difference was a rate effect; a third showed that an amplitude acceptance criterion depends on the recording day.
 - **Evidence:** log 2026-11-15 ingest; log 2026-11-14 ingest; log 2026-11-06 ingest
 - **Changed:** supplementary files get the page stem (`<stem>-supplementary.<ext>`) and a link from the paper page; `check.py` counts every `[[raw/...]]` link as referenced (2026-11-03)
-- **Status:** rule only
+- **Status:** rule + check (the `Checks:` line of an ingest log entry records it from 2026-11-25, and `check.py` warns when the line is missing)
 
 ### Take every bibliographic detail from the source itself
 The first draft had fabricated author lists for two papers, two wrong first authors, and one paper that does not exist; much later, one reference still had its authors in the wrong order and one author's first name wrong.
 - **Evidence:** log 2026-06-17 query; log 2026-10-15 lint; log 2026-11-09 draft
-- **Changed:** "Never invent citations, authors, or facts" in `AGENTS.md` (2026-07-02); `check.py` warns when a paper page's first author differs from its reference key (2026-11-22)
+- **Changed:** "Never invent citations, authors or facts" in `AGENTS.md` (2026-07-02); `check.py` warns when a paper page's first author differs from its reference key (2026-11-22)
 - **Status:** rule + check (the check sees a page and its reference disagreeing, not both being wrong)
 
 ### Summarise from the full text, never from metadata
 Two paper pages written from metadata (one PDF too large to read, one blocked) carried substantive claims into the draft; the full texts showed one platform described wrongly and the other model described as 3D when it is 2D.
 - **Evidence:** log 2026-10-18 lint; log 2026-10-18 ingest
 - **Changed:** both pages rewritten from the full text; status lines in `docs/claims-by-source.md` say how each source was read
-- **Status:** rule only
+- **Status:** rule + check (the `Checks:` line of an ingest log entry records it from 2026-11-25, and `check.py` warns when the line is missing)
 
 ### Record a source's own inconsistencies instead of picking one value
 Sources disagree with themselves: a concentration given as 30 nM in one place and 100 nM in another, an error value given three ways, a slope as 0.737 in the text and 0.738 in a caption, a text that contradicts its own table, an AUC in the text that differs from the table.
 - **Evidence:** log 2026-10-18 ingest; log 2026-11-07 query; log 2026-11-09 draft; log 2026-11-14 ingest
-- **Changed:** the grinding skill looks for "the source disagreeing with itself" and reports both values (2026-11-09)
-- **Status:** rule only
+- **Changed:** the grinding skill looks for "the source disagreeing with itself" and reports both values (2026-11-09); the `Checks:` line of an ingest entry names the inconsistencies found (2026-11-25)
+- **Status:** rule only (the `Checks:` line asks for it, but `check.py` does not require that part)
 
 ### Decide the year of a reference once
 Whether a paper is cited by its online-first year or its issue year was decided three separate times before it was written down.
 - **Evidence:** log 2026-10-18 ingest; log 2026-11-20 query
-- **Changed:** reference-year rule in `AGENTS.md`, Citation format (2026-11-22)
+- **Changed:** reference-year rule in `AGENTS.md`, Citation format (2026-11-22), the References rule since 2026-11-25
 - **Status:** rule only
 
 ## 2. Claims and their wording
@@ -59,7 +59,7 @@ The wiki looks tidy and confident, and its errors are invisible from inside it: 
 ### When you correct a claim, rewrite the whole sentence
 A correction appended to the end of a sentence left its beginning saying the opposite; the automatic checks could not see it, and reading found it.
 - **Evidence:** log 2026-10-27 draft
-- **Changed:** Draft step 3 in `AGENTS.md` (2026-11-22; until then the rule was only in the log, although the blog draft already said the agent had it)
+- **Changed:** Draft step 3 in `AGENTS.md` (2026-11-22, step 3 of the draft skill since 2026-11-25; until then the rule was only in the log, although the blog draft already said the agent had it)
 - **Status:** rule only
 
 ### Narrow a universal statement to what was actually checked
@@ -83,7 +83,7 @@ The draft described a "targeted search of PubMed/MEDLINE, bioRxiv and Scopus" th
 ### Keep the author's own inferences in a register, with a fixed vocabulary
 Unsourced statements are kept out of the text's labels and in one register, each with a Support value. Two values crept in without a definition before the vocabulary was written down.
 - **Evidence:** log 2026-10-30 draft; log 2026-11-20 query; log 2026-11-20 lint
-- **Changed:** the register in `docs/claims-by-source.md`; its paragraph in `AGENTS.md` and the Support check in `check.py` (2026-11-20)
+- **Changed:** the register in `docs/claims-by-source.md`; its paragraph in `AGENTS.md` (in `.claude/skills/draft/claims-file.md` since 2026-11-25) and the Support check in `check.py` (2026-11-20)
 - **Status:** rule + check
 
 ## 3. Summaries
@@ -137,7 +137,7 @@ At about 290 kB the log took several reads; an agent starting a session could no
 ### A rule in the prompt holds while it is remembered; a rule in the settings holds every time
 Hard limits (never edit `notes.md`, ask before touching `raw/`) and the checks after every edit of `main.md` moved from `AGENTS.md` into `.claude/settings.json`.
 - **Evidence:** log 2026-11-11 query
-- **Changed:** permission rules and a PostToolUse hook (2026-11-11)
+- **Changed:** permission rules and a PostToolUse hook (2026-11-11); hooks that report a shell command changing `notes.md` or a file in `raw/`, which the permission rules do not cover, run the `main.md` checks after a shell edit, and keep the agent working when the finishing check fails (2026-11-25)
 - **Status:** rule + check
 
 ### A limit that is too strict gets in the way
@@ -189,8 +189,8 @@ Both external reviews pushed towards weaker gap statements. Some changes were ri
 ### Check the sources early: the earlier an error is born, the more places it is copied to
 A misread source passes into the paper page, concept pages, the index, several sections of the draft and finally the abstract. Most of the checking in this project happened late and at full size.
 - **Evidence:** log 2026-10-24 lint; log 2026-11-20 lint
-- **Changed:** nothing enforces the timing
-- **Status:** open
+- **Changed:** `/grinding wiki <source>` checks a source's wiki page and every wiki sentence citing it right after ingest, before anything reaches `main.md`; the ingest skill offers it, and an accepted page gets a `**Checked against source:**` date that `check.py` compares with the page's last commit (2026-11-25)
+- **Status:** rule + check (the check sees that a page was accepted after a wiki grinding, not that the grinding was right)
 
 ### Grill a decision before acting on it
 The first `/grill-paper` session settled a section's scope in three rounds, with twelve decisions written down, before any text changed.
