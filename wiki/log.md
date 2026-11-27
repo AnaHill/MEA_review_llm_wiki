@@ -105,3 +105,7 @@ The researcher's decision: checking the wiki stays the researcher's choice, made
 ## [2026-11-25] lint | read deny rules for files the agent never needs
 
 The researcher's decision, after a LinkedIn tip on deny lists: `.claude/settings.json` now denies Read on `.obsidian/**` (editor plugins) and on the paper's export files (`main-export.*`, `Maki-2026-*.pdf`), which only duplicate `main.md` in the context. Not denied: `raw/` and `figure_analysis/` (read at ingest and grinding), `docs/private/` (read when the researcher asks for help with it). The gain is small: Grep and Glob already skip git-ignored files, and a shell command is not covered. Carried into the templates without the paper-specific PDF name (not committed): `llm-wiki-academic-template` denies Read on `.obsidian/**` and `main-export.*`, `llm-wiki-template` on `.obsidian/**`, since both READMEs suggest Obsidian as the viewer.
+
+## [2026-11-27] query | blog post linked from the README
+
+The researcher published the blog post on the project (https://anahill.github.io/blog/llm-wiki-and-academic-review.html, title "Writing an academic review with an LLM wiki: what worked and what didn't", checked to load). Linked from the README after the template sentence. `main.md` unchanged: the blog is about the workflow, not a source of the paper.
