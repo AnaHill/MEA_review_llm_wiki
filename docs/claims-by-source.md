@@ -1,4 +1,4 @@
-b# Claims in main.md, by source
+# Claims in main.md, by source
 
 A checklist for verifying the paper against its sources. Each source has a list of every claim that `main.md` attributes to it, with the section in brackets; tick `[x]` when you have checked a claim against the source. The last section is the register of the author's own inferences, which `main.md` does not mark in the text; its reading guide defines the **Support** vocabulary (`sourced`, `thin`, `inference`, `opinion`, `none`, `inherited`) that says where each unsourced statement's warrant comes from, and `scripts/check.py` warns about a Support line that falls outside it. Verify each claim in the local file named under the source (all files are in `raw/`; page and figure pointers are given where known). The wiki pages were checked against the source texts on 2026-10-24 and later; figures were viewed only where stated, so numbers, figure readings and nuances of wording still need your own check.
 
